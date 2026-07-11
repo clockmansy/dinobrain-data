@@ -1,0 +1,123 @@
+{
+  "gate_id": "gate-20260711-231939262-833fdc2593187183b3c41db0a8e665b0e954-da977c53-2d7a-4a5f-960b-e0346cdf9fc5",
+  "os_version": "2.2.13",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260711-231938268-9a4809b97604259733f77eefcbde-7cde92b2-8bbc-46fb-b763-661530774dde",
+  "request": "Commit and push the verified direct MCP status output regression and updated completion evidence, while keeping release blocked on clean-machine and soak prerequisites.",
+  "request_hash": "9a4809b97604259733f77eefcbde5d41e1168b8cd4f03e13488d4aafd886f1ce",
+  "request_redactions": [],
+  "generated_at": "2026-07-11T23:19:39.383Z",
+  "context_pack_path": ".dino/context-packs/pack-20260711-231939035-9a4809b97604259733f77eefcbde-977c04e8-e758-4820-a390-c951df017935.json",
+  "context_item_count": 7,
+  "context_evidence": {
+    "hasContextPack": true,
+    "contextItemCount": 7,
+    "contextPackPath": ".dino/context-packs/pack-20260711-231939035-9a4809b97604259733f77eefcbde-977c04e8-e758-4820-a390-c951df017935.json",
+    "contextPackId": "pack-20260711-231939035-9a4809b97604259733f77eefcbde-977c04e8-e758-4820-a390-c951df017935",
+    "contextTraceSha256": "ebc73a845464ec7df536c20d8a418f4f265bbf3c909bbe3eafa3e5c5079ee6b9",
+    "contextCreatedAt": "2026-07-11T23:19:39.035Z",
+    "contextAgeMs": 225,
+    "contextTraceVerified": true,
+    "contextTraceFresh": true,
+    "eventOrderVerified": true,
+    "eventOrder": [
+      "task_started",
+      "context_pack_created",
+      "os_begin_task_completed"
+    ],
+    "hookRunId": null,
+    "promptHash": "9a4809b97604259733f77eefcbde5d41e1168b8cd4f03e13488d4aafd886f1ce",
+    "verificationStatus": "verified",
+    "declaredHasContextPack": true,
+    "declaredContextItemCount": 7,
+    "declarationMismatch": false,
+    "reasonCodes": []
+  },
+  "observed_tools": [
+    "apply_cold_partitions",
+    "apply_node_lifecycle",
+    "apply_review_backpressure",
+    "audit_memory_use",
+    "auto_sync",
+    "begin_client_mcp_proof",
+    "create_candidate_instance",
+    "create_source_chunk",
+    "evaluate_behavior",
+    "finalize_client_mcp_proof",
+    "finish_task",
+    "get_context_pack",
+    "git_sync",
+    "heartbeat_task",
+    "import_session",
+    "os_begin_task",
+    "os_gate",
+    "quarantine_record",
+    "record_feedback_correction",
+    "restore_memory_node",
+    "review_candidate",
+    "run_compounding_cycle",
+    "search_cold_memory",
+    "search_memory",
+    "start_task",
+    "transition_memory_node",
+    "wiki_search"
+  ],
+  "sync_observation": {
+    "status": "not_requested",
+    "changed_file_count": 0,
+    "syncable_count": 0,
+    "conditional_count": 0,
+    "blocked_count": 0,
+    "reason_codes": []
+  },
+  "status": "warn",
+  "action_decision": "constrained_action",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing.",
+      "scope": "sync",
+      "constrains_action": true
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace.",
+      "scope": "all",
+      "constrains_action": false
+    }
+  ],
+  "reason_codes": [
+    "backup_sync_risk",
+    "finish_task_required"
+  ],
+  "request_intent": {
+    "destructive": false,
+    "persistence": true,
+    "sync": true,
+    "data_sync": false
+  },
+  "persistence_policy": "normal",
+  "sync_policy": "scoped_dry_run_required",
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": [],
+  "preflight_evidence": {
+    "contextPackPath": ".dino/context-packs/pack-20260711-231939035-9a4809b97604259733f77eefcbde-977c04e8-e758-4820-a390-c951df017935.json",
+    "contextTraceSha256": "ebc73a845464ec7df536c20d8a418f4f265bbf3c909bbe3eafa3e5c5079ee6b9",
+    "hookRunId": null,
+    "promptHash": "9a4809b97604259733f77eefcbde5d41e1168b8cd4f03e13488d4aafd886f1ce",
+    "eventOrderVerified": true,
+    "eventOrder": [
+      "task_started",
+      "context_pack_created",
+      "os_begin_task_completed"
+    ],
+    "reasonCodes": []
+  }
+}

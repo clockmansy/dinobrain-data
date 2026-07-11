@@ -1,0 +1,46 @@
+{
+  "task_id": "task-20260711-231938268-9a4809b97604259733f77eefcbde-7cde92b2-8bbc-46fb-b763-661530774dde",
+  "outcome": "partial",
+  "summary": "Committed and pushed the direct MCP status parity output fix and regression at app commit cbbd360. Verified current live Codex pre-response, two-client direct MCP parity, zero task lifecycle blockers, and a current qualifying 50k scale report. Release remains intentionally blocked on clean-machine recovery, 24-hour soak, real encrypted restore, and final certification.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "src/build-client-mcp-direct-status.ts",
+    "scripts/verify-client-mcp-direct-status.mjs",
+    "docs/DIRECT_MCP_PROOF.md",
+    "docs/OS_COMPLETION_EXECUTION_PLAN_20260710.md"
+  ],
+  "decisions": [
+    "Keep release blocked until clean-machine recovery and soak predicates pass.",
+    "Expose parity and agent proof summaries in machine-readable CLI output.",
+    "Publish only exact task-scoped OS artifacts and leave unrelated data backlog untouched."
+  ],
+  "next_steps": [
+    "Run DIST-02 on a clean Windows profile with both clients and a real encrypted restore.",
+    "Complete the 24-hour lifecycle soak.",
+    "Build and publish immutable release assets, then run the final completion audit."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "40_Projects/DinoBrain-RAG-Roadmap.md"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260711-231939035-9a4809b97604259733f77eefcbde-977c04e8-e758-4820-a390-c951df017935.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "output_redactions": [],
+  "lease_id": "lease-20260711-231938269-ed8c56cf1a1c398351d8-9ef97420-e765-470a-8875-877fc8466b04",
+  "terminal_owner_id": "codex-goal-finalize",
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-11T23:20:42.153Z"
+}
