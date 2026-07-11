@@ -1,0 +1,114 @@
+{
+  "gate_id": "gate-20260711-224343517-5e38ed0e4dd2a79e66682ef5dd0f9a9ff895-a470282c-bbd8-4bc5-84a7-8ca219df7234",
+  "os_version": "2.2.13",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260711-224342609-74a98ccd22441e11e8282e4e8c3a-26c2c180-09c1-423b-9913-499f772a731f",
+  "request": "Implement server-derived task allowlist risk evaluation in os_gate so unrelated dirty backlog cannot influence an exact scoped operation, with fail-closed regression coverage.",
+  "request_hash": "74a98ccd22441e11e8282e4e8c3a99d81119d6645fadce9783659ea23039a36b",
+  "request_redactions": [],
+  "generated_at": "2026-07-11T22:43:43.649Z",
+  "context_pack_path": ".dino/context-packs/pack-20260711-224343272-74a98ccd22441e11e8282e4e8c3a-9b8d880c-e182-423d-99ce-5900f45c1902.json",
+  "context_item_count": 7,
+  "context_evidence": {
+    "hasContextPack": true,
+    "contextItemCount": 7,
+    "contextPackPath": ".dino/context-packs/pack-20260711-224343272-74a98ccd22441e11e8282e4e8c3a-9b8d880c-e182-423d-99ce-5900f45c1902.json",
+    "contextPackId": "pack-20260711-224343272-74a98ccd22441e11e8282e4e8c3a-9b8d880c-e182-423d-99ce-5900f45c1902",
+    "contextTraceSha256": "1455c801dde5e183de5eabbd685b0d050988b658fe79339c8edd4b77bc49f7a1",
+    "contextCreatedAt": "2026-07-11T22:43:43.272Z",
+    "contextAgeMs": 244,
+    "contextTraceVerified": true,
+    "contextTraceFresh": true,
+    "eventOrderVerified": true,
+    "eventOrder": [
+      "task_started",
+      "context_pack_created",
+      "os_begin_task_completed"
+    ],
+    "hookRunId": null,
+    "promptHash": "74a98ccd22441e11e8282e4e8c3a99d81119d6645fadce9783659ea23039a36b",
+    "verificationStatus": "verified",
+    "declaredHasContextPack": true,
+    "declaredContextItemCount": 7,
+    "declarationMismatch": false,
+    "reasonCodes": []
+  },
+  "observed_tools": [
+    "apply_cold_partitions",
+    "apply_node_lifecycle",
+    "apply_review_backpressure",
+    "audit_memory_use",
+    "auto_sync",
+    "begin_client_mcp_proof",
+    "create_candidate_instance",
+    "create_source_chunk",
+    "evaluate_behavior",
+    "finalize_client_mcp_proof",
+    "finish_task",
+    "get_context_pack",
+    "git_sync",
+    "heartbeat_task",
+    "import_session",
+    "os_begin_task",
+    "os_gate",
+    "quarantine_record",
+    "record_feedback_correction",
+    "restore_memory_node",
+    "review_candidate",
+    "run_compounding_cycle",
+    "search_cold_memory",
+    "search_memory",
+    "start_task",
+    "transition_memory_node",
+    "wiki_search"
+  ],
+  "sync_observation": {
+    "status": "not_requested",
+    "changed_file_count": 0,
+    "syncable_count": 0,
+    "conditional_count": 0,
+    "blocked_count": 0,
+    "reason_codes": []
+  },
+  "status": "warn",
+  "action_decision": "allow",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace.",
+      "scope": "all",
+      "constrains_action": false
+    }
+  ],
+  "reason_codes": [
+    "finish_task_required"
+  ],
+  "request_intent": {
+    "destructive": false,
+    "persistence": false,
+    "sync": false,
+    "data_sync": false
+  },
+  "persistence_policy": "normal",
+  "sync_policy": "not_requested",
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": [],
+  "preflight_evidence": {
+    "contextPackPath": ".dino/context-packs/pack-20260711-224343272-74a98ccd22441e11e8282e4e8c3a-9b8d880c-e182-423d-99ce-5900f45c1902.json",
+    "contextTraceSha256": "1455c801dde5e183de5eabbd685b0d050988b658fe79339c8edd4b77bc49f7a1",
+    "hookRunId": null,
+    "promptHash": "74a98ccd22441e11e8282e4e8c3a99d81119d6645fadce9783659ea23039a36b",
+    "eventOrderVerified": true,
+    "eventOrder": [
+      "task_started",
+      "context_pack_created",
+      "os_begin_task_completed"
+    ],
+    "reasonCodes": []
+  }
+}

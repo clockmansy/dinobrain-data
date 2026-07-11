@@ -1,0 +1,75 @@
+{
+  "version": "task_sync_public_receipt_20260712_v1",
+  "created_at": "2026-07-11T22:48:01.723Z",
+  "task_id": "task-20260711-224342609-74a98ccd22441e11e8282e4e8c3a-26c2c180-09c1-423b-9913-499f772a731f",
+  "task_request_hash": "74a98ccd22441e11e8282e4e8c3a99d81119d6645fadce9783659ea23039a36b",
+  "task_record_path": ".dino/tasks/task-20260711-224342609-74a98ccd22441e11e8282e4e8c3a-26c2c180-09c1-423b-9913-499f772a731f.json",
+  "task_record_sha256": "68992eb5ab1114299a9484a65cc155e1ca0833c69ba674b6aef0ea8c0eb7725a",
+  "base_commit": "ec9a1a5c27b082dba94de4eeecca0fe4a9238854",
+  "classifier_policy_version": "data_classification_20260712_v3",
+  "scope": {
+    "version": "task_sync_scope_20260711_v2",
+    "revision": 5,
+    "sha256": "1865e20c3000f472950ccd8027e67f07369846c89c01d03b6fcc5fd2bbff6f46"
+  },
+  "artifacts": [
+    {
+      "path": ".dino/context-packs/pack-20260711-224343272-74a98ccd22441e11e8282e4e8c3a-9b8d880c-e182-423d-99ce-5900f45c1902.json",
+      "sha256": "1455c801dde5e183de5eabbd685b0d050988b658fe79339c8edd4b77bc49f7a1",
+      "git_blob_oid": "142f97d29f64e321f113e934562f9abe78c1a54e",
+      "size_bytes": 25419,
+      "classification": "conditional",
+      "policy": "operation_context_pack_path",
+      "approval": "system_verified",
+      "source": "os_gate:task_bound"
+    },
+    {
+      "path": ".dino/gates/gate-20260711-224343517-5e38ed0e4dd2a79e66682ef5dd0f9a9ff895-a470282c-bbd8-4bc5-84a7-8ca219df7234.json",
+      "sha256": "6aa2276c9a9076a365504cb99d0a6723b7b2135841abf2dd8e28674a7e641913",
+      "git_blob_oid": "86f2a16cbae50c04cf1afbde27822ef2fc52f2cc",
+      "size_bytes": 3986,
+      "classification": "conditional",
+      "policy": "operation_gate_path",
+      "approval": "system_verified",
+      "source": "os_begin_task:preflight"
+    },
+    {
+      "path": ".dino/gates/gate-20260711-224623513-5e38ed0e4dd2a79e66682ef5dd0f9a9ff895-db9a62e2-892d-431e-9e3d-a2d7a94608fd.json",
+      "sha256": "511b43dc571eb81cde72193ba3fa2e2e12fc90c2f2cb262889742676e60d5b2d",
+      "git_blob_oid": "0227bb2e9cbddd060eff2184c5d97a54bd431224",
+      "size_bytes": 3683,
+      "classification": "conditional",
+      "policy": "operation_gate_path",
+      "approval": "system_verified",
+      "source": "os_gate:task_bound"
+    },
+    {
+      "path": ".dino/tasks/task-20260711-224342609-74a98ccd22441e11e8282e4e8c3a-26c2c180-09c1-423b-9913-499f772a731f.json",
+      "sha256": "68992eb5ab1114299a9484a65cc155e1ca0833c69ba674b6aef0ea8c0eb7725a",
+      "git_blob_oid": "0cc2e35e4c396dd4a2e995d389c56cc66d3818ed",
+      "size_bytes": 2307,
+      "classification": "conditional",
+      "policy": "operation_task_path",
+      "approval": "system_verified",
+      "source": "finish_task:terminal"
+    },
+    {
+      "path": ".dino/traces/task-20260711-224342609-74a98ccd22441e11e8282e4e8c3a-26c2c180-09c1-423b-9913-499f772a731f.json",
+      "sha256": "7df7b28d7852622cf3f597ff79f0e9559a12be2cf638803a13d283b5b5603b71",
+      "git_blob_oid": "edf74523ad2b161d422c340887aa15d0a6016777",
+      "size_bytes": 2200,
+      "classification": "conditional",
+      "policy": "operation_trace_path",
+      "approval": "system_verified",
+      "source": "finish_task:terminal"
+    }
+  ],
+  "conditional_paths": [
+    ".dino/context-packs/pack-20260711-224343272-74a98ccd22441e11e8282e4e8c3a-9b8d880c-e182-423d-99ce-5900f45c1902.json",
+    ".dino/gates/gate-20260711-224343517-5e38ed0e4dd2a79e66682ef5dd0f9a9ff895-a470282c-bbd8-4bc5-84a7-8ca219df7234.json",
+    ".dino/gates/gate-20260711-224623513-5e38ed0e4dd2a79e66682ef5dd0f9a9ff895-db9a62e2-892d-431e-9e3d-a2d7a94608fd.json",
+    ".dino/tasks/task-20260711-224342609-74a98ccd22441e11e8282e4e8c3a-26c2c180-09c1-423b-9913-499f772a731f.json",
+    ".dino/traces/task-20260711-224342609-74a98ccd22441e11e8282e4e8c3a-26c2c180-09c1-423b-9913-499f772a731f.json"
+  ],
+  "receipt_id": "a8fc8479a3939575a5e78c2299219defd676991ab4653bdd106df9d37b4272f2"
+}
