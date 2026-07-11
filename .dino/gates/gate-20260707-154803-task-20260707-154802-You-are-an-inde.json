@@ -1,0 +1,42 @@
+{
+  "gate_id": "gate-20260707-154803-task-20260707-154802-You-are-an-inde",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-154802-You-are-an-independent-DinoB",
+  "request": "You are an independent DinoBrain lifecycle and sync-safety reviewer. Work read-only. Please inspect these local files directly if possible: <machine-local-path> <machine-local-path> <machine-local-path> <machine-local-path> Focus only on whether the plan's completion conditions are adequate for node lifecycle cleanup, task finish-gate integrity, merge/hold/demote/delete/provenance review, scoped auto_sync/git_sync, public-data safety, and GitHub recovery safety. Please return a normal short paragraph or bullets, but include these fields visibly: reviewer_id: R7, verdict: AGREE or REVISE_REQUIRED, blocking_objections, required_doc_changes, evidence_files. Do not modify files.",
+  "generated_at": "2026-07-07T15:48:03.050Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-154802-You-are-an-independent-DinoB.json",
+  "context_item_count": 7,
+  "status": "block",
+  "fail_closed": true,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "destructive_action_risk",
+      "level": "block",
+      "reason": "The request may delete or reset durable data.",
+      "safe_action": "Require explicit confirmation and a backup/sync risk check before destructive execution."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

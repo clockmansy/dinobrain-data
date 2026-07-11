@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260706-232632-Promote-meaningful-knowledge",
+  "status": "completed",
+  "request": "Promote meaningful knowledge from local Codex session history into DinoBrain accepted memory without syncing raw transcripts: extract repeated user preferences, important decisions, mistakes, setup/hook/search lessons, and future behavior rules from the metadata-only session registry and local Codex sessions; create reviewed safe memory artifacts and verify retrieval/public-data safety.",
+  "project": "DinoBrain",
+  "mode": "deep",
+  "sensitivity": "sensitive",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-06T23:26:32.312Z",
+  "updated_at": "2026-07-06T23:31:59.054Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-06T23:31:59.054Z",
+  "trace_path": ".dino/traces/task-20260706-232632-Promote-meaningful-knowledge.json"
+}

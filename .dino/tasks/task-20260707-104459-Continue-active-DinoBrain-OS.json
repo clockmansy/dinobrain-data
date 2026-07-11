@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-104459-Continue-active-DinoBrain-OS",
+  "status": "completed",
+  "request": "Continue active DinoBrain OS goal: improve current implementation toward P0-02 status freshness, P0-01 full-memory audit, review queue/semantic job settlement, finish-gate integrity, and real RAG eval. Current focus: inspect task lifecycle blockers and implement the next concrete finish-gate/RAG-eval progress without unsafe data sync.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T10:44:59.478Z",
+  "updated_at": "2026-07-07T10:52:23.050Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T10:52:23.050Z",
+  "trace_path": ".dino/traces/task-20260707-104459-Continue-active-DinoBrain-OS.json"
+}

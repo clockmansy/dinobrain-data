@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-052054-After-launching-npm-run-code",
+  "status": "blocked",
+  "request": "After launching npm run codex:live-proof, verify whether real Codex Desktop live pre-response hook evidence now exists and whether full closed-loop goal can be marked complete",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T05:20:54.678Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-052054-After-launching-npm-run-code.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-052054-After-launching-npm-run-code.json"
+  }
+}

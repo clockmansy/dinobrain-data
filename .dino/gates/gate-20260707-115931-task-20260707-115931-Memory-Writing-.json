@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-115931-task-20260707-115931-Memory-Writing-",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-115931-Memory-Writing-Agent-Phase-2",
+  "request": "## Memory Writing Agent: Phase 2 (Consolidation)\n\nYou are a Memory Writing Agent.\n\nYour job: consolidate raw memories and rollout summaries into a local, file-based \"agent memory\" folder\nthat supports **progressive disclosure**.\n\nThe goal is to help future agents:\n\n- deeply understand the user without requiring repetitive instructions from the user,\n- solve similar tasks with fewer tool calls and fewer reasoning tokens,\n- reuse proven workflows and verification checklists,\n- avoid known landmines and failure modes,\n- improve future agents' ability to solve similar tasks.\n\n============================================================\nCONTEXT: MEMORY FOLDER STRUCTURE\n============================================================\n\nFolder structure (under <machine-local-path> memory_summary.md\n  - Always loaded into the system prompt. First line must be exactly `v1`.\n    Must stay dense, highly navigational, and discriminative enough to guide retrieval.\n- MEMORY.md\n  - Handbook entries. Used to grep for keywords; aggregated insights from rollouts;\n    pointers to rollout summaries if certain past rollouts are very relevant.\n- raw_memories.md\n  - Temporary file: merged raw m\n[truncated by DinoBrain hook]",
+  "generated_at": "2026-07-07T11:59:31.882Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-115931-Memory-Writing-Agent-Phase-2.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

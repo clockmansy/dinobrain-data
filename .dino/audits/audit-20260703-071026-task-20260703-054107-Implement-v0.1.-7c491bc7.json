@@ -1,0 +1,74 @@
+{
+  "audit_id": "audit-20260703-071026-task-20260703-054107-Implement-v0.1.-7c491bc7",
+  "type": "memory_use_audit",
+  "status": "completed",
+  "audited_at": "2026-07-03T07:10:26.258Z",
+  "auditor": "codex-v0.1.5-release",
+  "task_id": "task-20260703-054107-Implement-v0.1.5-Observatory",
+  "trace_path": ".dino/traces/task-20260703-054107-Implement-v0.1.5-Observatory.json",
+  "trust_score": 100,
+  "verdict": "high",
+  "provided_memory_paths": [
+    ".dino/tasks/task-20260703-045733-Create-a-version-upgrade-pla.json",
+    ".dino/tasks/task-20260703-054107-Implement-v0.1.5-Observatory.json",
+    ".dino/tasks/task-20260703-045352-Analyze-a-screenshot-of-anot.json",
+    ".dino/tasks/task-20260703-033050-DinoBrain-live-Codex-hook-di.json",
+    ".dino/tasks/task-20260703-033451-DinoBrain-live-Codex-hook-di.json",
+    ".dino/tasks/task-20260703-041404-Re-check-why-GitHub-Release.json",
+    ".dino/tasks/task-20260703-035806-Check-whether-reinstalling-D.json",
+    ".dino/tasks/task-20260703-041151-Explain-whether-Codex-hook-t.json",
+    ".dino/tasks/task-20260703-041852-Add-installer-flow-that-dete.json",
+    "20_Wiki/README.md"
+  ],
+  "declared_used_memory_paths": [
+    ".dino/tasks/task-20260703-045733-Create-a-version-upgrade-pla.json"
+  ],
+  "observed_used_memory_paths": [
+    ".dino/tasks/task-20260703-045733-Create-a-version-upgrade-pla.json"
+  ],
+  "declared_used_but_not_provided": [],
+  "missing_expected_memory": [],
+  "expected_memory_not_provided": [],
+  "hallucinated_memory_reference": [],
+  "graph_health_snapshot": {
+    "status": "healthy",
+    "score": 100,
+    "index_path": ".dino/index/wiki-index.json",
+    "indexed_record_count": 6,
+    "node_count": 20,
+    "edge_count": 19,
+    "unresolved_wiki_link_count": 0,
+    "referenced_unresolved_wiki_link_count": 0,
+    "curated_paths_checked": 1,
+    "curated_paths_missing_from_index": [],
+    "referenced_paths_missing_on_disk": []
+  },
+  "observable_usage_evidence": [
+    {
+      "path": ".dino/tasks/task-20260703-045733-Create-a-version-upgrade-pla.json",
+      "evidence": "hint_matched:dino,json,version"
+    }
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-054113-v0.1.5-Observatory-OS-Health.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "observed_artifact_paths": [
+    "src/graph-health.ts",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/verify-graph-health.mjs",
+    "artifacts/DinoBrainSetup.zip"
+  ],
+  "observed_summary_preview": "Used the v0.1.5 Observatory upgrade plan context to implement graph health, Observatory OS health cockpit, verification scripts, and a v0.1.5 release asset. Verified build, smoke, hook, session, verify:os, flow:audit, installer checks, browser UI, and remote release ZIP SHA.",
+  "auditor_notes": "",
+  "counts": {
+    "provided": 10,
+    "declared_used": 1,
+    "observed_used": 1,
+    "expected": 1,
+    "context_packs": 1,
+    "session_archives": 0,
+    "candidates": 0
+  }
+}

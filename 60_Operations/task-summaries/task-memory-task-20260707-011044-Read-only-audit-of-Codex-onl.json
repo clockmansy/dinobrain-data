@@ -1,0 +1,44 @@
+{
+  "memory_id": "task-memory-task-20260707-011044-Read-only-audit-of-Codex-onl",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Read-only audit of Codex-only closed loop source/provenance graph changes focused on src/graph-h",
+  "summary": "Completed read-only audit of source/provenance graph handling across graph-health, lifecycle, observatory, and verify-graph-health. The source resolver now recognizes evidence.source, source.trace_path, source.task_path, source_paths, source_operation_path, and legacy single source fields; live data inspection shows parseable accepted records are no longer source-less, with one remaining missing source path and a persisted graph-health score of 90. No repo files were edited.",
+  "claim": "Task outcome for dinobrain: Completed read-only audit of source/provenance graph handling across graph-health, lifecycle, observatory, and verify-graph-health. The source resolver now recognizes evidence.source, source.trace_path, source.task_path, source_paths, source_operation_path, and legacy single source fields; live data inspection shows parseable accepted records are no longer source-less, with one remaining missing source path and a persisted graph-health score of 90. No repo files were edited.",
+  "request": "Read-only audit of Codex-only closed loop source/provenance graph changes focused on src/graph-health.ts, src/lifecycle.ts, scripts/dinobrain-observatory.mjs, scripts/verify-graph-health.mjs. Check evidence.source/source.trace_path/source_paths handling and acceptance gap. Do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "Kept the audit read-only; no source or data files were edited manually.",
+    "Treat the previous evidence.source/source_paths acceptance gap as mostly addressed by the current source resolver and verifier fixtures.",
+    "The remaining acceptance gap is source.trace_path-only coverage in scripts/verify-graph-health.mjs, plus parity coverage for lifecycle and observatory source resolution."
+  ],
+  "next_steps": [
+    "Add a source.trace_path-only accepted fixture to scripts/verify-graph-health.mjs and assert it does not count as source-less or missing when the trace target exists.",
+    "Consider extracting shared source path normalization/resolution so graph-health, lifecycle, and observatory do not drift.",
+    "Repair or quarantine the one accepted record whose evidence.source is a descriptive label rather than a durable path, and review the three accepted JSON files flagged by PowerShell JSON parsing."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-011047-Source-provenance-graph-heal.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-011044-Read-only-audit-of-Codex-onl.json",
+    "snippet": "Completed read-only audit of source/provenance graph handling across graph-health, lifecycle, observatory, and verify-graph-health. The source resolver now recognizes evidence.source, source.trace_path, source.task_path, source_paths, source_operation_path, and legacy single source fields; live data inspection shows parseable accepted records are no longer source-less, with one remaining missing source path and a persisted graph-health score of 90. No repo files were edited."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T01:14:52.440Z",
+  "updated_at": "2026-07-07T01:14:52.440Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-011044-Read-only-audit-of-Codex-onl.json",
+    "task_id": "task-20260707-011044-Read-only-audit-of-Codex-onl",
+    "task_path": ".dino/tasks/task-20260707-011044-Read-only-audit-of-Codex-onl.json"
+  }
+}

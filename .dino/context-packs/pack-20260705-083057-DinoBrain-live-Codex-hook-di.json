@@ -1,0 +1,181 @@
+{
+  "pack_id": "pack-20260705-083057-DinoBrain-live-Codex-hook-di",
+  "pack_type": "standard",
+  "os_version": "2.1.0",
+  "question": "DinoBrain live Codex hook diagnostic probe.",
+  "created_at": "2026-07-05T08:30:57.904Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 16,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 16,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 7,
+  "excluded_record_count": 9,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260705-075138-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 8.918,
+      "reasons": [
+        "path_matched:dinobrain,live,codex,hook",
+        "title_matched:dinobrain,live,codex,hook",
+        "summary_matched:dinobrain,hook",
+        "chunk_matched:dinobrain,live,codex,hook",
+        "bm25:dinobrain,live,codex,hook,diagnostic",
+        "dense_lexical:4.62",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-082945-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 8.839,
+      "reasons": [
+        "path_matched:dinobrain,live,codex,hook",
+        "title_matched:dinobrain,live,codex,hook",
+        "summary_matched:dinobrain,hook",
+        "chunk_matched:dinobrain,live,codex,hook",
+        "bm25:dinobrain,live,codex,hook,diagnostic",
+        "dense_lexical:4.62",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-083057-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 8.762,
+      "reasons": [
+        "path_matched:dinobrain,live,codex,hook",
+        "title_matched:dinobrain,live,codex,hook",
+        "summary_matched:dinobrain,hook",
+        "chunk_matched:dinobrain,live,codex,hook",
+        "bm25:dinobrain,live,codex,hook,diagnostic",
+        "dense_lexical:4.62",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-",
+      "summary": "status=completed | Implemented DinoBrain OS v2 P0 improvements from the review report: honest lexical fallback retrieval mode, optional dense vector cosine retrieval, stopword/high-frequency token filtering, verified os_gate context evidence, sensitive prompt auto-escalation, event-backed memory audit artifact verification, SQLite/wiki index version bumps, v2.0.2 version bump, docs, and regression coverage.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 5.548,
+      "reasons": [
+        "path_matched:dinobrain",
+        "title_matched:dinobrain",
+        "summary_matched:dinobrain",
+        "chunk_matched:dinobrain",
+        "bm25:dinobrain",
+        "dense_lexical:0.52",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-074910-Verify-whether-the-currently.json",
+      "kind": "recent_task",
+      "title": "Task: Verify whether the currently installed DinoBrain follows the full OS loop: Codex hook detection,",
+      "summary": "status=partial | project=dinobrain | Verified the installed/current DinoBrain OS loop against the user's 8-step flow. Codex MCP registration, UserPromptSubmit hook registration, hook simulation/probe, task/context pack creation, wiki_search, finish_task support, v2 verification, and git remotes are present. The complete loop is partially rather than fully autonomous: live current-thread hook injection was not observe",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 4.688,
+      "reasons": [
+        "title_matched:dinobrain,codex,hook",
+        "summary_matched:dinobrain,live,codex,hook",
+        "chunk_matched:dinobrain,codex,hook",
+        "bm25:dinobrain,live,codex,hook,probe",
+        "dense_lexical:1.13",
+        "rank_fusion:rrf"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-075637-Assess-whether-DinoBrain-s-c.json",
+      "kind": "recent_task",
+      "title": "Task: Assess whether DinoBrain's current architecture can become or already is a compounding knowledge",
+      "summary": "status=completed | project=dinobrain | Assessed DinoBrain as a potential compounding knowledge OS. Conclusion: the architecture has the right foundation for compounding user-specific knowledge, but sustained use alone does not guarantee compounding. It needs enforced live pre-response hooks, reliable session distillation, reviewed promotion into accepted behavior/wiki/source records, retrieval quality, behavior evalu",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 4.546,
+      "reasons": [
+        "path_matched:dinobrain",
+        "title_matched:dinobrain",
+        "summary_matched:dinobrain,live,hook",
+        "chunk_matched:dinobrain",
+        "bm25:dinobrain,live",
+        "dense_lexical:0.65",
+        "rank_fusion:rrf"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain OS v2 개선 보고서의 P0 항목(DB-03 불용어/토큰화, DB-02 독립 게이트/감사, DB-01 실제 하이브리드 검색/폴백 명칭)을 코드로 반영하고",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 4.5,
+      "reasons": [
+        "path_matched:dinobrain",
+        "title_matched:dinobrain",
+        "summary_matched:dinobrain",
+        "chunk_matched:dinobrain",
+        "bm25:dinobrain",
+        "dense_lexical:0.66",
+        "rank_fusion:rrf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260705-014742-Generate-0-to-3-hyperpersona",
+  "status": "completed",
+  "request": "Generate 0 to 3 hyperpersonalized Codex suggestions for this local DinoBrain project using recent repo and connected-app evidence, avoiding duplicates with the July 4 Codex thread.",
+  "project": "<machine-local-path>",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-05T01:47:42.068Z",
+  "updated_at": "2026-07-05T01:50:41.620Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-05T01:50:41.620Z",
+  "trace_path": ".dino/traces/task-20260705-014742-Generate-0-to-3-hyperpersona.json"
+}

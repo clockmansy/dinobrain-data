@@ -1,0 +1,38 @@
+{
+  "task_id": "task-20260707-184614-DinoBrain-live-hook-proof-fa",
+  "outcome": "partial",
+  "summary": "Recorded a Codex MCP fallback preflight proof for the stale current thread while live Codex Desktop UserPromptSubmit proof remains pending in a fresh thread.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Manual stdio MCP preflight is valid fallback evidence for this stale Codex thread but does not replace live Codex Desktop UserPromptSubmit proof.",
+    "The remaining completion blocker is a fresh trusted Codex Desktop workspace prompt that emits codex_prompt_submitted and codex_preflight_completed."
+  ],
+  "next_steps": [
+    "Run DinoBrain live proof in a fresh Codex Desktop workspace thread and rerun verify:goal."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-184615-DinoBrain-live-hook-proof-fa.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T18:46:15.469Z"
+}

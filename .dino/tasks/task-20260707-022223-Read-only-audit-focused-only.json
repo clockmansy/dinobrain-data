@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-022223-Read-only-audit-focused-only",
+  "status": "completed",
+  "request": "Read-only audit focused only on Codex pre-response UserPromptSubmit hook enforcement. Determine whether every new Codex user prompt must run DinoBrain preflight before response, including current-session reload/trust edge cases. Return findings with file paths, commands/evidence, and verdict PASS/FAIL/UNKNOWN. Do not edit files.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T02:22:23.137Z",
+  "updated_at": "2026-07-07T02:26:40.747Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T02:26:40.747Z",
+  "trace_path": ".dino/traces/task-20260707-022223-Read-only-audit-focused-only.json"
+}

@@ -1,0 +1,282 @@
+{
+  "pack_id": "pack-20260707-001802-RAG-verification-hybrid-sear",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "RAG verification hybrid search user-provided RAG URLs Weaviate hybrid search Milvus hybrid search Qdrant hybrid reranking sparse dense reranker claims",
+  "created_at": "2026-07-07T00:18:02.683Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 90,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 269,
+  "index_candidate_count": 90,
+  "index_total_candidate_count": 90,
+  "index_matching_terms": [
+    "27_first_rag_pipeline",
+    "azure-search-rag-overview",
+    "claims",
+    "codex-session-knowledge-local_evidence_over_claims",
+    "codex-session-knowledge-rag_quality_direction",
+    "coverage",
+    "dense",
+    "dense-lite",
+    "dense-vectors",
+    "elastic-rag",
+    "framework-rag",
+    "google-rag-engine-overview",
+    "graph-rag",
+    "graphrag",
+    "haystack-first-rag-pipeline",
+    "haystack-rag-from-scratch",
+    "hybrid",
+    "hybrid_contextual_v2",
+    "hybrid-search",
+    "langchain-rag",
+    "llamaindex-rag",
+    "local_evidence_over_claims",
+    "microsoft-graphrag",
+    "pinecone-rag",
+    "rag",
+    "rag-engine",
+    "rag-learning",
+    "rag-methodology-anchor-catalog",
+    "rag-overview",
+    "rag-paper-2005-11401",
+    "rag-paper-2212-10496",
+    "rag-paper-2303-11366",
+    "rag-paper-2401-18059",
+    "rag-pipelines-from-scratch",
+    "rag-public-os-learning-packet",
+    "rag-survey",
+    "ragas",
+    "ragas-evaluation",
+    "reranking",
+    "search",
+    "search_memory",
+    "search-backed",
+    "searchable",
+    "sparse",
+    "task-20260706-233406-os-rag-url-dinobrain-os--saf",
+    "task-memory-task-20260706-233406-os-rag-url-dinobrain-os--saf",
+    "urls",
+    "user-provided",
+    "verification",
+    "verification_status",
+    "wiki_search"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 271,
+  "items": [
+    {
+      "path": "30_Sources/chunks/azure-search-rag-overview.json",
+      "kind": "curated_record",
+      "title": "Microsoft Azure AI Search RAG overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "anchor-only",
+        "rag-overview"
+      ],
+      "score": 10.299,
+      "reasons": [
+        "path_matched:rag,search",
+        "title_matched:rag,search",
+        "tags_matched:rag",
+        "chunk_matched:rag,search,user-provided",
+        "bm25:rag,search,user-provided",
+        "dense_lexical:1.26",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/elastic-rag.json",
+      "kind": "curated_record",
+      "title": "Elastic RAG explanation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "anchor-only",
+        "rag-overview"
+      ],
+      "score": 10.068,
+      "reasons": [
+        "path_matched:rag",
+        "title_matched:rag",
+        "tags_matched:rag",
+        "chunk_matched:rag,verification,search,user-provided",
+        "bm25:rag,verification,user-provided",
+        "dense_lexical:1.29",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/haystack-rag-from-scratch.json",
+      "kind": "curated_record",
+      "title": "Haystack RAG from scratch",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "anchor-only",
+        "framework-rag"
+      ],
+      "score": 9.8,
+      "reasons": [
+        "path_matched:rag",
+        "title_matched:rag",
+        "tags_matched:rag",
+        "chunk_matched:rag,verification,user-provided",
+        "bm25:rag,verification,user-provided",
+        "dense_lexical:1.23",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-survey.json",
+      "kind": "curated_record",
+      "title": "RAG-Survey",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "anchor-only",
+        "survey"
+      ],
+      "score": 9.795,
+      "reasons": [
+        "path_matched:rag",
+        "title_matched:rag",
+        "tags_matched:rag",
+        "chunk_matched:rag,verification,user-provided",
+        "bm25:rag,verification,user-provided",
+        "dense_lexical:1.29",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2005-11401.json",
+      "kind": "curated_record",
+      "title": "RAG paper anchor arXiv 2005.11401",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "anchor-only",
+        "paper"
+      ],
+      "score": 9.763,
+      "reasons": [
+        "path_matched:rag",
+        "title_matched:rag",
+        "tags_matched:rag",
+        "chunk_matched:rag,verification,user-provided",
+        "bm25:rag,verification,user-provided",
+        "dense_lexical:1.27",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/pinecone-rag.json",
+      "kind": "curated_record",
+      "title": "Pinecone RAG explanation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "anchor-only",
+        "rag-overview"
+      ],
+      "score": 9.761,
+      "reasons": [
+        "path_matched:rag",
+        "title_matched:rag",
+        "tags_matched:rag",
+        "chunk_matched:rag,verification,user-provided",
+        "bm25:rag,verification,user-provided",
+        "dense_lexical:1.24",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2401-18059.json",
+      "kind": "curated_record",
+      "title": "RAG paper anchor arXiv 2401.18059",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "anchor-only",
+        "paper"
+      ],
+      "score": 9.731,
+      "reasons": [
+        "path_matched:rag",
+        "title_matched:rag",
+        "tags_matched:rag",
+        "chunk_matched:rag,verification,user-provided",
+        "bm25:rag,verification,user-provided",
+        "dense_lexical:1.28",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/haystack-first-rag-pipeline.json",
+      "kind": "curated_record",
+      "title": "Haystack first RAG pipeline",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "anchor-only",
+        "framework-rag"
+      ],
+      "score": 9.717,
+      "reasons": [
+        "path_matched:rag",
+        "title_matched:rag",
+        "tags_matched:rag",
+        "chunk_matched:rag,verification,user-provided",
+        "bm25:rag,verification,user-provided",
+        "dense_lexical:1.21",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-124619-task-20260707-124618-Role-5-retrieva",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-124618-Role-5-retrieval-RAG-quality",
+  "request": "Role 5: retrieval/RAG quality reviewer. DinoBrain OS unfinished improvement plan consensus review. Inspect RAG roadmap/source anchors, hybrid retrieval implementation, rag-proof/eval, OS conditions, and current status artifacts. Required files: docs/OS_COMPLETION_CONDITIONS.md, docs/RAG_OS_CONSENSUS_20260707.md if present, [REDACTED_MACHINE_LOCAL_PATH] src/hybrid-retrieval.ts, src/rag-eval.ts, src/rag-proof.ts, current rag_eval_status/rag_proof_status. Candidate plan includes P1-10 and real embeddings/Ragas-like answer quality. Return AGREE or REVISE_REQUIRED. No edits.",
+  "generated_at": "2026-07-07T12:46:19.187Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-124619-Role-5-retrieval-RAG-quality.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

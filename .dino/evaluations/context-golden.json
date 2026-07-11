@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "description": "Bootstrap golden set for Standard Context Pack retrieval. These cases use the initial vault structure notes and should be replaced or expanded as real DinoBrain knowledge accumulates.",
+  "pack_limit": 7,
+  "target_recall": 0.8,
+  "target_max_noise": 2,
+  "cases": [
+    {
+      "id": "wiki-001",
+      "question": "curated durable knowledge",
+      "expected_paths": ["20_Wiki/README.md"],
+      "allowed_prefixes": ["20_Wiki/"],
+      "notes": "Curated durable knowledge should route to Wiki notes."
+    },
+    {
+      "id": "wiki-002",
+      "question": "wiki curated knowledge",
+      "expected_paths": ["20_Wiki/README.md"],
+      "allowed_prefixes": ["20_Wiki/"]
+    },
+    {
+      "id": "wiki-003",
+      "question": "durable knowledge notes",
+      "expected_paths": ["20_Wiki/README.md"],
+      "allowed_prefixes": ["20_Wiki/"]
+    },
+    {
+      "id": "wiki-004",
+      "question": "safe reusable wiki knowledge",
+      "expected_paths": ["20_Wiki/README.md"],
+      "allowed_prefixes": ["20_Wiki/"]
+    },
+    {
+      "id": "source-001",
+      "question": "Google RAG Engine source records verification",
+      "expected_paths": ["30_Sources/chunks/google-rag-engine-overview.json"],
+      "allowed_prefixes": ["30_Sources/"]
+    },
+    {
+      "id": "source-002",
+      "question": "checked Google RAG Engine source records",
+      "expected_paths": ["30_Sources/chunks/google-rag-engine-overview.json"],
+      "allowed_prefixes": ["30_Sources/"]
+    },
+    {
+      "id": "source-003",
+      "question": "source verification notes",
+      "expected_paths": ["30_Sources/chunks/google-rag-engine-overview.json"],
+      "allowed_prefixes": ["30_Sources/"]
+    },
+    {
+      "id": "project-001",
+      "question": "project state decisions handoffs",
+      "expected_paths": ["40_Projects/README.md"],
+      "allowed_prefixes": ["40_Projects/"]
+    },
+    {
+      "id": "project-002",
+      "question": "project implementation status",
+      "expected_paths": ["40_Projects/README.md"],
+      "allowed_prefixes": ["40_Projects/"]
+    },
+    {
+      "id": "project-003",
+      "question": "known project constraints",
+      "expected_paths": ["40_Projects/README.md"],
+      "allowed_prefixes": ["40_Projects/"]
+    },
+    {
+      "id": "instance-001",
+      "question": "configured integration is not live proof",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json"],
+      "allowed_prefixes": ["50_Instances/accepted/"]
+    },
+    {
+      "id": "instance-002",
+      "question": "codex accepted memory privacy public data transcripts instruction",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json"],
+      "allowed_prefixes": ["50_Instances/accepted/"]
+    },
+    {
+      "id": "instance-003",
+      "question": "current instruction outranks stored memory",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"],
+      "allowed_prefixes": ["50_Instances/accepted/"]
+    },
+    {
+      "id": "operations-001",
+      "question": "operating policies runbooks",
+      "expected_paths": ["60_Operations/README.md"],
+      "allowed_prefixes": ["60_Operations/"]
+    },
+    {
+      "id": "operations-002",
+      "question": "sync policy runbooks",
+      "expected_paths": ["60_Operations/README.md"],
+      "allowed_prefixes": ["60_Operations/"]
+    },
+    {
+      "id": "operations-003",
+      "question": "maintenance operations policies",
+      "expected_paths": ["60_Operations/README.md"],
+      "allowed_prefixes": ["60_Operations/"]
+    },
+    {
+      "id": "operations-004",
+      "question": "vault operated runbooks",
+      "expected_paths": ["60_Operations/README.md"],
+      "allowed_prefixes": ["60_Operations/"]
+    },
+    {
+      "id": "error-001",
+      "question": "repeated mistakes corrections",
+      "expected_paths": ["70_Error_Book/README.md"],
+      "allowed_prefixes": ["70_Error_Book/"]
+    },
+    {
+      "id": "error-002",
+      "question": "error book prevention notes",
+      "expected_paths": ["70_Error_Book/README.md"],
+      "allowed_prefixes": ["70_Error_Book/"]
+    },
+    {
+      "id": "error-003",
+      "question": "mistakes prevention corrections",
+      "expected_paths": ["70_Error_Book/README.md"],
+      "allowed_prefixes": ["70_Error_Book/"]
+    }
+  ]
+}

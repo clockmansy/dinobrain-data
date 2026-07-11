@@ -1,0 +1,48 @@
+{
+  "task_id": "task-redacted-ead1c545b5140c956bc077c06887dd2b60c887b4",
+  "outcome": "completed",
+  "summary": "Read-only comparison of P0-05B Route/Evidence/Owner Mutation Gate and P0-06 Evidence Lineage Closure against current DinoBrain v2.2.1. Found both are partial only: current code has prompt-risk gates, review-first candidates, lifecycle/provenance repair, source chunks/provenance, graph health, and RAG proof/eval, but lacks the plan-required route/evidence/owner mutation ledger/gate packets, final-readiness mutation authorization checks, source-lineage claim coverage report, wiki-claims index, provenance reconcile artifacts, lineage repair queue, Korean visible status fields, and the named smoke tests/contracts.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Classified P0-05B as partial: existing os_gate/review/lifecycle/sync policy are narrower than the required per-mutation class route/evidence/owner gate.",
+    "Classified P0-06 as partial: existing source chunk/provenance and graph-health checks do not implement claim coverage closure, high-confidence promotion blocking, or content-bearing lineage proof.",
+    "Did not run mutation/provenance tests because the plan-named tests are absent and the request was read-only/no edits."
+  ],
+  "next_steps": [
+    "Implement routing_owner_ledger.json, node-lifecycle-gate-packets.jsonl, node-settlement-lifecycle.json and their final-readiness/Korean UI blockers.",
+    "Implement source-lineage-report, node-source-provenance-reconcile validator/planner, wiki-claims index, lineage repair queue, and docs/contracts/evidence-lineage.md.",
+    "Add the missing smoke tests: routing-owner-ledger, steward-routing-contract, node-lifecycle-compounding, source-lineage-report, and node-source-provenance-reconcile, including negative raw-source-only fixtures."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/elastic-rag.json",
+    "30_Sources/chunks/langchain-rag.json",
+    "30_Sources/chunks/openai-retrieval-guide.json",
+    "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+    "30_Sources/chunks/azure-search-rag-overview.json",
+    "30_Sources/chunks/llamaindex-rag.json",
+    "30_Sources/chunks/haystack-rag-from-scratch.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-redacted-fabdbba5f208cd43e6de33d80740748183c8dfa4.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-113451-811308b5d701.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-Compare-P0-05B-Route-E-e95f06a5c9f0.json",
+    "50_Instances/candidates/candidate-Project-state-Return-implemented-par-660445cf6e9d.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-947bc57b533c.json"
+  ],
+  "search_queries": [
+    "P0-05B P0-06 routing_owner source-lineage current DinoBrain"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 3,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T11:38:01.221Z"
+}

@@ -1,0 +1,247 @@
+{
+  "memory_id": "codex-session-knowledge-plan_first_scope_lock",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "user_preference",
+  "title": "Plan-first execution for new or handoff-heavy work",
+  "aliases": [
+    "계획 우선 범위 확정",
+    "대형 작업 계획부터",
+    "인수인계 작업 계획"
+  ],
+  "claim": "The user prefers a concrete plan and approved scope before broad implementation, especially for handoff bundles, new projects, difficult design tasks, or OS-level changes.",
+  "reusable_rule": "When a task is broad, new, design-heavy, or handoff-driven, first summarize understanding, ask only necessary questions, lock the plan, then execute within that plan.",
+  "scope": "agent_workflow",
+  "confidence": "high",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "user-preference",
+    "planning",
+    "scope-control"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 25,
+    "user_hit_count": 74,
+    "assistant_hit_count": 297,
+    "weighted_score": 519,
+    "session_refs": [
+      "sess-070a11e11c4994",
+      "sess-0a41a5f21d5b58",
+      "sess-11277020296a72",
+      "sess-1e95eea1be108d",
+      "sess-1f464b71ecea0d",
+      "sess-24d8b03c383495",
+      "sess-2d27e1d180db6c",
+      "sess-3d168ffb4f6ce0",
+      "sess-458b19a1a1cdf1",
+      "sess-52c21a717f5a44",
+      "sess-5ea2d5d2562d29",
+      "sess-6f506c542b0e47",
+      "sess-7d50eae76e4ee7",
+      "sess-7e854189c37298",
+      "sess-7fe6090762c115",
+      "sess-859a5de9d52d83",
+      "sess-895eea5311c7c7",
+      "sess-b9bea0ba742411",
+      "sess-c15947f92a15cb",
+      "sess-d18f6172935388",
+      "sess-db17f02a87c473",
+      "sess-dbfab8fd32cc5f",
+      "sess-e1afb3fcecf453",
+      "sess-eaf3884b97453c"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "9bc98f0edda25e0c4735841c",
+        "char_count": 187
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "3b388bd9fbe76d0882b4d5c0",
+        "char_count": 442
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "fd41cb8085630f05ba8a97cf",
+        "char_count": 106
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "eec20fbf2e4a815d07ce8552",
+        "char_count": 482
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "0a6414b8799ef7a91b6c99e0",
+        "char_count": 129
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "24347f03d8fc2909bcea2ca6",
+        "char_count": 890
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "8e95c1df25cdc158e0216eff",
+        "char_count": 131
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "3564cc744ba4da531205b5e2",
+        "char_count": 142
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "user",
+        "message_hash": "94b4bde34b64436f910fde9d",
+        "char_count": 95
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "f882a24e9f17f39009f3ff59",
+        "char_count": 151
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "07075c3a5f3df0fff0cc1145",
+        "char_count": 95
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "694a4dbc6ac331d7a61a7584",
+        "char_count": 731
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "user",
+        "message_hash": "f94a40c1c7f45623e35c89ec",
+        "char_count": 18
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "41e04b87dd8d96a34020550f",
+        "char_count": 160
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "629184d30003431d2119f71d",
+        "char_count": 105
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "fccd3d5459b3db87a5e1896d",
+        "char_count": 527
+      }
+    ],
+    "matched_terms": [
+      "계획서?|계획\\s*세|계획을|순서대로|범위|스코프|plan\\b|scope\\b|roadmap"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 284
+      },
+      {
+        "project": "stripe engine",
+        "count": 61
+      },
+      {
+        "project": "new-chat",
+        "count": 15
+      },
+      {
+        "project": "Project_J",
+        "count": 6
+      },
+      {
+        "project": "files-mentioned-by-the-user-html",
+        "count": 2
+      },
+      {
+        "project": "codex",
+        "count": 1
+      },
+      {
+        "project": "gykim80-perfectpixel-studio-https-github-com",
+        "count": 1
+      },
+      {
+        "project": "z",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-plan_first_scope_lock.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-plan_first_scope_lock",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425446-abfe8da9-5fd4-4ddc-8604-e9211dba2850",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425446-abfe8da9-5fd4-4ddc-8604-e9211dba2850",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-plan_first_scope_lock.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-plan_first_scope_lock.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-plan_first_scope_lock.json"
+  ],
+  "successor_paths": []
+}

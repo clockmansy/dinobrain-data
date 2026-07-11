@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-111129-Continue-active-DinoBrain-go",
+  "status": "completed",
+  "request": "Continue active DinoBrain goal: implement the next real RAG eval step after status freshness, full-memory audit, review settlement, and finish-gate integrity are healthy. Inspect current RAG evaluator/dense retrieval code, add the next honest hybrid retrieval/eval proof for the current vault, verify, commit, and push scoped app changes.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T11:11:29.598Z",
+  "updated_at": "2026-07-07T11:18:36.664Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T11:18:36.664Z",
+  "trace_path": ".dino/traces/task-20260707-111129-Continue-active-DinoBrain-go.json"
+}

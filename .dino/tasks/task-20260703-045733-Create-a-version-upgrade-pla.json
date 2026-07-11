@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260703-045733-Create-a-version-upgrade-pla",
+  "status": "completed",
+  "request": "Create a version upgrade plan for DinoBrain based on the screenshot analysis: add Observatory health gates, lifecycle queues, read traces, graph QA, and OS cockpit features.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-03T04:57:33.888Z",
+  "updated_at": "2026-07-03T04:57:57.800Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-03T04:57:57.800Z",
+  "trace_path": ".dino/traces/task-20260703-045733-Create-a-version-upgrade-pla.json"
+}

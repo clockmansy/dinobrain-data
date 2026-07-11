@@ -1,0 +1,21 @@
+{
+  "version": "review_settlement_v1",
+  "status": "healthy",
+  "apply": false,
+  "generated_at": "2026-07-08T01:43:27.011Z",
+  "data_root": "<machine-local-path>",
+  "counts": {
+    "auto_hold_candidates_before": 0,
+    "auto_hold_applied": 0,
+    "auto_hold_candidates_after": null,
+    "manual_review_required_before": 632,
+    "manual_review_required_after": null,
+    "open_before": 632,
+    "open_after": null,
+    "closed_before": 545,
+    "closed_after": null
+  },
+  "actions": [],
+  "warnings": [],
+  "visible_status": "리뷰 큐 자동 보류 정리 완료"
+}

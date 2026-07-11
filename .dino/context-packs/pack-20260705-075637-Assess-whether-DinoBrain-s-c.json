@@ -1,0 +1,172 @@
+{
+  "pack_id": "pack-20260705-075637-Assess-whether-DinoBrain-s-c",
+  "pack_type": "standard",
+  "os_version": "2.0.1",
+  "question": "Assess whether DinoBrain's current architecture can become or already is a compounding knowledge OS tailored to the user's preferences and history under sustained use, and define the practical criteria and next engineering priorities.",
+  "created_at": "2026-07-05T07:56:37.579Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense lexical retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 14,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 14,
+  "index_total_candidate_count": 14,
+  "index_matching_terms": [
+    "become",
+    "candidates",
+    "current",
+    "knowledge",
+    "reuse",
+    "useful",
+    "whether"
+  ],
+  "included_item_count": 6,
+  "excluded_record_count": 10,
+  "items": [
+    {
+      "path": "20_Wiki/README.md",
+      "kind": "curated_record",
+      "title": "20_Wiki",
+      "summary": "Curated durable knowledge.",
+      "tags": [],
+      "score": 8.03,
+      "reasons": [
+        "summary_matched:knowledge",
+        "chunk_matched:can,knowledge,use",
+        "bm25:knowledge",
+        "dense_lexical:1.11",
+        "rank_fusion:rrf",
+        "rerank_lifecycle_penalty",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-075637-Assess-whether-DinoBrain-s-c.json",
+      "kind": "recent_task",
+      "title": "Task: Assess whether DinoBrain's current architecture can become or already is a compounding knowledge",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 4.918,
+      "reasons": [
+        "path_matched:assess,whether,dinobrain",
+        "title_matched:assess,whether,dinobrain,current",
+        "summary_matched:dinobrain",
+        "chunk_matched:assess,whether,dinobrain,current",
+        "bm25:assess,whether,dinobrain,current,architecture",
+        "dense_lexical:11.59",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-022738-QA-code-review-DinoBrain-v2-",
+      "summary": "status=completed | Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than executing merge/hold/delete/provenance rep",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 1.723,
+      "reasons": [
+        "path_matched:dinobrain",
+        "title_matched:dinobrain",
+        "summary_matched:dinobrain,can,os,use",
+        "chunk_matched:dinobrain",
+        "bm25:dinobrain,can,os",
+        "dense_lexical:1.24",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-",
+      "summary": "status=completed | Implemented DinoBrain OS v2 P0 improvements from the review report: honest lexical fallback retrieval mode, optional dense vector cosine retrieval, stopword/high-frequency token filtering, verified os_gate context evidence, sensitive prompt auto-escalation, event-backed memory audit artifact verification, SQLite/wiki index version bumps, v2.0.2 version bump, docs, and regression coverage.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 1.622,
+      "reasons": [
+        "path_matched:dinobrain,os",
+        "title_matched:dinobrain,os",
+        "summary_matched:dinobrain,os",
+        "chunk_matched:dinobrain,os",
+        "bm25:dinobrain,os",
+        "dense_lexical:1.14",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2-.json",
+      "kind": "recent_task",
+      "title": "Task: QA/code review DinoBrain v2 changes comprehensively, focusing on stability of fail-closed pre-re",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 1.528,
+      "reasons": [
+        "path_matched:dinobrain",
+        "title_matched:dinobrain,os",
+        "summary_matched:dinobrain",
+        "chunk_matched:dinobrain,os",
+        "bm25:dinobrain,os",
+        "dense_lexical:1.03",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-074910-Verify-whether-the-currently.json",
+      "kind": "recent_task",
+      "title": "Task: Verify whether the currently installed DinoBrain follows the full OS loop: Codex hook detection,",
+      "summary": "status=partial | project=dinobrain | Verified the installed/current DinoBrain OS loop against the user's 8-step flow. Codex MCP registration, UserPromptSubmit hook registration, hook simulation/probe, task/context pack creation, wiki_search, finish_task support, v2 verification, and git remotes are present. The complete loop is partially rather than fully autonomous: live current-thread hook injection was not observe",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 0.839,
+      "reasons": [
+        "path_matched:whether,current",
+        "title_matched:whether,dinobrain,current,os",
+        "summary_matched:dinobrain,current,os,user",
+        "chunk_matched:whether,dinobrain,current,knowledge",
+        "bm25:whether,dinobrain,current,knowledge,os",
+        "dense_lexical:1.92",
+        "rank_fusion:rrf",
+        "rerank_root_intent_penalty"
+      ]
+    }
+  ]
+}

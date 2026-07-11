@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 366,
+  "event": "action_started",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "77c75bf2292613265bcc7e89b38bd00c44cd3c212143fe2e75f7032c2ed6c438",
+  "payload": {
+    "index": 181,
+    "task_id": "task-20260707-125813-Final-consensus-round-Role-7",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "f79818b5f293551ce8c7c2d3f611a26cf047de875fdfb80adf6f165c54c2a45b",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "f0626f21962ec46442fcfdd0b678dc2a3a8bcf666ac6d7fb4e9463f156940b10"
+}

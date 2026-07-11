@@ -1,0 +1,23 @@
+{
+  "review_id": "candidate-Project-state---If-the-user-s-prompt-d697c41a7ff5",
+  "type": "session_extract_promotion",
+  "status": "settled_hold",
+  "candidate_path": "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-d697c41a7ff5.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-095801-9089535b55bd.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T09:58:01.996Z",
+  "updated_at": "2026-07-07T12:25:36.779Z",
+  "decision": "hold",
+  "source": "review_worklist_actions",
+  "worklist_cluster_id": "review-cluster-75885d7161288465",
+  "reviewer": "review-worklist-actions",
+  "notes": "Held by review worklist action; candidate is low-signal or ephemeral and must not enter hot memory without manual confirmation.",
+  "settled_at": "2026-07-07T12:25:36.779Z",
+  "reviewed_at": "2026-07-07T12:25:36.779Z"
+}

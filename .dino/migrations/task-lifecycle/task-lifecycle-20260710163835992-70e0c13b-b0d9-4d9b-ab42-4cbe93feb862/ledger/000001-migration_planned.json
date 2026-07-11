@@ -1,0 +1,32 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 1,
+  "event": "migration_planned",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": null,
+  "payload": {
+    "action_count": 199,
+    "lifecycle_counts": {
+      "tasks": 548,
+      "traces": 271,
+      "active": 70,
+      "stale_active": 195,
+      "expired_leases": 0,
+      "terminal": 280,
+      "terminal_missing_trace": 3,
+      "trace_binding_missing": 1,
+      "trace_without_task": 0,
+      "ungrounded_finish": 0,
+      "partial_grounded_finish": 0,
+      "wrong_task_mismatch": 0,
+      "blockers": 199,
+      "auto_close_candidates": 121,
+      "manual_repair_required": 78
+    },
+    "data_head": "1552e600823a3eaf1114632e89a981f5bc2fe304",
+    "data_status_sha256": "055e37e030a3553c878dfe59569e0944087b483fc553eeba83a8097e2e3036fd",
+    "full_memory_manifest_sha256": "fcbf49228e5b25d4f76c3374e3ffe250e3f9448900464f18a6c6e78d301672cc"
+  },
+  "entry_sha256": "5a215d84475db80756e2e5547aa264aa75556af386f135665d3c017f71b28bf2"
+}

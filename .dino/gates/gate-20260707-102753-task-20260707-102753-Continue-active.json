@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-102753-task-20260707-102753-Continue-active",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-102753-Continue-active-DinoBrain-go",
+  "request": "Continue active DinoBrain goal after P0-01/P0-02: implement concrete progress for review queue burn-down / semantic job settlement, preserving current scope and using current repo/data evidence. Inspect current worktree and existing lifecycle/compounding/review patterns first.",
+  "generated_at": "2026-07-07T10:27:53.703Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-102753-Continue-active-DinoBrain-go.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-171238-Continue-active-DinoBrain-OS",
+  "status": "partial",
+  "request": "Continue active DinoBrain OS goal by making concrete progress after semantic RAG: inspect installer/new-PC/release equivalence and implement the next unblocked improvement so a fresh install can rebuild or verify semantic RAG artifacts without silent fallback.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T17:12:38.463Z",
+  "updated_at": "2026-07-07T17:18:40.658Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T17:18:40.658Z",
+  "trace_path": ".dino/traces/task-20260707-171238-Continue-active-DinoBrain-OS.json"
+}

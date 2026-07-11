@@ -1,0 +1,517 @@
+{
+  "report_type": "dinobrain_public_data_safety",
+  "generated_at": "2026-07-07T01:58:14.862Z",
+  "status": "degraded",
+  "result": {
+    "ok": true,
+    "blocker_count": 0,
+    "warning_count": 856
+  },
+  "data_repo": {
+    "remote": "https://github.com/clockmansy/dinobrain-data.git",
+    "branch_state": "## main...origin/main\n M .dino/evaluations/context-golden.json\nD  .dino/events/2026-07-01.jsonl\nD  .dino/events/2026-07-03.jsonl\nD  .dino/events/2026-07-05.jsonl\nD  .dino/events/2026-07-06.jsonl\nD  .dino/events/2026-07-07.jsonl\nD  .dino/events/README.md\nD  .dino/index/README.md\nD  .dino/index/graph-health.json\nD  .dino/index/operations-index.json\nD  .dino/index/sqlite/operations.sqlite\n M .gitignore\n D 50_Instances/accepted/behavior-rule-00816a7debe955f7.json\n D 50_Instances/accepted/behavior-rule-0105ffe39944fc7e.json\n D 50_Instances/accepted/behavior-rule-01cda972784bde8e.json\n D 50_Instances/accepted/behavior-rule-022ac79083b88aac.json\n D 50_Instances/accepted/behavior-rule-04708363547daa46.json\n D 50_Instances/accepted/behavior-rule-04b9b6661304781b.json\n D 50_Instances/accepted/behavior-rule-05b048dba086b592.json\n D 50_Instances/accepted/behavior-rule-06fab03e79df23a7.json\n D 50_Instances/accepted/behavior-rule-0827d6651c23da8d.json\n D 50_Instances/accepted/behavior-rule-08fac9d83de88064.json\n D 50_Instances/accepted/behavior-rule-0b6117b5a12b8431.json\n D 50_Instances/accepted/behavior-rule-0b79a9433e34f4a6.json\n D 50_Instances/accepted/behavior-rule-0d2fb5049213d9b3.json\n D 50_Instances/accepted/behavior-rule-0d59f60f38900dd5.json\n D 50_Instances/accepted/behavior-rule-0da01f5e64060b7c.json\n D 50_Instances/accepted/behavior-rule-0eea232eaf82fd25.json\n D 50_Instances/accepted/behavior-rule-0f53e59a1f4113ca.json\n D 50_Instances/accepted/behavior-rule-0f870fd1ba9a36a6.json\n D 50_Instances/accepted/behavior-rule-11164b1eefd4db3d.json\n D 50_Instances/accepted/behavior-rule-120041fdb48971e4.json\n D 50_Instances/accepted/behavior-rule-1239ac71caea3f2e.json\n D 50_Instances/accepted/behavior-rule-1424948bad8d5817.json\n D 50_Instances/accepted/behavior-rule-14b2ee6df68bb7bd.json\n D 50_Instances/accepted/behavior-rule-15949abcda6374b4.json\n D 50_Instances/accepted/behavior-rule-1610be95ea3ffc7e.json\n D 50_Instances/accepted/behavior-rule-16391276188fc9bf.json\n D 50_Instances/accepted/behavior-rule-165ad7722ec76fd9.json\n D 50_Instances/accepted/behavior-rule-17454c1268460efb.json\n D 50_Instances/accepted/behavior-rule-1869cd6b89e0ffca.json\n D 50_Instances/accepted/behavior-rule-1913d6433cdc3acf.json\n D 50_Instances/accepted/behavior-rule-193cbe1caa903927.json\n D 50_Instances/accepted/behavior-rule-1aa6a6ffbff10516.json\n D 50_Instances/accepted/behavior-rule-1bd26ce95a217039.json\n D 50_Instances/accepted/behavior-rule-1c6547018067a135.json\n D 50_Instances/accepted/behavior-rule-1d1fa9ab2224a876.json\n D 50_Instances/accepted/behavior-rule-1d66abda21eeceeb.json\n D 50_Instances/accepted/behavior-rule-1d674e3e90c774b0.json\n D 50_Instances/accepted/behavior-rule-20e83729dce15a7e.json\n D 50_Instances/accepted/behavior-rule-2276c64372f8963e.json\n D 50_Instances/accepted/behavior-rule-2276d8f9b99a1158.json\n D 50_Instances/accepted/behavior-rule-22bcb219c29daa41.json\n D 50_Instances/accepted/behavior-rule-2324cb077f1303cc.json\n D 50_Instances/accepted/behavior-rule-2372b3cb484475fd.json\n D 50_Instances/accepted/behavior-rule-23ef36a2cd141680.json\n D 50_Instances/accepted/behavior-rule-24f6d140812583af.json\n D 50_Instances/accepted/behavior-rule-2606a808b7ec6309.json\n D 50_Instances/accepted/behavior-rule-26279e80576aba65.json\n D 50_Instances/accepted/behavior-rule-26aa2f8a00656911.json\n D 50_Instances/accepted/behavior-rule-271143209223c587.json\n D 50_Instances/accepted/behavior-rule-277f0b6309337213.json\n D 50_Instances/accepted/behavior-rule-27ab2fbcdf5ffbeb.json\n D 50_Instances/accepted/behavior-rule-2875c63ae3c67f2a.json\n D 50_Instances/accepted/behavior-rule-2895b4b306bb7d8a.json\n D 50_Instances/accepted/behavior-rule-28c11b32aa6c400a.json\n D 50_Instances/accepted/behavior-rule-291581dc23559171.json\n D 50_Instances/accepted/behavior-rule-295abf1038bd399d.json\n D 50_Instances/accepted/behavior-rule-296e4f1f89aaf838.json\n D 50_Instances/accepted/behavior-rule-298e24d77f91d054.json\n D 50_Instances/accepted/behavior-rule-2a2e9184b17aaf95.json\n D 50_Instances/accepted/behavior-rule-2a540fdcb4d5c0e0.json\n D 50_Instances/accepted/behavior-rule-2aa07cac199c12b6.json\n D 50_Instances/accepted/behavior-rule-2bc2f365baf3346c.json\n D 50_Instances/accepted/behavior-rule-2c36e0fecd12c14a.json\n D 50_Instances/accepted/behavior-rule-2d3fe4deaad93c1a.json\n D 50_Instances/accepted/behavior-rule-2da31daa4ffa0d34.json\n D 50_Instances/accepted/behavior-rule-2db5207a5400d1c0.json\n D 50_Instances/accepted/behavior-rule-2dfae4129e092ea3.json\n D 50_Instances/accepted/behavior-rule-2e470cc8899d6fb1.json\n D 50_Instances/accepted/behavior-rule-2f764c961261f085.json\n D 50_Instances/accepted/behavior-rule-2f76941da05fbbc5.json\n D 50_Instances/accepted/behavior-rule-33705e4a520d31c1.json\n D 50_Instances/accepted/behavior-rule-354ddeb6e08d90c6.json\n D 50_Instances/accepted/behavior-rule-38528235d38484cb.json\n D 50_Instances/accepted/behavior-rule-38ec6724100da29a.json\n D 50_Instances/accepted/behavior-rule-38fe3b6b17ba30df.json\n D 50_Instances/accepted/behavior-rule-39996b36f29029ec.json\n D 50_Instances/accepted/behavior-rule-3aeec5584b731ac8.json\n D 50_Instances/accepted/behavior-rule-3b383bfd640a64b5.json\n D 50_Instances/accepted/behavior-rule-3b3e1f0038318ebf.json\n D 50_Instances/accepted/behavior-rule-3b61f1550b2a8ae2.json\n D 50_Instances/accepted/behavior-rule-3bac475b985d07c2.json\n D 50_Instances/accepted/behavior-rule-3bbd12fda925e5be.json\n D 50_Instances/accepted/behavior-rule-3daafbf8b03f4c4b.json\n D 50_Instances/accepted/behavior-rule-3e65e91570b322c9.json\n D 50_Instances/accepted/behavior-rule-3ecdf0c090adadd7.json\n D 50_Instances/accepted/behavior-rule-3ed97af4a4ce10bb.json\n D 50_Instances/accepted/behavior-rule-3f8db6319c3c2233.json\n D 50_Instances/accepted/behavior-rule-3f9c57eeb076e3ec.json\n D 50_Instances/accepted/behavior-rule-40b6c16d61281d46.json\n D 50_Instances/accepted/behavior-rule-4177ac0985fccd9b.json\n D 50_Instances/accepted/behavior-rule-443b23e564f39212.json\n D 50_Instances/accepted/behavior-rule-4487d7c948cd6ff0.json\n D 50_Instances/accepted/behavior-rule-44b710f1a7090df7.json\n D 50_Instances/accepted/behavior-rule-44e727fc70a0e00c.json\n D 50_Instances/accepted/behavior-rule-4576c59074e79294.json\n D 50_Instances/accepted/behavior-rule-46c14a7d6baf3667.json\n D 50_Instances/accepted/behavior-rule-473c0c26c32a7b67.json\n D 50_Instances/accepted/behavior-rule-4740b23b02f91c27.json\n D 50_Instances/accepted/behavior-rule-48791aed297a3917.json\n D 50_Instances/accepted/behavior-rule-49540fb326024225.json\n D 50_Instances/accepted/behavior-rule-497915ff5461114f.json\n D 50_Instances/accepted/behavior-rule-4cb20269224f6e88.json\n D 50_Instances/accepted/behavior-rule-4cb9cadcc737ec69.json\n D 50_Instances/accepted/behavior-rule-4d608c0346ef450d.json\n D 50_Instances/accepted/behavior-rule-4dc511d805a5bfb7.json\n D 50_Instances/accepted/behavior-rule-4f7e8321458ab4db.json\n D 50_Instances/accepted/behavior-rule-4ffc238887a3503c.json\n D 50_Instances/accepted/behavior-rule-506b0f9b53efe4e8.json\n D 50_Instances/accepted/behavior-rule-51f2e1afaf4cc5d2.json\n D 50_Instances/accepted/behavior-rule-53fe25566aa668ad.json\n D 50_Instances/accepted/behavior-rule-552222827cbe23f7.json\n D 50_Instances/accepted/behavior-rule-55280a50056e2bbe.json\n D 50_Instances/accepted/behavior-rule-585d1bb612053b63.json\n D 50_Instances/accepted/behavior-rule-5865861ab7070786.json\n D 50_Instances/accepted/behavior-rule-58fda7e5fe88d9a4.json\n D 50_Instances/accepted/behavior-rule-59060f810a976653.json\n D 50_Instances/accepted/behavior-rule-597152ac463227a6.json\n D 50_Instances/accepted/behavior-rule-59bb675d22729912.json\n D 50_Instances/accepted/behavior-rule-5bf64880eb8c04bc.json\n D 50_Instances/accepted/behavior-rule-5d0c43445ae8f4a6.json\n D 50_Instances/accepted/behavior-rule-5de68cae8ce6dd3b.json\n D 50_Instances/accepted/behavior-rule-5e0ac5af0b899827.json\n D 50_Instances/accepted/behavior-rule-5e78fcd997c0afc2.json\n D 50_Instances/accepted/behavior-rule-5fbcef6e7ee95cc5.json\n D 50_Instances/accepted/behavior-rule-60696eb600d8615f.json\n D 50_Instances/accepted/behavior-rule-618f6a85e7d502bc.json\n D 50_Instances/accepted/behavior-rule-627d231c77d4b12c.json\n D 50_Instances/accepted/behavior-rule-6612cadc1458909e.json\n D 50_Instances/accepted/behavior-rule-664a674f81eb3f9e.json\n D 50_Instances/accepted/behavior-rule-6848b1ab5fb28ab6.json\n D 50_Instances/accepted/behavior-rule-698566af8e3bee69.json\n D 50_Instances/accepted/behavior-rule-69e8d47392b6ad09.json\n D 50_Instances/accepted/behavior-rule-6a6dd81655189b01.json\n D 50_Instances/accepted/behavior-rule-6bc9dcb4b0b555d3.json\n D 50_Instances/accepted/behavior-rule-6c036a284626f41a.json\n D 50_Instances/accepted/behavior-rule-6c7b6a96c44ed185.json\n D 50_Instances/accepted/behavior-rule-6d9a8486e7b9a094.json\n D 50_Instances/accepted/behavior-rule-6d9b789045317585.json\n D 50_Instances/accepted/behavior-rule-6df56a93118a083f.json\n D 50_Instances/accepted/behavior-rule-6e86a379809402d8.json\n D 50_Instances/accepted/behavior-rule-6eaa1cd03a47fedd.json\n D 50_Instances/accepted/behavior-rule-6edf041b6730fca6.json\n D 50_Instances/accepted/behavior-rule-700364032ac368ce.json\n D 50_Instances/accepted/behavior-rule-727b2e8588c8ff32.json\n D 50_Instances/accepted/behavior-rule-7348b6be321fcaab.json\n D 50_Instances/accepted/behavior-rule-73663d1461c527bd.json\n D 50_Instances/accepted/behavior-rule-73b1b302b5b2cbb9.json\n D 50_Instances/accepted/behavior-rule-754305e49f628dcc.json\n D 50_Instances/accepted/behavior-rule-758fd74fedc3e0bd.json\n D 50_Instances/accepted/behavior-rule-76c7495512f8689f.json\n D 50_Instances/accepted/behavior-rule-76d42806647e84bf.json\n D 50_Instances/accepted/behavior-rule-7827a0b769513d25.json\n D 50_Instances/accepted/behavior-rule-784c35c7ccb76db2.json\n D 50_Instances/accepted/behavior-rule-78751921656331b2.json\n D 50_Instances/accepted/behavior-rule-790503a2435d66b3.json\n D 50_Instances/accepted/behavior-rule-79abd5c0894d16a9.json\n D 50_Instances/accepted/behavior-rule-7d4b38be040d5e0d.json\n D 50_Instances/accepted/behavior-rule-7e913b50a518bc9b.json\n D 50_Instances/accepted/behavior-rule-7fc6d6551916d572.json\n D 50_Instances/accepted/behavior-rule-802d69e5bcfb025c.json\n D 50_Instances/accepted/behavior-rule-813ebf958bcb9009.json\n D 50_Instances/accepted/behavior-rule-8293bde4217b230c.json\n D 50_Instances/accepted/behavior-rule-83e514bf3d424654.json\n D 50_Instances/accepted/behavior-rule-83e66cb99613ee07.json\n D 50_Instances/accepted/behavior-rule-8454813722ecde8e.json\n D 50_Instances/accepted/behavior-rule-8477b4d1bb37ed0b.json\n D 50_Instances/accepted/behavior-rule-84fc3511f59857ac.json\n D 50_Instances/accepted/behavior-rule-85890922977180d3.json\n D 50_Instances/accepted/behavior-rule-85c44097c34f435d.json\n D 50_Instances/accepted/behavior-rule-86fa0caa0e63588b.json\n D 50_Instances/accepted/behavior-rule-87ec7fe9ecda930f.json\n D 50_Instances/accepted/behavior-rule-883fa50a8a93634c.json\n D 50_Instances/accepted/behavior-rule-887e3a59206c5909.json\n D 50_Instances/accepted/behavior-rule-8882dba77688ae57.json\n D 50_Instances/accepted/behavior-rule-89624dbe05b30afc.json\n D 50_Instances/accepted/behavior-rule-8b5357ea167322cd.json\n D 50_Instances/accepted/behavior-rule-8bbf590f48a7affd.json\n D 50_Instances/accepted/behavior-rule-8c0c486acbdc5b99.json\n D 50_Instances/accepted/behavior-rule-8ca554f3d54b85d7.json\n D 50_Instances/accepted/behavior-rule-8d5f0f45dfbb00a5.json\n D 50_Instances/accepted/behavior-rule-8f338909e544ebaf.json\n D 50_Instances/accepted/behavior-rule-8f5631887fe1aa77.json\n D 50_Instances/accepted/behavior-rule-90f976c12c568dc5.json\n D 50_Instances/accepted/behavior-rule-931d6b6d05b59912.json\n D 50_Instances/accepted/behavior-rule-93460031ba7760ee.json\n D 50_Instances/accepted/behavior-rule-937c1ea5f8dac9a4.json\n D 50_Instances/accepted/behavior-rule-938e4a08b1c369dd.json\n D 50_Instances/accepted/behavior-rule-9438de48a95f03d0.json\n D 50_Instances/accepted/behavior-rule-95a7d9e27f5511f5.json\n D 50_Instances/accepted/behavior-rule-9646de8f1624316d.json\n D 50_Instances/accepted/behavior-rule-965cd3fa5206e5b9.json\n D 50_Instances/accepted/behavior-rule-9684c3cd6f6475ad.json\n D 50_Instances/accepted/behavior-rule-96befe3de3cd0998.json\n D 50_Instances/accepted/behavior-rule-9887d405bd1916cf.json\n D 50_Instances/accepted/behavior-rule-9ae82f062ab7b604.json\n D 50_Instances/accepted/behavior-rule-9af79dac90fc917a.json\n D 50_Instances/accepted/behavior-rule-9d8225b3e1977ecf.json\n D 50_Instances/accepted/behavior-rule-9dcf676d3890babb.json\n D 50_Instances/accepted/behavior-rule-9e67d419e2d7e876.json\n D 50_Instances/accepted/behavior-rule-9f21d937070bc997.json\n D 50_Instances/accepted/behavior-rule-9fc8880d029f92ae.json\n D 50_Instances/accepted/behavior-rule-a07c4a10b9cf9adc.json\n D 50_Instances/accepted/behavior-rule-a28949b2b14fa852.json\n D 50_Instances/accepted/behavior-rule-a36e6286104468f3.json\n D 50_Instances/accepted/behavior-rule-a439ba13c4701c3d.json\n D 50_Instances/accepted/behavior-rule-a47cb64d8790e07a.json\n D 50_Instances/accepted/behavior-rule-a58e2a9e318fff60.json\n D 50_Instances/accepted/behavior-rule-a5cd940732a1eec6.json\n D 50_Instances/accepted/behavior-rule-a6d352814efc75f3.json\n D 50_Instances/accepted/behavior-rule-a7b089bbc77b5ba0.json\n D 50_Instances/accepted/behavior-rule-a7e01861bd2d7993.json\n D 50_Instances/accepted/behavior-rule-aa10f3a65df5cf7c.json\n D 50_Instances/accepted/behavior-rule-ab6c0067c5d5c3d7.json\n D 50_Instances/accepted/behavior-rule-acdf241957ff2e0f.json\n D 50_Instances/accepted/behavior-rule-ad46ef32d34059e9.json\n D 50_Instances/accepted/behavior-rule-ae59886e3e3af314.json\n D 50_Instances/accepted/behavior-rule-aef78ecd60ec4920.json\n D 50_Instances/accepted/behavior-rule-b09e15a038deca29.json\n D 50_Instances/accepted/behavior-rule-b0ff6a24a8c734f0.json\n D 50_Instances/accepted/behavior-rule-b17fd0e7d971cceb.json\n D 50_Instances/accepted/behavior-rule-b307018fe59b5032.json\n D 50_Instances/accepted/behavior-rule-b3c9d45758b53ed7.json\n D 50_Instances/accepted/behavior-rule-b43b1ba7c765bebb.json\n D 50_Instances/accepted/behavior-rule-b44a52fcda44e62a.json\n D 50_Instances/accepted/behavior-rule-b4e4bddd7a0c463f.json\n D 50_Instances/accepted/behavior-rule-b57e187f9ca25377.json\n D 50_Instances/accepted/behavior-rule-b81be464c4a50635.json\n D 50_Instances/accepted/behavior-rule-b8b0c53753702c7c.json\n D 50_Instances/accepted/behavior-rule-b97b2328f6071248.json\n D 50_Instances/accepted/behavior-rule-bb343d17c1a5d70b.json\n D 50_Instances/accepted/behavior-rule-bba0778e37c1dadb.json\n D 50_Instances/accepted/behavior-rule-bce10a575a74765f.json\n D 50_Instances/accepted/behavior-rule-bd6822e3bd86c206.json\n D 50_Instances/accepted/behavior-rule-bef4cafa11343662.json\n D 50_Instances/accepted/behavior-rule-bf59766655207ebc.json\n D 50_Instances/accepted/behavior-rule-c1ad7c4e0066b985.json\n D 50_Instances/accepted/behavior-rule-c1f35400ec88578f.json\n D 50_Instances/accepted/behavior-rule-c5d365c7d8d09fbc.json\n D 50_Instances/accepted/behavior-rule-c5e8716a84f263be.json\n D 50_Instances/accepted/behavior-rule-c6b5504404d81248.json\n D 50_Instances/accepted/behavior-rule-c7d1d6ebdd54dd43.json\n D 50_Instances/accepted/behavior-rule-c8b4a2079d38029f.json\n D 50_Instances/accepted/behavior-rule-c93696a0718bd3b6.json\n D 50_Instances/accepted/behavior-rule-c990dca4aa7f960e.json\n D 50_Instances/accepted/behavior-rule-c9a811d02d4360e4.json\n D 50_Instances/accepted/behavior-rule-ca42903585f7b243.json\n D 50_Instances/accepted/behavior-rule-cc414a91fec4e243.json\n D 50_Instances/accepted/behavior-rule-cdc843041608a78a.json\n D 50_Instances/accepted/behavior-rule-ce010e34dc2e7220.json\n D 50_Instances/accepted/behavior-rule-ce9cbdec8cf9b21c.json\n D 50_Instances/accepted/behavior-rule-cec7268246807edc.json\n D 50_Instances/accepted/behavior-rule-cfa6465dc2a234d5.json\n D 50_Instances/accepted/behavior-rule-cfd9c7a4092a6a38.json\n D 50_Instances/accepted/behavior-rule-d21364a17b9ef307.json\n D 50_Instances/accepted/behavior-rule-d2fa2aa5efa71c3a.json\n D 50_Instances/accepted/behavior-rule-d3e74a190425cea8.json\n D 50_Instances/accepted/behavior-rule-d55011c3f8b7399b.json\n D 50_Instances/accepted/behavior-rule-d5a3d0b5fdf0a4f2.json\n D 50_Instances/accepted/behavior-rule-d5b305de202e451f.json\n D 50_Instances/accepted/behavior-rule-d5c3e04d35c17da8.json\n D 50_Instances/accepted/behavior-rule-d68b522c13cfec9a.json\n D 50_Instances/accepted/behavior-rule-d69c45acc3209ea3.json\n D 50_Instances/accepted/behavior-rule-d6ea9e6479b81546.json\n D 50_Instances/accepted/behavior-rule-d786e32ba9765715.json\n D 50_Instances/accepted/behavior-rule-d8115ac39b3650e8.json\n D 50_Instances/accepted/behavior-rule-d8c05526a1f63464.json\n D 50_Instances/accepted/behavior-rule-d9a63bcaa1a89d36.json\n D 50_Instances/accepted/behavior-rule-da80ee47e291beac.json\n D 50_Instances/accepted/behavior-rule-daa311718b06e1dd.json\n D 50_Instances/accepted/behavior-rule-db787d417a4f1b06.json\n D 50_Instances/accepted/behavior-rule-dc9670ac4e230aab.json\n D 50_Instances/accepted/behavior-rule-dcda45517c6ebc4b.json\n D 50_Instances/accepted/behavior-rule-dcdbecc38dc41999.json\n D 50_Instances/accepted/behavior-rule-df233bc69105b176.json\n D 50_Instances/accepted/behavior-rule-df26cc68cfd91ae3.json\n D 50_Instances/accepted/behavior-rule-e0413bd13f082edf.json\n D 50_Instances/accepted/behavior-rule-e0428ffed345bf5c.json\n D 50_Instances/accepted/behavior-rule-e0b9296487c4944b.json\n D 50_Instances/accepted/behavior-rule-e0e12d17def12542.json\n D 50_Instances/accepted/behavior-rule-e41566adfe519155.json\n D 50_Instances/accepted/behavior-rule-e42dd0c6fcaa2f5c.json\n D 50_Instances/accepted/behavior-rule-e9c0d81f690a21f8.json\n D 50_Instances/accepted/behavior-rule-e9e72c4d32d516e6.json\n D 50_Instances/accepted/behavior-rule-ea81622b79eeb5f0.json\n D 50_Instances/accepted/behavior-rule-ecab43a35d4716f2.json\n D 50_Instances/accepted/behavior-rule-ee223c49c43428e6.json\n D 50_Instances/accepted/behavior-rule-ee5268f9177903c4.json\n D 50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json\n D 50_Instances/accepted/behavior-rule-f1f1f264fc8d2cf3.json\n D 50_Instances/accepted/behavior-rule-f297fa302bb110a8.json\n D 50_Instances/accepted/behavior-rule-f395029f88ce97c0.json\n D 50_Instances/accepted/behavior-rule-f3e58cbfc254e9ee.json\n D 50_Instances/accepted/behavior-rule-f4bce93c7ac32693.json\n D 50_Instances/accepted/behavior-rule-f4dc8f084829a07b.json\n D 50_Instances/accepted/behavior-rule-f5c107fde1877d8c.json\n D 50_Instances/accepted/behavior-rule-f6d7f5d1d01cd4a7.json\n D 50_Instances/accepted/behavior-rule-f7a2b396417e7bc8.json\n D 50_Instances/accepted/behavior-rule-f7d07205f1d84db9.json\n D 50_Instances/accepted/behavior-rule-f982cece61354cd5.json\n D 50_Instances/accepted/behavior-rule-f9dac1967e8339fc.json\n D 50_Instances/accepted/behavior-rule-faf9170e61317573.json\n D 50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json\n D 50_Instances/accepted/behavior-rule-fec6ea45ef8ad1ae.json\n D 50_Instances/accepted/behavior-rule-ff402e89e4f3274b.json\n D 50_Instances/accepted/behavior-rule-ff5e313042176058.json\n M 50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json\n M 60_Operations/public-data-safety/public-data-safety-report.json\n M 60_Operations/public-data-safety/public-data-safety-report.md\n?? .dino/compounding/\n?? .dino/context-packs/pack-20260707-012857-DinoBrain-post-patch-audit-1.json\n?? .dino/context-packs/pack-20260707-012921-DB-01-audit-hybrid-contextua.json\n?? .dino/context-packs/pack-20260707-012921-DinoBrain-installer-release-.json\n?? .dino/evaluations/behavior-golden.json\n?? .dino/gates/gate-20260707-012857-task-20260707-012857-DinoBrain-post-.json\n?? .dino/tasks/task-20260707-012857-DinoBrain-post-patch-audit-1.json\n?? .dino/tasks/task-20260707-012918-DinoBrain-post-patch-audit-1.json\n?? .dino/tasks/task-20260707-012918-Read-only-post-patch-audit-1.json\n?? .dino/traces/task-20260707-012857-DinoBrain-post-patch-audit-1.json\n?? .dino/traces/task-20260707-012918-DinoBrain-post-patch-audit-1.json\n?? .dino/traces/task-20260707-012918-Read-only-post-patch-audit-1.json\n?? 40_Projects/DinoBrain-Install-Release-State.md\n?? 40_Projects/DinoBrain-Project-State.md\n?? 40_Projects/DinoBrain-RAG-Roadmap.md\n?? 50_Instances/candidates/behavior-rule-00816a7debe955f7.json\n?? 50_Instances/candidates/behavior-rule-0105ffe39944fc7e.json\n?? 50_Instances/candidates/behavior-rule-01cda972784bde8e.json\n?? 50_Instances/candidates/behavior-rule-022ac79083b88aac.json\n?? 50_Instances/candidates/behavior-rule-04708363547daa46.json\n?? 50_Instances/candidates/behavior-rule-04b9b6661304781b.json\n?? 50_Instances/candidates/behavior-rule-05b048dba086b592.json\n?? 50_Instances/candidates/behavior-rule-06fab03e79df23a7.json\n?? 50_Instances/candidates/behavior-rule-0827d6651c23da8d.json\n?? 50_Instances/candidates/behavior-rule-08fac9d83de88064.json\n?? 50_Instances/candidates/behavior-rule-0b6117b5a12b8431.json\n?? 50_Instances/candidates/behavior-rule-0b79a9433e34f4a6.json\n?? 50_Instances/candidates/behavior-rule-0d2fb5049213d9b3.json\n?? 50_Instances/candidates/behavior-rule-0d59f60f38900dd5.json\n?? 50_Instances/candidates/behavior-rule-0da01f5e64060b7c.json\n?? 50_Instances/candidates/behavior-rule-0eea232eaf82fd25.json\n?? 50_Instances/candidates/behavior-rule-0f53e59a1f4113ca.json\n?? 50_Instances/candidates/behavior-rule-0f870fd1ba9a36a6.json\n?? 50_Instances/candidates/behavior-rule-11164b1eefd4db3d.json\n?? 50_Instances/candidates/behavior-rule-120041fdb48971e4.json\n?? 50_Instances/candidates/behavior-rule-1239ac71caea3f2e.json\n?? 50_Instances/candidates/behavior-rule-1424948bad8d5817.json\n?? 50_Instances/candidates/behavior-rule-14b2ee6df68bb7bd.json\n?? 50_Instances/candidates/behavior-rule-15949abcda6374b4.json\n?? 50_Instances/candidates/behavior-rule-1610be95ea3ffc7e.json\n?? 50_Instances/candidates/behavior-rule-16391276188fc9bf.json\n?? 50_Instances/candidates/behavior-rule-165ad7722ec76fd9.json\n?? 50_Instances/candidates/behavior-rule-17454c1268460efb.json\n?? 50_Instances/candidates/behavior-rule-1869cd6b89e0ffca.json\n?? 50_Instances/candidates/behavior-rule-1913d6433cdc3acf.json\n?? 50_Instances/candidates/behavior-rule-193cbe1caa903927.json\n?? 50_Instances/candidates/behavior-rule-1aa6a6ffbff10516.json\n?? 50_Instances/candidates/behavior-rule-1bd26ce95a217039.json\n?? 50_Instances/candidates/behavior-rule-1c6547018067a135.json\n?? 50_Instances/candidates/behavior-rule-1d1fa9ab2224a876.json\n?? 50_Instances/candidates/behavior-rule-1d66abda21eeceeb.json\n?? 50_Instances/candidates/behavior-rule-1d674e3e90c774b0.json\n?? 50_Instances/candidates/behavior-rule-20e83729dce15a7e.json\n?? 50_Instances/candidates/behavior-rule-2276c64372f8963e.json\n?? 50_Instances/candidates/behavior-rule-2276d8f9b99a1158.json\n?? 50_Instances/candidates/behavior-rule-22bcb219c29daa41.json\n?? 50_Instances/candidates/behavior-rule-2324cb077f1303cc.json\n?? 50_Instances/candidates/behavior-rule-2372b3cb484475fd.json\n?? 50_Instances/candidates/behavior-rule-23ef36a2cd141680.json\n?? 50_Instances/candidates/behavior-rule-24f6d140812583af.json\n?? 50_Instances/candidates/behavior-rule-2606a808b7ec6309.json\n?? 50_Instances/candidates/behavior-rule-26279e80576aba65.json\n?? 50_Instances/candidates/behavior-rule-26aa2f8a00656911.json\n?? 50_Instances/candidates/behavior-rule-271143209223c587.json\n?? 50_Instances/candidates/behavior-rule-277f0b6309337213.json\n?? 50_Instances/candidates/behavior-rule-27ab2fbcdf5ffbeb.json\n?? 50_Instances/candidates/behavior-rule-2875c63ae3c67f2a.json\n?? 50_Instances/candidates/behavior-rule-2895b4b306bb7d8a.json\n?? 50_Instances/candidates/behavior-rule-28c11b32aa6c400a.json\n?? 50_Instances/candidates/behavior-rule-291581dc23559171.json\n?? 50_Instances/candidates/behavior-rule-295abf1038bd399d.json\n?? 50_Instances/candidates/behavior-rule-296e4f1f89aaf838.json\n?? 50_Instances/candidates/behavior-rule-298e24d77f91d054.json\n?? 50_Instances/candidates/behavior-rule-2a2e9184b17aaf95.json\n?? 50_Instances/candidates/behavior-rule-2a540fdcb4d5c0e0.json\n?? 50_Instances/candidates/behavior-rule-2aa07cac199c12b6.json\n?? 50_Instances/candidates/behavior-rule-2bc2f365baf3346c.json\n?? 50_Instances/candidates/behavior-rule-2c36e0fecd12c14a.json\n?? 50_Instances/candidates/behavior-rule-2d3fe4deaad93c1a.json\n?? 50_Instances/candidates/behavior-rule-2da31daa4ffa0d34.json\n?? 50_Instances/candidates/behavior-rule-2db5207a5400d1c0.json\n?? 50_Instances/candidates/behavior-rule-2dfae4129e092ea3.json\n?? 50_Instances/candidates/behavior-rule-2e470cc8899d6fb1.json\n?? 50_Instances/candidates/behavior-rule-2f764c961261f085.json\n?? 50_Instances/candidates/behavior-rule-2f76941da05fbbc5.json\n?? 50_Instances/candidates/behavior-rule-33705e4a520d31c1.json\n?? 50_Instances/candidates/behavior-rule-354ddeb6e08d90c6.json\n?? 50_Instances/candidates/behavior-rule-38528235d38484cb.json\n?? 50_Instances/candidates/behavior-rule-38ec6724100da29a.json\n?? 50_Instances/candidates/behavior-rule-38fe3b6b17ba30df.json\n?? 50_Instances/candidates/behavior-rule-39996b36f29029ec.json\n?? 50_Instances/candidates/behavior-rule-3aeec5584b731ac8.json\n?? 50_Instances/candidates/behavior-rule-3b383bfd640a64b5.json\n?? 50_Instances/candidates/behavior-rule-3b3e1f0038318ebf.json\n?? 50_Instances/candidates/behavior-rule-3b61f1550b2a8ae2.json\n?? 50_Instances/candidates/behavior-rule-3bac475b985d07c2.json\n?? 50_Instances/candidates/behavior-rule-3bbd12fda925e5be.json\n?? 50_Instances/candidates/behavior-rule-3daafbf8b03f4c4b.json\n?? 50_Instances/candidates/behavior-rule-3e65e91570b322c9.json\n?? 50_Instances/candidates/behavior-rule-3ecdf0c090adadd7.json\n?? 50_Instances/candidates/behavior-rule-3ed97af4a4ce10bb.json\n?? 50_Instances/candidates/behavior-rule-3f8db6319c3c2233.json\n?? 50_Instances/candidates/behavior-rule-3f9c57eeb076e3ec.json\n?? 50_Instances/candidates/behavior-rule-40b6c16d61281d46.json\n?? 50_Instances/candidates/behavior-rule-4177ac0985fccd9b.json\n?? 50_Instances/candidates/behavior-rule-443b23e564f39212.json\n?? 50_Instances/candidates/behavior-rule-4487d7c948cd6ff0.json\n?? 50_Instances/candidates/behavior-rule-44b710f1a7090df7.json\n?? 50_Instances/candidates/behavior-rule-44e727fc70a0e00c.json\n?? 50_Instances/candidates/behavior-rule-4576c59074e79294.json\n?? 50_Instances/candidates/behavior-rule-46c14a7d6baf3667.json\n?? 50_Instances/candidates/behavior-rule-473c0c26c32a7b67.json\n?? 50_Instances/candidates/behavior-rule-4740b23b02f91c27.json\n?? 50_Instances/candidates/behavior-rule-48791aed297a3917.json\n?? 50_Instances/candidates/behavior-rule-49540fb326024225.json\n?? 50_Instances/candidates/behavior-rule-497915ff5461114f.json\n?? 50_Instances/candidates/behavior-rule-4cb20269224f6e88.json\n?? 50_Instances/candidates/behavior-rule-4cb9cadcc737ec69.json\n?? 50_Instances/candidates/behavior-rule-4d608c0346ef450d.json\n?? 50_Instances/candidates/behavior-rule-4dc511d805a5bfb7.json\n?? 50_Instances/candidates/behavior-rule-4f7e8321458ab4db.json\n?? 50_Instances/candidates/behavior-rule-4ffc238887a3503c.json\n?? 50_Instances/candidates/behavior-rule-506b0f9b53efe4e8.json\n?? 50_Instances/candidates/behavior-rule-51f2e1afaf4cc5d2.json\n?? 50_Instances/candidates/behavior-rule-53fe25566aa668ad.json\n?? 50_Instances/candidates/behavior-rule-552222827cbe23f7.json\n?? 50_Instances/candidates/behavior-rule-55280a50056e2bbe.json\n?? 50_Instances/candidates/behavior-rule-585d1bb612053b63.json\n?? 50_Instances/candidates/behavior-rule-5865861ab7070786.json\n?? 50_Instances/candidates/behavior-rule-58fda7e5fe88d9a4.json\n?? 50_Instances/candidates/behavior-rule-59060f810a976653.json\n?? 50_Instances/candidates/behavior-rule-597152ac463227a6.json\n?? 50_Instances/candidates/behavior-rule-59bb675d22729912.json\n?? 50_Instances/candidates/behavior-rule-5bf64880eb8c04bc.json\n?? 50_Instances/candidates/behavior-rule-5d0c43445ae8f4a6.json\n?? 50_Instances/candidates/behavior-rule-5de68cae8ce6dd3b.json\n?? 50_Instances/candidates/behavior-rule-5e0ac5af0b899827.json\n?? 50_Instances/candidates/behavior-rule-5e78fcd997c0afc2.json\n?? 50_Instances/candidates/behavior-rule-5fbcef6e7ee95cc5.json\n?? 50_Instances/candidates/behavior-rule-60696eb600d8615f.json\n?? 50_Instances/candidates/behavior-rule-618f6a85e7d502bc.json\n?? 50_Instances/candidates/behavior-rule-627d231c77d4b12c.json\n?? 50_Instances/candidates/behavior-rule-6612cadc1458909e.json\n?? 50_Instances/candidates/behavior-rule-664a674f81eb3f9e.json\n?? 50_Instances/candidates/behavior-rule-6848b1ab5fb28ab6.json\n?? 50_Instances/candidates/behavior-rule-698566af8e3bee69.json\n?? 50_Instances/candidates/behavior-rule-69e8d47392b6ad09.json\n?? 50_Instances/candidates/behavior-rule-6a6dd81655189b01.json\n?? 50_Instances/candidates/behavior-rule-6bc9dcb4b0b555d3.json\n?? 50_Instances/candidates/behavior-rule-6c036a284626f41a.json\n?? 50_Instances/candidates/behavior-rule-6c7b6a96c44ed185.json\n?? 50_Instances/candidates/behavior-rule-6d9a8486e7b9a094.json\n?? 50_Instances/candidates/behavior-rule-6d9b789045317585.json\n?? 50_Instances/candidates/behavior-rule-6df56a93118a083f.json\n?? 50_Instances/candidates/behavior-rule-6e86a379809402d8.json\n?? 50_Instances/candidates/behavior-rule-6eaa1cd03a47fedd.json\n?? 50_Instances/candidates/behavior-rule-6edf041b6730fca6.json\n?? 50_Instances/candidates/behavior-rule-700364032ac368ce.json\n?? 50_Instances/candidates/behavior-rule-727b2e8588c8ff32.json\n?? 50_Instances/candidates/behavior-rule-7348b6be321fcaab.json\n?? 50_Instances/candidates/behavior-rule-73663d1461c527bd.json\n?? 50_Instances/candidates/behavior-rule-73b1b302b5b2cbb9.json\n?? 50_Instances/candidates/behavior-rule-754305e49f628dcc.json\n?? 50_Instances/candidates/behavior-rule-758fd74fedc3e0bd.json\n?? 50_Instances/candidates/behavior-rule-76c7495512f8689f.json\n?? 50_Instances/candidates/behavior-rule-76d42806647e84bf.json\n?? 50_Instances/candidates/behavior-rule-7827a0b769513d25.json\n?? 50_Instances/candidates/behavior-rule-784c35c7ccb76db2.json\n?? 50_Instances/candidates/behavior-rule-78751921656331b2.json\n?? 50_Instances/candidates/behavior-rule-790503a2435d66b3.json\n?? 50_Instances/candidates/behavior-rule-79abd5c0894d16a9.json\n?? 50_Instances/candidates/behavior-rule-7d4b38be040d5e0d.json\n?? 50_Instances/candidates/behavior-rule-7e913b50a518bc9b.json\n?? 50_Instances/candidates/behavior-rule-7fc6d6551916d572.json\n?? 50_Instances/candidates/behavior-rule-802d69e5bcfb025c.json\n?? 50_Instances/candidates/behavior-rule-813ebf958bcb9009.json\n?? 50_Instances/candidates/behavior-rule-8293bde4217b230c.json\n?? 50_Instances/candidates/behavior-rule-83e514bf3d424654.json\n?? 50_Instances/candidates/behavior-rule-83e66cb99613ee07.json\n?? 50_Instances/candidates/behavior-rule-8454813722ecde8e.json\n?? 50_Instances/candidates/behavior-rule-8477b4d1bb37ed0b.json\n?? 50_Instances/candidates/behavior-rule-84fc3511f59857ac.json\n?? 50_Instances/candidates/behavior-rule-85890922977180d3.json\n?? 50_Instances/candidates/behavior-rule-85c44097c34f435d.json\n?? 50_Instances/candidates/behavior-rule-86fa0caa0e63588b.json\n?? 50_Instances/candidates/behavior-rule-87ec7fe9ecda930f.json\n?? 50_Instances/candidates/behavior-rule-883fa50a8a93634c.json\n?? 50_Instances/candidates/behavior-rule-887e3a59206c5909.json\n?? 50_Instances/candidates/behavior-rule-8882dba77688ae57.json\n?? 50_Instances/candidates/behavior-rule-89624dbe05b30afc.json\n?? 50_Instances/candidates/behavior-rule-8b5357ea167322cd.json\n?? 50_Instances/candidates/behavior-rule-8bbf590f48a7affd.json\n?? 50_Instances/candidates/behavior-rule-8c0c486acbdc5b99.json\n?? 50_Instances/candidates/behavior-rule-8ca554f3d54b85d7.json\n?? 50_Instances/candidates/behavior-rule-8d5f0f45dfbb00a5.json\n?? 50_Instances/candidates/behavior-rule-8f338909e544ebaf.json\n?? 50_Instances/candidates/behavior-rule-8f5631887fe1aa77.json\n?? 50_Instances/candidates/behavior-rule-90f976c12c568dc5.json\n?? 50_Instances/candidates/behavior-rule-931d6b6d05b59912.json\n?? 50_Instances/candidates/behavior-rule-93460031ba7760ee.json\n?? 50_Instances/candidates/behavior-rule-937c1ea5f8dac9a4.json\n?? 50_Instances/candidates/behavior-rule-938e4a08b1c369dd.json\n?? 50_Instances/candidates/behavior-rule-9438de48a95f03d0.json\n?? 50_Instances/candidates/behavior-rule-95a7d9e27f5511f5.json\n?? 50_Instances/candidates/behavior-rule-9646de8f1624316d.json\n?? 50_Instances/candidates/behavior-rule-965cd3fa5206e5b9.json\n?? 50_Instances/candidates/behavior-rule-9684c3cd6f6475ad.json\n?? 50_Instances/candidates/behavior-rule-96befe3de3cd0998.json\n?? 50_Instances/candidates/behavior-rule-9887d405bd1916cf.json\n?? 50_Instances/candidates/behavior-rule-9ae82f062ab7b604.json\n?? 50_Instances/candidates/behavior-rule-9af79dac90fc917a.json\n?? 50_Instances/candidates/behavior-rule-9d8225b3e1977ecf.json\n?? 50_Instances/candidates/behavior-rule-9dcf676d3890babb.json\n?? 50_Instances/candidates/behavior-rule-9e67d419e2d7e876.json\n?? 50_Instances/candidates/behavior-rule-9f21d937070bc997.json\n?? 50_Instances/candidates/behavior-rule-9fc8880d029f92ae.json\n?? 50_Instances/candidates/behavior-rule-a07c4a10b9cf9adc.json\n?? 50_Instances/candidates/behavior-rule-a28949b2b14fa852.json\n?? 50_Instances/candidates/behavior-rule-a36e6286104468f3.json\n?? 50_Instances/candidates/behavior-rule-a439ba13c4701c3d.json\n?? 50_Instances/candidates/behavior-rule-a47cb64d8790e07a.json\n?? 50_Instances/candidates/behavior-rule-a58e2a9e318fff60.json\n?? 50_Instances/candidates/behavior-rule-a5cd940732a1eec6.json\n?? 50_Instances/candidates/behavior-rule-a6d352814efc75f3.json\n?? 50_Instances/candidates/behavior-rule-a7b089bbc77b5ba0.json\n?? 50_Instances/candidates/behavior-rule-a7e01861bd2d7993.json\n?? 50_Instances/candidates/behavior-rule-aa10f3a65df5cf7c.json\n?? 50_Instances/candidates/behavior-rule-ab6c0067c5d5c3d7.json\n?? 50_Instances/candidates/behavior-rule-acdf241957ff2e0f.json\n?? 50_Instances/candidates/behavior-rule-ad46ef32d34059e9.json\n?? 50_Instances/candidates/behavior-rule-ae59886e3e3af314.json\n?? 50_Instances/candidates/behavior-rule-aef78ecd60ec4920.json\n?? 50_Instances/candidates/behavior-rule-b09e15a038deca29.json\n?? 50_Instances/candidates/behavior-rule-b0ff6a24a8c734f0.json\n?? 50_Instances/candidates/behavior-rule-b17fd0e7d971cceb.json\n?? 50_Instances/candidates/behavior-rule-b307018fe59b5032.json\n?? 50_Instances/candidates/behavior-rule-b3c9d45758b53ed7.json\n?? 50_Instances/candidates/behavior-rule-b43b1ba7c765bebb.json\n?? 50_Instances/candidates/behavior-rule-b44a52fcda44e62a.json\n?? 50_Instances/candidates/behavior-rule-b4e4bddd7a0c463f.json\n?? 50_Instances/candidates/behavior-rule-b57e187f9ca25377.json\n?? 50_Instances/candidates/behavior-rule-b81be464c4a50635.json\n?? 50_Instances/candidates/behavior-rule-b8b0c53753702c7c.json\n?? 50_Instances/candidates/behavior-rule-b97b2328f6071248.json\n?? 50_Instances/candidates/behavior-rule-bb343d17c1a5d70b.json\n?? 50_Instances/candidates/behavior-rule-bba0778e37c1dadb.json\n?? 50_Instances/candidates/behavior-rule-bce10a575a74765f.json\n?? 50_Instances/candidates/behavior-rule-bd6822e3bd86c206.json\n?? 50_Instances/candidates/behavior-rule-bef4cafa11343662.json\n?? 50_Instances/candidates/behavior-rule-bf59766655207ebc.json\n?? 50_Instances/candidates/behavior-rule-c1ad7c4e0066b985.json\n?? 50_Instances/candidates/behavior-rule-c1f35400ec88578f.json\n?? 50_Instances/candidates/behavior-rule-c5d365c7d8d09fbc.json\n?? 50_Instances/candidates/behavior-rule-c5e8716a84f263be.json\n?? 50_Instances/candidates/behavior-rule-c6b5504404d81248.json\n?? 50_Instances/candidates/behavior-rule-c7d1d6ebdd54dd43.json\n?? 50_Instances/candidates/behavior-rule-c8b4a2079d38029f.json\n?? 50_Instances/candidates/behavior-rule-c93696a0718bd3b6.json\n?? 50_Instances/candidates/behavior-rule-c990dca4aa7f960e.json\n?? 50_Instances/candidates/behavior-rule-c9a811d02d4360e4.json\n?? 50_Instances/candidates/behavior-rule-ca42903585f7b243.json\n?? 50_Instances/candidates/behavior-rule-cc414a91fec4e243.json\n?? 50_Instances/candidates/behavior-rule-cdc843041608a78a.json\n?? 50_Instances/candidates/behavior-rule-ce010e34dc2e7220.json\n?? 50_Instances/candidates/behavior-rule-ce9cbdec8cf9b21c.json\n?? 50_Instances/candidates/behavior-rule-cec7268246807edc.json\n?? 50_Instances/candidates/behavior-rule-cfa6465dc2a234d5.json\n?? 50_Instances/candidates/behavior-rule-cfd9c7a4092a6a38.json\n?? 50_Instances/candidates/behavior-rule-d21364a17b9ef307.json\n?? 50_Instances/candidates/behavior-rule-d2fa2aa5efa71c3a.json\n?? 50_Instances/candidates/behavior-rule-d3e74a190425cea8.json\n?? 50_Instances/candidates/behavior-rule-d55011c3f8b7399b.json\n?? 50_Instances/candidates/behavior-rule-d5a3d0b5fdf0a4f2.json\n?? 50_Instances/candidates/behavior-rule-d5b305de202e451f.json\n?? 50_Instances/candidates/behavior-rule-d5c3e04d35c17da8.json\n?? 50_Instances/candidates/behavior-rule-d68b522c13cfec9a.json\n?? 50_Instances/candidates/behavior-rule-d69c45acc3209ea3.json\n?? 50_Instances/candidates/behavior-rule-d6ea9e6479b81546.json\n?? 50_Instances/candidates/behavior-rule-d786e32ba9765715.json\n?? 50_Instances/candidates/behavior-rule-d8115ac39b3650e8.json\n?? 50_Instances/candidates/behavior-rule-d8c05526a1f63464.json\n?? 50_Instances/candidates/behavior-rule-d9a63bcaa1a89d36.json\n?? 50_Instances/candidates/behavior-rule-da80ee47e291beac.json\n?? 50_Instances/candidates/behavior-rule-daa311718b06e1dd.json\n?? 50_Instances/candidates/behavior-rule-db787d417a4f1b06.json\n?? 50_Instances/candidates/behavior-rule-dc9670ac4e230aab.json\n?? 50_Instances/candidates/behavior-rule-dcda45517c6ebc4b.json\n?? 50_Instances/candidates/behavior-rule-dcdbecc38dc41999.json\n?? 50_Instances/candidates/behavior-rule-df233bc69105b176.json\n?? 50_Instances/candidates/behavior-rule-df26cc68cfd91ae3.json\n?? 50_Instances/candidates/behavior-rule-e0413bd13f082edf.json\n?? 50_Instances/candidates/behavior-rule-e0428ffed345bf5c.json\n?? 50_Instances/candidates/behavior-rule-e0b9296487c4944b.json\n?? 50_Instances/candidates/behavior-rule-e0e12d17def12542.json\n?? 50_Instances/candidates/behavior-rule-e41566adfe519155.json\n?? 50_Instances/candidates/behavior-rule-e42dd0c6fcaa2f5c.json\n?? 50_Instances/candidates/behavior-rule-e9c0d81f690a21f8.json\n?? 50_Instances/candidates/behavior-rule-e9e72c4d32d516e6.json\n?? 50_Instances/candidates/behavior-rule-ea81622b79eeb5f0.json\n?? 50_Instances/candidates/behavior-rule-ecab43a35d4716f2.json\n?? 50_Instances/candidates/behavior-rule-ee223c49c43428e6.json\n?? 50_Instances/candidates/behavior-rule-ee5268f9177903c4.json\n?? 50_Instances/candidates/behavior-rule-efe21718f8ad5f5f.json\n?? 50_Instances/candidates/behavior-rule-f1f1f264fc8d2cf3.json\n?? 50_Instances/candidates/behavior-rule-f297fa302bb110a8.json\n?? 50_Instances/candidates/behavior-rule-f395029f88ce97c0.json\n?? 50_Instances/candidates/behavior-rule-f3e58cbfc254e9ee.json\n?? 50_Instances/candidates/behavior-rule-f4bce93c7ac32693.json\n?? 50_Instances/candidates/behavior-rule-f4dc8f084829a07b.json\n?? 50_Instances/candidates/behavior-rule-f5c107fde1877d8c.json\n?? 50_Instances/candidates/behavior-rule-f6d7f5d1d01cd4a7.json\n?? 50_Instances/candidates/behavior-rule-f7a2b396417e7bc8.json\n?? 50_Instances/candidates/behavior-rule-f7d07205f1d84db9.json\n?? 50_Instances/candidates/behavior-rule-f982cece61354cd5.json\n?? 50_Instances/candidates/behavior-rule-f9dac1967e8339fc.json\n?? 50_Instances/candidates/behavior-rule-faf9170e61317573.json\n?? 50_Instances/candidates/behavior-rule-fcf6818bc60130f5.json\n?? 50_Instances/candidates/behavior-rule-fec6ea45ef8ad1ae.json\n?? 50_Instances/candidates/behavior-rule-ff402e89e4f3274b.json\n?? 50_Instances/candidates/behavior-rule-ff5e313042176058.json\n?? 70_Error_Book/DinoBrain-Hook-And-Install-Prevention.md\n?? 70_Error_Book/DinoBrain-Public-Data-Safety.md\n?? 70_Error_Book/DinoBrain-Recurring-Failures.md\n?? 70_Error_Book/DinoBrain-Retrieval-Noise-Prevention.md\n?? 80_Review_Queue/promotion/behavior-rule-00816a7debe955f7.json\n?? 80_Review_Queue/promotion/behavior-rule-0105ffe39944fc7e.json\n?? 80_Review_Queue/promotion/behavior-rule-01cda972784bde8e.json\n?? 80_Review_Queue/promotion/behavior-rule-022ac79083b88aac.json\n?? 80_Review_Queue/promotion/behavior-rule-04708363547daa46.json\n?? 80_Review_Queue/promotion/behavior-rule-04b9b6661304781b.json\n?? 80_Review_Queue/promotion/behavior-rule-05b048dba086b592.json\n?? 80_Review_Queue/promotion/behavior-rule-06fab03e79df23a7.json\n?? 80_Review_Queue/promotion/behavior-rule-0827d6651c23da8d.json\n?? 80_Review_Queue/promotion/behavior-rule-08fac9d83de88064.json\n?? 80_Review_Queue/promotion/behavior-rule-0b6117b5a12b8431.json\n?? 80_Review_Queue/promotion/behavior-rule-0b79a9433e34f4a6.json\n?? 80_Review_Queue/promotion/behavior-rule-0d2fb5049213d9b3.json\n?? 80_Review_Queue/promotion/behavior-rule-0d59f60f38900dd5.json\n?? 80_Review_Queue/promotion/behavior-rule-0da01f5e64060b7c.json\n?? 80_Review_Queue/promotion/behavior-rule-0eea232eaf82fd25.json\n?? 80_Review_Queue/promotion/behavior-rule-0f53e59a1f4113ca.json\n?? 80_Review_Queue/promotion/behavior-rule-0f870fd1ba9a36a6.json\n?? 80_Review_Queue/promotion/behavior-rule-11164b1eefd4db3d.json\n?? 80_Review_Queue/promotion/behavior-rule-120041fdb48971e4.json\n?? 80_Review_Queue/promotion/behavior-rule-1239ac71caea3f2e.json\n?? 80_Review_Queue/promotion/behavior-rule-1424948bad8d5817.json\n?? 80_Review_Queue/promotion/behavior-rule-14b2ee6df68bb7bd.json\n?? 80_Review_Queue/promotion/behavior-rule-15949abcda6374b4.json\n?? 80_Review_Queue/promotion/behavior-rule-1610be95ea3ffc7e.json\n?? 80_Review_Queue/promotion/behavior-rule-16391276188fc9bf.json\n?? 80_Review_Queue/promotion/behavior-rule-165ad7722ec76fd9.json\n?? 80_Review_Queue/promotion/behavior-rule-17454c1268460efb.json\n?? 80_Review_Queue/promotion/behavior-rule-1869cd6b89e0ffca.json\n?? 80_Review_Queue/promotion/behavior-rule-1913d6433cdc3acf.json\n?? 80_Review_Queue/promotion/behavior-rule-193cbe1caa903927.json\n?? 80_Review_Queue/promotion/behavior-rule-1aa6a6ffbff10516.json\n?? 80_Review_Queue/promotion/behavior-rule-1bd26ce95a217039.json\n?? 80_Review_Queue/promotion/behavior-rule-1c6547018067a135.json\n?? 80_Review_Queue/promotion/behavior-rule-1d1fa9ab2224a876.json\n?? 80_Review_Queue/promotion/behavior-rule-1d66abda21eeceeb.json\n?? 80_Review_Queue/promotion/behavior-rule-1d674e3e90c774b0.json\n?? 80_Review_Queue/promotion/behavior-rule-20e83729dce15a7e.json\n?? 80_Review_Queue/promotion/behavior-rule-2276c64372f8963e.json\n?? 80_Review_Queue/promotion/behavior-rule-2276d8f9b99a1158.json\n?? 80_Review_Queue/promotion/behavior-rule-22bcb219c29daa41.json\n?? 80_Review_Queue/promotion/behavior-rule-2324cb077f1303cc.json\n?? 80_Review_Queue/promotion/behavior-rule-2372b3cb484475fd.json\n?? 80_Review_Queue/promotion/behavior-rule-23ef36a2cd141680.json\n?? 80_Review_Queue/promotion/behavior-rule-24f6d140812583af.json\n?? 80_Review_Queue/promotion/behavior-rule-2606a808b7ec6309.json\n?? 80_Review_Queue/promotion/behavior-rule-26279e80576aba65.json\n?? 80_Review_Queue/promotion/behavior-rule-26aa2f8a00656911.json\n?? 80_Review_Queue/promotion/behavior-rule-271143209223c587.json\n?? 80_Review_Queue/promotion/behavior-rule-277f0b6309337213.json\n?? 80_Review_Queue/promotion/behavior-rule-27ab2fbcdf5ffbeb.json\n?? 80_Review_Queue/promotion/behavior-rule-2875c63ae3c67f2a.json\n?? 80_Review_Queue/promotion/behavior-rule-2895b4b306bb7d8a.json\n?? 80_Review_Queue/promotion/behavior-rule-28c11b32aa6c400a.json\n?? 80_Review_Queue/promotion/behavior-rule-291581dc23559171.json\n?? 80_Review_Queue/promotion/behavior-rule-295abf1038bd399d.json\n?? 80_Review_Queue/promotion/behavior-rule-296e4f1f89aaf838.json\n?? 80_Review_Queue/promotion/behavior-rule-298e24d77f91d054.json\n?? 80_Review_Queue/promotion/behavior-rule-2a2e9184b17aaf95.json\n?? 80_Review_Queue/promotion/behavior-rule-2a540fdcb4d5c0e0.json\n?? 80_Review_Queue/promotion/behavior-rule-2aa07cac199c12b6.json\n?? 80_Review_Queue/promotion/behavior-rule-2bc2f365baf3346c.json\n?? 80_Review_Queue/promotion/behavior-rule-2c36e0fecd12c14a.json\n?? 80_Review_Queue/promotion/behavior-rule-2d3fe4deaad93c1a.json\n?? 80_Review_Queue/promotion/behavior-rule-2da31daa4ffa0d34.json\n?? 80_Review_Queue/promotion/behavior-rule-2db5207a5400d1c0.json\n?? 80_Review_Queue/promotion/behavior-rule-2dfae4129e092ea3.json\n?? 80_Review_Queue/promotion/behavior-rule-2e470cc8899d6fb1.json\n?? 80_Review_Queue/promotion/behavior-rule-2f764c961261f085.json\n?? 80_Review_Queue/promotion/behavior-rule-2f76941da05fbbc5.json\n?? 80_Review_Queue/promotion/behavior-rule-33705e4a520d31c1.json\n?? 80_Review_Queue/promotion/behavior-rule-354ddeb6e08d90c6.json\n?? 80_Review_Queue/promotion/behavior-rule-38528235d38484cb.json\n?? 80_Review_Queue/promotion/behavior-rule-38ec6724100da29a.json\n?? 80_Review_Queue/promotion/behavior-rule-38fe3b6b17ba30df.json\n?? 80_Review_Queue/promotion/behavior-rule-39996b36f29029ec.json\n?? 80_Review_Queue/promotion/behavior-rule-3aeec5584b731ac8.json\n?? 80_Review_Queue/promotion/behavior-rule-3b383bfd640a64b5.json\n?? 80_Review_Queue/promotion/behavior-rule-3b3e1f0038318ebf.json\n?? 80_Review_Queue/promotion/behavior-rule-3b61f1550b2a8ae2.json\n?? 80_Review_Queue/promotion/behavior-rule-3bac475b985d07c2.json\n?? 80_Review_Queue/promotion/behavior-rule-3bbd12fda925e5be.json\n?? 80_Review_Queue/promotion/behavior-rule-3daafbf8b03f4c4b.json\n?? 80_Review_Queue/promotion/behavior-rule-3e65e91570b322c9.json\n?? 80_Review_Queue/promotion/behavior-rule-3ecdf0c090adadd7.json\n?? 80_Review_Queue/promotion/behavior-rule-3ed97af4a4ce10bb.json\n?? 80_Review_Queue/promotion/behavior-rule-3f8db6319c3c2233.json\n?? 80_Review_Queue/promotion/behavior-rule-3f9c57eeb076e3ec.json\n?? 80_Review_Queue/promotion/behavior-rule-40b6c16d61281d46.json\n?? 80_Review_Queue/promotion/behavior-rule-4177ac0985fccd9b.json\n?? 80_Review_Queue/promotion/behavior-rule-443b23e564f39212.json\n?? 80_Review_Queue/promotion/behavior-rule-4487d7c948cd6ff0.json\n?? 80_Review_Queue/promotion/behavior-rule-44b710f1a7090df7.json\n?? 80_Review_Queue/promotion/behavior-rule-44e727fc70a0e00c.json\n?? 80_Review_Queue/promotion/behavior-rule-4576c59074e79294.json\n?? 80_Review_Queue/promotion/behavior-rule-46c14a7d6baf3667.json\n?? 80_Review_Queue/promotion/behavior-rule-473c0c26c32a7b67.json\n?? 80_Review_Queue/promotion/behavior-rule-4740b23b02f91c27.json\n?? 80_Review_Queue/promotion/behavior-rule-48791aed297a3917.json\n?? 80_Review_Queue/promotion/behavior-rule-49540fb326024225.json\n?? 80_Review_Queue/promotion/behavior-rule-497915ff5461114f.json\n?? 80_Review_Queue/promotion/behavior-rule-4cb20269224f6e88.json\n?? 80_Review_Queue/promotion/behavior-rule-4cb9cadcc737ec69.json\n?? 80_Review_Queue/promotion/behavior-rule-4d608c0346ef450d.json\n?? 80_Review_Queue/promotion/behavior-rule-4dc511d805a5bfb7.json\n?? 80_Review_Queue/promotion/behavior-rule-4f7e8321458ab4db.json\n?? 80_Review_Queue/promotion/behavior-rule-4ffc238887a3503c.json\n?? 80_Review_Queue/promotion/behavior-rule-506b0f9b53efe4e8.json\n?? 80_Review_Queue/promotion/behavior-rule-51f2e1afaf4cc5d2.json\n?? 80_Review_Queue/promotion/behavior-rule-53fe25566aa668ad.json\n?? 80_Review_Queue/promotion/behavior-rule-552222827cbe23f7.json\n?? 80_Review_Queue/promotion/behavior-rule-55280a50056e2bbe.json\n?? 80_Review_Queue/promotion/behavior-rule-585d1bb612053b63.json\n?? 80_Review_Queue/promotion/behavior-rule-5865861ab7070786.json\n?? 80_Review_Queue/promotion/behavior-rule-58fda7e5fe88d9a4.json\n?? 80_Review_Queue/promotion/behavior-rule-59060f810a976653.json\n?? 80_Review_Queue/promotion/behavior-rule-597152ac463227a6.json\n?? 80_Review_Queue/promotion/behavior-rule-59bb675d22729912.json\n?? 80_Review_Queue/promotion/behavior-rule-5bf64880eb8c04bc.json\n?? 80_Review_Queue/promotion/behavior-rule-5d0c43445ae8f4a6.json\n?? 80_Review_Queue/promotion/behavior-rule-5de68cae8ce6dd3b.json\n?? 80_Review_Queue/promotion/behavior-rule-5e0ac5af0b899827.json\n?? 80_Review_Queue/promotion/behavior-rule-5e78fcd997c0afc2.json\n?? 80_Review_Queue/promotion/behavior-rule-5fbcef6e7ee95cc5.json\n?? 80_Review_Queue/promotion/behavior-rule-60696eb600d8615f.json\n?? 80_Review_Queue/promotion/behavior-rule-618f6a85e7d502bc.json\n?? 80_Review_Queue/promotion/behavior-rule-627d231c77d4b12c.json\n?? 80_Review_Queue/promotion/behavior-rule-6612cadc1458909e.json\n?? 80_Review_Queue/promotion/behavior-rule-664a674f81eb3f9e.json\n?? 80_Review_Queue/promotion/behavior-rule-6848b1ab5fb28ab6.json\n?? 80_Review_Queue/promotion/behavior-rule-698566af8e3bee69.json\n?? 80_Review_Queue/promotion/behavior-rule-69e8d47392b6ad09.json\n?? 80_Review_Queue/promotion/behavior-rule-6a6dd81655189b01.json\n?? 80_Review_Queue/promotion/behavior-rule-6bc9dcb4b0b555d3.json\n?? 80_Review_Queue/promotion/behavior-rule-6c036a284626f41a.json\n?? 80_Review_Queue/promotion/behavior-rule-6c7b6a96c44ed185.json\n?? 80_Review_Queue/promotion/behavior-rule-6d9a8486e7b9a094.json\n?? 80_Review_Queue/promotion/behavior-rule-6d9b789045317585.json\n?? 80_Review_Queue/promotion/behavior-rule-6df56a93118a083f.json\n?? 80_Review_Queue/promotion/behavior-rule-6e86a379809402d8.json\n?? 80_Review_Queue/promotion/behavior-rule-6eaa1cd03a47fedd.json\n?? 80_Review_Queue/promotion/behavior-rule-6edf041b6730fca6.json\n?? 80_Review_Queue/promotion/behavior-rule-700364032ac368ce.json\n?? 80_Review_Queue/promotion/behavior-rule-727b2e8588c8ff32.json\n?? 80_Review_Queue/promotion/behavior-rule-7348b6be321fcaab.json\n?? 80_Review_Queue/promotion/behavior-rule-73663d1461c527bd.json\n?? 80_Review_Queue/promotion/behavior-rule-73b1b302b5b2cbb9.json\n?? 80_Review_Queue/promotion/behavior-rule-754305e49f628dcc.json\n?? 80_Review_Queue/promotion/behavior-rule-758fd74fedc3e0bd.json\n?? 80_Review_Queue/promotion/behavior-rule-76c7495512f8689f.json\n?? 80_Review_Queue/promotion/behavior-rule-76d42806647e84bf.json\n?? 80_Review_Queue/promotion/behavior-rule-7827a0b769513d25.json\n?? 80_Review_Queue/promotion/behavior-rule-784c35c7ccb76db2.json\n?? 80_Review_Queue/promotion/behavior-rule-78751921656331b2.json\n?? 80_Review_Queue/promotion/behavior-rule-790503a2435d66b3.json\n?? 80_Review_Queue/promotion/behavior-rule-79abd5c0894d16a9.json\n?? 80_Review_Queue/promotion/behavior-rule-7d4b38be040d5e0d.json\n?? 80_Review_Queue/promotion/behavior-rule-7e913b50a518bc9b.json\n?? 80_Review_Queue/promotion/behavior-rule-7fc6d6551916d572.json\n?? 80_Review_Queue/promotion/behavior-rule-802d69e5bcfb025c.json\n?? 80_Review_Queue/promotion/behavior-rule-813ebf958bcb9009.json\n?? 80_Review_Queue/promotion/behavior-rule-8293bde4217b230c.json\n?? 80_Review_Queue/promotion/behavior-rule-83e514bf3d424654.json\n?? 80_Review_Queue/promotion/behavior-rule-83e66cb99613ee07.json\n?? 80_Review_Queue/promotion/behavior-rule-8454813722ecde8e.json\n?? 80_Review_Queue/promotion/behavior-rule-8477b4d1bb37ed0b.json\n?? 80_Review_Queue/promotion/behavior-rule-84fc3511f59857ac.json\n?? 80_Review_Queue/promotion/behavior-rule-85890922977180d3.json\n?? 80_Review_Queue/promotion/behavior-rule-85c44097c34f435d.json\n?? 80_Review_Queue/promotion/behavior-rule-86fa0caa0e63588b.json\n?? 80_Review_Queue/promotion/behavior-rule-87ec7fe9ecda930f.json\n?? 80_Review_Queue/promotion/behavior-rule-883fa50a8a93634c.json\n?? 80_Review_Queue/promotion/behavior-rule-887e3a59206c5909.json\n?? 80_Review_Queue/promotion/behavior-rule-8882dba77688ae57.json\n?? 80_Review_Queue/promotion/behavior-rule-89624dbe05b30afc.json\n?? 80_Review_Queue/promotion/behavior-rule-8b5357ea167322cd.json\n?? 80_Review_Queue/promotion/behavior-rule-8bbf590f48a7affd.json\n?? 80_Review_Queue/promotion/behavior-rule-8c0c486acbdc5b99.json\n?? 80_Review_Queue/promotion/behavior-rule-8ca554f3d54b85d7.json\n?? 80_Review_Queue/promotion/behavior-rule-8d5f0f45dfbb00a5.json\n?? 80_Review_Queue/promotion/behavior-rule-8f338909e544ebaf.json\n?? 80_Review_Queue/promotion/behavior-rule-8f5631887fe1aa77.json\n?? 80_Review_Queue/promotion/behavior-rule-90f976c12c568dc5.json\n?? 80_Review_Queue/promotion/behavior-rule-931d6b6d05b59912.json\n?? 80_Review_Queue/promotion/behavior-rule-93460031ba7760ee.json\n?? 80_Review_Queue/promotion/behavior-rule-937c1ea5f8dac9a4.json\n?? 80_Review_Queue/promotion/behavior-rule-938e4a08b1c369dd.json\n?? 80_Review_Queue/promotion/behavior-rule-9438de48a95f03d0.json\n?? 80_Review_Queue/promotion/behavior-rule-95a7d9e27f5511f5.json\n?? 80_Review_Queue/promotion/behavior-rule-9646de8f1624316d.json\n?? 80_Review_Queue/promotion/behavior-rule-965cd3fa5206e5b9.json\n?? 80_Review_Queue/promotion/behavior-rule-9684c3cd6f6475ad.json\n?? 80_Review_Queue/promotion/behavior-rule-96befe3de3cd0998.json\n?? 80_Review_Queue/promotion/behavior-rule-9887d405bd1916cf.json\n?? 80_Review_Queue/promotion/behavior-rule-9ae82f062ab7b604.json\n?? 80_Review_Queue/promotion/behavior-rule-9af79dac90fc917a.json\n?? 80_Review_Queue/promotion/behavior-rule-9d8225b3e1977ecf.json\n?? 80_Review_Queue/promotion/behavior-rule-9dcf676d3890babb.json\n?? 80_Review_Queue/promotion/behavior-rule-9e67d419e2d7e876.json\n?? 80_Review_Queue/promotion/behavior-rule-9f21d937070bc997.json\n?? 80_Review_Queue/promotion/behavior-rule-9fc8880d029f92ae.json\n?? 80_Review_Queue/promotion/behavior-rule-a07c4a10b9cf9adc.json\n?? 80_Review_Queue/promotion/behavior-rule-a28949b2b14fa852.json\n?? 80_Review_Queue/promotion/behavior-rule-a36e6286104468f3.json\n?? 80_Review_Queue/promotion/behavior-rule-a439ba13c4701c3d.json\n?? 80_Review_Queue/promotion/behavior-rule-a47cb64d8790e07a.json\n?? 80_Review_Queue/promotion/behavior-rule-a58e2a9e318fff60.json\n?? 80_Review_Queue/promotion/behavior-rule-a5cd940732a1eec6.json\n?? 80_Review_Queue/promotion/behavior-rule-a6d352814efc75f3.json\n?? 80_Review_Queue/promotion/behavior-rule-a7b089bbc77b5ba0.json\n?? 80_Review_Queue/promotion/behavior-rule-a7e01861bd2d7993.json\n?? 80_Review_Queue/promotion/behavior-rule-aa10f3a65df5cf7c.json\n?? 80_Review_Queue/promotion/behavior-rule-ab6c0067c5d5c3d7.json\n?? 80_Review_Queue/promotion/behavior-rule-acdf241957ff2e0f.json\n?? 80_Review_Queue/promotion/behavior-rule-ad46ef32d34059e9.json\n?? 80_Review_Queue/promotion/behavior-rule-ae59886e3e3af314.json\n?? 80_Review_Queue/promotion/behavior-rule-aef78ecd60ec4920.json\n?? 80_Review_Queue/promotion/behavior-rule-b09e15a038deca29.json\n?? 80_Review_Queue/promotion/behavior-rule-b0ff6a24a8c734f0.json\n?? 80_Review_Queue/promotion/behavior-rule-b17fd0e7d971cceb.json\n?? 80_Review_Queue/promotion/behavior-rule-b307018fe59b5032.json\n?? 80_Review_Queue/promotion/behavior-rule-b3c9d45758b53ed7.json\n?? 80_Review_Queue/promotion/behavior-rule-b43b1ba7c765bebb.json\n?? 80_Review_Queue/promotion/behavior-rule-b44a52fcda44e62a.json\n?? 80_Review_Queue/promotion/behavior-rule-b4e4bddd7a0c463f.json\n?? 80_Review_Queue/promotion/behavior-rule-b57e187f9ca25377.json\n?? 80_Review_Queue/promotion/behavior-rule-b81be464c4a50635.json\n?? 80_Review_Queue/promotion/behavior-rule-b8b0c53753702c7c.json\n?? 80_Review_Queue/promotion/behavior-rule-b97b2328f6071248.json\n?? 80_Review_Queue/promotion/behavior-rule-bb343d17c1a5d70b.json\n?? 80_Review_Queue/promotion/behavior-rule-bba0778e37c1dadb.json\n?? 80_Review_Queue/promotion/behavior-rule-bce10a575a74765f.json\n?? 80_Review_Queue/promotion/behavior-rule-bd6822e3bd86c206.json\n?? 80_Review_Queue/promotion/behavior-rule-bef4cafa11343662.json\n?? 80_Review_Queue/promotion/behavior-rule-bf59766655207ebc.json\n?? 80_Review_Queue/promotion/behavior-rule-c1ad7c4e0066b985.json\n?? 80_Review_Queue/promotion/behavior-rule-c1f35400ec88578f.json\n?? 80_Review_Queue/promotion/behavior-rule-c5d365c7d8d09fbc.json\n?? 80_Review_Queue/promotion/behavior-rule-c5e8716a84f263be.json\n?? 80_Review_Queue/promotion/behavior-rule-c6b5504404d81248.json\n?? 80_Review_Queue/promotion/behavior-rule-c7d1d6ebdd54dd43.json\n?? 80_Review_Queue/promotion/behavior-rule-c8b4a2079d38029f.json\n?? 80_Review_Queue/promotion/behavior-rule-c93696a0718bd3b6.json\n?? 80_Review_Queue/promotion/behavior-rule-c990dca4aa7f960e.json\n?? 80_Review_Queue/promotion/behavior-rule-c9a811d02d4360e4.json\n?? 80_Review_Queue/promotion/behavior-rule-ca42903585f7b243.json\n?? 80_Review_Queue/promotion/behavior-rule-cc414a91fec4e243.json\n?? 80_Review_Queue/promotion/behavior-rule-cdc843041608a78a.json\n?? 80_Review_Queue/promotion/behavior-rule-ce010e34dc2e7220.json\n?? 80_Review_Queue/promotion/behavior-rule-ce9cbdec8cf9b21c.json\n?? 80_Review_Queue/promotion/behavior-rule-cec7268246807edc.json\n?? 80_Review_Queue/promotion/behavior-rule-cfa6465dc2a234d5.json\n?? 80_Review_Queue/promotion/behavior-rule-cfd9c7a4092a6a38.json\n?? 80_Review_Queue/promotion/behavior-rule-d21364a17b9ef307.json\n?? 80_Review_Queue/promotion/behavior-rule-d2fa2aa5efa71c3a.json\n?? 80_Review_Queue/promotion/behavior-rule-d3e74a190425cea8.json\n?? 80_Review_Queue/promotion/behavior-rule-d55011c3f8b7399b.json\n?? 80_Review_Queue/promotion/behavior-rule-d5a3d0b5fdf0a4f2.json\n?? 80_Review_Queue/promotion/behavior-rule-d5b305de202e451f.json\n?? 80_Review_Queue/promotion/behavior-rule-d5c3e04d35c17da8.json\n?? 80_Review_Queue/promotion/behavior-rule-d68b522c13cfec9a.json\n?? 80_Review_Queue/promotion/behavior-rule-d69c45acc3209ea3.json\n?? 80_Review_Queue/promotion/behavior-rule-d6ea9e6479b81546.json\n?? 80_Review_Queue/promotion/behavior-rule-d786e32ba9765715.json\n?? 80_Review_Queue/promotion/behavior-rule-d8115ac39b3650e8.json\n?? 80_Review_Queue/promotion/behavior-rule-d8c05526a1f63464.json\n?? 80_Review_Queue/promotion/behavior-rule-d9a63bcaa1a89d36.json\n?? 80_Review_Queue/promotion/behavior-rule-da80ee47e291beac.json\n?? 80_Review_Queue/promotion/behavior-rule-daa311718b06e1dd.json\n?? 80_Review_Queue/promotion/behavior-rule-db787d417a4f1b06.json\n?? 80_Review_Queue/promotion/behavior-rule-dc9670ac4e230aab.json\n?? 80_Review_Queue/promotion/behavior-rule-dcda45517c6ebc4b.json\n?? 80_Review_Queue/promotion/behavior-rule-dcdbecc38dc41999.json\n?? 80_Review_Queue/promotion/behavior-rule-df233bc69105b176.json\n?? 80_Review_Queue/promotion/behavior-rule-df26cc68cfd91ae3.json\n?? 80_Review_Queue/promotion/behavior-rule-e0413bd13f082edf.json\n?? 80_Review_Queue/promotion/behavior-rule-e0428ffed345bf5c.json\n?? 80_Review_Queue/promotion/behavior-rule-e0b9296487c4944b.json\n?? 80_Review_Queue/promotion/behavior-rule-e0e12d17def12542.json\n?? 80_Review_Queue/promotion/behavior-rule-e41566adfe519155.json\n?? 80_Review_Queue/promotion/behavior-rule-e42dd0c6fcaa2f5c.json\n?? 80_Review_Queue/promotion/behavior-rule-e9c0d81f690a21f8.json\n?? 80_Review_Queue/promotion/behavior-rule-e9e72c4d32d516e6.json\n?? 80_Review_Queue/promotion/behavior-rule-ea81622b79eeb5f0.json\n?? 80_Review_Queue/promotion/behavior-rule-ecab43a35d4716f2.json\n?? 80_Review_Queue/promotion/behavior-rule-ee223c49c43428e6.json\n?? 80_Review_Queue/promotion/behavior-rule-ee5268f9177903c4.json\n?? 80_Review_Queue/promotion/behavior-rule-efe21718f8ad5f5f.json\n?? 80_Review_Queue/promotion/behavior-rule-f1f1f264fc8d2cf3.json\n?? 80_Review_Queue/promotion/behavior-rule-f297fa302bb110a8.json\n?? 80_Review_Queue/promotion/behavior-rule-f395029f88ce97c0.json\n?? 80_Review_Queue/promotion/behavior-rule-f3e58cbfc254e9ee.json\n?? 80_Review_Queue/promotion/behavior-rule-f4bce93c7ac32693.json\n?? 80_Review_Queue/promotion/behavior-rule-f4dc8f084829a07b.json\n?? 80_Review_Queue/promotion/behavior-rule-f5c107fde1877d8c.json\n?? 80_Review_Queue/promotion/behavior-rule-f6d7f5d1d01cd4a7.json\n?? 80_Review_Queue/promotion/behavior-rule-f7a2b396417e7bc8.json\n?? 80_Review_Queue/promotion/behavior-rule-f7d07205f1d84db9.json\n?? 80_Review_Queue/promotion/behavior-rule-f982cece61354cd5.json\n?? 80_Review_Queue/promotion/behavior-rule-f9dac1967e8339fc.json\n?? 80_Review_Queue/promotion/behavior-rule-faf9170e61317573.json\n?? 80_Review_Queue/promotion/behavior-rule-fcf6818bc60130f5.json\n?? 80_Review_Queue/promotion/behavior-rule-fec6ea45ef8ad1ae.json\n?? 80_Review_Queue/promotion/behavior-rule-ff402e89e4f3274b.json\n?? 80_Review_Queue/promotion/behavior-rule-ff5e313042176058.json",
+    "github_visibility": {
+      "status": "observed",
+      "owner": "clockmansy",
+      "repo": "dinobrain-data",
+      "private": false,
+      "visibility": "public",
+      "html_url": "https://github.com/clockmansy/dinobrain-data"
+    },
+    "visibility_policy": "treat data as public when GitHub says public or visibility is unknown"
+  },
+  "scanned": {
+    "tracked_files": 751,
+    "untracked_files": 665,
+    "max_scan_bytes": 8388608,
+    "path_policy_counts": {
+      "syncable": 445,
+      "conditional": 286,
+      "blocked": 0,
+      "unknown": 20
+    },
+    "required_category_counts": {
+      "accepted_memories": 361,
+      "task_summaries": 90,
+      "traces": 69,
+      "context_packs": 84,
+      "events": 0,
+      "gates": 17,
+      "audits": 2,
+      "operations_records": 51
+    },
+    "index_exclusion": {
+      "checked": true,
+      "record_count": 135
+    },
+    "doc_visibility": {
+      "checked_files": [
+        "README.md",
+        "docs/INSTALL.md",
+        "docs/SYNC_POLICY.md"
+      ],
+      "conflicts": []
+    }
+  },
+  "finding_summary": {
+    "by_level": {
+      "warning": 856
+    },
+    "by_id": {
+      "machine_local_path_marker": 178,
+      "unclassified_tracked_path": 20,
+      "conditional_untracked_present": 658
+    }
+  },
+  "findings": [
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/audits/audit-20260706-232502-task-20260706-231712-OS_COMPLETION_C-5ab9c454.json",
+      "pattern": "windows_drive_path",
+      "line": 37
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260701-005837-hookEventName-UserPromptSubm.json",
+      "pattern": "windows_drive_path",
+      "line": 4
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260701-005837-hookEventName-UserPromptSubm.json",
+      "pattern": "windows_drive_path",
+      "line": 32
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260701-012635-hookEventName-UserPromptSubm.json",
+      "pattern": "windows_drive_path",
+      "line": 4
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260701-012635-hookEventName-UserPromptSubm.json",
+      "pattern": "windows_drive_path",
+      "line": 60
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260701-012725-Global-DinoBrain-hook-verifi.json",
+      "pattern": "windows_drive_path",
+      "line": 74
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260703-033041-manual-hook-env-test.json",
+      "pattern": "windows_drive_path",
+      "line": 61
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260703-033050-DinoBrain-live-Codex-hook-di.json",
+      "pattern": "windows_drive_path",
+      "line": 118
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260703-033452-DinoBrain-live-Codex-hook-di.json",
+      "pattern": "windows_drive_path",
+      "line": 143
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260703-035812-DinoBrain-installer-reinstal.json",
+      "pattern": "windows_drive_path",
+      "line": 142
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260705-014744-What-current-DinoBrain-proje.json",
+      "pattern": "windows_drive_path",
+      "line": 78
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260705-022742-DinoBrain-v2-QA-code-review-.json",
+      "pattern": "windows_drive_path",
+      "line": 193
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260705-023257-DinoBrain-v2-stability-fixes.json",
+      "pattern": "windows_drive_path",
+      "line": 185
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260706-150114-Fix-DinoBrain-installer-conf.json",
+      "pattern": "windows_drive_path",
+      "line": 5
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260706-150114-Fix-DinoBrain-installer-conf.json",
+      "pattern": "windows_drive_path",
+      "line": 43
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260706-160644-What-is-the-user-s-desired-d.json",
+      "pattern": "windows_drive_path",
+      "line": 283
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260706-160644-What-is-the-user-s-desired-d.json",
+      "pattern": "windows_drive_path",
+      "line": 284
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260706-161037-DinoBrain-OS-completion-cond.json",
+      "pattern": "windows_drive_path",
+      "line": 343
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260706-161037-DinoBrain-OS-completion-cond.json",
+      "pattern": "windows_drive_path",
+      "line": 344
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260706-161248-Observatory-UI-graph-complet.json",
+      "pattern": "windows_drive_path",
+      "line": 117
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260706-161254-What-DinoBrain-architecture-.json",
+      "pattern": "windows_drive_path",
+      "line": 243
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260707-002325-RAG-durable-knowledge-purity.json",
+      "pattern": "windows_drive_path",
+      "line": 258
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260707-003619-Audit-DinoBrain-node-lifecyc.json",
+      "pattern": "windows_drive_path",
+      "line": 253
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/context-packs/pack-20260707-011040-DinoBrain-finish_task-auto-g.json",
+      "pattern": "windows_drive_path",
+      "line": 318
+    },
+    {
+      "level": "warning",
+      "id": "machine_local_path_marker",
+      "path": ".dino/gates/gate-20260706-150114-task-20260706-150114-Fix-DinoBrain-i.json",
+      "pattern": "windows_drive_path",
+      "line": 6
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/anthropic-contextual-retrieval.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/aws-bedrock-knowledge-base.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/azure-search-rag-overview.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/elastic-rag.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/google-rag-engine-overview.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/haystack-first-rag-pipeline.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/haystack-rag-from-scratch.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/langchain-rag.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/langsmith-evaluation-concepts.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/llamaindex-rag.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/microsoft-graphrag.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/openai-embeddings-qa-cookbook.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/openai-retrieval-guide.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/pinecone-rag.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/rag-paper-2005-11401.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/rag-paper-2212-10496.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/rag-paper-2303-11366.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/rag-paper-2401-18059.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/rag-survey.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "unclassified_tracked_path",
+      "path": ".dino/provenance/ragas-evaluation.json",
+      "policy": "unclassified_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-150611.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-151658.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-152406.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-160949.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-161100.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-161556.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-161752.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-170112.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-231517.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-232451.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-233159.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260706-233639.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-001859.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-001909.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-001917.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-001942.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-002354.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-002403.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-002414.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-002432.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-003259.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-003753.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-003943.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-004218.json",
+      "policy": "operation_compounding_path"
+    },
+    {
+      "level": "warning",
+      "id": "conditional_untracked_present",
+      "path": ".dino/compounding/compounding-cycle-20260707-004333.json",
+      "policy": "operation_compounding_path"
+    }
+  ],
+  "suppressed_example_counts": {
+    "machine_local_path_marker": 153,
+    "conditional_untracked_present": 633
+  }
+}

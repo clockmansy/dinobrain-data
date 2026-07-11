@@ -1,0 +1,39 @@
+{
+  "candidate_id": "candidate-Project-state-Compare-P1-16-Task-Ses-0edd2f2850b4",
+  "status": "held",
+  "claim": "Project state: Compare P1-16 Task Session Lifecycle/Finish-Gate Integrity and P2-17 Outcome Metrics/Final Readiness Honesty against current DinoBrain.",
+  "category": "project_state",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "Compare P1-16 Task Session Lifecycle/Finish-Gate Integrity and P2-17 Outcome Metrics/Final Readiness Honesty against current DinoBrain.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-113802-fc03c8ed2e52.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-113802-fc03c8ed2e52",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_state",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-113802-fc03c8ed2e52",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T11:38:03.338Z",
+  "updated_at": "2026-07-07T12:25:36.779Z",
+  "quarantine": true,
+  "hold_reason": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+  "worklist_cluster_id": "review-cluster-c81fe368c4bb931f",
+  "review_notes": "Held by review worklist action; candidate is low-signal or ephemeral and must not enter hot memory without manual confirmation.",
+  "reviewed_by": "review-worklist-actions",
+  "reviewed_at": "2026-07-07T12:25:36.779Z"
+}

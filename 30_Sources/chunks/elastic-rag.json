@@ -1,0 +1,58 @@
+{
+  "source_chunk_id": "elastic-rag",
+  "type": "source_chunk",
+  "status": "active",
+  "title": "Elastic RAG explanation",
+  "source_uri": "https://www.elastic.co/what-is/retrieval-augmented-generation",
+  "chunk_type": "external_doc",
+  "chunk_text": "Verified RAG methodology source summary. Directly opened on 2026-07-07 during DinoBrain RAG verification cross-review. Title: Elastic RAG explanation. URL: https://www.elastic.co/what-is/retrieval-augmented-generation. Summary: Elastic frames RAG as retrieval from private/current data plus LLM generation, often combining lexical/vector/hybrid search for grounding. Raw full page content is not stored; use the linked source for exact wording. Accepted claims are distilled in 20_Wiki/RAG-Verified-Knowledge-Base.md.",
+  "chunk_text_redactions": [],
+  "chunk_text_truncated": false,
+  "chunk_text_original_length": 517,
+  "chunk_text_stored_length": 517,
+  "claim_paths": [
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "20_Wiki/RAG-Verified-Knowledge-Base.md"
+  ],
+  "tags": [
+    "rag",
+    "source-anchor",
+    "rag-overview",
+    "verified-summary",
+    "directly-opened"
+  ],
+  "verification_status": "verified_summary",
+  "last_verified": "2026-07-07",
+  "created_at": "2026-07-06T23:23:45.973Z",
+  "updated_at": "2026-07-11T02:04:42.228Z",
+  "lineage_role": "verified_chunk",
+  "source_snapshot_path": "30_Sources/fetched/elastic-rag.json",
+  "source_content_sha256": "b585780c3b06de17d8cc872edb9f3bf853ca1e8f27c627e065f728cb8232a092",
+  "chunk_sha256": "b585780c3b06de17d8cc872edb9f3bf853ca1e8f27c627e065f728cb8232a092",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_paths": [
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "verification_method": "legacy_direct_source_review",
+  "verification_actor": "rag02-current-vault-migration",
+  "verification_max_age_days": 180,
+  "lineage_generation_id": "lineage-elastic-rag-e3541ded3ba2c3d10407",
+  "lineage_generation_path": ".dino/provenance/generations/lineage-elastic-rag-e3541ded3ba2c3d10407.json",
+  "previous_source_content_sha256": null,
+  "content_changed": false
+}

@@ -1,0 +1,37 @@
+{
+  "review_id": "lifecycle-migration-rag-public-os-learning-packet",
+  "type": "lifecycle_migration_attestation",
+  "status": "held",
+  "candidate_path": null,
+  "accepted_path": "50_Instances/accepted/rag-public-os-learning-packet.json",
+  "target_path": "50_Instances/accepted/rag-public-os-learning-packet.json",
+  "decision": "hold_existing_accepted",
+  "reviewer": "codex-mem01-migration-reapply",
+  "evidence_paths": [],
+  "created_at": "2026-07-10T21:20:25.107Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "node_id": "lifecycle-migration-rag-public-os-learning-packet",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "held",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425451-9539438d-477a-40c3-af2a-e3d019748113",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425451-9539438d-477a-40c3-af2a-e3d019748113",
+      "idempotency_key": "accepted-review-attestation|50_Instances/accepted/rag-public-os-learning-packet.json|held",
+      "from_state": null,
+      "to_state": "held",
+      "reason_code": "accepted_review_blocked",
+      "reason": "Existing accepted memory was removed from hot retrieval: accepted_review_lineage_missing, durable_source_path_missing, durable_external_provenance_missing, unsupported_pressure",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "50_Instances/accepted/rag-public-os-learning-packet.json"
+      ],
+      "predecessor_paths": [],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [],
+  "successor_paths": []
+}

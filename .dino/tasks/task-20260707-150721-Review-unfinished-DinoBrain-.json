@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-150721-Review-unfinished-DinoBrain-",
+  "status": "partial",
+  "request": "Review unfinished DinoBrain OS improvement plan, preserve strict 10-reviewer consensus requirement, document completion conditions, and continue implementation against the documented plan starting with direct MCP parity proof ingestion.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:07:21.935Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T15:17:24.977Z",
+  "trace_path": ".dino/traces/task-20260707-150721-Review-unfinished-DinoBrain.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "started_task_repaired_from_grounded_trace",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-150721-Review-unfinished-DinoBrain.json"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-185430-Continue-active-DinoBrain-OS",
+  "status": "partial",
+  "request": "Continue active DinoBrain OS goal: verify whether live Codex Desktop UserPromptSubmit pre-response proof now exists, and otherwise improve the remaining proof workflow while preserving hard gate semantics.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T18:54:30.249Z",
+  "updated_at": "2026-07-07T19:03:00.473Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T19:03:00.473Z",
+  "trace_path": ".dino/traces/task-20260707-185430-Continue-active-DinoBrain-OS.json"
+}

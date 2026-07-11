@@ -1,0 +1,32 @@
+{
+  "task_id": "task-20260707-151138-Direct-MCP-parity-proof-cana",
+  "outcome": "completed",
+  "summary": "Direct MCP parity proof canary completed: Codex invoked os_begin_task, search_memory, wiki_search, and finish_task through the exposed DinoBrain MCP tools by exact single names in this session.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Codex direct MCP parity proof must be based on actual client tool calls, not config or hook presence.",
+    "This canary records only hashes/paths for proof, not raw full tool output."
+  ],
+  "next_steps": [
+    "Write a client MCP proof artifact from this canary and verify status:mcp-direct."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-151138-Direct-MCP-parity-proof-cana.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 2,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T15:11:50.877Z"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-012918-DinoBrain-post-patch-audit-1",
+  "status": "completed",
+  "request": "DinoBrain post-patch audit #16. Read-only DB-01 audit: hybrid contextual retrieval claim vs dense lexical fallback; inspect retrieval implementation, vector handling, docs and verification; identify minimal gates preventing semantic/RAG overclaiming without true dense vectors/reranking.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T01:29:18.283Z",
+  "updated_at": "2026-07-07T01:31:22.164Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T01:31:22.164Z",
+  "trace_path": ".dino/traces/task-20260707-012918-DinoBrain-post-patch-audit-1.json"
+}

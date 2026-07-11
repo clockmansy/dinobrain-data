@@ -1,0 +1,55 @@
+{
+    "agent":  "codex",
+    "status":  "verified",
+    "client_surface":  "Codex Desktop MCP tool surface (mcp__dinobrain direct tools)",
+    "tool_discovery_mode":  "exact_single_name",
+    "required_tools":  [
+                           "os_begin_task",
+                           "search_memory",
+                           "wiki_search",
+                           "finish_task"
+                       ],
+    "verified_tools":  [
+                           "os_begin_task",
+                           "search_memory",
+                           "wiki_search",
+                           "finish_task"
+                       ],
+    "missing_tools":  [
+
+                      ],
+    "proof_source":  "codex_desktop_direct_mcp",
+    "generated_at":  "2026-07-07T15:12:27.4702992Z",
+    "stale_after_ms":  86400000,
+    "task_id":  "task-20260707-151138-Direct-MCP-parity-proof-cana",
+    "context_pack_path":  ".dino/context-packs/pack-20260707-151138-Direct-MCP-parity-proof-cana.json",
+    "trace_path":  ".dino/traces/task-20260707-151138-Direct-MCP-parity-proof-cana.json",
+    "tool_calls":  [
+                       {
+                           "result_hash":  "sha256:d333982b0e111d8f645430437d3316dc9541b47490a64fe2523cb7201ec674ec",
+                           "ok":  true,
+                           "evidence_path":  ".dino/tasks/task-20260707-151138-Direct-MCP-parity-proof-cana.json",
+                           "tool":  "os_begin_task",
+                           "at":  "2026-07-07T15:11:38.350Z"
+                       },
+                       {
+                           "ok":  true,
+                           "result_hash":  "sha256:ca55e7e0bd74da91980e219beff5e110a308752f8666eb20566f47be95eb2463",
+                           "tool":  "search_memory",
+                           "at":  "2026-07-07T15:12:27.4702992Z"
+                       },
+                       {
+                           "ok":  true,
+                           "result_hash":  "sha256:9d4b9c300c88f2a19fb16b2cd813b3b958e20eeadada77db8cc45182107afb54",
+                           "tool":  "wiki_search",
+                           "at":  "2026-07-07T15:12:27.4702992Z"
+                       },
+                       {
+                           "result_hash":  "sha256:342dd885d71d6153815d20eaba157b0daf252ff79852c1baf9ac0fc46f7a27f8",
+                           "ok":  true,
+                           "evidence_path":  ".dino/traces/task-20260707-151138-Direct-MCP-parity-proof-cana.json",
+                           "tool":  "finish_task",
+                           "at":  "2026-07-07T15:12:27.4702992Z"
+                       }
+                   ]
+}

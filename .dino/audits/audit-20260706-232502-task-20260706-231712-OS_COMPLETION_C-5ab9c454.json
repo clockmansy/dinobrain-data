@@ -1,0 +1,115 @@
+{
+  "audit_id": "audit-20260706-232502-task-20260706-231712-OS_COMPLETION_C-5ab9c454",
+  "type": "memory_use_audit",
+  "status": "completed",
+  "audited_at": "2026-07-06T23:25:02.174Z",
+  "auditor": "codex",
+  "task_id": "task-20260706-231712-OS_COMPLETION_CONDITIONS.md-",
+  "trace_path": ".dino/traces/task-20260706-231712-OS_COMPLETION_CONDITIONS.md.json",
+  "trust_score": 53,
+  "verdict": "low",
+  "provided_memory_paths": [
+    "30_Sources/README.md",
+    ".dino/tasks/task-20260706-231712-OS_COMPLETION_CONDITIONS.md-.json",
+    "50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json",
+    "50_Instances/accepted/behavior-rule-295abf1038bd399d.json",
+    "50_Instances/accepted/behavior-rule-4576c59074e79294.json",
+    "50_Instances/accepted/behavior-rule-c1ad7c4e0066b985.json",
+    "50_Instances/accepted/behavior-rule-5865861ab7070786.json",
+    "50_Instances/accepted/behavior-rule-f5c107fde1877d8c.json"
+  ],
+  "declared_used_memory_paths": [
+    "30_Sources/README.md",
+    "50_Instances/accepted/behavior-rule-5865861ab7070786.json",
+    "50_Instances/accepted/behavior-rule-4576c59074e79294.json"
+  ],
+  "observed_used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-5865861ab7070786.json",
+    "50_Instances/accepted/behavior-rule-4576c59074e79294.json"
+  ],
+  "declared_used_but_not_provided": [],
+  "missing_expected_memory": [],
+  "expected_memory_not_provided": [],
+  "hallucinated_memory_reference": [],
+  "graph_health_snapshot": {
+    "version": "graph_health_v1",
+    "generated_at": "2026-07-06T23:25:02.179Z",
+    "data_root": "<machine-local-path>",
+    "accepted_instance_count": 190,
+    "candidate_instance_count": 0,
+    "promotion_review_count": 0,
+    "quarantine_count": 0,
+    "accepted_without_source_count": 190,
+    "accepted_missing_source_count": 0,
+    "candidate_without_review_count": 0,
+    "source_mapping_missing_count": 190,
+    "status": "degraded",
+    "score": 0,
+    "index_path": ".dino/index/wiki-index.json",
+    "indexed_record_count": 232,
+    "node_count": 282,
+    "edge_count": 1623,
+    "unresolved_wiki_link_count": 0,
+    "referenced_unresolved_wiki_link_count": 0,
+    "curated_paths_checked": 7,
+    "curated_paths_missing_from_index": [],
+    "referenced_paths_missing_on_disk": [],
+    "warnings": [
+      "accepted_instance_source_mapping_missing"
+    ]
+  },
+  "observable_usage_evidence": [
+    {
+      "path": "50_Instances/accepted/behavior-rule-5865861ab7070786.json",
+      "evidence": "hint_matched:accepted,behavior,rule"
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-4576c59074e79294.json",
+      "evidence": "hint_matched:accepted,behavior,rule"
+    }
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-231712-OS_COMPLETION_CONDITIONS.md-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "observed_artifact_paths": [
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "30_Sources/chunks/microsoft-graphrag.json",
+    "30_Sources/chunks/ragas-evaluation.json",
+    "60_Operations/public-data-safety/public-data-safety-report.json"
+  ],
+  "event_observed_artifact_paths": [
+    ".dino/tasks/task-20260706-231712-OS_COMPLETION_CONDITIONS.md-.json",
+    ".dino/context-packs/pack-20260706-231712-OS_COMPLETION_CONDITIONS.md-.json",
+    ".dino/gates/gate-20260706-231712-task-20260706-231712-OS_COMPLETION_C.json",
+    ".dino/traces/task-20260706-231712-OS_COMPLETION_CONDITIONS.md.json",
+    "30_Sources/README.md",
+    "50_Instances/accepted/behavior-rule-5865861ab7070786.json",
+    "50_Instances/accepted/behavior-rule-4576c59074e79294.json",
+    "60_Operations/task-summaries/task-memory-task-20260706-231712-OS_COMPLETION_CONDITIONS.md.json",
+    "50_Instances/accepted/task-memory-task-20260706-231712-OS_COMPLETION_CONDITIONS.md.json"
+  ],
+  "observed_artifacts_verified": [],
+  "observed_artifacts_unverified": [
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "30_Sources/chunks/microsoft-graphrag.json",
+    "30_Sources/chunks/ragas-evaluation.json",
+    "60_Operations/public-data-safety/public-data-safety-report.json"
+  ],
+  "observed_summary_preview": "Implemented public-data safety verification and RAG anchor-only source/provenance seeding under OS_COMPLETION_CONDITIONS. Used the completion conditions and retrieved behavior rules to avoid claiming full completion and to keep RAG URLs as unverified anchors.",
+  "auditor_notes": "",
+  "counts": {
+    "provided": 8,
+    "declared_used": 3,
+    "observed_used": 2,
+    "expected": 3,
+    "context_packs": 1,
+    "session_archives": 0,
+    "candidates": 0,
+    "observed_artifacts_verified": 0,
+    "observed_artifacts_unverified": 5
+  }
+}

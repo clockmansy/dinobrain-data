@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-162836-task-20260707-162836-DinoBrain-R1-.-",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-162836-DinoBrain-R1-.-.-read-only-.",
+  "request": "DinoBrain 미완 개선 계획 검토용 하위 에이전트 R1입니다. 반드시 독립적으로 사용자 의도와 기억/문서를 읽고 판단하세요. 편집하지 말고 read-only로 검토하세요.\n\n검토 대상:\n- <machine-local-path> 에서 DinoBrain 관련 항목\n- <machine-local-path> <machine-local-path> <machine-local-path> 필요하면 package scripts와 scripts/verify-goal 등 검증 경로\n\n역할: 사용자 의도/완성 바 관점. 사용자가 원하는 방향이 무엇인지, 현재 미완 계획이 그 방향과 맞는지, 완성조건 문서에 반드시 들어가야 할 조건을 제안하세요.\n\n출력 형식:\n1) verdict: AGREE 또는 REVISE_REQUIRED\n2) required_conditions: bullet list\n3) missing_or_risky_points: bullet list\n4) evidence: 읽은 파일/근거 요약\n\n중요: 최종 문서가 나오면 다시 동의 여부를 물을 예정입니다.",
+  "generated_at": "2026-07-07T16:28:36.993Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-162836-DinoBrain-R1-.-.-read-only-..json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

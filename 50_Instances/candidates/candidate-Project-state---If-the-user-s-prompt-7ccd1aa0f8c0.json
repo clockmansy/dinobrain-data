@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Project-state---If-the-user-s-prompt-7ccd1aa0f8c0",
+  "status": "pending_review",
+  "claim": "Project state: - If the user's prompt is already a short clea",
+  "category": "project_state",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "- If the user's prompt is already a short clea",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-154704-7454ea43811a.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-154704-7454ea43811a",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_state",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-154704-7454ea43811a",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T15:47:05.451Z",
+  "updated_at": "2026-07-07T15:47:05.451Z"
+}

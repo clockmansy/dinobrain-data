@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-154135-task-20260707-154135-You-are-Reviewe",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-154135-You-are-Reviewer-R8-Observat",
+  "request": "You are Reviewer R8: Observatory and user-visible proof reviewer for DinoBrain. Work read-only. Inspect <machine-local-path> docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, docs\\VERIFICATION.md, scripts\\dinobrain-observatory.mjs, src\\health-status.ts, src\\status-freshness.ts, and any Observatory/UI files found by rg 'Observatory|/api/state|health_status|visible_status|blocker'. Judge whether the plan completion conditions require UI/API visibility of used memories, blockers, pending reviewer/main/verifier lanes, stale proofs, audit/trust score, and CLI parity. Return reviewer_id=R8, verdict=AGREE or REVISE_REQUIRED, blocking_objections[], required_doc_changes[], evidence_files[].",
+  "generated_at": "2026-07-07T15:41:35.465Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-154135-You-are-Reviewer-R8-Observat.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

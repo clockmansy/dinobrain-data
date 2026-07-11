@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Project-state-Inspect-the-current-th-e9b71484200f",
+  "status": "pending_review",
+  "claim": "Project state: Inspect the current thread context, <machine-local-path> AGENTS.md, and relevant repo verification scripts/docs.",
+  "category": "project_state",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "Inspect the current thread context, <machine-local-path> AGENTS.md, and relevant repo verification scripts/docs.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-172403-fb880c7375bf.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-172403-fb880c7375bf",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_state",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-172403-fb880c7375bf",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T17:24:04.061Z",
+  "updated_at": "2026-07-07T17:24:04.061Z"
+}

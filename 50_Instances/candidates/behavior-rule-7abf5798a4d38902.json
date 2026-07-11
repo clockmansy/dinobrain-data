@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-7abf5798a4d38902",
+  "behavior_rule_id": "behavior-rule-7abf5798a4d38902",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Drift is classified as live OS write, review queue write, audit artifact, or content drift; unclassified content drift and parse errors cause the full-memory CLI to fail.",
+  "behavior_rule": "In similar future work, apply this decision: Drift is classified as live OS write, review queue write, audit artifact, or content drift; unclassified content drift and parse errors cause the full-memory CLI to fail.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-101432-Implement-first-progress-tow.json",
+    "snippet": "Drift is classified as live OS write, review queue write, audit artifact, or content drift; unclassified content drift and parse errors cause the full-memory CLI to fail."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-101432-Implement-first-progress-tow.json",
+      "task_id": "task-20260707-101432-Implement-first-progress-tow",
+      "signal_kind": "decision",
+      "snippet": "Drift is classified as live OS write, review queue write, audit artifact, or content drift; unclassified content drift and parse errors cause the full-memory CLI to fail."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:25:06.936Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:25:06.936Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

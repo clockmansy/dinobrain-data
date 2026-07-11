@@ -1,0 +1,249 @@
+{
+  "pack_id": "pack-20260707-095348-Files-mentioned-by-the-user-",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "# Files mentioned by the user:\n\n## os_implementable_improvement_plan_full_memory_v1 (1).md: [REDACTED_MACHINE_LOCAL_PATH] (1).md\n\n## My request for Codex:\n해당 파일 면밀히 분석부터 진행 10개이상의 에이전트를 호출하여, 모든 에이전트가 학습을 마치고 지식으로 활용할 수 있어야함",
+  "created_at": "2026-07-07T09:53:48.858Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 49,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 66,
+  "index_candidate_count": 49,
+  "index_total_candidate_count": 49,
+  "index_matching_terms": [
+    "codex",
+    "codex_desktop",
+    "codex_session_knowledge",
+    "codex-conv",
+    "codex-conversation-r",
+    "codex-conversation-regis",
+    "codex-conversation-registry",
+    "codex-loop",
+    "codex-session-derived",
+    "codex-session-knowledge-configured_is_not_live_proof",
+    "codex-session-knowledge-current_instruction_over_memory",
+    "codex-session-knowledge-design_quality_without_logic_changes",
+    "codex-session-knowledge-end_to_end_execution_push",
+    "codex-session-knowledge-explain_when_confused",
+    "codex-session-knowledge-installer_new_pc_equivalence",
+    "codex-session-knowledge-knowledge_compounding_goal",
+    "codex-session-knowledge-local_evidence_over_cla",
+    "codex-session-knowledge-local_evidence_over_claims",
+    "codex-session-knowledge-observability_required",
+    "codex-session-knowledge-one_link_or_direct_action",
+    "codex-session-knowledge-plan_first_scope_lock",
+    "codex-session-knowledge-pre_response_fail_closed_loop",
+    "codex-session-knowledge-profile",
+    "codex-session-knowledge-promotion",
+    "codex-session-knowledge-rag_quality_direction",
+    "codex-session-knowledge-raw_transcripts_never_public",
+    "codex-session-knowledge-version_release_drift_risk",
+    "direct_user_source_count",
+    "files",
+    "files-mentioned-by-the-user-html",
+    "local-codex-sessions",
+    "requests",
+    "session_files",
+    "user",
+    "user_message_count",
+    "user_preference",
+    "user_supplied_anchor_summary",
+    "user-preference",
+    "user-preferences",
+    "user-provided",
+    "user-supplied",
+    "userguide"
+  ],
+  "included_item_count": 7,
+  "excluded_record_count": 69,
+  "items": [
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+      "kind": "curated_record",
+      "title": "Prefer direct local verification and evidence",
+      "summary": "The user prefers direct inspection of local files, logs, command output, screenshots, repository state, and concrete evidence over abstract claims. | Rule: For verification/debugging, inspect the real workspace and report command/file evidence; if a check was not run, say that plainly. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "verification",
+        "evidence"
+      ],
+      "score": 7.304,
+      "reasons": [
+        "path_matched:codex",
+        "summary_matched:files,user",
+        "tags_matched:user,codex",
+        "chunk_matched:files,user,codex",
+        "bm25:files,user",
+        "dense_lexical:0.74",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "kind": "curated_record",
+      "title": "Current user instruction outranks stored memory",
+      "summary": "For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. | Rule: Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "memory-priority",
+        "os-contract"
+      ],
+      "score": 7.298,
+      "reasons": [
+        "path_matched:codex",
+        "title_matched:user",
+        "summary_matched:user,codex",
+        "tags_matched:codex",
+        "chunk_matched:user,codex",
+        "bm25:user,codex",
+        "dense_lexical:0.76",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "kind": "curated_record",
+      "title": "Carry authorized work through commit, push, and deploy",
+      "summary": "When the user explicitly authorizes implementation or deployment, they expect Codex to carry the work through commit, push, release, and verification rather than stopping at a proposal. | Rule: After explicit authorization such as go, push, deploy, or auto-commit, implement, verify, commit, push, and report exact hashes or links. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "git",
+        "release",
+        "delivery"
+      ],
+      "score": 7.032,
+      "reasons": [
+        "path_matched:codex",
+        "summary_matched:user,codex",
+        "tags_matched:user,codex",
+        "chunk_matched:user,codex",
+        "bm25:user,codex",
+        "dense_lexical:0.72",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "kind": "curated_record",
+      "title": "DinoBrain must run pre-response and fail closed",
+      "summary": "The user wants every Codex or Claude session to receive DinoBrain pre-response OS context before substantive work, with fail-closed behavior when the OS context is missing. | Rule: For nontrivial DinoBrain work, require os_begin_task or trusted hook preflight, Context Pack, gates, finish_task, and explicit degraded/fail-closed state when missing. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "pre-response",
+        "fail-closed",
+        "hook"
+      ],
+      "score": 6.969,
+      "reasons": [
+        "path_matched:codex",
+        "summary_matched:user,codex",
+        "tags_matched:codex",
+        "chunk_matched:user,codex",
+        "bm25:user,codex",
+        "dense_lexical:0.75",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "kind": "curated_record",
+      "title": "Installer must restore equivalent DinoBrain behavior on a new PC",
+      "summary": "The user expects a new PC install to clone/update app and data repos, configure Codex and Claude hooks/MCP, build indexes, launch Observatory, and preserve version parity. | Rule: For installer work, verify app/data refs, portable Node, build/index, Codex and Claude registration, hook approval flow, launchers, release artifact alignment, and reinstall/idempotent behavior. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "project-decision",
+        "installer",
+        "new-pc",
+        "codex",
+        "claude",
+        "version-parity"
+      ],
+      "score": 6.951,
+      "reasons": [
+        "path_matched:codex",
+        "summary_matched:user,codex",
+        "tags_matched:codex",
+        "chunk_matched:user,codex",
+        "bm25:user,codex",
+        "dense_lexical:0.68",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "kind": "curated_record",
+      "title": "Design tasks need high-quality visual iteration without unrelated logic changes",
+      "summary": "For design tasks, the user wants careful high-quality visual work, screenshot-based iteration, and no unrelated logic-code changes when the task is design-only. | Rule: For design-only requests, first restate the visual intent, keep logic untouched, iterate with screenshots, and remove forced motifs when they reduce clarity. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "design",
+        "frontend",
+        "screenshots"
+      ],
+      "score": 6.774,
+      "reasons": [
+        "path_matched:codex",
+        "summary_matched:user,request",
+        "tags_matched:user,codex",
+        "chunk_matched:user,request,codex",
+        "bm25:user",
+        "dense_lexical:0.60",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+      "kind": "curated_record",
+      "title": "Plan-first execution for new or handoff-heavy work",
+      "summary": "The user prefers a concrete plan and approved scope before broad implementation, especially for handoff bundles, new projects, difficult design tasks, or OS-level changes. | Rule: When a task is broad, new, design-heavy, or handoff-driven, first summarize understanding, ask only necessary questions, lock the plan, then execute within that plan. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "planning",
+        "scope-control"
+      ],
+      "score": 6.744,
+      "reasons": [
+        "path_matched:codex",
+        "summary_matched:user",
+        "tags_matched:user,codex",
+        "chunk_matched:user,codex",
+        "bm25:user",
+        "dense_lexical:0.71",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

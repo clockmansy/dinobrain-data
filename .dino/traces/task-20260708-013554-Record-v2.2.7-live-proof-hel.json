@@ -1,0 +1,46 @@
+{
+  "task_id": "task-20260708-013554-Record-v2.2.7-live-proof-hel",
+  "outcome": "partial",
+  "summary": "Added STA clipboard fallback to the Codex live proof helper, bumped DinoBrain to v2.2.7, pushed app tag/main, waited for GitHub Actions release, downloaded the official release ZIP, verified release manifest health, and reran verify:goal. The only remaining blocker is still the fresh real Codex Desktop UserPromptSubmit live proof after the latest server build.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "package.json",
+    "package-lock.json",
+    "scripts/start-codex-live-proof.ps1",
+    ".dino/state/release_manifest_status.json"
+  ],
+  "decisions": [
+    "Do not count stale live proof from before the latest server build.",
+    "Do not mark the full goal complete without real codex_desktop UserPromptSubmit evidence.",
+    "Keep direct stdio MCP proof separate from the required Desktop hook proof."
+  ],
+  "next_steps": [
+    "Use a fresh Codex Desktop workspace thread and paste the pending live proof prompt.",
+    "Rerun npm run verify:goal after that prompt creates codex_preflight_completed evidence.",
+    "If the same blocker persists without fresh Desktop prompt evidence, the goal remains externally blocked."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-013554-Record-v2.2.7-live-proof-hel.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T01:35:54.936Z"
+}

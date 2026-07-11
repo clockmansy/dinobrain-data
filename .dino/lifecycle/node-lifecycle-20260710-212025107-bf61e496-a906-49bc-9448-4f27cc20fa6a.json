@@ -1,0 +1,458 @@
+{
+  "version": "node_lifecycle_report_v3",
+  "lifecycle_id": "node-lifecycle-20260710-212025107-bf61e496-a906-49bc-9448-4f27cc20fa6a",
+  "status": "healthy",
+  "operation": "apply",
+  "apply": true,
+  "reviewer": "codex-mem01-migration-reapply",
+  "generated_at": "2026-07-10T21:20:25.107Z",
+  "git": {
+    "repository": true,
+    "head": "7afad5c877c73baf0500e7a980c7eb5e98d7f3bf",
+    "dirty_count": 1477,
+    "dirty_status_sha256": "44939313f468d1a3609f051febfbdff228a5acf8a61568d906648d3e1a4dec66",
+    "recovery_ref": "refs/dinobrain-recovery/node-lifecycle/node-lifecycle-20260710-212025107-bf61e496-a906-49bc-9448-4f27cc20fa6a"
+  },
+  "transaction": {
+    "transaction_id": "node-lifecycle-1783718425626-fe04ddcd-00fa-43c7-be8f-4c7e0f92dc75",
+    "transaction_path": ".dino/local-backups/node-lifecycle/node-lifecycle-1783718425626-fe04ddcd-00fa-43c7-be8f-4c7e0f92dc75/transaction.json",
+    "changed_paths": [
+      "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-configured_is_not_live_proof.json",
+      "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-current_instruction_over_memory.json",
+      "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-end_to_end_execution_push.json",
+      "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json",
+      "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-knowledge_compounding_goal.json",
+      "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-local_evidence_over_claims.json",
+      "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-observability_required.json",
+      "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-one_link_or_direct_action.json",
+      "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-plan_first_scope_lock.json",
+      "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-rag_quality_direction.json",
+      "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-raw_transcripts_never_public.json",
+      "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+      "80_Review_Queue/lifecycle-migration/codex-session-knowledge-version_release_drift_risk.json",
+      "50_Instances/accepted/rag-public-os-learning-packet.json",
+      "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json",
+      "50_Instances/accepted/rag-verified-knowledge-v1.json",
+      "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json"
+    ],
+    "transition_paths": [
+      ".dino/lifecycle/transitions/node-transition-1783718425435-cfc742f7-b885-497d-af22-4c42cf6f1b44.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425437-892168c6-6aba-4986-8391-b2e046342440.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425437-ddc43841-4a83-4452-9f19-fd2caf37a913.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425438-e519e0df-1e9d-4e71-8bd5-9f95de009893.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425438-6d6c8443-f809-4138-96b4-6e518428e42b.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425439-6c7838fd-66a0-463c-9606-cfcc92a84557.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425439-b3617e88-3609-4d79-8b4c-b9f058cece5a.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425440-bba08e37-fd4b-440d-9c8c-c4ac401553bb.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425440-5996a76c-ed4d-4cc4-9bfc-d46d8176bc01.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425441-7a2fb898-7055-4728-899b-1be150050cd6.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425441-b2723436-192e-415f-ba9a-bb52a20eb83f.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425442-e881f3ea-9237-4c70-84b4-b2f96987948b.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425442-461c526c-a721-4976-86ad-b470cb5c3d05.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425443-e715bd09-0343-4d82-a02d-2c806b439b9d.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425443-d764068e-6c2d-4838-8e45-ff96fa185533.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425443-78e38698-7161-4bcf-85e6-ccfa533a3405.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425444-d1e2e424-1857-416c-a571-4b6d2df09c03.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425444-900f94f3-030a-47de-aab9-e4a6d2fdb88f.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425445-eeaf5063-8ec5-4514-9630-a02295c0e170.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425445-cce51eab-d532-461a-bbb5-3287a78f53e8.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425446-abfe8da9-5fd4-4ddc-8604-e9211dba2850.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425446-6a726df0-9d76-4edd-97f4-99d77b100242.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425446-e128125e-3618-419e-9329-b3b53e4bd030.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425447-f3f361b7-1c99-4e17-9030-706dc5690708.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425447-410594ef-ff41-40b2-b6bf-3850d758b81f.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425448-8c575f15-5743-4beb-99b7-0bc539a76981.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425448-bf4f6690-e4f2-4bc1-bda6-ceff3e448942.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425449-c8dd917c-b122-4b56-96e6-54e6c9a0c132.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425450-14d622e5-91bd-4474-ab66-a325c7e36faf.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425450-89608412-4618-461d-8d22-a152724ec11a.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425450-0eff9bad-4053-4418-a7ac-c15044c5c938.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425451-13e9a69f-323c-4abf-8825-2df2b628cdab.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425451-9539438d-477a-40c3-af2a-e3d019748113.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425452-71be6151-191a-4614-9da7-b29efb7adf32.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425452-bfa2193f-4198-4a7d-bd7a-f4976bbe7884.json",
+      ".dino/lifecycle/transitions/node-transition-1783718425452-d7342cac-55ca-41f4-88f9-ae07b3447661.json"
+    ],
+    "idempotent": false
+  },
+  "automatic_rollback": null,
+  "apply_error": null,
+  "counts": {
+    "accepted": 17,
+    "candidates": 1550,
+    "promotion_reviews": 1550,
+    "quarantined": 0,
+    "actions": 17,
+    "applied_actions": 17,
+    "initialize_accepted": 0,
+    "held_unsupported": 2,
+    "quarantined_excluded": 0,
+    "repaired_invalid": 15,
+    "retrievable_accepted": 15,
+    "held_or_excluded": 2,
+    "lifecycle_blockers": 0,
+    "deferred_candidate_backlog": 1550,
+    "merge_candidates": 0,
+    "provenance_repairs": 2,
+    "delete_candidates": 0,
+    "hold_or_exclude": 2
+  },
+  "post_audit": {
+    "accepted_files": 17,
+    "retrievable": 15,
+    "held_or_excluded": 2,
+    "invalid": []
+  },
+  "actions": [
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-configured_is_not_live_proof.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425435-cfc742f7-b885-497d-af22-4c42cf6f1b44",
+        "node-transition-1783718425437-892168c6-6aba-4986-8391-b2e046342440"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-current_instruction_over_memory.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425437-ddc43841-4a83-4452-9f19-fd2caf37a913",
+        "node-transition-1783718425438-e519e0df-1e9d-4e71-8bd5-9f95de009893"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425438-6d6c8443-f809-4138-96b4-6e518428e42b",
+        "node-transition-1783718425439-6c7838fd-66a0-463c-9606-cfcc92a84557"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-end_to_end_execution_push.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425439-b3617e88-3609-4d79-8b4c-b9f058cece5a",
+        "node-transition-1783718425440-bba08e37-fd4b-440d-9c8c-c4ac401553bb"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425440-5996a76c-ed4d-4cc4-9bfc-d46d8176bc01",
+        "node-transition-1783718425441-7a2fb898-7055-4728-899b-1be150050cd6"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425441-b2723436-192e-415f-ba9a-bb52a20eb83f",
+        "node-transition-1783718425442-e881f3ea-9237-4c70-84b4-b2f96987948b"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-knowledge_compounding_goal.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425442-461c526c-a721-4976-86ad-b470cb5c3d05",
+        "node-transition-1783718425443-e715bd09-0343-4d82-a02d-2c806b439b9d"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-local_evidence_over_claims.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425443-d764068e-6c2d-4838-8e45-ff96fa185533",
+        "node-transition-1783718425443-78e38698-7161-4bcf-85e6-ccfa533a3405"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-observability_required.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425444-d1e2e424-1857-416c-a571-4b6d2df09c03",
+        "node-transition-1783718425444-900f94f3-030a-47de-aab9-e4a6d2fdb88f"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-one_link_or_direct_action.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425445-eeaf5063-8ec5-4514-9630-a02295c0e170",
+        "node-transition-1783718425445-cce51eab-d532-461a-bbb5-3287a78f53e8"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-plan_first_scope_lock.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425446-abfe8da9-5fd4-4ddc-8604-e9211dba2850",
+        "node-transition-1783718425446-6a726df0-9d76-4edd-97f4-99d77b100242"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425446-e128125e-3618-419e-9329-b3b53e4bd030",
+        "node-transition-1783718425447-f3f361b7-1c99-4e17-9030-706dc5690708"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-rag_quality_direction.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425447-410594ef-ff41-40b2-b6bf-3850d758b81f",
+        "node-transition-1783718425448-8c575f15-5743-4beb-99b7-0bc539a76981"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-raw_transcripts_never_public.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425448-bf4f6690-e4f2-4bc1-bda6-ceff3e448942",
+        "node-transition-1783718425449-c8dd917c-b122-4b56-96e6-54e6c9a0c132"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-version_release_drift_risk.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425450-14d622e5-91bd-4474-ab66-a325c7e36faf",
+        "node-transition-1783718425450-89608412-4618-461d-8d22-a152724ec11a"
+      ]
+    },
+    {
+      "type": "hold_unsupported",
+      "target_path": "50_Instances/accepted/rag-public-os-learning-packet.json",
+      "from_state": "legacy",
+      "to_state": "held",
+      "review_path": "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json",
+      "reason_codes": [
+        "accepted_review_lineage_missing",
+        "durable_source_path_missing",
+        "durable_external_provenance_missing",
+        "unsupported_pressure"
+      ],
+      "pressure": {
+        "score": 30,
+        "factors": [
+          {
+            "id": "unsupported_pressure",
+            "score": 30,
+            "reason": "accepted_review_lineage_missing,durable_source_path_missing,durable_external_provenance_missing"
+          }
+        ],
+        "recommended_action": "hold"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425450-0eff9bad-4053-4418-a7ac-c15044c5c938",
+        "node-transition-1783718425451-13e9a69f-323c-4abf-8825-2df2b628cdab",
+        "node-transition-1783718425451-9539438d-477a-40c3-af2a-e3d019748113"
+      ]
+    },
+    {
+      "type": "hold_unsupported",
+      "target_path": "50_Instances/accepted/rag-verified-knowledge-v1.json",
+      "from_state": "legacy",
+      "to_state": "held",
+      "review_path": "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json",
+      "reason_codes": [
+        "durable_external_provenance_missing",
+        "unsupported_pressure"
+      ],
+      "pressure": {
+        "score": 30,
+        "factors": [
+          {
+            "id": "unsupported_pressure",
+            "score": 30,
+            "reason": "durable_external_provenance_missing"
+          }
+        ],
+        "recommended_action": "hold"
+      },
+      "applied": true,
+      "transition_ids": [
+        "node-transition-1783718425452-71be6151-191a-4614-9da7-b29efb7adf32",
+        "node-transition-1783718425452-bfa2193f-4198-4a7d-bd7a-f4976bbe7884",
+        "node-transition-1783718425452-d7342cac-55ca-41f4-88f9-ae07b3447661"
+      ]
+    }
+  ],
+  "deferred_scope": {
+    "package": "MEM-02",
+    "candidate_backlog": 1550,
+    "policy": "No bulk candidate acceptance or rejection is performed by MEM-01."
+  }
+}

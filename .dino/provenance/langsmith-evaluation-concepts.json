@@ -1,0 +1,41 @@
+{
+  "provenance_id": "langsmith-evaluation-concepts",
+  "source_chunk_path": "30_Sources/chunks/langsmith-evaluation-concepts.json",
+  "claim_paths": [
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "20_Wiki/RAG-Verified-Knowledge-Base.md"
+  ],
+  "source_uri": "https://docs.langchain.com/langsmith/evaluation-concepts",
+  "verification_status": "verified_summary",
+  "created_at": "2026-07-06T23:23:45.973Z",
+  "updated_at": "2026-07-11T02:04:42.659Z",
+  "version": "claim_provenance_v2",
+  "type": "claim_support",
+  "lineage_role": "claim_support",
+  "source_snapshot_path": "30_Sources/fetched/langsmith-evaluation-concepts.json",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_paths": [
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "source_content_sha256": "68a8959a0a6d3b54545054a199a550b09c925c42ba041cc0f9ae1e1232ea6771",
+  "chunk_sha256": "68a8959a0a6d3b54545054a199a550b09c925c42ba041cc0f9ae1e1232ea6771",
+  "last_verified": "2026-07-07",
+  "verification_method": "legacy_direct_source_review",
+  "lineage_generation_id": "lineage-langsmith-evaluation-concepts-7817e4afcda98af2ad22",
+  "lineage_generation_path": ".dino/provenance/generations/lineage-langsmith-evaluation-concepts-7817e4afcda98af2ad22.json"
+}

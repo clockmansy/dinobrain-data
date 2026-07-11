@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-114456-Continue-active-goal-improve",
+  "status": "completed",
+  "request": "Continue active goal: improve P0-01 full-memory audit and P0-02 status freshness first, then verify toward review/semantic settlement, finish-gate, and real RAG eval readiness.",
+  "project": "DinoBrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T11:44:56.670Z",
+  "updated_at": "2026-07-07T11:58:03.192Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T11:58:03.192Z",
+  "trace_path": ".dino/traces/task-20260707-114456-Continue-active-goal-improve.json"
+}

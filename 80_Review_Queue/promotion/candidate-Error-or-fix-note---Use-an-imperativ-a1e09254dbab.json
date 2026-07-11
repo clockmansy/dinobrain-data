@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-Error-or-fix-note---Use-an-imperativ-a1e09254dbab",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-a1e09254dbab.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-125213-36393acf4c6f.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T12:52:14.353Z",
+  "updated_at": "2026-07-07T12:52:14.353Z"
+}

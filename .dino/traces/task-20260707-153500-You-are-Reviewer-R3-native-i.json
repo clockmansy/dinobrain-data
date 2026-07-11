@@ -1,0 +1,44 @@
+{
+  "task_id": "task-20260707-153500-You-are-Reviewer-R3-native-i",
+  "outcome": "completed",
+  "summary": "Read-only R3 native instruction authority review. Inspected MEMORY.md, OS remaining gaps plan, completion conditions, AGENTS protocol, native instruction authority scanner/verifier, health status, closed-loop goal gate, Observatory exposure, current native authority status artifact, and local Codex/Claude instruction surface listings. Verdict is REVISE_REQUIRED because current docs/code cover user-over-memory authority and many native surfaces, but do not explicitly require scanning user-level Codex rules/custom policy files such as <machine-local-path> which is safe-readable and currently outside the scanner surface list.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Current user instruction > OS memory is documented in AGENTS.md and OS completion docs, and enforced by native-authority regression/current checks in verify:goal.",
+    "P0-05 in the remaining-gaps plan requires scanning AGENTS, repo .codex, Codex global config/hooks, Claude settings, installer-written hooks, and emitting native_memory_drift/wrong_memory_reference_detected/unsafe_native_instruction/hook_authority_conflict signals.",
+    "The implementation scans many required surfaces and the current data artifact reports healthy, but it omits <machine-local-path> a safe-readable native Codex policy/custom rules surface that could drift without tripping native_instruction_authority."
+  ],
+  "next_steps": [
+    "Revise the plan/completion docs to explicitly include Codex user-level rules/custom policy files such as ~/.codex/rules/*.rules and any equivalent Claude user-level custom instruction files when present.",
+    "Require status:native-authority/verify:goal to fail when a safe-readable native instruction/custom policy surface exists but is not scanned or explicitly classified out with a reason."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-153500-You-are-Reviewer-R3-native-i.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-153500-c35ae8ada0bb.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-How-to-note-Inspect-memory-and-docs--abf24996cf4d.json",
+    "50_Instances/candidates/candidate-Project-state-Judge-whether-the-plan-8da5d84d66c2.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 2,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T15:36:19.098Z"
+}

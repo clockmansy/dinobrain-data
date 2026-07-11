@@ -1,0 +1,61 @@
+{
+  "task_id": "task-20260707-160250-Continue-DinoBrain-OS-comple",
+  "outcome": "partial",
+  "summary": "Implemented P0-06 source/chunk/claim lineage as an executable completion gate. Added source lineage status builder, regression verifier, health/freshness refresh wiring, verify:goal requirement, Observatory API/UI exposure, and documentation updates. Verified fixture and real data vault health, then committed and pushed app and selected data status evidence.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md",
+    "docs/VERIFICATION.md",
+    "package.json",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/verify-closed-loop-goal.mjs",
+    "scripts/verify-source-lineage.mjs",
+    "src/build-source-lineage-status.ts",
+    "src/health-status.ts",
+    "src/refresh-status-artifacts.ts",
+    "src/source-lineage.ts",
+    "src/status-freshness.ts",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]"
+  ],
+  "decisions": [
+    "P0-06 is now completion-grade only when verified source chunks, provenance records, bounded chunk text, source URI, and non-dangling claim_paths are present.",
+    "Behavior/internal operating memories are separated from factual source-backed claims so user preference records are not falsely treated as unsupported public claims.",
+    "Anchor-only URL records remain visible but cannot satisfy verified claim support.",
+    "verify:goal now includes source_chunk_claim_provenance_lineage and current real data vault status must be healthy.",
+    "Generated data commit was scoped to source lineage status plus health/monitoring evidence, leaving existing backlog untouched."
+  ],
+  "next_steps": [
+    "Run npm run codex:hooks:approval to clear stale DinoBrain MCP processes, then rerun npm run verify:goal in a fresh Codex proof window.",
+    "Resolve task lifecycle blockers: 4 stale active tasks and 2 terminal tasks missing traces, then rerun task:lifecycle and task:lifecycle:settle.",
+    "Implement completion-grade semantic retrieval provider and generated-answer quality evaluation so RAG completion no longer blocks on local_text_hashing_v1."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-160250-Continue-DinoBrain-OS-comple.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "source lineage status provenance source chunks verified claim support",
+    "native instruction authority verify goal source_lineage"
+  ],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-07T16:13:56.342Z"
+}

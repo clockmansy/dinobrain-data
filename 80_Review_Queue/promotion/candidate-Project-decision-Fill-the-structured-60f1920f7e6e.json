@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-Project-decision-Fill-the-structured-60f1920f7e6e",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-60f1920f7e6e.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-173216-362e18896bed.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T17:32:17.024Z",
+  "updated_at": "2026-07-07T17:32:17.024Z"
+}

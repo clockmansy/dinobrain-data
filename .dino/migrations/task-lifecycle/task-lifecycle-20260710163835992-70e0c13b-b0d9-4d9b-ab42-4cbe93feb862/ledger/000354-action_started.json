@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 354,
+  "event": "action_started",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "13a3693c60d000bc24f6803a87b9cc3ed64cfea89b8e2cdba895b3e0185c2477",
+  "payload": {
+    "index": 175,
+    "task_id": "task-20260707-125917-You-are-Role-7-lifecycle-syn",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "d559ebc89d5d73b71a853e240a4a5a5ab51540f3a6ed9d150a89fb7a436993df",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "c99226fe1fc94a5829a1b69f8a9bb7c793ecf91b97b8e5efb5a4f94a3add8ceb"
+}

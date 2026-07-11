@@ -1,0 +1,38 @@
+{
+  "task_id": "task-20260707-023312-Read-only-audit-of-retrieval",
+  "outcome": "completed",
+  "summary": "Completed read-only audit of DinoBrain retrieval quality against RAG best practices. Verdicts: contextual chunks PASS at basic source-chunk/metadata-context level; sparse+dense hybrid FAIL for current default because live retrieval is lexical_fallback_v2 and no dense vector index is present; reranking PASS because BM25/RRF/provenance/root/session reranking is implemented and visible in context-pack reasons; operation-log pollution FAIL because 60_Operations and task-summary records are present in the current index and operation records can dominate operation-flavored searches; current default retrieval for the user's LLM Wiki goal FAIL until dense vectors/index freshness/noise gates are fixed, though it does retrieve the intended LLM Wiki goal records for this audit query. No source files were edited by this audit.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Use live Context Pack and local code/data evidence as source of truth.",
+    "Do not run npm/node verifier scripts because node is unavailable on the shell PATH.",
+    "Treat operation-log pollution as a retrieval-quality failure because 60_Operations records dominate operation-flavored ranked output and task-summary paths remain in the current wiki index."
+  ],
+  "next_steps": [
+    "Add or configure a real dense vector index/provider and gate claims on hybrid_contextual_v2 when required.",
+    "Rebuild or invalidate stale wiki indexes so task summaries excluded by current code are not still present in persisted index files.",
+    "Separate operational reports/logs from default user-memory retrieval, or require explicit operation intent before ranking 60_Operations records highly."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-023316-Retrieval-quality-audit-for-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "RAG verification subagent task summary operation log"
+  ],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T02:37:25.324Z"
+}

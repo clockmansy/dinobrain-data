@@ -1,0 +1,227 @@
+{
+  "memory_id": "codex-session-knowledge-knowledge_compounding_goal",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "project_goal",
+  "title": "DinoBrain goal is knowledge compounding from sessions",
+  "claim": "The core DinoBrain goal is a compounding LLM Wiki where user sessions become reviewed preferences, decisions, rules, corrections, and source-backed knowledge that improve future sessions.",
+  "reusable_rule": "Treat sessions as the root source; convert them into reviewed memory, lifecycle-clean noisy memory, evaluate behavior lift, and retrieve the result in later and future Context Packs.",
+  "scope": "dinobrain_product",
+  "confidence": "high",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "project-goal",
+    "llm-wiki",
+    "compounding",
+    "memory"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 29,
+    "user_hit_count": 52,
+    "assistant_hit_count": 196,
+    "weighted_score": 600,
+    "session_refs": [
+      "sess-0a41a5f21d5b58",
+      "sess-0ca153289a72b9",
+      "sess-1e95eea1be108d",
+      "sess-24a6ee3381ae00",
+      "sess-2d27e1d180db6c",
+      "sess-3d168ffb4f6ce0",
+      "sess-40cc080526149f",
+      "sess-458b19a1a1cdf1",
+      "sess-4e95f4fc22803b",
+      "sess-52c21a717f5a44",
+      "sess-61a6570430d591",
+      "sess-64b0ce067fa037",
+      "sess-6aa2423b061356",
+      "sess-6b55d87e30bb3e",
+      "sess-6f506c542b0e47",
+      "sess-72cf004ec045b8",
+      "sess-7ad76bf1417852",
+      "sess-7fe6090762c115",
+      "sess-80c93d7848697c",
+      "sess-859a5de9d52d83",
+      "sess-87894506617c58",
+      "sess-c15947f92a15cb",
+      "sess-c73d712d226683",
+      "sess-d18f6172935388"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "user",
+        "message_hash": "942d6f73e4d17e2309cb662f",
+        "char_count": 3835
+      },
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "assistant",
+        "message_hash": "2230f5b60230c2874ba5dfea",
+        "char_count": 115
+      },
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "user",
+        "message_hash": "59fdbaf4c94f4e80bea80431",
+        "char_count": 2091
+      },
+      {
+        "session_ref": "sess-3d168ffb4f6ce0",
+        "role": "user",
+        "message_hash": "dd127cf1a90e2a1c0f5472cb",
+        "char_count": 162
+      },
+      {
+        "session_ref": "sess-3d168ffb4f6ce0",
+        "role": "assistant",
+        "message_hash": "9d5cf52df93605bc3f8a22a4",
+        "char_count": 107
+      },
+      {
+        "session_ref": "sess-3d168ffb4f6ce0",
+        "role": "assistant",
+        "message_hash": "091fa250d170b9c33e63748f",
+        "char_count": 1386
+      },
+      {
+        "session_ref": "sess-3d168ffb4f6ce0",
+        "role": "assistant",
+        "message_hash": "bed6b7c0048c5e26f429d1f1",
+        "char_count": 1866
+      },
+      {
+        "session_ref": "sess-3d168ffb4f6ce0",
+        "role": "assistant",
+        "message_hash": "ffc7a13cfdacdc6c2353add3",
+        "char_count": 1357
+      },
+      {
+        "session_ref": "sess-40cc080526149f",
+        "role": "assistant",
+        "message_hash": "59a573bdee13a8c4f1148d5b",
+        "char_count": 1073
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "assistant",
+        "message_hash": "e539544f15c7dc41bdf2c45b",
+        "char_count": 1991
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "8ced26aeb4c7b48b040a6d90",
+        "char_count": 5391
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "assistant",
+        "message_hash": "b8aa7a091319f2f0af7c4ff4",
+        "char_count": 122
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "assistant",
+        "message_hash": "5f819d24b5242fb25e345705",
+        "char_count": 219
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "assistant",
+        "message_hash": "d8255ab5815f17020c2f741e",
+        "char_count": 179
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "assistant",
+        "message_hash": "de7b0e739c765a58be0f4595",
+        "char_count": 82
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "assistant",
+        "message_hash": "101e6e394bed35b72d0f306f",
+        "char_count": 96
+      }
+    ],
+    "matched_terms": [
+      "지식의\\s*복리|복리|LLM\\s*Wiki|LLMWIKI|세컨드브레인|지식화|성장|학습|대화.*세션|sessions.*source|compound"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 236
+      },
+      {
+        "project": "new-chat",
+        "count": 8
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 3
+      },
+      {
+        "project": "stripe engine",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-knowledge_compounding_goal.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-07T01:45:20.000Z",
+  "node_id": "codex-session-knowledge-knowledge_compounding_goal",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425442-461c526c-a721-4976-86ad-b470cb5c3d05",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425442-461c526c-a721-4976-86ad-b470cb5c3d05",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-knowledge_compounding_goal.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-knowledge_compounding_goal.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-knowledge_compounding_goal.json"
+  ],
+  "successor_paths": []
+}

@@ -1,0 +1,69 @@
+{
+  "memory_id": "task-memory-task-20260706-161246-Completion-Reviewer-09-read",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: task-20260706-161246-Completion-Reviewer-09-read-",
+  "summary": "Completion Reviewer 09 completed a read-only Observatory/UI/graph review. Conclusion: agree with the proposed direction only if completion requires live, non-stale Observatory evidence: fresh graph health over the real accepted corpus, live graph/status endpoints tied to real wiki/operations indexes, visible memory-use audits, active-task hygiene, explicit blocked/pending/verifier/main states, and graph design that is operational rather than decorative. Key risk found: persisted graph-health is stale/false healthy while an in-memory rebuild reports degraded score 0 with 154 accepted records lacking durable source mapping.",
+  "claim": "Task outcome for DinoBrain: Completion Reviewer 09 completed a read-only Observatory/UI/graph review. Conclusion: agree with the proposed direction only if completion requires live, non-stale Observatory evidence: fresh graph health over the real accepted corpus, live graph/status endpoints tied to real wiki/operations indexes, visible memory-use audits, active-task hygiene, explicit blocked/pending/verifier/main states, and graph design that is operational rather than decorative. Key risk found: persisted graph-health is stale/false healthy while an in-memory rebuild reports degraded score 0 with 154 accepted records la",
+  "request": "task-20260706-161246-Completion-Reviewer-09-read-",
+  "outcome": "completed",
+  "decisions": [
+    "Observatory completion must be defined by visible operational truth, not only a passing graph UI fixture.",
+    "Graph-health freshness must be a gate; the current persisted graph-health file is stale relative to the wiki index and accepted corpus.",
+    "The live graph should prioritize semantic clusters, search, hover detail, and state visibility, and avoid dinosaur/fossil/decorative visual metaphors as completion criteria.",
+    "Active tasks must distinguish actually-running work from stale started records and show blocked/pending/verifier/main lanes explicitly.",
+    "Memory-use visibility must show provided, declared-used, observed-used, missing expected, hallucinated references, trust score, and graph-health snapshot, not just an audit count."
+  ],
+  "next_steps": [
+    "Regenerate graph health after wiki/operations index updates and fail readiness when graph-health is older than the index or inconsistent with accepted record count.",
+    "Add/verify an Observatory real-data health card that compares persisted graph-health to a fresh sampled health computation and flags stale false-healthy states.",
+    "Add task-state hygiene for stale started tasks and explicit lanes for main, verifier/reviewer, pending, blocked, completed/partial.",
+    "Backfill durable source/provenance records or explicitly classify internal trace-only behavior memories so graph health can distinguish behavior memory lineage from source-truth lineage.",
+    "Expand Observatory verification from synthetic fixture to real-data endpoint assertions covering active tasks, memory audit count, graph-health freshness, and no decorative graph terminology."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/task-memory-task-20260706-160650-Completion-Reviewer-05-prove.json",
+    "50_Instances/accepted/task-memory-task-20260706-160652-Completion-Reviewer-03-retri.json",
+    "50_Instances/accepted/behavior-rule-0d2fb5049213d9b3.json",
+    "50_Instances/accepted/behavior-rule-0f53e59a1f4113ca.json",
+    "50_Instances/accepted/behavior-rule-b09e15a038deca29.json",
+    "50_Instances/accepted/behavior-rule-1239ac71caea3f2e.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-161248-Observatory-UI-graph-complet.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260706-161246-Completion-Reviewer-09-read.json",
+    "snippet": "Completion Reviewer 09 completed a read-only Observatory/UI/graph review. Conclusion: agree with the proposed direction only if completion requires live, non-stale Observatory evidence: fresh graph health over the real accepted corpus, live graph/status endpoints tied to real wiki/operations indexes, visible memory-use audits, active-task hygiene, explicit blocked/pending/verifier/main states, and graph design that is operational rather than decorative. Key risk found: persisted graph-health is stale/false healthy while an in-memory rebuild reports degraded score 0 with 154 accepted records lacking durable source mapping."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-06T16:15:56.786Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260706-161246-Completion-Reviewer-09-read.json",
+    "task_id": "task-20260706-161246-Completion-Reviewer-09-read-",
+    "task_path": ".dino/tasks/task-20260706-161246-Completion-Reviewer-09-read.json"
+  },
+  "accepted_at": "2026-07-06T16:15:56.786Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260706-161246-Completion-Reviewer-09-read.json",
+  "candidate_id": "task-memory-task-20260706-161246-Completion-Reviewer-09-read",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260706-161246-Completion-Reviewer-09-read.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

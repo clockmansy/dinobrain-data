@@ -1,0 +1,21 @@
+{
+  "version": "node_lifecycle_transition_artifact_v1",
+  "transition_id": "node-transition-1783718425451-13e9a69f-323c-4abf-8825-2df2b628cdab",
+  "transaction_id": "node-lifecycle-1783718425626-fe04ddcd-00fa-43c7-be8f-4c7e0f92dc75",
+  "target_path": "50_Instances/accepted/rag-public-os-learning-packet.json",
+  "from_state": "accepted",
+  "to_state": "held",
+  "reason_code": "accepted_held",
+  "reason": "Accepted memory failed lifecycle gate: accepted_review_lineage_missing, durable_source_path_missing, durable_external_provenance_missing, unsupported_pressure",
+  "actor": "codex-mem01-migration-reapply",
+  "evidence_paths": [
+    "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json"
+  ],
+  "predecessor_paths": [
+    "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json"
+  ],
+  "successor_paths": [],
+  "at": "2026-07-10T21:20:25.107Z",
+  "before_sha256": "7201ab3839f6b5ee7a949712accc275ecbcff26cd5262aec2351d956cf234d51",
+  "after_sha256": "e4dccd78c9b39be2f2a5d2079daef798746488c3a9b43e1eedcc063937fc0274"
+}

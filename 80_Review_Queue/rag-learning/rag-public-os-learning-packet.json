@@ -1,0 +1,23 @@
+{
+  "review_id": "rag-public-os-learning-packet",
+  "type": "memory_review",
+  "status": "accepted",
+  "candidate_path": "50_Instances/accepted/rag-public-os-learning-packet.json",
+  "reviewed_by": "codex",
+  "reviewed_at": "2026-07-06T23:38:00Z",
+  "decision": "accept_as_anchor_backlog",
+  "rationale": "The user asked DinoBrain to learn the same RAG methodology packet from another public OS. The content is safe to preserve as a methodology backlog, but URL anchors must remain unverified until fetched, chunked, and reviewed.",
+  "checks": {
+    "contains_secrets": false,
+    "stores_raw_transcript": false,
+    "stores_full_external_pages": false,
+    "distinguishes_anchor_from_verified_claim": true,
+    "has_follow_up_verification_path": true
+  },
+  "follow_up": [
+    "Import the exact remaining upstream RAG URL anchors if the full 55-item list becomes available.",
+    "Fetch high-priority sources one at a time and create bounded reviewed source chunks.",
+    "Link concrete DinoBrain retrieval claims to source chunks before using them as verified support.",
+    "Run retrieval canaries after each source batch to verify that the anchors improve search behavior."
+  ]
+}

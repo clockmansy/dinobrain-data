@@ -1,0 +1,132 @@
+{
+  "version": "rag_completion_maintenance_evidence_v1",
+  "status": "verified_local_package",
+  "generated_at": "2026-07-11T14:05:15.3102932Z",
+  "scope": [
+    "RAG-03",
+    "RAG-04",
+    "full-memory-audit-compatibility",
+    "ram-diagnosis"
+  ],
+  "code_identity": {
+    "app_commit": "ef708909480303654dde060412500cd290cbde49",
+    "data_parent_commit": "8b16ee5b86dbe936eb614cebee0ed1e1eaf31861"
+  },
+  "answer_quality": {
+    "version": "answer_quality_v2",
+    "status": "healthy",
+    "cases_passed": 14,
+    "cases_total": 14,
+    "hybrid_cases": 14,
+    "lexical_fallback_cases": 0,
+    "average_memory_lift": 53.259,
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "correctness": 1,
+    "grounding": 0.714,
+    "source_support": 1,
+    "forbidden_memory_avoidance": 1,
+    "current_instruction_compliance": 1,
+    "p95_latency_ms": 297,
+    "rss_delta_mb": 114.684,
+    "rss_budget_mb": 256,
+    "independent_calibration": {
+      "version": "answer_quality_calibration_v2",
+      "status": "healthy",
+      "judge_count": 10,
+      "case_count": 7,
+      "vote_count": 70,
+      "unsafe_votes": 0,
+      "unresolved_cases": 0,
+      "disagreements": 0,
+      "packet_hash_scope": "judge_decision_inputs_v1",
+      "packet_sha256": "fb52e853cbcd71530d3c84ed6c94f218e06dbd1bf6f5f57f07e232911cc78d44",
+      "decision_inputs_sha256": "d0af0e3de75bbbc7ee931c1370c2de50515763d181dda505c1acbdf9b9cda13b",
+      "review_path": "60_Operations/rag-evaluation/answer-quality-independent-review-20260711-fb52e853cbcd.json",
+      "review_sha256": "d190cc8bf4ba0b906762e0e73f0cfa56723f053582c4a99a1d6a6917e4cb1a24",
+      "retrieval_index_match_after_rebuild": false,
+      "review_index_match_after_rebuild": false,
+      "sampled_candidate_hashes_stable_after_rebuild": true,
+      "stale_judgments": []
+    }
+  },
+  "rag_retrieval": {
+    "version": "rag_eval_v2",
+    "status": "healthy",
+    "cases_passed": 18,
+    "cases_total": 18,
+    "hybrid_ratio": 1,
+    "lexical_fallback_cases": 0,
+    "average_path_recall": 1,
+    "average_required_term_recall": 1,
+    "average_memory_lift": 82.153,
+    "required_languages": [
+      "ko",
+      "en"
+    ],
+    "required_category_count": 11,
+    "missing_categories": []
+  },
+  "scale_50k": {
+    "status": "healthy",
+    "qualifying": true,
+    "record_count": 50000,
+    "session_count": 1000,
+    "cold_build_ms": 22109.299,
+    "context_pack_p95_ms": 480.815,
+    "wiki_search_p95_ms": 125.298,
+    "recent_task_p95_ms": 11.984,
+    "incremental_write_p95_ms": 32.472,
+    "graph_refresh_p95_ms": 162.8,
+    "observatory_poll_p95_ms": 58.878,
+    "process_rss_peak_mb": 1726.1,
+    "assertion_failures": [],
+    "verification_issues": []
+  },
+  "full_memory_audit": {
+    "status": "drift_classified",
+    "file_count": 12633,
+    "parse_errors": 0,
+    "unclassified_drift": 0
+  },
+  "ram_observation": {
+    "scale_worker_exited": true,
+    "peak_mcp_children_after_multi_agent_review": 24,
+    "latest_mcp_children": 14,
+    "latest_mcp_rss_mb": 863.8,
+    "latest_observatory_rss_mb": 123.3,
+    "sustained_pressure_root_cause": "Codex retains one open stdio DinoBrain MCP process per main or subagent generation.",
+    "safe_immediate_reclamation": "Restart Codex and stale MCP transports after the active task finishes.",
+    "durable_follow_up": "Use a shared embedding sidecar or an MCP supervisor with health handoff and generation reaping."
+  },
+  "global_goal_audit": {
+    "passed_requirements": 16,
+    "total_requirements": 23,
+    "rag_answer_quality_and_scale_passed": true,
+    "full_memory_audit_passed_on_follow_up": true,
+    "remaining_external_or_session_gates": [
+      "Fresh Codex Desktop pre-response proof after restarting stale MCP transports",
+      "Direct Codex and Claude MCP parity proof",
+      "Release manifest ZIP SHA tag parity",
+      "Public data repository full-history safety migration"
+    ]
+  },
+  "verification_commands": [
+    "npm run check",
+    "npm run verify:answer-quality",
+    "npm run audit:full-memory:verify",
+    "npm run audit:full-memory",
+    "npm run rag:proof:verify",
+    "npm run rag:retrieval:verify",
+    "npm run eval:rag:verify",
+    "npm run scale:50k",
+    "npm run scale:50k:check",
+    "npm run verify:goal"
+  ],
+  "privacy": {
+    "raw_conversation_text_included": false,
+    "candidate_answer_text_included": false,
+    "secrets_included": false,
+    "local_paths_included": false
+  }
+}

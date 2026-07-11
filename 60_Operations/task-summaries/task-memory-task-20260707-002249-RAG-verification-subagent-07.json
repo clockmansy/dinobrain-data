@@ -1,0 +1,43 @@
+{
+  "memory_id": "task-memory-task-20260707-002249-RAG-verification-subagent-07",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: RAG verification subagent 07: verify OpenAI retrieval and embeddings claims from official OpenAI",
+  "summary": "Verified OpenAI Retrieval API and embeddings QA cookbook claims from official OpenAI sources. Retrieval API guide is preferred for current API facts; cookbook is explicitly archived and should be treated as conceptual/stale.",
+  "claim": "Task outcome for DinoBrain: Verified OpenAI Retrieval API and embeddings QA cookbook claims from official OpenAI sources. Retrieval API guide is preferred for current API facts; cookbook is explicitly archived and should be treated as conceptual/stale.",
+  "request": "RAG verification subagent 07: verify OpenAI retrieval and embeddings claims from official OpenAI Retrieval API guide and embeddings QA cookbook, read-only, no file edits.",
+  "outcome": "completed",
+  "decisions": [
+    "Use the Retrieval API guide as the authoritative current source for OpenAI retrieval/vector store API behavior.",
+    "Treat the embeddings QA cookbook as archived/stale; use it only for high-level Search-Ask and local embeddings pipeline patterns.",
+    "No repository/source files edited."
+  ],
+  "next_steps": [
+    "If accepted, store only concise source-anchored claims in DinoBrain, not raw page text.",
+    "Re-check official docs before implementing current API parameters because OpenAI docs can change."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-002252-OpenAI-retrieval-embeddings-.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-002249-RAG-verification-subagent-07.json",
+    "snippet": "Verified OpenAI Retrieval API and embeddings QA cookbook claims from official OpenAI sources. Retrieval API guide is preferred for current API facts; cookbook is explicitly archived and should be treated as conceptual/stale."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:24:03.170Z",
+  "updated_at": "2026-07-07T00:24:03.170Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-002249-RAG-verification-subagent-07.json",
+    "task_id": "task-20260707-002249-RAG-verification-subagent-07",
+    "task_path": ".dino/tasks/task-20260707-002249-RAG-verification-subagent-07.json"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "memory_id": "task-memory-task-20260707-011051-Read-only-audit-of-retrieval",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: Read-only audit of retrieval quality blockers that affect memory reference in the Codex-only clo",
+  "summary": "Completed read-only audit of retrieval quality blockers for Codex-only memory reference. Findings: current Context Pack path is honestly labeled lexical_fallback_v2, but there is no hard gate preventing memory-reference quality claims while dense vectors/wiki SQLite are absent; eval:context is bootstrap/noise-tolerant and not representative enough to prove memory quality; broad accepted behavior rules and auto-growth summaries can dominate focused packs; os_gate validates context presence and safety risk but not retrieval mode, index freshness, noise, provenance, real-vault behavior evaluation, or candidate-count budgets. No source files were edited.",
+  "claim": "Task outcome for dinobrain: Completed read-only audit of retrieval quality blockers for Codex-only memory reference. Findings: current Context Pack path is honestly labeled lexical_fallback_v2, but there is no hard gate preventing memory-reference quality claims while dense vectors/wiki SQLite are absent; eval:context is bootstrap/noise-tolerant and not representative enough to prove memory quality; broad accepted behavior rules and auto-growth summaries can dominate focused packs; os_gate validates context presence and safety risk but not retrieval mode, index freshness, noise, provenance, real-vault behavior evaluation",
+  "request": "Read-only audit of retrieval quality blockers that affect memory reference in the Codex-only closed loop, focused on eval:context failure/noise, lexical_fallback_v2, and minimum hard gates before claiming memory reference quality. Do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "Do not claim lexical_fallback_v2 is real dense hybrid retrieval or sufficient memory-reference quality.",
+    "Treat current eval:context as coarse retrieval smoke coverage, not a hard quality gate.",
+    "Minimum quality claims need hard gates for retrieval mode, index/shard freshness, representative context eval, behavior eval, provenance/source distinction, noise/type budgets, and observable memory use."
+  ],
+  "next_steps": [
+    "Create/refesh real wiki SQLite and dense-vector provider/index evidence before using hybrid_contextual_v2 language.",
+    "Replace bootstrap context-golden README routing cases with representative semantic, provenance, negative, quarantine, recency, noisy-growth, and public-safety cases.",
+    "Add os_gate or verification-registry hard failures for lexical fallback when hybrid quality is claimed, missing/stale wiki index or SQLite shards, eval:context failures/noise, missing behavior-golden, and behavior-rule swamping."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/task-memory-task-20260706-160652-Completion-Reviewer-03-retri.json",
+    "50_Instances/accepted/behavior-rule-506b0f9b53efe4e8.json",
+    "50_Instances/accepted/behavior-rule-ff402e89e4f3274b.json",
+    "50_Instances/accepted/behavior-rule-2dfae4129e092ea3.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-011053-retrieval-quality-blockers-m.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-011051-Read-only-audit-of-retrieval.json",
+    "snippet": "Completed read-only audit of retrieval quality blockers for Codex-only memory reference. Findings: current Context Pack path is honestly labeled lexical_fallback_v2, but there is no hard gate preventing memory-reference quality claims while dense vectors/wiki SQLite are absent; eval:context is bootstrap/noise-tolerant and not representative enough to prove memory quality; broad accepted behavior rules and auto-growth summaries can dominate focused packs; os_gate validates context presence and safety risk but not retrieval mode, index freshness, noise, provenance, real-vault behavior evaluation, or candidate-count budgets. No source files were edited."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T01:15:43.256Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-011051-Read-only-audit-of-retrieval.json",
+    "task_id": "task-20260707-011051-Read-only-audit-of-retrieval",
+    "task_path": ".dino/tasks/task-20260707-011051-Read-only-audit-of-retrieval.json"
+  },
+  "accepted_at": "2026-07-07T01:15:43.256Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-011051-Read-only-audit-of-retrieval.json",
+  "candidate_id": "task-memory-task-20260707-011051-Read-only-audit-of-retrieval",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260707-011051-Read-only-audit-of-retrieval.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

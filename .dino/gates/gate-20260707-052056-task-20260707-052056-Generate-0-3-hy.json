@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-052056-task-20260707-052056-Generate-0-3-hy",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-052056-Generate-0-3-hyperpersonaliz",
+  "request": "Generate 0-3 hyperpersonalized actionable Codex thread suggestions for work in the local DinoBrain project by synthesizing repo state with recent connected-app signals and avoiding already-handled items.",
+  "generated_at": "2026-07-07T05:20:56.354Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-052056-Generate-0-3-hyperpersonaliz.json",
+  "context_item_count": 6,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

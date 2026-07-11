@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260706-232632-task-20260706-232632-Promote-meaning",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260706-232632-Promote-meaningful-knowledge",
+  "request": "Promote meaningful knowledge from local Codex session history into DinoBrain accepted memory without syncing raw transcripts: extract repeated user preferences, important decisions, mistakes, setup/hook/search lessons, and future behavior rules from the metadata-only session registry and local Codex sessions; create reviewed safe memory artifacts and verify retrieval/public-data safety.",
+  "generated_at": "2026-07-06T23:26:32.450Z",
+  "context_pack_path": ".dino/context-packs/pack-20260706-232632-Promote-meaningful-knowledge.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "sensitive",
+  "reported_sensitivity": "sensitive",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

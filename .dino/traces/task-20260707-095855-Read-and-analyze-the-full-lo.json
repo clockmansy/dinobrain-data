@@ -1,0 +1,43 @@
+{
+  "task_id": "task-20260707-095855-Read-and-analyze-the-full-lo",
+  "outcome": "completed",
+  "summary": "Read the requested local improvement-plan markdown file, verified SHA-256 matched the expected value, and analyzed implementation order, scope control, dependencies, breadth risk, and first implementation step. No target/source files were edited.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Treat the plan as a final-readiness specification, not an immediately executable sprint backlog.",
+    "Recommend starting with P0-02 status freshness because stale monitoring undermines all later gates and is already first in the plan's own sequence.",
+    "Recommend limiting the first implementation slice to freshness metadata, status precedence, needs_refresh semantics, API/UI visibility, and focused tests only.",
+    "Identify the plan as too broad for one implementation wave; split P0 safety/freshness gates, live backlog cleanup, release/sync E2E, UI proof, and outcome metrics into separate milestones."
+  ],
+  "next_steps": [
+    "If implementing, inspect current monitoring, health, and client MCP diagnostics modules plus existing tests before editing.",
+    "Create or update a focused P0-02 test fixture showing newer direct MCP proof overriding stale monitoring snapshots.",
+    "Only after P0-02 passes, proceed to P0-04 direct MCP parity canary and P0-03 recovery-key polarity cleanup."
+  ],
+  "used_memory_paths": [
+    "40_Projects/README.md",
+    "40_Projects/DinoBrain-Install-Release-State.md",
+    "40_Projects/DinoBrain-RAG-Roadmap.md",
+    "40_Projects/DinoBrain-Project-State.md",
+    "30_Sources/chunks/haystack-first-rag-pipeline.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-095855-Read-and-analyze-the-full-lo.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-095855-c192ff194c31.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-1a4cb4e0dda6.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 1,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T09:59:52.520Z"
+}

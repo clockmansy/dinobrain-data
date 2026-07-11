@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260703-041852-Add-installer-flow-that-dete",
+  "status": "completed",
+  "request": "Add installer flow that detects running Codex, restarts or guides reload, and opens/launches a hook approval flow for DinoBrain hooks without bypassing Codex trust approval.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-03T04:18:52.373Z",
+  "updated_at": "2026-07-03T04:28:57.320Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-03T04:28:57.320Z",
+  "trace_path": ".dino/traces/task-20260703-041852-Add-installer-flow-that-dete.json"
+}

@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 351,
+  "event": "action_applied",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "723b83e3bf4f4aeadef319da0183916898707049fe3cd5dcf8c47d749db2ec93",
+  "payload": {
+    "index": 173,
+    "task_id": "task-20260707-125918-You-are-Role-9-install-new-P",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "0e515fe61014dc64469e5648bad0329005322b4f85a6e791651369c903fef8d4",
+    "trace_sha256_after": "692506da67b5619837a9184f3a5e1daf65881475fb98099147b9aa5e3d6c7221"
+  },
+  "entry_sha256": "c7da88d090cdc5ae9a5803f73d0319ba81ba3a8a8985fd111543e8671ba3f18e"
+}

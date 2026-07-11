@@ -1,0 +1,135 @@
+{
+  "memory_id": "rag-public-os-learning-packet",
+  "type": "project_memory",
+  "status": "held",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "project_decision",
+  "title": "Cross-OS RAG learning packet is DinoBrain's retrieval-quality backlog",
+  "claim": "DinoBrain should retain the user-provided public OS RAG packet as a durable source-anchor and implementation backlog for LLM Wiki retrieval quality, while keeping URL anchors separate from verified source claims.",
+  "reusable_rule": "When improving DinoBrain RAG, start from the registered anchor catalog, fetch and chunk bounded source excerpts, link claims to source chunks, then evaluate retrieval with canaries and memory-on behavior tests before treating the knowledge as verified.",
+  "scope": "retrieval",
+  "confidence": "high",
+  "source_status": "user_supplied_anchor_summary",
+  "sensitivity": "normal",
+  "tags": [
+    "rag",
+    "llm-wiki",
+    "source-lineage",
+    "retrieval-quality",
+    "contextual-retrieval",
+    "hybrid-search",
+    "reranking",
+    "evaluation",
+    "cross-os-learning"
+  ],
+  "linked_records": {
+    "catalog": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "representative_source_chunks": [
+      "30_Sources/chunks/rag-survey.json",
+      "30_Sources/chunks/anthropic-contextual-retrieval.json",
+      "30_Sources/chunks/pinecone-rag.json",
+      "30_Sources/chunks/elastic-rag.json",
+      "30_Sources/chunks/azure-search-rag-overview.json",
+      "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+      "30_Sources/chunks/google-rag-engine-overview.json",
+      "30_Sources/chunks/openai-retrieval-guide.json",
+      "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+      "30_Sources/chunks/langchain-rag.json",
+      "30_Sources/chunks/llamaindex-rag.json",
+      "30_Sources/chunks/haystack-first-rag-pipeline.json",
+      "30_Sources/chunks/haystack-rag-from-scratch.json",
+      "30_Sources/chunks/microsoft-graphrag.json",
+      "30_Sources/chunks/ragas-evaluation.json",
+      "30_Sources/chunks/langsmith-evaluation-concepts.json",
+      "30_Sources/chunks/rag-paper-2005-11401.json",
+      "30_Sources/chunks/rag-paper-2303-11366.json",
+      "30_Sources/chunks/rag-paper-2401-18059.json",
+      "30_Sources/chunks/rag-paper-2212-10496.json"
+    ]
+  },
+  "implementation_implications": [
+    "Use contextual chunk enrichment instead of naked chunks where source licensing and cost permit.",
+    "Use BM25 or another sparse retriever together with real dense embeddings, then fuse and rerank the candidate set.",
+    "Keep retrieval mode honest: lexical fallback must not be labeled as full semantic hybrid retrieval.",
+    "Represent durable provenance at source, chunk, and claim granularity.",
+    "Use RAG canaries, retrieval quality reports, and behavior evaluation to prove that memory-on sessions outperform memory-off sessions.",
+    "Promote only reviewed claims into default Context Packs; leave anchor-only sources as backlog."
+  ],
+  "guardrails": [
+    "The URL anchors are provenance candidates, not verified evidence.",
+    "Do not store raw full pages or copyrighted full-text dumps.",
+    "Do not invent the missing upstream 55-anchor list; import exact URLs before creating additional source chunks.",
+    "Current user instruction always outranks remembered methodology preferences."
+  ],
+  "evidence": {
+    "source": "user-provided cross-OS RAG learning packet",
+    "source_catalog": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "evidence_kind": "paraphrased_user_supplied_anchor_summary",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "representative_url_anchor_count": 20,
+    "upstream_claimed_url_count": 55,
+    "upstream_full_url_list_available_locally": false,
+    "verified_content_claims_added": false
+  },
+  "promotion": {
+    "promoted_by": "codex",
+    "promotion_policy": "public_safe_anchor_summary",
+    "accepted_at": "2026-07-06T23:38:00Z"
+  },
+  "created_at": "2026-07-06T23:38:00Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": null,
+  "source_review_path": "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:38:00Z",
+  "node_id": "rag-public-os-learning-packet",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "held",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425451-13e9a69f-323c-4abf-8825-2df2b628cdab",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425450-0eff9bad-4053-4418-a7ac-c15044c5c938",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/rag-public-os-learning-packet.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json"
+      ],
+      "predecessor_paths": [
+        "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    },
+    {
+      "transition_id": "node-transition-1783718425451-13e9a69f-323c-4abf-8825-2df2b628cdab",
+      "idempotency_key": "accepted-gate-failed|50_Instances/accepted/rag-public-os-learning-packet.json|held",
+      "from_state": "accepted",
+      "to_state": "held",
+      "reason_code": "accepted_held",
+      "reason": "Accepted memory failed lifecycle gate: accepted_review_lineage_missing, durable_source_path_missing, durable_external_provenance_missing, unsupported_pressure",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json"
+      ],
+      "predecessor_paths": [
+        "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json"
+  ],
+  "successor_paths": [],
+  "quarantine": false,
+  "hold_reason": "accepted_review_lineage_missing,durable_source_path_missing,durable_external_provenance_missing,unsupported_pressure",
+  "held_by": "codex-mem01-migration-reapply",
+  "held_at": "2026-07-10T21:20:25.107Z"
+}

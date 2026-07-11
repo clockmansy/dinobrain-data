@@ -1,0 +1,53 @@
+{
+  "task_id": "task-20260707-003410-Use-verified-RAG-knowledge-a",
+  "outcome": "completed",
+  "summary": "Critically audited DinoBrain against verified RAG knowledge and the user's desired OS using local code/data verification plus 10 subagent reviews. Produced and pushed a consensus audit report identifying P0/P1 improvements: outer wrapper fail-closed, real source/provenance lineage, true read-only/review mode, protected installer updates, real hybrid retrieval, lower-noise context eval, behavior eval, lifecycle backpressure, durable SQLite/cold memory, safer public sync, task-correlated Observatory, and release/version parity.",
+  "changed_files": [
+    "60_Operations/audits/dinobrain-rag-critical-consensus-20260707.md",
+    "60_Operations/audits/dinobrain-rag-critical-consensus-20260707.json",
+    ".dino/index/wiki-index.json",
+    ".dino/index/sqlite/manifest.json",
+    ".dino/index/sqlite/wiki.sqlite",
+    ".dino/index/sqlite/operations.sqlite",
+    ".dino/index/graph-health.json"
+  ],
+  "decisions": [
+    "DinoBrain currently has a credible skeleton but does not yet satisfy the user's desired closed-loop LLM Wiki OS guarantees.",
+    "Treat hook wrapper fail-open paths, source lineage resolution, read-only/review semantics, and protected installer update behavior as P0 work before claiming OS completion.",
+    "Treat real dense hybrid retrieval, context/behavior evaluation, lifecycle backpressure, durable SQLite refresh, public/private sync split, Observatory read-trace correlation, and release parity as P1 work.",
+    "Do not claim lexical_fallback_v2 is real dense hybrid retrieval.",
+    "Do not claim graph node/edge count proves source-truth memory until accepted claims resolve to source chunks and provenance records."
+  ],
+  "next_steps": [
+    "Implement P0-1 hook wrapper fail-closed and verifier cases.",
+    "Implement P0-2 provenance lineage resolver and graph-health real-vault gate.",
+    "Implement P0-3 read-only/review mode that blocks auto-growth, auto-compound, and auto-sync.",
+    "Implement P0-4 installer update protection for dirty/ahead/diverged data repos.",
+    "Then proceed through retrieval/eval/lifecycle/Observatory/release parity P1 roadmap in the audit report."
+  ],
+  "used_memory_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "50_Instances/accepted/rag-verified-knowledge-v1.json",
+    "20_Wiki/Codex-Session-Knowledge-Profile.md"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-003410-Use-verified-RAG-knowledge-a.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [
+    "60_Operations/audits/dinobrain-rag-critical-consensus-20260707.md",
+    "60_Operations/audits/dinobrain-rag-critical-consensus-20260707.json"
+  ],
+  "search_queries": [
+    "DinoBrain RAG verified knowledge fail closed provenance behavior eval lifecycle observability installer recovery",
+    "verified RAG hybrid retrieval source chunk claim provenance behavior evaluation"
+  ],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 2,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-07T00:51:54.768Z"
+}

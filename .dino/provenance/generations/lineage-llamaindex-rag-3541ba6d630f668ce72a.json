@@ -1,0 +1,46 @@
+{
+  "version": "source_lineage_generation_v1",
+  "type": "lineage_generation",
+  "generation_id": "lineage-llamaindex-rag-3541ba6d630f668ce72a",
+  "generation_status": "published",
+  "transaction_id": "source-lineage-1783735482750-55d8af7c-dd12-49db-832c-fa202d44469b",
+  "source_snapshot_path": "30_Sources/fetched/llamaindex-rag.json",
+  "source_chunk_path": "30_Sources/chunks/llamaindex-rag.json",
+  "provenance_path": ".dino/provenance/llamaindex-rag.json",
+  "source_content_sha256": "91936c93331f8af8b2f5aac301ec35906d7d209b5e9f087d79b2f45f743aa109",
+  "chunk_sha256": "91936c93331f8af8b2f5aac301ec35906d7d209b5e9f087d79b2f45f743aa109",
+  "verification_status": "verified_summary",
+  "verified_at": "2026-07-07",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": "30_Sources/fetched/llamaindex-rag.json",
+      "after_sha256": "c355972eb90f28b21a2e92fd257c1ff0827ff25367edd9d4a487c425cd332865"
+    },
+    {
+      "path": "30_Sources/chunks/llamaindex-rag.json",
+      "after_sha256": "abb6c2db0343c55b13bb8d8a6de0c3fa3cfb01665d284b0bd91f9e74dc9cb877"
+    },
+    {
+      "path": ".dino/provenance/llamaindex-rag.json",
+      "after_sha256": "420f841c19f8539916096b0d9dfd7e7b9828bcb08e73e4735676e55bd6e043bd"
+    }
+  ],
+  "created_at": "2026-07-11T02:04:42.750Z",
+  "updated_at": "2026-07-11T02:04:42.750Z"
+}

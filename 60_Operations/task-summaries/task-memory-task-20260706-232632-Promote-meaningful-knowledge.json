@@ -1,0 +1,52 @@
+{
+  "memory_id": "task-memory-task-20260706-232632-Promote-meaningful-knowledge",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Promote meaningful knowledge from local Codex session history into DinoBrain accepted memory wit",
+  "summary": "Implemented and ran the real Codex session knowledge promotion step. Added a reusable session:promote command that reads local Codex JSONL sessions, extracts repeated preferences/decisions/mistakes/rules via deterministic pattern aggregation, and writes public-safe paraphrased accepted memory plus review records without storing raw transcripts, message text, previews, or absolute local session paths. Ran it against 47 non-empty local Codex sessions / 4477 messages and promoted 15 accepted codex-session-knowledge memories plus a Codex Session Knowledge Profile and promotion reports. Rebuilt Wiki/SQLite indexes; wiki_search retrieves the promoted profile from sqlite_shards. Strengthened public-data safety to scan untracked sync candidates as well as tracked files; public-data safety reports degraded but blocker_count=0. App changes were committed and pushed as 5582bfe.",
+  "claim": "Task outcome for DinoBrain: Implemented and ran the real Codex session knowledge promotion step. Added a reusable session:promote command that reads local Codex JSONL sessions, extracts repeated preferences/decisions/mistakes/rules via deterministic pattern aggregation, and writes public-safe paraphrased accepted memory plus review records without storing raw transcripts, message text, previews, or absolute local session paths. Ran it against 47 non-empty local Codex sessions / 4477 messages and promoted 15 accepted codex-session-knowledge memories plus a Codex Session Knowledge Profile and promotion reports. Rebuilt Wik",
+  "request": "Promote meaningful knowledge from local Codex session history into DinoBrain accepted memory without syncing raw transcripts: extract repeated user preferences, important decisions, mistakes, setup/hook/search lessons, and future behavior rules from the metadata-only session registry and local Codex sessions; create reviewed safe memory artifacts and verify retrieval/public-data safety.",
+  "outcome": "completed",
+  "decisions": [
+    "Promote only paraphrased aggregate knowledge, not raw Codex content.",
+    "Use session refs and redacted message hashes as evidence instead of raw text or local paths.",
+    "Treat promoted records as internal behavior/preference memory, not external factual source truth.",
+    "Keep current user instructions above promoted session memory.",
+    "Strengthen public-data safety by scanning untracked sync candidates before they are committed."
+  ],
+  "next_steps": [
+    "Tune retrieval budgets so newly promoted session memories help without swamping durable source/project records.",
+    "Add behavior golden cases proving the promoted preferences change future answers versus memory-off baseline.",
+    "Review and merge or demote any promoted aggregate memory that is too broad.",
+    "Resolve graph health accepted_instance_source_mapping_missing.",
+    "Collect fresh live Codex hook proof for full pre-response completion."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-2606a808b7ec6309.json",
+    "50_Instances/accepted/behavior-rule-298e24d77f91d054.json",
+    "50_Instances/accepted/behavior-rule-2a540fdcb4d5c0e0.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-232632-Promote-meaningful-knowledge.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260706-232632-Promote-meaningful-knowledge.json",
+    "snippet": "Implemented and ran the real Codex session knowledge promotion step. Added a reusable session:promote command that reads local Codex JSONL sessions, extracts repeated preferences/decisions/mistakes/rules via deterministic pattern aggregation, and writes public-safe paraphrased accepted memory plus review records without storing raw transcripts, message text, previews, or absolute local session paths. Ran it against 47 non-empty local Codex sessions / 4477 messages and promoted 15 accepted codex-session-knowledge memories plus a Codex Session Knowledge Profile and promotion reports. Rebuilt Wiki/SQLite indexes; wiki_search retrieves the promoted profile from sqlite_shards. Strengthened public-data safety to scan untracked sync candidates as well as tracked files; public-data safety reports degraded but blocker_count=0. App changes were committed and pushed as 5582bfe."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-06T23:31:59.054Z",
+  "updated_at": "2026-07-06T23:31:59.054Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260706-232632-Promote-meaningful-knowledge.json",
+    "task_id": "task-20260706-232632-Promote-meaningful-knowledge",
+    "task_path": ".dino/tasks/task-20260706-232632-Promote-meaningful-knowledge.json"
+  }
+}

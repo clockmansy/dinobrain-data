@@ -1,0 +1,48 @@
+{
+  "memory_id": "task-memory-task-20260707-005753-Read-only-audit-of-session-a",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Read-only audit of session-agnostic entrypoint: how non-Codex/non-Claude sessions could invoke p",
+  "summary": "Completed read-only audit of the session-agnostic pre-response OS begin path. Found that the core abstraction exists as the MCP `os_begin_task` tool, backed by OS gate/context-pack behavior and stdio MCP transport. The shipped automatic pre-response adapters are still Codex/Claude `UserPromptSubmit` hooks, and the hook wrapper emits Codex-shaped output rather than a neutral generic-session begin contract. Smallest credible path is a thin generic begin-turn adapter that calls `os_begin_task` over stdio, optionally imports the redacted prompt, returns neutral JSON/markdown for host injection, and has a temp-vault verifier plus docs/package script.",
+  "claim": "Task outcome for dinobrain: Completed read-only audit of the session-agnostic pre-response OS begin path. Found that the core abstraction exists as the MCP `os_begin_task` tool, backed by OS gate/context-pack behavior and stdio MCP transport. The shipped automatic pre-response adapters are still Codex/Claude `UserPromptSubmit` hooks, and the hook wrapper emits Codex-shaped output rather than a neutral generic-session begin contract. Smallest credible path is a thin generic begin-turn adapter that calls `os_begin_task` over stdio, optionally imports the redacted prompt, returns neutral JSON/markdown for host injection, an",
+  "request": "Read-only audit of session-agnostic entrypoint: how non-Codex/non-Claude sessions could invoke pre-response OS begin; find existing abstraction, missing pieces, and smallest credible implementation/verification path without editing files.",
+  "outcome": "completed",
+  "decisions": [
+    "Treat `os_begin_task` as the existing session-agnostic core abstraction.",
+    "Do not claim automatic non-Codex/non-Claude pre-response invocation exists without a host hook or adapter.",
+    "Recommend the smallest implementation as a thin generic CLI/adapter reusing current hook logic and MCP stdio client patterns."
+  ],
+  "next_steps": [
+    "Add a neutral `scripts/dinobrain-begin-turn.mjs` or equivalent adapter that accepts prompt/session metadata and returns structured begin context without Codex `hookSpecificOutput`.",
+    "Add a package script and temp-vault verifier that calls the adapter and asserts `os_begin_task_completed`, context pack trace, gate report, and fail-closed behavior.",
+    "Update MCP/verification docs to document `os_begin_task` and distinguish MCP availability from host automatic invocation."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-2a2e9184b17aaf95.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/behavior-rule-c1ad7c4e0066b985.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-005756-Session-agnostic-pre-respons.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-005753-Read-only-audit-of-session-a.json",
+    "snippet": "Completed read-only audit of the session-agnostic pre-response OS begin path. Found that the core abstraction exists as the MCP `os_begin_task` tool, backed by OS gate/context-pack behavior and stdio MCP transport. The shipped automatic pre-response adapters are still Codex/Claude `UserPromptSubmit` hooks, and the hook wrapper emits Codex-shaped output rather than a neutral generic-session begin contract. Smallest credible path is a thin generic begin-turn adapter that calls `os_begin_task` over stdio, optionally imports the redacted prompt, returns neutral JSON/markdown for host injection, and has a temp-vault verifier plus docs/package script."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T01:00:12.952Z",
+  "updated_at": "2026-07-07T01:00:12.952Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-005753-Read-only-audit-of-session-a.json",
+    "task_id": "task-20260707-005753-Read-only-audit-of-session-a",
+    "task_path": ".dino/tasks/task-20260707-005753-Read-only-audit-of-session-a.json"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-6c429c84656374c8",
+  "behavior_rule_id": "behavior-rule-6c429c84656374c8",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Implemented and pushed review queue and semantic job settlement gates for DinoBrain. Added current-vault and regression reporting that classifies every candidate/review item with decision class, reason, evidence paths, owner, and next action, writes `.dino/state/wiki-review-queue.json` and `.dino/state/semantic_jobs.json`, and requires these gates in verify:goal. Current vault result before close: 567 open review items, all 567 classified, 0 unclassified; 567 semantic jobs classified_hold/manual_review, 0 unclassified; status freshness had 7 fresh checks after refreshing indexes and audit.",
+  "behavior_rule": "In similar future work, apply this decision: Implemented and pushed review queue and semantic job settlement gates for DinoBrain. Added current-vault and regression reporting that classifies every candidate/review item with decision class, reason, evidence paths, owner, and next action, writes `.dino/state/wiki-review-queue.json` and `.dino/state/semantic_jobs.json`, and requires these gates in verify:goal. Current vault result before close: 567 open review items, all 567 classified, 0 unclassified; 567 semantic jobs classified_hold/manual_review, 0 unclassified; status freshness had 7 fresh checks after refreshing indexes and audit.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-102753-Continue-active-DinoBrain-go.json",
+    "snippet": "Implemented and pushed review queue and semantic job settlement gates for DinoBrain. Added current-vault and regression reporting that classifies every candidate/review item with decision class, reason, evidence paths, owner, and next action, writes `.dino/state/wiki-review-queue.json` and `.dino/state/semantic_jobs.json`, and requires these gates in verify:goal. Current vault result before close: 567 open review items, all 567 classified, 0 unclassified; 567 semantic jobs classified_hold/manual_review, 0 unclassified; status freshness had 7 fresh checks after refreshing indexes and audit."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-102753-Continue-active-DinoBrain-go.json",
+      "task_id": "task-20260707-102753-Continue-active-DinoBrain-go",
+      "signal_kind": "summary",
+      "snippet": "Implemented and pushed review queue and semantic job settlement gates for DinoBrain. Added current-vault and regression reporting that classifies every candidate/review item with decision class, reason, evidence paths, owner, and next action, writes `.dino/state/wiki-review-queue.json` and `.dino/state/semantic_jobs.json`, and requires these gates in verify:goal. Current vault result before close: 567 open review items, all 567 classified, 0 unclassified; 567 semantic jobs classified_hold/manual_review, 0 unclassified; status freshness had 7 fresh checks after refreshing indexes and audit."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:medium"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:52:23.195Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:52:23.195Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

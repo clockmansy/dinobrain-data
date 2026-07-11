@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-151138-task-20260707-151138-Direct-MCP-pari",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-151138-Direct-MCP-parity-proof-cana",
+  "request": "Direct MCP parity proof canary: Codex must call os_begin_task, search_memory, wiki_search, and finish_task through the exposed DinoBrain MCP tools by exact single tool names.",
+  "generated_at": "2026-07-07T15:11:38.594Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-151138-Direct-MCP-parity-proof-cana.json",
+  "context_item_count": 4,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

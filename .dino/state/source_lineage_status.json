@@ -1,0 +1,660 @@
+{
+  "version": "source_lineage_v2",
+  "status": "healthy",
+  "generated_at": "2026-07-11T02:19:24.994Z",
+  "latest_verified_at": "2026-07-07",
+  "data_root": "<machine-local-path>",
+  "counts": {
+    "source_chunks": 20,
+    "source_snapshots": 20,
+    "provenance_links": 20,
+    "lineage_generations": 20,
+    "verified_source_chunks": 20,
+    "anchor_only_unverified": 0,
+    "unverified_source_chunks": 0,
+    "claim_records": 24,
+    "behavior_memory_records": 17,
+    "project_memory_records": 2,
+    "internal_session_evidence_records": 2,
+    "source_anchor_unverified_records": 0,
+    "verified_claim_support": 3,
+    "unsupported_factual_claims": 0,
+    "factual_claim_records": 3,
+    "scanned_claim_files": 24,
+    "dangling_claim_paths": 0,
+    "stale_support": 0,
+    "hash_mismatches": 0,
+    "blockers": 0
+  },
+  "source_chunks": [
+    {
+      "path": "30_Sources/chunks/anthropic-contextual-retrieval.json",
+      "source_chunk_id": "anthropic-contextual-retrieval",
+      "source_uri": "https://www.anthropic.com/engineering/contextual-retrieval",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/anthropic-contextual-retrieval.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-anthropic-contextual-retrieval-a3c73e36abbb36322f90.json",
+      "source_content_sha256": "5b0d67db25d8279fff0af5be0000bc6b3864692f53fbed2c26479d545ee7f046",
+      "chunk_sha256": "5b0d67db25d8279fff0af5be0000bc6b3864692f53fbed2c26479d545ee7f046",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+      "source_chunk_id": "aws-bedrock-knowledge-base",
+      "source_uri": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/aws-bedrock-knowledge-base.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-aws-bedrock-knowledge-base-7094b525f227cc1401b1.json",
+      "source_content_sha256": "242c76f0311c3f2162d33097d975f5a8205de3fa3b7b7bd52624c37a4686d9ee",
+      "chunk_sha256": "242c76f0311c3f2162d33097d975f5a8205de3fa3b7b7bd52624c37a4686d9ee",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/azure-search-rag-overview.json",
+      "source_chunk_id": "azure-search-rag-overview",
+      "source_uri": "https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/azure-search-rag-overview.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-azure-search-rag-overview-35da2d88180e94fc9976.json",
+      "source_content_sha256": "a20629879567a16135b75753a8ce312c7105b384914b5b4b26eb9c64942eed72",
+      "chunk_sha256": "a20629879567a16135b75753a8ce312c7105b384914b5b4b26eb9c64942eed72",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/elastic-rag.json",
+      "source_chunk_id": "elastic-rag",
+      "source_uri": "https://www.elastic.co/what-is/retrieval-augmented-generation",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/elastic-rag.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-elastic-rag-e3541ded3ba2c3d10407.json",
+      "source_content_sha256": "b585780c3b06de17d8cc872edb9f3bf853ca1e8f27c627e065f728cb8232a092",
+      "chunk_sha256": "b585780c3b06de17d8cc872edb9f3bf853ca1e8f27c627e065f728cb8232a092",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/google-rag-engine-overview.json",
+      "source_chunk_id": "google-rag-engine-overview",
+      "source_uri": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/rag-engine/rag-overview",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/google-rag-engine-overview.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-google-rag-engine-overview-21b960ab678579ba6f0d.json",
+      "source_content_sha256": "3747f2874f058b41e41895d46a4df0b2c8a0dfcd02a3dbe40161d72fd24d9b86",
+      "chunk_sha256": "3747f2874f058b41e41895d46a4df0b2c8a0dfcd02a3dbe40161d72fd24d9b86",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/haystack-first-rag-pipeline.json",
+      "source_chunk_id": "haystack-first-rag-pipeline",
+      "source_uri": "https://haystack.deepset.ai/tutorials/27_first_rag_pipeline",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/haystack-first-rag-pipeline.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-haystack-first-rag-pipeline-7532fca5b07fcd3824f2.json",
+      "source_content_sha256": "fd3d54d008c6310cd952084a9adecfe320b50602fb08cbd1cfcd0696ca1f2ecf",
+      "chunk_sha256": "fd3d54d008c6310cd952084a9adecfe320b50602fb08cbd1cfcd0696ca1f2ecf",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/haystack-rag-from-scratch.json",
+      "source_chunk_id": "haystack-rag-from-scratch",
+      "source_uri": "https://haystack.deepset.ai/blog/rag-pipelines-from-scratch",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/haystack-rag-from-scratch.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-haystack-rag-from-scratch-977cc9122d7598b848f1.json",
+      "source_content_sha256": "c5da00d53ab03e156967e730a641315c213521f425098a244893c176acf5cfd1",
+      "chunk_sha256": "c5da00d53ab03e156967e730a641315c213521f425098a244893c176acf5cfd1",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/langchain-rag.json",
+      "source_chunk_id": "langchain-rag",
+      "source_uri": "https://docs.langchain.com/oss/python/langchain/rag",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/langchain-rag.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-langchain-rag-3c435b74a1fc7a8bfec7.json",
+      "source_content_sha256": "1c6644a1aeb1b48a7997b6f010b9c434573f7b57bbbc0045794012f1b8fa3334",
+      "chunk_sha256": "1c6644a1aeb1b48a7997b6f010b9c434573f7b57bbbc0045794012f1b8fa3334",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/langsmith-evaluation-concepts.json",
+      "source_chunk_id": "langsmith-evaluation-concepts",
+      "source_uri": "https://docs.langchain.com/langsmith/evaluation-concepts",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/langsmith-evaluation-concepts.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-langsmith-evaluation-concepts-7817e4afcda98af2ad22.json",
+      "source_content_sha256": "68a8959a0a6d3b54545054a199a550b09c925c42ba041cc0f9ae1e1232ea6771",
+      "chunk_sha256": "68a8959a0a6d3b54545054a199a550b09c925c42ba041cc0f9ae1e1232ea6771",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/llamaindex-rag.json",
+      "source_chunk_id": "llamaindex-rag",
+      "source_uri": "https://developers.llamaindex.ai/python/framework/understanding/rag/",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/llamaindex-rag.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-llamaindex-rag-3541ba6d630f668ce72a.json",
+      "source_content_sha256": "91936c93331f8af8b2f5aac301ec35906d7d209b5e9f087d79b2f45f743aa109",
+      "chunk_sha256": "91936c93331f8af8b2f5aac301ec35906d7d209b5e9f087d79b2f45f743aa109",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/microsoft-graphrag.json",
+      "source_chunk_id": "microsoft-graphrag",
+      "source_uri": "https://microsoft.github.io/graphrag/",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/microsoft-graphrag.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-microsoft-graphrag-bbf1b6fbc94f72c21ebb.json",
+      "source_content_sha256": "3e4ef047fbd3a5db662f6a17426db725228e3eeea243c32289220317313dd71f",
+      "chunk_sha256": "3e4ef047fbd3a5db662f6a17426db725228e3eeea243c32289220317313dd71f",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+      "source_chunk_id": "openai-embeddings-qa-cookbook",
+      "source_uri": "https://developers.openai.com/cookbook/examples/question_answering_using_embeddings",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/openai-embeddings-qa-cookbook.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-openai-embeddings-qa-cookbook-bb383afd809ec48ee053.json",
+      "source_content_sha256": "46448ac8c205a577e259fe2c7e202a1b117d0868bd2a4ed09fee4030014f4f9e",
+      "chunk_sha256": "46448ac8c205a577e259fe2c7e202a1b117d0868bd2a4ed09fee4030014f4f9e",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/openai-retrieval-guide.json",
+      "source_chunk_id": "openai-retrieval-guide",
+      "source_uri": "https://developers.openai.com/api/docs/guides/retrieval",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/openai-retrieval-guide.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-openai-retrieval-guide-d102612e58ff2a4b9272.json",
+      "source_content_sha256": "4dc865f306a7a18f555fd695a85ad81ba3f5640d5ec118d82994f18826de951c",
+      "chunk_sha256": "4dc865f306a7a18f555fd695a85ad81ba3f5640d5ec118d82994f18826de951c",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/pinecone-rag.json",
+      "source_chunk_id": "pinecone-rag",
+      "source_uri": "https://www.pinecone.io/learn/retrieval-augmented-generation/",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/pinecone-rag.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-pinecone-rag-d072c0e5e970bca440ce.json",
+      "source_content_sha256": "e5de0d14efea0d1f27ecfd964c0660a8791c45cfe178679f56c89649098ac953",
+      "chunk_sha256": "e5de0d14efea0d1f27ecfd964c0660a8791c45cfe178679f56c89649098ac953",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2005-11401.json",
+      "source_chunk_id": "rag-paper-2005-11401",
+      "source_uri": "https://arxiv.org/abs/2005.11401",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/rag-paper-2005-11401.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-rag-paper-2005-11401-dd06ea14ee4e47a0fbb3.json",
+      "source_content_sha256": "48e2ef7a5c531d47fe467a5949e84531cb087725f2c20848f5a553f967a541ff",
+      "chunk_sha256": "48e2ef7a5c531d47fe467a5949e84531cb087725f2c20848f5a553f967a541ff",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2212-10496.json",
+      "source_chunk_id": "rag-paper-2212-10496",
+      "source_uri": "https://arxiv.org/abs/2212.10496",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/rag-paper-2212-10496.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-rag-paper-2212-10496-7894523be86e72d9524b.json",
+      "source_content_sha256": "a3777788343bd4b407a3f6f541e318eff23338dee70f0d1be924c7999ab50a21",
+      "chunk_sha256": "a3777788343bd4b407a3f6f541e318eff23338dee70f0d1be924c7999ab50a21",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2303-11366.json",
+      "source_chunk_id": "rag-paper-2303-11366",
+      "source_uri": "https://arxiv.org/abs/2303.11366",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/rag-paper-2303-11366.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-rag-paper-2303-11366-dcf3d9b1cd807014c1d1.json",
+      "source_content_sha256": "87bbcb47582f8cffea6f408e9188f89ad585b0f15f44e00c321778228014cdbd",
+      "chunk_sha256": "87bbcb47582f8cffea6f408e9188f89ad585b0f15f44e00c321778228014cdbd",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2401-18059.json",
+      "source_chunk_id": "rag-paper-2401-18059",
+      "source_uri": "https://arxiv.org/abs/2401.18059",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/rag-paper-2401-18059.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-rag-paper-2401-18059-f4672df1d1b314a402a2.json",
+      "source_content_sha256": "304a579cdba9df80c9b22541b07972ccc8538d35cd0604420d075db343b5cb69",
+      "chunk_sha256": "304a579cdba9df80c9b22541b07972ccc8538d35cd0604420d075db343b5cb69",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/rag-survey.json",
+      "source_chunk_id": "rag-survey",
+      "source_uri": "https://github.com/Tongji-KGLLM/RAG-Survey",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/rag-survey.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-rag-survey-76de80317b02a706e331.json",
+      "source_content_sha256": "ae5e94441b3d5ac904a52c9750d695cd181127dc7590b69271dbe26c661db561",
+      "chunk_sha256": "ae5e94441b3d5ac904a52c9750d695cd181127dc7590b69271dbe26c661db561",
+      "last_verified": "2026-07-07",
+      "stale": false
+    },
+    {
+      "path": "30_Sources/chunks/ragas-evaluation.json",
+      "source_chunk_id": "ragas-evaluation",
+      "source_uri": "https://docs.ragas.io/en/stable/",
+      "verification_status": "verified_summary",
+      "support_role": "verified_source_chunk",
+      "claim_paths": [
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "source_snapshot_path": "30_Sources/fetched/ragas-evaluation.json",
+      "lineage_generation_path": ".dino/provenance/generations/lineage-ragas-evaluation-ae0baac86c8ac0a0e7cd.json",
+      "source_content_sha256": "59579e2e14a283a34f47ea465cc6af5ca821a664b7f0e67ce06aaec8747f00f0",
+      "chunk_sha256": "59579e2e14a283a34f47ea465cc6af5ca821a664b7f0e67ce06aaec8747f00f0",
+      "last_verified": "2026-07-07",
+      "stale": false
+    }
+  ],
+  "claim_records": [
+    {
+      "path": "20_Wiki/ChatGPT-Conversation-Registry.md",
+      "title": "ChatGPT Conversation Registry",
+      "item_class": "internal_session_evidence",
+      "source_status": null,
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": [
+        "factual_tag",
+        "root_requires_source_truth"
+      ]
+    },
+    {
+      "path": "20_Wiki/ChatGPT-Session-Knowledge-Profile.md",
+      "title": "ChatGPT Session Knowledge Profile",
+      "item_class": "behavior_memory",
+      "source_status": null,
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": [
+        "root_requires_source_truth"
+      ]
+    },
+    {
+      "path": "20_Wiki/Codex-Conversation-Registry.md",
+      "title": "Codex Conversation Registry",
+      "item_class": "internal_session_evidence",
+      "source_status": null,
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": [
+        "root_requires_source_truth"
+      ]
+    },
+    {
+      "path": "20_Wiki/Codex-Session-Knowledge-Profile.md",
+      "title": "Codex Session Knowledge Profile",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "title": "RAG Methodology Anchor Catalog",
+      "item_class": "verified_claim_support",
+      "source_status": "mixed_verified",
+      "support_paths": [
+        "30_Sources/chunks/anthropic-contextual-retrieval.json",
+        "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+        "30_Sources/chunks/azure-search-rag-overview.json",
+        "30_Sources/chunks/elastic-rag.json",
+        "30_Sources/chunks/google-rag-engine-overview.json",
+        "30_Sources/chunks/haystack-first-rag-pipeline.json",
+        "30_Sources/chunks/haystack-rag-from-scratch.json",
+        "30_Sources/chunks/langchain-rag.json",
+        "30_Sources/chunks/langsmith-evaluation-concepts.json",
+        "30_Sources/chunks/llamaindex-rag.json",
+        "30_Sources/chunks/microsoft-graphrag.json",
+        "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+        "30_Sources/chunks/openai-retrieval-guide.json",
+        "30_Sources/chunks/pinecone-rag.json",
+        "30_Sources/chunks/rag-paper-2005-11401.json",
+        "30_Sources/chunks/rag-paper-2212-10496.json",
+        "30_Sources/chunks/rag-paper-2303-11366.json",
+        "30_Sources/chunks/rag-paper-2401-18059.json",
+        "30_Sources/chunks/rag-survey.json",
+        "30_Sources/chunks/ragas-evaluation.json"
+      ],
+      "anchor_only_paths": [],
+      "factual_signals": [
+        "declared_source_status",
+        "external_factual_language",
+        "external_url_in_content",
+        "factual_tag",
+        "root_requires_source_truth"
+      ]
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "title": "RAG Verified Knowledge Base",
+      "item_class": "verified_claim_support",
+      "source_status": "verified_summary",
+      "support_paths": [
+        "30_Sources/chunks/anthropic-contextual-retrieval.json",
+        "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+        "30_Sources/chunks/azure-search-rag-overview.json",
+        "30_Sources/chunks/elastic-rag.json",
+        "30_Sources/chunks/google-rag-engine-overview.json",
+        "30_Sources/chunks/haystack-first-rag-pipeline.json",
+        "30_Sources/chunks/haystack-rag-from-scratch.json",
+        "30_Sources/chunks/langchain-rag.json",
+        "30_Sources/chunks/langsmith-evaluation-concepts.json",
+        "30_Sources/chunks/llamaindex-rag.json",
+        "30_Sources/chunks/microsoft-graphrag.json",
+        "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+        "30_Sources/chunks/openai-retrieval-guide.json",
+        "30_Sources/chunks/pinecone-rag.json",
+        "30_Sources/chunks/rag-paper-2005-11401.json",
+        "30_Sources/chunks/rag-paper-2212-10496.json",
+        "30_Sources/chunks/rag-paper-2303-11366.json",
+        "30_Sources/chunks/rag-paper-2401-18059.json",
+        "30_Sources/chunks/rag-survey.json",
+        "30_Sources/chunks/ragas-evaluation.json"
+      ],
+      "anchor_only_paths": [],
+      "factual_signals": [
+        "declared_source_status",
+        "external_factual_language",
+        "external_url_in_content",
+        "factual_tag",
+        "root_requires_source_truth"
+      ]
+    },
+    {
+      "path": "40_Projects/DinoBrain-Install-Release-State.md",
+      "title": "DinoBrain Install And Release State",
+      "item_class": "project_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "40_Projects/DinoBrain-Project-State.md",
+      "title": "DinoBrain Project State",
+      "item_class": "project_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "40_Projects/DinoBrain-RAG-Roadmap.md",
+      "title": "DinoBrain RAG Roadmap",
+      "item_class": "verified_claim_support",
+      "source_status": "internal",
+      "support_paths": [
+        "20_Wiki/RAG-Verified-Knowledge-Base.md",
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md"
+      ],
+      "anchor_only_paths": [],
+      "factual_signals": [
+        "factual_tag"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "title": "Configured hooks are not live preflight proof",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "title": "Current user instruction outranks stored memory",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "title": "Design tasks need high-quality visual iteration without unrelated logic changes",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "title": "Carry authorized work through commit, push, and deploy",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+      "title": "Explain unfamiliar work in plain language",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "title": "Installer must restore equivalent DinoBrain behavior on a new PC",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+      "title": "DinoBrain goal is knowledge compounding from sessions",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+      "title": "Prefer direct local verification and evidence",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+      "title": "Observability must show real OS state",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "title": "Prefer direct links or actions when the path is known",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+      "title": "Plan-first execution for new or handoff-heavy work",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "title": "DinoBrain must run pre-response and fail closed",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+      "title": "RAG quality requires hybrid retrieval, provenance, and evaluation",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": [
+        "factual_tag"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+      "title": "Do not sync raw Codex conversation transcripts",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+      "title": "Version drift and stale release artifacts are recurring risks",
+      "item_class": "behavior_memory",
+      "source_status": "internal",
+      "support_paths": [],
+      "anchor_only_paths": [],
+      "factual_signals": []
+    }
+  ],
+  "findings": [],
+  "warnings": [],
+  "visible_status": "Source lineage healthy"
+}

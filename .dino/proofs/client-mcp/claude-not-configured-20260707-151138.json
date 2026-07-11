@@ -1,0 +1,9 @@
+{
+    "agent":  "claude",
+    "status":  "not_configured",
+    "client_surface":  "PowerShell Get-Command claude,claude.exe",
+    "not_configured_reason":  "claude_executable_not_found",
+    "generated_at":  "2026-07-07T15:12:27.4702992Z",
+    "stale_after_ms":  86400000,
+    "evidence":  "Get-Command claude,claude.exe returned no command in this Windows environment."
+}

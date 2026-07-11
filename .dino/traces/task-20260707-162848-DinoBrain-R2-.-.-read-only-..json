@@ -1,0 +1,52 @@
+{
+  "task_id": "task-20260707-162848-DinoBrain-R2-.-.-read-only-.",
+  "outcome": "completed",
+  "summary": "Read-only R2 review completed. Independently inspected the Codex memory registry, OS completion docs, consensus plan, package script registry, goal/health/direct-MCP validation code, and current data-vault status artifacts. Verdict: the plan/code now distinguish live pre-response, manual MCP fallback, and direct MCP parity better than earlier drafts, but DinoBrain is not complete because overall health is still needs_attention, task lifecycle blockers remain, RAG is still text-hash/deterministic canary rather than completion-grade semantic answer-quality evidence, and Claude direct MCP is only explicitly not_configured rather than parity-proven.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Treat the current prompt as live Codex Desktop pre-response evidence because the hook report shows codex_desktop process ancestry, task id, context pack trace, context paths, gate result, and fail_closed=false before the response.",
+    "Accept current Codex direct MCP proof as direct-client evidence, not hook/bootstrap evidence, because the proof artifact uses proof_source=codex_desktop_direct_mcp, exact_single_name discovery, all four required tools, and successful tool-call records.",
+    "Treat Claude as not parity-proven; the current artifact is only valid not_configured evidence with claude_executable_not_found, which is acceptable for conditional gating but not evidence that Claude Code sessions receive OS context.",
+    "Require completion conditions to keep direct MCP proof, hook preflight proof, and manual MCP fallback as separate lanes in verify:goal, status:health, and Observatory.",
+    "Do not run write-producing verifier commands during this read-only review; rely on existing artifacts and source inspection."
+  ],
+  "next_steps": [
+    "Before claiming completion, clear task_lifecycle and task_lifecycle_settlement needs_attention states and rerun the full goal gate on the real app repo/data vault.",
+    "Add or preserve an explicit completion condition that every installed client has a fresh live prompt pre-response artifact; manual MCP preflight can be fallback proof for a session, but not proof that hooks are live.",
+    "When Claude Code is installed, require Claude live UserPromptSubmit evidence and Claude direct MCP exact-single-name tool-call proof; until then, surface Claude as not_configured, not parity complete.",
+    "Upgrade RAG completion evidence from local_text_hashing_v1 deterministic canary to real semantic retrieval plus generated-answer quality evaluation before counting RAG as complete.",
+    "Keep Observatory health/API/UI aligned with the same blockers shown by verify:goal and health_status.json."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-162848-DinoBrain-R2-.-.-read-only-..json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-162848-cc513df1028b.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state---package.json-scripts-28296cf2120c.json",
+    "50_Instances/candidates/candidate-Idea-OS-MCP-hook-bootstrap-fallback--f6ddc93e614c.json"
+  ],
+  "search_queries": [
+    "DinoBrain pre-response fail-closed direct MCP parity hook bootstrap fallback",
+    "verify:goal status:health mcp-direct codex live Claude not_configured RAG semantic provider"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 2,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-07T16:30:46.844Z"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-100541-dinobrain",
+  "status": "completed",
+  "request": "내가 보내준 문서랑 dinobrain을 비교해서 우리가 부족한점이 뭔지 파악해",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T10:05:41.864Z",
+  "updated_at": "2026-07-07T10:08:52.373Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T10:08:52.373Z",
+  "trace_path": ".dino/traces/task-20260707-100541-dinobrain.json"
+}

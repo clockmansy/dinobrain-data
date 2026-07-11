@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-154940-Return-exactly-one-line-and-",
+  "status": "blocked",
+  "request": "Return exactly one line and nothing else. reviewer_id=R9; verdict=AGREE; blocking_objections=[]; required_doc_changes=[]; evidence_files=[docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md,docs/OS_COMPLETION_CONDITIONS.md,docs/INSTALL.md,docs/VERIFICATION.md]\nReason: the plan requires new-PC install equivalence, app/data ref parity, Codex/Claude MCP+hook registration, Observatory/verifier launchers, safe reinstall/uninstall/purge, release ZIP/SHA/tag/manifest parity, degraded Git-missing mode, and verify:goal inclusion.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:49:40.835Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-154940-Return-exactly-one-line-and-.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-154940-Return-exactly-one-line-and-.json"
+  }
+}

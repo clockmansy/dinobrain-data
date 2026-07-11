@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-How-to-note-Required-files-include-M-90f611610edf",
+  "status": "pending_review",
+  "claim": "How-to note: Required files include MEMORY.md, docs/OS_COMPLETION_CONDITIONS.md, docs/VERIFICATION.md, AGENTS.md, install/docs related to Claude/Codex hooks, and rg searches for native/AGENTS/CLAUDE/drift.",
+  "category": "how_to",
+  "temperature": "warm",
+  "evidence": {
+    "snippet": "Required files include MEMORY.md, docs/OS_COMPLETION_CONDITIONS.md, docs/VERIFICATION.md, AGENTS.md, install/docs related to Claude/Codex hooks, and rg searches for native/AGENTS/CLAUDE/drift.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-124558-af10d19c6e7c.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-124558-af10d19c6e7c",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "how_to",
+    "temperature:warm",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-124558-af10d19c6e7c",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T12:45:59.688Z",
+  "updated_at": "2026-07-07T12:45:59.688Z"
+}

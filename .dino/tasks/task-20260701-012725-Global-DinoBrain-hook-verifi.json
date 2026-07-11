@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260701-012725-Global-DinoBrain-hook-verifi",
+  "status": "completed",
+  "request": "Global DinoBrain hook verification after parser fix.",
+  "project": "Documents",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "created_at": "2026-07-01T01:27:25.167Z",
+  "updated_at": "2026-07-01T01:41:47.701Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-01T01:41:47.701Z",
+  "trace_path": ".dino/traces/task-20260701-012725-Global-DinoBrain-hook-verifi.json"
+}

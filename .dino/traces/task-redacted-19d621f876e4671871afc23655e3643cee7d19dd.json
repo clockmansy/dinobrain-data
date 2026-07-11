@@ -1,0 +1,26 @@
+{
+  "task_id": "task-redacted-32cd056957fdfeb12c33516307634cbe4eacb343",
+  "outcome": "completed",
+  "summary": "Read-only audit completed; finish trace attempted after no source edits.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "finish_task failed twice before this minimal retry with JSON parse error in DinoBrain data path."
+  ],
+  "next_steps": [
+    "Repair finish_task JSON parsing/data corruption before relying on task-close evidence."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 0,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T11:38:55.651Z"
+}

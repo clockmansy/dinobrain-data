@@ -1,0 +1,23 @@
+{
+  "task_id": "task-redacted-f28496fbaa44ef2d777976be3d1855e0a94543d3",
+  "status": "completed",
+  "request": "Repo: <machine-local-path> Plan doc: <machine-local-path> (1).md. Data root: <machine-local-path> Compare P0-01 Full-Memory Audit and P0-02 Status Freshness requirements against current DinoBrain implementation. Read relevant doc sections and repo files/status files. Return concise findings: implemented, partial, missing, exact evidence files/scripts/status, and top gaps. Do not edit files.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T11:34:48.794Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T11:36:59.242Z",
+  "trace_path": ".dino/traces/task-redacted-8244c062a587bfbb516df858d3738703f20f315d.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "started_task_repaired_from_grounded_trace",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-redacted-8244c062a587bfbb516df858d3738703f20f315d.json"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "task_id": "task-20260707-163926-You-are-a-helpful-assistant.",
+  "outcome": "blocked",
+  "summary": "Auto-closed stale non-user DinoBrain service task after lifecycle settlement. The task had no terminal trace or current active owner.",
+  "changed_files": [],
+  "decisions": [
+    "Classified as auto_close_candidate by task lifecycle report.",
+    "Closed only because prompt eligibility classified it as title_generation."
+  ],
+  "next_steps": [
+    "Manual repair is still required for non-diagnostic stale tasks."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [],
+  "search_queries": [],
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_non_user_service_auto_closed",
+    "previous_status": "started",
+    "previous_updated_at": "2026-07-07T16:39:26.826Z",
+    "source_task_lifecycle_generated_at": "2026-07-10T16:38:35.992Z"
+  }
+}

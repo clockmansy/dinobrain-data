@@ -1,0 +1,83 @@
+{
+  "version": "client_mcp_direct_status_v1",
+  "status": "verified",
+  "generated_at": "2026-07-08T01:43:26.191Z",
+  "latest_verified_at": "2026-07-07T15:12:27.4702992Z",
+  "data_root": "<machine-local-path>",
+  "required_tools": [
+    "os_begin_task",
+    "search_memory",
+    "wiki_search",
+    "finish_task"
+  ],
+  "agents": [
+    {
+      "agent": "codex",
+      "status": "verified",
+      "required_tools": [
+        "os_begin_task",
+        "search_memory",
+        "wiki_search",
+        "finish_task"
+      ],
+      "verified_tools": [
+        "os_begin_task",
+        "search_memory",
+        "wiki_search",
+        "finish_task"
+      ],
+      "missing_tools": [],
+      "exact_single_name_discovery": true,
+      "latest_verified_at": "2026-07-07T15:12:27.4702992Z",
+      "proof_path": ".dino/proofs/client-mcp/codex-direct-mcp-20260707-151138.json",
+      "stale_after_ms": 86400000,
+      "last_computed_at": "2026-07-08T01:43:26.191Z",
+      "authority_rank": 90,
+      "reason": "verified",
+      "proof_source": "codex_desktop_direct_mcp",
+      "client_surface": "Codex Desktop MCP tool surface (mcp__dinobrain direct tools)",
+      "not_configured_reason": null,
+      "invalid_proof_paths": []
+    },
+    {
+      "agent": "claude",
+      "status": "not_configured",
+      "required_tools": [
+        "os_begin_task",
+        "search_memory",
+        "wiki_search",
+        "finish_task"
+      ],
+      "verified_tools": [],
+      "missing_tools": [
+        "os_begin_task",
+        "search_memory",
+        "wiki_search",
+        "finish_task"
+      ],
+      "exact_single_name_discovery": false,
+      "latest_verified_at": "2026-07-07T15:12:27.4702992Z",
+      "proof_path": ".dino/proofs/client-mcp/claude-not-configured-20260707-151138.json",
+      "stale_after_ms": 86400000,
+      "last_computed_at": "2026-07-08T01:43:26.191Z",
+      "authority_rank": 90,
+      "reason": "claude_executable_not_found",
+      "proof_source": null,
+      "client_surface": "PowerShell Get-Command claude,claude.exe",
+      "not_configured_reason": "claude_executable_not_found",
+      "invalid_proof_paths": []
+    }
+  ],
+  "counts": {
+    "agents": 2,
+    "verified": 1,
+    "not_configured": 1,
+    "needs_recheck": 0,
+    "missing_tools": 4,
+    "invalid_proofs": 0
+  },
+  "warnings": [
+    "claude_direct_mcp_not_configured"
+  ],
+  "visible_status": "Direct MCP parity verified"
+}

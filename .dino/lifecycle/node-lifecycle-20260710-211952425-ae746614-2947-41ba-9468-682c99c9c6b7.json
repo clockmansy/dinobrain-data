@@ -1,0 +1,585 @@
+{
+  "version": "node_lifecycle_report_v3",
+  "lifecycle_id": "node-lifecycle-20260710-211952425-ae746614-2947-41ba-9468-682c99c9c6b7",
+  "status": "review_required",
+  "operation": "dry_run",
+  "apply": false,
+  "reviewer": "node-lifecycle-cli",
+  "generated_at": "2026-07-10T21:19:52.425Z",
+  "git": {
+    "repository": true,
+    "head": "7afad5c877c73baf0500e7a980c7eb5e98d7f3bf",
+    "dirty_count": 1473,
+    "dirty_status_sha256": "117c1e83e1367c163695632f19ab2c3d902d8a027314a749ec83e6b2d39537f1",
+    "recovery_ref": null
+  },
+  "transaction": null,
+  "automatic_rollback": null,
+  "apply_error": null,
+  "counts": {
+    "accepted": 17,
+    "candidates": 1550,
+    "promotion_reviews": 1550,
+    "quarantined": 0,
+    "actions": 17,
+    "applied_actions": 0,
+    "initialize_accepted": 0,
+    "held_unsupported": 2,
+    "quarantined_excluded": 0,
+    "repaired_invalid": 15,
+    "retrievable_accepted": 0,
+    "held_or_excluded": 0,
+    "lifecycle_blockers": 17,
+    "deferred_candidate_backlog": 1550,
+    "merge_candidates": 0,
+    "provenance_repairs": 2,
+    "delete_candidates": 0,
+    "hold_or_exclude": 2
+  },
+  "post_audit": {
+    "accepted_files": 17,
+    "retrievable": 0,
+    "held_or_excluded": 0,
+    "invalid": [
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/rag-verified-knowledge-v1.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      }
+    ]
+  },
+  "actions": [
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-configured_is_not_live_proof.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392779-6b8c38f5-b158-40fd-a754-8af3386d1219",
+        "node-transition-1783718392780-e316cb8f-0cf8-430d-a545-17f6f8b3d9e7"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-current_instruction_over_memory.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392781-44d8550d-4d46-4797-8bbe-821e4b1eb5c6",
+        "node-transition-1783718392781-045a3678-05a7-430f-ab20-bd8da158cf72"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392781-85c2bfa9-ff84-44e3-9269-93642da3e1dd",
+        "node-transition-1783718392782-33fa1744-9b22-498d-8395-01be199931bf"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-end_to_end_execution_push.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392783-50201de7-0db4-437b-bd7c-faa5f045e9d8",
+        "node-transition-1783718392783-687ca664-3826-482e-baae-1324cbd8c6d1"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392784-fd539a04-a6b0-4891-b41b-e3b7df46c5bb",
+        "node-transition-1783718392784-23bba2fa-3fca-4b7b-85cb-f1409ebe61c7"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392785-6bd7ff53-d5a0-4641-9b71-e754eb683efe",
+        "node-transition-1783718392785-c624f166-f435-4e87-9bf3-2d1af6af96db"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-knowledge_compounding_goal.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392786-aed5f108-0a04-4cfb-8f5a-cba4436dc770",
+        "node-transition-1783718392786-336232a7-ae42-4df0-9a86-52e4aa281693"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-local_evidence_over_claims.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392786-9a2673e8-d83b-46c7-82c1-a81bf808d79a",
+        "node-transition-1783718392787-2443f735-abe9-499e-a03b-caeb7a1f61b5"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-observability_required.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392787-f0f833c3-e64b-4a19-b8d9-86cdd535d128",
+        "node-transition-1783718392788-4a9d8900-472b-4954-9467-be60b94513c6"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-one_link_or_direct_action.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392788-62f34dcd-1867-4064-9562-c4c136f73480",
+        "node-transition-1783718392789-d5409f10-c6ac-48b7-9d5f-226cc78f7b35"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-plan_first_scope_lock.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392789-55a0f7d5-a3cc-4bfa-851a-22adf8ad12d4",
+        "node-transition-1783718392790-cafcefd1-02a5-4d3f-9a53-5aa9dfdc7633"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392790-4277dc72-2c42-4df3-82fe-e39d8457539e",
+        "node-transition-1783718392791-a80043cd-430e-4e41-a32b-eb27120400b8"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-rag_quality_direction.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392791-63e23b12-85f2-429a-a01d-ec49aa6574be",
+        "node-transition-1783718392791-909d0ead-0c56-4b8e-b8cf-fab23314eda5"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-raw_transcripts_never_public.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392792-77986639-ff2a-4ded-8cc3-bccac7544a0f",
+        "node-transition-1783718392793-2d0122e2-3088-402e-aa56-adba4f4ec51a"
+      ]
+    },
+    {
+      "type": "repair_invalid_lifecycle",
+      "target_path": "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+      "from_state": "legacy",
+      "to_state": "accepted",
+      "review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-version_release_drift_risk.json",
+      "reason_codes": [],
+      "pressure": {
+        "score": 0,
+        "factors": [],
+        "recommended_action": "keep"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392793-abf5da96-4a03-4ea1-b74a-7b3d774bda98",
+        "node-transition-1783718392794-8f778a18-b475-46cd-abe5-accd2852842f"
+      ]
+    },
+    {
+      "type": "hold_unsupported",
+      "target_path": "50_Instances/accepted/rag-public-os-learning-packet.json",
+      "from_state": "legacy",
+      "to_state": "held",
+      "review_path": "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json",
+      "reason_codes": [
+        "accepted_review_lineage_missing",
+        "durable_source_path_missing",
+        "durable_external_provenance_missing",
+        "unsupported_pressure"
+      ],
+      "pressure": {
+        "score": 30,
+        "factors": [
+          {
+            "id": "unsupported_pressure",
+            "score": 30,
+            "reason": "accepted_review_lineage_missing,durable_source_path_missing,durable_external_provenance_missing"
+          }
+        ],
+        "recommended_action": "hold"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392794-46ab68d7-b329-46d8-bc47-2272a020f327",
+        "node-transition-1783718392795-b2a12849-458e-4627-b150-18767d2b8ac0",
+        "node-transition-1783718392795-ab6bf55f-f328-443f-b63e-c136d9d2c7d4"
+      ]
+    },
+    {
+      "type": "hold_unsupported",
+      "target_path": "50_Instances/accepted/rag-verified-knowledge-v1.json",
+      "from_state": "legacy",
+      "to_state": "held",
+      "review_path": "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json",
+      "reason_codes": [
+        "durable_external_provenance_missing",
+        "unsupported_pressure"
+      ],
+      "pressure": {
+        "score": 30,
+        "factors": [
+          {
+            "id": "unsupported_pressure",
+            "score": 30,
+            "reason": "durable_external_provenance_missing"
+          }
+        ],
+        "recommended_action": "hold"
+      },
+      "applied": false,
+      "transition_ids": [
+        "node-transition-1783718392795-2f187307-594b-4629-beb6-f5fc87d38723",
+        "node-transition-1783718392796-eb4a7b25-e267-41a8-9436-05bf443e0e1f",
+        "node-transition-1783718392796-15b7357f-0a30-4f54-bad4-299f56287386"
+      ]
+    }
+  ],
+  "deferred_scope": {
+    "package": "MEM-02",
+    "candidate_backlog": 1550,
+    "policy": "No bulk candidate acceptance or rejection is performed by MEM-01."
+  }
+}

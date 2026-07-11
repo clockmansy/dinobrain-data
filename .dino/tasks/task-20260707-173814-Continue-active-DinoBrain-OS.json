@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-173814-Continue-active-DinoBrain-OS",
+  "status": "completed",
+  "request": "Continue active DinoBrain OS completion goal by fixing current task lifecycle and deterministic settlement blockers that prevent verify:goal from passing.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T17:38:14.818Z",
+  "updated_at": "2026-07-07T17:50:48.812Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T17:50:48.812Z",
+  "trace_path": ".dino/traces/task-20260707-173814-Continue-active-DinoBrain-OS.json"
+}

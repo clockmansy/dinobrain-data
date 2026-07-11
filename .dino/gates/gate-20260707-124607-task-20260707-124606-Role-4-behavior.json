@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-124607-task-20260707-124606-Role-4-behavior",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-124606-Role-4-behavior-recall-feedb",
+  "request": "Role 4: behavior recall / feedback writeback reviewer. DinoBrain OS unfinished improvement plan consensus review. Inspect user direction memory and code/docs around record_feedback_correction, evaluate_behavior, compounding, behavior-golden, event-triggered recall, completion/handoff/error/direction-change. Required docs: OS_COMPLETION_CONDITIONS, OS_COMPLETION_IMPROVEMENT_PLAN, VERIFICATION, OS_V2_CONTRACT; code: src/index.ts, src/compounding.ts, rag/behavior eval if relevant. Candidate plan includes P1-09 with performed/skipped/not_applicable evidence. Return AGREE or REVISE_REQUIRED with acceptance tests. No edits.",
+  "generated_at": "2026-07-07T12:46:07.085Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-124607-Role-4-behavior-recall-feedb.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

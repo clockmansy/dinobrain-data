@@ -1,0 +1,36 @@
+{
+  "gate_id": "gate-20260707-173130-task-20260707-173129-READ-ONLY-CONSE",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-173129-READ-ONLY-CONSENSUS-REVIEW-R",
+  "request": "READ-ONLY CONSENSUS REVIEW R7. Install/new-PC/GitHub recovery lens. Inspect <machine-local-path> plus install/release evidence if needed. Decide whether this exact revised document is an adequate completion plan for install/update/new-PC equivalence. Output short rationale plus AGREE or REVISE_REQUIRED. Do not modify files.",
+  "generated_at": "2026-07-07T17:31:30.234Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-173130-READ-ONLY-CONSENSUS-REVIEW-R.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

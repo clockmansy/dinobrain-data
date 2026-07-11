@@ -1,0 +1,1693 @@
+{
+  "ok": true,
+  "cycle_id": "compounding-cycle-20260707-102506",
+  "version": "compounding_cycle_v1",
+  "generated_at": "2026-07-07T10:25:06.936Z",
+  "apply": true,
+  "reviewer": "finish_task:auto-compound",
+  "trace_count": 50,
+  "signal_count": 239,
+  "promoted_count": 78,
+  "updated_count": 0,
+  "unchanged_count": 161,
+  "cleanup_count": 0,
+  "applied_cleanup_count": 0,
+  "changed": true,
+  "behavior_rule_index_path": "60_Operations/behavior-rules/behavior-rule-index.json",
+  "promotions": [
+    {
+      "behavior_rule_id": "behavior-rule-f3052f77c5af1ae2",
+      "path": "50_Instances/candidates/behavior-rule-f3052f77c5af1ae2.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f3052f77c5af1ae2.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Full-memory audit scans all non-Git data-vault files by path, byte size, SHA-256, mtime, and parse status without storing raw file contents."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-39b979027d4dd716",
+      "path": "50_Instances/candidates/behavior-rule-39b979027d4dd716.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-39b979027d4dd716.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Baseline creation no longer treats the whole vault as drift; drift comparison begins only when a previous manifest exists."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7abf5798a4d38902",
+      "path": "50_Instances/candidates/behavior-rule-7abf5798a4d38902.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-7abf5798a4d38902.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Drift is classified as live OS write, review queue write, audit artifact, or content drift; unclassified content drift and parse errors cause the full-memory CLI to fail."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d246438b46638ee2",
+      "path": "50_Instances/candidates/behavior-rule-d246438b46638ee2.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d246438b46638ee2.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Status freshness now checks required proof artifacts against source roots and excludes the artifact itself from its own source scan to prevent false-green freshness."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6e9bfbc93c271306",
+      "path": "50_Instances/candidates/behavior-rule-6e9bfbc93c271306.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-6e9bfbc93c271306.json",
+      "action": "created",
+      "behavior_rule": "verify:goal now runs both regression verifiers and current-vault audit/freshness commands, making P0-01/P0-02 part of the completion gate."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c0c60e6cfb4e73f6",
+      "path": "50_Instances/candidates/behavior-rule-c0c60e6cfb4e73f6.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-c0c60e6cfb4e73f6.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Implemented and pushed the first P0 progress for DinoBrain OS readiness: reproducible full-memory audit and status freshness gates. Added full-memory manifest/status generation, current-vault freshness monitoring, regression verifiers, package scripts, verification docs, and wired the new gates into verify:goal so P0-01/P0-02 cannot be bypassed in final readiness."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5ff695595909cda0",
+      "path": "50_Instances/candidates/behavior-rule-5ff695595909cda0.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-5ff695595909cda0.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treated this as a read-only audit/comparison task; no code or data mutations were made."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9ada813560fd9c41",
+      "path": "50_Instances/candidates/behavior-rule-9ada813560fd9c41.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-9ada813560fd9c41.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Used the plan document as the target standard and local repo/data evidence as the current-state baseline."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3e6e04cfe3cb10f0",
+      "path": "50_Instances/candidates/behavior-rule-3e6e04cfe3cb10f0.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-3e6e04cfe3cb10f0.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Classified gaps by severity based on whether they block the user's desired always-on, compounding, GitHub-backed OS loop."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-039158a328bb1d9e",
+      "path": "50_Instances/candidates/behavior-rule-039158a328bb1d9e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-039158a328bb1d9e.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Then burn down review/semantic-job queues and add lifecycle finish-gate integrity before claiming knowledge compounding."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c7c64800c86550e4",
+      "path": "50_Instances/candidates/behavior-rule-c7c64800c86550e4.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-c7c64800c86550e4.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Add real answer-quality evaluation and visible Korean Observatory proof for every P0/P1 status before a v2 readiness claim."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-90e4cd5884ab05e7",
+      "path": "50_Instances/candidates/behavior-rule-90e4cd5884ab05e7.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-90e4cd5884ab05e7.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat the analyzed document as a draft/final-readiness specification, not as proof that DinoBrain is complete."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-355248c87bfa57f3",
+      "path": "50_Instances/candidates/behavior-rule-355248c87bfa57f3.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-355248c87bfa57f3.json",
+      "action": "created",
+      "behavior_rule": "Use SHA-256 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7 as the identity for this document analysis."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d99f24ee5ffd01f8",
+      "path": "50_Instances/candidates/behavior-rule-d99f24ee5ffd01f8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d99f24ee5ffd01f8.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: At least 12 subagents completed learning/review from the same document SHA, exceeding the user's requirement of more than 10 agents."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-eee0f1ecd2394c18",
+      "path": "50_Instances/candidates/behavior-rule-eee0f1ecd2394c18.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-eee0f1ecd2394c18.json",
+      "action": "created",
+      "behavior_rule": "Do not store raw full document or raw transcript as accepted memory from this read-only analysis; preserve structured conclusions only in the task trace."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-de217b75d6e7348e",
+      "path": "50_Instances/candidates/behavior-rule-de217b75d6e7348e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-de217b75d6e7348e.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Future implementation should start with P0-02 status freshness as the first narrow slice, while pulling forward minimal P1-16 task/finish binding and P0-01 frozen validation manifest support for validation stability."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ea8e41cd46c800ce",
+      "path": "50_Instances/candidates/behavior-rule-ea8e41cd46c800ce.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-ea8e41cd46c800ce.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Amend the plan before formal validation to add MEMORY_SNAPSHOT_SHA/frozen validation bundle, a stronger P1-10 retrieval/context contract, a global Memory Effectiveness Gate, and earlier task-session binding."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4d5ddc6c99c2e287",
+      "path": "50_Instances/candidates/behavior-rule-4d5ddc6c99c2e287.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-4d5ddc6c99c2e287.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Analyzed the local file os_implementable_improvement_plan_full_memory_v1 (1).md in detail with 12 subagents. Verified file SHA-256 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7, size 115,429 bytes, 1,285 lines. All agents treated the document as a strong final-readiness/specification plan rather than an already accepted/completed OS proof. Key retained knowledge: final OS must be local-first, GitHub-backed, Codex/Claude peer memory authority, graph-visible, evidence-regenerating, Korean user-visible, and must reduce repeated explanation through grounded memory use. Consensus risks: same document SHA is insufficient without a frozen memory snapshot/manifest SHA; P1-10 retrieval contract is too thin; P1-16 task lifecycle/finish grounding should move earlier; P2-17 outcome metrics should become a global readiness gate; P0-04 tool parity needs schema/config/data-root proof, not just tool names; P1-11 Korean DOM/screenshot proof is a global dependency; first implementation slice should be P0-02 status freshness only."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4bfa3422696f8ce2",
+      "path": "50_Instances/candidates/behavior-rule-4bfa3422696f8ce2.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-4bfa3422696f8ce2.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat the plan as a strong implementable draft, not final OS validation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1f7e463ff12263b1",
+      "path": "50_Instances/candidates/behavior-rule-1f7e463ff12263b1.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-1f7e463ff12263b1.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Promote outcome/effectiveness metrics from late P2-style implementation to a cross-cutting final-readiness gate."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-53bc9e9758e60a95",
+      "path": "50_Instances/candidates/behavior-rule-53bc9e9758e60a95.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-53bc9e9758e60a95.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Recommend explicit memory-on vs memory-off paired evaluation because the current plan implies improvement but does not fully define an A/B proof contract."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4405385b8cf8d084",
+      "path": "50_Instances/candidates/behavior-rule-4405385b8cf8d084.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-4405385b8cf8d084.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Separate durable active knowledge from historical/stale/candidate evidence to avoid retaining stale claims as active authority."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0f6dc9c4c84f75f8",
+      "path": "50_Instances/candidates/behavior-rule-0f6dc9c4c84f75f8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-0f6dc9c4c84f75f8.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat the plan as a final-readiness specification, not an immediately executable sprint backlog."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-88a6a46ade83a308",
+      "path": "50_Instances/candidates/behavior-rule-88a6a46ade83a308.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-88a6a46ade83a308.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Recommend starting with P0-02 status freshness because stale monitoring undermines all later gates and is already first in the plan's own sequence."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-acca1636d855ef86",
+      "path": "50_Instances/candidates/behavior-rule-acca1636d855ef86.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-acca1636d855ef86.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Recommend limiting the first implementation slice to freshness metadata, status precedence, needs_refresh semantics, API/UI visibility, and focused tests only."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c7e7a959cd32c7d6",
+      "path": "50_Instances/candidates/behavior-rule-c7e7a959cd32c7d6.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-c7e7a959cd32c7d6.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Identify the plan as too broad for one implementation wave; split P0 safety/freshness gates, live backlog cleanup, release/sync E2E, UI proof, and outcome metrics into separate milestones."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-666cf611975b9cae",
+      "path": "50_Instances/candidates/behavior-rule-666cf611975b9cae.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-666cf611975b9cae.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: If implementing, inspect current monitoring, health, and client MCP diagnostics modules plus existing tests before editing."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1e6fc39347dbbd0a",
+      "path": "50_Instances/candidates/behavior-rule-1e6fc39347dbbd0a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-1e6fc39347dbbd0a.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Only after P0-02 passes, proceed to P0-04 direct MCP parity canary and P0-03 recovery-key polarity cleanup."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4192b259ffb0bb2b",
+      "path": "50_Instances/candidates/behavior-rule-4192b259ffb0bb2b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-4192b259ffb0bb2b.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat this as a read-only/file-only analysis, not a counted 20-agent validation vote requiring a fresh full SecondBrain read."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-fff8fc189895c64e",
+      "path": "50_Instances/candidates/behavior-rule-fff8fc189895c64e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-fff8fc189895c64e.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Confirmed the plan consistently separates deterministic automation from semantic judgment and blocks final readiness on unclassified residual work, missing evidence, unsafe notification routing, stale status, or JSON-only proof."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7d3b766b38297a40",
+      "path": "50_Instances/candidates/behavior-rule-7d3b766b38297a40.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-7d3b766b38297a40.json",
+      "action": "created",
+      "behavior_rule": "Use trace_only because this was a read-only audit/review task."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-09908121d53e60ae",
+      "path": "50_Instances/candidates/behavior-rule-09908121d53e60ae.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-09908121d53e60ae.json",
+      "action": "created",
+      "behavior_rule": "Do not treat review queue count reduction, completed semantic job counts, or Slack ledger entries as success unless residual classification, evidence, owner/next action, and visible Korean proof are present."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-71f2055f81203819",
+      "path": "50_Instances/candidates/behavior-rule-71f2055f81203819.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-71f2055f81203819.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat the document SHA as verified: 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-41211fac47a1d205",
+      "path": "50_Instances/candidates/behavior-rule-41211fac47a1d205.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-41211fac47a1d205.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Conclude the validation protocol is safety-strong but not operationally viable as a manual/live-memory process unless it is snapshot-based and orchestrated."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-92e3d8fd1873c559",
+      "path": "50_Instances/candidates/behavior-rule-92e3d8fd1873c559.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-92e3d8fd1873c559.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Identify same document SHA as necessary but incomplete without a memory snapshot/manifest SHA, because live SecondBrain drift can make validators review different inputs."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f85e632dc2d8daf8",
+      "path": "50_Instances/candidates/behavior-rule-f85e632dc2d8daf8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f85e632dc2d8daf8.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Identify full-memory-read as useful for coverage proof but insufficient for semantic comprehension unless paired with required evidence sets and machine-readable evidence reporting."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-eec43a13ffbb6f69",
+      "path": "50_Instances/candidates/behavior-rule-eec43a13ffbb6f69.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-eec43a13ffbb6f69.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Identify reset rules as logically consistent but liveness-hostile without prevalidation, early-stop orchestration, and a final locked validation stage."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-80b96c91974e35eb",
+      "path": "50_Instances/candidates/behavior-rule-80b96c91974e35eb.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-80b96c91974e35eb.json",
+      "action": "created",
+      "behavior_rule": "Use a frozen validation bundle containing document SHA plus SecondBrain snapshot/manifest SHA before launching final 20 agents."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a412aa5fd1dc474a",
+      "path": "50_Instances/candidates/behavior-rule-a412aa5fd1dc474a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a412aa5fd1dc474a.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Require machine-readable verdict fields for FULL_MEMORY_READ, DOCUMENT_SHA, MEMORY_SNAPSHOT_SHA, EVIDENCE_CHECKED, VERDICT, and P0/P1 blockers."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-32afbd1329a6fb92",
+      "path": "50_Instances/candidates/behavior-rule-32afbd1329a6fb92.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-32afbd1329a6fb92.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Run cheap prevalidation before the final same-SHA 20-agent notarization round."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-16428e5aaec0dfe4",
+      "path": "50_Instances/candidates/behavior-rule-16428e5aaec0dfe4.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-16428e5aaec0dfe4.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: No files were edited."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-94cffd88a1eb12c7",
+      "path": "50_Instances/candidates/behavior-rule-94cffd88a1eb12c7.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-94cffd88a1eb12c7.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Document SHA-256 matched 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0a0cec4b3f25f74c",
+      "path": "50_Instances/candidates/behavior-rule-0a0cec4b3f25f74c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-0a0cec4b3f25f74c.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Assessment will treat P1-10 as directionally correct but under-specified relative to the user's requested focus areas."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-97beab439b1d08de",
+      "path": "50_Instances/candidates/behavior-rule-97beab439b1d08de.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-97beab439b1d08de.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Read-only audit/review task, so trace_only growth policy is used."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4bfbb4d412f7381c",
+      "path": "50_Instances/candidates/behavior-rule-4bfbb4d412f7381c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-4bfbb4d412f7381c.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat the requested local file as the controlling artifact for this analysis."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-249c3685a27ca39d",
+      "path": "50_Instances/candidates/behavior-rule-249c3685a27ca39d.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-249c3685a27ca39d.json",
+      "action": "created",
+      "behavior_rule": "Do not edit any files; this was a read-only audit/analysis task."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-83dacbe292560265",
+      "path": "50_Instances/candidates/behavior-rule-83dacbe292560265.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-83dacbe292560265.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Classify the plan as directionally strong and implementable for the requested UI/evidence focus, while noting that acceptance still depends on actual DOM/screenshot/browser artifacts and live proof generation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ab595af915bf92cb",
+      "path": "50_Instances/candidates/behavior-rule-ab595af915bf92cb.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-ab595af915bf92cb.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Require DOM assertions plus screenshots/browser proof for every mapped UI gate; JSON/API/report-only proof should remain insufficient."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-337227187a7e01f8",
+      "path": "50_Instances/candidates/behavior-rule-337227187a7e01f8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-337227187a7e01f8.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Verified SHA-256 matches expected 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e29622ffef64845f",
+      "path": "50_Instances/candidates/behavior-rule-e29622ffef64845f.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-e29622ffef64845f.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treated the task as read-only analysis; no source or plan file edits were made."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-25275924e714e88d",
+      "path": "50_Instances/candidates/behavior-rule-25275924e714e88d.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-25275924e714e88d.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Concluded the plan is directionally strong but should tighten current-tool naming, pre-response proof, finish_task schema enforcement, and wrong-task finish rejection semantics."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f1af8dc0671e5029",
+      "path": "50_Instances/candidates/behavior-rule-f1af8dc0671e5029.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f1af8dc0671e5029.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Observed current DinoBrain MCP tool exposure uses start_task rather than the document's os_begin_task naming, making an alias or migration contract important for canary parity."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-675a7e2d323b6a4f",
+      "path": "50_Instances/candidates/behavior-rule-675a7e2d323b6a4f.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-675a7e2d323b6a4f.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Promote pre-response context delivery and fail-closed behavior to a first-class gate with trace evidence before first substantive agent work."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5eadb3e460f02c5c",
+      "path": "50_Instances/candidates/behavior-rule-5eadb3e460f02c5c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-5eadb3e460f02c5c.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat the provided local document hash match as proof of the exact document version analyzed, but not proof of the live SecondBrain state or referenced artifacts."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6820037ac323f776",
+      "path": "50_Instances/candidates/behavior-rule-6820037ac323f776.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-6820037ac323f776.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat raw source existence, external URL anchors, counts-only audits, stale snapshots, fallback/bootstrap text, and JSON/API-only UI evidence as non-proof under the document's rules."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-904d0f6b48f93324",
+      "path": "50_Instances/candidates/behavior-rule-904d0f6b48f93324.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-904d0f6b48f93324.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Emphasize OS-native manifest reconciliation, content-bearing evidence chains, exact direct-MCP discovery, prompt-bound task lifecycle records, and Korean browser/DOM proof as durable proof surfaces."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d4f9274d211d4534",
+      "path": "50_Instances/candidates/behavior-rule-d4f9274d211d4534.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d4f9274d211d4534.json",
+      "action": "created",
+      "behavior_rule": "Before any final-readiness claim, run live OS-native full-memory audit reconciliation and source-lineage coverage checks against current SecondBrain rather than relying on this static plan."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6cd0e678ebd98a72",
+      "path": "50_Instances/candidates/behavior-rule-6cd0e678ebd98a72.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-6cd0e678ebd98a72.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Keep validation votes tied to this document SHA and require each validator's own full-memory read stats, document SHA, and evidence checked."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1e51f88d960683e6",
+      "path": "50_Instances/candidates/behavior-rule-1e51f88d960683e6.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-1e51f88d960683e6.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: No source/workspace files were edited; this was a read-only analysis aside from the required DinoBrain task trace."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6754d23599bfa32c",
+      "path": "50_Instances/candidates/behavior-rule-6754d23599bfa32c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-6754d23599bfa32c.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat the plan's core requirement as a mechanical contract: current release artifact plus GitHub login recovery and ongoing multi-PC sync safety must be proven by fixtures, manifest fields, status artifacts, and Korean UI/browser proof."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-39675c1f0410a891",
+      "path": "50_Instances/candidates/behavior-rule-39675c1f0410a891.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-39675c1f0410a891.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: GitHub-only recovery means no separate recovery key, no manual clone, no manual global Node/Git/gh install, and no hidden token/config copy as the normal path."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d61352344b7d97a2",
+      "path": "50_Instances/candidates/behavior-rule-d61352344b7d97a2.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d61352344b7d97a2.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Implement or verify P1-12 after prerequisite authority/status gates so installer/runtime templates cannot reintroduce stale memory or overclaim authority."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7fc6733281df4a5f",
+      "path": "50_Instances/candidates/behavior-rule-7fc6733281df4a5f.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-7fc6733281df4a5f.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Add two-PC divergent-history, dirty-tree, and conflict-classification sync fixtures before allowing final readiness to treat GitHub backup as safe."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d11610a3e6799ea8",
+      "path": "50_Instances/candidates/behavior-rule-d11610a3e6799ea8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d11610a3e6799ea8.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat the document as the authoritative source for this analysis because its SHA-256 matched the expected value."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-86d4f8b2497866fd",
+      "path": "50_Instances/candidates/behavior-rule-86d4f8b2497866fd.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-86d4f8b2497866fd.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Limit work to read-only analysis; no implementation or repository/source file edits were performed."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-efdae8ca7377ab7f",
+      "path": "50_Instances/candidates/behavior-rule-efdae8ca7377ab7f.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-efdae8ca7377ab7f.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Frame P1-11 as a cross-cutting UI/proof gate inherited by all P0/P1 rows, not as an isolated frontend package."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f8b0a5c3a691c93b",
+      "path": "50_Instances/candidates/behavior-rule-f8b0a5c3a691c93b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f8b0a5c3a691c93b.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Note P1-16 task lifecycle as a late-sequenced package in the document but a practical shared-schema dependency for finish/evidence integrity across many gates."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ac3445d462335f49",
+      "path": "50_Instances/candidates/behavior-rule-ac3445d462335f49.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-ac3445d462335f49.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: If implementation begins later, start with the documented P0 prerequisites, then P1-13 and P1-14 live blockers before backlog/job/behavior work."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-925b19de178feed7",
+      "path": "50_Instances/candidates/behavior-rule-925b19de178feed7.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-925b19de178feed7.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treated the requested file as the primary evidence source and did not modify any workspace or download files."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-999c77a853574bd5",
+      "path": "50_Instances/candidates/behavior-rule-999c77a853574bd5.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-999c77a853574bd5.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Confirmed the document is a Round 29 pending implementation/validation plan, not proof that the OS is complete."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-40159d5208be6de1",
+      "path": "50_Instances/candidates/behavior-rule-40159d5208be6de1.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-40159d5208be6de1.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Judged the plan directionally aligned with the desired Cognitive Continuity OS because it centers Codex/Claude parity, local-first GitHub-backed restore, evidence lineage, graph/wiki visibility, runtime authority, automation safety, behavior learning, Korean user-visible proof, and reduced repeated explanation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-eac5e9a66f1b4cb2",
+      "path": "50_Instances/candidates/behavior-rule-eac5e9a66f1b4cb2.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-eac5e9a66f1b4cb2.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Flagged remaining ambiguity that the completion bar is a gate matrix rather than a progress/completion percentage, and that outcome metrics should be treated as core final-readiness evidence, not merely late-stage polish."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1dccf89d232f98fd",
+      "path": "50_Instances/candidates/behavior-rule-1dccf89d232f98fd.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-1dccf89d232f98fd.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Read-only analysis completed for <machine-local-path> (1).md. Verified SHA-256 matches expected value, read the full document through the final reviewer checklist, and evaluated final target, completion bar, Cognitive Continuity OS direction fit, and P0/P1 risks. No files were edited."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9da531e1c31efedb",
+      "path": "50_Instances/candidates/behavior-rule-9da531e1c31efedb.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-9da531e1c31efedb.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat this as a read-only audit/analysis task; no implementation or file edits were performed."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-08e5aa2adce72cdb",
+      "path": "50_Instances/candidates/behavior-rule-08e5aa2adce72cdb.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-08e5aa2adce72cdb.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Verified document hash before relying on the content: 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-51fb5b55acb1d866",
+      "path": "50_Instances/candidates/behavior-rule-51fb5b55acb1d866.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-51fb5b55acb1d866.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Assessment focuses on implementability knowledge, hidden dependencies, blockers, and verdict for P0 packages P0-01 through P0-06 including P0-05B/P0-05C."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f5153ca98559d6e8",
+      "path": "50_Instances/candidates/behavior-rule-f5153ca98559d6e8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f5153ca98559d6e8.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: DinoBrain finish uses trace_only to avoid auto-growth, compounding, or auto-sync for this review-only work."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f6831826332b5798",
+      "path": "50_Instances/candidates/behavior-rule-f6831826332b5798.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f6831826332b5798.json",
+      "action": "created",
+      "behavior_rule": "Before any final readiness claim, require package tests plus global gates, traceability matrix artifacts, and Korean UI/browser proof."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4451e1bb0861da08",
+      "path": "50_Instances/candidates/behavior-rule-4451e1bb0861da08.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-4451e1bb0861da08.json",
+      "action": "unchanged",
+      "behavior_rule": "Use latest Codex hook config or server build mtime as verify:goal live proof lower bound so valid live hook evidence does not expire after the default recent window."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8d9772d9cbf785d6",
+      "path": "50_Instances/candidates/behavior-rule-8d9772d9cbf785d6.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-8d9772d9cbf785d6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat codex_mcp_pre_response as advisory fallback evidence when codex_live_pre_response already proves the real managed hook path."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-db1f40483d6f6209",
+      "path": "50_Instances/candidates/behavior-rule-db1f40483d6f6209.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-db1f40483d6f6209.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not change global Git config to bypass dubious ownership; pass safe.directory in the verifier Git calls instead."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f7a688050b15fb1b",
+      "path": "50_Instances/candidates/behavior-rule-f7a688050b15fb1b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f7a688050b15fb1b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Exclude .codex-remote-attachments/ from commit and push."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-cadcb7c6657271f0",
+      "path": "50_Instances/candidates/behavior-rule-cadcb7c6657271f0.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-cadcb7c6657271f0.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Closed the DinoBrain closed-loop verifier work. Verified the real managed Codex hook proof, made verify:goal use a durable live-proof window based on latest hook config/server build timestamps, made the MCP preflight proof advisory when live hook evidence exists, fixed the data Git hook verifier to honor Git safe.directory in sandboxed Windows ownership contexts, reran verify-data-git-hooks, npm run check, and verify:goal successfully, then committed and pushed app repo main at c377981."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e62c91fc4ac4b2ca",
+      "path": "50_Instances/candidates/behavior-rule-e62c91fc4ac4b2ca.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-e62c91fc4ac4b2ca.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: For non-critical/non-destructive actions, proceed without asking the user for approval when the tool environment allows it."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-94480ae9efabe27d",
+      "path": "50_Instances/candidates/behavior-rule-94480ae9efabe27d.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-94480ae9efabe27d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Still request explicit escalation when the tool sandbox or security model requires approval, or when an action is destructive, sensitive, or broad-sync related."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4fba1ee0992bf035",
+      "path": "50_Instances/candidates/behavior-rule-4fba1ee0992bf035.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-4fba1ee0992bf035.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: The full closed-loop goal is now supported by live managed Codex hook evidence plus verify:goal passing."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-871a06e17cb36065",
+      "path": "50_Instances/candidates/behavior-rule-871a06e17cb36065.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-871a06e17cb36065.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Handled the user's instruction to proceed without approval for non-critical work and completed the closed-loop proof. The real Codex Desktop pre-response hook ran through the managed ProgramData hook, injected DinoBrain context before this response, and verify-closed-loop-goal passed all requirements."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d3a7b20bf711792d",
+      "path": "50_Instances/candidates/behavior-rule-d3a7b20bf711792d.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d3a7b20bf711792d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treated live Codex Desktop hook evidence as the final missing proof requirement."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-45ad5719927599ba",
+      "path": "50_Instances/candidates/behavior-rule-45ad5719927599ba.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-45ad5719927599ba.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Did not broadly push dirty dinobrain-data operational artifacts because many are conditional/requires_review or local-only; the GitHub push loop is proven by the policy-approved closed-loop fixture and app repo push already completed."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4743e7b4a9d47e2b",
+      "path": "50_Instances/candidates/behavior-rule-4743e7b4a9d47e2b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-4743e7b4a9d47e2b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Kept current user instruction above memory: avoid approval prompts for non-dangerous actions, but still respect sandbox/tool escalation rules when required."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-74fe7c1ef29bfaf9",
+      "path": "50_Instances/candidates/behavior-rule-74fe7c1ef29bfaf9.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-74fe7c1ef29bfaf9.json",
+      "action": "unchanged",
+      "behavior_rule": "Use verify:goal as the completion gate for future regressions."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d6a656ab8874297b",
+      "path": "50_Instances/candidates/behavior-rule-d6a656ab8874297b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d6a656ab8874297b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Verified the DinoBrain closed-loop goal after managed Codex hook installation. The goal verifier passed end to end after a real Codex Desktop prompt produced managed UserPromptSubmit preflight evidence, Context Pack paths, live hook report, closed-loop fixture push evidence, OS memory quality evidence, and data Git safety evidence."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a3c18a52a81510f8",
+      "path": "50_Instances/candidates/behavior-rule-a3c18a52a81510f8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a3c18a52a81510f8.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Used manual DinoBrain MCP preflight because no injected preflight context was visible in the prompt context."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-650eb424f687ea2a",
+      "path": "50_Instances/candidates/behavior-rule-650eb424f687ea2a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-650eb424f687ea2a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Did not run apply_node_lifecycle because even apply=false writes a lifecycle report and event."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ef05e173d873782b",
+      "path": "50_Instances/candidates/behavior-rule-ef05e173d873782b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-ef05e173d873782b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Used static source inspection plus read-only data-vault counts instead of npm verification because node/npm are not on PATH in this shell."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2d6c7f6f7d34cd35",
+      "path": "50_Instances/candidates/behavior-rule-2d6c7f6f7d34cd35.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2d6c7f6f7d34cd35.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Current user instruction to avoid file edits governed the audit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-46f4aae8ade0111e",
+      "path": "50_Instances/candidates/behavior-rule-46f4aae8ade0111e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-46f4aae8ade0111e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add lifecycle coverage for stale pending candidates/reviews and near-duplicate candidates, or gate auto-compounding volume before review queues grow."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a0247e69d700d650",
+      "path": "50_Instances/candidates/behavior-rule-a0247e69d700d650.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a0247e69d700d650.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Kept audit read-only for source files and did not edit application or durable memory records."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-175ee40314924a47",
+      "path": "50_Instances/candidates/behavior-rule-175ee40314924a47.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-175ee40314924a47.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treated source chunk records, .dino/provenance records, accepted instance source fields, wiki index, graph-health file, and verifier outputs as evidence."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-119fd4f1c0c4c8f0",
+      "path": "50_Instances/candidates/behavior-rule-119fd4f1c0c4c8f0.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-119fd4f1c0c4c8f0.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Classified graph-health freshness and claim-source schema mismatch as blockers for durable provenance confidence."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f87806f650ee41b3",
+      "path": "50_Instances/candidates/behavior-rule-f87806f650ee41b3.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f87806f650ee41b3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Refresh graph health from the current corpus after fixing schema/source linkage."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7fb6486b80e9f4cc",
+      "path": "50_Instances/candidates/behavior-rule-7fb6486b80e9f4cc.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-7fb6486b80e9f4cc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Replace prose evidence source in rag-public-os-learning-packet.json with an existing durable path or classify it outside source_mapping checks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-20fe8bd679fac4ec",
+      "path": "50_Instances/candidates/behavior-rule-20fe8bd679fac4ec.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-20fe8bd679fac4ec.json",
+      "action": "unchanged",
+      "behavior_rule": "Use live Context Pack and local code/data evidence as source of truth."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-10cb4a749157df5a",
+      "path": "50_Instances/candidates/behavior-rule-10cb4a749157df5a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-10cb4a749157df5a.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not run npm/node verifier scripts because node is unavailable on the shell PATH."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6d11162f7e8c5a8b",
+      "path": "50_Instances/candidates/behavior-rule-6d11162f7e8c5a8b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-6d11162f7e8c5a8b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat operation-log pollution as a retrieval-quality failure because 60_Operations records dominate operation-flavored ranked output and task-summary paths remain in the current wiki index."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d45792e1f4afefad",
+      "path": "50_Instances/candidates/behavior-rule-d45792e1f4afefad.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d45792e1f4afefad.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Separate operational reports/logs from default user-memory retrieval, or require explicit operation intent before ranking 60_Operations records highly."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1c21452e586b7f01",
+      "path": "50_Instances/candidates/behavior-rule-1c21452e586b7f01.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-1c21452e586b7f01.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Return UNKNOWN rather than PASS because source code and synthetic verifiers prove mechanisms, but the current vault lacks accepted direct feedback records and real action/eval proof for corrections like the example phrase."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8f3c1edaffff4184",
+      "path": "50_Instances/candidates/behavior-rule-8f3c1edaffff4184.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-8f3c1edaffff4184.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat direct record_feedback_correction, session import candidates, and finish_task compounding as distinct paths because only the first writes directly to accepted memory; the others require review or environment flags."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a65744f793b782cd",
+      "path": "50_Instances/candidates/behavior-rule-a65744f793b782cd.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a65744f793b782cd.json",
+      "action": "unchanged",
+      "behavior_rule": "Use record_feedback_correction when a user correction is clearly durable, or ensure hook/session import candidates are reviewed into accepted memory before expecting retrieval impact."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6804fd8f6fca6eb9",
+      "path": "50_Instances/candidates/behavior-rule-6804fd8f6fca6eb9.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-6804fd8f6fca6eb9.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat hook auto-sync as implemented but not reliable-live until push failure handling is fixed or a trusted live prompt shows pushed=true against the real data remote."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-22d320ac9863e6a4",
+      "path": "50_Instances/candidates/behavior-rule-22d320ac9863e6a4.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-22d320ac9863e6a4.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not push or commit during this audit because the user requested read-only."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-61bd7a11e37a9ab0",
+      "path": "50_Instances/candidates/behavior-rule-61bd7a11e37a9ab0.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-61bd7a11e37a9ab0.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep git_sync as manual dry-run evidence; it does not commit or push by design."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5a6859e7a3c5a8a7",
+      "path": "50_Instances/candidates/behavior-rule-5a6859e7a3c5a8a7.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-5a6859e7a3c5a8a7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Commit/push the app repo installer hook merge changes only after review and verification."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c5c1f813cffb8c73",
+      "path": "50_Instances/candidates/behavior-rule-c5c1f813cffb8c73.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-c5c1f813cffb8c73.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Kept audit read-only and did not edit repo files."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7508e175df67d40b",
+      "path": "50_Instances/candidates/behavior-rule-7508e175df67d40b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-7508e175df67d40b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treated diagnostic hook reports as weaker evidence than a real prompt-time preflight."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ef21cb60980fbf4f",
+      "path": "50_Instances/candidates/behavior-rule-ef21cb60980fbf4f.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-ef21cb60980fbf4f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Classified stale pre-build MCP node processes as the main runtime freshness blocker."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f85f0158db2f6659",
+      "path": "50_Instances/candidates/behavior-rule-f85f0158db2f6659.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f85f0158db2f6659.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Stop or reload stale DinoBrain MCP node processes and restart/new Codex session so all live MCP processes start after the latest dist build."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5d7bc554b5631535",
+      "path": "50_Instances/candidates/behavior-rule-5d7bc554b5631535.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-5d7bc554b5631535.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Run a fresh real-prompt live preflight verification and require codex_prompt_submitted/codex_preflight_completed evidence before manual MCP calls."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0e059bc6b742a4eb",
+      "path": "50_Instances/candidates/behavior-rule-0e059bc6b742a4eb.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-0e059bc6b742a4eb.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Resolve or intentionally keep the dirty package.json/install.ps1 changes before release/runtime parity signoff."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d4e2fe9f3123642a",
+      "path": "50_Instances/candidates/behavior-rule-d4e2fe9f3123642a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d4e2fe9f3123642a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of MCP runtime freshness/version parity. Package, package-lock, src/dist OS contract, and live MCP responses all report 2.2.1, and installed Codex config points to the local dist/index.js with portable Node v24.18.0 and data root <machine-local-path> Concrete blockers found: many long-running DinoBrain node MCP processes remain alive from before the current dist/index.js build timestamp, making runtime freshness nondeterministic; live task/event observability has mixed 2.2.0 and 2.2.1 records today; latest codex_preflight_completed report was a diagnostic probe rather than proof of a real user-prompt hook; and the worktree is dirty with package.json/install.ps1 modifications that should be accounted for before claiming a clean release/runtime parity state."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1011d70685a98e31",
+      "path": "50_Instances/candidates/behavior-rule-1011d70685a98e31.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-1011d70685a98e31.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: finish_task trace fields preserve used_memory_paths, context_pack_paths, session_archive_paths, and candidate_paths after normalization."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b02cba0f266c7f66",
+      "path": "50_Instances/candidates/behavior-rule-b02cba0f266c7f66.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-b02cba0f266c7f66.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: finish_task auto-growth routes the 50_Instances memory through pending candidate plus promotion review records."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-69fa305eb90eb89c",
+      "path": "50_Instances/candidates/behavior-rule-69fa305eb90eb89c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-69fa305eb90eb89c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: The overall audit fails because finish_task also writes an auto-generated status accepted task_summary_memory under 60_Operations/task-summaries, and 60_Operations is indexed for default retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f59c88f27b9cc9e9",
+      "path": "50_Instances/candidates/behavior-rule-f59c88f27b9cc9e9.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f59c88f27b9cc9e9.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Validation was static only because node/npm are not on PATH in this shell."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f5953f7ef43570f2",
+      "path": "50_Instances/candidates/behavior-rule-f5953f7ef43570f2.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f5953f7ef43570f2.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Run npm run check and the focused verification scripts once the portable Node/npm runtime is available on PATH."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2608aa5e70ebaea6",
+      "path": "50_Instances/candidates/behavior-rule-2608aa5e70ebaea6.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2608aa5e70ebaea6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Read-only audit completed for finish_task knowledge growth. Verdict: FAIL overall because the growth path creates candidate and review records and preserves used memory paths, but it also writes an auto-generated task_summary_memory under 60_Operations/task-summaries with status accepted; 60_Operations is a default retrieval root and current wiki-index evidence shows task summaries indexed, so unreviewed generated summaries can enter retrieval before candidate approval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8054fcc98f0516d2",
+      "path": "50_Instances/candidates/behavior-rule-8054fcc98f0516d2.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-8054fcc98f0516d2.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Verdict FAIL for the strong claim that every new Codex user prompt must run DinoBrain preflight before response."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-148fbfe4c9e2b756",
+      "path": "50_Instances/candidates/behavior-rule-148fbfe4c9e2b756.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-148fbfe4c9e2b756.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat configured/probe-verified hooks as insufficient live proof; require verify:codex-live evidence from a fresh trusted Codex Desktop session."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3101ed08d71390ae",
+      "path": "50_Instances/candidates/behavior-rule-3101ed08d71390ae.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-3101ed08d71390ae.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep read-only audit scope; no code edits made."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e20c5ba456017f72",
+      "path": "50_Instances/candidates/behavior-rule-e20c5ba456017f72.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-e20c5ba456017f72.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Trust the DinoBrain UserPromptSubmit hook in /hooks if pending, fully restart Codex or open a new trusted thread, then rerun verify:codex-live with a unique prompt snippet."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e4e17e918d05f58f",
+      "path": "50_Instances/candidates/behavior-rule-e4e17e918d05f58f.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-e4e17e918d05f58f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Consider adding a fail-closed agent-side/session guard for missing live preflight context if the product requirement is absolute enforcement across trust/reload edge cases."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a3b9955207d54e37",
+      "path": "50_Instances/candidates/behavior-rule-a3b9955207d54e37.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a3b9955207d54e37.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Read-only audit of Codex UserPromptSubmit pre-response DinoBrain preflight enforcement. Found that the installed hook is configured and the wrapper/probe path passes, including fail-closed behavior inside the hook, but live verification found no Codex Desktop UserPromptSubmit preflight event for the current prompt or any prompt after 2026-07-07T02:00:00Z. Docs and scripts explicitly acknowledge trust and stale-session reload gaps, so every new Codex user prompt is not mechanically guaranteed to run DinoBrain preflight before response in current-session reload/trust edge cases."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-eb0734519a5d7732",
+      "path": "50_Instances/candidates/behavior-rule-eb0734519a5d7732.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-eb0734519a5d7732.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Generated memory is no longer allowed to become accepted memory without review lineage."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d88eed1b232f1a72",
+      "path": "50_Instances/candidates/behavior-rule-d88eed1b232f1a72.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d88eed1b232f1a72.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Auto-sync is constrained to current-task scoped artifacts and excludes local-only index/events data."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3133f23ec148d842",
+      "path": "50_Instances/candidates/behavior-rule-3133f23ec148d842.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-3133f23ec148d842.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Legacy auto-generated accepted behavior rules were demoted to candidate plus promotion review records."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2d08d9aec391ab33",
+      "path": "50_Instances/candidates/behavior-rule-2d08d9aec391ab33.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2d08d9aec391ab33.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Public data safety check now treats unreviewed auto-generated accepted memory and large/local-only files as blockers."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-fb2608f84f4cc7dc",
+      "path": "50_Instances/candidates/behavior-rule-fb2608f84f4cc7dc.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-fb2608f84f4cc7dc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Behavior eval is explicitly context-level, not a substitute for answer-quality/Ragas evaluation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e50c31ef228e0cff",
+      "path": "50_Instances/candidates/behavior-rule-e50c31ef228e0cff.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-e50c31ef228e0cff.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Run a real fresh Codex Desktop prompt after hook approval/restart and pass verify:codex-live."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a9ed37f4d85bdbfa",
+      "path": "50_Instances/candidates/behavior-rule-a9ed37f4d85bdbfa.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a9ed37f4d85bdbfa.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat current audit as read-only; no code edits were made."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-cdaa62ddc7e4a9bd",
+      "path": "50_Instances/candidates/behavior-rule-cdaa62ddc7e4a9bd.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-cdaa62ddc7e4a9bd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend changing contextPackBudget from a hard root filter to a root-aware interleaving/diversity budget with minimum secondary fill and pack fill-rate checks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e6ee45b982bcaeae",
+      "path": "50_Instances/candidates/behavior-rule-e6ee45b982bcaeae.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-e6ee45b982bcaeae.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend expanding eval golden set with cross-root cases and assertions for returned count and required evidence mix."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c753c70f90286050",
+      "path": "50_Instances/candidates/behavior-rule-c753c70f90286050.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-c753c70f90286050.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not edit files for this audit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-fa91a7d07db2714e",
+      "path": "50_Instances/candidates/behavior-rule-fa91a7d07db2714e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-fa91a7d07db2714e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat direct install.ps1 verification inclusion as present but release/build proof as incomplete."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ca188f46ae0be4be",
+      "path": "50_Instances/candidates/behavior-rule-ca188f46ae0be4be.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-ca188f46ae0be4be.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat no-Git default verification as fail-closed rather than silently successful, but document/resolve the contradiction."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-135ff194bf13d1da",
+      "path": "50_Instances/candidates/behavior-rule-135ff194bf13d1da.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-135ff194bf13d1da.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add build-windows-installer self-test assertion for verify:codex-loop in embedded install.ps1."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-751ae7f622b0bf58",
+      "path": "50_Instances/candidates/behavior-rule-751ae7f622b0bf58.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-751ae7f622b0bf58.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Make SkipVerify visibly unsafe or gated by a stronger explicit flag and status artifact."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2fb4c7fbcabb43a1",
+      "path": "50_Instances/candidates/behavior-rule-2fb4c7fbcabb43a1.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2fb4c7fbcabb43a1.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only post-patch audit #14 for installer/release verification. Direct install.ps1 invokes verify:os and verify:codex-loop, and GUI verification defaults on. Findings: release/build self-test does not assert embedded install.ps1 contains verify:codex-loop; SkipVerify bypasses both verifiers yet still completes install and starts hook approval; no-Git CLI docs are inconsistent because verify:codex-loop hard-requires git; release SkipBuild/AssetPath can package stale unverified EXE; default release AppRef=main can drift from release commit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-14290b43a6aa774e",
+      "path": "50_Instances/candidates/behavior-rule-14290b43a6aa774e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-14290b43a6aa774e.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim lexical_fallback_v2 is semantic embedding retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-95471fabf874369c",
+      "path": "50_Instances/candidates/behavior-rule-95471fabf874369c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-95471fabf874369c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat current hybrid_contextual_v2 promotion gate as insufficient until vector index provenance, coverage, top-K, and quality canaries are enforced."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-874c612f2a003bae",
+      "path": "50_Instances/candidates/behavior-rule-874c612f2a003bae.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-874c612f2a003bae.json",
+      "action": "unchanged",
+      "behavior_rule": "Use trace_only because this was a read-only audit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2e18e3671b61718d",
+      "path": "50_Instances/candidates/behavior-rule-2e18e3671b61718d.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2e18e3671b61718d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add strict dense index readiness metadata and validation before reporting hybrid_contextual_v2."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-fec6ea45ef8ad1ae",
+      "path": "50_Instances/candidates/behavior-rule-fec6ea45ef8ad1ae.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-fec6ea45ef8ad1ae.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim lexical_fallback_v2 is real dense hybrid retrieval or sufficient memory-reference quality."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-727b2e8588c8ff32",
+      "path": "50_Instances/candidates/behavior-rule-727b2e8588c8ff32.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-727b2e8588c8ff32.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat current eval:context as coarse retrieval smoke coverage, not a hard quality gate."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0b6117b5a12b8431",
+      "path": "50_Instances/candidates/behavior-rule-0b6117b5a12b8431.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-0b6117b5a12b8431.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Minimum quality claims need hard gates for retrieval mode, index/shard freshness, representative context eval, behavior eval, provenance/source distinction, noise/type budgets, and observable memory use."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3daafbf8b03f4c4b",
+      "path": "50_Instances/candidates/behavior-rule-3daafbf8b03f4c4b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-3daafbf8b03f4c4b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Create/refesh real wiki SQLite and dense-vector provider/index evidence before using hybrid_contextual_v2 language."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-86fa0caa0e63588b",
+      "path": "50_Instances/candidates/behavior-rule-86fa0caa0e63588b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-86fa0caa0e63588b.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not let finish_task auto-growth or auto-compound write generated records directly to 50_Instances/accepted by default."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2324cb077f1303cc",
+      "path": "50_Instances/candidates/behavior-rule-2324cb077f1303cc.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2324cb077f1303cc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Preserve closed-loop usefulness by writing task traces and pending review candidates, then rely on review_candidate to promote accepted records for later Context Packs."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-aef78ecd60ec4920",
+      "path": "50_Instances/candidates/behavior-rule-aef78ecd60ec4920.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-aef78ecd60ec4920.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep trace_only for read-only audits so audits do not compound themselves."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-51f2e1afaf4cc5d2",
+      "path": "50_Instances/candidates/behavior-rule-51f2e1afaf4cc5d2.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-51f2e1afaf4cc5d2.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Update scripts/verify-codex-closed-loop.mjs and scripts/verify-compounding-loop.mjs to assert candidate/review gating before accepted retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-698566af8e3bee69",
+      "path": "50_Instances/candidates/behavior-rule-698566af8e3bee69.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-698566af8e3bee69.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Kept the audit read-only; no source or data files were edited manually."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3b383bfd640a64b5",
+      "path": "50_Instances/candidates/behavior-rule-3b383bfd640a64b5.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-3b383bfd640a64b5.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the previous evidence.source/source_paths acceptance gap as mostly addressed by the current source resolver and verifier fixtures."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b81be464c4a50635",
+      "path": "50_Instances/candidates/behavior-rule-b81be464c4a50635.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-b81be464c4a50635.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: The remaining acceptance gap is source.trace_path-only coverage in scripts/verify-graph-health.mjs, plus parity coverage for lifecycle and observatory source resolution."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a5cd940732a1eec6",
+      "path": "50_Instances/candidates/behavior-rule-a5cd940732a1eec6.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a5cd940732a1eec6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add a source.trace_path-only accepted fixture to scripts/verify-graph-health.mjs and assert it does not count as source-less or missing when the trace target exists."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a58e2a9e318fff60",
+      "path": "50_Instances/candidates/behavior-rule-a58e2a9e318fff60.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a58e2a9e318fff60.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Consider extracting shared source path normalization/resolution so graph-health, lifecycle, and observatory do not drift."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4d608c0346ef450d",
+      "path": "50_Instances/candidates/behavior-rule-4d608c0346ef450d.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-4d608c0346ef450d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of source/provenance graph handling across graph-health, lifecycle, observatory, and verify-graph-health. The source resolver now recognizes evidence.source, source.trace_path, source.task_path, source_paths, source_operation_path, and legacy single source fields; live data inspection shows parseable accepted records are no longer source-less, with one remaining missing source path and a persisted graph-health score of 90. No repo files were edited."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a7b089bbc77b5ba0",
+      "path": "50_Instances/candidates/behavior-rule-a7b089bbc77b5ba0.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a7b089bbc77b5ba0.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat direct install.ps1 portable npm/path wiring as correct: it calls the portable npm.cmd and prepends the portable Node root to PATH before verify:os and verify:codex-loop."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-296e4f1f89aaf838",
+      "path": "50_Instances/candidates/behavior-rule-296e4f1f89aaf838.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-296e4f1f89aaf838.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not run full npm verification during this audit because the user requested read-only work and verify scripts write reports/temp data."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e0413bd13f082edf",
+      "path": "50_Instances/candidates/behavior-rule-e0413bd13f082edf.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-e0413bd13f082edf.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Report release verification gaps separately from the direct install path."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-cec7268246807edc",
+      "path": "50_Instances/candidates/behavior-rule-cec7268246807edc.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-cec7268246807edc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add a release/build assertion that the embedded install.ps1 contains verify:codex-loop or performs a dry-run/default argument check."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-55280a50056e2bbe",
+      "path": "50_Instances/candidates/behavior-rule-55280a50056e2bbe.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-55280a50056e2bbe.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Decide whether install.ps1 should continue supporting no-Git ZIP fallback now that verify:codex-loop requires git, or make Git an explicit hard preflight in the script path too."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-db787d417a4f1b06",
+      "path": "50_Instances/candidates/behavior-rule-db787d417a4f1b06.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-db787d417a4f1b06.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Update docs/INSTALL.md update and verification sections to include verify:codex-loop."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2da31daa4ffa0d34",
+      "path": "50_Instances/candidates/behavior-rule-2da31daa4ffa0d34.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2da31daa4ffa0d34.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of installer and release verification wiring for verify:codex-loop. Direct install.ps1 invokes verify:codex-loop through portable npm/path after verify:os; EXE default verification checkbox remains enabled. Findings are limited to release self-test coverage, Git/no-Git fallback behavior, and docs drift in INSTALL quick/update sections. No repository files were edited."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2db5207a5400d1c0",
+      "path": "50_Instances/candidates/behavior-rule-2db5207a5400d1c0.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2db5207a5400d1c0.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not edit repository files during this audit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-44b710f1a7090df7",
+      "path": "50_Instances/candidates/behavior-rule-44b710f1a7090df7.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-44b710f1a7090df7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat verify:codex-live as evidence of hook-shaped artifacts, not as hard proof of Codex app dispatch."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d69c45acc3209ea3",
+      "path": "50_Instances/candidates/behavior-rule-d69c45acc3209ea3.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d69c45acc3209ea3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend adding a per-hook-run id/challenge, launcher provenance from the PowerShell wrapper, strict submitted/completed/report correlation, and optional live finish_task proof for closed-loop verification."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c8b4a2079d38029f",
+      "path": "50_Instances/candidates/behavior-rule-c8b4a2079d38029f.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-c8b4a2079d38029f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add hook_run_id to codex_prompt_submitted, codex_preflight_completed, and live reports, then require it in verify-codex-live-preflight.mjs."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-40b6c16d61281d46",
+      "path": "50_Instances/candidates/behavior-rule-40b6c16d61281d46.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-40b6c16d61281d46.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelated completed events, no parent-process or challenge attestation, no proof that injected context reached the model, and loose hook registration checks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8ca554f3d54b85d7",
+      "path": "50_Instances/candidates/behavior-rule-8ca554f3d54b85d7.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-8ca554f3d54b85d7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: No repo files were edited."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2d3fe4deaad93c1a",
+      "path": "50_Instances/candidates/behavior-rule-2d3fe4deaad93c1a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2d3fe4deaad93c1a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the root issue as a lineage schema/resolver mismatch across graph-health, observatory, lifecycle, compounding, and session-promotion writers."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2895b4b306bb7d8a",
+      "path": "50_Instances/candidates/behavior-rule-2895b4b306bb7d8a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2895b4b306bb7d8a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Acceptance gate should add an evidence.source-only and source_paths-only accepted fixture to graph:health:verify and assert these are not counted as missing source when their targets exist."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-120041fdb48971e4",
+      "path": "50_Instances/candidates/behavior-rule-120041fdb48971e4.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-120041fdb48971e4.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Extend graph:health:verify with actual accepted-record schemas from compounding and session promotion."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6612cadc1458909e",
+      "path": "50_Instances/candidates/behavior-rule-6612cadc1458909e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-6612cadc1458909e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Repair invalid accepted JSON records before relying on a fresh graph-health run."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d8c05526a1f63464",
+      "path": "50_Instances/candidates/behavior-rule-d8c05526a1f63464.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d8c05526a1f63464.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Read-only audit of graph health and provenance/source/chunk/claim lineage. Found graph health score reaches 0 because src/graph-health.ts uses a narrow source resolver that ignores accepted-record lineage fields used by writers, especially evidence.source and source_paths. Persisted graph-health artifact reported accepted_without_source_count=302, source_mapping_missing_count=302, score=0. Also found three accepted JSON records currently invalid, which can make a rerun fail before scoring."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-271143209223c587",
+      "path": "50_Instances/candidates/behavior-rule-271143209223c587.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-271143209223c587.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Route task memories and behavior rules into candidates plus promotion review records before accepted retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c1f35400ec88578f",
+      "path": "50_Instances/candidates/behavior-rule-c1f35400ec88578f.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-c1f35400ec88578f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: No source files were edited per read-only audit scope."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f7d07205f1d84db9",
+      "path": "50_Instances/candidates/behavior-rule-f7d07205f1d84db9.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f7d07205f1d84db9.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat current Claude UserPromptSubmit support as installed-registration parity, not runtime-proof parity."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-20e83729dce15a7e",
+      "path": "50_Instances/candidates/behavior-rule-20e83729dce15a7e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-20e83729dce15a7e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: The most direct failing verifier should execute the Claude settings hook command with official Claude UserPromptSubmit JSON and assert Claude-labeled events/reports, which currently fail because the runtime hardcodes codex_prompt_submitted/codex_preflight_completed and codex_hook."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5bf64880eb8c04bc",
+      "path": "50_Instances/candidates/behavior-rule-5bf64880eb8c04bc.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-5bf64880eb8c04bc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add a Claude-specific hook verifier before claiming closed-loop proof for any Claude Code session."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f9dac1967e8339fc",
+      "path": "50_Instances/candidates/behavior-rule-f9dac1967e8339fc.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f9dac1967e8339fc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Extend verify:os to include Claude hook command existence/execution and hook-disable policy checks when Claude prompt hook is required."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3ecdf0c090adadd7",
+      "path": "50_Instances/candidates/behavior-rule-3ecdf0c090adadd7.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-3ecdf0c090adadd7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat `os_begin_task` as the existing session-agnostic core abstraction."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b57e187f9ca25377",
+      "path": "50_Instances/candidates/behavior-rule-b57e187f9ca25377.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-b57e187f9ca25377.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim automatic non-Codex/non-Claude pre-response invocation exists without a host hook or adapter."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a47cb64d8790e07a",
+      "path": "50_Instances/candidates/behavior-rule-a47cb64d8790e07a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a47cb64d8790e07a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend the smallest implementation as a thin generic CLI/adapter reusing current hook logic and MCP stdio client patterns."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-85c44097c34f435d",
+      "path": "50_Instances/candidates/behavior-rule-85c44097c34f435d.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-85c44097c34f435d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add a package script and temp-vault verifier that calls the adapter and asserts `os_begin_task_completed`, context pack trace, gate report, and fail-closed behavior."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f7a2b396417e7bc8",
+      "path": "50_Instances/candidates/behavior-rule-f7a2b396417e7bc8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f7a2b396417e7bc8.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: DinoBrain currently has a credible skeleton but does not yet satisfy the user's desired closed-loop LLM Wiki OS guarantees."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-01cda972784bde8e",
+      "path": "50_Instances/candidates/behavior-rule-01cda972784bde8e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-01cda972784bde8e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat hook wrapper fail-open paths, source lineage resolution, read-only/review semantics, and protected installer update behavior as P0 work before claiming OS completion."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5de68cae8ce6dd3b",
+      "path": "50_Instances/candidates/behavior-rule-5de68cae8ce6dd3b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-5de68cae8ce6dd3b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat real dense hybrid retrieval, context/behavior evaluation, lifecycle backpressure, durable SQLite refresh, public/private sync split, Observatory read-trace correlation, and release parity as P1 work."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-506b0f9b53efe4e8",
+      "path": "50_Instances/candidates/behavior-rule-506b0f9b53efe4e8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-506b0f9b53efe4e8.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim lexical_fallback_v2 is real dense hybrid retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-664a674f81eb3f9e",
+      "path": "50_Instances/candidates/behavior-rule-664a674f81eb3f9e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-664a674f81eb3f9e.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim graph node/edge count proves source-truth memory until accepted claims resolve to source chunks and provenance records."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6e86a379809402d8",
+      "path": "50_Instances/candidates/behavior-rule-6e86a379809402d8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-6e86a379809402d8.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implement P0-1 hook wrapper fail-closed and verifier cases."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-79abd5c0894d16a9",
+      "path": "50_Instances/candidates/behavior-rule-79abd5c0894d16a9.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-79abd5c0894d16a9.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Critically audited DinoBrain against verified RAG knowledge and the user's desired OS using local code/data verification plus 10 subagent reviews. Produced and pushed a consensus audit report identifying P0/P1 improvements: outer wrapper fail-closed, real source/provenance lineage, true read-only/review mode, protected installer updates, real hybrid retrieval, lower-noise context eval, behavior eval, lifecycle backpressure, durable SQLite/cold memory, safer public sync, task-correlated Observatory, and release/version parity."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-59bb675d22729912",
+      "path": "50_Instances/candidates/behavior-rule-59bb675d22729912.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-59bb675d22729912.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat current scalability as not complete while live wiki.sqlite, sqlite manifest, and dense-vectors.json are absent."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-46c14a7d6baf3667",
+      "path": "50_Instances/candidates/behavior-rule-46c14a7d6baf3667.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-46c14a7d6baf3667.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend atomic or incremental wiki SQLite refresh instead of deleting the fast path and relying on manual rebuilds."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5e78fcd997c0afc2",
+      "path": "50_Instances/candidates/behavior-rule-5e78fcd997c0afc2.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-5e78fcd997c0afc2.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend retrieval budgets and temperature/type-aware filtering so accepted behavior/task memories do not swamp Wiki/Source/Project knowledge."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d68b522c13cfec9a",
+      "path": "50_Instances/candidates/behavior-rule-d68b522c13cfec9a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d68b522c13cfec9a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend FTS/prefix/vector top-K candidate generation and live performance canaries before claiming graph/LLM Wiki scale readiness."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-24f6d140812583af",
+      "path": "50_Instances/candidates/behavior-rule-24f6d140812583af.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-24f6d140812583af.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implement durable SQLite wiki refresh/upsert and manifest freshness checks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-938e4a08b1c369dd",
+      "path": "50_Instances/candidates/behavior-rule-938e4a08b1c369dd.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-938e4a08b1c369dd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only performance/scaling audit of DinoBrain retrieval, wiki index, SQLite shards, invalidation paths, verifier scripts, and live data scale. No code files edited. Findings: no P0; P1 risks are that the live wiki SQLite fast path is missing/non-durable after invalidation, cold/noisy accepted memory is indexed as normal hot retrieval input, and candidate generation still uses substring/wildcard scans plus lexical dense fallback rather than bounded semantic top-K retrieval. Current final live snapshot had no wiki-index.json, no sqlite manifest, no wiki.sqlite, no dense-vectors.json; operations.sqlite and operations-index were present. Accepted records were dominated by behavior rules."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2db5207a5400d1c0",
+      "path": "50_Instances/candidates/behavior-rule-2db5207a5400d1c0.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2db5207a5400d1c0.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not edit repository files during this audit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9d8225b3e1977ecf",
+      "path": "50_Instances/candidates/behavior-rule-9d8225b3e1977ecf.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-9d8225b3e1977ecf.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat existing dinobrain-data local commits as protected user data; installer should stop rather than reset them."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0da01f5e64060b7c",
+      "path": "50_Instances/candidates/behavior-rule-0da01f5e64060b7c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-0da01f5e64060b7c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat Codex hook trust as a manual security boundary; approval helper may guide but must not bypass trust."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1c6547018067a135",
+      "path": "50_Instances/candidates/behavior-rule-1c6547018067a135.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-1c6547018067a135.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Patch Checkout-DinoBrainRef/Sync-DinoBrainRepo to use ff-only update semantics and fail on local-ahead/diverged branches, especially for dinobrain-data."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6bc9dcb4b0b555d3",
+      "path": "50_Instances/candidates/behavior-rule-6bc9dcb4b0b555d3.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-6bc9dcb4b0b555d3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add release/version gates that require package version, installer metadata, tag, TargetCommitish, and published asset refs to agree before replacing a release asset."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-497915ff5461114f",
+      "path": "50_Instances/candidates/behavior-rule-497915ff5461114f.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-497915ff5461114f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of DinoBrain installer/new PC/GitHub recovery/version parity/hook approval surfaces. Found one P0 risk: update/reinstall can strand unpushed local commits by force-resetting existing app/data branches with git checkout -B origin/ref. Found P1 gaps: Windows GUI blocks documented no-Git ZIP fallback; release/version parity can drift because package version, tag, setup metadata, and installer refs are not enforced together; uninstall removes Claude MCP but leaves the installed Claude UserPromptSubmit hook. Hook approval design itself preserves manual trust and has verification coverage."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-08fac9d83de88064",
+      "path": "50_Instances/candidates/behavior-rule-08fac9d83de88064.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-08fac9d83de88064.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the existing system as a strong foundation, not complete OS proof, because current evidence still lacks live trusted-prompt proof and shows degraded graph/source mapping state."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8b5357ea167322cd",
+      "path": "50_Instances/candidates/behavior-rule-8b5357ea167322cd.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-8b5357ea167322cd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Rank live pre-response loop proof, provenance/source mapping, and fast honest retrieval/index freshness as the top consensus blockers."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e9c0d81f690a21f8",
+      "path": "50_Instances/candidates/behavior-rule-e9c0d81f690a21f8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-e9c0d81f690a21f8.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep the audit read-only with no source edits, no lifecycle application, and no git sync."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-00816a7debe955f7",
+      "path": "50_Instances/candidates/behavior-rule-00816a7debe955f7.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-00816a7debe955f7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Run fresh live Codex and Claude proof after hook trust/reload and capture evidence in the verification registry."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b307018fe59b5032",
+      "path": "50_Instances/candidates/behavior-rule-b307018fe59b5032.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-b307018fe59b5032.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Kept repository source read-only; no code or data files were manually edited by the audit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-193cbe1caa903927",
+      "path": "50_Instances/candidates/behavior-rule-193cbe1caa903927.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-193cbe1caa903927.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Used DinoBrain protocol context pack and primary RAG guidance sources for comparison."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-17454c1268460efb",
+      "path": "50_Instances/candidates/behavior-rule-17454c1268460efb.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-17454c1268460efb.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treated graph-health score 0/degraded as honest status, but incomplete lineage coverage remains a blocking graph-health issue."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2c36e0fecd12c14a",
+      "path": "50_Instances/candidates/behavior-rule-2c36e0fecd12c14a.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2c36e0fecd12c14a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of DinoBrain durable source/provenance/source-chunk-claim lineage and graph health. Findings: graph health is correctly degraded but reports all accepted instances as missing source mapping; current source/provenance records exist for RAG guidance, but accepted-memory lineage recognition only checks narrow single-source fields and misses source_paths/source_chunk_path/claim_paths/provenance records. The graph index currently models record/root/folder/tag/kind/wikilink edges, not the provenance/lifecycle/quarantine/usage edges required by the completion contract. Node/npm were unavailable in the shell, so verification was static plus direct file inspection rather than npm verifier execution."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7d4b38be040d5e0d",
+      "path": "50_Instances/candidates/behavior-rule-7d4b38be040d5e0d.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-7d4b38be040d5e0d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the current behavior-eval implementation as retrieval-path proof, not Ragas/LangSmith-style behavior proof."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f297fa302bb110a8",
+      "path": "50_Instances/candidates/behavior-rule-f297fa302bb110a8.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f297fa302bb110a8.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim real-vault memory-on behavior improvement until representative behavior-golden cases and answer-quality scoring exist."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3ed97af4a4ce10bb",
+      "path": "50_Instances/candidates/behavior-rule-3ed97af4a4ce10bb.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-3ed97af4a4ce10bb.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Memory-use audit needs hard pass/fail semantics for expected memory and observed evidence before it can serve as proof."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1610be95ea3ffc7e",
+      "path": "50_Instances/candidates/behavior-rule-1610be95ea3ffc7e.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-1610be95ea3ffc7e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Tighten audit_memory_use so missing expected memory, hallucinated references, and unverified artifacts can fail proof checks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3b3e1f0038318ebf",
+      "path": "50_Instances/candidates/behavior-rule-3b3e1f0038318ebf.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-3b3e1f0038318ebf.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of behavior evaluation, feedback writeback, memory audit, memory-on/off proof, and verify-v2 behavior proof surfaces. Found that current behavior evaluation is retrieval/term scoring rather than answer-quality or correction-behavior proof, verify-v2 uses only a temporary self-referential golden case, and memory-use audit returns ok even when trust evidence is degraded."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d21364a17b9ef307",
+      "path": "50_Instances/candidates/behavior-rule-d21364a17b9ef307.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-d21364a17b9ef307.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat exact user-provided RAG URLs as directly verified summary sources, not merely anchor-only backlog."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ce9cbdec8cf9b21c",
+      "path": "50_Instances/candidates/behavior-rule-ce9cbdec8cf9b21c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-ce9cbdec8cf9b21c.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not store raw full external pages; store bounded paraphrased claims with source URLs and provenance links."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e41566adfe519155",
+      "path": "50_Instances/candidates/behavior-rule-e41566adfe519155.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-e41566adfe519155.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Accept core RAG, hybrid retrieval, reranking, source/chunk/claim lineage, GraphRAG overlay, and evaluation guidance into DinoBrain memory."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9e67d419e2d7e876",
+      "path": "50_Instances/candidates/behavior-rule-9e67d419e2d7e876.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-9e67d419e2d7e876.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Hold paper/provider-specific claims unless source-bound and refreshed; reject overgeneralizations such as RAG guaranteeing truth or lexical fallback equaling dense hybrid retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2dfae4129e092ea3",
+      "path": "50_Instances/candidates/behavior-rule-2dfae4129e092ea3.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2dfae4129e092ea3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep current live retrieval mode labeled lexical_fallback_v2 until a real embedding provider is configured."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-dcda45517c6ebc4b",
+      "path": "50_Instances/candidates/behavior-rule-dcda45517c6ebc4b.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-dcda45517c6ebc4b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implement or configure a real dense embedding provider before claiming live dense hybrid retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c93696a0718bd3b6",
+      "path": "50_Instances/candidates/behavior-rule-c93696a0718bd3b6.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-c93696a0718bd3b6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: DinoBrain evaluation should separate retrieval-component quality from end-to-end behavior proof."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-44e727fc70a0e00c",
+      "path": "50_Instances/candidates/behavior-rule-44e727fc70a0e00c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-44e727fc70a0e00c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Memory-on vs memory-off should be tested as paired experiments over the same prompts, model, evaluator, and dataset."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-887e3a59206c5909",
+      "path": "50_Instances/candidates/behavior-rule-887e3a59206c5909.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-887e3a59206c5909.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Embedding benchmarks such as MTEB and STS should be used as context, not as substitutes for DinoBrain-specific retrieval and behavior evaluation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-627d231c77d4b12c",
+      "path": "50_Instances/candidates/behavior-rule-627d231c77d4b12c.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-627d231c77d4b12c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add hard-negative retrieval cases and source-provenance checks before trusting semantic similarity scores."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f3e58cbfc254e9ee",
+      "path": "50_Instances/candidates/behavior-rule-f3e58cbfc254e9ee.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-f3e58cbfc254e9ee.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Accept high-purity RAG architecture, retrieval quality, hybrid retrieval, reranking placement, indexing/query-time separation, and provenance/evaluation guidance as durable DinoBrain knowledge."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a7e01861bd2d7993",
+      "path": "50_Instances/candidates/behavior-rule-a7e01861bd2d7993.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-a7e01861bd2d7993.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Reclassify HyDE, RAPTOR, contextual retrieval, Reflexion, and Graph RAG as optional adjacent methods or overlays rather than core RAG."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2aa07cac199c12b6",
+      "path": "50_Instances/candidates/behavior-rule-2aa07cac199c12b6.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-2aa07cac199c12b6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Hold Lewis RAG details and managed cloud KB feature claims as paper/provider-specific unless source-bound records are created."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-38528235d38484cb",
+      "path": "50_Instances/candidates/behavior-rule-38528235d38484cb.json",
+      "review_path": "80_Review_Queue/promotion/behavior-rule-38528235d38484cb.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Reject any memory framing that implies RAG guarantees truth or that optional methods are core RAG components."
+    }
+  ],
+  "cleanup_actions": []
+}

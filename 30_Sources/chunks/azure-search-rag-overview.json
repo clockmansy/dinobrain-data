@@ -1,0 +1,58 @@
+{
+  "source_chunk_id": "azure-search-rag-overview",
+  "type": "source_chunk",
+  "status": "active",
+  "title": "Microsoft Azure AI Search RAG overview",
+  "source_uri": "https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview",
+  "chunk_type": "external_doc",
+  "chunk_text": "Verified RAG methodology source summary. Directly opened on 2026-07-07 during DinoBrain RAG verification cross-review. Title: Microsoft Azure AI Search RAG overview. URL: https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview. Summary: Azure AI Search RAG distinguishes classic and agentic retrieval paths, emphasizes grounding data, citations, structured retrieval response, and access-control concerns. Raw full page content is not stored; use the linked source for exact wording. Accepted claims are distilled in 20_Wiki/RAG-Verified-Knowledge-Base.md.",
+  "chunk_text_redactions": [],
+  "chunk_text_truncated": false,
+  "chunk_text_original_length": 587,
+  "chunk_text_stored_length": 587,
+  "claim_paths": [
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "20_Wiki/RAG-Verified-Knowledge-Base.md"
+  ],
+  "tags": [
+    "rag",
+    "source-anchor",
+    "rag-overview",
+    "verified-summary",
+    "directly-opened"
+  ],
+  "verification_status": "verified_summary",
+  "last_verified": "2026-07-07",
+  "created_at": "2026-07-06T23:23:45.973Z",
+  "updated_at": "2026-07-11T02:04:42.142Z",
+  "lineage_role": "verified_chunk",
+  "source_snapshot_path": "30_Sources/fetched/azure-search-rag-overview.json",
+  "source_content_sha256": "a20629879567a16135b75753a8ce312c7105b384914b5b4b26eb9c64942eed72",
+  "chunk_sha256": "a20629879567a16135b75753a8ce312c7105b384914b5b4b26eb9c64942eed72",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_paths": [
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "verification_method": "legacy_direct_source_review",
+  "verification_actor": "rag02-current-vault-migration",
+  "verification_max_age_days": 180,
+  "lineage_generation_id": "lineage-azure-search-rag-overview-35da2d88180e94fc9976",
+  "lineage_generation_path": ".dino/provenance/generations/lineage-azure-search-rag-overview-35da2d88180e94fc9976.json",
+  "previous_source_content_sha256": null,
+  "content_changed": false
+}

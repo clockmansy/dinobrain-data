@@ -1,0 +1,13 @@
+{
+  "task_id": "task-20260701-004836-Codex-OS-start_task-get_cont",
+  "outcome": "completed",
+  "summary": "Verified that the DinoBrain Codex hook preflight creates prompt, task, context-pack, and Observatory-visible events.",
+  "changed_files": [],
+  "decisions": [
+    "Manual hook invocation against the real data vault confirmed the hook runner path works."
+  ],
+  "next_steps": [
+    "Trust or reload Codex project hooks so future user prompts trigger UserPromptSubmit automatically in live sessions."
+  ],
+  "finished_at": "2026-07-01T00:49:43.473Z"
+}

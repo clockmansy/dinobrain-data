@@ -1,0 +1,47 @@
+{
+  "memory_id": "task-memory-task-20260707-002300-RAG-verification-subagent-08",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: RAG verification subagent 08: evaluation and behavior proof. Read official RAGAS and LangSmith e",
+  "summary": "Read official Ragas, LangSmith, Hugging Face MTEB, and Sentence Transformers/SBERT evaluation documentation for RAG evaluation and behavior proof. Produced verified claims for DinoBrain memory-on vs memory-off and retrieval-quality evaluation design. No source files were edited.",
+  "claim": "Task outcome for dinobrain: Read official Ragas, LangSmith, Hugging Face MTEB, and Sentence Transformers/SBERT evaluation documentation for RAG evaluation and behavior proof. Produced verified claims for DinoBrain memory-on vs memory-off and retrieval-quality evaluation design. No source files were edited.",
+  "request": "RAG verification subagent 08: evaluation and behavior proof. Read official RAGAS and LangSmith evaluation docs, optionally MTEB/SBERT STS sources, and return verified claims for DinoBrain evaluation design without editing files.",
+  "outcome": "completed",
+  "decisions": [
+    "DinoBrain evaluation should separate retrieval-component quality from end-to-end behavior proof.",
+    "Memory-on vs memory-off should be tested as paired experiments over the same prompts, model, evaluator, and dataset.",
+    "Embedding benchmarks such as MTEB and STS should be used as context, not as substitutes for DinoBrain-specific retrieval and behavior evaluation."
+  ],
+  "next_steps": [
+    "If implementation follows, encode a small frozen regression set with expected memory paths, relevant record IDs, and memory-on/off acceptance thresholds.",
+    "Add hard-negative retrieval cases and source-provenance checks before trusting semantic similarity scores."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+    "50_Instances/accepted/behavior-rule-49540fb326024225.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-002305-RAG-evaluation-and-behavior-.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-002300-RAG-verification-subagent-08.json",
+    "snippet": "Read official Ragas, LangSmith, Hugging Face MTEB, and Sentence Transformers/SBERT evaluation documentation for RAG evaluation and behavior proof. Produced verified claims for DinoBrain memory-on vs memory-off and retrieval-quality evaluation design. No source files were edited."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:24:32.645Z",
+  "updated_at": "2026-07-07T00:24:32.645Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-002300-RAG-verification-subagent-08.json",
+    "task_id": "task-20260707-002300-RAG-verification-subagent-08",
+    "task_path": ".dino/tasks/task-20260707-002300-RAG-verification-subagent-08.json"
+  }
+}

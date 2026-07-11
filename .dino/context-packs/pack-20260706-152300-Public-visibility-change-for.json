@@ -1,0 +1,177 @@
+{
+  "pack_id": "pack-20260706-152300-Public-visibility-change-for",
+  "pack_type": "standard",
+  "os_version": "2.2.0",
+  "question": "Public visibility change for clockmansy/dinobrain-data; need data repo risk, prior policy, repo separation, and safe GitHub visibility update method.",
+  "created_at": "2026-07-06T15:23:00.817Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 78,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 144,
+  "index_candidate_count": 78,
+  "index_total_candidate_count": 78,
+  "index_matching_terms": [
+    "change",
+    "changed",
+    "changes",
+    "clockmansy",
+    "data",
+    "data-model",
+    "data-specific",
+    "data-vault",
+    "dataref",
+    "destructive-risk",
+    "dinobrain-data",
+    "github",
+    "github_token",
+    "live-data",
+    "live-data-driven",
+    "metadata",
+    "needs",
+    "policy",
+    "policy-based",
+    "policy-enforced",
+    "prior",
+    "public",
+    "repo",
+    "report",
+    "reported",
+    "reports",
+    "repos",
+    "repository",
+    "risk",
+    "safe",
+    "safety",
+    "self-report",
+    "separation",
+    "task-20260703-041404-re-check-why-github-release",
+    "task-20260706-151510-change-the-github-vis",
+    "task-memory-task-20260706-151510-change-the-github-visibility",
+    "unchanged",
+    "update",
+    "updated",
+    "updates",
+    "visibility"
+  ],
+  "included_item_count": 5,
+  "excluded_record_count": 149,
+  "items": [
+    {
+      "path": "60_Operations/task-summaries/task-memory-task-20260706-151510-Change-the-GitHub-visibility.json",
+      "kind": "curated_record",
+      "title": "Task outcome: Change the GitHub visibility of the DinoBrain repository from private to public after verifying",
+      "summary": "Changed GitHub repository visibility for clockmansy/dinobrain from private to public after verifying the target repository, admin permissions, and a minimal tracked-file secret scan. GitHub connector now reports visibility=public and git ls-remote confirms origin/main remains accessible at 8c8d194ba8c1b79a967d3f690dd20e315793c3d6. The data repository was not changed.",
+      "tags": [
+        "auto-growth",
+        "task-outcome",
+        "outcome:completed",
+        "project:dinobrain"
+      ],
+      "score": 9.188,
+      "reasons": [
+        "path_matched:visibility,change,github",
+        "title_matched:public,visibility,change,repo",
+        "summary_matched:public,visibility,change,clockmansy",
+        "chunk_matched:public,visibility,change,clockmansy",
+        "bm25:public,visibility,change,clockmansy,data",
+        "dense_lexical:2.14",
+        "rank_fusion:rrf",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "60_Operations/behavior-rules/behavior-rule-index.json",
+      "kind": "curated_record",
+      "title": "behavior-rule-index",
+      "summary": "",
+      "tags": [],
+      "score": 8.609,
+      "reasons": [
+        "chunk_matched:public,visibility,change,clockmansy",
+        "bm25:public,visibility,clockmansy,data,github",
+        "dense_lexical:1.81",
+        "rank_fusion:rrf",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "60_Operations/README.md",
+      "kind": "curated_record",
+      "title": "60_Operations",
+      "summary": "Operating policies and runbooks.",
+      "tags": [],
+      "score": 7.588,
+      "reasons": [
+        "chunk_matched:data,policy",
+        "bm25:policy",
+        "dense_lexical:0.85",
+        "rank_fusion:rrf",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-6d9b789045317585.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Only changed the app repository clockmansy/dinobrain; left dinobrain-data untouched because it contains operational memory/data and prior policy separates app release from data sync.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Only changed the app repository clockmansy/dinobrain; left dinobrain-data untouched because it contains operational memory/data and prior policy separates app release from data sync. | Evidence: Only changed the app repository clockmansy/dinobrain; left dinobrain-data untouched because it contains operational memory/data and prior policy separates app releas",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 3.491,
+      "reasons": [
+        "title_matched:change,clockmansy,dinobrain-data,data",
+        "summary_matched:change,clockmansy,dinobrain-data,data",
+        "chunk_matched:change,clockmansy,dinobrain-data,data",
+        "bm25:clockmansy,dinobrain-data,data,prior,policy",
+        "dense_lexical:2.11",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-acdf241957ff2e0f.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Changed GitHub repository visibility for clockmansy/dinobrain from private to public after verifying the target repository, admin permissions, and a minimal tracked-file secret scan. GitHub connector now reports visibility=public and git ls-remote confirms origin/main remains accessible at 8c8d194ba8c1b79a967d3f690dd20e315793c3d6. The data repository was not changed.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Changed GitHub repository visibility for clockmansy/dinobrain from private to public after verifying the target repository, admin permissions, and a minimal tracked-file secret scan. GitHub connector now reports visibility=public and git ls-remote confirms origin/main remains accessible at 8c8d194ba8c1b79a967d3f690dd20e315793c3d6. The data repository was not",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 3.343,
+      "reasons": [
+        "title_matched:public,visibility,change,clockmansy",
+        "summary_matched:public,visibility,change,clockmansy",
+        "chunk_matched:public,visibility,change,clockmansy",
+        "bm25:public,visibility,clockmansy,data,github",
+        "dense_lexical:1.83",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-155043-Independent-Reviewer-10B-for",
+  "status": "blocked",
+  "request": "Independent Reviewer 10B for DinoBrain OS completion plan. Work read-only. Review whether the plan is adequate for the user's target: a closed-loop memory OS where Codex/Claude get pre-response OS context, use reviewed LLM Wiki/provenance, finish tasks, grow knowledge, push policy-approved GitHub data, and recover equivalently on a new PC. Also check install/release requirements: app/data ref parity, Codex/Claude MCP+hooks, launchers, safe reinstall/uninstall, release ZIP/SHA/tag/manifest, and degraded Git-missing fallback. Answer with this exact structure and non-empty text:\nreviewer_id=R10B\nlens=final independent install and recovery parity\nverdict=AGREE or REVISE_REQUIRED\nblocking_objections=[...]\nrequired_doc_changes=[...]\nevidence_files=[docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md,docs/OS_COMPLETION_CONDITIONS.md,docs/INSTALL.md,docs/VERIFICATION.md]",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:50:43.127Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-155043-Independent-Reviewer-10B-for.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-155043-Independent-Reviewer-10B-for.json"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "review_id": "codex-session-knowledge-local_evidence_over_claims",
+  "type": "session_knowledge_promotion",
+  "status": "accepted_by_agent_review",
+  "accepted_memory_path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "reviewer": "codex-session-knowledge-promoter",
+  "checks": {
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "evidence_uses_hashes_only": true,
+    "source_is_metadata_registry": true,
+    "public_safe_paraphrase": true
+  },
+  "evidence_summary": {
+    "source_session_count": 46,
+    "user_hit_count": 199,
+    "assistant_hit_count": 2394,
+    "weighted_score": 2991
+  },
+  "next_review": "Human can demote or edit if this aggregate memory is too broad, stale, or no longer reflects the user."
+}

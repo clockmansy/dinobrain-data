@@ -1,0 +1,56 @@
+{
+  "task_id": "task-20260705-083457-Continue-the-active-goal-bui",
+  "outcome": "completed",
+  "summary": "Implemented DinoBrain OS v2.2.0 closed-loop compounding: finish_task can run automatic trace-to-behavior-rule distillation, cleanup invalid/duplicate behavior rules, refresh retrieval indexes, and keep auto sync enabled from installer/Codex hook config. Added verify:compounding to prove later memory search/context packs retrieve the promoted rule and memory-on behavior beats memory-off baseline.",
+  "changed_files": [
+    "src/compounding.ts",
+    "src/index.ts",
+    "src/os-contract.ts",
+    "scripts/verify-compounding-loop.mjs",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/audit-user-flow.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/verify-v2-os.mjs",
+    "scripts/verify-installer-hooks.ps1",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/verify-session-ingest.mjs",
+    "install.ps1",
+    "package.json",
+    "package-lock.json",
+    "docs/OS_V2_CONTRACT.md",
+    "docs/VERIFICATION.md",
+    "docs/INSTALL.md",
+    "docs/FLOW_AUDIT.md"
+  ],
+  "decisions": [
+    "Version bumped to 2.2.0 for closed-loop compounding semantics.",
+    "finish_task runs runCompoundingCycle when DINOBRAIN_AUTO_COMPOUND=1, before auto_sync.",
+    "Installer and current Codex config/hook now set DINOBRAIN_AUTO_COMPOUND=1 along with auto growth and auto sync.",
+    "verify:os now fails if Codex/Claude hook or MCP env misses auto-compound wiring.",
+    "Knowledge compounding proof requires a promoted behavior rule to be retrieved by a later Context Pack and memory-on behavior lift to be positive."
+  ],
+  "next_steps": [
+    "Restart or reload Codex so the currently running MCP tool surface exposes v2.2.0 tools including run_compounding_cycle.",
+    "Commit and push app repo changes, tag v2.2.0, build/package release asset, and commit/push data repo operational records."
+  ],
+  "used_memory_paths": [
+    ".dino/context-packs/pack-20260705-083457-Continue-the-active-goal-bui.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260705-083457-Continue-the-active-goal-bui.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "DinoBrain closed loop compounding behavior rule verification"
+  ],
+  "memory_use": {
+    "used_memory_count": 1,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-05T08:50:18.083Z"
+}

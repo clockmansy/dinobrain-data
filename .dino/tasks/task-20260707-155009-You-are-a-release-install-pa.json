@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-155009-You-are-a-release-install-pa",
+  "status": "blocked",
+  "request": "You are a release-install parity reviewer. Read-only. You only need to answer whether these completion-plan requirements are adequate: fresh install must clone/update app+data refs, verify refs against origin, configure Codex/Claude MCP+hooks where clients exist, guide but not bypass hook trust, create Observatory/diagnostic/live-proof/uninstall launchers, make reinstall idempotent and refuse unsafe overwrite, treat Git-missing ZIP fallback as degraded not equivalent, require release manifest with app/data commits, installer/package version, ZIP SHA, tag target, GitHub asset metadata, and required verifier statuses. Verdict? Respond with exactly these five lines:\nreviewer_id=install_release_parity\nverdict=AGREE or REVISE_REQUIRED\nblocking_objections=[]\nrequired_doc_changes=[]\nevidence_files=[docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md,docs/OS_COMPLETION_CONDITIONS.md,docs/INSTALL.md,docs/VERIFICATION.md]",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:50:09.375Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-155009-You-are-a-release-install-pa.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-155009-You-are-a-release-install-pa.json"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "review_id": "lifecycle-migration-rag-verified-knowledge-v1",
+  "type": "lifecycle_migration_attestation",
+  "status": "held",
+  "candidate_path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+  "accepted_path": "50_Instances/accepted/rag-verified-knowledge-v1.json",
+  "target_path": "50_Instances/accepted/rag-verified-knowledge-v1.json",
+  "decision": "hold_existing_accepted",
+  "reviewer": "codex-mem01-migration-reapply",
+  "evidence_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "created_at": "2026-07-10T21:20:25.107Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "node_id": "lifecycle-migration-rag-verified-knowledge-v1",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "held",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425452-d7342cac-55ca-41f4-88f9-ae07b3447661",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425452-d7342cac-55ca-41f4-88f9-ae07b3447661",
+      "idempotency_key": "accepted-review-attestation|50_Instances/accepted/rag-verified-knowledge-v1.json|held",
+      "from_state": null,
+      "to_state": "held",
+      "reason_code": "accepted_review_blocked",
+      "reason": "Existing accepted memory was removed from hot retrieval: durable_external_provenance_missing, unsupported_pressure",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "50_Instances/accepted/rag-verified-knowledge-v1.json",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md",
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/RAG-Verified-Knowledge-Base.md"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md"
+  ],
+  "successor_paths": []
+}

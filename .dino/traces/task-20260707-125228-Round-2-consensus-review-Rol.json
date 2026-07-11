@@ -1,0 +1,41 @@
+{
+  "task_id": "task-20260707-125228-Round-2-consensus-review-Rol",
+  "outcome": "completed",
+  "summary": "Role 8 reviewed the revised remaining-gaps consensus plan against the Observatory implementation, graph/memory-audit docs, and current health/status artifacts. Verdict: REVISE_REQUIRED because the plan names the right UI lanes but does not yet define a concrete Observatory data contract, endpoint/schema requirements, artifact ingestion, proof-link semantics, or UI/API verification tests; current Observatory code also does not ingest health_status/client_mcp_direct/monitoring status as the unified blocker model.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Return REVISE_REQUIRED rather than AGREE for Role 8.",
+    "Treat current implementation gaps as evidence that the plan needs stronger UI/observability acceptance criteria, not as a request to edit code in this pass."
+  ],
+  "next_steps": [
+    "Revise P1-11 to define the Observatory blocker-model data contract and required artifact sources.",
+    "Require /api/state or an equivalent endpoint to expose health_status checks, client_mcp_direct status, proof_path, latest_verified_at, stale_after_ms, visible_status, warnings, reviewer/main/verifier pending lanes, and per-gate UI links.",
+    "Add API/browser/screenshot acceptance tests that fail when a P0 proof is missing but not visible in Observatory, when status artifacts are invalid JSON, or when health CLI and UI disagree."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-125228-Round-2-consensus-review-Rol.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-125228-82c5b9b7ab71.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T12:53:33.422Z"
+}

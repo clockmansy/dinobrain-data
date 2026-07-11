@@ -1,0 +1,46 @@
+{
+  "memory_id": "task-memory-task-20260706-152258-Change-the-GitHub-visibility",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Change the GitHub visibility of clockmansy/dinobrain-data from private to public after verifying",
+  "summary": "Changed GitHub repository visibility for clockmansy/dinobrain-data from private to public after verifying the target repository, admin permissions, remote URL, and a minimal tracked-file secret marker scan. GitHub connector now reports visibility=public and git ls-remote confirms origin/main remains accessible at 3c8471d61168099d41066d185d0c29da76f775eb.",
+  "claim": "Task outcome for dinobrain: Changed GitHub repository visibility for clockmansy/dinobrain-data from private to public after verifying the target repository, admin permissions, remote URL, and a minimal tracked-file secret marker scan. GitHub connector now reports visibility=public and git ls-remote confirms origin/main remains accessible at 3c8471d61168099d41066d185d0c29da76f775eb.",
+  "request": "Change the GitHub visibility of clockmansy/dinobrain-data from private to public after verifying the target repo and doing a minimal tracked-file sensitive/secret scan.",
+  "outcome": "completed",
+  "decisions": [
+    "User explicitly requested public visibility for clockmansy/dinobrain-data after clockmansy/dinobrain was made public.",
+    "Performed only a minimal tracked secret marker scan before changing visibility; this does not prove the repository contains no personal or operational memory content.",
+    "Used git credential-manager token in-process because gh CLI is not installed and the GitHub connector does not expose repository visibility update."
+  ],
+  "next_steps": [
+    "If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events."
+  ],
+  "used_memory_paths": [
+    "60_Operations/task-summaries/task-memory-task-20260706-151510-Change-the-GitHub-visibility.json",
+    "50_Instances/accepted/behavior-rule-6d9b789045317585.json",
+    "50_Instances/accepted/behavior-rule-acdf241957ff2e0f.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-152300-Public-visibility-change-for.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260706-152258-Change-the-GitHub-visibility.json",
+    "snippet": "Changed GitHub repository visibility for clockmansy/dinobrain-data from private to public after verifying the target repository, admin permissions, remote URL, and a minimal tracked-file secret marker scan. GitHub connector now reports visibility=public and git ls-remote confirms origin/main remains accessible at 3c8471d61168099d41066d185d0c29da76f775eb."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-06T15:24:06.517Z",
+  "updated_at": "2026-07-06T15:24:06.517Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260706-152258-Change-the-GitHub-visibility.json",
+    "task_id": "task-20260706-152258-Change-the-GitHub-visibility",
+    "task_path": ".dino/tasks/task-20260706-152258-Change-the-GitHub-visibility.json"
+  }
+}

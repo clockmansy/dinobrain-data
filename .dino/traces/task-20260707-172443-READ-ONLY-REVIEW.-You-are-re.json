@@ -1,0 +1,45 @@
+{
+  "task_id": "task-20260707-172443-READ-ONLY-REVIEW.-You-are-re",
+  "outcome": "completed",
+  "summary": "Read-only reviewer 04 provenance/source/claim lineage review. Inspected memory registry, AGENTS protocol, completion and unfinished-plan docs, source-lineage implementation, verifier fixtures, and current source_lineage_status. No source files modified.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "User intent is a closed-loop local-first memory OS where sessions become reviewed, source-aware, retrievable knowledge while current user instruction remains supreme.",
+    "Current source-lineage plan is directionally correct but incomplete because actual source-truth detection still treats 40_Projects as project_memory and accepted factual instances as internal_claim unless explicitly behavior memory or 20_Wiki-focused.",
+    "Reviewer 04 verdict is DISAGREE until P0-C expands factual/public/external/high-risk claim detection beyond 20_Wiki and adds regression fixtures for project and accepted-instance unsupported claims."
+  ],
+  "next_steps": [
+    "Revise P0-C to require source-truth classification across 20_Wiki, 40_Projects, 50_Instances/accepted, and any curated factual claim record.",
+    "Add verifier fixtures proving unsupported factual project and accepted instance claims fail, verified claim chunks pass, and anchor-only URLs do not count as support.",
+    "Wire source-lineage blockers into verify:goal, health, Observatory readiness, and Context Pack item labels before counting reviewer agreement."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-172443-READ-ONLY-REVIEW.-You-are-re.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-172442-278079aa8bc5.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-Inspect-current-thread-a1576a00a5e5.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-modify-files.-afedf0a52627.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 2,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T17:25:42.224Z"
+}

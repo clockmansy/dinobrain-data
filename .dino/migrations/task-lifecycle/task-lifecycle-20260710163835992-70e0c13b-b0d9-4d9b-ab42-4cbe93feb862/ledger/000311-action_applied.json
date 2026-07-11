@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 311,
+  "event": "action_applied",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "afba26c14a09ad6bc41e742ef2ec135b8a8acb5fca099e9e134f8f9c470161a0",
+  "payload": {
+    "index": 153,
+    "task_id": "task-20260707-155043-Independent-Reviewer-10B-for",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "34a1e5a77257ebdd8669c256fbd2b95091cf46cbb70d8ef08a6987b72fcad7ff",
+    "trace_sha256_after": "df53b596ad172a3eddce2738f035a895e67fe5dbc4ea98840cea6f9f1f3d4b1b"
+  },
+  "entry_sha256": "12b31615808cc8ad86e2a9cb5b4645aafd5abacead3e588d58821532dee26fee"
+}

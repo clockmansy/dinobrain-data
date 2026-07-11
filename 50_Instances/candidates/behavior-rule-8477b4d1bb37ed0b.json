@@ -1,0 +1,47 @@
+{
+  "behavior_rule_id": "behavior-rule-8477b4d1bb37ed0b",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Added -SkipUpload so ZIP/SHA packaging can be verified without a GitHub token.",
+  "behavior_rule": "In similar future work, apply this decision: Added -SkipUpload so ZIP/SHA packaging can be verified without a GitHub token.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260703-035806-Check-whether-reinstalling-D.json",
+    "snippet": "Added -SkipUpload so ZIP/SHA packaging can be verified without a GitHub token."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260703-035806-Check-whether-reinstalling-D.json",
+      "task_id": "task-20260703-035806-Check-whether-reinstalling-D",
+      "signal_kind": "decision",
+      "snippet": "Added -SkipUpload so ZIP/SHA packaging can be verified without a GitHub token."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "low",
+  "last_verified": "2026-07-06",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:low"
+  ],
+  "auto_generated": true,
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-06T15:06:11.897Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-06T15:06:11.897Z",
+  "candidate_id": "behavior-rule-8477b4d1bb37ed0b",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/behavior-rule-8477b4d1bb37ed0b.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 356,
+  "event": "action_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "4b007e2ddc121a3bb27bcf44bd381b4c34b7ff7d29c988233ab8e6513472408b",
+  "payload": {
+    "index": 176,
+    "task_id": "task-20260707-125916-You-are-Role-6-source-truth-",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "6270805d2fb4d7cfcd4ef2ad9d2b8870dc025c33d26252592063213f03ddec6a",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "6ce395f46478a7340049e5e8adb5d00dec71e3fea656a4087bc56474de27cc58"
+}

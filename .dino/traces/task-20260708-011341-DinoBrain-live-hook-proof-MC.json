@@ -1,0 +1,34 @@
+{
+  "task_id": "task-20260708-011341-DinoBrain-live-hook-proof-MC",
+  "outcome": "completed",
+  "summary": "Completed direct MCP pre-response proof with os_begin_task Context Pack before finish_task.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Direct MCP parity proof used a fresh stdio MCP server after stale DinoBrain MCP processes were stopped."
+  ],
+  "next_steps": [
+    "Rerun verify:codex-mcp-preflight and verify:goal to confirm the proof is visible."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "30_Sources/chunks/rag-paper-2005-11401.json",
+    "30_Sources/chunks/openai-retrieval-guide.json",
+    "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+    "30_Sources/chunks/langsmith-evaluation-concepts.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-011341-DinoBrain-live-hook-proof-MC.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T01:13:41.788Z"
+}

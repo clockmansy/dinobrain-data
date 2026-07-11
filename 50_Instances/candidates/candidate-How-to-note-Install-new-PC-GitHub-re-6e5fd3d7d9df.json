@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-How-to-note-Install-new-PC-GitHub-re-6e5fd3d7d9df",
+  "status": "pending_review",
+  "claim": "How-to note: Install/new-PC/GitHub recovery lens.",
+  "category": "how_to",
+  "temperature": "warm",
+  "evidence": {
+    "snippet": "Install/new-PC/GitHub recovery lens.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-173129-371a6fe278f0.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-173129-371a6fe278f0",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "how_to",
+    "temperature:warm",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-173129-371a6fe278f0",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T17:31:30.271Z",
+  "updated_at": "2026-07-07T17:31:30.271Z"
+}

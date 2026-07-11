@@ -1,0 +1,173 @@
+{
+  "pack_id": "pack-20260703-092620-DinoBrain-Observatory-dinosa",
+  "pack_type": "standard",
+  "question": "DinoBrain Observatory dinosaur graph next-step visual work: stronger deterministic-slotting / graph-only presentation mode, keep data/API logic unchanged, avoid deploying until user approves.",
+  "created_at": "2026-07-03T09:26:20.611Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 12,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 12,
+  "index_total_candidate_count": 12,
+  "index_matching_terms": [
+    "data-specific",
+    "metadata",
+    "workflows"
+  ],
+  "included_item_count": 6,
+  "excluded_record_count": 10,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-085839-Improve-the-DinoBrain-Observ.json",
+      "kind": "recent_task",
+      "title": "Task: Improve the DinoBrain Observatory dinosaur graph design after user feedback that the deployed v0",
+      "summary": "status=partial | project=dinobrain | Improved the DinoBrain Observatory dinosaur graph candidate after user feedback that the previous deployed visual felt disappointing. Kept changes visual-only: increased graph canvas height, added aspect-preserving dino frame mapping, redistributed root/category nodes into head/neck/tail/leg roles, strengthened pose lock, reduced edge physics, and added live-data scaffold routes. ",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 44,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "summary matched \"visual\"",
+        "summary matched \"data\"",
+        "title matched \"user\"",
+        "summary matched \"user\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-075850-Implement-a-design-only-Dino.json",
+      "kind": "recent_task",
+      "title": "Task: Implement a design-only DinoBrain Observatory graph redesign from the provided dinosaur-shaped g",
+      "summary": "status=completed | project=dinobrain | Implemented a design-only DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph reference. Kept OS/MCP/SQLite/hook/data logic unchanged; updated only the Observatory visual layout/rendering CSS and browser-side canvas layout. The graph now uses deterministic dinosaur pose targets so live nodes and edges read as tail, body/core, neck/head, and leg clust",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 40,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "summary matched \"visual\"",
+        "summary matched \"data\"",
+        "summary matched \"logic\"",
+        "summary matched \"unchanged\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-074013-Plan-a-high-quality-design-o.json",
+      "kind": "recent_task",
+      "title": "Task: Plan a high-quality design-only redesign of the DinoBrain Observatory graph so it visually resem",
+      "summary": "status=partial | project=dinobrain | Played back the design-only brief for a high-quality DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph image. No files were changed. Product Design user-context preflight could not run because python/python3 resolves to WindowsApps shim without a local Python runtime, but the supplied image is a concrete visual source.",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 34,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "summary matched \"dinosaur\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"visual\"",
+        "summary matched \"visual\"",
+        "summary matched \"user\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-082135-Deploy-the-completed-DinoBra.json",
+      "kind": "recent_task",
+      "title": "Task: Deploy the completed DinoBrain Observatory dinosaur graph design change so it is available from ",
+      "summary": "status=completed | project=dinobrain | Deployed the completed DinoBrain Observatory dinosaur graph design. Committed the design change and version bump as 4eabc7f, fast-forwarded main, pushed origin/main, built a clean v0.1.6 Windows setup ZIP, created GitHub Release v0.1.6, uploaded DinoBrainSetup.zip and DinoBrainSetup.zip.sha256, and verified the remote ZIP download SHA matches the local SHA. Local untracked scree",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 28,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-092603-Take-the-DinoBrain-Observato.json",
+      "kind": "recent_task",
+      "title": "Task: Take the DinoBrain Observatory dinosaur graph one step further toward the provided reference by ",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 22,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "title matched \"dinosaur\"",
+        "title matched \"graph\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-054107-Implement-v0.1.5-Observatory.json",
+      "kind": "recent_task",
+      "title": "Task: Implement v0.1.5 Observatory OS Health Upgrade: inspect current observatory/export/sqlite struct",
+      "summary": "status=completed | project=dinobrain | Implemented and released DinoBrain v0.1.5 Observatory OS Health Upgrade. Added shared graph health generation at .dino/index/graph-health.json, wired it into SQLite index refresh and memory audit snapshots, expanded Observatory with health chips, read trace, node lifecycle, sync risk, and graph-health API, added graph health verification, bumped app/installer/client versions to ",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 19,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "path matched \"observatory\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "summary matched \"graph\"",
+        "summary matched \"api\""
+      ]
+    }
+  ]
+}

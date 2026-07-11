@@ -1,0 +1,49 @@
+{
+  "task_id": "task-20260707-163205-DinoBrain-R7-.-.-read-only-.",
+  "outcome": "completed",
+  "summary": "Read-only R7 review completed for DinoBrain unfinished improvement plan from task lifecycle, review queue, semantic job, and stale task settlement lenses. Reviewed Codex memory registry, completion/consensus docs, package scripts, lifecycle/review source, verifier wiring, and current state artifacts. Verdict prepared as REVISE_REQUIRED because task lifecycle conditions are concrete, but review worklist/action backlog and health/verify-goal parity need stronger final completion conditions.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Current task lifecycle/settlement blocker is real: current task_sessions.json reports needs_attention with 8 blockers, and task_lifecycle_settlement.json reports 8 unapplied finish-gate repairs.",
+    "Source and verifier wiring now hard-gates task_lifecycle_current and task_lifecycle_settlement_current in verify:goal, which is sufficient for stale task/finish-gate integrity once applied on the real vault.",
+    "Review queue/semantic settlement is classified, but current completion conditions allow classified manual backlog as health-green; that needs explicit acceptance criteria and verify-goal/health/Observatory parity for review worklist/actions so backlog cannot become hidden knowledge debt.",
+    "Global npm was unavailable in this shell, but fixture verifiers passed via the portable Node runtime at <machine-local-path> engine\\.tools\\node-v24.17.0-win-x64\\node.exe."
+  ],
+  "next_steps": [
+    "Revise completion conditions to add review:worklist and review:worklist:actions, or documented equivalents, to the required verifier registry and/or verify:goal blocker model.",
+    "Require completion evidence that all deterministic lifecycle settlement repairs are applied and that remaining recent active tasks are within the freshness window with owners/finish protocol visible.",
+    "Clarify that classified manual semantic review backlog is allowed only as visible pending debt that is excluded from default retrieval, bounded/clustered by worklist, and not counted as reviewed memory.",
+    "After revisions, rerun the ten-agent consensus protocol against the same document revision."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-163205-DinoBrain-R7-.-.-read-only-..json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-163204-a4d86c5afa41.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-verify-goal-blocker-ta-0b71a5f374c3.json"
+  ],
+  "search_queries": [
+    "MEMORY.md DinoBrain lifecycle verify goal settlement",
+    "task lifecycle review queue semantic job settlement scripts source docs"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 1,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-07T16:35:41.486Z"
+}

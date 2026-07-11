@@ -1,0 +1,268 @@
+{
+  "pack_id": "pack-20260707-095718-Read-and-analyze-the-full-lo",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "Read and analyze the full local file: <machine-local-path> (1).md. Expected SHA-256: 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7. Do not edit files. Focus: 20-agent validation protocol, same-SHA requirement, full-memory-read requirement, reset rules, and whether this validation method is operationally viable. Return in Korean.",
+  "created_at": "2026-07-07T09:57:18.264Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 75,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 66,
+  "index_candidate_count": 75,
+  "index_total_candidate_count": 75,
+  "index_matching_terms": [
+    "already",
+    "behavior-rules",
+    "build-a-local-tool-for-creating",
+    "cannot",
+    "codex-session-knowledge-configured_is_not_live_proof",
+    "codex-session-knowledge-local_evidence_over_cla",
+    "codex-session-knowledge-local_evidence_over_claims",
+    "codex-session-knowledge-profile",
+    "direct_user_source_count",
+    "expected",
+    "file",
+    "files",
+    "files-mentioned-by-the-user-html",
+    "focus",
+    "focused",
+    "full",
+    "full-text",
+    "fully",
+    "korean",
+    "local",
+    "local_evidence_over_claims",
+    "local-codex-sessions",
+    "local-dinobrain-data",
+    "local-first",
+    "local-only",
+    "local-only-source",
+    "locally",
+    "machine_local_path_marker",
+    "method",
+    "methodology",
+    "not",
+    "note",
+    "notes",
+    "notion-plugin-notion-openai-curated-db",
+    "operating-rules",
+    "profile",
+    "rag-methodology-anchor-cat",
+    "rag-methodology-anchor-catalog",
+    "raw_full_pages_stored",
+    "raw_full_transcript_stored",
+    "read-mostly",
+    "read-only",
+    "readiness",
+    "readme",
+    "returns",
+    "rules",
+    "session_files",
+    "user",
+    "user_message_count",
+    "user_preference",
+    "user_supplied_anchor_summary",
+    "user-preference",
+    "user-preferences",
+    "user-provided",
+    "user-supplied",
+    "userguide",
+    "validation",
+    "whether",
+    "you-are-a-senior-full-stack"
+  ],
+  "included_item_count": 7,
+  "excluded_record_count": 69,
+  "items": [
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+      "kind": "curated_record",
+      "title": "Prefer direct local verification and evidence",
+      "summary": "The user prefers direct inspection of local files, logs, command output, screenshots, repository state, and concrete evidence over abstract claims. | Rule: For verification/debugging, inspect the real workspace and report command/file evidence; if a check was not run, say that plainly. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "verification",
+        "evidence"
+      ],
+      "score": 18.007,
+      "reasons": [
+        "path_matched:local",
+        "title_matched:local",
+        "summary_matched:local,file,user,files",
+        "tags_matched:user",
+        "chunk_matched:local,file,user,files",
+        "bm25:local,file,user,files",
+        "dense_lexical:1.36",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "kind": "curated_record",
+      "title": "Current user instruction outranks stored memory",
+      "summary": "For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. | Rule: Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "memory-priority",
+        "os-contract"
+      ],
+      "score": 16.83,
+      "reasons": [
+        "title_matched:user",
+        "summary_matched:user",
+        "chunk_matched:user",
+        "bm25:user",
+        "dense_lexical:0.76",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+      "kind": "curated_record",
+      "title": "Explain unfamiliar work in plain language",
+      "summary": "The user asks for plain explanations when a task, state, or warning is unclear, and wants the practical meaning rather than jargon. | Rule: When the user asks what something means or why it happened, explain the concrete cause, consequence, and next action in plain Korean. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "explanation",
+        "korean"
+      ],
+      "score": 16.114,
+      "reasons": [
+        "summary_matched:user,korean",
+        "tags_matched:user,korean",
+        "chunk_matched:user,korean",
+        "bm25:user,korean",
+        "dense_lexical:1.02",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "kind": "curated_record",
+      "title": "Prefer direct links or actions when the path is known",
+      "summary": "When the path or artifact is known, the user often prefers a direct link, launcher, or action instead of a long explanation. | Rule: If the user asks for an install link, file, folder, or app launch, provide the direct artifact or perform the action first, then add only essential context. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "brevity",
+        "install"
+      ],
+      "score": 15.91,
+      "reasons": [
+        "summary_matched:file,user",
+        "tags_matched:user",
+        "chunk_matched:file,user",
+        "bm25:file,user",
+        "dense_lexical:0.99",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+      "kind": "curated_record",
+      "title": "DinoBrain goal is knowledge compounding from sessions",
+      "summary": "The core DinoBrain goal is a compounding LLM Wiki where user sessions become reviewed preferences, decisions, rules, corrections, and source-backed knowledge that improve future sessions. | Rule: Treat sessions as the root source; convert them into reviewed memory, lifecycle-clean noisy memory, evaluate behavior lift, and retrieve the result in later and future Context Packs. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "project-goal",
+        "llm-wiki",
+        "compounding",
+        "memory"
+      ],
+      "score": 15.744,
+      "reasons": [
+        "summary_matched:user,rules",
+        "chunk_matched:user,rules",
+        "bm25:user,rules",
+        "dense_lexical:0.96",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+      "kind": "curated_record",
+      "title": "Do not sync raw Codex conversation transcripts",
+      "summary": "Codex conversations are source material for reviewed memory, but raw full transcripts and message content must stay local-only and out of public data sync. | Rule: Register sessions metadata-only, extract paraphrased reviewed memories, and never store raw full transcripts or message content in public Wiki, accepted memory, traces, or reports. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "safety",
+        "privacy",
+        "raw-transcripts",
+        "public-data"
+      ],
+      "score": 15.442,
+      "reasons": [
+        "summary_matched:full,local",
+        "chunk_matched:full,local",
+        "bm25:full",
+        "dense_lexical:0.95",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+      "kind": "curated_record",
+      "title": "Version drift and stale release artifacts are recurring risks",
+      "summary": "DinoBrain app, data, installer, local checkout, release ZIP, tag, and GitHub asset can drift; version and artifact alignment must be checked before claiming install or release readiness. | Rule: For releases and installer updates, verify local/remote refs, package version, embedded installer refs, tag, ZIP/SHA asset, and GitHub release state. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "mistake-lesson",
+        "release",
+        "version",
+        "installer"
+      ],
+      "score": 15.288,
+      "reasons": [
+        "summary_matched:read,local",
+        "chunk_matched:read,local",
+        "bm25:local",
+        "dense_lexical:0.78",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    }
+  ]
+}

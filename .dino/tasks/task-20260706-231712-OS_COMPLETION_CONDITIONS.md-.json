@@ -1,0 +1,22 @@
+{
+  "task_id": "task-20260706-231712-OS_COMPLETION_CONDITIONS.md-",
+  "status": "partial",
+  "request": "[OS_COMPLETION_CONDITIONS.md] 에 맞게 개선 사항 정리 후 개선. Focus this pass on turning completion-condition gaps into concrete verification artifacts and code improvements without claiming full OS completion.",
+  "project": "DinoBrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-06T23:17:12.445Z",
+  "updated_at": "2026-07-08T01:10:08.981Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-06T23:24:50.988Z",
+  "trace_path": ".dino/traces/task-20260706-231712-OS_COMPLETION_CONDITIONS.md.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v1",
+    "reason_code": "started_task_repaired_from_grounded_trace",
+    "settled_at": "2026-07-08T01:10:08.981Z",
+    "trace_path": ".dino/traces/task-20260706-231712-OS_COMPLETION_CONDITIONS.md.json"
+  }
+}

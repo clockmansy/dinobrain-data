@@ -1,0 +1,1779 @@
+{
+  "version": "review_worklist_v2",
+  "status": "needs_review",
+  "generated_at": "2026-07-10T22:52:39.210Z",
+  "source_review_status_path": ".dino/state/wiki-review-queue.json",
+  "source_semantic_jobs_path": ".dino/state/semantic_jobs.json",
+  "counts": {
+    "open_items": 146,
+    "open_promotion_items": 104,
+    "pending_merge_reviews": 42,
+    "review_units": 146,
+    "clusters": 146,
+    "duplicate_clusters": 0,
+    "duplicate_items": 0,
+    "exact_duplicate_clusters": 0,
+    "near_duplicate_clusters": 0,
+    "singleton_clusters": 104,
+    "high_priority_clusters": 42,
+    "excluded_deterministic_hold_items": 0
+  },
+  "by_kind": {
+    "user_preference": 7,
+    "project_decision": 14,
+    "project_state": 25,
+    "error_fix": 6,
+    "how_to": 49,
+    "idea": 1,
+    "general": 2,
+    "merge_review": 42
+  },
+  "by_decision_class": {
+    "manual_semantic_review_required": 104
+  },
+  "clusters": [
+    {
+      "cluster_id": "review-cluster-046f3b21597e0edb",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 87,
+      "representative_claim_hash": "4df6e8ffc447e6ffc291a5e89e882dc4414b6a3096ba195afed1dcfc839d3a6c",
+      "normalized_claim_hash": "7373e70b1d979eaa",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 174,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 174,
+      "provenance_member_count": 87,
+      "member_provenance_hash": "3eddb270ea1c41cd4e3d402ed338664013ed14b8bfb81dff164eaf9bcbbea0d4"
+    },
+    {
+      "cluster_id": "review-cluster-7e552c93d74ff955",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 76,
+      "representative_claim_hash": "cda09ba30ed80e41b29fddb81258a72bc753bd1239bc81c9e0d827d1803da951",
+      "normalized_claim_hash": "4e4ca5d792a2925a",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 152,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 152,
+      "provenance_member_count": 76,
+      "member_provenance_hash": "a1f677eaddda7e12d96e85d7c7f12ce3999ba94a245930550faf9c696eee3021"
+    },
+    {
+      "cluster_id": "review-cluster-0680f13052ec0334",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 76,
+      "representative_claim_hash": "3a674fdc125afb7c5548392519363b7fc89bca2f213cbb8a2c1ff366325a8a55",
+      "normalized_claim_hash": "440ccdde4d0d36b6",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 152,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 152,
+      "provenance_member_count": 76,
+      "member_provenance_hash": "d5ba96e082e2622802685e4cc1ac8e5f35a50dbaa53d0068f9aa4c9a4490defd"
+    },
+    {
+      "cluster_id": "review-cluster-514d465cd1bf83bd",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 76,
+      "representative_claim_hash": "e21b47c79394e2ce00420c79a0fc700656679935bc23119cfa418f3e1442765e",
+      "normalized_claim_hash": "93e818efc1cb2e79",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 152,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 152,
+      "provenance_member_count": 76,
+      "member_provenance_hash": "ff3a94760728e12f5b643ea65215842060d640e43169410b0b60c1eb59bf8fc5"
+    },
+    {
+      "cluster_id": "review-cluster-c1abbf4a9b10ae40",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 69,
+      "representative_claim_hash": "b7076dc00bbc4d4c388174fc320a0043af2ea410b924358297eed5661416c43c",
+      "normalized_claim_hash": "3842b8fd3115d700",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 138,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 138,
+      "provenance_member_count": 69,
+      "member_provenance_hash": "4f940e5afe54cb014828dd69bce3c34f2dda97b4468dfdc2993b40d0dc8d0af5"
+    },
+    {
+      "cluster_id": "review-cluster-235630738121025c",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 69,
+      "representative_claim_hash": "2e7f637830f058d61052652c83c5daf7e1df4ce2d8c1b8324d76f4bd726224f8",
+      "normalized_claim_hash": "8a731052e1002b6c",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 138,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 138,
+      "provenance_member_count": 69,
+      "member_provenance_hash": "34fbbb824f4ecbbb83cbe2ad565763179f69f7b0ee31e0db2af12d424f127e94"
+    },
+    {
+      "cluster_id": "review-cluster-a6ba405dc26ed5af",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 59,
+      "representative_claim_hash": "4dc854f1211a8f58f50907db39a5e1f7a4b0e9e0d732fd660c21c6d9f8c074a5",
+      "normalized_claim_hash": "75885d7161288465",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 118,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 118,
+      "provenance_member_count": 59,
+      "member_provenance_hash": "d40a6ec337a186d7409bac9182ed886e5b757c45c2bda698d8ea11aa973f917f"
+    },
+    {
+      "cluster_id": "review-cluster-2de8049af1d63918",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 23,
+      "representative_claim_hash": "f987cfbd7da77d6aa8821c3870cd5c8b6c272215d43a25aca1b208246f05101a",
+      "normalized_claim_hash": "7b51224dd6f39e44",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 46,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 46,
+      "provenance_member_count": 23,
+      "member_provenance_hash": "0133495b18543cd2f4f576ecbcd9e9ff75f1a9789369c46602a21f313fbc6600"
+    },
+    {
+      "cluster_id": "review-cluster-7b51224dd6f39e44",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 22,
+      "representative_claim_hash": "f987cfbd7da77d6aa8821c3870cd5c8b6c272215d43a25aca1b208246f05101a",
+      "normalized_claim_hash": "7b51224dd6f39e44",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 0,
+      "provenance_member_count": 0,
+      "member_provenance_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "cluster_id": "review-cluster-bace20deddd6a816",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 17,
+      "representative_claim_hash": "7bb0177f1db62502f83cf3bce880e70211f1a73f8cc9cd67266fc7a9db44308a",
+      "normalized_claim_hash": "530a1d787ae96efe",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 34,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 34,
+      "provenance_member_count": 17,
+      "member_provenance_hash": "3525c8d61cafdbee6faa3a2920bd0b3996c0c5959a9f7c7ede418be67abbae6b"
+    },
+    {
+      "cluster_id": "review-cluster-3842b8fd3115d700",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 10,
+      "representative_claim_hash": "b7076dc00bbc4d4c388174fc320a0043af2ea410b924358297eed5661416c43c",
+      "normalized_claim_hash": "3842b8fd3115d700",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 0,
+      "provenance_member_count": 0,
+      "member_provenance_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "cluster_id": "review-cluster-4e4ca5d792a2925a",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 10,
+      "representative_claim_hash": "cda09ba30ed80e41b29fddb81258a72bc753bd1239bc81c9e0d827d1803da951",
+      "normalized_claim_hash": "4e4ca5d792a2925a",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 0,
+      "provenance_member_count": 0,
+      "member_provenance_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "cluster_id": "review-cluster-93e818efc1cb2e79",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 10,
+      "representative_claim_hash": "e21b47c79394e2ce00420c79a0fc700656679935bc23119cfa418f3e1442765e",
+      "normalized_claim_hash": "93e818efc1cb2e79",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 0,
+      "provenance_member_count": 0,
+      "member_provenance_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "cluster_id": "review-cluster-8a731052e1002b6c",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 10,
+      "representative_claim_hash": "2e7f637830f058d61052652c83c5daf7e1df4ce2d8c1b8324d76f4bd726224f8",
+      "normalized_claim_hash": "8a731052e1002b6c",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 0,
+      "provenance_member_count": 0,
+      "member_provenance_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "cluster_id": "review-cluster-f14e5d345b4f829f",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 9,
+      "representative_claim_hash": "802fa8b3bc4413902be4eace5de3de068840b152f04160a2f8e80a8d69526a2c",
+      "normalized_claim_hash": "c1ee2e983d92122e",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 18,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 18,
+      "provenance_member_count": 9,
+      "member_provenance_hash": "14315a478b3641a8405e6519dc246ef6f61d8485126fbc8ca1594940215e4c93"
+    },
+    {
+      "cluster_id": "review-cluster-a8ad143678303e5f",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 9,
+      "representative_claim_hash": "793581902240e4d2e82821ad48c7f84268e993ebe25e5004877e7f4ed2517bde",
+      "normalized_claim_hash": "0eb070efb8429a4e",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 18,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 18,
+      "provenance_member_count": 9,
+      "member_provenance_hash": "26d534f73a5b4b3c61a0d90cc436f40aa07633a218841b675790245562429a61"
+    },
+    {
+      "cluster_id": "review-cluster-5a6e7cc13e167291",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 9,
+      "representative_claim_hash": "396e5589a4d1bc7572f81d5c07988b7563ab4de8f0bee344b4dba5783e5d6e34",
+      "normalized_claim_hash": "d6a680ea9d60f719",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 18,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 18,
+      "provenance_member_count": 9,
+      "member_provenance_hash": "9a3ea20094123d97602ecce2c62a6412beb34cb467565a031c545681c61150a1"
+    },
+    {
+      "cluster_id": "review-cluster-41fd0c0035ad13bd",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 7,
+      "representative_claim_hash": "f8c2876b03402ab2edf9222f87ef3e2b8bdbc71c506383ddcf2af887a11fbc8d",
+      "normalized_claim_hash": "20733f9251db5c3b",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 14,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 14,
+      "provenance_member_count": 7,
+      "member_provenance_hash": "dbb07e359cdf531f7951502ea9cccf45d505b5874eb6a600b2d9ed3bc59a8fe0"
+    },
+    {
+      "cluster_id": "review-cluster-845ce5189925dd7c",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 7,
+      "representative_claim_hash": "57298247b2c734ac161b5a4ade8a8fa7c87556ccaada9ccaa0877f0e74ce6a58",
+      "normalized_claim_hash": "827505b737209760",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 14,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 14,
+      "provenance_member_count": 7,
+      "member_provenance_hash": "d8a1376f137bcdcd5231efeb6927626c5259e29fe406dbabc8f53a7fe63f7da3"
+    },
+    {
+      "cluster_id": "review-cluster-ed54b33738d9d206",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 6,
+      "representative_claim_hash": "7ff812e8f64812e17144e1c22519a9cb54184abbf6c9681cd511a683448e5e10",
+      "normalized_claim_hash": "c2fd7d69f8500371",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 12,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 12,
+      "provenance_member_count": 6,
+      "member_provenance_hash": "b231c60499d4559bbb24c218d8b176969a2785fa572d0e9c5c17b5a05346da57"
+    },
+    {
+      "cluster_id": "review-cluster-bc6514fd7025c2ca",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 6,
+      "representative_claim_hash": "1edd73f4023e0dfd8a06d248daf3c210f8097529b9b79847a4b906b99079b22b",
+      "normalized_claim_hash": "3482ae8581daee34",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 12,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 12,
+      "provenance_member_count": 6,
+      "member_provenance_hash": "e0daece2cc3d9a774aeb051a4c0a031b068654724cd34c804e42b3794ef0c1a4"
+    },
+    {
+      "cluster_id": "review-cluster-dc4f4b5d754fd8ad",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 6,
+      "representative_claim_hash": "b317cd9d43060140ac604846c4277d17852b7abcde5a90bb1f93ab7f059860c8",
+      "normalized_claim_hash": "52764d8df21b9503",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 12,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 12,
+      "provenance_member_count": 6,
+      "member_provenance_hash": "e42c3c924b6f19a12644e00b8de3af0264bfb3f2c3fa52d1220c749c55ecc410"
+    },
+    {
+      "cluster_id": "review-cluster-a057e377bd20cbed",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 6,
+      "representative_claim_hash": "bf5eb7a52b693d97bc159060c8f554c103040dd353f2dfd8a0bbfc7d67ff4c93",
+      "normalized_claim_hash": "0a719bec89886df4",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 12,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 12,
+      "provenance_member_count": 6,
+      "member_provenance_hash": "807def81b3df23e72ad5637d43dca2c41a3ba83dcf7e9b2b195a8e92b7203450"
+    },
+    {
+      "cluster_id": "review-cluster-924bb21520924d54",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 6,
+      "representative_claim_hash": "e65f1ec745a02f7f8ed85c08fece748fc38cbed7ead9683141ce4293de78c1c8",
+      "normalized_claim_hash": "3725d71367ded2a2",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 12,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 12,
+      "provenance_member_count": 6,
+      "member_provenance_hash": "bd540d0085cd3be535ea8d7d28d903bef3adb21b83882ec46fc2f10f0a555303"
+    },
+    {
+      "cluster_id": "review-cluster-9b80fdee551fdca2",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 6,
+      "representative_claim_hash": "372964a3228fd2bad199f4ac4c2054ee3dce2ec5e06f6da635a5a61028622d02",
+      "normalized_claim_hash": "aa889edea79ec3bc",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 12,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 12,
+      "provenance_member_count": 6,
+      "member_provenance_hash": "562247cc8c9e7b39b66b0fa35e1a0416833f1958a8828af4ac18f9d5df476644"
+    },
+    {
+      "cluster_id": "review-cluster-84490c48aeed210f",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 6,
+      "representative_claim_hash": "7088696645bdd4db46dbca929a9a31999e218e0de832c0e70ee7a9f083a612ad",
+      "normalized_claim_hash": "3bb4f597470c3489",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 12,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 12,
+      "provenance_member_count": 6,
+      "member_provenance_hash": "e765d264f6a817bb49796caba25444dec24f269456f613946194ab04cad3eff6"
+    },
+    {
+      "cluster_id": "review-cluster-062ca4dbc661e3f1",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 5,
+      "representative_claim_hash": "4df6e8ffc447e6ffc291a5e89e882dc4414b6a3096ba195afed1dcfc839d3a6c",
+      "normalized_claim_hash": "7373e70b1d979eaa",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "c0fd72da675bf8e9aa9687f6990364291620a7de3d11c5670e8e2fe64a7db537"
+      ],
+      "source_session_count": 10,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "c0fd72da675bf8e9aa9687f6990364291620a7de3d11c5670e8e2fe64a7db537"
+      ],
+      "evidence_count": 10,
+      "provenance_member_count": 5,
+      "member_provenance_hash": "c72e20721eb509e23c0000e5c7e97820060ff08d409caca434893a468364a278"
+    },
+    {
+      "cluster_id": "review-cluster-262b2ec21c72a3c5",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 5,
+      "representative_claim_hash": "a3b0c79b8f2d270840c084c02249f87ecda11dc51d5b6c6294b6891511c206d3",
+      "normalized_claim_hash": "620ae381e16348bf",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 10,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 10,
+      "provenance_member_count": 5,
+      "member_provenance_hash": "7646f94f741596a83677b7df9f13e2614ed2e7b4d05150aae3d0fa4c4af079b4"
+    },
+    {
+      "cluster_id": "review-cluster-e496b578969d9635",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 5,
+      "representative_claim_hash": "1553daed3d21a23a2d3a553d87116cdcdbe42e7cc7e15fc48a5267e4fcb9af94",
+      "normalized_claim_hash": "2bf5d90b18c1c14f",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 10,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 10,
+      "provenance_member_count": 5,
+      "member_provenance_hash": "86d703f5e7e6b75179d3f99495fc305d3d5771b71b30dd2e9ac2bff7e08318ad"
+    },
+    {
+      "cluster_id": "review-cluster-78cbec15dec2bcfd",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 5,
+      "representative_claim_hash": "a6f23e5939557807e47117fa82e5b09b377d824fcf701544ddc374e7cb770605",
+      "normalized_claim_hash": "cf9b7a1f40dc9143",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "c0fd72da675bf8e9aa9687f6990364291620a7de3d11c5670e8e2fe64a7db537"
+      ],
+      "source_session_count": 10,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "c0fd72da675bf8e9aa9687f6990364291620a7de3d11c5670e8e2fe64a7db537"
+      ],
+      "evidence_count": 10,
+      "provenance_member_count": 5,
+      "member_provenance_hash": "c5ff569b3e61bc81bb5f4d011e9eb013deca1c1e0ac49fd4f77104b653d3f8bd"
+    },
+    {
+      "cluster_id": "review-cluster-7baa07cf4e13ca5b",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 5,
+      "representative_claim_hash": "a056adf6f827007d15b20e803d6b4c4180f96522fa68231e348006d0ae2122c3",
+      "normalized_claim_hash": "bf35f1507f732b1c",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "c0fd72da675bf8e9aa9687f6990364291620a7de3d11c5670e8e2fe64a7db537"
+      ],
+      "source_session_count": 10,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "c0fd72da675bf8e9aa9687f6990364291620a7de3d11c5670e8e2fe64a7db537"
+      ],
+      "evidence_count": 10,
+      "provenance_member_count": 5,
+      "member_provenance_hash": "bca3d04c4f913fffd98e9d0549938d08cf16906c2cc1e95c105872f0b96f5e68"
+    },
+    {
+      "cluster_id": "review-cluster-628615d53e3605a9",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 3,
+      "representative_claim_hash": "847a83f3efc5abd00a59133a6ceecd3bb3ad2388f1cef5358037a818062b2729",
+      "normalized_claim_hash": "4270f0ad13dffee4",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "source_session_count": 6,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "evidence_count": 6,
+      "provenance_member_count": 3,
+      "member_provenance_hash": "2f0b73c83798c648b72aefc8586c04a0c37da6980c7f44a87ba6103d2c6798b8"
+    },
+    {
+      "cluster_id": "review-cluster-3da6cdcd2aabcdc6",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 3,
+      "representative_claim_hash": "815e1ef31d33936fa149cf7574a5d520f3eb8afa10edb12b419ab1ec1b5acce5",
+      "normalized_claim_hash": "ff01040d080c867d",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 6,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 6,
+      "provenance_member_count": 3,
+      "member_provenance_hash": "a527a348d51f22fb920723b6d1ee1ab9af043c3b3b88c7e1d26650cfed89b939"
+    },
+    {
+      "cluster_id": "review-cluster-3b5511d3ce3b062c",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 3,
+      "representative_claim_hash": "4518c87b0378b27e15ae8debf54e0f33fc5e3cadf35b93c4e5edfd5d98c5fa74",
+      "normalized_claim_hash": "c4a3545f0c01653e",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "source_session_count": 6,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "evidence_count": 6,
+      "provenance_member_count": 3,
+      "member_provenance_hash": "b069c3e578d22a35e04cacf03f14427b2249be8c848ec9ed73a0485664011832"
+    },
+    {
+      "cluster_id": "review-cluster-a1d563911bcac36c",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 3,
+      "representative_claim_hash": "fe8a09e48b58a9d7d1bd47ba317b7bee49acc835cf8faf0fff9df881c68d431a",
+      "normalized_claim_hash": "33bd0d65213c3f22",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "source_session_count": 6,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "evidence_count": 6,
+      "provenance_member_count": 3,
+      "member_provenance_hash": "5a569e054ee7ef3227f2fc3114bd8fbd7e20b4ae32a1fa3ea4d1d5268fa4a879"
+    },
+    {
+      "cluster_id": "review-cluster-3c0b4a113651cfab",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 3,
+      "representative_claim_hash": "b1deff1cee3a3b92f67c8fc0cacc2ca01f22cbcce794876b73bc6334da9401a4",
+      "normalized_claim_hash": "a629584f11500839",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "source_session_count": 6,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "evidence_count": 6,
+      "provenance_member_count": 3,
+      "member_provenance_hash": "02b5046331ea79e4c28ed935243559008c57c74c0124d99c0fdf9a15d49aa004"
+    },
+    {
+      "cluster_id": "review-cluster-af720ce7e4249aec",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 2,
+      "representative_claim_hash": "f1417bbd3fe4285c260db84af2e79da47c375fc38a04a1a4fec530898bb64cba",
+      "normalized_claim_hash": "c64259d4d778fc9e",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 4,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 4,
+      "provenance_member_count": 2,
+      "member_provenance_hash": "6103e5349ac9e8ce6cfba594e5f9464e6097fbac487dfdb4ad7a12eb848db574"
+    },
+    {
+      "cluster_id": "review-cluster-78d0903c0cf7ed50",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 2,
+      "representative_claim_hash": "5a883dcead9b57446693d2a0c5c0efb2d5ddab4abb24e68e031221865dee5a3b",
+      "normalized_claim_hash": "a968b5a3331cbf52",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 4,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 4,
+      "provenance_member_count": 2,
+      "member_provenance_hash": "99b53b3b06e5abc8df1e15610f1035bc33333771d828009bef560a802381d1e2"
+    },
+    {
+      "cluster_id": "review-cluster-2ca985c20602d074",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 2,
+      "representative_claim_hash": "aaaa1455c2629af0928be4b2740f1d91bf099cccedd4c2ceeddf896ea0251a0e",
+      "normalized_claim_hash": "6ea4ff94d49ae2ba",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 4,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 4,
+      "provenance_member_count": 2,
+      "member_provenance_hash": "00513f7510f5830cde3e25b97f628dfaf913e601758a7b62191c8352c5cad433"
+    },
+    {
+      "cluster_id": "review-cluster-353884ef6676bcc8",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 2,
+      "representative_claim_hash": "10d665115ca7edb5d76f2bd3132c9f6ca7c4be21784cb6e4d18397c2892b2246",
+      "normalized_claim_hash": "8749920048a8beae",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 4,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 4,
+      "provenance_member_count": 2,
+      "member_provenance_hash": "bd994876a9eee8c6dcb8135eeb0584ba7f28eedfaf473845265ec3885de3c3ad"
+    },
+    {
+      "cluster_id": "review-cluster-a8ce84e0869a1e09",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 2,
+      "representative_claim_hash": "3d2f59cb84620a56d574501877c62bea5a8737a55014cf0714a2a83937319a6b",
+      "normalized_claim_hash": "4dfd97242b3f48a9",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 4,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 4,
+      "provenance_member_count": 2,
+      "member_provenance_hash": "ed751b69fc76e8e3beff289dba4e3933c3672a51a8466f2487fbea652954c2fa"
+    },
+    {
+      "cluster_id": "review-cluster-67f00a7bee97cc2e",
+      "source": "merge_queue",
+      "identity_kind": "pending_merge",
+      "kind": "merge_review",
+      "priority": 1,
+      "item_count": 2,
+      "representative_claim_hash": "503acdc915ec522dfcc713477ff2115cb2d4c1cb9db320b067e6449d845b8ef6",
+      "normalized_claim_hash": "16ac61f27d70d322",
+      "recommended_action": "manual_merge_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 4,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 4,
+      "provenance_member_count": 2,
+      "member_provenance_hash": "bd2ebc149eb96a87d03da2be868ff93ee764f24d373bae0b16bf2cda89a61377"
+    },
+    {
+      "cluster_id": "review-cluster-630704abc3247bfa",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "b40432c5d94a125a071a54d86070a77307fa3a08803b23b6655f560a8e6f16db",
+      "normalized_claim_hash": "0bd26d1edc897736",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "2811648efd4a60b99201aaf7d7a66e26911eec3e0d088f329e0a9e74c66df20d"
+    },
+    {
+      "cluster_id": "review-cluster-d3fd21baa2cf8715",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "0ed9d3efef18e96b0a14a9ce2c3b3970fb0f2f4e05e7ffea80160aef4bdfca1c",
+      "normalized_claim_hash": "797c4618f10bd19e",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "71472989798106efb897a613eb21b7dd37b2ef91851d2fbc742af1218f6cd514"
+    },
+    {
+      "cluster_id": "review-cluster-8503fabfbf4e0560",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "0035502ef0d7c1662e604cffd986a58fc2ca0e5adb8f7479c682c8a872cca87d",
+      "normalized_claim_hash": "fdd962ff98192a8e",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "c0643433c51e77baefaf0c238d9c3c100e30433033ca09679e824a4b3f706c24"
+    },
+    {
+      "cluster_id": "review-cluster-19ccc4bd4c1bf296",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "c5e9b63d4e08195b54b1a9da2af77dd71ca4eac5ed06afc2967c35b46e2e7472",
+      "normalized_claim_hash": "87ce339fdc369077",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "eae66e4d2428aea4629eef434aa25529ed4f9b79426f0c8cb19013cd02162d38"
+    },
+    {
+      "cluster_id": "review-cluster-0524d5910549ab75",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "f6ce33c58e2014c1c2dc9ebcef81eb20150873ec8b12ac578f24bc9d8a5cd7b8",
+      "normalized_claim_hash": "565a9d3522202de5",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "18b9f2ab0879a388c9c6f5491c93c8a1861341b61885a91d4e28df24d94345c3"
+    },
+    {
+      "cluster_id": "review-cluster-589097849d5fc61c",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "0266345b367063541e09fc7c45eaf087ac90ec96ba12d70cdb79ba443f8f26ee",
+      "normalized_claim_hash": "340ed73765cffb51",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "e22ed08448082e587bf4c84d8db8a14aa87ad967e72fee3e3a1e4e24c2d107ef"
+    },
+    {
+      "cluster_id": "review-cluster-50ed40161135f69b",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "839d4d7a2a18be4f384c2d3a9a32e6c658c855f1e2c0570d869717e6a114bca6",
+      "normalized_claim_hash": "59a0efbec2fe7de5",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "de4204ee8b8cbe6b314e442c5d8979a7714abf07225437815db0a5e0a8c0ceb3"
+    },
+    {
+      "cluster_id": "review-cluster-eb0a74e7c0fe39f1",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "f111dc85ef37f6bc0152c1c95fe8448955c8457378efc317c4d3fe45b3fa3710",
+      "normalized_claim_hash": "8838858a210e091b",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "908db52182828877e8a81f67a9b59c86e35eb0dfb3bd8ba80bcc2b77b0da8517"
+    },
+    {
+      "cluster_id": "review-cluster-7dfc879b170162f0",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "eea9ef9e211362b5fd75028a16bfe255688883fd0e113f4dfc81e412edcff367",
+      "normalized_claim_hash": "475199ba9b216bda",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "f14bd7d85ca20efa259d4a8ae03e1e162bcc9cbe269a0670ea7455a47fac507c"
+    },
+    {
+      "cluster_id": "review-cluster-6280136e7bb8f9af",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "c402ce338dada59f48ac36f916f21db839f0322d13887005d5f295fd32fb404c",
+      "normalized_claim_hash": "01bd0f4b0ccfb92e",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "ff09ca500972af39cfe4ce4f184175fecfe7ed5d1659619ac111b73b38b7ce89"
+    },
+    {
+      "cluster_id": "review-cluster-6e5c97ee597dbb45",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "e794502fd5722bbb3d57bf92d61340c074ff3d6218fdb716bea68ca3bf15e42b",
+      "normalized_claim_hash": "405e787ed4364ef1",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "b2b32fa4017ffeba6422d81df54ce735bb1e85ba60b7f6b3e65f806839ae3075"
+    },
+    {
+      "cluster_id": "review-cluster-00ddfa3e06e1c894",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "5c55f9e94aab62cff7dabea0eb685a091fffe1516747ef0e911271b59f6303df",
+      "normalized_claim_hash": "72cafb72c4074222",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "733dadcdfb578adea6be4369860a970015d7499c41df7b9f5fcbf2c23ce3d3da"
+    },
+    {
+      "cluster_id": "review-cluster-5ce9c226e0b2208c",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "7b76906048cb6fa04a0d85f4b53a74dc0a1f5a20ab74ca440e0b52c8d4641959",
+      "normalized_claim_hash": "94a3618bea126dff",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "249125b0d6467f0221f78b822c407bf1ec1992b46a760f26ca3d44a5756aab6e"
+    },
+    {
+      "cluster_id": "review-cluster-c9da5ac7d4af1617",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "efe191bce3292a13eca90a346a2131777bc438ba0c3d82e8d0800723beb5b907",
+      "normalized_claim_hash": "36f737f7800e00d9",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "52b42e775a3bd0e880eb66fe7a0e8d189d9c80897c02cddd1299b218d6af0abe"
+    },
+    {
+      "cluster_id": "review-cluster-05468ee970f7d44e",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "393c7370f8f06a96884431d0c94d5c2e2be7aa827a0ffdddb49b3a28fc241a8f",
+      "normalized_claim_hash": "20482dd70da73d69",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "0aa8728636ad3504e213a224518ec303a18398e64b0fae3a80e9a71df9279068"
+    },
+    {
+      "cluster_id": "review-cluster-79e6ce0597e8b500",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "dc2aa8936f5d00ed25d231e523b8b22b4947d929201aaf3b688158996f00f689",
+      "normalized_claim_hash": "bd4af6277832dbc9",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "bb4b9cb0a64579362bcc5a8cea61f841c859c732b70d67c2540bc97c2c788f77"
+    },
+    {
+      "cluster_id": "review-cluster-7c5b1b94fd1491e2",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "30a27dbd77f45bd4a40c35c2944272def2a48504b1b5c76d796b8a488ce1539a",
+      "normalized_claim_hash": "db072d5a0652c560",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "5c93b655d82f20cb2040a4ebc34fbf819ff249db2163336f213bad1caa13526d"
+    },
+    {
+      "cluster_id": "review-cluster-636448725f2b295c",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "aa5f570fa79be62733717af78f64b900d83afb0cf31810672193ca64655889ad",
+      "normalized_claim_hash": "7bb05ad515d4ff02",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "761575a81de406b6ab96f078f7d379ab3e70ee078b3dd52ad84d7e6c64f834fb"
+    },
+    {
+      "cluster_id": "review-cluster-1ceac92c3c40a387",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "a46bc8ed815a55fc9a035ed134de75b7a0f06b709f5e8279bb78502698df37f1",
+      "normalized_claim_hash": "829673c174315c2b",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "89588aa2d58922f0542277326ade1bbf0ea3fe8f3ae280efc71bf8f0347366ee"
+    },
+    {
+      "cluster_id": "review-cluster-d3d0bce922a55119",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "b41621a29a76c20949aeb5e0070b97d5d1bf29cc21f7c6517809f9e29d4e3ce8",
+      "normalized_claim_hash": "ea48dda9743c5a84",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "22ce9a92ddddacb46478bc1cf48df45e011341a4a8fb83703103a275633ad150"
+    },
+    {
+      "cluster_id": "review-cluster-646fa951f9a16c0d",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "438a9015c06b3b0a6a92731a1ab0a6e85bb1aec8601fa461ab08af6f910506e8",
+      "normalized_claim_hash": "037f2fd33d710af7",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "cedb7631d4e0beca06ae4b518b7d463c83870db5e70c0cb4c1f4a2c56ca79e7b"
+    },
+    {
+      "cluster_id": "review-cluster-7be24d9263280136",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "1787b08f532a541186069d53a45f4a50c712a94bb1a8a96f963086d7a72c4a26",
+      "normalized_claim_hash": "0849be1aac7f8f2a",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "936f341172de038d167e804a09560d4074ac89abb614563d07e98da00442da85"
+    },
+    {
+      "cluster_id": "review-cluster-6da78e4e9e0689b1",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "2b5a812790d289a75a2e9013f9825621abb473c5a27b4fa0c3839917055f9c8f",
+      "normalized_claim_hash": "bc06de55c47bd49c",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "b83081aa2d54c0d2c595dcdc2cd2c91949700dc48f08fcded48d11b474af4048"
+    },
+    {
+      "cluster_id": "review-cluster-a03c25bd9129437e",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "188ee2c00f1f260097b44b5783ffa1b9053598d9ab8422a2e0e9be0e5fb622b5",
+      "normalized_claim_hash": "ecdacf3090b7829b",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "2aebdd80c8dc60c8d1c285060b5e6f358cb49c32f19ac95f70bf87c095341ef1"
+    },
+    {
+      "cluster_id": "review-cluster-216db9ee315c5c6d",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "project_state",
+      "priority": 4,
+      "item_count": 1,
+      "representative_claim_hash": "237bc8f5101a95e7718ec3a7546ddf6181fc02a0bafeb65ecade24b85fe9a390",
+      "normalized_claim_hash": "fe6a2b69251afe74",
+      "recommended_action": "hold_if_ephemeral",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "9c6c02e548e6a9f04a71a2ff8031299ea94e20bcf643828ddb291017dfcf823f"
+    },
+    {
+      "cluster_id": "review-cluster-6e467e04413233ed",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "error_fix",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "3091f53af3ccdf999186738dfc1633abb7069da1172240559ab044801f3df215",
+      "normalized_claim_hash": "bb31d249fe935c39",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "04c19f2db2e2ad9a2baca4f65c18ddb41b997ff53bff2dcdd17db85154a9fe23"
+    },
+    {
+      "cluster_id": "review-cluster-44662e20306b52f2",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "error_fix",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "bba8ace665ce421f49b913103c18feac2ce98149c7d99d8e5f481409059572f6",
+      "normalized_claim_hash": "46277d9dd3995f4d",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "5f4ea31fa5be63f493db0dc3132e424ee4d775cc99830b01c9f996e24bbec5f3"
+    },
+    {
+      "cluster_id": "review-cluster-3ac035d3c6d60127",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "error_fix",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "074e393c1032d2f6523854c8d1447ac6963bac3b2923681e065b92d3ea55eb6e",
+      "normalized_claim_hash": "6cf05898a3795751",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "e2ac8efb70db1b11b6e212b759c024ac53c7a58407fa270afeb25c04f34c5c8b"
+    },
+    {
+      "cluster_id": "review-cluster-86b91ea8d77dc274",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "error_fix",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "92aa15e39be56dfa780680dc777df5c4265e14d3a2786634aea63247d85c2506",
+      "normalized_claim_hash": "2237532d6cb18dbe",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "a2b46485cc616b816ac74ef03eae7e640654e942ec0dbd5208cfecefb5604578"
+    },
+    {
+      "cluster_id": "review-cluster-c21c70708d4dbdfb",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "error_fix",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "202d8c5bf1412125d0e5bbde11acb0ca9903b06031b65da4ca9898ccaa408eef",
+      "normalized_claim_hash": "b75f592ceea5b8b9",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "4fcb5c20d4e5ddfa7d172c2ef3332008e1a5230babbd66ceeb9cf7d5da8074b5"
+    },
+    {
+      "cluster_id": "review-cluster-bceae3e798538a8f",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "error_fix",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "24c97bba032370fa5afd1166fc0903b961aae4cb9c07a192e1cb1ea1f252fb6e",
+      "normalized_claim_hash": "d3f4b6ebedf3cd88",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "2b3c2afaf4e49bbe93ce9ab8d90b49014e59f1df187e6abc10ca653e7ab26b25"
+    },
+    {
+      "cluster_id": "review-cluster-92083decdc118e7e",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "general",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "e4a1a2e2e8b8efa3146e9fede9ac4080013f57f8334d25a71201b1283688d320",
+      "normalized_claim_hash": "ea2b695bf432ffbf",
+      "recommended_action": "reject_or_hold_low_signal",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "ebcf8af428c20e5e5fe6fa5f3b6344b4e9682bb3ccda854324aa2ff7fddb2e3e"
+    },
+    {
+      "cluster_id": "review-cluster-9a0ad10ae095adfb",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "general",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "f453651f6e9804e66cceb14fa0ca94f762a79ac7f564d9d24cc25a85283b6094",
+      "normalized_claim_hash": "c16ec8e08eca5edb",
+      "recommended_action": "reject_or_hold_low_signal",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "54d3f86d97bb06b4fba6e2c9aca03d4113c2d715a00b58ba594237ace8f4318c"
+    },
+    {
+      "cluster_id": "review-cluster-1484863df7d73f5c",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "606b067ff53f547ab806c2936ff86e9c30a28c3a6627fa94c5a1406788e5b0c7",
+      "normalized_claim_hash": "c869e1060161edb7",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "b49ec0f46760e86bf0efc939820ac5b0cc110393d4012fc6d264d0052c2df22c"
+    },
+    {
+      "cluster_id": "review-cluster-1c8b807054eeddb7",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "4df6e8ffc447e6ffc291a5e89e882dc4414b6a3096ba195afed1dcfc839d3a6c",
+      "normalized_claim_hash": "7373e70b1d979eaa",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "809e965d3990161b28bbd9a1eb58da7b2302d482f9d51ce497e51a19ce0b7794"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "809e965d3990161b28bbd9a1eb58da7b2302d482f9d51ce497e51a19ce0b7794"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "6def1d819742c8eb1d26f51dbcb476fbc4e7cae32344e9761618961646fb75a5"
+    },
+    {
+      "cluster_id": "review-cluster-8086e331b9383d7e",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "bc96b637d4392030f6bc4a31366692e387b83393a2966e391fac9e875064531e",
+      "normalized_claim_hash": "a107e5f36baa3b0f",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "a336a431cf77ad4617dd2ec4060b3dbb97738addfe8d6838e89fd5fce14e836c"
+    },
+    {
+      "cluster_id": "review-cluster-4d93e24061de2c89",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "91e97799e235335dea1a12a53ee22973a5002ae8852679e3932f85d37e820bcc",
+      "normalized_claim_hash": "259ade8cd1edfafa",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "e22bb211579551b9307ceb268b05535819bff25769da0c01db5f2a1a29e0be2d"
+    },
+    {
+      "cluster_id": "review-cluster-11a411e36abf3e85",
+      "source": "promotion_queue",
+      "identity_kind": "singleton",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "2ad34ccb902f622359214aa47aee942ea402d41befb6f1aa4c97d900eadbfde4",
+      "normalized_claim_hash": "a754e3ea087cf0b7",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 2,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "aaa9d07f208da7a76b6ce8e2752dadc3839385269b403ab52e1996fb09b24c33"
+    }
+  ],
+  "visible_status": "Review worklist needs bounded semantic review",
+  "omitted_cluster_count": 66,
+  "note": "Public operational summary contains aggregate counts and hashes only; claims, tags, session ids, and source paths are excluded."
+}

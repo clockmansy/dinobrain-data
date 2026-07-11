@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 9,
+  "event": "action_applied",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "9bd6183906ada79514b4cca89d58d22fab47fee5e836dff3176693270b5318bc",
+  "payload": {
+    "index": 2,
+    "task_id": "task-20260709-154311-Memory-Writing-Agent-Phase-2",
+    "action": "auto_close_stale_non_user_service",
+    "applied": true,
+    "reason_code": "stale_non_user_service_auto_closed",
+    "task_sha256_after": "2e6855a02459c58f323e0d80b1a0828c34eb3ed94a5ca29abf0c81369afcb3d3",
+    "trace_sha256_after": "83adaa6df46f3f4f5ed2a4c3e3eeee874a767be765869030870bd03349f9ef97"
+  },
+  "entry_sha256": "53b53f902c2ee571b8451dd5437bae7859960d6a8cc92ac0415ab03ed2a7495a"
+}

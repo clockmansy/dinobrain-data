@@ -1,0 +1,42 @@
+{
+  "memory_id": "task-memory-task-20260707-003606-Read-only-audit-focused-on-n",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Read-only audit focused on node lifecycle, compounding, memory growth, merge/promote/hold/delete",
+  "summary": "Read-only audit found P1 issues in auto-accepted compounding, repeated full-trace scans/report growth, and lifecycle backpressure/dry-run behavior. No source edits.",
+  "claim": "Task outcome for DinoBrain: Read-only audit found P1 issues in auto-accepted compounding, repeated full-trace scans/report growth, and lifecycle backpressure/dry-run behavior. No source edits.",
+  "request": "Read-only audit focused on node lifecycle, compounding, memory growth, merge/promote/hold/delete, and whether knowledge compounding can scale without becoming slow/noisy. Inspect src/compounding.ts, src/lifecycle.ts, data .dino/compounding, accepted rules. Return P0/P1 findings with file/line evidence, fixes, and consensus candidate statements. Do not edit files.",
+  "outcome": "completed",
+  "decisions": [],
+  "next_steps": [
+    "Review proposed fixes and choose implementation scope."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+    "50_Instances/accepted/behavior-rule-c1ad7c4e0066b985.json",
+    "50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-003619-Audit-DinoBrain-node-lifecyc.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-003606-Read-only-audit-focused-on-n.json",
+    "snippet": "Read-only audit found P1 issues in auto-accepted compounding, repeated full-trace scans/report growth, and lifecycle backpressure/dry-run behavior. No source edits."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:42:18.579Z",
+  "updated_at": "2026-07-07T00:42:18.579Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-003606-Read-only-audit-focused-on-n.json",
+    "task_id": "task-20260707-003606-Read-only-audit-focused-on-n",
+    "task_path": ".dino/tasks/task-20260707-003606-Read-only-audit-focused-on-n.json"
+  }
+}

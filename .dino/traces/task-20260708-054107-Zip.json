@@ -1,0 +1,38 @@
+{
+  "task_id": "task-20260708-054107-Zip",
+  "outcome": "completed",
+  "summary": "Provided the direct GitHub Release download link for DinoBrainSetup.zip v2.2.8 after verifying the asset browser_download_url via the GitHub releases API.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Used the GitHub release asset browser_download_url as the direct ZIP link."
+  ],
+  "next_steps": [
+    "User can download DinoBrainSetup.zip from the provided release asset link."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/README.md",
+    "30_Sources/chunks/rag-survey.json",
+    "30_Sources/chunks/langsmith-evaluation-concepts.json",
+    "30_Sources/chunks/ragas-evaluation.json",
+    "30_Sources/chunks/microsoft-graphrag.json",
+    "30_Sources/chunks/rag-paper-2005-11401.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-054108-Zip.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260708-054107-55628470ac06.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T05:41:58.259Z"
+}

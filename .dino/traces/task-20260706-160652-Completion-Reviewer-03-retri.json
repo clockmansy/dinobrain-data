@@ -1,0 +1,44 @@
+{
+  "task_id": "task-20260706-160652-Completion-Reviewer-03-retri",
+  "outcome": "completed",
+  "summary": "Completion Reviewer 03 inspected dinobrain and dinobrain-data from the retrieval/LLM Wiki lens. Conclusion: AGREE with the index-first, graph-aware, provenance-aware hybrid retrieval direction, but DISAGREE that the current LLM Wiki is complete. Evidence: live Context Packs report lexical_fallback_v2, the data repo has wiki-index.json but no wiki.sqlite shard, current context eval fails on noise despite full recall, behavior eval is blocked by missing behavior-golden.json, and graph-health appears stale relative to the current wiki index.",
+  "changed_files": [],
+  "decisions": [
+    "LLM Wiki completion must require fast indexed candidate selection, honest retrieval-mode reporting, and true dense retrieval only when a usable dense vector index/provider exists.",
+    "Operational traces/accepted behavior rules currently create ranking pressure; completion requires durable wiki/source/project knowledge to outrank broad operational behavior rules when the query intent calls for it.",
+    "Graph completion is not the visual graph alone; it requires fresh indexed nodes/edges, wikilinks, provenance/lifecycle edges, graph-health freshness, and degraded status when empty or stale.",
+    "Quality completion is not satisfied until representative context and behavior golden sets pass under growth/noise budgets, including semantic paraphrase, rare exact queries, provenance, quarantine, and recency cases.",
+    "Latency completion should require the prompt path to avoid full vault scans and use SQLite wiki plus operations shards with measured query and rebuild budgets as data grows."
+  ],
+  "next_steps": [
+    "Create or refresh the wiki SQLite shard and manifest for the live data repo, then verify runtime candidate_source is sqlite_shards_v2 for wiki_search and get_context_pack.",
+    "Replace the bootstrap context-golden cases with representative LLM Wiki cases and add behavior-golden.json for memory lift evaluation.",
+    "Tune ranking and/or type-specific budgets so broad accepted behavior rules do not swamp durable wiki/source/project records.",
+    "Make graph-health freshness part of the completion gate by comparing it to the current wiki index/shard generation time.",
+    "Add scale/latency gates that fail when candidate counts, query latency, or index freshness exceed the agreed budgets."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-78751921656331b2.json",
+    "50_Instances/accepted/behavior-rule-ff402e89e4f3274b.json",
+    "50_Instances/accepted/behavior-rule-8d5f0f45dfbb00a5.json",
+    "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+    "50_Instances/accepted/behavior-rule-49540fb326024225.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-160655-What-existing-DinoBrain-memo.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "DinoBrain LLM Wiki retrieval completion conditions",
+    "hybrid retrieval graph provenance latency eval DinoBrain"
+  ],
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-06T16:09:49.555Z"
+}

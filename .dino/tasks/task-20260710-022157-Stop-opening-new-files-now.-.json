@@ -1,0 +1,26 @@
+{
+  "task_id": "task-20260710-022157-Stop-opening-new-files-now.-",
+  "status": "blocked",
+  "request": "Stop opening new files now. Preserve the evidence already gathered from the full-manifest pass and immediately synthesize the requested final sections and strict verdict. Do not edit anything. Explicitly state whether you completed enumeration/parsing of all manifest entries; if not, say the exact limitation rather than claiming completion.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-10T02:21:57.867Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "block_reason": "context_pack_failed",
+  "error": "database is locked",
+  "finished_at": "2026-07-10T02:23:04.118Z",
+  "trace_path": ".dino/traces/task-20260710-022157-Stop-opening-new-files-now..json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "terminal_task_bound_to_existing_grounded_trace",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260710-022157-Stop-opening-new-files-now..json",
+    "trace_sha256": "d73d4ef9e5236f8e59ea499bfbb5d4f7a404d23a00c70f078b31cc49b77f05bc"
+  }
+}

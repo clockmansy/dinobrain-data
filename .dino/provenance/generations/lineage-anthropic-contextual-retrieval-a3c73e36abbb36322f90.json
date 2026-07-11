@@ -1,0 +1,46 @@
+{
+  "version": "source_lineage_generation_v1",
+  "type": "lineage_generation",
+  "generation_id": "lineage-anthropic-contextual-retrieval-a3c73e36abbb36322f90",
+  "generation_status": "published",
+  "transaction_id": "source-lineage-1783735481976-9ae12038-6271-43e5-9034-84fe9085c4be",
+  "source_snapshot_path": "30_Sources/fetched/anthropic-contextual-retrieval.json",
+  "source_chunk_path": "30_Sources/chunks/anthropic-contextual-retrieval.json",
+  "provenance_path": ".dino/provenance/anthropic-contextual-retrieval.json",
+  "source_content_sha256": "5b0d67db25d8279fff0af5be0000bc6b3864692f53fbed2c26479d545ee7f046",
+  "chunk_sha256": "5b0d67db25d8279fff0af5be0000bc6b3864692f53fbed2c26479d545ee7f046",
+  "verification_status": "verified_summary",
+  "verified_at": "2026-07-07",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": "30_Sources/fetched/anthropic-contextual-retrieval.json",
+      "after_sha256": "f7690843129638d8289abfd14918008955618feb8db7a926176508d01d31c20b"
+    },
+    {
+      "path": "30_Sources/chunks/anthropic-contextual-retrieval.json",
+      "after_sha256": "39bfc5b5ccbeab1006ba008885661bdffc88c1960fd326d96a636fd9379e2a55"
+    },
+    {
+      "path": ".dino/provenance/anthropic-contextual-retrieval.json",
+      "after_sha256": "54dc1fc6e4428e60f3349a5f93d10f8b183ecea6715e605cb9b471ce3a193e5d"
+    }
+  ],
+  "created_at": "2026-07-11T02:04:41.976Z",
+  "updated_at": "2026-07-11T02:04:41.976Z"
+}

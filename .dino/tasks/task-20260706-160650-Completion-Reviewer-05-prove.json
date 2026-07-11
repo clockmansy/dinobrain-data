@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260706-160650-Completion-Reviewer-05-prove",
+  "status": "completed",
+  "request": "Completion Reviewer 05 provenance/source truth lens: independently inspect <machine-local-path> and app repo read-only; derive completion requirements around durable sources, claims vs memories, source chunks, external evidence, citations, trust scoring; review accepted instances, operations, traces/context packs/events, docs/code; return evidence inspected, user direction, completion conditions, risks, explicit AGREE/DISAGREE.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-06T16:06:50.298Z",
+  "updated_at": "2026-07-06T16:11:00.055Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-06T16:11:00.055Z",
+  "trace_path": ".dino/traces/task-20260706-160650-Completion-Reviewer-05-prove.json"
+}

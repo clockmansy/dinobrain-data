@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 323,
+  "event": "action_applied",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "c7ca84079364a855f55a0540c04f29a432173ce03c113f5c630a8324a2413e8b",
+  "payload": {
+    "index": 159,
+    "task_id": "task-20260707-154802-You-are-an-independent-DinoB",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "0a22960cd7bd31d3710811a8f245a8abe85273e85018a23f7511b760b68da3eb",
+    "trace_sha256_after": "0bff150915f7a43165ba21007f650ff6a7b2e0ed544a86f702422dd27c71b13d"
+  },
+  "entry_sha256": "6214541e61bd52b21a7ef88ac4f7bda86ebf0e137fa93626e652088d91afcb09"
+}

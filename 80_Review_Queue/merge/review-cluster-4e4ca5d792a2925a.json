@@ -1,0 +1,37 @@
+{
+  "review_id": "review-cluster-4e4ca5d792a2925a",
+  "type": "merge_review",
+  "status": "pending",
+  "source": "review_worklist_actions",
+  "source_action_id": "worklist-action-review-cluster-4e4ca5d792a2925a",
+  "cluster_kind": "error_fix",
+  "representative_claim": "Error or fix note: The tasks typically have to do with coding-related tasks, for example requests for bug fixes or questions about a codebase.",
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-10859b62c020.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-125f66df4d41.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-5ea7148ce60e.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-70d8d5bcbf5a.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-8203763d654a.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-99278ed035fb.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-9a9d312ec4a3.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-b59a794b4950.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-c17442564cce.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-ee60f9e32f2a.json"
+  ],
+  "review_paths": [
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-10859b62c020.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-125f66df4d41.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-5ea7148ce60e.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-70d8d5bcbf5a.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-8203763d654a.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-99278ed035fb.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-9a9d312ec4a3.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-b59a794b4950.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-c17442564cce.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-ee60f9e32f2a.json"
+  ],
+  "required_action": "Create one reviewed accepted memory for the cluster, or explicitly hold/reject the cluster.",
+  "reviewer": "review-worklist-actions",
+  "created_at": "2026-07-07T12:25:36.779Z",
+  "updated_at": "2026-07-07T12:25:36.779Z"
+}

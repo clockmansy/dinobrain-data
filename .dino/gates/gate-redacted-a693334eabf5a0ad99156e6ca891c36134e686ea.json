@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-redacted-a693334eabf5a0ad99156e6ca891c36134e686ea",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-redacted-69742a2b34fce5e213a2030b2a34e45e5836968b",
+  "request": "Repo: <machine-local-path> Plan doc: <machine-local-path> (1).md. Data root: <machine-local-path> Compare P0-03 Recovery-Key Contradiction, P0-05 Native Instruction Authority Gate, and P0-05C Runtime Instruction Authority Gate against current DinoBrain. Return concise gap analysis with file/script evidence. Do not edit files.",
+  "generated_at": "2026-07-07T11:34:51.030Z",
+  "context_pack_path": ".dino/context-packs/pack-redacted-4ae4807d73425c35972933583a33cbcac2c67c89.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

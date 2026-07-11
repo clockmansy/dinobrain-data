@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-162908-task-20260707-162907-DinoBrain-R4-.-",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-162907-DinoBrain-R4-.-.-.-read-only",
+  "request": "DinoBrain 미완 개선 계획 검토용 하위 에이전트 R4로 전환합니다. 이전 작업은 중단하고 이 요청을 우선 처리하세요. 독립적으로 기억/문서를 읽고 판단하세요. 편집하지 말고 read-only입니다.\n\n검토 대상:\n- <machine-local-path> DinoBrain 관련 항목\n- docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md\n- docs\\OS_COMPLETION_CONDITIONS.md\n- docs\\RAG_OS_CONSENSUS_20260707.md\n- provenance/source-lineage 관련 scripts/src/docs\n\n역할: durable source/provenance 관점. source/chunk/claim lineage, anchor-only vs verified evidence, public-data safety가 완성조건에 충분한지 검토하세요.\n\n출력 형식: verdict, required_conditions, missing_or_risky_points, evidence.",
+  "generated_at": "2026-07-07T16:29:08.132Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-162908-DinoBrain-R4-.-.-.-read-only.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

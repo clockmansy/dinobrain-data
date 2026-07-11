@@ -1,0 +1,63 @@
+{
+  "version": "release_manifest_v1",
+  "status": "healthy",
+  "generated_at": "2026-07-08T01:43:36.652Z",
+  "data_root": "<machine-local-path>",
+  "app_root": "<machine-local-path>",
+  "package_version": "2.2.7",
+  "expected_tag": "v2.2.7",
+  "app_git": {
+    "root": "<machine-local-path>",
+    "head": "e93e755065d82b970b094535f30b1134b9973db7",
+    "branch": "main",
+    "upstream": "origin/main",
+    "upstream_head": "e93e755065d82b970b094535f30b1134b9973db7",
+    "head_matches_upstream": true,
+    "tracked_dirty_count": 0,
+    "untracked_count": 0,
+    "commit_date": "2026-07-08T10:31:40+09:00"
+  },
+  "data_git": {
+    "root": "<machine-local-path>",
+    "head": "e693c3fd235c6410f0f2c756326b8687b405aed8",
+    "branch": "main",
+    "upstream": "origin/main",
+    "upstream_head": "e693c3fd235c6410f0f2c756326b8687b405aed8",
+    "head_matches_upstream": true,
+    "tracked_dirty_count": 20,
+    "untracked_count": 7,
+    "commit_date": "2026-07-08T10:36:10+09:00"
+  },
+  "tag": {
+    "exists": true,
+    "target": "e93e755065d82b970b094535f30b1134b9973db7",
+    "matches_app_head": true
+  },
+  "assets": {
+    "zip_path": "<machine-local-path>",
+    "zip_exists": true,
+    "zip_size_bytes": 45964881,
+    "zip_mtime": "2026-07-08T01:34:37.388Z",
+    "sha_path": "<machine-local-path>",
+    "sha_exists": true,
+    "sha256_actual": "d5e83cff0e4cef84a88dc5e679c2506712977a213aa3ca849015b26d96fced23",
+    "sha256_recorded": "d5e83cff0e4cef84a88dc5e679c2506712977a213aa3ca849015b26d96fced23",
+    "sha256_matches": true,
+    "exe_path": "<machine-local-path>",
+    "exe_exists": true,
+    "exe_size_bytes": 51587368,
+    "exe_mtime": "2026-07-07T16:33:08.000Z",
+    "artifact_newer_than_app_head": true
+  },
+  "github_release": {
+    "status": "not_checked",
+    "reason": "GitHub release asset verification requires an authenticated release upload/check path; local ZIP/SHA/tag parity is verified here."
+  },
+  "blockers": [],
+  "warnings": [
+    "data_tracked_worktree_dirty",
+    "data_untracked_backlog_present",
+    "github_release_asset_not_checked_without_token"
+  ],
+  "visible_status": "Release manifest healthy"
+}

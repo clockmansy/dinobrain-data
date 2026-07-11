@@ -1,0 +1,44 @@
+{
+  "memory_id": "task-memory-task-20260707-005746-Read-only-audit-focused-only",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Read-only audit focused only on provenance/source/chunk/claim lineage and graph health. Identify",
+  "summary": "Read-only audit of graph health and provenance/source/chunk/claim lineage. Found graph health score reaches 0 because src/graph-health.ts uses a narrow source resolver that ignores accepted-record lineage fields used by writers, especially evidence.source and source_paths. Persisted graph-health artifact reported accepted_without_source_count=302, source_mapping_missing_count=302, score=0. Also found three accepted JSON records currently invalid, which can make a rerun fail before scoring.",
+  "claim": "Task outcome for dinobrain: Read-only audit of graph health and provenance/source/chunk/claim lineage. Found graph health score reaches 0 because src/graph-health.ts uses a narrow source resolver that ignores accepted-record lineage fields used by writers, especially evidence.source and source_paths. Persisted graph-health artifact reported accepted_without_source_count=302, source_mapping_missing_count=302, score=0. Also found three accepted JSON records currently invalid, which can make a rerun fail before scoring.",
+  "request": "Read-only audit focused only on provenance/source/chunk/claim lineage and graph health. Identify why graph health score can be 0, exact files, and one concrete acceptance gate. Do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "No repo files were edited.",
+    "Treat the root issue as a lineage schema/resolver mismatch across graph-health, observatory, lifecycle, compounding, and session-promotion writers.",
+    "Acceptance gate should add an evidence.source-only and source_paths-only accepted fixture to graph:health:verify and assert these are not counted as missing source when their targets exist."
+  ],
+  "next_steps": [
+    "Unify sourcePath/lineage resolution across graph-health, lifecycle, and Observatory.",
+    "Extend graph:health:verify with actual accepted-record schemas from compounding and session promotion.",
+    "Repair invalid accepted JSON records before relying on a fresh graph-health run."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-005748-For-a-read-only-audit-of-Din.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-005746-Read-only-audit-focused-only.json",
+    "snippet": "Read-only audit of graph health and provenance/source/chunk/claim lineage. Found graph health score reaches 0 because src/graph-health.ts uses a narrow source resolver that ignores accepted-record lineage fields used by writers, especially evidence.source and source_paths. Persisted graph-health artifact reported accepted_without_source_count=302, source_mapping_missing_count=302, score=0. Also found three accepted JSON records currently invalid, which can make a rerun fail before scoring."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T01:01:54.814Z",
+  "updated_at": "2026-07-07T01:01:54.814Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-005746-Read-only-audit-focused-only.json",
+    "task_id": "task-20260707-005746-Read-only-audit-focused-only",
+    "task_path": ".dino/tasks/task-20260707-005746-Read-only-audit-focused-only.json"
+  }
+}

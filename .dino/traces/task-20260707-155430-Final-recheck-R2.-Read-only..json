@@ -1,0 +1,43 @@
+{
+  "task_id": "task-20260707-155430-Final-recheck-R2.-Read-only.",
+  "outcome": "completed",
+  "summary": "Read-only final R2 recheck of revised completion docs and direct MCP/pre-response verification code. Inspected requested files and targeted direct-MCP/pre-response evidence. Verdict: AGREE; completion conditions remain adequate and not weakened for direct MCP parity and pre-response proof.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "R2 verdict is AGREE: no blocking objections found.",
+    "Direct MCP parity remains hard-gated by real proof artifacts, exact single-name discovery, per-tool successful call evidence, stale-proof rejection, and rejection of hook/config/bootstrap/CLI/synthetic proof sources.",
+    "Pre-response proof remains hard-gated by real Codex Desktop live events with context paths, with MCP preflight proof only accepted as fallback evidence for session preflight/context visibility, not as replacement for the live Codex Desktop hook requirement.",
+    "Claude absence is accepted only through explicit fresh not_configured proof; Codex must be verified."
+  ],
+  "next_steps": [],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-155430-Final-recheck-R2.-Read-only..json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-155430-f020bb7c23d1.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-How-to-note-Inspect-final-revised-do-1a7f424c60ec.json"
+  ],
+  "search_queries": [
+    "direct MCP pre-response exact_single_name not_configured verify:goal"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 1,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T15:55:18.132Z"
+}

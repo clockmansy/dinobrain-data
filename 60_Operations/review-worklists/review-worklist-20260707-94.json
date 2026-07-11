@@ -1,0 +1,370 @@
+{
+  "version": "review_worklist_v1",
+  "status": "needs_review",
+  "generated_at": "2026-07-07T12:25:36.779Z",
+  "source_review_status_path": ".dino/state/wiki-review-queue.json",
+  "source_semantic_jobs_path": ".dino/state/semantic_jobs.json",
+  "counts": {
+    "open_items": 94,
+    "clusters": 17,
+    "duplicate_clusters": 7,
+    "duplicate_items": 84,
+    "singleton_clusters": 10,
+    "high_priority_clusters": 5
+  },
+  "by_kind": {
+    "user_preference": 7,
+    "project_decision": 3,
+    "project_state": 0,
+    "error_fix": 3,
+    "how_to": 4,
+    "idea": 0,
+    "general": 0
+  },
+  "clusters": [
+    {
+      "cluster_id": "review-cluster-7b51224dd6f39e44",
+      "source": "legacy_worklist",
+      "identity_kind": "exact",
+      "kind": "user_preference",
+      "priority": 1,
+      "item_count": 22,
+      "representative_claim_hash": "f987cfbd7da77d6aa8821c3870cd5c8b6c272215d43a25aca1b208246f05101a",
+      "normalized_claim_hash": "7b51224dd6f39e44",
+      "recommended_action": "merge_review_for_possible_feedback_memory",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 22,
+      "provenance_member_count": 22,
+      "member_provenance_hash": "457acf704214bd197769ffac4d1d485436ac16cd71ced7bcd5746dcff0d3d9f7"
+    },
+    {
+      "cluster_id": "review-cluster-8a731052e1002b6c",
+      "source": "legacy_worklist",
+      "identity_kind": "exact",
+      "kind": "user_preference",
+      "priority": 1,
+      "item_count": 10,
+      "representative_claim_hash": "2e7f637830f058d61052652c83c5daf7e1df4ce2d8c1b8324d76f4bd726224f8",
+      "normalized_claim_hash": "8a731052e1002b6c",
+      "recommended_action": "merge_review_for_possible_feedback_memory",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 10,
+      "provenance_member_count": 10,
+      "member_provenance_hash": "d752a28901600fb7d23a39fc326fde688de728f733fc1b816e5b538d36fad9bd"
+    },
+    {
+      "cluster_id": "review-cluster-93e818efc1cb2e79",
+      "source": "legacy_worklist",
+      "identity_kind": "exact",
+      "kind": "project_decision",
+      "priority": 2,
+      "item_count": 10,
+      "representative_claim_hash": "e21b47c79394e2ce00420c79a0fc700656679935bc23119cfa418f3e1442765e",
+      "normalized_claim_hash": "93e818efc1cb2e79",
+      "recommended_action": "merge_or_project_memory_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 10,
+      "provenance_member_count": 10,
+      "member_provenance_hash": "c44f76f3e99fa95fdd31eb52400eca8d807e714b200dcd6c4dfd57772e8eccd2"
+    },
+    {
+      "cluster_id": "review-cluster-c4a3545f0c01653e",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "project_decision",
+      "priority": 2,
+      "item_count": 1,
+      "representative_claim_hash": "4518c87b0378b27e15ae8debf54e0f33fc5e3cadf35b93c4e5edfd5d98c5fa74",
+      "normalized_claim_hash": "c4a3545f0c01653e",
+      "recommended_action": "merge_or_project_memory_review",
+      "project_tag_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "78b3d07665968b01b72fdba42a160713f6b85f0b5df6c8b0acdc1e07a56567b0"
+    },
+    {
+      "cluster_id": "review-cluster-33bd0d65213c3f22",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "project_decision",
+      "priority": 2,
+      "item_count": 1,
+      "representative_claim_hash": "d18009a1aa409015d938eafd2ce4de80b6bca4df79b12fd9e1743cc70b89c65e",
+      "normalized_claim_hash": "33bd0d65213c3f22",
+      "recommended_action": "merge_or_project_memory_review",
+      "project_tag_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "04ea924b0e0ecf73ab8422a78ca61cd182f8b083906ce25078216d263f9865ea"
+    },
+    {
+      "cluster_id": "review-cluster-3842b8fd3115d700",
+      "source": "legacy_worklist",
+      "identity_kind": "exact",
+      "kind": "error_fix",
+      "priority": 3,
+      "item_count": 10,
+      "representative_claim_hash": "b7076dc00bbc4d4c388174fc320a0043af2ea410b924358297eed5661416c43c",
+      "normalized_claim_hash": "3842b8fd3115d700",
+      "recommended_action": "merge_duplicate_or_hold_if_generic",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 10,
+      "provenance_member_count": 10,
+      "member_provenance_hash": "71687ab440c8b5c07f884231adbc80b7fbc76216fca5cd7a7e20b605c8440245"
+    },
+    {
+      "cluster_id": "review-cluster-4e4ca5d792a2925a",
+      "source": "legacy_worklist",
+      "identity_kind": "exact",
+      "kind": "error_fix",
+      "priority": 3,
+      "item_count": 10,
+      "representative_claim_hash": "cda09ba30ed80e41b29fddb81258a72bc753bd1239bc81c9e0d827d1803da951",
+      "normalized_claim_hash": "4e4ca5d792a2925a",
+      "recommended_action": "merge_duplicate_or_hold_if_generic",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 10,
+      "provenance_member_count": 10,
+      "member_provenance_hash": "7744cade67d786e76e102bc24a7f3b121064ebec9d26ca606e3051c0d13bc70b"
+    },
+    {
+      "cluster_id": "review-cluster-7373e70b1d979eaa",
+      "source": "legacy_worklist",
+      "identity_kind": "exact",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 12,
+      "representative_claim_hash": "4df6e8ffc447e6ffc291a5e89e882dc4414b6a3096ba195afed1dcfc839d3a6c",
+      "normalized_claim_hash": "7373e70b1d979eaa",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "c0fd72da675bf8e9aa9687f6990364291620a7de3d11c5670e8e2fe64a7db537",
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 12,
+      "provenance_member_count": 12,
+      "member_provenance_hash": "ee19084712df8c5e4654351cc667cbc470b50f359bafb588df338486946e4bc2"
+    },
+    {
+      "cluster_id": "review-cluster-440ccdde4d0d36b6",
+      "source": "legacy_worklist",
+      "identity_kind": "exact",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 10,
+      "representative_claim_hash": "3a674fdc125afb7c5548392519363b7fc89bca2f213cbb8a2c1ff366325a8a55",
+      "normalized_claim_hash": "440ccdde4d0d36b6",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 10,
+      "provenance_member_count": 10,
+      "member_provenance_hash": "0929b91fc9f404ac001e388f5fdc7163c513f20bfe78fc816345386d2bb7db87"
+    },
+    {
+      "cluster_id": "review-cluster-4270f0ad13dffee4",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "error_fix",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "847a83f3efc5abd00a59133a6ceecd3bb3ad2388f1cef5358037a818062b2729",
+      "normalized_claim_hash": "4270f0ad13dffee4",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "6964ce1a56ed3a2aa0b245a61e53f48c3895e8ce0dbd3f2c27cf81378ab6d217"
+    },
+    {
+      "cluster_id": "review-cluster-1cc8ba94eb88255b",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "dec21e26ac899036c21e006e9e077a599a4372cf4fa862b1e3788205b0689aba",
+      "normalized_claim_hash": "1cc8ba94eb88255b",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "6932ee117a9e52e4613839bc51823475facbb1f0e71a5df7468b289e4389fbe7"
+    },
+    {
+      "cluster_id": "review-cluster-8c8a0988c1e21d3f",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "3eefb5a5244e942e20ac04f738aab85065fb496ad6c3ea81363186bcc30e7785",
+      "normalized_claim_hash": "8c8a0988c1e21d3f",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "1b2cfc8f3498f43d8e1d87fc9b3816c1ca4d30a018cc4db0c25f0d566cd791cc"
+    },
+    {
+      "cluster_id": "review-cluster-a629584f11500839",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "b1deff1cee3a3b92f67c8fc0cacc2ca01f22cbcce794876b73bc6334da9401a4",
+      "normalized_claim_hash": "a629584f11500839",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "126744c37a6e9c1297e1dcc7a5306d37c0927a1aea513fe160d905d524a844d4"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "29fe42e0bfff92d43600c8008135d500c35b6cf73b0bd8de94e27961b3e24687"
+    },
+    {
+      "cluster_id": "review-cluster-620ae381e16348bf",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "a3b0c79b8f2d270840c084c02249f87ecda11dc51d5b6c6294b6891511c206d3",
+      "normalized_claim_hash": "620ae381e16348bf",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "9994f0d9c01c104114983b8b9f5055bcf6e1456bc0ea6c1201b2a405456d7bdc"
+    },
+    {
+      "cluster_id": "review-cluster-2bf5d90b18c1c14f",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "1553daed3d21a23a2d3a553d87116cdcdbe42e7cc7e15fc48a5267e4fcb9af94",
+      "normalized_claim_hash": "2bf5d90b18c1c14f",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "fccf66908ccfaf6d5d9be7c858e85dc8a36ab906e1349dff75b7a914a756d19f"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "821c509580cb50d0ed4bfe7daead71e879ce6837967313e943cd0dca37dd1cb3"
+    },
+    {
+      "cluster_id": "review-cluster-cf9b7a1f40dc9143",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "a6f23e5939557807e47117fa82e5b09b377d824fcf701544ddc374e7cb770605",
+      "normalized_claim_hash": "cf9b7a1f40dc9143",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "c0fd72da675bf8e9aa9687f6990364291620a7de3d11c5670e8e2fe64a7db537"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "d41508f7b72178ef8a07dca406876a1a26a9e54b5f486e56aa3c5477411b6e89"
+    },
+    {
+      "cluster_id": "review-cluster-bf35f1507f732b1c",
+      "source": "legacy_worklist",
+      "identity_kind": "singleton",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim_hash": "a056adf6f827007d15b20e803d6b4c4180f96522fa68231e348006d0ae2122c3",
+      "normalized_claim_hash": "bf35f1507f732b1c",
+      "recommended_action": "single_manual_review",
+      "project_tag_hashes": [
+        "c0fd72da675bf8e9aa9687f6990364291620a7de3d11c5670e8e2fe64a7db537"
+      ],
+      "source_session_count": 0,
+      "contradiction_set_count": 0,
+      "behavior_scope_hashes": [],
+      "evidence_count": 1,
+      "provenance_member_count": 1,
+      "member_provenance_hash": "f3905f087617ed4bedf9fb07951b45b34f351786419226a72e73c1c267fed938"
+    }
+  ],
+  "visible_status": "Review worklist needs semantic review",
+  "omitted_cluster_count": 0,
+  "note": "Sanitized public operational summary contains aggregate counts and hashes only; claims, tags, session ids, and source paths are excluded."
+}

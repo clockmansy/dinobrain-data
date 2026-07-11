@@ -1,0 +1,16 @@
+{
+  "task_id": "task-redacted-af03c82b2ed13fbddc6ecbcc6288baeb56ed53f7",
+  "status": "completed",
+  "request": "<machine-local-path>",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-08T01:39:35.797Z",
+  "updated_at": "2026-07-08T01:39:58.555Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-08T01:39:58.555Z",
+  "trace_path": ".dino/traces/task-redacted-af03c82b2ed13fbddc6ecbcc6288baeb56ed53f7.json"
+}

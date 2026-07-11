@@ -1,0 +1,46 @@
+{
+  "task_id": "task-20260707-173129-READ-ONLY-CONSENSUS-REVIEW-R",
+  "outcome": "completed",
+  "summary": "Completed read-only R7 consensus review for install/update/new-PC/GitHub recovery equivalence. Inspected the revised unfinished-improvement document and installer/release verifier evidence. Verdict: AGREE because the document accurately treats install/release equivalence as unfinished work with required hard gates rather than claiming current completion.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "R7 verdict: AGREE.",
+    "The reviewed document is adequate as a completion plan for install/update/new-PC equivalence because it requires app/data ref parity, guided hook trust, build/index refresh, launcher/uninstaller proof, ZIP/SHA/tag/asset parity, version drift detection, and verify:goal hard-gating.",
+    "The document correctly identifies missing or unmapped verifiers such as verify:install-equivalence and verify:release-manifest, so it does not false-claim current completion."
+  ],
+  "next_steps": [
+    "Implement or map verify:install-equivalence and verify:release-manifest into verify:goal before any final readiness claim.",
+    "Add durable release manifest proof with app commit, data commit, installer/package version, ZIP path/SHA, tag target, asset evidence when uploaded, and verifier statuses."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-173130-READ-ONLY-CONSENSUS-REVIEW-R.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-173129-371a6fe278f0.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-How-to-note-Install-new-PC-GitHub-re-6e5fd3d7d9df.json",
+    "50_Instances/candidates/candidate-redacted-27d256b6571d52386107d366d701729069c6ed92.json",
+    "50_Instances/candidates/candidate-Project-decision-Decide-whether-this-872cdd765420.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-modify-files.-c3eb44ea0b6a.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 4,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T17:32:14.324Z"
+}

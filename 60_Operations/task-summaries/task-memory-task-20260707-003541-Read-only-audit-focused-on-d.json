@@ -1,0 +1,49 @@
+{
+  "memory_id": "task-memory-task-20260707-003541-Read-only-audit-focused-on-d",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Read-only audit focused on durable source/provenance/source-chunk-claim lineage and graph-health",
+  "summary": "Completed read-only audit of DinoBrain durable source/provenance/source-chunk-claim lineage and graph health. Findings: graph health is correctly degraded but reports all accepted instances as missing source mapping; current source/provenance records exist for RAG guidance, but accepted-memory lineage recognition only checks narrow single-source fields and misses source_paths/source_chunk_path/claim_paths/provenance records. The graph index currently models record/root/folder/tag/kind/wikilink edges, not the provenance/lifecycle/quarantine/usage edges required by the completion contract. Node/npm were unavailable in the shell, so verification was static plus direct file inspection rather than npm verifier execution.",
+  "claim": "Task outcome for dinobrain: Completed read-only audit of DinoBrain durable source/provenance/source-chunk-claim lineage and graph health. Findings: graph health is correctly degraded but reports all accepted instances as missing source mapping; current source/provenance records exist for RAG guidance, but accepted-memory lineage recognition only checks narrow single-source fields and misses source_paths/source_chunk_path/claim_paths/provenance records. The graph index currently models record/root/folder/tag/kind/wikilink edges, not the provenance/lifecycle/quarantine/usage edges required by the completion contract. Node/",
+  "request": "Read-only audit focused on durable source/provenance/source-chunk-claim lineage and graph-health. Inspect graph-health, provenance records, source chunks, accepted memories. Compare to verified RAG guidance. Return P0/P1 findings with file/line evidence, fixes, and consensus candidate statements. Do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "Kept repository source read-only; no code or data files were manually edited by the audit.",
+    "Used DinoBrain protocol context pack and primary RAG guidance sources for comparison.",
+    "Treated graph-health score 0/degraded as honest status, but incomplete lineage coverage remains a blocking graph-health issue."
+  ],
+  "next_steps": [
+    "Teach graph-health/lifecycle/Observatory sourcePath logic to resolve source_paths arrays, source_chunk_path, provenance paths, and reverse claim_paths from .dino/provenance and 30_Sources/chunks.",
+    "Extend wiki-index graph edge types to include source/provenance, lifecycle/quarantine, and context-pack/task usage edges; then make graph health fail when required edge classes are absent.",
+    "Add a real-vault graph-health verifier alongside the current synthetic verifier and assert accepted/source/provenance counts, timestamp freshness, and lineage-edge coverage."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-597152ac463227a6.json",
+    "50_Instances/accepted/behavior-rule-0d2fb5049213d9b3.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/rag-verified-knowledge-v1.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-003543-durable-source-provenance-so.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-003541-Read-only-audit-focused-on-d.json",
+    "snippet": "Completed read-only audit of DinoBrain durable source/provenance/source-chunk-claim lineage and graph health. Findings: graph health is correctly degraded but reports all accepted instances as missing source mapping; current source/provenance records exist for RAG guidance, but accepted-memory lineage recognition only checks narrow single-source fields and misses source_paths/source_chunk_path/claim_paths/provenance records. The graph index currently models record/root/folder/tag/kind/wikilink edges, not the provenance/lifecycle/quarantine/usage edges required by the completion contract. Node/npm were unavailable in the shell, so verification was static plus direct file inspection rather than npm verifier execution."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:39:43.618Z",
+  "updated_at": "2026-07-07T00:39:43.618Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-003541-Read-only-audit-focused-on-d.json",
+    "task_id": "task-20260707-003541-Read-only-audit-focused-on-d",
+    "task_path": ".dino/tasks/task-20260707-003541-Read-only-audit-focused-on-d.json"
+  }
+}

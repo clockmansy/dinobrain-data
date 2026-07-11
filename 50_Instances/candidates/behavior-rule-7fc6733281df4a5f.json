@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-7fc6733281df4a5f",
+  "behavior_rule_id": "behavior-rule-7fc6733281df4a5f",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Add two-PC divergent-history, dirty-tree, and conflict-classification sync fixtures before allowing final readiness to treat GitHub backup as safe.",
+  "behavior_rule": "In similar future work, apply this decision: Add two-PC divergent-history, dirty-tree, and conflict-classification sync fixtures before allowing final readiness to treat GitHub backup as safe.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-095533-Read-and-analyze-the-full-lo.json",
+    "snippet": "Add two-PC divergent-history, dirty-tree, and conflict-classification sync fixtures before allowing final readiness to treat GitHub backup as safe."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-095533-Read-and-analyze-the-full-lo.json",
+      "task_id": "task-20260707-095533-Read-and-analyze-the-full-lo",
+      "signal_kind": "next_step",
+      "snippet": "Add two-PC divergent-history, dirty-tree, and conflict-classification sync fixtures before allowing final readiness to treat GitHub backup as safe."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:medium"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:25:06.936Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:25:06.936Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

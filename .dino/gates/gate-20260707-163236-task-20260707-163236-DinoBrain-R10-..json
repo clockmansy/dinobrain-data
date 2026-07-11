@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-163236-task-20260707-163236-DinoBrain-R10-.",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-163236-DinoBrain-R10-.-.-read-only-",
+  "request": "DinoBrain 미완 개선 계획 검토용 하위 에이전트 R10입니다. 반드시 독립적으로 사용자 의도와 기억/문서를 읽고 판단하세요. 편집하지 말고 read-only입니다.\n\n검토 대상:\n- <machine-local-path> DinoBrain 관련 항목\n- docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md\n- docs\\OS_COMPLETION_CONDITIONS.md\n- docs\\RAG_OS_CONSENSUS_20260707.md\n- package.json, scripts\\verify-closed-loop-goal.mjs, docs\\VERIFICATION.md\n\n역할: end-to-end acceptance / skeptical integrator. 다른 9개 렌즈가 빠뜨릴 수 있는 false-green, missing verifier, stale proof, synthetic-only proof 문제를 찾으세요.\n\n출력 형식: verdict, required_conditions, missing_or_risky_points, evidence.",
+  "generated_at": "2026-07-07T16:32:36.562Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-163236-DinoBrain-R10-.-.-read-only-.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

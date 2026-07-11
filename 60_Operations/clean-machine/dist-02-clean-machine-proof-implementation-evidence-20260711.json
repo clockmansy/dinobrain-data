@@ -1,0 +1,66 @@
+{
+  "version": "dist_02_implementation_evidence_v1",
+  "generated_at": "2026-07-11T12:55:58.123Z",
+  "work_package": "DIST-02",
+  "status": "implementation_ready_external_both_client_proof_pending",
+  "app_commit": "0a26d4394b19aa9f6ed82dbf4b67bb3a781d040f",
+  "data_parent_commit": "35ac5265a667445ea6dc4e6f6ed19677bee5dea8",
+  "implementation": [
+    "ed25519_signed_clean_machine_evidence_bundle",
+    "same_prompt_direct_mcp_and_live_pre_response_proof",
+    "private_restore_receipt_lineage_validation",
+    "anti_forgery_completion_audit_validation",
+    "installer_proof_launcher_and_purge_support",
+    "installer_fault_regression_matrix",
+    "bounded_sequential_command_logging",
+    "observatory_cache_and_heap_limit"
+  ],
+  "verification": {
+    "static_check": "PASS",
+    "clean_machine_equivalence_regression": "PASS",
+    "completion_audit_regression": "PASS",
+    "installer_launcher_regression": "PASS",
+    "installer_transaction_regression": "PASS",
+    "uninstaller_regression": "PASS",
+    "observatory_graph_regression": "PASS",
+    "os_verification": "PASS",
+    "isolated_installer_matrix": {
+      "status": "PASS",
+      "scenarios_passed": 5,
+      "scenarios_total": 5,
+      "elapsed_seconds": 616.2,
+      "peak_working_set_mib": 746.1,
+      "accumulating_log_memory_detected": false
+    },
+    "retrieval": {
+      "cases_passed": 20,
+      "cases_total": 20,
+      "recall": 1.0,
+      "average_noise": 1.3,
+      "maximum_noise": 2
+    },
+    "behavior": {
+      "cases": 12,
+      "average_memory_lift": 85.938
+    },
+    "observatory_memory": {
+      "pre_fix_rss_mib": 270.0,
+      "post_fix_rss_mib": 91.4,
+      "post_fix_heap_used_mib": 9.6,
+      "cache_ttl_ms": 5000
+    }
+  },
+  "completion_boundary": {
+    "dist_02_complete": false,
+    "reason": "A real clean Windows profile with both Codex and Claude Code must produce one valid signed equivalence artifact.",
+    "current_machine_claude_available": false,
+    "required_next_proof": "Run the installed DinoBrain Recovery Equivalence Proof launcher after immutable install and private restore on a clean both-client machine."
+  },
+  "privacy": {
+    "raw_transcripts_included": false,
+    "local_paths_included": false,
+    "credentials_included": false,
+    "private_signing_key_included": false,
+    "raw_logs_policy": "local_only"
+  }
+}

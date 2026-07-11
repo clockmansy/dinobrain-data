@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-153527-task-20260707-153527-You-are-Reviewe",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-153527-You-are-Reviewer-R4-behavior",
+  "request": "You are Reviewer R4: behavior recall, feedback writeback, and lifecycle reviewer for DinoBrain. Work read-only. Inspect <machine-local-path> and repo docs/code: docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, docs\\VERIFICATION.md, src\\behavior-eval.ts, src\\compounding.ts, src\\index.ts, scripts\\verify-closed-loop-goal.mjs, and data state task lifecycle artifacts if useful. Judge whether the plan defines concrete completion conditions for learned behavior recall at completion/handoff/error/direction-change, correction writeback, merge/hold/demotion of contradicted memories, and finish_task lifecycle integrity. Return reviewer_id=R4, verdict=AGREE or REVISE_REQUIRED, blocking_objections[], required_doc_changes[], evidence_files[].",
+  "generated_at": "2026-07-07T15:35:27.838Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-153527-You-are-Reviewer-R4-behavior.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

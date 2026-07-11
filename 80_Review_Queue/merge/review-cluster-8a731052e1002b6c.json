@@ -1,0 +1,37 @@
+{
+  "review_id": "review-cluster-8a731052e1002b6c",
+  "type": "merge_review",
+  "status": "pending",
+  "source": "review_worklist_actions",
+  "source_action_id": "worklist-action-review-cluster-8a731052e1002b6c",
+  "cluster_kind": "user_preference",
+  "representative_claim": "User preference: Do not include quotes, markdown, formatting characters, or trailing punctuation in the title value.",
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-29f9a2ac7d57.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-2e58be95187a.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-69dccedcca9c.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-966b21029e8f.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-9f2f9cec7670.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-a7dc3af395d3.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-a998264ab1a1.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-abb43b01c4e0.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-c112c8a0f390.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-e0e83d128991.json"
+  ],
+  "review_paths": [
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-29f9a2ac7d57.json",
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-2e58be95187a.json",
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-69dccedcca9c.json",
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-966b21029e8f.json",
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-9f2f9cec7670.json",
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-a7dc3af395d3.json",
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-a998264ab1a1.json",
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-abb43b01c4e0.json",
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-c112c8a0f390.json",
+    "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-e0e83d128991.json"
+  ],
+  "required_action": "Create one reviewed accepted memory for the cluster, or explicitly hold/reject the cluster.",
+  "reviewer": "review-worklist-actions",
+  "created_at": "2026-07-07T12:25:36.779Z",
+  "updated_at": "2026-07-07T12:25:36.779Z"
+}

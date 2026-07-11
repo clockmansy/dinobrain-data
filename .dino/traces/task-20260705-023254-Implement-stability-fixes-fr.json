@@ -1,0 +1,58 @@
+{
+  "task_id": "task-20260705-023254-Implement-stability-fixes-fr",
+  "outcome": "completed",
+  "summary": "Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation guards, made node lifecycle apply real archive/hold/merge/provenance repair operations, handled os_begin_task context-pack failures as fail-closed task/gate records, fixed Observatory JSON graph fallback for v2 indexes, bumped app/installer version to 2.0.1, added regression coverage, pushed main and tag v2.0.1. Local release ZIP was built; direct GitHub Release upload could not run because no GITHUB_TOKEN/GH_TOKEN is available in this shell.",
+  "changed_files": [
+    "README.md",
+    "docs/INSTALL.md",
+    "docs/OS_V2_CONTRACT.md",
+    "docs/VERIFICATION.md",
+    "install.ps1",
+    "installer/DinoBrainSetup/DinoBrainSetup.csproj",
+    "installer/DinoBrainSetup/Program.cs",
+    "installer/DinoBrainSetup/app.manifest",
+    "package.json",
+    "package-lock.json",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/verify-codex-hook.mjs",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/verify-installer-hooks.ps1",
+    "scripts/verify-v2-os.mjs",
+    "src/behavior-eval.ts",
+    "src/evaluate-behavior.ts",
+    "src/hybrid-retrieval.ts",
+    "src/index.ts",
+    "src/lifecycle.ts",
+    "src/os-contract.ts"
+  ],
+  "decisions": [
+    "Released as v2.0.1 because this is a stability patch on top of v2.",
+    "Data repo runtime logs and indexes were not committed or pushed automatically.",
+    "Claude Code integration now writes a UserPromptSubmit hook in addition to MCP registration; official Claude Code docs define UserPromptSubmit as firing before Claude processes a prompt."
+  ],
+  "next_steps": [
+    "Confirm the GitHub Actions tag workflow completed and attached DinoBrainSetup.zip to release v2.0.1, or rerun scripts/publish-github-release.ps1 with GITHUB_TOKEN/GH_TOKEN.",
+    "After installing v2.0.1 on another PC, restart/trust Codex and Claude hooks so active sessions reload the new pre-response hook config."
+  ],
+  "used_memory_paths": [
+    ".dino/context-packs/pack-20260705-023257-DinoBrain-v2-stability-fixes.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260705-023257-DinoBrain-v2-stability-fixes.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "DinoBrain release and installer alignment memory",
+    "Claude Code UserPromptSubmit hooks official docs"
+  ],
+  "memory_use": {
+    "used_memory_count": 1,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-05T02:50:10.248Z"
+}

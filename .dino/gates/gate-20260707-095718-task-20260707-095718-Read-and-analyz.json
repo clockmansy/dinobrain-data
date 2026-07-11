@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-095718-task-20260707-095718-Read-and-analyz",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-095718-Read-and-analyze-the-full-lo",
+  "request": "Read and analyze the full local file: <machine-local-path> (1).md. Expected SHA-256: 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7. Do not edit files. Focus: 20-agent validation protocol, same-SHA requirement, full-memory-read requirement, reset rules, and whether this validation method is operationally viable. Return in Korean.",
+  "generated_at": "2026-07-07T09:57:18.324Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-095718-Read-and-analyze-the-full-lo.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

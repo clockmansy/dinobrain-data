@@ -1,0 +1,39 @@
+{
+  "task_id": "task-20260707-001759-RAG-verification-subagent-03",
+  "outcome": "completed",
+  "summary": "Verified official documentation for Weaviate hybrid search, Milvus hybrid search/reranking/BM25 sparse retrieval, and Qdrant hybrid query/reranking. Compared vendor-specific claims conceptually against local user-provided RAG anchor URLs covering Azure AI Search, Elastic, Pinecone, Haystack, and related RAG methodology anchors. No workspace/source files edited.",
+  "changed_files": [],
+  "decisions": [
+    "Use official vendor documentation as source truth for vendor-specific hybrid search and reranking claims.",
+    "Treat user-provided RAG source chunks as conceptual anchors unless their URLs have been fetched and promoted through review.",
+    "Frame sparse/dense/reranking implications separately because the systems expose different fusion and reranking mechanics."
+  ],
+  "next_steps": [
+    "If promoting into DinoBrain memory, create bounded source chunks from the verified vendor docs and attach claims to exact source URLs.",
+    "Evaluate actual retrieval quality with a small golden query set before choosing alpha/weights/fusion/reranker defaults."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/azure-search-rag-overview.json",
+    "30_Sources/chunks/elastic-rag.json",
+    "30_Sources/chunks/pinecone-rag.json",
+    "30_Sources/chunks/haystack-rag-from-scratch.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-001802-RAG-verification-hybrid-sear.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "site:docs.weaviate.io weaviate hybrid search alpha fusion bm25 vector official docs",
+    "site:milvus.io/docs hybrid search WeightedRanker RRFRanker sparse dense official docs",
+    "site:qdrant.tech/documentation hybrid search reranking sparse dense official docs"
+  ],
+  "memory_use": {
+    "used_memory_count": 4,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T00:19:42.677Z"
+}

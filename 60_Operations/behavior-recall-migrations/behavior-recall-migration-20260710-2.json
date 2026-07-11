@@ -1,0 +1,39 @@
+{
+  "version": "behavior_recall_evidence_migration_v1",
+  "status": "healthy",
+  "generated_at": "2026-07-10T23:30:43.795Z",
+  "apply": true,
+  "counts": {
+    "ledger_entries": 79,
+    "missing_evidence": 2,
+    "already_repaired": 0,
+    "planned_repairs": 2,
+    "unresolved": 0,
+    "applied_repairs": 2
+  },
+  "migration_id": "behavior-recall-20260710-233043-42012f37a3ab",
+  "transaction_id": "node-lifecycle-1783726244059-19d0b05e-b53e-4d43-92fc-cfd50c4a1c09",
+  "recovery_ref": "refs/dinobrain-recovery/behavior-recall/behavior-recall-20260710-233043-42012f37a3ab",
+  "repairs": [
+    {
+      "recall_id_hash": "d10533ccbfc95b724196ffb61116d08eb22567cb3f42c8bd80c7d7ad5d44c7b1",
+      "task_id_hash": "80f263537fb346eed864f3e948287a61f56d0bcc7a4215581774b8c485241794",
+      "old_evidence_path_hash": "bb8a6d632b39a4e4ff7e0c0c1743e404e8d55c358a2baa57b26a9b88df53a352",
+      "new_evidence_path_hash": "4b6b3a52d21c86a6c7cf93cc6a8283d1700ab415b97396800818fe5b221fd73b",
+      "source_entry_sha256": "cbca3cf896ea6953d81a93b5bb632e17c30b578442185c20126a27069ac035da",
+      "source_trace_sha256": "a780d32c744b7ae6175c949748919d7902eec768f3b65ea5638f477011172627",
+      "reason_code": "unique_task_trace_match"
+    },
+    {
+      "recall_id_hash": "90e1a2f263397b75e45079bbd570f91298c6d30f72d210149b05060a34dc718f",
+      "task_id_hash": "1cb98e2e883202dc0d41d9d9c0e8d60597e9b736009aeaa07364b4ba0da6dac8",
+      "old_evidence_path_hash": "18e748743415715510278a671e7767fb81f019d411b349ce94014bbd181cd928",
+      "new_evidence_path_hash": "e145f6f647c2e696a0ca07125dff37b005796f0fd584f3220a7ba6cf5da399bc",
+      "source_entry_sha256": "c0a9513968df3878156ed3acb35718d7e0b068a0a765ef724f3b3dfd6c25076c",
+      "source_trace_sha256": "f9ad740df4015113a32da69518820ba5c521aac41da92540d7441365901ea552",
+      "reason_code": "unique_task_trace_match"
+    }
+  ],
+  "unresolved_count": 0,
+  "note": "Public migration summary stores hashes only; task ids and trace paths remain local."
+}

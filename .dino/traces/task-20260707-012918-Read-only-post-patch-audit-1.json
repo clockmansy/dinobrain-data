@@ -1,0 +1,38 @@
+{
+  "task_id": "task-20260707-012918-Read-only-post-patch-audit-1",
+  "outcome": "completed",
+  "summary": "Completed read-only post-patch audit #14 for installer/release verification. Direct install.ps1 invokes verify:os and verify:codex-loop, and GUI verification defaults on. Findings: release/build self-test does not assert embedded install.ps1 contains verify:codex-loop; SkipVerify bypasses both verifiers yet still completes install and starts hook approval; no-Git CLI docs are inconsistent because verify:codex-loop hard-requires git; release SkipBuild/AssetPath can package stale unverified EXE; default release AppRef=main can drift from release commit.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Do not edit files for this audit.",
+    "Treat direct install.ps1 verification inclusion as present but release/build proof as incomplete.",
+    "Treat no-Git default verification as fail-closed rather than silently successful, but document/resolve the contradiction."
+  ],
+  "next_steps": [
+    "Add build-windows-installer self-test assertion for verify:codex-loop in embedded install.ps1.",
+    "Make SkipVerify visibly unsafe or gated by a stronger explicit flag and status artifact.",
+    "Resolve no-Git policy: either require Git upfront everywhere or allow a degraded install only with explicit degraded status and no closed-loop claim.",
+    "Have release packaging re-extract and assert embedded verifier content even when SkipBuild or AssetPath is used."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-2da31daa4ffa0d34.json",
+    "50_Instances/accepted/behavior-rule-db787d417a4f1b06.json",
+    "50_Instances/accepted/behavior-rule-55280a50056e2bbe.json",
+    "50_Instances/accepted/behavior-rule-cec7268246807edc.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-012921-DinoBrain-installer-release-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 4,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T01:31:26.527Z"
+}

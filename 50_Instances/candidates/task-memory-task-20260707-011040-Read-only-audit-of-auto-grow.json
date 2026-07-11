@@ -1,0 +1,64 @@
+{
+  "memory_id": "task-memory-task-20260707-011040-Read-only-audit-of-auto-grow",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: Read-only audit of auto-growth/auto-compound safety: whether finish_task should write accepted r",
+  "summary": "Completed read-only audit of DinoBrain auto-growth/auto-compound safety. Finding: finish_task auto-growth and finish_task-triggered compounding currently write agent-derived task outcomes/behavior rules directly into 50_Instances/accepted, which default retrieval and auto_sync treat as trusted/syncable. Minimum safe change is to route generated growth through 50_Instances/candidates plus 80_Review_Queue/promotion while preserving traces and review-approved retrieval.",
+  "claim": "Task outcome for dinobrain: Completed read-only audit of DinoBrain auto-growth/auto-compound safety. Finding: finish_task auto-growth and finish_task-triggered compounding currently write agent-derived task outcomes/behavior rules directly into 50_Instances/accepted, which default retrieval and auto_sync treat as trusted/syncable. Minimum safe change is to route generated growth through 50_Instances/candidates plus 80_Review_Queue/promotion while preserving traces and review-approved retrieval.",
+  "request": "Read-only audit of auto-growth/auto-compound safety: whether finish_task should write accepted records directly, minimum change preserving closed-loop usefulness while preventing unsafe memory pollution. Identify exact files/tests. Do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "Do not let finish_task auto-growth or auto-compound write generated records directly to 50_Instances/accepted by default.",
+    "Preserve closed-loop usefulness by writing task traces and pending review candidates, then rely on review_candidate to promote accepted records for later Context Packs.",
+    "Keep trace_only for read-only audits so audits do not compound themselves."
+  ],
+  "next_steps": [
+    "Refactor src/index.ts writeFinishGrowthRecords to emit candidate/review records instead of accepted task-memory records.",
+    "Refactor src/compounding.ts promoteSignal to emit behavior-rule candidates/review records by default and reserve accepted writes for review_candidate.",
+    "Update scripts/verify-codex-closed-loop.mjs and scripts/verify-compounding-loop.mjs to assert candidate/review gating before accepted retrieval."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-295abf1038bd399d.json",
+    "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+    "50_Instances/accepted/behavior-rule-c1ad7c4e0066b985.json",
+    "50_Instances/accepted/task-memory-task-20260707-003541-Read-only-audit-focused-on-d.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-011040-DinoBrain-finish_task-auto-g.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-011040-Read-only-audit-of-auto-grow.json",
+    "snippet": "Completed read-only audit of DinoBrain auto-growth/auto-compound safety. Finding: finish_task auto-growth and finish_task-triggered compounding currently write agent-derived task outcomes/behavior rules directly into 50_Instances/accepted, which default retrieval and auto_sync treat as trusted/syncable. Minimum safe change is to route generated growth through 50_Instances/candidates plus 80_Review_Queue/promotion while preserving traces and review-approved retrieval."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T01:15:19.636Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-011040-Read-only-audit-of-auto-grow.json",
+    "task_id": "task-20260707-011040-Read-only-audit-of-auto-grow",
+    "task_path": ".dino/tasks/task-20260707-011040-Read-only-audit-of-auto-grow.json"
+  },
+  "accepted_at": "2026-07-07T01:15:19.636Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-011040-Read-only-audit-of-auto-grow.json",
+  "candidate_id": "task-memory-task-20260707-011040-Read-only-audit-of-auto-grow",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260707-011040-Read-only-audit-of-auto-grow.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

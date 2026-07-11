@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-182533-Continue-DinoBrain-OS-comple",
+  "status": "partial",
+  "request": "Continue DinoBrain OS completion work by closing release-manifest/new-PC equivalence proof gaps without narrowing the active objective.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T18:25:33.352Z",
+  "updated_at": "2026-07-07T18:37:09.899Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T18:37:09.899Z",
+  "trace_path": ".dino/traces/task-20260707-182533-Continue-DinoBrain-OS-comple.json"
+}

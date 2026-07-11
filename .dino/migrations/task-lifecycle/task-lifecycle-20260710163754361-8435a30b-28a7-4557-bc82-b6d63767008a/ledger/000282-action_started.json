@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 282,
+  "event": "action_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "a3de8afa8610ef916d6fb100336ea6f1d4a6b7981b7aebe9224e4983745e6ab7",
+  "payload": {
+    "index": 139,
+    "task_id": "task-20260707-164055-Final-consensus-reviewer-F2.",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "92db0db361ee9a23af2ac04b781fb8a6d340842c4d89d17e8a03537107b6ab56",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "030fcabf1031a40c110601b020eb5e14ef54b77b1517e2c32f411eac17cef33b"
+}

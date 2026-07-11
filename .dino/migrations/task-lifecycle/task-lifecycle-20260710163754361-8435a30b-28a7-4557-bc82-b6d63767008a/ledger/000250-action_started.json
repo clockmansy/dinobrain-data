@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 250,
+  "event": "action_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "b02eacc3daa2f9869f09638af4628b448aed27ee2a8da27f8b9f7d07ebb23fdd",
+  "payload": {
+    "index": 123,
+    "task_id": "task-20260710-022158-Stop-opening-new-files-now.-",
+    "action": "reconstruct_blocked_missing_trace",
+    "task_sha256_before": "8db96212c128dc1e745df4ede4f0cb381ec40fa87493714f7085c2b208d2a7cd",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "0512be6614fa329d2c1291a24e2f81581e4167bda801ca5e313f85ce13584187"
+}

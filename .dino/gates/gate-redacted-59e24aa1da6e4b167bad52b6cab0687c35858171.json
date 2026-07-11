@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-redacted-59e24aa1da6e4b167bad52b6cab0687c35858171",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-redacted-7654cf44180e16f6390c7d50b23a1b93d6918fef",
+  "request": "Repo: <machine-local-path> Plan doc: <machine-local-path> (1).md. Data root: <machine-local-path> Compare P1-09 Event-Triggered Behavior Recall and feedback/correction writeback expectations against current DinoBrain. Return implemented/partial/missing, especially event hooks and performed/skipped/not_applicable logging. Do not edit files.",
+  "generated_at": "2026-07-07T11:34:55.352Z",
+  "context_pack_path": ".dino/context-packs/pack-redacted-7f215af5633dd4990709f7e05146c7a1f127031f.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

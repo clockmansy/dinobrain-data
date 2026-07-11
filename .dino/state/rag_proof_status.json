@@ -1,0 +1,34 @@
+{
+  "version": "rag_proof_v2",
+  "status": "healthy",
+  "generated_at": "2026-07-11T05:26:38.598Z",
+  "data_root": "<machine-local-path>",
+  "rag_golden_path": ".dino/evaluations/rag-golden.json",
+  "rag_golden_version": 2,
+  "rag_golden_sha256": "387e06227f20f783d6455c85399360ef0054818a8a1a764b3f52f9c6b7298ba0",
+  "rag_golden_source": "explicit_v2",
+  "dense_vector_path": ".dino/index/dense-vectors.json",
+  "source_behavior_golden_path": null,
+  "counts": {
+    "golden_cases": 18,
+    "record_vectors": 81,
+    "query_vectors": 18,
+    "record_metadata": 81,
+    "missing_expected_paths": 0
+  },
+  "dense_vector": {
+    "provider": "huggingface_transformers_feature_extraction_v1",
+    "model": "Xenova/all-MiniLM-L6-v2",
+    "dimensions": 384,
+    "semantic_embedding_provider": true,
+    "cache_dir": "<machine-local-path>",
+    "index_schema_version": 2
+  },
+  "vector_migration": {
+    "status": "same_identity_updated",
+    "migration_id": "vector-index-20260711011138-c2c3b582b3a5",
+    "manifest_path": ".dino/index/vector-migrations/vector-index-20260711011138-c2c3b582b3a5/manifest.json"
+  },
+  "warnings": [],
+  "visible_status": "RAG proof artifacts ready with semantic embeddings"
+}

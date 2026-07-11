@@ -1,0 +1,64 @@
+{
+  "memory_id": "task-memory-task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: 사용자가 제공한 공용 OS RAG 학습 자료(URL 앵커, 구성요소별 자료, 내부 근거자료)를 DinoBrain OS에 공개-safe한 durable knowledge/pr",
+  "summary": "Registered the user-provided public OS RAG learning packet as DinoBrain durable knowledge. The representative URL anchors remain anchor-only/unverified source candidates, while a new accepted memory records how future sessions should use them for LLM Wiki source/chunk/claim lineage, contextual retrieval, hybrid retrieval, reranking, canaries, and behavior evaluation.",
+  "claim": "Task outcome for DinoBrain: Registered the user-provided public OS RAG learning packet as DinoBrain durable knowledge. The representative URL anchors remain anchor-only/unverified source candidates, while a new accepted memory records how future sessions should use them for LLM Wiki source/chunk/claim lineage, contextual retrieval, hybrid retrieval, reranking, canaries, and behavior evaluation.",
+  "request": "사용자가 제공한 공용 OS RAG 학습 자료(URL 앵커, 구성요소별 자료, 내부 근거자료)를 DinoBrain OS에 공개-safe한 durable knowledge/provenance anchor로 등록하고, 나중 검색/검증/구현 로드맵에서 활용 가능하게 분류한다.",
+  "outcome": "completed",
+  "decisions": [
+    "Treat the public OS RAG material as a source-anchor and implementation backlog, not as verified source truth.",
+    "Do not invent the missing upstream 55-anchor list; only exact local URLs are registered.",
+    "Promote the durable lesson into accepted memory so future sessions know to use source/chunk/claim lineage plus retrieval canaries and behavior evaluation."
+  ],
+  "next_steps": [
+    "Import the exact remaining upstream RAG URL list if available.",
+    "Fetch and chunk high-priority sources one at a time, then review concrete claims before using them as factual support.",
+    "Improve ranking so accepted knowledge and source catalogs outrank broad operational behavior rules for retrieval-intent queries."
+  ],
+  "used_memory_paths": [
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "30_Sources/chunks/rag-survey.json",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf.json",
+    "snippet": "Registered the user-provided public OS RAG learning packet as DinoBrain durable knowledge. The representative URL anchors remain anchor-only/unverified source candidates, while a new accepted memory records how future sessions should use them for LLM Wiki source/chunk/claim lineage, contextual retrieval, hybrid retrieval, reranking, canaries, and behavior evaluation."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-06T23:36:39.543Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf.json",
+    "task_id": "task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf",
+    "task_path": ".dino/tasks/task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf.json"
+  },
+  "accepted_at": "2026-07-06T23:36:39.543Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf.json",
+  "candidate_id": "task-memory-task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

@@ -1,0 +1,38 @@
+{
+  "task_id": "task-20260707-023303-Read-only-audit-focused-only",
+  "outcome": "completed",
+  "summary": "Read-only audit of durable source/provenance surfaces. Source chunks and provenance files are structurally present, but live graph health is stale against current accepted/index counts, and accepted claim-source linkage has a missing/non-path source plus no accepted records directly linked through recognized source fields to 30_Sources/chunks. Existing verifiers passed graph-health fixtures and public-data safety reported degraded warnings but no blockers.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Kept audit read-only for source files and did not edit application or durable memory records.",
+    "Treated source chunk records, .dino/provenance records, accepted instance source fields, wiki index, graph-health file, and verifier outputs as evidence.",
+    "Classified graph-health freshness and claim-source schema mismatch as blockers for durable provenance confidence."
+  ],
+  "next_steps": [
+    "Refresh graph health from the current corpus after fixing schema/source linkage.",
+    "Normalize accepted memory source fields so source chunk paths are represented in fields graph-health reads, or teach graph-health to read linked_records.representative_source_chunks.",
+    "Replace prose evidence source in rag-public-os-learning-packet.json with an existing durable path or classify it outside source_mapping checks."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/langchain-rag.json",
+    "30_Sources/chunks/pinecone-rag.json",
+    "30_Sources/chunks/llamaindex-rag.json",
+    "30_Sources/chunks/microsoft-graphrag.json",
+    "30_Sources/chunks/openai-retrieval-guide.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-023305-Read-only-audit-durable-sour.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T02:37:55.090Z"
+}

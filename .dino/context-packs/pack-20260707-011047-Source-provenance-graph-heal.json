@@ -1,0 +1,301 @@
+{
+  "pack_id": "pack-20260707-011047-Source-provenance-graph-heal",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "Source/provenance graph health handling for evidence.source, source.trace_path, source_paths in graph-health, lifecycle, observatory, and verify-graph-health. What prior decisions or constraints matter for a read-only audit?",
+  "created_at": "2026-07-07T01:10:47.077Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 237,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 405,
+  "index_candidate_count": 237,
+  "index_total_candidate_count": 237,
+  "index_matching_terms": [
+    "30_sources",
+    "5-observatory",
+    "accepted_without_source_count",
+    "audit",
+    "audit_id",
+    "audit_memory_use",
+    "audit-20260706-232502-task-20260706-231712-os_completion",
+    "audited",
+    "audits",
+    "candidate_source",
+    "claim-provenance",
+    "codex-session-knowledge-local_evidence_over_claims",
+    "constraints",
+    "create_source_chunk",
+    "critical_consensus_audit",
+    "decisions",
+    "direct_user_source_count",
+    "direct-source",
+    "evidence_",
+    "evidence_so",
+    "evidence_sourc",
+    "evidence_sources",
+    "evidence-backed",
+    "false-healthy",
+    "graph",
+    "graph-aware",
+    "graph-based",
+    "graph-health",
+    "graph-level",
+    "graph-only",
+    "graph-rag",
+    "graph-structured",
+    "graphrag",
+    "health",
+    "healthy",
+    "high-priority",
+    "lifecycle",
+    "lifecycle-clean",
+    "local_evidence_over_claims",
+    "local-only-source",
+    "memory-priority",
+    "microsoft-graphrag",
+    "observatory",
+    "observatory-first",
+    "prior",
+    "prioritize",
+    "priority",
+    "provenance",
+    "provenance-aware",
+    "provenance-like",
+    "read-only",
+    "single-source",
+    "source_chunk",
+    "source_chunk_id",
+    "source_chunk_path",
+    "source_map",
+    "source_mapping_missing_count",
+    "source_paths",
+    "source_paths-only",
+    "source_status",
+    "source_uri",
+    "source-anchor",
+    "source-aware",
+    "source-backed",
+    "source-bound",
+    "source-chunk-claim",
+    "source-lineage",
+    "source-only",
+    "source-provenance",
+    "source-truth",
+    "sourced",
+    "sources",
+    "supplemental_source_count",
+    "task-20260707-003541-read-only-audit-f",
+    "task-20260707-003541-read-only-audit-focused-on-d",
+    "task-20260707-003551-read-only-audit-foc",
+    "task-20260707-003551-read-only-audit-focused-on-b",
+    "task-20260707-003908-read-only-audit-focused",
+    "task-20260707-003908-read-only-audit-focused-on-i",
+    "task-20260707-004146-read-only-audit-focused-only",
+    "task-20260707-004215-read-only-consensus-synthesi",
+    "task-20260707-005743-read-only-audit-focused-only",
+    "task-20260707-005746-read-only-audit-focused-only",
+    "task-20260707-005753-read-only-audit-of-",
+    "task-20260707-005753-read-only-audit-of-finish_ta",
+    "task-20260707-005753-read-only-audit-of-session-a",
+    "task-memory-task-20260707-003541-read-only-audit-focused-on-d",
+    "task-memory-task-20260707-003551-read-only-audit-focused-on-b",
+    "task-memory-task-20260707-003606-read-only-audit-focused-on-n",
+    "task-memory-task-20260707-003908-read-only-audit-focused-on-i",
+    "task-memory-task-20260707-004146-read-only-audit-focused-only",
+    "task-memory-task-20260707-004215-read-only-consensus-synthesi",
+    "task-memory-task-20260707-005743-read-only-audit-focused-only",
+    "task-memory-task-20260707-005746-read-only-audit-focused-only",
+    "task-memory-task-20260707-005753-read-only-audit-of-finish_ta",
+    "task-memory-task-20260707-005753-read-only-audit-of-session-a",
+    "trace_path"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 407,
+  "items": [
+    {
+      "path": "30_Sources/chunks/microsoft-graphrag.json",
+      "kind": "curated_record",
+      "title": "Microsoft GraphRAG",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "graph-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 9.133,
+      "reasons": [
+        "path_matched:graph",
+        "title_matched:graph",
+        "tags_matched:graph",
+        "chunk_matched:graph",
+        "dense_lexical:0.75",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/openai-retrieval-guide.json",
+      "kind": "curated_record",
+      "title": "OpenAI Retrieval guide",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "retrieval",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 8.958,
+      "reasons": [
+        "chunk_matched:provenance",
+        "dense_lexical:0.78",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langsmith-evaluation-concepts.json",
+      "kind": "curated_record",
+      "title": "LangSmith evaluation concepts",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "evaluation",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 8.582,
+      "reasons": [
+        "dense_lexical:0.81",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-survey.json",
+      "kind": "curated_record",
+      "title": "RAG-Survey",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "survey",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 8.573,
+      "reasons": [
+        "dense_lexical:0.77",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/pinecone-rag.json",
+      "kind": "curated_record",
+      "title": "Pinecone RAG explanation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 8.572,
+      "reasons": [
+        "dense_lexical:0.76",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/haystack-first-rag-pipeline.json",
+      "kind": "curated_record",
+      "title": "Haystack first RAG pipeline",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 8.569,
+      "reasons": [
+        "dense_lexical:0.75",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/ragas-evaluation.json",
+      "kind": "curated_record",
+      "title": "RAGAS evaluation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "evaluation",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 8.566,
+      "reasons": [
+        "dense_lexical:0.75",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/haystack-rag-from-scratch.json",
+      "kind": "curated_record",
+      "title": "Haystack RAG from scratch",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 8.564,
+      "reasons": [
+        "dense_lexical:0.74",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    }
+  ]
+}

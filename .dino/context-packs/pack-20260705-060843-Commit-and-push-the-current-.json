@@ -1,0 +1,167 @@
+{
+  "pack_id": "pack-20260705-060843-Commit-and-push-the-current-",
+  "pack_type": "standard",
+  "os_version": "2.0.1",
+  "question": "Commit and push the current DinoBrain OS v2.0.2 P0 improvement work from this thread. App repo push is authorized; data repo changes must be policy-checked before any push because it contains memory logs.",
+  "created_at": "2026-07-05T06:08:43.757Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense lexical retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 15,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 15,
+  "index_total_candidate_count": 15,
+  "index_matching_terms": [
+    "approved",
+    "current",
+    "data-specific",
+    "explicit",
+    "explicitly",
+    "happen",
+    "metadata",
+    "title",
+    "without",
+    "workflows"
+  ],
+  "included_item_count": 6,
+  "excluded_record_count": 10,
+  "items": [
+    {
+      "path": "60_Operations/README.md",
+      "kind": "curated_record",
+      "title": "60_Operations",
+      "summary": "Operating policies and runbooks.",
+      "tags": [],
+      "score": 8.706,
+      "reasons": [
+        "chunk_matched:work,this,data,it",
+        "bm25:this",
+        "dense_lexical:1.00",
+        "rank_fusion:rrf",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/README.md",
+      "kind": "curated_record",
+      "title": "30_Sources",
+      "summary": "Source records and verification notes.",
+      "tags": [],
+      "score": 8.629,
+      "reasons": [
+        "chunk_matched:this,app,it",
+        "bm25:this",
+        "dense_lexical:0.95",
+        "rank_fusion:rrf",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-060843-Commit-and-push-the-current-.json",
+      "kind": "recent_task",
+      "title": "Task: Commit and push the current DinoBrain OS v2.0.2 P0 improvement work from this thread. App repo p",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 4.918,
+      "reasons": [
+        "path_matched:commit,push,current,it",
+        "title_matched:commit,push,current,dinobrain",
+        "summary_matched:dinobrain",
+        "chunk_matched:commit,push,current,dinobrain",
+        "bm25:commit,push,current,dinobrain,os",
+        "dense_lexical:11.42",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-",
+      "summary": "status=completed | Implemented DinoBrain OS v2 P0 improvements from the review report: honest lexical fallback retrieval mode, optional dense vector cosine retrieval, stopword/high-frequency token filtering, verified os_gate context evidence, sensitive prompt auto-escalation, event-backed memory audit artifact verification, SQLite/wiki index version bumps, v2.0.2 version bump, docs, and regression coverage.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 2.013,
+      "reasons": [
+        "path_matched:dinobrain,os,v2,p0",
+        "title_matched:dinobrain,os,v2,p0",
+        "summary_matched:dinobrain,os,v2,p0",
+        "chunk_matched:dinobrain,os,v2,p0",
+        "bm25:dinobrain,os,v2,p0,memory",
+        "dense_lexical:1.76",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2-.json",
+      "kind": "recent_task",
+      "title": "Task: QA/code review DinoBrain v2 changes comprehensively, focusing on stability of fail-closed pre-re",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 1.863,
+      "reasons": [
+        "path_matched:dinobrain,v2",
+        "title_matched:dinobrain,os,v2,changes",
+        "summary_matched:dinobrain",
+        "chunk_matched:dinobrain,os,v2,changes",
+        "bm25:dinobrain,os,v2,changes",
+        "dense_lexical:1.37",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-022738-QA-code-review-DinoBrain-v2-",
+      "summary": "status=completed | Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than executing merge/hold/delete/provenance rep",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 1.769,
+      "reasons": [
+        "path_matched:dinobrain,v2",
+        "title_matched:dinobrain,v2",
+        "summary_matched:dinobrain,os,v2,app",
+        "chunk_matched:dinobrain,v2",
+        "bm25:dinobrain,os,v2,changes",
+        "dense_lexical:1.32",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    }
+  ]
+}

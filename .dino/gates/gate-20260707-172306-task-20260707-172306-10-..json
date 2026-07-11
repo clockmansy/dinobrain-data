@@ -1,0 +1,28 @@
+{
+  "gate_id": "gate-20260707-172306-task-20260707-172306-10-.",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-172306-10-.",
+  "request": "??? ???? ?? ??? ????, ??? ??/??/?? ?? ??? ???? ?? ???? 10?? ??? ?? ???? ??? ????.",
+  "generated_at": "2026-07-07T17:23:06.982Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-172306-10-..json",
+  "context_verification_status": "verified",
+  "declared_has_context_pack": true,
+  "declared_context_item_count": 8,
+  "verified_context_item_count": 8,
+  "context_declaration_mismatch": false,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

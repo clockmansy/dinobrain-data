@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260706-160642-Independent-read-only-comple",
+  "outcome": "blocked",
+  "summary": "Closed stale started task as abandoned because no terminal trace or grounded completion evidence was found.",
+  "changed_files": [],
+  "decisions": [
+    "No existing trace was found for this stale task.",
+    "Lifecycle settlement records this as blocked/abandoned, not as successful completion evidence."
+  ],
+  "next_steps": [
+    "Re-run or reconstruct the original work if this task's result is still needed."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [],
+  "search_queries": [],
+  "finished_at": "2026-07-07T16:47:05.313Z",
+  "settlement": {
+    "version": "task_lifecycle_settlement_v1",
+    "reason_code": "stale_task_without_trace_blocked",
+    "previous_status": "started",
+    "previous_updated_at": "2026-07-06T16:06:42.125Z"
+  }
+}

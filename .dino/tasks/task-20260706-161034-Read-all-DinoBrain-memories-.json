@@ -1,0 +1,22 @@
+{
+  "task_id": "task-20260706-161034-Read-all-DinoBrain-memories-",
+  "status": "completed",
+  "request": "Read all DinoBrain memories and derive the user's desired DinoBrain OS completion conditions as a document, with agreement from 16 independent subagents who each inspect the memories and user direction. Iterate until every subagent agrees with the completion conditions.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-06T16:10:34.620Z",
+  "updated_at": "2026-07-07T16:47:05.313Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-06T17:01:12.787Z",
+  "trace_path": ".dino/traces/task-20260706-161034-Read-all-DinoBrain-memories.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v1",
+    "reason_code": "started_task_repaired_from_grounded_trace",
+    "settled_at": "2026-07-07T16:47:05.313Z",
+    "trace_path": ".dino/traces/task-20260706-161034-Read-all-DinoBrain-memories.json"
+  }
+}

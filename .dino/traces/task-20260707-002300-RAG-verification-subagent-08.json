@@ -1,0 +1,42 @@
+{
+  "task_id": "task-20260707-002300-RAG-verification-subagent-08",
+  "outcome": "completed",
+  "summary": "Read official Ragas, LangSmith, Hugging Face MTEB, and Sentence Transformers/SBERT evaluation documentation for RAG evaluation and behavior proof. Produced verified claims for DinoBrain memory-on vs memory-off and retrieval-quality evaluation design. No source files were edited.",
+  "changed_files": [],
+  "decisions": [
+    "DinoBrain evaluation should separate retrieval-component quality from end-to-end behavior proof.",
+    "Memory-on vs memory-off should be tested as paired experiments over the same prompts, model, evaluator, and dataset.",
+    "Embedding benchmarks such as MTEB and STS should be used as context, not as substitutes for DinoBrain-specific retrieval and behavior evaluation."
+  ],
+  "next_steps": [
+    "If implementation follows, encode a small frozen regression set with expected memory paths, relevant record IDs, and memory-on/off acceptance thresholds.",
+    "Add hard-negative retrieval cases and source-provenance checks before trusting semantic similarity scores."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+    "50_Instances/accepted/behavior-rule-49540fb326024225.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-002305-RAG-evaluation-and-behavior-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "https://docs.ragas.io/en/stable/",
+    "https://docs.langchain.com/langsmith/evaluation-concepts",
+    "https://huggingface.co/blog/mteb",
+    "https://huggingface.co/papers/2210.07316",
+    "https://sbert.net/docs/sentence_transformer/usage/semantic_textual_similarity.html",
+    "https://sbert.net/docs/package_reference/sentence_transformer/evaluation.html",
+    "https://sbert.net/docs/sentence_transformer/usage/mteb_evaluation.html"
+  ],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 7
+  },
+  "finished_at": "2026-07-07T00:24:32.645Z"
+}

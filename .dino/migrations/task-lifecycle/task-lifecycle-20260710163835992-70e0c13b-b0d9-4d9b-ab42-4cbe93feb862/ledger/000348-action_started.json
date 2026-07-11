@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 348,
+  "event": "action_started",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "682e711b62a6ea1971672f985ba2811aac28819ad6f02f8e05d6166ddd7d4b36",
+  "payload": {
+    "index": 172,
+    "task_id": "task-20260707-125919-You-are-Role-10-adversarial-",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "d56d24fe81123cb0864303409879410ab6021e65d0ec3c5bc38bc3a83687061b",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "37c05b87ba00df8b07f82d0d09d0ae42090db65a74b001e47f3a8fb9ed2dffb2"
+}

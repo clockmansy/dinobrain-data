@@ -1,0 +1,48 @@
+{
+  "task_id": "task-20260707-153653-Address-R3-revise-required-o",
+  "outcome": "partial",
+  "summary": "Resolved reviewer objections in the DinoBrain unfinished OS completion plan. Added safe-readable Codex native rules and Claude custom instruction surfaces to the native instruction authority gate, added regression fixtures for Codex rules drift and Claude instruction drift, documented those completion requirements, and made verify:goal refuse to count local_text_hashing_v1 deterministic RAG canaries as completion-grade semantic RAG/answer-quality evidence. Re-ran reviewer consensus until ten explicit AGREE results were obtained, treating completed=null subagent outputs as invalid. App and selected data evidence were committed and pushed.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>"
+  ],
+  "decisions": [
+    "Do not count completed=null subagent outputs as reviewer agreement.",
+    "Count the final explicit install/recovery parity agreement as R10B because repeated R9/install-parity agent runs returned empty outputs.",
+    "Keep deterministic RAG canaries useful as scaffold health, but require semantic provider and generated-answer quality evidence for completion-grade RAG in verify:goal.",
+    "Commit only the selected native authority state evidence to the data repo, leaving raw hook/subagent candidate/context backlog uncommitted."
+  ],
+  "next_steps": [
+    "Resolve task lifecycle finish-gate blockers and apply safe deterministic settlement after review.",
+    "Implement completion-grade semantic retrieval provider and generated-answer RAG evaluation.",
+    "Implement P0-06 source/chunk/claim lineage gate, then behavior recall/writeback and Observatory evidence gates."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-153653-Address-R3-revise-required-o.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 6,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T15:58:03.943Z"
+}

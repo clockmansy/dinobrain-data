@@ -1,0 +1,44 @@
+{
+  "version": "encrypted_restore_status_v1",
+  "status": "healthy",
+  "generated_at": "2026-07-11T09:12:32.412Z",
+  "drill_kind": "isolated_fixture",
+  "archive_version": "dinobrain_private_backup_v1",
+  "inventory_policy_version": "private_inventory_20260711_v1",
+  "cipher": "aes-256-gcm",
+  "kdf": "scrypt",
+  "implementation_sha256": "6ab0d49ec7a2e4ff4d8fb1feea6ea347ae3db04275743e9156d030eb8bfecdfc",
+  "app_commit_at_verification": "6ec243492944b699d984c82128722c1502f1b6bc",
+  "counts": {
+    "backed_up_files": 6,
+    "restored_files": 6,
+    "plaintext_bytes": 8388789
+  },
+  "resource_usage": {
+    "rss_delta_bytes": 7659520,
+    "max_rss_delta_bytes": 201326592,
+    "bounded_streaming": true
+  },
+  "scenarios": [
+    "authenticated_restore",
+    "plaintext_not_visible_in_archive",
+    "source_identity_available_for_checkout",
+    "wrong_key_blocked",
+    "truncated_archive_blocked",
+    "stale_backup_blocked",
+    "source_identity_mismatch_blocked",
+    "existing_target_conflict_blocked",
+    "explicit_private_overwrite_verified",
+    "recovery_key_inside_vault_blocked",
+    "path_escape_blocked",
+    "archive_inside_source_root_blocked",
+    "existing_archive_not_overwritten",
+    "cli_keygen_create_inspect_restore",
+    "git_clone_plus_private_restore"
+  ],
+  "proof_hashes": {
+    "archive_sha256": "67422e47995177e197e617627087c49c21444efb16477ce001020a9e2cd50330",
+    "inventory_sha256": "dbaa31d9ac3d8c828a4c5278e1d88fa17434e4107b4e9e208a268830c224cfc9",
+    "key_id": "7f6e55dd353da5594e8eb2ec1ed6fced"
+  }
+}

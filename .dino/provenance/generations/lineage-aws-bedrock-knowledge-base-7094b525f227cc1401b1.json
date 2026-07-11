@@ -1,0 +1,46 @@
+{
+  "version": "source_lineage_generation_v1",
+  "type": "lineage_generation",
+  "generation_id": "lineage-aws-bedrock-knowledge-base-7094b525f227cc1401b1",
+  "generation_status": "published",
+  "transaction_id": "source-lineage-1783735482065-d0e5c368-63fc-4b22-a318-5a8c1f55cf14",
+  "source_snapshot_path": "30_Sources/fetched/aws-bedrock-knowledge-base.json",
+  "source_chunk_path": "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+  "provenance_path": ".dino/provenance/aws-bedrock-knowledge-base.json",
+  "source_content_sha256": "242c76f0311c3f2162d33097d975f5a8205de3fa3b7b7bd52624c37a4686d9ee",
+  "chunk_sha256": "242c76f0311c3f2162d33097d975f5a8205de3fa3b7b7bd52624c37a4686d9ee",
+  "verification_status": "verified_summary",
+  "verified_at": "2026-07-07",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": "30_Sources/fetched/aws-bedrock-knowledge-base.json",
+      "after_sha256": "5fd03c46af4519556c2d4a5dfab165d32f0681c5146656dbf8e7634ce51da8b1"
+    },
+    {
+      "path": "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+      "after_sha256": "2243243cf2e9368a791bfc47de21b5bcb8f631147bb43eb59ffebccbad5a1daa"
+    },
+    {
+      "path": ".dino/provenance/aws-bedrock-knowledge-base.json",
+      "after_sha256": "fda2a3b3d801782bac5af6efc6a68c37af56883bf9c5b3069e5a387666048359"
+    }
+  ],
+  "created_at": "2026-07-11T02:04:42.065Z",
+  "updated_at": "2026-07-11T02:04:42.065Z"
+}

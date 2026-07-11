@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-Error-or-fix-note-The-tasks-typicall-9574e36e38f3",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-9574e36e38f3.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-155458-3b7671dfa893.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T15:54:59.454Z",
+  "updated_at": "2026-07-07T15:54:59.454Z"
+}

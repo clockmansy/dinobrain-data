@@ -1,0 +1,37 @@
+{
+  "review_id": "review-cluster-93e818efc1cb2e79",
+  "type": "merge_review",
+  "status": "pending",
+  "source": "review_worklist_actions",
+  "source_action_id": "worklist-action-review-cluster-93e818efc1cb2e79",
+  "cluster_kind": "project_decision",
+  "representative_claim": "Project decision: Fill the structured title field with plain text.",
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-11a142c7e381.json",
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-16bef75ae27d.json",
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-507c07d6a725.json",
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-6bc12cce67bc.json",
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-6fb864fd9c1e.json",
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-71f2b98bd0b2.json",
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-8de2a27412c6.json",
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-bb7b7feaf409.json",
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-e3d103d907c7.json",
+    "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-f48c61acecd9.json"
+  ],
+  "review_paths": [
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-11a142c7e381.json",
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-16bef75ae27d.json",
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-507c07d6a725.json",
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-6bc12cce67bc.json",
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-6fb864fd9c1e.json",
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-71f2b98bd0b2.json",
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-8de2a27412c6.json",
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-bb7b7feaf409.json",
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-e3d103d907c7.json",
+    "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-f48c61acecd9.json"
+  ],
+  "required_action": "Create one reviewed accepted memory for the cluster, or explicitly hold/reject the cluster.",
+  "reviewer": "review-worklist-actions",
+  "created_at": "2026-07-07T12:25:36.779Z",
+  "updated_at": "2026-07-07T12:25:36.779Z"
+}

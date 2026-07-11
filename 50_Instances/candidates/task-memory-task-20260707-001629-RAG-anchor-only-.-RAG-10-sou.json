@@ -1,0 +1,65 @@
+{
+  "memory_id": "task-memory-task-20260707-001629-RAG-anchor-only-.-RAG-10-sou",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: 사용자가 제공한 RAG 관련 자료를 anchor-only 상태에서 검증 완료 지식으로 승격한다. 외부 RAG 문서/논문/공식 문서를 실제 확인하고, 10개 하위 에이전트가 ",
+  "summary": "Directly opened the user-supplied RAG methodology links, used 10 subagents for focused review and purity filtering, promoted the material into a verified RAG knowledge pack, updated source chunks/provenance from anchor-only to verified_summary, rebuilt wiki/SQLite indexes, and verified live DinoBrain search can retrieve the new knowledge pack.",
+  "claim": "Task outcome for DinoBrain: Directly opened the user-supplied RAG methodology links, used 10 subagents for focused review and purity filtering, promoted the material into a verified RAG knowledge pack, updated source chunks/provenance from anchor-only to verified_summary, rebuilt wiki/SQLite indexes, and verified live DinoBrain search can retrieve the new knowledge pack.",
+  "request": "사용자가 제공한 RAG 관련 자료를 anchor-only 상태에서 검증 완료 지식으로 승격한다. 외부 RAG 문서/논문/공식 문서를 실제 확인하고, 10개 하위 에이전트가 영역별 학습 내용을 상호검증/비교한 뒤, 순도 높은 source/chunk/claim knowledge로 정제하여 DinoBrain data repo에 저장하고 검증/푸시한다.",
+  "outcome": "completed",
+  "decisions": [
+    "Treat exact user-provided RAG URLs as directly verified summary sources, not merely anchor-only backlog.",
+    "Do not store raw full external pages; store bounded paraphrased claims with source URLs and provenance links.",
+    "Accept core RAG, hybrid retrieval, reranking, source/chunk/claim lineage, GraphRAG overlay, and evaluation guidance into DinoBrain memory.",
+    "Hold paper/provider-specific claims unless source-bound and refreshed; reject overgeneralizations such as RAG guaranteeing truth or lexical fallback equaling dense hybrid retrieval.",
+    "Keep current live retrieval mode labeled lexical_fallback_v2 until a real embedding provider is configured."
+  ],
+  "next_steps": [
+    "Add retrieval canaries for synonym recall, Korean-English mixed queries, provenance-required answers, stale-memory rejection, and memory-on vs memory-off behavior.",
+    "Implement or configure a real dense embedding provider before claiming live dense hybrid retrieval.",
+    "Address graph-health warning accepted_instance_source_mapping_missing in a later provenance-mapping pass."
+  ],
+  "used_memory_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "50_Instances/accepted/rag-verified-knowledge-v1.json",
+    "30_Sources/chunks/*.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-001629-RAG-anchor-only-.-RAG-10-sou.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-001629-RAG-anchor-only-.-RAG-10-sou.json",
+    "snippet": "Directly opened the user-supplied RAG methodology links, used 10 subagents for focused review and purity filtering, promoted the material into a verified RAG knowledge pack, updated source chunks/provenance from anchor-only to verified_summary, rebuilt wiki/SQLite indexes, and verified live DinoBrain search can retrieve the new knowledge pack."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:32:59.855Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-001629-RAG-anchor-only-.-RAG-10-sou.json",
+    "task_id": "task-20260707-001629-RAG-anchor-only-.-RAG-10-sou",
+    "task_path": ".dino/tasks/task-20260707-001629-RAG-anchor-only-.-RAG-10-sou.json"
+  },
+  "accepted_at": "2026-07-07T00:32:59.855Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-001629-RAG-anchor-only-.-RAG-10-sou.json",
+  "candidate_id": "task-memory-task-20260707-001629-RAG-anchor-only-.-RAG-10-sou",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260707-001629-RAG-anchor-only-.-RAG-10-sou.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

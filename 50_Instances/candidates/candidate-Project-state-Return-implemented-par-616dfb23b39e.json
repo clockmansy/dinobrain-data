@@ -1,0 +1,39 @@
+{
+  "candidate_id": "candidate-Project-state-Return-implemented-par-616dfb23b39e",
+  "status": "held",
+  "claim": "Project state: Return implemented/partial/missing and blockers.",
+  "category": "project_state",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "Return implemented/partial/missing and blockers.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-113802-fc03c8ed2e52.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-113802-fc03c8ed2e52",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_state",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-113802-fc03c8ed2e52",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T11:38:03.338Z",
+  "updated_at": "2026-07-07T12:25:36.779Z",
+  "quarantine": true,
+  "hold_reason": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+  "worklist_cluster_id": "review-cluster-0285efae8d22a4e2",
+  "review_notes": "Held by review worklist action; candidate is low-signal or ephemeral and must not enter hot memory without manual confirmation.",
+  "reviewed_by": "review-worklist-actions",
+  "reviewed_at": "2026-07-07T12:25:36.779Z"
+}

@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-163205-task-20260707-163205-DinoBrain-R7-.-",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-163205-DinoBrain-R7-.-.-read-only-.",
+  "request": "DinoBrain 미완 개선 계획 검토용 하위 에이전트 R7입니다. 반드시 독립적으로 사용자 의도와 기억/문서를 읽고 판단하세요. 편집하지 말고 read-only입니다.\n\n검토 대상:\n- <machine-local-path> DinoBrain 관련 항목\n- <machine-local-path> <machine-local-path> <machine-local-path> <machine-local-path> task lifecycle/review queue/semantic job settlement 관련 scripts/src/docs\n\n역할: task lifecycle, review queue, stale task settlement 관점. 현재 `verify:goal` blocker인 task lifecycle/settlement를 포함해 완성조건이 충분한지 검토하세요.\n\n출력 형식: verdict: AGREE/REVISE_REQUIRED, required_conditions, missing_or_risky_points, evidence.",
+  "generated_at": "2026-07-07T16:32:05.391Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-163205-DinoBrain-R7-.-.-read-only-..json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

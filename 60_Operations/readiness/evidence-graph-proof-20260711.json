@@ -1,0 +1,57 @@
+{
+  "version": "evidence_graph_proof_v1",
+  "status": "verified",
+  "verified_at": "2026-07-11T10:45:00+09:00",
+  "app_commit": "413408b6c3153231fe28ab4843f265dd8c0bb8a4",
+  "status_generation_id": "status-20260711-104201409-7256b231-32f3-404f-bd9c-c8be6bf89e89",
+  "graph": {
+    "index_mode": "evidence_graph_v1",
+    "sources": 5911,
+    "nodes": 6438,
+    "edges": 16559,
+    "typed_edges": 16040,
+    "parse_errors": 0,
+    "parity_failures": 0,
+    "focused_memory_observation": {
+      "nodes": 70,
+      "edges": 99,
+      "includes_relation": "memory_observed_used",
+      "evidence_paths_exposed": true
+    },
+    "reviewer_pending_filter": {
+      "nodes_shown": 340,
+      "edges_shown": 161,
+      "lane_isolated": true
+    }
+  },
+  "incremental_build": {
+    "unchanged_rebuild_seconds": 1.57,
+    "retained_rss_delta_mb": 39.6,
+    "atomic_sqlite_replace": true,
+    "full_sha256_completion_mode": true
+  },
+  "ram_diagnosis": {
+    "observatory_idle_rss_mb": 101.1,
+    "full_status_refresh_peak_rss_mb": 634.6,
+    "previous_safe_baseline_peak_rss_mb": 666.0,
+    "regression_detected": false,
+    "system_peak_used_gib": 22.73,
+    "largest_external_process_rss_gib": 4.98,
+    "conclusion": "DinoBrain remained below its prior verified peak; most concurrent system pressure came from unrelated desktop processes."
+  },
+  "verification": [
+    "npm run check",
+    "npm run graph:evidence:verify",
+    "npm run observatory:verify",
+    "npm run status:generation:verify",
+    "npm run status:freshness:verify",
+    "npm run completion:audit:verify",
+    "npm run readiness:verify",
+    "npm run atomic:writers:verify",
+    "npm run scale:50k:verify"
+  ],
+  "known_non_regression_blocker": {
+    "command": "npm run verify:os",
+    "reason": "Existing retrieval-noise ceiling remains exceeded in three regression cases; recall and the compounding loop pass."
+  }
+}

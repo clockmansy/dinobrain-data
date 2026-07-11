@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-125001-Round-2-consensus-review-Rol",
+  "status": "completed",
+  "request": "Round 2 consensus review, Role 3 native instruction authority. Inspect revised document [REDACTED_MACHINE_LOCAL_PATH] plus AGENTS.md, install.ps1, docs/VERIFICATION.md, docs/OS_COMPLETION_CONDITIONS.md, rg results for native/AGENTS/CLAUDE/drift. Confirm your Round 1 objections are addressed. Return AGREE or REVISE_REQUIRED. No edits.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T12:50:01.685Z",
+  "updated_at": "2026-07-07T12:50:48.933Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T12:50:48.933Z",
+  "trace_path": ".dino/traces/task-20260707-125001-Round-2-consensus-review-Rol.json"
+}

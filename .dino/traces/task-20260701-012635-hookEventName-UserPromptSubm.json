@@ -1,0 +1,18 @@
+{
+  "task_id": "task-20260701-012635-hookEventName-UserPromptSubm",
+  "outcome": "completed",
+  "summary": "Completed the first global hook verification run; this record captured the pre-parser-fix payload shape and confirmed preflight execution from outside the DinoBrain workspace.",
+  "changed_files": [
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "install.ps1"
+  ],
+  "decisions": [
+    "Use Codex user-level UserPromptSubmit hook for global DinoBrain preflight.",
+    "Keep project hook as fallback and verification fixture."
+  ],
+  "next_steps": [
+    "Restart or reload Codex and trust the DinoBrain hook prompt."
+  ],
+  "finished_at": "2026-07-01T01:41:47.696Z"
+}

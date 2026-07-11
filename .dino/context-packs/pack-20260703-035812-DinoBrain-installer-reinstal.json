@@ -1,0 +1,168 @@
+{
+  "pack_id": "pack-20260703-035812-DinoBrain-installer-reinstal",
+  "pack_type": "standard",
+  "question": "DinoBrain installer reinstall behavior, full purge uninstaller, release version alignment, private data repo policy, install link expectations",
+  "created_at": "2026-07-03T03:58:12.822Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 12,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 12,
+  "index_total_candidate_count": 12,
+  "index_matching_terms": [
+    "data-specific",
+    "full-text",
+    "links",
+    "metadata",
+    "policy",
+    "private"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 6,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-035806-Check-whether-reinstalling-D.json",
+      "kind": "recent_task",
+      "title": "Task: Check whether reinstalling DinoBrain over the same folder is safe, add a clean full-data uninsta",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 29,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"reinstall\"",
+        "title matched \"reinstall\"",
+        "title matched \"full\"",
+        "title matched \"data\"",
+        "path matched \"install\"",
+        "title matched \"install\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-033050-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 10,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-033451-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 10,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-012635-hookEventName-UserPromptSubm.json",
+      "kind": "recent_task",
+      "title": "Task: {\"hookEventName\":\"UserPromptSubmit\",\"prompt\":\"Global DinoBrain hook verification from another wo",
+      "summary": "status=completed | project=dinobrain | Completed the first global hook verification run; this record captured the pre-parser-fix payload shape and confirmed preflight execution from outside the DinoBrain workspace.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 7,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-012725-Global-DinoBrain-hook-verifi.json",
+      "kind": "recent_task",
+      "title": "Task: Global DinoBrain hook verification after parser fix.",
+      "summary": "status=completed | project=Documents | Completed the global hook verification after parser hardening; this record confirmed the prompt and cwd are parsed separately from another workspace.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 7,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-004836-Codex-OS-start_task-get_cont.json",
+      "kind": "recent_task",
+      "title": "Task: ? ???: Codex? ???? ???? OS? start_task? get_context_pack? ???? Observatory? ????? ????.",
+      "summary": "status=completed | project=dinobrain-live-verify | Verified that the DinoBrain Codex hook preflight creates prompt, task, context-pack, and Observatory-visible events.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 3,
+      "reasons": [
+        "summary matched \"dinobrain\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-005837-hookEventName-UserPromptSubm.json",
+      "kind": "recent_task",
+      "title": "Task: {\"hookEventName\":\"UserPromptSubmit\",\"prompt\":\"? ?? ??? ?? ??\",\"cwd\":\"<machine-local-path>\\",
+      "summary": "status=completed | project=dinobrain | Closed the direct hook command-string verification task after confirming it emitted DinoBrain events.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 3,
+      "reasons": [
+        "summary matched \"dinobrain\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-033041-manual-hook-env-test.json",
+      "kind": "recent_task",
+      "title": "Task: manual hook env test",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 3,
+      "reasons": [
+        "summary matched \"dinobrain\""
+      ]
+    }
+  ]
+}

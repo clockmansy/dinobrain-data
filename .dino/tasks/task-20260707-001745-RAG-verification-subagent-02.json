@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-001745-RAG-verification-subagent-02",
+  "status": "completed",
+  "request": "RAG verification subagent 02: verify contextual retrieval and chunking claims from Anthropic, Pinecone official chunking docs, and Jina late chunking; return 4-6 claims with source URL, confidence, implication, caveats; read-only.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T00:17:45.572Z",
+  "updated_at": "2026-07-07T00:18:59.620Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T00:18:59.620Z",
+  "trace_path": ".dino/traces/task-20260707-001745-RAG-verification-subagent-02.json"
+}

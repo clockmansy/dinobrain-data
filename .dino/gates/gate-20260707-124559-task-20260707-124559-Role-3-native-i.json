@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-124559-task-20260707-124559-Role-3-native-i",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-124559-Role-3-native-instruction-au",
+  "request": "Role 3: native instruction authority/drift reviewer. DinoBrain OS unfinished improvement plan consensus review. Inspect user memories and current code/docs for AGENTS/CLAUDE/custom instruction scanning, native_memory_drift/wrong_memory_reference style evidence, and whether this is represented in completion gates. Required files include MEMORY.md, docs/OS_COMPLETION_CONDITIONS.md, docs/VERIFICATION.md, AGENTS.md, install/docs related to Claude/Codex hooks, and rg searches for native/AGENTS/CLAUDE/drift. Candidate plan has P0-05 native instruction authority gate. Return AGREE or REVISE_REQUIRED. No edits.",
+  "generated_at": "2026-07-07T12:45:59.639Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-124559-Role-3-native-instruction-au.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

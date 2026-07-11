@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-192053-dinobrain-OS",
+  "status": "completed",
+  "request": "dinobrain 옵시디언 OS 그래프 퀄리티 업/ 디자인적 우수성, 가시성, 진짜 세컨드 브레인처럼 보이도록, 각 노드간 연결관계 추가, 애니메이션 추가",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T19:20:53.936Z",
+  "updated_at": "2026-07-07T19:29:26.859Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T19:29:26.859Z",
+  "trace_path": ".dino/traces/task-20260707-192053-dinobrain-OS.json"
+}

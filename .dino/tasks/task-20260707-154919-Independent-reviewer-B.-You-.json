@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-154919-Independent-reviewer-B.-You-",
+  "status": "blocked",
+  "request": "Independent reviewer B. You must inspect the project intent from this prompt: DinoBrain new-PC install must recreate the same OS behavior from GitHub/app/data, configure Codex and Claude MCP/hooks, create Observatory and verifier launchers, avoid unsafe overwrite, support reinstall/uninstall/purge, and prove release ZIP/SHA/tag/manifest parity. The plan says P2-12 requires installer/ref parity, release manifest with app/data commits and asset SHA, degraded Git-missing mode, installer:verify commands, uninstall:verify, installer:win, release:win --SkipUpload, install-equivalence and release-manifest verifiers included in verify:goal. Does this adequately cover install/release/new-PC equivalence completion conditions? Return a non-empty answer exactly: reviewer_id=R9; verdict=AGREE or REVISE_REQUIRED; blocking_objections=[...]; required_doc_changes=[...]; evidence_files=[docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md,docs/OS_COMPLETION_CONDITIONS.md,docs/INSTALL.md,docs/VERIFICATION.md].",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:49:19.465Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-154919-Independent-reviewer-B.-You-.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-154919-Independent-reviewer-B.-You-.json"
+  }
+}

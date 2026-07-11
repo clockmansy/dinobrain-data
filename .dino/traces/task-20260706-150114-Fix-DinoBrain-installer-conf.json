@@ -1,0 +1,50 @@
+{
+  "task_id": "task-20260706-150114-Fix-DinoBrain-installer-conf",
+  "outcome": "completed",
+  "summary": "Fixed the installer Codex config writer so malformed carriage returns cannot corrupt <machine-local-path> Added CRLF normalization before TOML block rewriting, byte-level bare CR checks after write, DinoBrain TOML block shape validation, and a regression case that starts from a malformed config containing CRCRLF and bare CR. Bumped DinoBrain to v2.2.1 and pushed main/tag.",
+  "changed_files": [
+    "install.ps1",
+    "scripts/verify-installer-hooks.ps1",
+    "package.json",
+    "package-lock.json",
+    "src/os-contract.ts",
+    "docs/INSTALL.md",
+    "docs/VERIFICATION.md",
+    "scripts/audit-user-flow.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/verify-compounding-loop.mjs",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/verify-session-ingest.mjs",
+    "scripts/verify-v2-os.mjs"
+  ],
+  "decisions": [
+    "Treat this as an installer bug, not a path or quoting bug.",
+    "Normalize existing config text before section removal and block append.",
+    "Validate the final DinoBrain TOML block before and after writing, and reject bare CR bytes at the file level.",
+    "Bump patch version to 2.2.1 and tag it because this affects installer safety."
+  ],
+  "next_steps": [
+    "GitHub Release asset upload still requires GITHUB_TOKEN/GH_TOKEN or another release upload path; local ZIP was prepared with -SkipUpload."
+  ],
+  "used_memory_paths": [
+    ".dino/tasks/task-20260705-083457-Continue-the-active-goal-bui.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-150114-Fix-DinoBrain-installer-conf.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "installer config bare carriage return TOML validation"
+  ],
+  "memory_use": {
+    "used_memory_count": 1,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-06T15:06:11.801Z"
+}

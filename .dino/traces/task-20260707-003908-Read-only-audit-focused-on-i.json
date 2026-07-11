@@ -1,0 +1,34 @@
+{
+  "task_id": "task-20260707-003908-Read-only-audit-focused-on-i",
+  "outcome": "completed",
+  "summary": "Completed read-only audit of DinoBrain installer/new PC/GitHub recovery/version parity/hook approval surfaces. Found one P0 risk: update/reinstall can strand unpushed local commits by force-resetting existing app/data branches with git checkout -B origin/ref. Found P1 gaps: Windows GUI blocks documented no-Git ZIP fallback; release/version parity can drift because package version, tag, setup metadata, and installer refs are not enforced together; uninstall removes Claude MCP but leaves the installed Claude UserPromptSubmit hook. Hook approval design itself preserves manual trust and has verification coverage.",
+  "changed_files": [],
+  "decisions": [
+    "Do not edit repository files during this audit.",
+    "Treat existing dinobrain-data local commits as protected user data; installer should stop rather than reset them.",
+    "Treat Codex hook trust as a manual security boundary; approval helper may guide but must not bypass trust."
+  ],
+  "next_steps": [
+    "Patch Checkout-DinoBrainRef/Sync-DinoBrainRepo to use ff-only update semantics and fail on local-ahead/diverged branches, especially for dinobrain-data.",
+    "Allow the Windows GUI to run the PowerShell no-Git ZIP fallback or update docs/UI to make Git a hard prerequisite.",
+    "Add release/version gates that require package version, installer metadata, tag, TargetCommitish, and published asset refs to agree before replacing a release asset.",
+    "Add Claude settings cleanup to uninstall plus regression coverage."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-003910-installer-new-PC-GitHub-reco.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "installer new PC GitHub recovery Codex Claude hooks hook approval version parity GitHub release install.ps1"
+  ],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T00:43:45.470Z"
+}

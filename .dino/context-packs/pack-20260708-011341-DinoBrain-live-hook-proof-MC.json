@@ -1,0 +1,210 @@
+{
+  "pack_id": "pack-20260708-011341-DinoBrain-live-hook-proof-MC",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "DinoBrain live hook proof MCP parity hard-gate evidence. Ordered direct MCP pre-response proof for verify-codex-mcp-preflight: os_begin_task context pack before finish_task.",
+  "created_at": "2026-07-08T01:13:41.673Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense vector cosine retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 79,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 69,
+  "index_candidate_count": 79,
+  "index_total_candidate_count": 73,
+  "index_matching_terms": [
+    "anthropic-contextual-retrieval",
+    "before",
+    "before_counts",
+    "codex-session-knowledge-configured_is_not_live_proof",
+    "codex-session-knowledge-local_evidence_over_cla",
+    "codex-session-knowledge-local_evidence_over_claims",
+    "codex-session-knowledge-one_link_or_direct_action",
+    "codex-session-knowledge-rag_quality_direction",
+    "context",
+    "context_packs",
+    "context-golden",
+    "context-pack",
+    "contextual",
+    "contextual-retrieval",
+    "delivery",
+    "dinobrain_os",
+    "dinobrain_product",
+    "dinobrain_public_data_safety",
+    "dinobrain-data",
+    "dinobrain-hook-and-install-prevention",
+    "dinobrain-install-release-state",
+    "dinobrain-project-state",
+    "dinobrain-public-data-safety",
+    "dinobrain-rag-critical-consensus-20260707",
+    "dinobrain-rag-roadmap",
+    "dinobrain-recurring-failures",
+    "dinobrain-retrieval-noise-prevention",
+    "direct",
+    "direct_user_source_count",
+    "direct-source",
+    "directly",
+    "directly-opened",
+    "evidence",
+    "evidence-linked",
+    "finish_task",
+    "hook",
+    "hook_run_id",
+    "hooks",
+    "learning_packet_registration",
+    "live",
+    "live-proof",
+    "live-verified",
+    "local_evidence_over_claims",
+    "local-dinobrain-data",
+    "mcp",
+    "os_begin_task",
+    "pack",
+    "package",
+    "packet",
+    "packs",
+    "parity",
+    "pre-response",
+    "proof",
+    "rag-public-os-learning-packet",
+    "verified_knowledge_pack",
+    "version-parity"
+  ],
+  "included_item_count": 5,
+  "excluded_record_count": 74,
+  "items": [
+    {
+      "path": "30_Sources/chunks/anthropic-contextual-retrieval.json",
+      "kind": "curated_record",
+      "title": "Anthropic Contextual Retrieval",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "contextual-retrieval",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 11.792,
+      "reasons": [
+        "path_matched:context",
+        "title_matched:context",
+        "tags_matched:direct,context",
+        "chunk_matched:direct,context,before",
+        "bm25:context,before",
+        "dense_vector_cosine:3.58",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2005-11401.json",
+      "kind": "curated_record",
+      "title": "RAG paper anchor arXiv 2005.11401",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "paper",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 11.482,
+      "reasons": [
+        "tags_matched:direct",
+        "chunk_matched:direct,context",
+        "bm25:direct,context",
+        "dense_vector_cosine:3.27",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/openai-retrieval-guide.json",
+      "kind": "curated_record",
+      "title": "OpenAI Retrieval guide",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "retrieval",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 11.25,
+      "reasons": [
+        "tags_matched:direct",
+        "chunk_matched:direct,context",
+        "bm25:context",
+        "dense_vector_cosine:2.94",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+      "kind": "curated_record",
+      "title": "AWS Bedrock Knowledge Base",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "knowledge-base",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.432,
+      "reasons": [
+        "tags_matched:direct",
+        "chunk_matched:direct",
+        "dense_vector_cosine:5.33",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langsmith-evaluation-concepts.json",
+      "kind": "curated_record",
+      "title": "LangSmith evaluation concepts",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "evaluation",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.27,
+      "reasons": [
+        "tags_matched:direct",
+        "chunk_matched:direct",
+        "dense_vector_cosine:4.69",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "pack_id": "pack-20260707-005756-Session-agnostic-pre-respons",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "Session-agnostic pre-response OS begin entrypoint for non-Codex/non-Claude sessions: existing abstractions, hooks, begin tools, verification commands, OS lifecycle.",
+  "created_at": "2026-07-07T00:57:56.397Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 153,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 381,
+  "index_candidate_count": 153,
+  "index_total_candidate_count": 153,
+  "index_matching_terms": [
+    "entrypoint",
+    "existing",
+    "hooks",
+    "lifecycle",
+    "lifecycle-clean",
+    "local-codex-sessions",
+    "non_empty_sessions",
+    "os_begin_task",
+    "pre-response",
+    "rag-verification-cross-review-20260707",
+    "sessions",
+    "sessions_dir",
+    "task-20260707-001745-rag-verification-subagent-02",
+    "task-20260707-001759-rag-verification-suba",
+    "task-20260707-001759-rag-verification-subagent-0",
+    "task-20260707-001759-rag-verification-subagent-03",
+    "task-20260707-001802-rag-verification-subagent-04",
+    "task-20260707-001822-rag-verification-suba",
+    "task-20260707-001831-rag-verification-subagent-06",
+    "task-20260707-002249-rag-verification-subagent-07",
+    "task-20260707-002300-rag-verification-subagent-08",
+    "task-20260707-002309-rag-verification-subagent-09",
+    "task-20260707-002322-rag-verification-",
+    "task-20260707-002322-rag-verification-subagent-10",
+    "task-memory-task-20260707-001745-rag-verification-subagent-02",
+    "task-memory-task-20260707-001759-rag-verification-subagent-03",
+    "task-memory-task-20260707-001802-rag-verification-subagent-04",
+    "task-memory-task-20260707-001822-rag-verification-subagent-05",
+    "task-memory-task-20260707-001831-rag-verification-subagent-06",
+    "task-memory-task-20260707-002249-rag-verification-subagent-07",
+    "task-memory-task-20260707-002300-rag-verification-subagent-08",
+    "task-memory-task-20260707-002309-rag-verification-subagent-09",
+    "task-memory-task-20260707-002322-rag-verification-subagent-10",
+    "tools",
+    "verification",
+    "verification_report",
+    "verify-installer-hooks"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 383,
+  "items": [
+    {
+      "path": "30_Sources/chunks/microsoft-graphrag.json",
+      "kind": "curated_record",
+      "title": "Microsoft GraphRAG",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "graph-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.471,
+      "reasons": [
+        "chunk_matched:verification",
+        "bm25:verification",
+        "dense_lexical:0.83",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/elastic-rag.json",
+      "kind": "curated_record",
+      "title": "Elastic RAG explanation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.272,
+      "reasons": [
+        "chunk_matched:verification",
+        "bm25:verification",
+        "dense_lexical:0.74",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/openai-retrieval-guide.json",
+      "kind": "curated_record",
+      "title": "OpenAI Retrieval guide",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "retrieval",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.169,
+      "reasons": [
+        "chunk_matched:verification",
+        "bm25:verification",
+        "dense_lexical:0.73",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/anthropic-contextual-retrieval.json",
+      "kind": "curated_record",
+      "title": "Anthropic Contextual Retrieval",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "contextual-retrieval",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.166,
+      "reasons": [
+        "chunk_matched:verification",
+        "bm25:verification",
+        "dense_lexical:0.71",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/google-rag-engine-overview.json",
+      "kind": "curated_record",
+      "title": "Google RAG Engine overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-engine",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.157,
+      "reasons": [
+        "chunk_matched:verification",
+        "bm25:verification",
+        "dense_lexical:0.72",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/azure-search-rag-overview.json",
+      "kind": "curated_record",
+      "title": "Microsoft Azure AI Search RAG overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.152,
+      "reasons": [
+        "chunk_matched:verification",
+        "bm25:verification",
+        "dense_lexical:0.72",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langsmith-evaluation-concepts.json",
+      "kind": "curated_record",
+      "title": "LangSmith evaluation concepts",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "evaluation",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.143,
+      "reasons": [
+        "chunk_matched:verification",
+        "bm25:verification",
+        "dense_lexical:0.71",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langchain-rag.json",
+      "kind": "curated_record",
+      "title": "LangChain RAG",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 10.141,
+      "reasons": [
+        "chunk_matched:verification",
+        "bm25:verification",
+        "dense_lexical:0.72",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    }
+  ]
+}

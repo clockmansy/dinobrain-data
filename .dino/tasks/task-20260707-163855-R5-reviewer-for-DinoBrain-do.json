@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-163855-R5-reviewer-for-DinoBrain-do",
+  "status": "blocked",
+  "request": "R5 reviewer for DinoBrain document. Read-only. Open and inspect <machine-local-path> Lens: behavior recall, feedback writeback, node lifecycle. Return non-empty answer only:\nverdict: AGREE or REVISE_REQUIRED\nreason: short paragraph\nNo edits.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T16:38:55.587Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-163855-R5-reviewer-for-DinoBrain-do.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-163855-R5-reviewer-for-DinoBrain-do.json"
+  }
+}

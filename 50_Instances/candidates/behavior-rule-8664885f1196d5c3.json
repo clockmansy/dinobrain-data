@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-8664885f1196d5c3",
+  "behavior_rule_id": "behavior-rule-8664885f1196d5c3",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Used the injected DinoBrain preflight context as the primary memory source and kept current user instructions above stored memory.",
+  "behavior_rule": "In similar future work, apply this decision: Used the injected DinoBrain preflight context as the primary memory source and kept current user instructions above stored memory.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-102445-Overview-Generate-0-to-3-hyp.json",
+    "snippet": "Used the injected DinoBrain preflight context as the primary memory source and kept current user instructions above stored memory."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-102445-Overview-Generate-0-to-3-hyp.json",
+      "task_id": "task-20260707-102445-Overview-Generate-0-to-3-hyp",
+      "signal_kind": "decision",
+      "snippet": "Used the injected DinoBrain preflight context as the primary memory source and kept current user instructions above stored memory."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:52:23.195Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:52:23.195Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

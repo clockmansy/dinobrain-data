@@ -1,0 +1,273 @@
+{
+  "pack_id": "pack-20260707-020553-DinoBrain-stale-MCP-runtime-",
+  "pack_type": "standard",
+  "os_version": "2.2.0",
+  "question": "DinoBrain stale MCP runtime accepted-memory contamination live pre-response proof review-gated growth closed loop GitHub push",
+  "created_at": "2026-07-07T02:05:53.673Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 111,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 144,
+  "index_candidate_count": 111,
+  "index_total_candidate_count": 111,
+  "index_matching_terms": [
+    "accepted-memory",
+    "auto-growth",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "closed",
+    "closed-loop",
+    "codex-loop",
+    "codex-session-knowledge-configured_is_not_live_proof",
+    "codex-session-knowledge-end_to_end_execution_push",
+    "codex-session-knowledge-pre_response_fail_closed_loop",
+    "delivery",
+    "dinobrain_public_data_safety",
+    "dinobrain-data",
+    "dinobrain-hook-and-install-prevention",
+    "dinobrain-install-release-state",
+    "dinobrain-project-state",
+    "dinobrain-public-data-safety",
+    "dinobrain-rag-critical-consensus-20260707",
+    "dinobrain-rag-roadmap",
+    "dinobrain-recurring-failures",
+    "dinobrain-retrieval-noise-prevention",
+    "fail-closed",
+    "github",
+    "growth",
+    "live",
+    "live-proof",
+    "live-verified",
+    "local-dinobrain-data",
+    "loop",
+    "mcp",
+    "mcp-only",
+    "non-stale",
+    "pre-response",
+    "proof",
+    "push",
+    "pushed",
+    "review-gated",
+    "runtime",
+    "stale",
+    "task-20260706-161034-read-all-dinobrain-memories-",
+    "task-memory-task-20260706-150114-fix-dinobrain-installer-conf",
+    "task-memory-task-20260706-151510-change-the-github-visibility",
+    "task-memory-task-20260706-152258-change-the-github-visibility",
+    "task-memory-task-20260706-161034-read-all-dinobrain-memories",
+    "task-memory-task-20260706-233406-os-rag-url-dinobrain-os--saf",
+    "task-memory-task-20260707-005647-build-and-verify-dinobrain-c",
+    "unpushed",
+    "verify-codex-live-preflight"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 146,
+  "items": [
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "kind": "curated_record",
+      "title": "Configured hooks are not live preflight proof",
+      "summary": "A configured or probe-verified DinoBrain hook must not be claimed as fully live until a fresh trusted Codex or Claude prompt produces pre-response events before manual MCP calls.",
+      "tags": [
+        "codex-session-derived",
+        "mistake-lesson",
+        "hook",
+        "live-proof",
+        "fail-closed"
+      ],
+      "score": 11.894,
+      "reasons": [
+        "path_matched:live,proof",
+        "title_matched:live,proof",
+        "summary_matched:mcp,live,pre-response",
+        "tags_matched:live,proof,closed",
+        "chunk_matched:mcp,live,pre-response,proof",
+        "bm25:mcp,live,pre-response,proof",
+        "dense_lexical:1.87",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/task-memory-task-20260707-011044-Read-only-audit-of-Codex-onl.json",
+      "kind": "curated_record",
+      "title": "Task outcome: Read-only audit of Codex-only closed loop source/provenance graph changes focused on src/graph-h",
+      "summary": "Completed read-only audit of source/provenance graph handling across graph-health, lifecycle, observatory, and verify-graph-health. The source resolver now recognizes evidence.source, source.trace_path, source.task_path, source_paths, source_operation_path, and legacy single source fields; live data inspection shows parseable accepted records are no longer source-less, with one remaining missing source path and a per",
+      "tags": [
+        "auto-growth",
+        "task-outcome",
+        "outcome:completed",
+        "project:dinobrain"
+      ],
+      "score": 11.448,
+      "reasons": [
+        "title_matched:closed,loop",
+        "summary_matched:live",
+        "tags_matched:growth",
+        "chunk_matched:live,closed,loop",
+        "bm25:live,closed,loop",
+        "dense_lexical:1.50",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/task-memory-task-20260707-003551-Read-only-audit-focused-on-b.json",
+      "kind": "curated_record",
+      "title": "Task outcome: Read-only audit focused on behavior evaluation, feedback writeback, corrections, memory-on/off p",
+      "summary": "Completed read-only audit of behavior evaluation, feedback writeback, memory audit, memory-on/off proof, and verify-v2 behavior proof surfaces. Found that current behavior evaluation is retrieval/term scoring rather than answer-quality or correction-behavior proof, verify-v2 uses only a temporary self-referential golden case, and memory-use audit returns ok even when trust evidence is degraded.",
+      "tags": [
+        "auto-growth",
+        "task-outcome",
+        "outcome:completed",
+        "project:dinobrain"
+      ],
+      "score": 10.232,
+      "reasons": [
+        "summary_matched:proof",
+        "tags_matched:growth",
+        "chunk_matched:proof",
+        "bm25:proof",
+        "dense_lexical:1.02",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/task-memory-task-20260707-003541-Read-only-audit-focused-on-d.json",
+      "kind": "curated_record",
+      "title": "Task outcome: Read-only audit focused on durable source/provenance/source-chunk-claim lineage and graph-health",
+      "summary": "Completed read-only audit of DinoBrain durable source/provenance/source-chunk-claim lineage and graph health. Findings: graph health is correctly degraded but reports all accepted instances as missing source mapping; current source/provenance records exist for RAG guidance, but accepted-memory lineage recognition only checks narrow single-source fields and misses source_paths/source_chunk_path/claim_paths/provenance ",
+      "tags": [
+        "auto-growth",
+        "task-outcome",
+        "outcome:completed",
+        "project:dinobrain"
+      ],
+      "score": 10.188,
+      "reasons": [
+        "summary_matched:accepted-memory",
+        "tags_matched:growth",
+        "chunk_matched:accepted-memory",
+        "bm25:accepted-memory",
+        "dense_lexical:1.06",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/task-memory-task-20260706-161246-Completion-Reviewer-09-read.json",
+      "kind": "curated_record",
+      "title": "Task outcome: task-20260706-161246-Completion-Reviewer-09-read-",
+      "summary": "Completion Reviewer 09 completed a read-only Observatory/UI/graph review. Conclusion: agree with the proposed direction only if completion requires live, non-stale Observatory evidence: fresh graph health over the real accepted corpus, live graph/status endpoints tied to real wiki/operations indexes, visible memory-use audits, active-task hygiene, explicit blocked/pending/verifier/main states, and graph design that i",
+      "tags": [
+        "auto-growth",
+        "task-outcome",
+        "outcome:completed"
+      ],
+      "score": 10.129,
+      "reasons": [
+        "summary_matched:stale,live",
+        "tags_matched:growth",
+        "chunk_matched:stale,live",
+        "bm25:live",
+        "dense_lexical:1.04",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/task-memory-task-20260706-161251-Completion-Reviewer-10-data.json",
+      "kind": "curated_record",
+      "title": "Task outcome: task-20260706-161251-Completion-Reviewer-10-data-",
+      "summary": "Completion Reviewer 10 completed a read-only data architecture/performance review across dinobrain and dinobrain-data. Conclusion: AGREE with the intended index-first, SQLite-sharded, graph-aware, provenance-aware direction, but DISAGREE that the current system is scalability-complete. Current live data has operations.sqlite tracked/present, but no wiki.sqlite, no SQLite manifest, no dense-vectors index, and the pers",
+      "tags": [
+        "auto-growth",
+        "task-outcome",
+        "outcome:completed"
+      ],
+      "score": 10.122,
+      "reasons": [
+        "summary_matched:live",
+        "tags_matched:growth",
+        "chunk_matched:live",
+        "bm25:live",
+        "dense_lexical:1.13",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/task-memory-task-20260707-011041-Read-only-audit-of-scripts-v.json",
+      "kind": "curated_record",
+      "title": "Task outcome: Read-only audit of scripts/verify-codex-live-preflight.mjs and whether the new/modified live ver",
+      "summary": "Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelate",
+      "tags": [
+        "auto-growth",
+        "task-outcome",
+        "outcome:completed",
+        "project:dinobrain"
+      ],
+      "score": 9.934,
+      "reasons": [
+        "title_matched:live",
+        "summary_matched:live",
+        "tags_matched:growth",
+        "chunk_matched:live",
+        "bm25:live",
+        "dense_lexical:0.95",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/task-memory-task-20260706-160652-Completion-Reviewer-03-retri.json",
+      "kind": "curated_record",
+      "title": "Task outcome: Completion Reviewer 03 retrieval/LLM wiki lens: independently inspect dinobrain-data and dinobra",
+      "summary": "Completion Reviewer 03 inspected dinobrain and dinobrain-data from the retrieval/LLM Wiki lens. Conclusion: AGREE with the index-first, graph-aware, provenance-aware hybrid retrieval direction, but DISAGREE that the current LLM Wiki is complete. Evidence: live Context Packs report lexical_fallback_v2, the data repo has wiki-index.json but no wiki.sqlite shard, current context eval fails on noise despite full recall, ",
+      "tags": [
+        "auto-growth",
+        "task-outcome",
+        "outcome:completed",
+        "project:dinobrain"
+      ],
+      "score": 9.844,
+      "reasons": [
+        "summary_matched:live",
+        "tags_matched:growth",
+        "chunk_matched:live",
+        "bm25:live",
+        "dense_lexical:1.01",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    }
+  ]
+}

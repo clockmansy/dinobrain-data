@@ -1,0 +1,47 @@
+{
+  "behavior_rule_id": "behavior-rule-04708363547daa46",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Regenerate graph health after wiki/operations index updates and fail readiness when graph-health is older than the index or inconsistent with accepted record count.",
+  "behavior_rule": "In similar future work, apply this decision: Regenerate graph health after wiki/operations index updates and fail readiness when graph-health is older than the index or inconsistent with accepted record count.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260706-161246-Completion-Reviewer-09-read.json",
+    "snippet": "Regenerate graph health after wiki/operations index updates and fail readiness when graph-health is older than the index or inconsistent with accepted record count."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260706-161246-Completion-Reviewer-09-read.json",
+      "task_id": "task-20260706-161246-Completion-Reviewer-09-read-",
+      "signal_kind": "next_step",
+      "snippet": "Regenerate graph health after wiki/operations index updates and fail readiness when graph-health is older than the index or inconsistent with accepted record count."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:medium"
+  ],
+  "auto_generated": true,
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T02:02:58.247Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T02:02:58.247Z",
+  "candidate_id": "behavior-rule-04708363547daa46",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/behavior-rule-04708363547daa46.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

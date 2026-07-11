@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-124529-task-20260707-124528-Role-1-user-int",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-124528-Role-1-user-intent-completio",
+  "request": "Role 1: user-intent/completion-bar reviewer. DinoBrain OS unfinished improvement plan consensus review. Read and inspect at minimum: [REDACTED_MACHINE_LOCAL_PATH] relevant DinoBrain sections, [REDACTED_MACHINE_LOCAL_PATH] docs/OS_COMPLETION_IMPROVEMENT_PLAN.md, docs/VERIFICATION.md, [REDACTED_MACHINE_LOCAL_PATH] health_status.json, and relevant 40_Projects files in dinobrain-data. Also use rg to search the data repo for user desired direction around pre-response, direct MCP, native instruction, behavior recall, retrieval quality. Candidate plan: harden remaining gaps P0-04 direct MCP parity, P0-05 native instruction authority gate, P1-09 event-triggered behavior recall, P1-10 retrieval quality/real eval, and make completion conditions a document. Return AGREE only if you accept the plan and completion conditions; otherwise return REVISE_REQUIRED with exact changes needed. Do not edit files.",
+  "generated_at": "2026-07-07T12:45:29.114Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-124529-Role-1-user-intent-completio.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

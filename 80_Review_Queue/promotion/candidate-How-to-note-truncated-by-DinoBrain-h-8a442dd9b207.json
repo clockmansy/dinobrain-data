@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-How-to-note-truncated-by-DinoBrain-h-8a442dd9b207",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-8a442dd9b207.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-124950-cd6833f43dcb.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T12:49:51.366Z",
+  "updated_at": "2026-07-07T12:49:51.366Z"
+}

@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260706-233407-task-20260706-233406-OS-RAG-URL-Dino",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf",
+  "request": "사용자가 제공한 공용 OS RAG 학습 자료(URL 앵커, 구성요소별 자료, 내부 근거자료)를 DinoBrain OS에 공개-safe한 durable knowledge/provenance anchor로 등록하고, 나중 검색/검증/구현 로드맵에서 활용 가능하게 분류한다.",
+  "generated_at": "2026-07-06T23:34:07.028Z",
+  "context_pack_path": ".dino/context-packs/pack-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf.json",
+  "context_item_count": 6,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

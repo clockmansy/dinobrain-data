@@ -1,0 +1,164 @@
+{
+  "pack_id": "pack-20260708-054632-task",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "링크를 복사가능하게쳐줘",
+  "created_at": "2026-07-08T05:46:32.821Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense vector cosine retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 79,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 69,
+  "index_candidate_count": 79,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 7,
+  "excluded_record_count": 72,
+  "items": [
+    {
+      "path": "30_Sources/chunks/azure-search-rag-overview.json",
+      "kind": "curated_record",
+      "title": "Microsoft Azure AI Search RAG overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "kind": "curated_record",
+      "title": "Prefer direct links or actions when the path is known",
+      "summary": "When the path or artifact is known, the user often prefers a direct link, launcher, or action instead of a long explanation. | Rule: If the user asks for an install link, file, folder, or app launch, provide the direct artifact or perform the action first, then add only essential context. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "brevity",
+        "install"
+      ],
+      "score": 5.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "kind": "curated_record",
+      "title": "DinoBrain must run pre-response and fail closed",
+      "summary": "The user wants every Codex or Claude session to receive DinoBrain pre-response OS context before substantive work, with fail-closed behavior when the OS context is missing. | Rule: For nontrivial DinoBrain work, require os_begin_task or trusted hook preflight, Context Pack, gates, finish_task, and explicit degraded/fail-closed state when missing. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "pre-response",
+        "fail-closed",
+        "hook"
+      ],
+      "score": 5.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/README.md",
+      "kind": "curated_record",
+      "title": "50_Instances/accepted",
+      "summary": "Reviewed instances that are safe to reuse.",
+      "tags": [],
+      "score": 5.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langsmith-evaluation-concepts.json",
+      "kind": "curated_record",
+      "title": "LangSmith evaluation concepts",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "evaluation",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.313,
+      "reasons": [
+        "dense_vector_cosine:2.58",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langchain-rag.json",
+      "kind": "curated_record",
+      "title": "LangChain RAG",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.287,
+      "reasons": [
+        "dense_vector_cosine:2.23",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-survey.json",
+      "kind": "curated_record",
+      "title": "RAG-Survey",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "survey",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.263,
+      "reasons": [
+        "dense_vector_cosine:2.17",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "gate_id": "gate-20260707-163225-task-20260707-163225-DinoBrain-R9-.-",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-163225-DinoBrain-R9-.-.-read-only-.",
+  "request": "DinoBrain 미완 개선 계획 검토용 하위 에이전트 R9입니다. 반드시 독립적으로 사용자 의도와 기억/문서를 읽고 판단하세요. 편집하지 말고 read-only입니다.\n\n검토 대상:\n- <machine-local-path> DinoBrain 관련 항목\n- docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md\n- docs\\OS_COMPLETION_CONDITIONS.md\n- docs\\RAG_OS_CONSENSUS_20260707.md\n- safety/public-data/sync policy 관련 docs/scripts/src\n\n역할: public data safety, sync policy, data repo hygiene 관점. 공개/비공개 데이터, raw transcript, candidates/review queue, auto_sync, GitHub push safety 조건이 충분한지 검토하세요.\n\n출력 형식: verdict, required_conditions, missing_or_risky_points, evidence.",
+  "generated_at": "2026-07-07T16:32:25.939Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-163225-DinoBrain-R9-.-.-read-only-..json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

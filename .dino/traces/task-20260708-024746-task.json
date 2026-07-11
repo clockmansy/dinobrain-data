@@ -1,0 +1,51 @@
+{
+  "task_id": "task-20260708-024746-task",
+  "outcome": "completed",
+  "summary": "Improved DinoBrain installer path UX so users do not need to type install paths manually. The GUI now auto-detects recommended install roots, adds Auto/Browse path selection, previews app/data paths, and normalizes accidental dinobrain or dinobrain-data folder selections back to the parent root. PowerShell install.ps1 now applies the same default-root detection and normalization. Version bumped to 2.2.8, source committed and pushed to app main, local release ZIP packaged, but GitHub Release upload was blocked because no GITHUB_TOKEN/GH_TOKEN or gh CLI auth was available.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "installer/DinoBrainSetup/SetupForm.cs",
+    "install.ps1",
+    "scripts/verify-installer-path-ux.ps1",
+    "package.json",
+    "package-lock.json",
+    "installer/DinoBrainSetup/DinoBrainSetup.csproj",
+    "docs/INSTALL.md"
+  ],
+  "decisions": [
+    "Kept install root as the parent folder contract while allowing users to choose app/data folders by mistake and have them normalized safely.",
+    "Used trace_only finish because the prompt was a UX complaint and should not promote raw session content automatically.",
+    "Did not retrieve or persist any GitHub token; release upload requires an explicit token environment or installed gh auth."
+  ],
+  "next_steps": [
+    "Set GITHUB_TOKEN or GH_TOKEN in the current process, or install/login GitHub CLI, then rerun npm run release:win -- -Tag v2.2.8 -ReplaceAsset.",
+    "Use artifacts/DinoBrainSetup.zip locally if immediate manual transfer is needed before Release upload."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+    "30_Sources/chunks/azure-search-rag-overview.json",
+    "30_Sources/chunks/elastic-rag.json",
+    "30_Sources/chunks/google-rag-engine-overview.json",
+    "30_Sources/chunks/haystack-first-rag-pipeline.json",
+    "30_Sources/chunks/haystack-rag-from-scratch.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-024748-task.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260708-024746-f83d5b86ea51.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-How-to-note-2e57b62bcaf5.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 1,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T02:56:44.244Z"
+}

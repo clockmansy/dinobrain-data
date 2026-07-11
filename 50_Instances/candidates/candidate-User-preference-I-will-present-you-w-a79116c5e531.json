@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-User-preference-I-will-present-you-w-a79116c5e531",
+  "status": "pending_review",
+  "claim": "User preference: I will present you with two categories of content: things to **ALWAYS** exclude, and things which you should exclude if they are about the user (**unless** the recent user context shows the user has specifically asked for it).",
+  "category": "user_preference",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "I will present you with two categories of content: things to **ALWAYS** exclude, and things which you should exclude if they are about the user (**unless** the recent user context shows the user has specifically asked for it).",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-102851-04f3b412ad5f.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-102851-04f3b412ad5f",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "user_preference",
+    "temperature:hot",
+    "project:app"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-102851-04f3b412ad5f",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T10:28:52.578Z",
+  "updated_at": "2026-07-07T10:28:52.578Z"
+}

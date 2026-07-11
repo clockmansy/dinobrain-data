@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-39675c1f0410a891",
+  "behavior_rule_id": "behavior-rule-39675c1f0410a891",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: GitHub-only recovery means no separate recovery key, no manual clone, no manual global Node/Git/gh install, and no hidden token/config copy as the normal path.",
+  "behavior_rule": "In similar future work, apply this decision: GitHub-only recovery means no separate recovery key, no manual clone, no manual global Node/Git/gh install, and no hidden token/config copy as the normal path.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-095533-Read-and-analyze-the-full-lo.json",
+    "snippet": "GitHub-only recovery means no separate recovery key, no manual clone, no manual global Node/Git/gh install, and no hidden token/config copy as the normal path."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-095533-Read-and-analyze-the-full-lo.json",
+      "task_id": "task-20260707-095533-Read-and-analyze-the-full-lo",
+      "signal_kind": "decision",
+      "snippet": "GitHub-only recovery means no separate recovery key, no manual clone, no manual global Node/Git/gh install, and no hidden token/config copy as the normal path."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:25:06.936Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:25:06.936Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

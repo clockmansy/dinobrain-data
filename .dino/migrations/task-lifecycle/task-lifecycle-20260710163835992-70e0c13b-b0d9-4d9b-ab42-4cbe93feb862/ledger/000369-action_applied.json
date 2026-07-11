@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 369,
+  "event": "action_applied",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "800ebd498cffb92aaf6d0cf2d404345a8445e670a1cc709a4cb58512819a9d20",
+  "payload": {
+    "index": 182,
+    "task_id": "task-20260707-125808-Final-consensus-round-retry-",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "5e3d7a5fd9fab4413e059d73711ed745ac2aa223887b5ec4ea0b10155a741a99",
+    "trace_sha256_after": "9d7caa552603dd2c8b19e4f7db1969ebf654898fe9a000b5ec78398cf58aca3c"
+  },
+  "entry_sha256": "9ede0afc5067c85b5301f481639d386663b50b4b5640828488c22282f0bc85fd"
+}

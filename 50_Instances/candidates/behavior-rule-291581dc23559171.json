@@ -1,0 +1,47 @@
+{
+  "behavior_rule_id": "behavior-rule-291581dc23559171",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Claude Code integration now writes a UserPromptSubmit hook in addition to MCP registration; official Claude Code docs define UserPromptSubmit as firing before Claude processes a prompt.",
+  "behavior_rule": "In similar future work, apply this decision: Claude Code integration now writes a UserPromptSubmit hook in addition to MCP registration; official Claude Code docs define UserPromptSubmit as firing before Claude processes a prompt.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260705-023254-Implement-stability-fixes-fr.json",
+    "snippet": "Claude Code integration now writes a UserPromptSubmit hook in addition to MCP registration; official Claude Code docs define UserPromptSubmit as firing before Claude processes a prompt."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260705-023254-Implement-stability-fixes-fr.json",
+      "task_id": "task-20260705-023254-Implement-stability-fixes-fr",
+      "signal_kind": "decision",
+      "snippet": "Claude Code integration now writes a UserPromptSubmit hook in addition to MCP registration; official Claude Code docs define UserPromptSubmit as firing before Claude processes a prompt."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T02:02:58.247Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T02:02:58.247Z",
+  "candidate_id": "behavior-rule-291581dc23559171",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/behavior-rule-291581dc23559171.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

@@ -1,0 +1,201 @@
+{
+  "pack_id": "pack-20260705-020219-Remove-dinosaur-fossil-visua",
+  "pack_type": "standard",
+  "question": "Remove dinosaur fossil visual design from DinoBrain Observatory graph after v14 readability redesign",
+  "created_at": "2026-07-05T02:02:19.063Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 11,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 11,
+  "index_total_candidate_count": 11,
+  "index_matching_terms": [
+    "after"
+  ],
+  "included_item_count": 6,
+  "excluded_record_count": 10,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260705-015049-Redesign-DinoBrain-Observato.json",
+      "kind": "recent_task",
+      "title": "Task: Redesign DinoBrain Observatory graph v14 so information readability takes priority over forced d",
+      "summary": "status=completed | project=dinobrain | Redesigned DinoBrain Observatory graph v14 to prioritize semantic readability over forced dinosaur silhouette. Replaced deterministic dino-slot layout with hub-based clusters, softened default edges, moved the fossil scaffold into the background, reduced default long labels, updated design QA notes, verified build and Observatory rendering, and captured the latest local screensh",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 64,
+      "reasons": [
+        "summary matched \"dinosaur\"",
+        "summary matched \"fossil\"",
+        "path matched \"design\"",
+        "title matched \"design\"",
+        "summary matched \"design\"",
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"v14\"",
+        "summary matched \"v14\"",
+        "title matched \"readability\"",
+        "summary matched \"readability\"",
+        "path matched \"redesign\"",
+        "title matched \"redesign\"",
+        "summary matched \"redesign\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-075850-Implement-a-design-only-Dino.json",
+      "kind": "recent_task",
+      "title": "Task: Implement a design-only DinoBrain Observatory graph redesign from the provided dinosaur-shaped g",
+      "summary": "status=completed | project=dinobrain | Implemented a design-only DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph reference. Kept OS/MCP/SQLite/hook/data logic unchanged; updated only the Observatory visual layout/rendering CSS and browser-side canvas layout. The graph now uses deterministic dinosaur pose targets so live nodes and edges read as tail, body/core, neck/head, and leg clust",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 52,
+      "reasons": [
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\"",
+        "summary matched \"visual\"",
+        "path matched \"design\"",
+        "title matched \"design\"",
+        "summary matched \"design\"",
+        "title matched \"from\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"redesign\"",
+        "summary matched \"redesign\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-074013-Plan-a-high-quality-design-o.json",
+      "kind": "recent_task",
+      "title": "Task: Plan a high-quality design-only redesign of the DinoBrain Observatory graph so it visually resem",
+      "summary": "status=partial | project=dinobrain | Played back the design-only brief for a high-quality DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph image. No files were changed. Product Design user-context preflight could not run because python/python3 resolves to WindowsApps shim without a local Python runtime, but the supplied image is a concrete visual source.",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 48,
+      "reasons": [
+        "summary matched \"dinosaur\"",
+        "title matched \"visual\"",
+        "summary matched \"visual\"",
+        "path matched \"design\"",
+        "title matched \"design\"",
+        "summary matched \"design\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"redesign\"",
+        "summary matched \"redesign\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-020213-Remove-dinosaur-fossil-visua.json",
+      "kind": "recent_task",
+      "title": "Task: Remove dinosaur/fossil visual design from DinoBrain Observatory graph entirely. Keep the operati",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 48,
+      "reasons": [
+        "path matched \"remove\"",
+        "title matched \"remove\"",
+        "path matched \"dinosaur\"",
+        "title matched \"dinosaur\"",
+        "path matched \"fossil\"",
+        "title matched \"fossil\"",
+        "title matched \"visual\"",
+        "title matched \"design\"",
+        "title matched \"from\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "title matched \"graph\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-085839-Improve-the-DinoBrain-Observ.json",
+      "kind": "recent_task",
+      "title": "Task: Improve the DinoBrain Observatory dinosaur graph design after user feedback that the deployed v0",
+      "summary": "status=partial | project=dinobrain | Improved the DinoBrain Observatory dinosaur graph candidate after user feedback that the previous deployed visual felt disappointing. Kept changes visual-only: increased graph canvas height, added aspect-preserving dino frame mapping, redistributed root/category nodes into head/neck/tail/leg roles, strengthened pose lock, reduced edge physics, and added live-data scaffold routes. ",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 45,
+      "reasons": [
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\"",
+        "summary matched \"visual\"",
+        "title matched \"design\"",
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"after\"",
+        "summary matched \"after\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-082135-Deploy-the-completed-DinoBra.json",
+      "kind": "recent_task",
+      "title": "Task: Deploy the completed DinoBrain Observatory dinosaur graph design change so it is available from ",
+      "summary": "status=completed | project=dinobrain | Deployed the completed DinoBrain Observatory dinosaur graph design. Committed the design change and version bump as 4eabc7f, fast-forwarded main, pushed origin/main, built a clean v0.1.6 Windows setup ZIP, created GitHub Release v0.1.6, uploaded DinoBrainSetup.zip and DinoBrainSetup.zip.sha256, and verified the remote ZIP download SHA matches the local SHA. Local untracked scree",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 39,
+      "reasons": [
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\"",
+        "title matched \"design\"",
+        "summary matched \"design\"",
+        "title matched \"from\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "pack_id": "pack-20260705-023257-DinoBrain-v2-stability-fixes",
+  "pack_type": "standard",
+  "question": "DinoBrain v2 stability fixes deployment installer release alignment hook fail closed lifecycle behavior eval provenance",
+  "created_at": "2026-07-05T02:32:57.232Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 11,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 11,
+  "index_total_candidate_count": 11,
+  "index_matching_terms": [
+    "evaluation"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 8,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260705-020713-Implement-DinoBrain-v2-found.json",
+      "kind": "recent_task",
+      "title": "Task: Implement DinoBrain v2 foundations for mandatory pre-response OS context, improved retrieval, li",
+      "summary": "status=completed | project=dinobrain | Implemented DinoBrain OS v2 foundations: package/server/installer version bumped to 2.0.0, added fail-closed os_begin_task pre-response entrypoint, switched default retrieval to hybrid_contextual_v2, added action gates, node lifecycle application, durable source chunks/provenance links, feedback correction writeback, behavior evaluation, v2 Observatory status, and v2 regression ",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 45,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"v2\"",
+        "title matched \"v2\"",
+        "summary matched \"v2\"",
+        "summary matched \"installer\"",
+        "summary matched \"fail\"",
+        "summary matched \"closed\"",
+        "summary matched \"lifecycle\"",
+        "summary matched \"behavior\"",
+        "title matched \"eval\"",
+        "summary matched \"eval\"",
+        "summary matched \"provenance\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-022738-QA-code-review-DinoBrain-v2-",
+      "summary": "status=completed | Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than executing merge/hold/delete/provenance rep",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 35,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"v2\"",
+        "title matched \"v2\"",
+        "summary matched \"v2\"",
+        "summary matched \"stability\"",
+        "summary matched \"hook\"",
+        "summary matched \"fail\"",
+        "summary matched \"lifecycle\"",
+        "summary matched \"provenance\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2-.json",
+      "kind": "recent_task",
+      "title": "Task: QA/code review DinoBrain v2 changes comprehensively, focusing on stability of fail-closed pre-re",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 29,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"v2\"",
+        "title matched \"v2\"",
+        "title matched \"stability\"",
+        "title matched \"fail\"",
+        "title matched \"closed\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-023254-Implement-stability-fixes-fr.json",
+      "kind": "recent_task",
+      "title": "Task: Implement stability fixes from the DinoBrain v2 QA review and deploy the updated release.",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 29,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"v2\"",
+        "path matched \"stability\"",
+        "title matched \"stability\"",
+        "path matched \"fixes\"",
+        "title matched \"fixes\"",
+        "title matched \"release\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-103247-Deploy-the-approved-v13-Dino.json",
+      "kind": "recent_task",
+      "title": "Task: Deploy the approved v13 DinoBrain Observatory deterministic fossil graph design: commit visual c",
+      "summary": "status=completed | project=dinobrain | Deployed DinoBrain Observatory v13 deterministic fossil graph design. Bumped package and installer version to 0.1.7, verified build/hook/OS/installer alignment, pushed main, added a GitHub Actions Windows release workflow, retagged v0.1.7 to the workflow commit, and confirmed the GitHub Release contains DinoBrainSetup.zip and DinoBrainSetup.zip.sha256 assets.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 19,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"installer\"",
+        "summary matched \"release\"",
+        "summary matched \"alignment\"",
+        "summary matched \"hook\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-092603-Take-the-DinoBrain-Observato.json",
+      "kind": "recent_task",
+      "title": "Task: Take the DinoBrain Observatory dinosaur graph one step further toward the provided reference by ",
+      "summary": "status=completed | project=dinobrain | Took the DinoBrain Observatory dinosaur graph one step further after the v7 candidate. Implemented deterministic fossil mode with locked node poses, explicit slot arrays for silhouette parts, redistributed live node types across body/tail/neck/head/leg roles, reduced background edge prominence, added fixed canvas guide routes for the fossil scaffold, tuned head/neck proportions,",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 10,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-123818-Generate-hyperpersonalized-C.json",
+      "kind": "recent_task",
+      "title": "Task: Generate hyperpersonalized Codex suggestions for work to do next in the local dinobrain project,",
+      "summary": "status=completed | project=dinobrain | Generated project-specific Codex suggestions by combining DinoBrain context, local git branch state, current main/tag state, GitHub PR activity, and available connector signals. Strong candidates centered on an unmerged observatory branch and a fresh hook-fix PR that is still open against an older main.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 10,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"hook\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-014742-Generate-0-to-3-hyperpersona.json",
+      "kind": "recent_task",
+      "title": "Task: Generate 0 to 3 hyperpersonalized Codex suggestions for this local DinoBrain project using recen",
+      "summary": "status=completed | project=<machine-local-path> | Generated one strong DinoBrain suggestion based on fresh local git and GitHub evidence. The only candidate that clearly passed the why-user/why-now/why-Codex/not-already-handled bar was landing PR #1, because the hook-fix branch is still open from 2026-07-03 while main advanced to v0.1.7 without it.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 10,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"hook\""
+      ]
+    }
+  ]
+}

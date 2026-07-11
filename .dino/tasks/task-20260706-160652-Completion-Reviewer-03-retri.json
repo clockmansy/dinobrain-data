@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260706-160652-Completion-Reviewer-03-retri",
+  "status": "completed",
+  "request": "Completion Reviewer 03 retrieval/LLM wiki lens: independently inspect dinobrain-data and dinobrain, no edits, derive completion conditions for an LLM Wiki that reaches meaningful information quickly as data grows, covering hybrid retrieval, graph/Obsidian-like structure, ranking, provenance, latency, and quality eval.",
+  "project": "DinoBrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-06T16:06:52.518Z",
+  "updated_at": "2026-07-06T16:09:49.555Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-06T16:09:49.555Z",
+  "trace_path": ".dino/traces/task-20260706-160652-Completion-Reviewer-03-retri.json"
+}

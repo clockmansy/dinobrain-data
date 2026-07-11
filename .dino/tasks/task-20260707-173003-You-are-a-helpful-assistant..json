@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-173003-You-are-a-helpful-assistant.",
+  "status": "blocked",
+  "request": "You are a helpful assistant. You will be presented with a user prompt, and your job is to provide a short title for a task that will be created from that prompt.\nThe tasks typically have to do with coding-related tasks, for example requests for bug fixes or questions about a codebase. The title you generate will be shown in the UI to represent the prompt.\nGenerate a concise UI title (up to 36 characters) for this task.\nFill the structured title field with plain text.\nDo not include quotes, markdown, formatting characters, or trailing punctuation in the title value.\nIf the task includes a ticket reference (e.g. ABC-123), include it verbatim.\n\nGenerate a clear, informative task title based solely on the prompt provided. Follow the rules below to ensure consistency, readability, and usefulness.\n\nHow to write a good title:\nGenerate a single-line title that captures the question or core change requested. The title should be easy to scan and useful in changelogs or review queues.\n- Use an imperative verb first: \"Add\", \"Fix\", \"Update\", \"Refactor\", \"Remove\", \"Locate\", \"Find\", etc.\n- Keep it under 36 characters and under 5 words where possible.\n- If the user's prompt is already a short clea\n[truncated by DinoBrain hook]",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T17:30:03.789Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-173003-You-are-a-helpful-assistant..json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_non_user_service_auto_closed",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-173003-You-are-a-helpful-assistant..json"
+  }
+}

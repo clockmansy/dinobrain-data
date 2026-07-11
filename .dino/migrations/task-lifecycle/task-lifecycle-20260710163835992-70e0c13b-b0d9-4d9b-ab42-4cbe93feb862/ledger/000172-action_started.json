@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 172,
+  "event": "action_started",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "9b36c3c14f426e0f67eca41db4bc56b5811b63023b129ae4fb38becee8fa5020",
+  "payload": {
+    "index": 84,
+    "task_id": "task-20260707-124937-You-are-a-helpful-assistant.",
+    "action": "auto_close_stale_non_user_service",
+    "task_sha256_before": "97a9c4ba0ed367faeab7df71668c47ac8db24634dcdcd3b2268050ad1047f189",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "20278a110bdb96b696c2832fe11d4348a6b389b6e9e5629ba12b6e3c58665ced"
+}

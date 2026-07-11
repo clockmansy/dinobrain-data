@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Project-decision-Decide-whether-this-f8b7c5aecd07",
+  "status": "pending_review",
+  "claim": "Project decision: Decide whether this exact revised document now captures the user's desired DinoBrain OS completion plan.",
+  "category": "project_decision",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "Decide whether this exact revised document now captures the user's desired DinoBrain OS completion plan.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-172924-cd6835d7036e.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-172924-cd6835d7036e",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_decision",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-172924-cd6835d7036e",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T17:29:25.365Z",
+  "updated_at": "2026-07-07T17:29:25.365Z"
+}

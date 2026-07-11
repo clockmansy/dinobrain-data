@@ -1,0 +1,46 @@
+{
+  "task_id": "task-20260707-153553-You-are-Reviewer-R6-source-c",
+  "outcome": "completed",
+  "summary": "Read-only R6 provenance/source-truth review completed. Inspected Codex MEMORY.md, OS remaining-gaps plan, completion conditions, OS v2 contract, verification docs, source/chunk/provenance code paths, hybrid retrieval provenance scoring, and data-vault RAG/source project docs. Verdict: plan has concrete completion conditions separating internal behavior memory from verified durable source support; no blocking document revision required for this reviewer lens.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "reviewer_id=R6",
+    "verdict=AGREE",
+    "The plan explicitly adds P0-06 source/chunk/claim lineage requirements, labels Context Pack item categories, rejects anchor_only_unverified as factual support, and requires graph/health failures for dangling claim_paths, missing provenance, missing verification status, or factual claims backed only by internal traces.",
+    "Existing code/data show provenance scaffolding and some verified_summary artifacts, but current retrieval/source tooling is not yet the gate itself; the reviewed plan correctly frames that as remaining implementation work rather than completed source-truth proof."
+  ],
+  "next_steps": [
+    "Implement verify:source-lineage/status artifact and wire it into status:health, verify:goal, graph health, Context Pack labels, and RAG source-coverage reporting as specified by P0-06."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-153553-You-are-Reviewer-R6-source-c.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-153553-d0a2773deaf4.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-redacted-5ebc98a35449e31580b6331c8747d00b23ff92c2.json",
+    "50_Instances/candidates/candidate-Project-state-Judge-whether-the-plan-d00761469bf6.json"
+  ],
+  "search_queries": [
+    "rg create_source_chunk|claim_paths|anchor_only_unverified|provenance|source_chunk over src docs data project/source/wiki paths"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 2,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T15:37:27.529Z"
+}

@@ -1,0 +1,62 @@
+{
+  "operation_id": "rag-verification-cross-review-20260707",
+  "type": "verification_report",
+  "status": "completed",
+  "title": "RAG direct-source learning and 10-agent cross-review",
+  "summary": "Opened the exact RAG methodology URLs supplied by the user, reviewed supplemental official component docs, ran 10 focused subagent reviews, and promoted a high-purity verified RAG knowledge pack.",
+  "completed_at": "2026-07-07T00:45:00Z",
+  "source_status": "verified_summary",
+  "direct_user_source_count": 20,
+  "supplemental_source_count": 13,
+  "raw_full_pages_stored": false,
+  "subagents": [
+    {
+      "id": "019f39ef-3f62-7ba2-9cd2-f6ca78130407",
+      "focus": "foundational RAG papers and survey"
+    },
+    {
+      "id": "019f39ef-bcc0-7da3-98b6-bc3a2d52741f",
+      "focus": "contextual retrieval and chunking"
+    },
+    {
+      "id": "019f39ef-e14b-7010-a775-6c71cc87b4be",
+      "focus": "hybrid search"
+    },
+    {
+      "id": "019f39f0-0615-76c0-86b5-bbc4a08afe31",
+      "focus": "reranking"
+    },
+    {
+      "id": "019f39f0-2dc7-70b2-9cd1-b059d7311ec5",
+      "focus": "framework RAG pipelines"
+    },
+    {
+      "id": "019f39f0-5b46-70a1-b837-e6f1ae096970",
+      "focus": "managed/cloud knowledge bases"
+    },
+    {
+      "id": "019f39f4-4db8-7232-b7d2-6a14f54b1807",
+      "focus": "OpenAI Retrieval and embeddings"
+    },
+    {
+      "id": "019f39f4-7420-7513-b0cd-ac0161dec5e7",
+      "focus": "RAG evaluation"
+    },
+    {
+      "id": "019f39f4-a879-7cb1-984d-b2e48b9abcc3",
+      "focus": "GraphRAG"
+    },
+    {
+      "id": "019f39f4-df58-79c0-a995-531732f7250e",
+      "focus": "cross-review purity filter"
+    }
+  ],
+  "artifacts": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "50_Instances/accepted/rag-verified-knowledge-v1.json",
+    "80_Review_Queue/rag-learning/rag-verified-knowledge-v1.json",
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.json"
+  ],
+  "accepted_memory_id": "rag-verified-knowledge-v1"
+}

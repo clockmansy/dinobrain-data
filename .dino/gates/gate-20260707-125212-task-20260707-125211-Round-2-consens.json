@@ -1,0 +1,36 @@
+{
+  "gate_id": "gate-20260707-125212-task-20260707-125211-Round-2-consens",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-125211-Round-2-consensus-review-Rol",
+  "request": "Round 2 consensus review, Role 7 lifecycle/sync/public safety. Inspect revised document [REDACTED_MACHINE_LOCAL_PATH] plus docs/SYNC_POLICY.md, docs/VERIFICATION.md, docs/OS_COMPLETION_CONDITIONS.md, data health/status files, review settlement/public safety status if useful. Return AGREE if the plan protects against unsafe auto-sync/unreviewed promotion and has sufficient completion criteria; otherwise REVISE_REQUIRED. No edits.",
+  "generated_at": "2026-07-07T12:52:12.187Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-125212-Round-2-consensus-review-Rol.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

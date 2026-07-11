@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-124528-Role-1-user-intent-completio",
+  "status": "completed",
+  "request": "Role 1: user-intent/completion-bar reviewer. DinoBrain OS unfinished improvement plan consensus review. Read and inspect at minimum: [REDACTED_MACHINE_LOCAL_PATH] relevant DinoBrain sections, [REDACTED_MACHINE_LOCAL_PATH] docs/OS_COMPLETION_IMPROVEMENT_PLAN.md, docs/VERIFICATION.md, [REDACTED_MACHINE_LOCAL_PATH] health_status.json, and relevant 40_Projects files in dinobrain-data. Also use rg to search the data repo for user desired direction around pre-response, direct MCP, native instruction, behavior recall, retrieval quality. Candidate plan: harden remaining gaps P0-04 direct MCP parity, P0-05 native instruction authority gate, P1-09 event-triggered behavior recall, P1-10 retrieval quality/real eval, and make completion conditions a document. Return AGREE only if you accept the plan and completion conditions; otherwise return REVISE_REQUIRED with exact changes needed. Do not edit files.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T12:45:28.826Z",
+  "updated_at": "2026-07-07T12:47:00.787Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T12:47:00.787Z",
+  "trace_path": ".dino/traces/task-20260707-124528-Role-1-user-intent-completio.json"
+}

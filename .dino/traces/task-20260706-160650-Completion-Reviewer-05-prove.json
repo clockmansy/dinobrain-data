@@ -1,0 +1,41 @@
+{
+  "task_id": "task-20260706-160650-Completion-Reviewer-05-prove",
+  "outcome": "completed",
+  "summary": "Completed read-only provenance/source-truth completion review. Finding: DinoBrain has app-side tools and docs for source chunks, provenance links, lifecycle repair, provenance-aware reranking, and memory-use trust audits, but the current data vault contains no durable source chunks or .dino/provenance records; all accepted JSON records point only to internal task traces. Completion requires separating memory provenance from factual source truth, adding durable external/internal source chunks with citation metadata, requiring accepted claims to link to source chunks or verified trace evidence, regenerating/validating graph/provenance health against the current accepted corpus, and treating trust_score as evidence-chain quality rather than truth.",
+  "changed_files": [],
+  "decisions": [
+    "Do not treat accepted behavior memories as source-truth citations by default; they prove prior agent/task claims, not external factual correctness.",
+    "All currently inspected accepted records are source_status=internal and resolve to .dino/traces/*; this is acceptable for agent behavior memory but insufficient for external facts or public claims.",
+    "Completion should require real 30_Sources/chunks/* records plus .dino/provenance/* links for factual claims, external evidence, citations, and last_verified metadata.",
+    "Graph/provenance health is currently stale or incomplete: graph-health reports zero accepted instances while wiki-index contains the accepted corpus, so completion requires regenerated health metrics and failing checks for missing source chunks/provenance.",
+    "Trust scoring should remain an audit of provided/declared/observed memory use, not a truth score."
+  ],
+  "next_steps": [
+    "Implement or run a provenance backfill/review pass that classifies accepted records into behavior memory, local operational fact, external fact, and public/user-sensitive claim.",
+    "Create durable source chunks and provenance links for external factual claims and high-risk operational claims, with source_uri, chunk_text, last_verified, and citation fields.",
+    "Update graph-health/Observatory completion gates so missing 30_Sources/chunks and .dino/provenance records are visible and fail source-truth readiness.",
+    "Add verification that Context Packs can return citations/source chunks alongside accepted memories and distinguish memory evidence from source evidence."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-26279e80576aba65.json",
+    "50_Instances/accepted/behavior-rule-78751921656331b2.json",
+    "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+    "50_Instances/accepted/behavior-rule-9887d405bd1916cf.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-160652-Completion-Reviewer-05-prove.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "provenance source truth durable source chunks citations trust scoring accepted instances"
+  ],
+  "memory_use": {
+    "used_memory_count": 4,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-06T16:11:00.055Z"
+}

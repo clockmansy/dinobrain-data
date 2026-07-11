@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-redacted-fbc33192b80e8b73b9849635e9714ffc453a419a",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-redacted-011f8098f37f2a1c26aa27a251b7930fb9889439",
+  "request": "Repo: <machine-local-path> Plan doc: <machine-local-path> (1).md. Data root: <machine-local-path> Compare P1-10 Retrieval Quality and Context Budget plus RAG proof/eval requirements against current DinoBrain. Distinguish real semantic embeddings from lexical/local hashing. Return top gaps. Do not edit files.",
+  "generated_at": "2026-07-07T11:37:55.955Z",
+  "context_pack_path": ".dino/context-packs/pack-redacted-0d49b192a81058fa9c67dad0b943d3b2e2196acd.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

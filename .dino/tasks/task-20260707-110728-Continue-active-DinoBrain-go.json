@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-110728-Continue-active-DinoBrain-go",
+  "status": "completed",
+  "request": "Continue active DinoBrain goal: address finish-gate integrity after review queue auto-hold settlement by inspecting current lifecycle blockers, implementing the next safe repair/gate, verifying reports, and keeping data sync scoped.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T11:07:28.908Z",
+  "updated_at": "2026-07-07T11:11:07.302Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T11:11:07.302Z",
+  "trace_path": ".dino/traces/task-20260707-110728-Continue-active-DinoBrain-go.json"
+}

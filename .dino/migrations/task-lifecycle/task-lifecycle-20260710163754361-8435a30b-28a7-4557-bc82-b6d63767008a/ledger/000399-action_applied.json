@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 399,
+  "event": "action_applied",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "fc351acc78a58903ddf784b83df54da738ba2550bdfc4bb46e779c023d053035",
+  "payload": {
+    "index": 197,
+    "task_id": "task-20260707-052054-After-launching-npm-run-code",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "6848286e4bac0852791dd6306452575cdea830a164c262f9e7434fe7ffb60182",
+    "trace_sha256_after": "554bb42e655c8e735323deae353519c347f775ed6cfa32a3b36762ce3bb04b65"
+  },
+  "entry_sha256": "b1894f444a47241940cd10fc52c72cf5264ad96a160495f37b077e429c7a944c"
+}

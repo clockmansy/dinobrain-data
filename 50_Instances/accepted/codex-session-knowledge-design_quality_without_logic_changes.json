@@ -1,0 +1,229 @@
+{
+  "memory_id": "codex-session-knowledge-design_quality_without_logic_changes",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "user_preference",
+  "title": "Design tasks need high-quality visual iteration without unrelated logic changes",
+  "claim": "For design tasks, the user wants careful high-quality visual work, screenshot-based iteration, and no unrelated logic-code changes when the task is design-only.",
+  "reusable_rule": "For design-only requests, first restate the visual intent, keep logic untouched, iterate with screenshots, and remove forced motifs when they reduce clarity.",
+  "scope": "design_workflow",
+  "confidence": "medium",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "user-preference",
+    "design",
+    "frontend",
+    "screenshots"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 14,
+    "user_hit_count": 34,
+    "assistant_hit_count": 94,
+    "weighted_score": 230,
+    "session_refs": [
+      "sess-070a11e11c4994",
+      "sess-11277020296a72",
+      "sess-1e95eea1be108d",
+      "sess-1f464b71ecea0d",
+      "sess-2fc834396900cc",
+      "sess-458b19a1a1cdf1",
+      "sess-5ea2d5d2562d29",
+      "sess-62f7b9754a9734",
+      "sess-80c93d7848697c",
+      "sess-9069abe00698a1",
+      "sess-b7f1865617d0f7",
+      "sess-dbfab8fd32cc5f",
+      "sess-e1afb3fcecf453",
+      "sess-f5ab0efc37c847"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "user",
+        "message_hash": "942d6f73e4d17e2309cb662f",
+        "char_count": 3835
+      },
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "user",
+        "message_hash": "59fdbaf4c94f4e80bea80431",
+        "char_count": 2091
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "user",
+        "message_hash": "f0b8ce9de60a779df3b3ddc7",
+        "char_count": 1143
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "assistant",
+        "message_hash": "0b838473adb5f47f1f153bde",
+        "char_count": 274
+      },
+      {
+        "session_ref": "sess-b7f1865617d0f7",
+        "role": "user",
+        "message_hash": "2f9205b54144ffc4d074e690",
+        "char_count": 800
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "5a95b89b540ac146765fa4d5",
+        "char_count": 111
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "0f4777063d5559d8dcd28c40",
+        "char_count": 471
+      },
+      {
+        "session_ref": "sess-11277020296a72",
+        "role": "assistant",
+        "message_hash": "f38e1426b0866117e71fe537",
+        "char_count": 691
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "assistant",
+        "message_hash": "6fb37e667c390e7485f194dd",
+        "char_count": 2440
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "assistant",
+        "message_hash": "de1344d0f0c5ab4e36982998",
+        "char_count": 1465
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "01d42f0b2a0f9c0ddd385662",
+        "char_count": 664
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "assistant",
+        "message_hash": "0cd7c646c028a0d3e80cc2fe",
+        "char_count": 124
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "bdedf18e04284b626e441340",
+        "char_count": 12
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "assistant",
+        "message_hash": "c3f78a984a5f7d09dd4f1120",
+        "char_count": 105
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "assistant",
+        "message_hash": "17f4afbb5a91d35b87aa3ab0",
+        "char_count": 108
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "f5e585662124ff344f2bf5c7",
+        "char_count": 48
+      }
+    ],
+    "matched_terms": [
+      "디자인|스샷|아쉬운데|덜어내|로직.*수정없이|높은\\s*퀄|천천히|visual|screenshot|graph\\s*design"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 68
+      },
+      {
+        "project": "stripe engine",
+        "count": 52
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 2
+      },
+      {
+        "project": "build-a-local-tool-for-creating",
+        "count": 2
+      },
+      {
+        "project": "new-chat",
+        "count": 2
+      },
+      {
+        "project": "html",
+        "count": 1
+      },
+      {
+        "project": "codex",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-design_quality_without_logic_changes.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-design_quality_without_logic_changes",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425438-6d6c8443-f809-4138-96b4-6e518428e42b",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425438-6d6c8443-f809-4138-96b4-6e518428e42b",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-design_quality_without_logic_changes.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-design_quality_without_logic_changes.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-design_quality_without_logic_changes.json"
+  ],
+  "successor_paths": []
+}

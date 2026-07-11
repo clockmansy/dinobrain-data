@@ -1,0 +1,271 @@
+{
+  "pack_id": "pack-20260707-005805-Codex-user-level-hooks-pre-r",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "Codex user-level hooks pre-response hook fail-closed enforcement closed-loop proof gaps verifier should fail until fixed",
+  "created_at": "2026-07-07T00:58:05.647Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 145,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 381,
+  "index_candidate_count": 145,
+  "index_total_candidate_count": 145,
+  "index_matching_terms": [
+    "-skipcodexrestartflow",
+    "closed-loop",
+    "codex",
+    "codex_preflight_completed",
+    "codex_prompt_submitted",
+    "codex_session_knowledge",
+    "codex-conversation-registry",
+    "codex-remote-attachments",
+    "codex-session-derived",
+    "codex-session-knowledge",
+    "codex-session-knowledge-configured_is_not_live_proof",
+    "codex-session-knowledge-current_instruction_over_memory",
+    "codex-session-knowledge-design_quality_without_logic_changes",
+    "codex-session-knowledge-end_to_end_execution_push",
+    "codex-session-knowledge-explain_when_confused",
+    "codex-session-knowledge-installer_new_pc_equivalence",
+    "codex-session-knowledge-knowledge_compounding_goal",
+    "codex-session-knowledge-local_evidence_over_claims",
+    "codex-session-knowledge-observability_required",
+    "codex-session-knowledge-one_link_or_direct_action",
+    "codex-session-knowledge-plan_first_scope_lock",
+    "codex-session-knowledge-pre_response_fail_closed_loop",
+    "codex-session-knowledge-profile",
+    "codex-session-knowledge-promotion",
+    "codex-session-knowledge-rag_quality_direction",
+    "codex-session-knowledge-raw_transcripts_never_public",
+    "codex-session-knowledge-version_release_drift_risk",
+    "codex-userprompt-hook-merge",
+    "enforcement",
+    "fail",
+    "fail-closed",
+    "fail-closing",
+    "fail-open",
+    "failing",
+    "fails",
+    "failures",
+    "fixed",
+    "gaps",
+    "hook",
+    "hook-side",
+    "hooks",
+    "installed-hook",
+    "live-proof",
+    "local-codex-sessions",
+    "pre-response",
+    "prompt-hook",
+    "proof",
+    "task-20260701-004836-codex-os-start_task-get_cont",
+    "task-20260701-005837-hookeventname-userpromptsubm",
+    "task-20260701-012635-hookeventname-userpromptsubm",
+    "task-20260703-041151-explain-whether-codex-hook-t",
+    "task-20260703-071734-fix-codex-userpromptsubmit-i",
+    "task-20260705-081359-implement-a-hard-closed-loop",
+    "task-20260706-230635-register-all-codex-conversat",
+    "task-memory-task-20260706-230635-register-all-codex-conversat",
+    "until",
+    "user-level",
+    "verifier",
+    "verifiers",
+    "verify-installer-hooks"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 383,
+  "items": [
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "kind": "curated_record",
+      "title": "Configured hooks are not live preflight proof",
+      "summary": "A configured or probe-verified DinoBrain hook must not be claimed as fully live until a fresh trusted Codex or Claude prompt produces pre-response events before manual MCP calls.",
+      "tags": [
+        "codex-session-derived",
+        "mistake-lesson",
+        "hook",
+        "live-proof",
+        "fail-closed"
+      ],
+      "score": 7.514,
+      "reasons": [
+        "path_matched:codex,proof",
+        "title_matched:hooks,hook,proof",
+        "summary_matched:codex,pre-response,hook,until",
+        "tags_matched:codex,hook,fail-closed,proof",
+        "chunk_matched:codex,hooks,pre-response,hook",
+        "bm25:codex,hooks,pre-response,hook,fail-closed",
+        "dense_lexical:2.11",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-295abf1038bd399d.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.1.0 closed-loop automation: hard pre-response hook block metadata, hook-side auto sync after preflight completion, finish_task auto-growth records, policy-based auto_sync commit/push tool, search_memory alias, installer env wiring for auto growth/sync, current Codex config/hook env update, and flow audit verification showing all 8 user-flow steps verified.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.1.0 closed-loop automation: hard pre-response hook block metadata, hook-side auto sync after preflight completion, finish_task auto-growth records, policy-based auto_sync commit/push tool, search_memory alias, installer env wiring for auto growth/sync, current Codex config/hook env update, and flow audit verification showing all 8",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 7.272,
+      "reasons": [
+        "title_matched:codex,pre-response,hook,closed-loop",
+        "summary_matched:codex,pre-response,hook,closed-loop",
+        "chunk_matched:codex,pre-response,hook,closed-loop",
+        "bm25:codex,pre-response,hook,closed-loop",
+        "dense_lexical:1.37",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-2e470cc8899d6fb1.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: After installing v2.0.1 on another PC, restart/trust Codex and Claude hooks so active sessions reload the new pre-response hook config.",
+      "summary": "Behavior rule: After installing v2.0.1 on another PC, restart/trust Codex and Claude hooks so active sessions reload the new pre-response hook config. | Evidence: After installing v2.0.1 on another PC, restart/trust Codex and Claude hooks so active sessions reload the new pre-response hook config.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 7.246,
+      "reasons": [
+        "title_matched:codex,hooks,pre-response,hook",
+        "summary_matched:codex,hooks,pre-response,hook",
+        "chunk_matched:codex,hooks,pre-response,hook",
+        "bm25:codex,hooks,pre-response,hook",
+        "dense_lexical:1.37",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-c5e8716a84f263be.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt. | Evidence: Explained tha",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 7.16,
+      "reasons": [
+        "title_matched:codex,user-level,hooks,hook",
+        "summary_matched:codex,user-level,hooks,hook",
+        "chunk_matched:codex,user-level,hooks,hook",
+        "bm25:codex,user-level,hooks,hook",
+        "dense_lexical:1.29",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-6e86a379809402d8.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implement P0-1 hook wrapper fail-closed and verifier cases.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implement P0-1 hook wrapper fail-closed and verifier cases. | Evidence: Implement P0-1 hook wrapper fail-closed and verifier cases.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 7.03,
+      "reasons": [
+        "title_matched:hook,fail-closed,verifier,fail",
+        "summary_matched:hook,fail-closed,verifier,fail",
+        "chunk_matched:hook,fail-closed,verifier,fail",
+        "bm25:hook,fail-closed,verifier",
+        "dense_lexical:1.12",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation guards, made node lifecycle apply real archive/hold/merge/provenance repair operations, handled os_begin_task context-pack failures as fail-closed task/gate records, fixed Observatory JSON graph fallback for v2 indexes, bumped app/installer version to 2.0.1, added regression coverage, pushed main and tag v2.0.1. Local release ZIP was built; direct GitHub Release upload could not run because no GITHUB_TOKEN/GH_TOKEN is available in this shell.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 6.907,
+      "reasons": [
+        "title_matched:codex,hook,fail-closed,fail",
+        "summary_matched:codex,hook,fail-closed,fail",
+        "chunk_matched:codex,hook,fail-closed,fail",
+        "bm25:codex,hook,fail-closed,fixed",
+        "dense_lexical:0.90",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-790503a2435d66b3.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: Use Codex user-level UserPromptSubmit hook for global DinoBrain preflight.",
+      "summary": "Behavior rule: Use Codex user-level UserPromptSubmit hook for global DinoBrain preflight. | Evidence: Use Codex user-level UserPromptSubmit hook for global DinoBrain preflight.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 6.839,
+      "reasons": [
+        "title_matched:codex,user-level,hook",
+        "summary_matched:codex,user-level,hook",
+        "chunk_matched:codex,user-level,hook",
+        "bm25:codex,user-level,hook",
+        "dense_lexical:1.20",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-00816a7debe955f7.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Run fresh live Codex and Claude proof after hook trust/reload and capture evidence in the verification registry.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Run fresh live Codex and Claude proof after hook trust/reload and capture evidence in the verification registry. | Evidence: Run fresh live Codex and Claude proof after hook trust/reload and capture evidence in the verification registry.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 6.69,
+      "reasons": [
+        "title_matched:codex,hook,proof",
+        "summary_matched:codex,hook,proof",
+        "chunk_matched:codex,hook,proof",
+        "bm25:codex,hook,proof",
+        "dense_lexical:1.00",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

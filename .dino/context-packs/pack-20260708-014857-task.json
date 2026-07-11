@@ -1,0 +1,170 @@
+{
+  "pack_id": "pack-20260708-014857-task",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "골이완수된거임?",
+  "created_at": "2026-07-08T01:48:57.464Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense vector cosine retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 79,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 69,
+  "index_candidate_count": 79,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 7,
+  "excluded_record_count": 72,
+  "items": [
+    {
+      "path": "30_Sources/chunks/azure-search-rag-overview.json",
+      "kind": "curated_record",
+      "title": "Microsoft Azure AI Search RAG overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/google-rag-engine-overview.json",
+      "kind": "curated_record",
+      "title": "Google RAG Engine overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-engine",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/microsoft-graphrag.json",
+      "kind": "curated_record",
+      "title": "Microsoft GraphRAG",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "graph-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/pinecone-rag.json",
+      "kind": "curated_record",
+      "title": "Pinecone RAG explanation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "kind": "curated_record",
+      "title": "Configured hooks are not live preflight proof",
+      "summary": "A configured or probe-verified DinoBrain hook must not be claimed as fully live until a fresh trusted Codex or Claude prompt produces pre-response events before manual MCP calls. | Rule: Distinguish configured, probe-verified, and live-verified; require fresh prompt event evidence for live hook claims. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "mistake-lesson",
+        "hook",
+        "live-proof",
+        "fail-closed"
+      ],
+      "score": 5.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "kind": "curated_record",
+      "title": "Current user instruction outranks stored memory",
+      "summary": "For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. | Rule: Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "memory-priority",
+        "os-contract"
+      ],
+      "score": 5.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "kind": "curated_record",
+      "title": "Carry authorized work through commit, push, and deploy",
+      "summary": "When the user explicitly authorizes implementation or deployment, they expect Codex to carry the work through commit, push, release, and verification rather than stopping at a proposal. | Rule: After explicit authorization such as go, push, deploy, or auto-commit, implement, verify, commit, push, and report exact hashes or links. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "git",
+        "release",
+        "delivery"
+      ],
+      "score": 5.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

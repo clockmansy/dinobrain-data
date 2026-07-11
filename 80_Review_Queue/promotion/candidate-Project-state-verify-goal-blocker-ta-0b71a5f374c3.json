@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-Project-state-verify-goal-blocker-ta-0b71a5f374c3",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-Project-state-verify-goal-blocker-ta-0b71a5f374c3.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-163204-a4d86c5afa41.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T16:32:05.425Z",
+  "updated_at": "2026-07-07T16:32:05.425Z"
+}

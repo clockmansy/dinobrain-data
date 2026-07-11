@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-115858-task",
+  "status": "completed",
+  "request": "데이터 레포는 왜 커밋안한거임?",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T11:58:58.352Z",
+  "updated_at": "2026-07-07T11:59:25.336Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T11:59:25.336Z",
+  "trace_path": ".dino/traces/task-20260707-115858-task.json"
+}

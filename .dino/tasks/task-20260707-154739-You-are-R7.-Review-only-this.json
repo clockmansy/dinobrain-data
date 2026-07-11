@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-154739-You-are-R7.-Review-only-this",
+  "status": "blocked",
+  "request": "You are R7. Review only this evidence summary from local files: OS_REMAINING_GAPS_CONSENSUS_PLAN includes P2-12 install/new-PC equivalence and implementation order; OS_COMPLETION_CONDITIONS includes lifecycle cleanup, task finish-gate integrity, memory lifecycle/compounding hygiene, data safety, and fresh-PC install conditions; SYNC_POLICY defines git_sync dry-run classifier and auto_sync bounded writer; VERIFICATION defines task:lifecycle, task:lifecycle:settle, review:settle, hooks:data:verify, verify:codex-loop. Decide if this is adequate as a completion plan for node lifecycle cleanup, task finish-gate integrity, merge/hold/demote/delete/provenance review, policy-gated GitHub data push, and recovery safety. Return exactly: reviewer_id=R7; verdict=AGREE or REVISE_REQUIRED; blocking_objections=[...]; required_doc_changes=[...]; evidence_files=[...].",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:47:39.189Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-154739-You-are-R7.-Review-only-this.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-154739-You-are-R7.-Review-only-this.json"
+  }
+}

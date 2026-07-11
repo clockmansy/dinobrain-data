@@ -1,0 +1,143 @@
+{
+  "pack_id": "pack-20260703-045357-DinoBrain-Observatory-graph-",
+  "pack_type": "standard",
+  "question": "DinoBrain Observatory graph health memory OS hooks context packs audit trust graph features compare screenshot",
+  "created_at": "2026-07-03T04:53:57.276Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 10,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 10,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 6,
+  "excluded_record_count": 10,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-045352-Analyze-a-screenshot-of-anot.json",
+      "kind": "recent_task",
+      "title": "Task: Analyze a screenshot of another person's similar memory OS / graph observatory implementation an",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 26,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "title matched \"graph\"",
+        "title matched \"memory\"",
+        "title matched \"os\"",
+        "path matched \"screenshot\"",
+        "title matched \"screenshot\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-041151-Explain-whether-Codex-hook-t.json",
+      "kind": "recent_task",
+      "title": "Task: Explain whether Codex hook trust approval can be automated for DinoBrain installation, and ident",
+      "summary": "status=completed | project=dinobrain | Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 20,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"os\"",
+        "summary matched \"hooks\"",
+        "title matched \"trust\"",
+        "summary matched \"trust\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-033050-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 17,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"os\"",
+        "summary matched \"os\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-033451-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 17,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"os\"",
+        "summary matched \"os\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-041852-Add-installer-flow-that-dete.json",
+      "kind": "recent_task",
+      "title": "Task: Add installer flow that detects running Codex, restarts or guides reload, and opens/launches a h",
+      "summary": "status=completed | project=dinobrain | Implemented a post-install Codex hook approval flow. The installer now creates DinoBrain Codex Hook Approval.cmd and launches it after hook registration unless skipped. The helper detects stale Codex desktop processes, restarts/reopens Codex, copies /hooks to the clipboard, and shows instructions while preserving the requirement that the user manually trusts the hook. Updated th",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 12,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "summary matched \"os\"",
+        "summary matched \"hooks\"",
+        "summary matched \"trust\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-012725-Global-DinoBrain-hook-verifi.json",
+      "kind": "recent_task",
+      "title": "Task: Global DinoBrain hook verification after parser fix.",
+      "summary": "status=completed | project=Documents | Completed the global hook verification after parser hardening; this record confirmed the prompt and cwd are parsed separately from another workspace.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 7,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\""
+      ]
+    }
+  ]
+}

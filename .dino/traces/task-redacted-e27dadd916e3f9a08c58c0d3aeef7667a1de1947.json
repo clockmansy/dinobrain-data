@@ -1,0 +1,44 @@
+{
+  "task_id": "task-redacted-359d4e2caca96d9dc116b429a08391f3a8321cb6",
+  "outcome": "partial",
+  "summary": "Read-only comparison of plan items P1-07 Review Queue Burn-Down Automation and P1-08 Semantic Job Settlement Rail against current DinoBrain repo and data-root state files. Found current state reports fresh and fully classified, with remaining gaps: P1-07 open review count is 73 not below 50; P1-08 state lacks required rule_id, required_provider, stale_since, source_status, last_error, and transition_reason fields on all semantic jobs, and current implementation/test surface is narrower than the full plan acceptance.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Used existing state files under <machine-local-path> as primary evidence; did not edit files.",
+    "Treated current user instruction as higher priority than DinoBrain memory.",
+    "Classified outcome as partial because implemented settlement exists and state is fresh/classified, but both P1-07 and P1-08 have plan-level gaps."
+  ],
+  "next_steps": [
+    "Burn down or manually review 24+ of the 73 remaining open review items to satisfy the plan target of open queue below 50, while preserving classification/evidence metadata.",
+    "Extend semantic job settlement schema/report to include rule_id, required_provider, stale_since, source_status, last_error, transition_reason, retry/stale policy classes, and final-readiness blockers matching P1-08.",
+    "Add or align semantic job retry/stale/final-readiness verification with the plan-named acceptance tests."
+  ],
+  "used_memory_paths": [
+    "40_Projects/README.md",
+    "40_Projects/DinoBrain-RAG-Roadmap.md",
+    "40_Projects/DinoBrain-Install-Release-State.md",
+    "40_Projects/DinoBrain-Project-State.md",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-redacted-57302136440707ce53cfea623e777d7af79a9d44.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-113451-81f98c6bec81.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-Compare-P1-07-Review-Q-51db85a57cec.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-e23c3f755f39.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 6,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 2,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T11:36:40.078Z"
+}

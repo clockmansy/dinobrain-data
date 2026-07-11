@@ -1,0 +1,29 @@
+{
+  "version": "source_snapshot_v1",
+  "type": "source_snapshot",
+  "source_id": "llamaindex-rag",
+  "stage": "verified_source",
+  "source_title": "LlamaIndex RAG",
+  "source_uri": "https://developers.llamaindex.ai/python/framework/understanding/rag/",
+  "source_content_sha256": "91936c93331f8af8b2f5aac301ec35906d7d209b5e9f087d79b2f45f743aa109",
+  "source_content_length": 505,
+  "fetched_at": "2026-07-07T00:00:00.000Z",
+  "verification_status": "verified_summary",
+  "last_verified": "2026-07-07",
+  "verification_method": "legacy_direct_source_review",
+  "verification_actor": "rag02-current-vault-migration",
+  "previous_source_content_sha256": null,
+  "content_changed": false,
+  "lineage_generation_id": "lineage-llamaindex-rag-3541ba6d630f668ce72a",
+  "evidence_paths": [
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "created_at": "2026-07-06T23:23:45.973Z",
+  "updated_at": "2026-07-11T02:04:42.740Z"
+}

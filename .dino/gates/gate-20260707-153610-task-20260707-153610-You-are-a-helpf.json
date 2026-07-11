@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-153610-task-20260707-153610-You-are-a-helpf",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-153610-You-are-a-helpful-assistant.",
+  "request": "You are a helpful assistant. You will be presented with a user prompt, and your job is to provide a short title for a task that will be created from that prompt.\nThe tasks typically have to do with coding-related tasks, for example requests for bug fixes or questions about a codebase. The title you generate will be shown in the UI to represent the prompt.\nGenerate a concise UI title (up to 36 characters) for this task.\nFill the structured title field with plain text.\nDo not include quotes, markdown, formatting characters, or trailing punctuation in the title value.\nIf the task includes a ticket reference (e.g. ABC-123), include it verbatim.\n\nGenerate a clear, informative task title based solely on the prompt provided. Follow the rules below to ensure consistency, readability, and usefulness.\n\nHow to write a good title:\nGenerate a single-line title that captures the question or core change requested. The title should be easy to scan and useful in changelogs or review queues.\n- Use an imperative verb first: \"Add\", \"Fix\", \"Update\", \"Refactor\", \"Remove\", \"Locate\", \"Find\", etc.\n- Keep it under 36 characters and under 5 words where possible.\n- If the user's prompt is already a short clea\n[truncated by DinoBrain hook]",
+  "generated_at": "2026-07-07T15:36:10.661Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-153610-You-are-a-helpful-assistant..json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

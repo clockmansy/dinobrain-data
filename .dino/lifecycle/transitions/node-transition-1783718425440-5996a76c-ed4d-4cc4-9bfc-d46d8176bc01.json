@@ -1,0 +1,24 @@
+{
+  "version": "node_lifecycle_transition_artifact_v1",
+  "transition_id": "node-transition-1783718425440-5996a76c-ed4d-4cc4-9bfc-d46d8176bc01",
+  "transaction_id": "node-lifecycle-1783718425626-fe04ddcd-00fa-43c7-be8f-4c7e0f92dc75",
+  "target_path": "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+  "from_state": null,
+  "to_state": "accepted",
+  "reason_code": "invalid_lifecycle_rebuilt",
+  "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+  "actor": "codex-mem01-migration-reapply",
+  "evidence_paths": [
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json",
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "60_Operations/session-imports/codex-conversation-registry.json"
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json"
+  ],
+  "successor_paths": [],
+  "at": "2026-07-10T21:20:25.107Z",
+  "before_sha256": "53356e80c1bbc9775192b348430deaebad4e409b0bf7609b5aee1813537b443a",
+  "after_sha256": "8bf8c5f24fcf05acca6efc3c176109532556291714c9c4f4868b255a182f4f36"
+}

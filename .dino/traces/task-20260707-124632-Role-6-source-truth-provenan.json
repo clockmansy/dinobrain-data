@@ -1,0 +1,41 @@
+{
+  "task_id": "task-20260707-124632-Role-6-source-truth-provenan",
+  "outcome": "completed",
+  "summary": "Role 6 source truth/provenance review completed read-only. Verdict: REVISE_REQUIRED because the remaining plan must keep source/chunk/claim lineage as an explicit hard acceptance condition rather than treating it as an implied part of retrieval/search quality.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Source/provenance surfaces exist in docs, code, and data chunks, but a candidate plan limited to P0-04/P0-05/P1-09/P1-10 needs an explicit provenance gate to avoid hollow RAG.",
+    "Anchor-only or verified-summary source records must not be used as factual support unless claim-level support status is explicit and reviewable."
+  ],
+  "next_steps": [
+    "Add a mandatory source-truth/provenance acceptance item to the unfinished improvement plan.",
+    "Require Context Packs and evaluations to distinguish behavior memory, source citation, anchor-only source, verified summary, and claim-supported source chunk.",
+    "Require graph/health/eval checks to fail on dangling claim_paths, missing provenance records, and factual claims backed only by internal traces."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-124632-Role-6-source-truth-provenan.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-124632-61a5271f3e05.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T12:47:35.531Z"
+}

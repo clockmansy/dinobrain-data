@@ -1,0 +1,55 @@
+{
+  "task_id": "task-20260707-110728-Continue-active-DinoBrain-go",
+  "outcome": "completed",
+  "summary": "Implemented deterministic finish-gate repair in task:lifecycle:settle. The settlement now repairs started tasks that already have grounded traces, reconstructs blocked missing-trace tasks, closes stale no-trace tasks as blocked/abandoned rather than successful completion, and preserves recent active work. Applied it to the current data vault: task lifecycle blockers dropped from 6 to 0, stale_active is 0, terminal_missing_trace is 0, and monitoring freshness was regenerated healthy at 11/11. App commit 63006db was pushed to origin/main. RAG remains the next unresolved workstream: current rag_eval still reports lexical_fallback 12/12 and hybrid 0/12.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "docs/VERIFICATION.md",
+    "scripts/verify-task-lifecycle-settlement.mjs",
+    "src/task-lifecycle-settlement.ts",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>"
+  ],
+  "decisions": [
+    "Repair finish-gate blockers only when deterministic evidence exists or when the repair explicitly records blocked/abandoned instead of completion.",
+    "Started tasks with grounded terminal traces can safely inherit the trace outcome and trace_path.",
+    "Blocked tasks without trace can receive a reconstructed blocked trace from the task error/block reason.",
+    "Stale tasks without trace should be closed as blocked/abandoned with no-success wording, not silently marked completed.",
+    "Do not broad-push the data repo while review/session-derived dirty state remains broad."
+  ],
+  "next_steps": [
+    "Start real RAG eval workstream: add explicit rag-golden.json and configure/prove dense-vector hybrid retrieval so rag_eval can pass with hybrid_contextual_v2.",
+    "Create scoped data-sync policy for already-applied review/finish settlement records without raw/session-local leakage.",
+    "Resolve the remaining 73 manual semantic review candidates by approve/reject/merge/hold workflow."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-110729-Continue-active-DinoBrain-go.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T11:11:07.302Z"
+}

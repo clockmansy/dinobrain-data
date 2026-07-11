@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-162803-task-20260707-162803-DinoBrain-OS-10",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-162803-DinoBrain-OS-10-.-.",
+  "request": "미완인 DinoBrain OS 개선 계획을 현재 상태 기준으로 검토하고, 10개 하위 에이전트 전원 동의를 통해 완성조건 문서를 작성한다. 단독 판단 없이 사용자 의도와 기억, 기존 계획, 코드/검증 상태를 대조한다.",
+  "generated_at": "2026-07-07T16:28:03.849Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-162803-DinoBrain-OS-10-.-..json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

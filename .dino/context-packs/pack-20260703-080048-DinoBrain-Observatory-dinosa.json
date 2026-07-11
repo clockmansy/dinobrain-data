@@ -1,0 +1,196 @@
+{
+  "pack_id": "pack-20260703-080048-DinoBrain-Observatory-dinosa",
+  "pack_type": "standard",
+  "question": "DinoBrain Observatory dinosaur-shaped graph visual redesign implementation. Need context on v0.1.5 Observatory graph, design-only constraints, and prior decisions.",
+  "created_at": "2026-07-03T08:00:48.042Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 16,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 16,
+  "index_total_candidate_count": 16,
+  "index_matching_terms": [
+    "60_operations",
+    "and",
+    "candidates",
+    "confidence",
+    "confirms",
+    "constraints",
+    "correction",
+    "corrections",
+    "decisions",
+    "evaluation",
+    "handoff",
+    "handoffs",
+    "implementation",
+    "interpretation",
+    "locations",
+    "only",
+    "prevention",
+    "promotion",
+    "separation",
+    "verification",
+    "wrong"
+  ],
+  "included_item_count": 6,
+  "excluded_record_count": 10,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-074013-Plan-a-high-quality-design-o.json",
+      "kind": "recent_task",
+      "title": "Task: Plan a high-quality design-only redesign of the DinoBrain Observatory graph so it visually resem",
+      "summary": "status=partial | project=dinobrain | Played back the design-only brief for a high-quality DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph image. No files were changed. Product Design user-context preflight could not run because python/python3 resolves to WindowsApps shim without a local Python runtime, but the supplied image is a concrete visual source.",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 58,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "summary matched \"dinosaur-shaped\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"visual\"",
+        "summary matched \"visual\"",
+        "title matched \"redesign\"",
+        "summary matched \"redesign\"",
+        "summary matched \"context\"",
+        "path matched \"on\"",
+        "title matched \"on\"",
+        "summary matched \"on\"",
+        "title matched \"design-only\"",
+        "summary matched \"design-only\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-075850-Implement-a-design-only-Dino.json",
+      "kind": "recent_task",
+      "title": "Task: Implement a design-only DinoBrain Observatory graph redesign from the provided dinosaur-shaped g",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 37,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "title matched \"dinosaur-shaped\"",
+        "title matched \"graph\"",
+        "title matched \"redesign\"",
+        "path matched \"on\"",
+        "title matched \"on\"",
+        "path matched \"design-only\"",
+        "title matched \"design-only\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-054107-Implement-v0.1.5-Observatory.json",
+      "kind": "recent_task",
+      "title": "Task: Implement v0.1.5 Observatory OS Health Upgrade: inspect current observatory/export/sqlite struct",
+      "summary": "status=completed | project=dinobrain | Implemented and released DinoBrain v0.1.5 Observatory OS Health Upgrade. Added shared graph health generation at .dino/index/graph-health.json, wired it into SQLite index refresh and memory audit snapshots, expanded Observatory with health chips, read trace, node lifecycle, sync risk, and graph-health API, added graph health verification, bumped app/installer/client versions to ",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 35,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "path matched \"observatory\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "summary matched \"graph\"",
+        "path matched \"on\"",
+        "summary matched \"on\"",
+        "path matched \"v0\"",
+        "title matched \"v0\"",
+        "summary matched \"v0\"",
+        "summary matched \"and\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-045733-Create-a-version-upgrade-pla.json",
+      "kind": "recent_task",
+      "title": "Task: Create a version upgrade plan for DinoBrain based on the screenshot analysis: add Observatory he",
+      "summary": "status=completed | project=dinobrain | Created a v0.1.5 upgrade plan for DinoBrain focused on Observatory OS health gates, memory lifecycle queues, read trace evidence, graph QA, and recovery/sync risk. No files were changed.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 33,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "summary matched \"graph\"",
+        "path matched \"on\"",
+        "title matched \"on\"",
+        "summary matched \"on\"",
+        "summary matched \"v0\"",
+        "summary matched \"and\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-045352-Analyze-a-screenshot-of-anot.json",
+      "kind": "recent_task",
+      "title": "Task: Analyze a screenshot of another person's similar memory OS / graph observatory implementation an",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 22,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "title matched \"graph\"",
+        "title matched \"implementation\"",
+        "path matched \"on\"",
+        "title matched \"on\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-041151-Explain-whether-Codex-hook-t.json",
+      "kind": "recent_task",
+      "title": "Task: Explain whether Codex hook trust approval can be automated for DinoBrain installation, and ident",
+      "summary": "status=completed | project=dinobrain | Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 21,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"on\"",
+        "title matched \"on\"",
+        "title matched \"and\"",
+        "summary matched \"and\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Project-state-Judge-whether-the-plan-8da5d84d66c2",
+  "status": "pending_review",
+  "claim": "Project state: Judge whether the plan's completion conditions catch native instruction drift across Codex/Claude/bootstrap/custom instruction surfaces and enforce current user > OS memory.",
+  "category": "project_state",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "Judge whether the plan's completion conditions catch native instruction drift across Codex/Claude/bootstrap/custom instruction surfaces and enforce current user > OS memory.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-153500-c35ae8ada0bb.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-153500-c35ae8ada0bb",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_state",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-153500-c35ae8ada0bb",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T15:35:00.756Z",
+  "updated_at": "2026-07-07T15:35:00.756Z"
+}

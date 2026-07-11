@@ -1,0 +1,50 @@
+{
+  "task_id": "task-20260707-163216-DinoBrain-R8-.-.-read-only-.",
+  "outcome": "completed",
+  "summary": "Read-only R8 install/new-PC/release equivalence review completed. Inspected Codex memory registry DinoBrain entries, accepted DinoBrain memory records, completion/consensus docs, install.ps1, Windows installer/release scripts, package scripts, verifier scripts, and current local artifact/version state. Verdict: the consensus plan states adequate completion conditions, but current implementation/proof is not yet sufficient to claim full install/new-PC/release equivalence because release manifest/install-equivalence verifiers are missing from package/verify:goal, Git-missing fallback can pass partial verification, release manifest artifact is absent, and current artifacts/repo state show drift risks.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Treat docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md P2-12 as directionally sufficient because it requires new-PC hard gates after Codex/Claude registration, release manifest fields, live hook-trust evidence, and degraded-only Git-missing ZIP fallback.",
+    "Do not mark current DinoBrain install/release equivalence complete: package.json lacks verify:install-equivalence and verify:release-manifest scripts, and scripts/verify-closed-loop-goal.mjs does not gate installer/release equivalence.",
+    "Treat install.ps1 as partially strong: it clones/updates app and data repos, checks git ref drift when Git exists, installs portable Node, builds/indexes, registers Codex/Claude hooks and MCP where available, and creates Observatory/diagnostic/live-proof/uninstall launchers.",
+    "Treat Git-missing ZIP fallback as risky because installer verification allows DINOBRAIN_ALLOW_NO_GIT partial verification and version-alignment verifier exits 0 when Git is missing; this needs a hard degraded/full-equivalence distinction.",
+    "Treat current release artifacts as not completion-grade evidence: ZIP SHA file matches current ZIP, but loose EXE SHA file is stale against current EXE, HEAD has no tag, app/data HEADs differ from older memory snapshot, data repo is dirty, and no release manifest artifact ties app commit/data commit/tag/assets/verifier statuses together."
+  ],
+  "next_steps": [
+    "Add explicit verify:install-equivalence and verify:release-manifest commands, then include them in verify:goal and the release readiness checklist.",
+    "Generate a release manifest/proof artifact containing app commit/branch, data commit/branch, installer version, package version, ZIP/SHA, tag target, GitHub asset id/name/size/hash when uploaded, and all required verifier statuses.",
+    "Make Git-missing ZIP fallback return degraded mode that fails full equivalence even if partial installer verification can proceed.",
+    "Update local packaging to regenerate or remove stale loose EXE SHA, and require ZIP/SHA/tag/GitHub asset parity before release readiness claims.",
+    "Run a fresh install/update rehearsal on a clean temp or new-PC-like environment with Git present, and separately prove the Git-missing degraded path fails full equivalence."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-163216-DinoBrain-R8-.-.-read-only-..json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-163216-902c64a24b49.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state---install.ps1-scripts--29bd219f1b2a.json",
+    "50_Instances/candidates/candidate-How-to-note-install-new-PC-release-e-0378f9f61a38.json",
+    "50_Instances/candidates/candidate-How-to-note-hook-trust-guided-flow-a-5aaf062a8382.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 3,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T16:35:17.964Z"
+}

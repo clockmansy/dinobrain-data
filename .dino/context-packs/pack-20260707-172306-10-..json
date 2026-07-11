@@ -1,0 +1,190 @@
+{
+  "pack_id": "pack-20260707-172306-10-.",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "??? ???? ?? ??? ????, ??? ??/??/?? ?? ??? ???? ?? ???? 10?? ??? ?? ???? ??? ????.",
+  "created_at": "2026-07-07T17:23:06.907Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 79,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 69,
+  "index_candidate_count": 79,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 8,
+  "excluded_record_count": 71,
+  "items": [
+    {
+      "path": "30_Sources/chunks/anthropic-contextual-retrieval.json",
+      "kind": "curated_record",
+      "title": "Anthropic Contextual Retrieval",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "contextual-retrieval",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+      "kind": "curated_record",
+      "title": "AWS Bedrock Knowledge Base",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "knowledge-base",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/azure-search-rag-overview.json",
+      "kind": "curated_record",
+      "title": "Microsoft Azure AI Search RAG overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/elastic-rag.json",
+      "kind": "curated_record",
+      "title": "Elastic RAG explanation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/google-rag-engine-overview.json",
+      "kind": "curated_record",
+      "title": "Google RAG Engine overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-engine",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/haystack-first-rag-pipeline.json",
+      "kind": "curated_record",
+      "title": "Haystack first RAG pipeline",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/haystack-rag-from-scratch.json",
+      "kind": "curated_record",
+      "title": "Haystack RAG from scratch",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langchain-rag.json",
+      "kind": "curated_record",
+      "title": "LangChain RAG",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

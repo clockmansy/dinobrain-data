@@ -1,0 +1,154 @@
+{
+  "pack_id": "pack-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-",
+  "pack_type": "standard",
+  "os_version": "2.0.1",
+  "question": "DinoBrain OS v2 개선 보고서의 P0 항목(DB-03 불용어/토큰화, DB-02 독립 게이트/감사, DB-01 실제 하이브리드 검색/폴백 명칭)을 코드로 반영하고 검증한다.",
+  "created_at": "2026-07-05T05:39:40.890Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense lexical retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 16,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 16,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 6,
+  "excluded_record_count": 10,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain OS v2 개선 보고서의 P0 항목(DB-03 불용어/토큰화, DB-02 독립 게이트/감사, DB-01 실제 하이브리드 검색/폴백 명칭)을 코드로 반영하고",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 8.918,
+      "reasons": [
+        "path_matched:dinobrain,os,v2,p0",
+        "title_matched:dinobrain,os,v2,개선",
+        "summary_matched:dinobrain",
+        "chunk_matched:dinobrain,os,v2,개선",
+        "bm25:dinobrain,os,v2,개선,보고서의",
+        "dense_lexical:9.83",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-020713-Implement-DinoBrain-v2-found.json",
+      "kind": "recent_task",
+      "title": "Task: Implement DinoBrain v2 foundations for mandatory pre-response OS context, improved retrieval, li",
+      "summary": "status=completed | project=dinobrain | Implemented DinoBrain OS v2 foundations: package/server/installer version bumped to 2.0.0, added fail-closed os_begin_task pre-response entrypoint, switched default retrieval to hybrid_contextual_v2, added action gates, node lifecycle application, durable source chunks/provenance links, feedback correction writeback, behavior evaluation, v2 Observatory status, and v2 regression ",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 6.013,
+      "reasons": [
+        "path_matched:dinobrain,v2",
+        "title_matched:dinobrain,os,v2",
+        "summary_matched:dinobrain,os,v2",
+        "chunk_matched:dinobrain,os,v2",
+        "bm25:dinobrain,os,v2",
+        "dense_lexical:0.64",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2-.json",
+      "kind": "recent_task",
+      "title": "Task: QA/code review DinoBrain v2 changes comprehensively, focusing on stability of fail-closed pre-re",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 5.963,
+      "reasons": [
+        "path_matched:dinobrain,v2",
+        "title_matched:dinobrain,os,v2",
+        "summary_matched:dinobrain",
+        "chunk_matched:dinobrain,os,v2",
+        "bm25:dinobrain,os,v2",
+        "dense_lexical:0.83",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-022738-QA-code-review-DinoBrain-v2-",
+      "summary": "status=completed | Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than executing merge/hold/delete/provenance rep",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 5.839,
+      "reasons": [
+        "path_matched:dinobrain,v2",
+        "title_matched:dinobrain,v2",
+        "summary_matched:dinobrain,os,v2",
+        "chunk_matched:dinobrain,v2",
+        "bm25:dinobrain,os,v2",
+        "dense_lexical:0.61",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/README.md",
+      "kind": "curated_record",
+      "title": "50_Instances/accepted",
+      "summary": "Reviewed instances that are safe to reuse.",
+      "tags": [],
+      "score": 5.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-023254-Implement-stability-fixes-fr.json",
+      "kind": "recent_task",
+      "title": "Task: Implement stability fixes from the DinoBrain v2 QA review and deploy the updated release.",
+      "summary": "status=completed | project=dinobrain | Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation guards, made node li",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 4.665,
+      "reasons": [
+        "title_matched:dinobrain,v2",
+        "summary_matched:dinobrain,os,v2",
+        "chunk_matched:dinobrain,v2",
+        "bm25:dinobrain,os,v2",
+        "dense_lexical:0.64",
+        "rank_fusion:rrf"
+      ]
+    }
+  ]
+}

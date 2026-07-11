@@ -1,0 +1,54 @@
+{
+  "task_id": "task-20260707-170022-Continue-active-DinoBrain-OS",
+  "outcome": "partial",
+  "summary": "Implemented P1-10 semantic RAG progress: added a Hugging Face Transformers feature-extraction embedding provider using Xenova/all-MiniLM-L6-v2, kept local hashing as an honest fallback, generated dense vector proof metadata with semantic_embedding_provider=true, and added local extractive generated-answer quality metrics to RAG eval. Current data now reports RAG proof healthy with 384-dimensional semantic embeddings and eval healthy with 12/12 hybrid cases, 0 lexical fallback, and generated_answer_eval healthy. Overall goal remains partial because fresh Codex Desktop live pre-response proof still requires a user-created fresh thread event.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]"
+  ],
+  "decisions": [
+    "Use a real pretrained local embedding model instead of renaming hashing or TF-IDF as semantic retrieval.",
+    "Keep local text hashing as an honest fallback with semantic_embedding_provider=false when the model is disabled or unavailable.",
+    "Do not commit ignored dense vector index files; they are rebuildable derived artifacts under .dino/index.",
+    "Generated-answer evaluation is labeled as a local extractive judge and not presented as full external Ragas/LLM-judge evaluation.",
+    "Keep the active goal partial because live Codex Desktop pre-response proof still requires a fresh user-created thread event."
+  ],
+  "next_steps": [
+    "Run npm run codex:live-proof, approve the hook if prompted, paste the proof prompt into a fresh Codex Desktop workspace thread, and rerun npm run verify:goal.",
+    "For P2-12, make installer/update optionally prewarm or verify the Hugging Face model cache so new-PC RAG proof can rebuild dense vectors without ambiguity.",
+    "Consider adding an optional external Ragas/LLM judge path for stricter answer-quality calibration."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-170022-Continue-active-DinoBrain-OS.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T17:07:43.807Z"
+}

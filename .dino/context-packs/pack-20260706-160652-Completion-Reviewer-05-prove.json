@@ -1,0 +1,369 @@
+{
+  "pack_id": "pack-20260706-160652-Completion-Reviewer-05-prove",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "Completion Reviewer 05 provenance/source truth requirements for DinoBrain: durable sources, claims vs memories, source chunks, external evidence, citations, trust scoring, accepted instances, operations, traces/context packs/events, docs/code.",
+  "created_at": "2026-07-06T16:06:52.265Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 119,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 150,
+  "index_candidate_count": 119,
+  "index_total_candidate_count": 119,
+  "index_matching_terms": [
+    "-skipcodexrestartflow",
+    "30_sources",
+    "60_operations",
+    "candidate_source",
+    "chunks",
+    "claims",
+    "code",
+    "codex",
+    "codex_preflight_completed",
+    "codex_prompt_submitted",
+    "codex-remote-attachments",
+    "codex-userprompt-hook-merge",
+    "completion",
+    "context",
+    "context_item_count",
+    "context-pack",
+    "contextual",
+    "create_source_chunk",
+    "dinobrain",
+    "dinobrain_auto_compound",
+    "dinobrain-created",
+    "dinobrain-data",
+    "dinobrainsetup",
+    "docs",
+    "durable",
+    "events",
+    "evidence_so",
+    "evidence_sourc",
+    "evidence_sources",
+    "has_context_pack",
+    "hybrid_contextual_v2",
+    "instances",
+    "memories",
+    "operations",
+    "packs",
+    "provenance",
+    "source_status",
+    "sourced",
+    "sources",
+    "task-20260701-004836-codex-os-start_task-get_cont",
+    "task-20260703-041151-explain-whether-codex-hook-t",
+    "task-20260703-071734-fix-codex-userpromptsubmit-i",
+    "task-20260703-085839-improve-the-dinobrain-observ",
+    "task-20260703-092603-take-the-dinobrain-observato",
+    "task-20260705-015049-redesign-dinobrain-observato",
+    "task-20260705-020713-implement-dinobrain-v2-found",
+    "task-20260705-022738-qa-code-review-dinobrain-v2",
+    "task-20260705-053940-dinobrain-os-v2-p0-db-03-db",
+    "task-20260705-075637-assess-whether-dinobrain-s-c",
+    "task-20260706-150114-fix-dinobrain-installer-conf",
+    "task-memory-task-20260706-150114-fix-dinobrain-installer-conf",
+    "trust",
+    "trusted_hash",
+    "trusts"
+  ],
+  "included_item_count": 12,
+  "excluded_record_count": 148,
+  "items": [
+    {
+      "path": "50_Instances/accepted/behavior-rule-26aa2f8a00656911.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: Use semantic cluster anchors for live activity, wiki, sources, projects, instances, operations, context packs, tags, and archive/error records.",
+      "summary": "Behavior rule: Use semantic cluster anchors for live activity, wiki, sources, projects, instances, operations, context packs, tags, and archive/error records. | Evidence: Use semantic cluster anchors for live activity, wiki, sources, projects, instances, operations, context packs, tags, and archive/error records.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 12.039,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:sources,instances,operations,context",
+        "summary_matched:sources,instances,operations,context",
+        "chunk_matched:dinobrain,sources,instances,operations",
+        "bm25:sources,instances,operations,traces,context",
+        "dense_lexical:3.13",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-9684c3cd6f6475ad.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events.",
+      "summary": "Behavior rule: In similar future work, apply this decision: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events. | Evidence: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.937,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:memories,traces,context,packs",
+        "summary_matched:memories,traces,context,packs",
+        "chunk_matched:memories,traces,context,packs",
+        "bm25:memories,traces,context,packs,events",
+        "dense_lexical:2.79",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-26279e80576aba65.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2 foundations: package/server/installer version bumped to 2.0.0, added fail-closed os_begin_task pre-response entrypoint, switched default retrieval to hybrid_contextual_v2, added action gates, node lifecycle application, durable source chunks/provenance links, feedback correction writeback, behavior evaluation, v2 Observatory status, and v2 regression verification.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2 foundations: package/server/installer version bumped to 2.0.0, added fail-closed os_begin_task pre-response entrypoint, switched default retrieval to hybrid_contextual_v2, added action gates, node lifecycle application, durable source chunks/provenance links, feedback correction writeback, behavior evaluation, v2 Observatory statu",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.715,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:provenance,dinobrain,durable,chunks",
+        "summary_matched:provenance,dinobrain,durable,chunks",
+        "chunk_matched:provenance,dinobrain,durable,chunks",
+        "bm25:provenance,dinobrain,durable,chunks",
+        "dense_lexical:2.11",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-78751921656331b2.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: Use local deterministic hybrid retrieval: contextual chunks, BM25 sparse, dense-lite lexical similarity, RRF, provenance and root-intent reranking.",
+      "summary": "Behavior rule: Use local deterministic hybrid retrieval: contextual chunks, BM25 sparse, dense-lite lexical similarity, RRF, provenance and root-intent reranking. | Evidence: Use local deterministic hybrid retrieval: contextual chunks, BM25 sparse, dense-lite lexical similarity, RRF, provenance and root-intent reranking.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 11.684,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:provenance,chunks,context",
+        "summary_matched:provenance,chunks,context",
+        "chunk_matched:provenance,dinobrain,chunks,traces",
+        "bm25:provenance,chunks,traces",
+        "dense_lexical:2.28",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-c5e8716a84f263be.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt. | Evidence: Explained tha",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.587,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,trust,docs,code",
+        "summary_matched:dinobrain,trust,docs,code",
+        "chunk_matched:dinobrain,trust,docs,code",
+        "bm25:dinobrain,trust,docs,code",
+        "dense_lexical:2.00",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-9fc8880d029f92ae.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Used DinoBrain task/context preflight before analysis per AGENTS.md.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Used DinoBrain task/context preflight before analysis per AGENTS.md. | Evidence: Used DinoBrain task/context preflight before analysis per AGENTS.md.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 11.156,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context",
+        "summary_matched:dinobrain,context",
+        "chunk_matched:dinobrain,traces,context",
+        "bm25:dinobrain,traces,context",
+        "dense_lexical:2.21",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-473c0c26c32a7b67.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Used DinoBrain context plus local git/GitHub evidence as primary signals.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Used DinoBrain context plus local git/GitHub evidence as primary signals. | Evidence: Used DinoBrain context plus local git/GitHub evidence as primary signals.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 11.11,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context",
+        "summary_matched:dinobrain,context",
+        "chunk_matched:dinobrain,traces,context",
+        "bm25:dinobrain,traces,context",
+        "dense_lexical:2.20",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-d5c3e04d35c17da8.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Closed the direct hook command-string verification task after confirming it emitted DinoBrain events.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Closed the direct hook command-string verification task after confirming it emitted DinoBrain events. | Evidence: Closed the direct hook command-string verification task after confirming it emitted DinoBrain events.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.105,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,events",
+        "summary_matched:dinobrain,events",
+        "chunk_matched:dinobrain,traces,events",
+        "bm25:dinobrain,traces,events",
+        "dense_lexical:2.13",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-e9e72c4d32d516e6.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: The upgrade should make DinoBrain visibly prove hook operation, context usage, memory lifecycle, graph integrity, and sync risk.",
+      "summary": "Behavior rule: In similar future work, apply this decision: The upgrade should make DinoBrain visibly prove hook operation, context usage, memory lifecycle, graph integrity, and sync risk. | Evidence: The upgrade should make DinoBrain visibly prove hook operation, context usage, memory lifecycle, graph integrity, and sync risk.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 11.078,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context",
+        "summary_matched:dinobrain,context",
+        "chunk_matched:dinobrain,traces,context",
+        "bm25:dinobrain,traces,context",
+        "dense_lexical:2.22",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.2.0 closed-loop compounding: finish_task can run automatic trace-to-behavior-rule distillation, cleanup invalid/duplicate behavior rules, refresh retrieval indexes, and keep auto sync enabled from installer/Codex hook config. Added verify:compounding to prove later memory search/context packs retrieve the promoted rule and memory-on behavior beats memory-off baseline.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.2.0 closed-loop compounding: finish_task can run automatic trace-to-behavior-rule distillation, cleanup invalid/duplicate behavior rules, refresh retrieval indexes, and keep auto sync enabled from installer/Codex hook config. Added verify:compounding to prove later memory search/context packs retrieve the promoted rule and memory-",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.077,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context,packs,code",
+        "summary_matched:dinobrain,context,packs,code",
+        "chunk_matched:dinobrain,context,packs,code",
+        "bm25:dinobrain,context,packs",
+        "dense_lexical:1.82",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-e0428ffed345bf5c.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: Do not forge or bypass Codex hook trust approval; treat it as a required user security decision.",
+      "summary": "Behavior rule: Do not forge or bypass Codex hook trust approval; treat it as a required user security decision. | Evidence: Do not forge or bypass Codex hook trust approval; treat it as a required user security decision.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 10.932,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:trust,code",
+        "summary_matched:trust,code",
+        "chunk_matched:sources,trust,traces,code",
+        "bm25:trust,traces",
+        "dense_lexical:2.01",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-2bc2f365baf3346c.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: os_gate no longer trusts has_context_pack/context_item_count self-report without a verified context pack trace.",
+      "summary": "Behavior rule: In similar future work, apply this decision: os_gate no longer trusts has_context_pack/context_item_count self-report without a verified context pack trace. | Evidence: os_gate no longer trusts has_context_pack/context_item_count self-report without a verified context pack trace.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 10.813,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:trust,context",
+        "summary_matched:trust,context",
+        "chunk_matched:dinobrain,trust,traces,context",
+        "bm25:traces,context",
+        "dense_lexical:1.98",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    }
+  ]
+}

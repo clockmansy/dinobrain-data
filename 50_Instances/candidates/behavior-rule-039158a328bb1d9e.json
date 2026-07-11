@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-039158a328bb1d9e",
+  "behavior_rule_id": "behavior-rule-039158a328bb1d9e",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Then burn down review/semantic-job queues and add lifecycle finish-gate integrity before claiming knowledge compounding.",
+  "behavior_rule": "In similar future work, apply this decision: Then burn down review/semantic-job queues and add lifecycle finish-gate integrity before claiming knowledge compounding.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-100541-dinobrain.json",
+    "snippet": "Then burn down review/semantic-job queues and add lifecycle finish-gate integrity before claiming knowledge compounding."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-100541-dinobrain.json",
+      "task_id": "task-20260707-100541-dinobrain",
+      "signal_kind": "next_step",
+      "snippet": "Then burn down review/semantic-job queues and add lifecycle finish-gate integrity before claiming knowledge compounding."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:medium"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:25:06.936Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:25:06.936Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

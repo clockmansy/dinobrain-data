@@ -1,0 +1,171 @@
+{
+  "pack_id": "pack-20260708-005758-task",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "그냥 이토큰 니가 쓰면안되는거임?",
+  "created_at": "2026-07-08T00:57:58.717Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense vector cosine retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 79,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 69,
+  "index_candidate_count": 79,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 7,
+  "excluded_record_count": 72,
+  "items": [
+    {
+      "path": "30_Sources/chunks/pinecone-rag.json",
+      "kind": "curated_record",
+      "title": "Pinecone RAG explanation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/google-rag-engine-overview.json",
+      "kind": "curated_record",
+      "title": "Google RAG Engine overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-engine",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.313,
+      "reasons": [
+        "dense_vector_cosine:2.90",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langsmith-evaluation-concepts.json",
+      "kind": "curated_record",
+      "title": "LangSmith evaluation concepts",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "evaluation",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.215,
+      "reasons": [
+        "dense_vector_cosine:2.69",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-survey.json",
+      "kind": "curated_record",
+      "title": "RAG-Survey",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "survey",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.193,
+      "reasons": [
+        "dense_vector_cosine:2.66",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2303-11366.json",
+      "kind": "curated_record",
+      "title": "RAG paper anchor arXiv 2303.11366",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "paper",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.171,
+      "reasons": [
+        "dense_vector_cosine:2.44",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langchain-rag.json",
+      "kind": "curated_record",
+      "title": "LangChain RAG",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 4.95,
+      "reasons": [
+        "dense_vector_cosine:1.98",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/anthropic-contextual-retrieval.json",
+      "kind": "curated_record",
+      "title": "Anthropic Contextual Retrieval",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "contextual-retrieval",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 4.905,
+      "reasons": [
+        "dense_vector_cosine:1.76",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "task_id": "task-20260708-030945-task",
+  "outcome": "completed",
+  "summary": "Explained why local GitHub Release upload kept blocking: git push uses Git Credential Manager, while scripts/publish-github-release.ps1 uses GitHub REST release APIs and only accepts GITHUB_TOKEN, GH_TOKEN, or -Token; gh CLI is not installed. Resolved the immediate release by pushing tag v2.2.8, which triggered the existing GitHub Actions release-windows workflow. The workflow completed successfully and uploaded DinoBrainSetup.zip plus DinoBrainSetup.zip.sha256 to the v2.2.8 release.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Used the existing tag-triggered GitHub Actions release workflow instead of requiring a local token for release upload.",
+    "Did not retrieve or expose any stored Git credential or token.",
+    "Verified the release via GitHub API after workflow success."
+  ],
+  "next_steps": [
+    "For future releases, either push the version tag to trigger GitHub Actions or install/login gh CLI and update the script to use gh auth token as a fallback.",
+    "Use https://github.com/clockmansy/dinobrain/releases/tag/v2.2.8 as the current installer release link."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/azure-search-rag-overview.json",
+    "30_Sources/chunks/microsoft-graphrag.json",
+    "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+    "30_Sources/chunks/pinecone-rag.json",
+    "30_Sources/chunks/rag-paper-2005-11401.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-030945-task.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260708-030945-a22bd7f3c1b1.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T03:15:11.138Z"
+}

@@ -1,0 +1,12 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 3,
+  "event": "migration_apply_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "555dc1d699c39fce9062818fbdb6d8e2bf04e6626accae0495e34d5d6195b3ba",
+  "payload": {
+    "action_count": 199
+  },
+  "entry_sha256": "6fecf4a2ce372f5f5391aedddcb688b6182157c5086f7d1b4d4420aa262aabd5"
+}

@@ -1,0 +1,61 @@
+{
+  "version": "readiness_ram_proof_v1",
+  "status": "verified_with_known_os_blockers",
+  "generated_at": "2026-07-11T10:00:02.449Z",
+  "reviewed_by": "codex",
+  "app_commit": "961a840bd725caddc69facd267c8f75b9104c1ae",
+  "data_base_commit": "7ce6827ffbc234704342a344d30e4ad9e1773d61",
+  "scope": "OBS-01 canonical readiness and bounded RAM",
+  "readiness": {
+    "version": "readiness_v2",
+    "generation_id": "status-20260711-094502672-0f2fc9a9-9210-468c-92c8-e504e84422a8",
+    "parity_hash": "3ded5319b675a7ebd17373d8baad97dae120cabd650dcd993ac6cd05d23be540",
+    "status": "needs_attention",
+    "operational_status": "needs_attention",
+    "hard_gate_count": 12,
+    "blocker_count": 12,
+    "operational_blocker_count": 8,
+    "snapshot_bytes": 244338,
+    "snapshot_budget_bytes": 262144
+  },
+  "ram_measurements": {
+    "refresh_peak_before_bytes": 3546493747,
+    "refresh_peak_after_bytes": 698351616,
+    "peak_reduction_percent": 80.3,
+    "before_elapsed_ms": 24515,
+    "after_elapsed_ms": 18291,
+    "sqlite_fixture_bytes": 67108864,
+    "sqlite_streaming_rss_delta_bytes": 1769472,
+    "sqlite_streaming_rss_budget_bytes": 100663296
+  },
+  "passed_commands": [
+    "npm run build",
+    "npm run readiness:verify",
+    "npm run status:generation:verify",
+    "npm run status:freshness:verify",
+    "npm run verify:semantic-pipeline-cache",
+    "npm run observatory:verify",
+    "npm run completion:audit:verify",
+    "npm run atomic:writers:verify",
+    "npm run scale:50k:verify"
+  ],
+  "known_blockers": [
+    {
+      "command": "npm run verify:os",
+      "reason": "retrieval_quality_noise_budget",
+      "failing_cases": [
+        "wiki-003",
+        "project-001",
+        "operations-002"
+      ],
+      "recall": 1,
+      "max_noise": 3,
+      "target_max_noise": 2
+    }
+  ],
+  "privacy": {
+    "contains_raw_conversation": false,
+    "contains_secret": false,
+    "contains_local_absolute_path": false
+  }
+}

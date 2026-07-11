@@ -1,0 +1,54 @@
+{
+  "memory_id": "task-memory-task-20260707-005647-Build-and-verify-DinoBrain-c",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Build and verify DinoBrain closed loop for any session: pre-response OS context, memory referenc",
+  "summary": "RAG-backed critical review of DinoBrain produced a consensus hardening pass: scoped auto-sync, review-gated memory growth, local-only index/event data, public-data safety blocking for unreviewed generated accepted memory, context/behavior eval tightening, session knowledge retrieval boost, and data migration of legacy generated accepted behavior rules into candidates plus review queue. App commit a501190 and data commit c655207 were pushed to GitHub. Remaining gap: live Codex Desktop pre-response hook proof still requires a fresh trusted Codex prompt/restart approval path; true dense semantic retrieval provider and answer-quality/Ragas-style eval are still future work.",
+  "claim": "Task outcome for dinobrain: RAG-backed critical review of DinoBrain produced a consensus hardening pass: scoped auto-sync, review-gated memory growth, local-only index/event data, public-data safety blocking for unreviewed generated accepted memory, context/behavior eval tightening, session knowledge retrieval boost, and data migration of legacy generated accepted behavior rules into candidates plus review queue. App commit a501190 and data commit c655207 were pushed to GitHub. Remaining gap: live Codex Desktop pre-response hook proof still requires a fresh trusted Codex prompt/restart approval path; true dense semantic ",
+  "request": "Build and verify DinoBrain closed loop for any session: pre-response OS context, memory reference, work execution, knowledge growth, and GitHub push. Continue until 20 subagents verify the loop or identify remaining blockers.",
+  "outcome": "partial",
+  "decisions": [
+    "Generated memory is no longer allowed to become accepted memory without review lineage.",
+    "Auto-sync is constrained to current-task scoped artifacts and excludes local-only index/events data.",
+    "Legacy auto-generated accepted behavior rules were demoted to candidate plus promotion review records.",
+    "Public data safety check now treats unreviewed auto-generated accepted memory and large/local-only files as blockers.",
+    "Behavior eval is explicitly context-level, not a substitute for answer-quality/Ragas evaluation."
+  ],
+  "next_steps": [
+    "Run a real fresh Codex Desktop prompt after hook approval/restart and pass verify:codex-live.",
+    "Add a true dense embedding provider or local ONNX embedding path so hybrid retrieval is not lexical-only.",
+    "Add answer-quality memory-on vs memory-off evaluation with Ragas-style metrics.",
+    "Promote only reviewed high-value candidate memories from 80_Review_Queue into accepted memory."
+  ],
+  "used_memory_paths": [
+    "40_Projects/DinoBrain-RAG-Roadmap.md",
+    "70_Error_Book/DinoBrain-Public-Data-Safety.md",
+    "70_Error_Book/DinoBrain-Retrieval-Noise-Prevention.md",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-012857-DinoBrain-post-patch-audit-1.json",
+    ".dino/context-packs/pack-20260707-012921-DB-01-audit-hybrid-contextua.json",
+    ".dino/context-packs/pack-20260707-012921-DinoBrain-installer-release-.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-005647-Build-and-verify-DinoBrain-c.json",
+    "snippet": "RAG-backed critical review of DinoBrain produced a consensus hardening pass: scoped auto-sync, review-gated memory growth, local-only index/event data, public-data safety blocking for unreviewed generated accepted memory, context/behavior eval tightening, session knowledge retrieval boost, and data migration of legacy generated accepted behavior rules into candidates plus review queue. App commit a501190 and data commit c655207 were pushed to GitHub. Remaining gap: live Codex Desktop pre-response hook proof still requires a fresh trusted Codex prompt/restart approval path; true dense semantic retrieval provider and answer-quality/Ragas-style eval are still future work."
+  },
+  "source_status": "internal",
+  "confidence": "low",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:partial",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T02:02:58.139Z",
+  "updated_at": "2026-07-07T02:02:58.139Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-005647-Build-and-verify-DinoBrain-c.json",
+    "task_id": "task-20260707-005647-Build-and-verify-DinoBrain-c",
+    "task_path": ".dino/tasks/task-20260707-005647-Build-and-verify-DinoBrain-c.json"
+  }
+}

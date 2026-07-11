@@ -1,0 +1,57 @@
+{
+  "memory_id": "task-memory-task-20260707-001802-RAG-verification-subagent-04",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: RAG verification subagent 04: verify reranking providers and rerank stage from official sources ",
+  "summary": "Verified official reranking documentation for Cohere, Voyage AI, Pinecone, and Weaviate. Prepared 5 source-bound claims on rerank APIs, model behavior, placement after retrieval/rank fusion, and caveats for DinoBrain RAG design.",
+  "claim": "Task outcome for dinobrain: Verified official reranking documentation for Cohere, Voyage AI, Pinecone, and Weaviate. Prepared 5 source-bound claims on rerank APIs, model behavior, placement after retrieval/rank fusion, and caveats for DinoBrain RAG design.",
+  "request": "RAG verification subagent 04: verify reranking providers and rerank stage from official sources for Cohere, Voyage, Pinecone, and Weaviate. Return 4-6 sourced claims with confidence, placement after retrieval/rank fusion, and caveats. Read-only; do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "Treat reranking as a second-stage operation after initial retrieval; for DinoBrain specifically, run dense/BM25/hybrid retrieval and reciprocal rank fusion first, then rerank the fused top candidate window.",
+    "Use provider rerank scores for within-query ordering, not as globally calibrated relevance probabilities.",
+    "Preserve original retrieval scores, source paths, and fusion rank as provenance alongside rerank score."
+  ],
+  "next_steps": [
+    "If implementing later, choose one default reranker and define candidate window size, top_n/top_k output size, truncation policy, and fallback behavior when provider calls fail."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-001805-RAG-reranking-providers-and-.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-001802-RAG-verification-subagent-04.json",
+    "snippet": "Verified official reranking documentation for Cohere, Voyage AI, Pinecone, and Weaviate. Prepared 5 source-bound claims on rerank APIs, model behavior, placement after retrieval/rank fusion, and caveats for DinoBrain RAG design."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:19:17.527Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-001802-RAG-verification-subagent-04.json",
+    "task_id": "task-20260707-001802-RAG-verification-subagent-04",
+    "task_path": ".dino/tasks/task-20260707-001802-RAG-verification-subagent-04.json"
+  },
+  "accepted_at": "2026-07-07T00:19:17.527Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-001802-RAG-verification-subagent-04.json",
+  "candidate_id": "task-memory-task-20260707-001802-RAG-verification-subagent-04",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260707-001802-RAG-verification-subagent-04.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

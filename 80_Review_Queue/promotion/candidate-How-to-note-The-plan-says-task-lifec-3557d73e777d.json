@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-How-to-note-The-plan-says-task-lifec-3557d73e777d",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-How-to-note-The-plan-says-task-lifec-3557d73e777d.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-154906-b65b54045b56.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T15:49:07.228Z",
+  "updated_at": "2026-07-07T15:49:07.228Z"
+}

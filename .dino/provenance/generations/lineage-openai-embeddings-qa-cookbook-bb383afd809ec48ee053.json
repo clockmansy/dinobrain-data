@@ -1,0 +1,46 @@
+{
+  "version": "source_lineage_generation_v1",
+  "type": "lineage_generation",
+  "generation_id": "lineage-openai-embeddings-qa-cookbook-bb383afd809ec48ee053",
+  "generation_status": "published",
+  "transaction_id": "source-lineage-1783735482919-eb7a0853-b7b4-4bb9-a16d-6c3438cf5996",
+  "source_snapshot_path": "30_Sources/fetched/openai-embeddings-qa-cookbook.json",
+  "source_chunk_path": "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+  "provenance_path": ".dino/provenance/openai-embeddings-qa-cookbook.json",
+  "source_content_sha256": "46448ac8c205a577e259fe2c7e202a1b117d0868bd2a4ed09fee4030014f4f9e",
+  "chunk_sha256": "46448ac8c205a577e259fe2c7e202a1b117d0868bd2a4ed09fee4030014f4f9e",
+  "verification_status": "verified_summary",
+  "verified_at": "2026-07-07",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": "30_Sources/fetched/openai-embeddings-qa-cookbook.json",
+      "after_sha256": "17ce650f55598e0946b616f591c0dc33b0f0ee84126c78a0e898bb5c88ddef59"
+    },
+    {
+      "path": "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+      "after_sha256": "ce48f9a2a3b2a14cd33207ab4e466d3aa244fd89e70020c086cb2286c57f2c60"
+    },
+    {
+      "path": ".dino/provenance/openai-embeddings-qa-cookbook.json",
+      "after_sha256": "8cbdd44a99926bad090c435faa138251a5973e0351e894c48c413a42a0bf6def"
+    }
+  ],
+  "created_at": "2026-07-11T02:04:42.919Z",
+  "updated_at": "2026-07-11T02:04:42.919Z"
+}

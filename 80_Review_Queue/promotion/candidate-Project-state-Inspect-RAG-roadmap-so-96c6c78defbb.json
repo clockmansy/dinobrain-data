@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-Project-state-Inspect-RAG-roadmap-so-96c6c78defbb",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-Project-state-Inspect-RAG-roadmap-so-96c6c78defbb.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-124618-681649081652.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T12:46:19.227Z",
+  "updated_at": "2026-07-07T12:46:19.227Z"
+}

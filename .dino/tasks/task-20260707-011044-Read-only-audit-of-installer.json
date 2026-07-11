@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-011044-Read-only-audit-of-installer",
+  "status": "completed",
+  "request": "Read-only audit of installer/release verification after adding verify:codex-loop, focusing install.ps1, docs/INSTALL.md, and package scripts; check new PC install runs the right Codex loop verification with portable npm/path.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T01:10:44.537Z",
+  "updated_at": "2026-07-07T01:14:40.002Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T01:14:40.002Z",
+  "trace_path": ".dino/traces/task-20260707-011044-Read-only-audit-of-installer.json"
+}

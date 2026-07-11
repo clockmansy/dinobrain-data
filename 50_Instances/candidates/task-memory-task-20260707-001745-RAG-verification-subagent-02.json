@@ -1,0 +1,61 @@
+{
+  "memory_id": "task-memory-task-20260707-001745-RAG-verification-subagent-02",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: RAG verification subagent 02: verify contextual retrieval and chunking claims from Anthropic, Pi",
+  "summary": "Verified contextual retrieval and chunking claims against Anthropic, Pinecone, and Jina official/current sources. Produced read-only source-backed claims for DinoBrain RAG implementation planning.",
+  "claim": "Task outcome for dinobrain: Verified contextual retrieval and chunking claims against Anthropic, Pinecone, and Jina official/current sources. Produced read-only source-backed claims for DinoBrain RAG implementation planning.",
+  "request": "RAG verification subagent 02: verify contextual retrieval and chunking claims from Anthropic, Pinecone official chunking docs, and Jina late chunking; return 4-6 claims with source URL, confidence, implication, caveats; read-only.",
+  "outcome": "completed",
+  "decisions": [
+    "Use external source pages as authoritative for this verification pass rather than relying on stored anchor titles.",
+    "Treat Pinecone chunking as application-owned before upsert; Pinecone retrieval/scoring works per document/record chunk.",
+    "Treat Jina late_chunking as provider-specific embedding behavior requiring ordered same-document inputs and token-limit checks."
+  ],
+  "next_steps": [
+    "If these claims are promoted into DinoBrain memory, store them as source-anchored implementation notes with caveats and source URLs.",
+    "Evaluate DinoBrain RAG with recall@k/MRR on representative queries before adopting exact chunk sizes or contextualization defaults."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/pinecone-rag.json",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-001747-RAG-verification-contextual-.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-001745-RAG-verification-subagent-02.json",
+    "snippet": "Verified contextual retrieval and chunking claims against Anthropic, Pinecone, and Jina official/current sources. Produced read-only source-backed claims for DinoBrain RAG implementation planning."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:18:59.620Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-001745-RAG-verification-subagent-02.json",
+    "task_id": "task-20260707-001745-RAG-verification-subagent-02",
+    "task_path": ".dino/tasks/task-20260707-001745-RAG-verification-subagent-02.json"
+  },
+  "accepted_at": "2026-07-07T00:18:59.620Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-001745-RAG-verification-subagent-02.json",
+  "candidate_id": "task-memory-task-20260707-001745-RAG-verification-subagent-02",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260707-001745-RAG-verification-subagent-02.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260708-013538-DinoBrain-live-proof-2026070",
+  "status": "completed",
+  "request": "DinoBrain live proof 20260708-012655 211822d5\n\nThis is a DinoBrain live hook proof prompt. Please reply with one short sentence after the pre-response OS context is loaded.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-08T01:35:38.330Z",
+  "updated_at": "2026-07-08T01:35:54.302Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-08T01:35:54.302Z",
+  "trace_path": ".dino/traces/task-20260708-013538-DinoBrain-live-proof-2026070.json"
+}

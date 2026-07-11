@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-redacted-5fbd250ac4bbe378c28f25cfeb62af2faef8ab31",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-redacted-fd064e6b01f1a551cf1f878790075b65b37d842c",
+  "request": "Repo: <machine-local-path> Plan doc: <machine-local-path> (1).md. Data root: <machine-local-path> Compare P1-11 Korean Graph-First Status UI and observability requirements against current DinoBrain observatory/app. Return visible UI gaps and evidence scripts. Do not edit files.",
+  "generated_at": "2026-07-07T11:37:56.750Z",
+  "context_pack_path": ".dino/context-packs/pack-redacted-13cb168bb0ef1117592a1a9407c3f4c83f3ccf06.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

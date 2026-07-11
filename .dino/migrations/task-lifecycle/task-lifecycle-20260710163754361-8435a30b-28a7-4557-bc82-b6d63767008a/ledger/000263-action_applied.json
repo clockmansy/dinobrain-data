@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 263,
+  "event": "action_applied",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "3478541ff7714992b75cfd4eb8282b734219a88a7df34660a56e6fa58d8f4b2d",
+  "payload": {
+    "index": 129,
+    "task_id": "task-20260707-174717-READ-ONLY-LIVE-HOOK-PROOF.-B",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "03dcf333a830304bb54081f731538b912236823434393a14742abde19546d72e",
+    "trace_sha256_after": "fd60eb93b9e40b8db40e1a7e3d311c853eb6703b5b5ba2d68cf483212c9ba2cf"
+  },
+  "entry_sha256": "dd952ab2d189eabb1a10ba3de7867940166c3d3a3499fdb2ac8aede4c6e7515e"
+}

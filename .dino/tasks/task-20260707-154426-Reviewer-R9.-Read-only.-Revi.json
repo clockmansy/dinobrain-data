@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-154426-Reviewer-R9.-Read-only.-Revi",
+  "status": "blocked",
+  "request": "Reviewer R9. Read-only. Review DinoBrain unfinished OS completion plan for install/release/new-PC parity. Inspect at minimum: <machine-local-path> <machine-local-path> docs\\OS_COMPLETION_CONDITIONS.md, docs\\INSTALL.md, docs\\VERIFICATION.md, install.ps1, package.json, and rg hits for installer, release, managed hook, new-PC, launcher, uninstall, purge. Output ONLY this structure: reviewer_id=R9; verdict=AGREE or REVISE_REQUIRED; blocking_objections=[...]; required_doc_changes=[...]; evidence_files=[...]. Judge whether plan completion conditions are sufficient for a new computer install to recover app/data version parity, Codex/Claude MCP+hooks, Observatory/verifier launchers, uninstall/purge safety, release manifest, and GitHub data sync equivalence. If no blocking objection, verdict AGREE.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:44:26.896Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-154426-Reviewer-R9.-Read-only.-Revi.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-154426-Reviewer-R9.-Read-only.-Revi.json"
+  }
+}

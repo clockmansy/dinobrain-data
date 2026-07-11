@@ -1,0 +1,29 @@
+{
+  "version": "source_snapshot_v1",
+  "type": "source_snapshot",
+  "source_id": "langchain-rag",
+  "stage": "verified_source",
+  "source_title": "LangChain RAG",
+  "source_uri": "https://docs.langchain.com/oss/python/langchain/rag",
+  "source_content_sha256": "1c6644a1aeb1b48a7997b6f010b9c434573f7b57bbbc0045794012f1b8fa3334",
+  "source_content_length": 475,
+  "fetched_at": "2026-07-07T00:00:00.000Z",
+  "verification_status": "verified_summary",
+  "last_verified": "2026-07-07",
+  "verification_method": "legacy_direct_source_review",
+  "verification_actor": "rag02-current-vault-migration",
+  "previous_source_content_sha256": null,
+  "content_changed": false,
+  "lineage_generation_id": "lineage-langchain-rag-3c435b74a1fc7a8bfec7",
+  "evidence_paths": [
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "created_at": "2026-07-06T23:23:45.973Z",
+  "updated_at": "2026-07-11T02:04:42.570Z"
+}

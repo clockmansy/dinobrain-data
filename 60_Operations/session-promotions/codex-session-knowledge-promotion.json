@@ -1,0 +1,668 @@
+{
+  "ok": true,
+  "write": true,
+  "generated_at": "2026-07-06T23:29:34.574Z",
+  "mode": "metadata_only_pattern_promotion",
+  "sessions_dir": "local-codex-sessions",
+  "data_root": "local-dinobrain-data",
+  "registry": {
+    "registry_path": "20_Wiki/Codex-Conversation-Registry.md",
+    "report_path": "60_Operations/session-imports/codex-conversation-registry.json",
+    "session_count": 47,
+    "total_messages": 4420,
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false
+  },
+  "raw_full_transcript_stored": false,
+  "message_content_stored": false,
+  "scanned": {
+    "session_files": 48,
+    "non_empty_sessions": 47,
+    "message_count": 4477,
+    "user_message_count": 536,
+    "assistant_message_count": 3941,
+    "parse_errors": 0
+  },
+  "promoted_count": 15,
+  "accepted_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json"
+  ],
+  "review_paths": [
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-local_evidence_over_claims.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-observability_required.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-version_release_drift_risk.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-end_to_end_execution_push.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-one_link_or_direct_action.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-raw_transcripts_never_public.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-configured_is_not_live_proof.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-knowledge_compounding_goal.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-plan_first_scope_lock.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-rag_quality_direction.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-design_quality_without_logic_changes.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-current_instruction_over_memory.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-explain_when_confused.json"
+  ],
+  "profile_path": "20_Wiki/Codex-Session-Knowledge-Profile.md",
+  "promotion_report_path": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+  "promotion_report_markdown_path": "60_Operations/session-promotions/codex-session-knowledge-promotion.md",
+  "promoted": [
+    {
+      "id": "codex-session-knowledge-installer_new_pc_equivalence",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "memory_kind": "project_decision",
+      "title": "Installer must restore equivalent DinoBrain behavior on a new PC",
+      "confidence": "high",
+      "source_session_count": 47,
+      "user_hit_count": 238,
+      "assistant_hit_count": 1173,
+      "weighted_score": 3298,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 1208
+        },
+        {
+          "project": "stripe engine",
+          "count": 88
+        },
+        {
+          "project": "new-chat",
+          "count": 52
+        },
+        {
+          "project": "z",
+          "count": 16
+        },
+        {
+          "project": "html",
+          "count": 13
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 12
+        },
+        {
+          "project": "build-a-local-tool-for-creating",
+          "count": 5
+        },
+        {
+          "project": "files-mentioned-by-the-user-html",
+          "count": 5
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-local_evidence_over_claims",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-local_evidence_over_claims.json",
+      "memory_kind": "user_preference",
+      "title": "Prefer direct local verification and evidence",
+      "confidence": "high",
+      "source_session_count": 46,
+      "user_hit_count": 199,
+      "assistant_hit_count": 2394,
+      "weighted_score": 2991,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 1841
+        },
+        {
+          "project": "stripe engine",
+          "count": 366
+        },
+        {
+          "project": "new-chat",
+          "count": 153
+        },
+        {
+          "project": "Project_J",
+          "count": 79
+        },
+        {
+          "project": "files-mentioned-by-the-user-html",
+          "count": 48
+        },
+        {
+          "project": "html",
+          "count": 35
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 25
+        },
+        {
+          "project": "z",
+          "count": 21
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-observability_required",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-observability_required.json",
+      "memory_kind": "project_decision",
+      "title": "Observability must show real OS state",
+      "confidence": "high",
+      "source_session_count": 42,
+      "user_hit_count": 150,
+      "assistant_hit_count": 722,
+      "weighted_score": 2044,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 728
+        },
+        {
+          "project": "stripe engine",
+          "count": 88
+        },
+        {
+          "project": "Project_J",
+          "count": 27
+        },
+        {
+          "project": "new-chat",
+          "count": 13
+        },
+        {
+          "project": "z",
+          "count": 9
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 5
+        },
+        {
+          "project": "html",
+          "count": 1
+        },
+        {
+          "project": "codex",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-pre_response_fail_closed_loop",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "memory_kind": "operating_rule",
+      "title": "DinoBrain must run pre-response and fail closed",
+      "confidence": "high",
+      "source_session_count": 31,
+      "user_hit_count": 87,
+      "assistant_hit_count": 590,
+      "weighted_score": 1528,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 672
+        },
+        {
+          "project": "new-chat",
+          "count": 3
+        },
+        {
+          "project": "Project_J",
+          "count": 1
+        },
+        {
+          "project": "stripe engine",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-version_release_drift_risk",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-version_release_drift_risk.json",
+      "memory_kind": "mistake_lesson",
+      "title": "Version drift and stale release artifacts are recurring risks",
+      "confidence": "medium",
+      "source_session_count": 41,
+      "user_hit_count": 46,
+      "assistant_hit_count": 589,
+      "weighted_score": 1316,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 593
+        },
+        {
+          "project": "stripe engine",
+          "count": 25
+        },
+        {
+          "project": "new-chat",
+          "count": 8
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 2
+        },
+        {
+          "project": "build-a-local-tool-for-creating",
+          "count": 2
+        },
+        {
+          "project": "Project_J",
+          "count": 1
+        },
+        {
+          "project": "html",
+          "count": 1
+        },
+        {
+          "project": "files-mentioned-by-the-user-html",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-end_to_end_execution_push",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-end_to_end_execution_push.json",
+      "memory_kind": "user_preference",
+      "title": "Carry authorized work through commit, push, and deploy",
+      "confidence": "high",
+      "source_session_count": 37,
+      "user_hit_count": 87,
+      "assistant_hit_count": 930,
+      "weighted_score": 1278,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 940
+        },
+        {
+          "project": "Project_J",
+          "count": 43
+        },
+        {
+          "project": "stripe engine",
+          "count": 22
+        },
+        {
+          "project": "gykim80-perfectpixel-studio-https-github-com",
+          "count": 6
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 2
+        },
+        {
+          "project": "html",
+          "count": 1
+        },
+        {
+          "project": "codex",
+          "count": 1
+        },
+        {
+          "project": "z",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-one_link_or_direct_action",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-one_link_or_direct_action.json",
+      "memory_kind": "user_preference",
+      "title": "Prefer direct links or actions when the path is known",
+      "confidence": "medium",
+      "source_session_count": 22,
+      "user_hit_count": 42,
+      "assistant_hit_count": 801,
+      "weighted_score": 969,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 491
+        },
+        {
+          "project": "stripe engine",
+          "count": 172
+        },
+        {
+          "project": "new-chat",
+          "count": 92
+        },
+        {
+          "project": "Project_J",
+          "count": 38
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 18
+        },
+        {
+          "project": "html",
+          "count": 13
+        },
+        {
+          "project": "files-mentioned-by-the-user-html",
+          "count": 6
+        },
+        {
+          "project": "gykim80-perfectpixel-studio-https-github-com",
+          "count": 6
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-raw_transcripts_never_public",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-raw_transcripts_never_public.json",
+      "memory_kind": "safety_rule",
+      "title": "Do not sync raw Codex conversation transcripts",
+      "confidence": "high",
+      "source_session_count": 31,
+      "user_hit_count": 51,
+      "assistant_hit_count": 219,
+      "weighted_score": 810,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 257
+        },
+        {
+          "project": "stripe engine",
+          "count": 7
+        },
+        {
+          "project": "files-mentioned-by-the-user-html",
+          "count": 5
+        },
+        {
+          "project": "new-chat",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-configured_is_not_live_proof",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-configured_is_not_live_proof.json",
+      "memory_kind": "mistake_lesson",
+      "title": "Configured hooks are not live preflight proof",
+      "confidence": "high",
+      "source_session_count": 32,
+      "user_hit_count": 50,
+      "assistant_hit_count": 173,
+      "weighted_score": 669,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 212
+        },
+        {
+          "project": "stripe engine",
+          "count": 6
+        },
+        {
+          "project": "Project_J",
+          "count": 3
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 1
+        },
+        {
+          "project": "build-a-local-tool-for-creating",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-knowledge_compounding_goal",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-knowledge_compounding_goal.json",
+      "memory_kind": "project_goal",
+      "title": "DinoBrain goal is knowledge compounding from sessions",
+      "confidence": "high",
+      "source_session_count": 29,
+      "user_hit_count": 52,
+      "assistant_hit_count": 196,
+      "weighted_score": 600,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 236
+        },
+        {
+          "project": "new-chat",
+          "count": 8
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 3
+        },
+        {
+          "project": "stripe engine",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-plan_first_scope_lock",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-plan_first_scope_lock.json",
+      "memory_kind": "user_preference",
+      "title": "Plan-first execution for new or handoff-heavy work",
+      "confidence": "high",
+      "source_session_count": 25,
+      "user_hit_count": 74,
+      "assistant_hit_count": 297,
+      "weighted_score": 519,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 284
+        },
+        {
+          "project": "stripe engine",
+          "count": 61
+        },
+        {
+          "project": "new-chat",
+          "count": 15
+        },
+        {
+          "project": "Project_J",
+          "count": 6
+        },
+        {
+          "project": "files-mentioned-by-the-user-html",
+          "count": 2
+        },
+        {
+          "project": "codex",
+          "count": 1
+        },
+        {
+          "project": "gykim80-perfectpixel-studio-https-github-com",
+          "count": 1
+        },
+        {
+          "project": "z",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-rag_quality_direction",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-rag_quality_direction.json",
+      "memory_kind": "project_decision",
+      "title": "RAG quality requires hybrid retrieval, provenance, and evaluation",
+      "confidence": "high",
+      "source_session_count": 28,
+      "user_hit_count": 30,
+      "assistant_hit_count": 142,
+      "weighted_score": 404,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 156
+        },
+        {
+          "project": "build-a-local-tool-for-creating",
+          "count": 5
+        },
+        {
+          "project": "Project_J",
+          "count": 4
+        },
+        {
+          "project": "stripe engine",
+          "count": 3
+        },
+        {
+          "project": "new-chat",
+          "count": 2
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 1
+        },
+        {
+          "project": "files-mentioned-by-the-user-html",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-design_quality_without_logic_changes",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-design_quality_without_logic_changes.json",
+      "memory_kind": "user_preference",
+      "title": "Design tasks need high-quality visual iteration without unrelated logic changes",
+      "confidence": "medium",
+      "source_session_count": 14,
+      "user_hit_count": 34,
+      "assistant_hit_count": 94,
+      "weighted_score": 230,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 68
+        },
+        {
+          "project": "stripe engine",
+          "count": 52
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 2
+        },
+        {
+          "project": "build-a-local-tool-for-creating",
+          "count": 2
+        },
+        {
+          "project": "new-chat",
+          "count": 2
+        },
+        {
+          "project": "html",
+          "count": 1
+        },
+        {
+          "project": "codex",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-current_instruction_over_memory",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-current_instruction_over_memory.json",
+      "memory_kind": "operating_rule",
+      "title": "Current user instruction outranks stored memory",
+      "confidence": "high",
+      "source_session_count": 29,
+      "user_hit_count": 74,
+      "assistant_hit_count": 8,
+      "weighted_score": 164,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 72
+        },
+        {
+          "project": "stripe engine",
+          "count": 9
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 16
+    },
+    {
+      "id": "codex-session-knowledge-explain_when_confused",
+      "memory_path": "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+      "review_path": "80_Review_Queue/session-knowledge/codex-session-knowledge-explain_when_confused.json",
+      "memory_kind": "user_preference",
+      "title": "Explain unfamiliar work in plain language",
+      "confidence": "medium",
+      "source_session_count": 8,
+      "user_hit_count": 11,
+      "assistant_hit_count": 3,
+      "weighted_score": 47,
+      "projects_seen": [
+        {
+          "project": "dinobrain",
+          "count": 11
+        },
+        {
+          "project": "Project_J",
+          "count": 1
+        },
+        {
+          "project": "you-are-a-senior-full-stack",
+          "count": 1
+        },
+        {
+          "project": "build-a-local-tool-for-creating",
+          "count": 1
+        }
+      ],
+      "evidence_hash_count": 14
+    }
+  ],
+  "skipped_below_threshold": []
+}

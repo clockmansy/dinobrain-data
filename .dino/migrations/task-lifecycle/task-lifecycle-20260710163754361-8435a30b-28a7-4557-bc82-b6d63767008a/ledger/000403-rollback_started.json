@@ -1,0 +1,12 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 403,
+  "event": "rollback_started",
+  "at": "2026-07-10T16:38:33.868Z",
+  "previous_entry_sha256": "b33381ffeff692e246c4a4db6492621ff1ccc853d946305988f267730f7a4bc7",
+  "payload": {
+    "mutating_artifact_count": 376
+  },
+  "entry_sha256": "fe94ac1a94c81758457ac4eaf25d201c34daca8998bc63af70c116fca4b5b069"
+}

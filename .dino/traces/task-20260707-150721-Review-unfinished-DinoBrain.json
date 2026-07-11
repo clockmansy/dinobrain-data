@@ -1,0 +1,51 @@
+{
+  "task_id": "task-20260707-150721-Review-unfinished-DinoBrain-",
+  "outcome": "partial",
+  "summary": "Reviewed and updated the unfinished DinoBrain OS improvement plan, implemented P0-04 direct MCP proof ingestion and regression verifier, wired direct MCP parity into verify:goal, recorded a current Codex direct MCP proof plus Claude not_configured artifact, and pushed app/data commits. Overall OS completion remains partial because live Codex pre-response proof, full-memory audit drift, and task lifecycle repair still block verify:goal.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md",
+    "docs/VERIFICATION.md",
+    "package.json",
+    "scripts/verify-client-mcp-direct-status.mjs",
+    "scripts/verify-closed-loop-goal.mjs",
+    "src/client-mcp-direct-status.ts",
+    ".dino/proofs/client-mcp/codex-direct-mcp-20260707-151138.json",
+    ".dino/proofs/client-mcp/claude-not-configured-20260707-151138.json",
+    ".dino/state/client_mcp_direct_status.json",
+    ".dino/state/health_status.json"
+  ],
+  "decisions": [
+    "Direct MCP parity must be based on real client proof artifacts under .dino/proofs/client-mcp, not config, hook, bootstrap, CLI fallback, alias discovery, stale proof, or partial tool evidence.",
+    "Valid Claude absence is represented as not_configured with evidence and warning rather than silent success.",
+    "Proof JSON reader strips UTF-8 BOM because Windows PowerShell may emit BOM-bearing JSON artifacts.",
+    "The strict ten-reviewer consensus document remains pending because final roles 5-10 previously returned empty subagent outputs and were not counted as agreement."
+  ],
+  "next_steps": [
+    "Implement P0-05 native instruction authority gate and verifier.",
+    "Repair remaining verify:goal blockers: live Codex pre-response proof, full-memory audit drift, and task lifecycle finish-gate repair.",
+    "Rerun a clean ten-reviewer final AGREE round once the subagent tool returns complete outputs.",
+    "Wire P0/P1 blockers into Observatory API/UI lanes in P1-11."
+  ],
+  "used_memory_paths": [
+    "40_Projects/DinoBrain-RAG-Roadmap.md",
+    "40_Projects/DinoBrain-Install-Release-State.md",
+    "40_Projects/DinoBrain-Project-State.md",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-150722-Review-unfinished-DinoBrain-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T15:17:24.977Z"
+}

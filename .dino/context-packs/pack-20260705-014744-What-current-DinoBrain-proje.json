@@ -1,0 +1,171 @@
+{
+  "pack_id": "pack-20260705-014744-What-current-DinoBrain-proje",
+  "pack_type": "standard",
+  "question": "What current DinoBrain project context, recent accepted memories, and repo-specific cautions should guide generating hyperpersonalized suggestions right now?",
+  "created_at": "2026-07-05T01:47:44.629Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 16,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 16,
+  "index_total_candidate_count": 16,
+  "index_matching_terms": [
+    "40_projects",
+    "accepted",
+    "and",
+    "candidates",
+    "copyrighted",
+    "current",
+    "handoff",
+    "handoffs",
+    "knowledge",
+    "known",
+    "project",
+    "should",
+    "what"
+  ],
+  "included_item_count": 6,
+  "excluded_record_count": 10,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-123818-Generate-hyperpersonalized-C.json",
+      "kind": "recent_task",
+      "title": "Task: Generate hyperpersonalized Codex suggestions for work to do next in the local dinobrain project,",
+      "summary": "status=completed | project=dinobrain | Generated project-specific Codex suggestions by combining DinoBrain context, local git branch state, current main/tag state, GitHub PR activity, and available connector signals. Strong candidates centered on an unmerged observatory branch and a fresh hook-fix PR that is still open against an older main.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 40,
+      "reasons": [
+        "summary matched \"current\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"project\"",
+        "summary matched \"project\"",
+        "summary matched \"context\"",
+        "tag matched \"recent\"",
+        "summary matched \"and\"",
+        "path matched \"hyperpersonalized\"",
+        "title matched \"hyperpersonalized\"",
+        "title matched \"suggestions\"",
+        "summary matched \"suggestions\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-014742-Generate-0-to-3-hyperpersona.json",
+      "kind": "recent_task",
+      "title": "Task: Generate 0 to 3 hyperpersonalized Codex suggestions for this local DinoBrain project using recen",
+      "summary": "status=started | project=<machine-local-path>",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 25,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"project\"",
+        "summary matched \"project\"",
+        "tag matched \"recent\"",
+        "title matched \"hyperpersonalized\"",
+        "title matched \"suggestions\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-092603-Take-the-DinoBrain-Observato.json",
+      "kind": "recent_task",
+      "title": "Task: Take the DinoBrain Observatory dinosaur graph one step further toward the provided reference by ",
+      "summary": "status=completed | project=dinobrain | Took the DinoBrain Observatory dinosaur graph one step further after the v7 candidate. Implemented deterministic fossil mode with locked node poses, explicit slot arrays for silhouette parts, redistributed live node types across body/tail/neck/head/leg roles, reduced background edge prominence, added fixed canvas guide routes for the fossil scaffold, tuned head/neck proportions,",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 22,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"project\"",
+        "tag matched \"recent\"",
+        "summary matched \"and\"",
+        "summary matched \"guide\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-075850-Implement-a-design-only-Dino.json",
+      "kind": "recent_task",
+      "title": "Task: Implement a design-only DinoBrain Observatory graph redesign from the provided dinosaur-shaped g",
+      "summary": "status=completed | project=dinobrain | Implemented a design-only DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph reference. Kept OS/MCP/SQLite/hook/data logic unchanged; updated only the Observatory visual layout/rendering CSS and browser-side canvas layout. The graph now uses deterministic dinosaur pose targets so live nodes and edges read as tail, body/core, neck/head, and leg clust",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 19,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"project\"",
+        "tag matched \"recent\"",
+        "summary matched \"and\"",
+        "summary matched \"now\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-085839-Improve-the-DinoBrain-Observ.json",
+      "kind": "recent_task",
+      "title": "Task: Improve the DinoBrain Observatory dinosaur graph design after user feedback that the deployed v0",
+      "summary": "status=partial | project=dinobrain | Improved the DinoBrain Observatory dinosaur graph candidate after user feedback that the previous deployed visual felt disappointing. Kept changes visual-only: increased graph canvas height, added aspect-preserving dino frame mapping, redistributed root/category nodes into head/neck/tail/leg roles, strengthened pose lock, reduced edge physics, and added live-data scaffold routes. ",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 19,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"project\"",
+        "tag matched \"recent\"",
+        "summary matched \"and\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-054107-Implement-v0.1.5-Observatory.json",
+      "kind": "recent_task",
+      "title": "Task: Implement v0.1.5 Observatory OS Health Upgrade: inspect current observatory/export/sqlite struct",
+      "summary": "status=completed | project=dinobrain | Implemented and released DinoBrain v0.1.5 Observatory OS Health Upgrade. Added shared graph health generation at .dino/index/graph-health.json, wired it into SQLite index refresh and memory audit snapshots, expanded Observatory with health chips, read trace, node lifecycle, sync risk, and graph-health API, added graph health verification, bumped app/installer/client versions to ",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 16,
+      "reasons": [
+        "title matched \"current\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"project\"",
+        "tag matched \"recent\"",
+        "summary matched \"and\""
+      ]
+    }
+  ]
+}

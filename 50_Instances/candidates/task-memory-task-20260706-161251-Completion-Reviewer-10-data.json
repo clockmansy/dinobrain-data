@@ -1,0 +1,68 @@
+{
+  "memory_id": "task-memory-task-20260706-161251-Completion-Reviewer-10-data",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: task-20260706-161251-Completion-Reviewer-10-data-",
+  "summary": "Completion Reviewer 10 completed a read-only data architecture/performance review across dinobrain and dinobrain-data. Conclusion: AGREE with the intended index-first, SQLite-sharded, graph-aware, provenance-aware direction, but DISAGREE that the current system is scalability-complete. Current live data has operations.sqlite tracked/present, but no wiki.sqlite, no SQLite manifest, no dense-vectors index, and the persisted graph-health is stale/false healthy relative to the accepted corpus. Synthetic verifiers pass but report timings instead of enforcing latency budgets. Completion should require fresh wiki+operations SQLite shards, bounded indexed candidate selection, real BM25/dense retrieval constraints, graph adjacency freshness/health gates, cold-data archive/compaction policy, and explicit latency/freshness gates that fail when the prompt path regresses toward full-vault scans.",
+  "claim": "Task outcome for DinoBrain: Completion Reviewer 10 completed a read-only data architecture/performance review across dinobrain and dinobrain-data. Conclusion: AGREE with the intended index-first, SQLite-sharded, graph-aware, provenance-aware direction, but DISAGREE that the current system is scalability-complete. Current live data has operations.sqlite tracked/present, but no wiki.sqlite, no SQLite manifest, no dense-vectors index, and the persisted graph-health is stale/false healthy relative to the accepted corpus. Synthetic verifiers pass but report timings instead of enforcing latency budgets. Completion should requi",
+  "request": "task-20260706-161251-Completion-Reviewer-10-data-",
+  "outcome": "completed",
+  "decisions": [
+    "AGREE with the direction only if SQLite wiki and operations shards are the required live fast path, not optional fallback artifacts.",
+    "DISAGREE that scalability completion is met while wiki.sqlite, manifest.json, and dense-vectors.json are absent from the live data index state.",
+    "Completion requires bounded candidate selection and latency budgets; current verifiers measure elapsed time but do not fail on agreed performance thresholds.",
+    "Completion requires graph health freshness against the current accepted corpus and graph adjacency/index metadata, not a stale healthy record.",
+    "Completion requires cold data compaction/archive boundaries so raw sessions, unreviewed candidates, old tasks/traces/context packs, and broad accepted behavior rules do not dominate default retrieval."
+  ],
+  "next_steps": [
+    "Create or refresh live .dino/index/sqlite/wiki.sqlite and .dino/index/sqlite/manifest.json, then verify get_context_pack and wiki_search report candidate_source=sqlite_shards_v2 on the real data repo.",
+    "Add hard latency/freshness gates for prompt preflight, wiki_search, context pack retrieval, recent task lookup, index rebuild, and compaction/archive jobs at synthetic 10k/50k+ memory sizes.",
+    "Replace leading-wildcard term expansion with SQLite FTS5/BM25 or another bounded sparse retrieval path, and make dense retrieval top-K rather than loading/considering every vector from JSON.",
+    "Make graph-health fail when stale relative to wiki index/shard generation time or when accepted corpus/source lineage is missing; include adjacency/node/edge counts from the current index.",
+    "Define hot/warm/cold retention: raw sessions stay local-only and excluded, operational logs are partitioned/archived by time/project, and accepted behavior memories are type-budgeted so they do not swamp durable Wiki/Source/Project records."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/task-memory-task-20260706-160652-Completion-Reviewer-03-retri.json",
+    "50_Instances/accepted/task-memory-task-20260706-160650-Completion-Reviewer-05-prove.json",
+    "50_Instances/accepted/task-memory-task-20260706-161246-Completion-Reviewer-09-read.json",
+    "50_Instances/accepted/behavior-rule-4576c59074e79294.json",
+    "60_Operations/behavior-rules/behavior-rule-index.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-161254-What-DinoBrain-architecture-.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260706-161251-Completion-Reviewer-10-data.json",
+    "snippet": "Completion Reviewer 10 completed a read-only data architecture/performance review across dinobrain and dinobrain-data. Conclusion: AGREE with the intended index-first, SQLite-sharded, graph-aware, provenance-aware direction, but DISAGREE that the current system is scalability-complete. Current live data has operations.sqlite tracked/present, but no wiki.sqlite, no SQLite manifest, no dense-vectors index, and the persisted graph-health is stale/false healthy relative to the accepted corpus. Synthetic verifiers pass but report timings instead of enforcing latency budgets. Completion should require fresh wiki+operations SQLite shards, bounded indexed candidate selection, real BM25/dense retrieval constraints, graph adjacency freshness/health gates, cold-data archive/compaction policy, and explicit latency/freshness gates that fail when the prompt path regresses toward full-vault scans."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-06T16:17:52.676Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260706-161251-Completion-Reviewer-10-data.json",
+    "task_id": "task-20260706-161251-Completion-Reviewer-10-data-",
+    "task_path": ".dino/tasks/task-20260706-161251-Completion-Reviewer-10-data.json"
+  },
+  "accepted_at": "2026-07-06T16:17:52.676Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260706-161251-Completion-Reviewer-10-data.json",
+  "candidate_id": "task-memory-task-20260706-161251-Completion-Reviewer-10-data",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260706-161251-Completion-Reviewer-10-data.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

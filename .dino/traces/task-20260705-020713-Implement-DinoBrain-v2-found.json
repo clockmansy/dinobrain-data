@@ -1,0 +1,62 @@
+{
+  "task_id": "task-20260705-020713-Implement-DinoBrain-v2-found",
+  "outcome": "completed",
+  "summary": "Implemented DinoBrain OS v2 foundations: package/server/installer version bumped to 2.0.0, added fail-closed os_begin_task pre-response entrypoint, switched default retrieval to hybrid_contextual_v2, added action gates, node lifecycle application, durable source chunks/provenance links, feedback correction writeback, behavior evaluation, v2 Observatory status, and v2 regression verification.",
+  "changed_files": [
+    "package.json",
+    "package-lock.json",
+    "src/index.ts",
+    "src/os-contract.ts",
+    "src/hybrid-retrieval.ts",
+    "src/lifecycle.ts",
+    "src/behavior-eval.ts",
+    "src/evaluate-behavior.ts",
+    "src/context.ts",
+    "src/retrieval.ts",
+    "src/wiki-index.ts",
+    "src/sqlite-shards.ts",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/verify-v2-os.mjs",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/verify-codex-hook.mjs",
+    "scripts/verify-wiki-index.mjs",
+    "scripts/verify-sqlite-shards.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/audit-user-flow.mjs",
+    "docs/OS_V2_CONTRACT.md",
+    "installer/DinoBrainSetup/DinoBrainSetup.csproj",
+    "installer/DinoBrainSetup/Program.cs",
+    "installer/DinoBrainSetup/app.manifest",
+    "README.md",
+    "docs/INSTALL.md",
+    "docs/VERIFICATION.md"
+  ],
+  "decisions": [
+    "Use os_begin_task as the default v2 pre-response entrypoint for hooks and agents.",
+    "Fail closed when OS context is missing or destructive-risk gates block the request.",
+    "Use local deterministic hybrid retrieval: contextual chunks, BM25 sparse, dense-lite lexical similarity, RRF, provenance and root-intent reranking.",
+    "Treat direct user corrections as accepted behavior memory through record_feedback_correction.",
+    "Implement lifecycle actions as review records rather than silent destructive mutation."
+  ],
+  "next_steps": [
+    "Review the uncommitted v2 diff, then commit and publish/release v2.0.0 if approved.",
+    "Run installer build/release after review so other PCs install the v2 OS contract.",
+    "Run git_sync dry-run before syncing the data repo; do not auto-push data without review."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260705-020715-DinoBrain-v2-requirements-ma.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-05T02:23:18.599Z"
+}

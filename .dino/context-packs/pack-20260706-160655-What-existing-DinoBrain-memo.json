@@ -1,0 +1,378 @@
+{
+  "pack_id": "pack-20260706-160655-What-existing-DinoBrain-memo",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "What existing DinoBrain memories, docs, traces, context packs, accepted instances, operations, and code are relevant to completing an LLM Wiki / retrieval system that quickly reaches meaningful information as data grows? Focus on hybrid retrieval, graph/Obsidian-like structure, ranking, provenance, latency, and quality eval.",
+  "created_at": "2026-07-06T16:06:55.604Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 125,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 150,
+  "index_candidate_count": 125,
+  "index_total_candidate_count": 125,
+  "index_matching_terms": [
+    "-skipcodexrestartflow",
+    "20_wiki",
+    "60_operations",
+    "code",
+    "codex",
+    "codex_preflight_completed",
+    "codex_prompt_submitted",
+    "codex-remote-attachments",
+    "codex-userprompt-hook-merge",
+    "context",
+    "context_item_count",
+    "context-pack",
+    "contextual",
+    "data",
+    "data-model",
+    "data-specific",
+    "data-vault",
+    "dataref",
+    "dinobrain",
+    "dinobrain_auto_compound",
+    "dinobrain-created",
+    "dinobrain-data",
+    "dinobrainsetup",
+    "docs",
+    "eval",
+    "evaluation",
+    "existing",
+    "graph",
+    "graph-health",
+    "graph-level",
+    "graph-only",
+    "has_context_pack",
+    "hybrid",
+    "hybrid_contextual_v2",
+    "instances",
+    "live-data",
+    "live-data-driven",
+    "llm",
+    "memories",
+    "metadata",
+    "operations",
+    "packs",
+    "provenance",
+    "reranking",
+    "retrieval",
+    "stability-focused",
+    "task-20260701-004836-codex-os-start_task-get_cont",
+    "task-20260703-041151-explain-whether-codex-hook-t",
+    "task-20260703-041852-add-installer-flow-that-dete",
+    "task-20260703-071734-fix-codex-userpromptsubmit-i",
+    "task-20260703-074013-plan-a-high-quality-design-o",
+    "task-20260703-085839-improve-the-dinobrain-observ",
+    "task-20260703-092603-take-the-dinobrain-observato",
+    "task-20260705-015049-redesign-dinobrain-observato",
+    "task-20260705-020713-implement-dinobrain-v2-found",
+    "task-20260705-022738-qa-code-review-dinobrain-v2",
+    "task-20260705-053940-dinobrain-os-v2-p0-db-03-db",
+    "task-20260705-075637-assess-whether-dinobrain-s-c",
+    "task-20260706-150114-fix-dinobrain-installer-conf",
+    "task-memory-task-20260706-150114-fix-dinobrain-installer-conf",
+    "that",
+    "wiki",
+    "wiki_search"
+  ],
+  "included_item_count": 12,
+  "excluded_record_count": 148,
+  "items": [
+    {
+      "path": "50_Instances/accepted/behavior-rule-26aa2f8a00656911.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: Use semantic cluster anchors for live activity, wiki, sources, projects, instances, operations, context packs, tags, and archive/error records.",
+      "summary": "Behavior rule: Use semantic cluster anchors for live activity, wiki, sources, projects, instances, operations, context packs, tags, and archive/error records. | Evidence: Use semantic cluster anchors for live activity, wiki, sources, projects, instances, operations, context packs, tags, and archive/error records.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 11.89,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:context,packs,instances,operations",
+        "summary_matched:context,packs,instances,operations",
+        "chunk_matched:dinobrain,traces,context,packs",
+        "bm25:traces,context,packs,instances,operations",
+        "dense_lexical:2.23",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-78751921656331b2.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: Use local deterministic hybrid retrieval: contextual chunks, BM25 sparse, dense-lite lexical similarity, RRF, provenance and root-intent reranking.",
+      "summary": "Behavior rule: Use local deterministic hybrid retrieval: contextual chunks, BM25 sparse, dense-lite lexical similarity, RRF, provenance and root-intent reranking. | Evidence: Use local deterministic hybrid retrieval: contextual chunks, BM25 sparse, dense-lite lexical similarity, RRF, provenance and root-intent reranking.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 11.841,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:context,retrieval,hybrid,ranking",
+        "summary_matched:context,retrieval,hybrid,ranking",
+        "chunk_matched:dinobrain,traces,context,retrieval",
+        "bm25:traces,retrieval,hybrid,provenance",
+        "dense_lexical:1.99",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-c1ad7c4e0066b985.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than executing merge/hold/delete/provenance repair; behavior eval exits ok when golden file is missing; Observatory JSON graph fallback rejects v2 wiki index when SQLite is unavailable; create_source_chunk stores raw chunk_text without redaction/size bounds; os_begin_task can leave started tasks if context-pack construction throws. Type check passed after adding portable Node directory to PATH; eval:behavior currently returns ok/skipped because behavior-golden.json is missing.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than e",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.827,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context,code,wiki",
+        "summary_matched:dinobrain,context,code,focus",
+        "chunk_matched:dinobrain,context,code,focus",
+        "bm25:dinobrain,context,code,wiki,graph",
+        "dense_lexical:1.80",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-9684c3cd6f6475ad.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events.",
+      "summary": "Behavior rule: In similar future work, apply this decision: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events. | Evidence: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.796,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:memories,traces,context,packs",
+        "summary_matched:memories,traces,context,packs",
+        "chunk_matched:memories,traces,context,packs",
+        "bm25:memories,traces,context,packs,data",
+        "dense_lexical:2.04",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.2.0 closed-loop compounding: finish_task can run automatic trace-to-behavior-rule distillation, cleanup invalid/duplicate behavior rules, refresh retrieval indexes, and keep auto sync enabled from installer/Codex hook config. Added verify:compounding to prove later memory search/context packs retrieve the promoted rule and memory-on behavior beats memory-off baseline.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.2.0 closed-loop compounding: finish_task can run automatic trace-to-behavior-rule distillation, cleanup invalid/duplicate behavior rules, refresh retrieval indexes, and keep auto sync enabled from installer/Codex hook config. Added verify:compounding to prove later memory search/context packs retrieve the promoted rule and memory-",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.662,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context,packs,code",
+        "summary_matched:dinobrain,context,packs,code",
+        "chunk_matched:dinobrain,context,packs,code",
+        "bm25:dinobrain,context,packs,retrieval",
+        "dense_lexical:1.84",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation guards, made node lifecycle apply real archive/hold/merge/provenance repair operations, handled os_begin_task context-pack failures as fail-closed task/gate records, fixed Observatory JSON graph fallback for v2 indexes, bumped app/installer version to 2.0.1, added regression coverage, pushed main and tag v2.0.1. Local release ZIP was built; direct GitHub Release upload could not run because no GITHUB_TOKEN/GH_TOKEN is available in this shell.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.533,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context,operations,code",
+        "summary_matched:dinobrain,code,eval",
+        "chunk_matched:dinobrain,code,eval",
+        "bm25:dinobrain,operations,code,graph,provenance",
+        "dense_lexical:1.69",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-c5e8716a84f263be.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt. | Evidence: Explained tha",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.486,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,docs,code,that",
+        "summary_matched:dinobrain,docs,code,that",
+        "chunk_matched:dinobrain,docs,code,that",
+        "bm25:dinobrain,docs,code,that",
+        "dense_lexical:1.73",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-8d5f0f45dfbb00a5.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Treat an empty LLM Wiki graph as degraded rather than merely warning because the user's goal is compounding session-derived knowledge.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Treat an empty LLM Wiki graph as degraded rather than merely warning because the user's goal is compounding session-derived knowledge. | Evidence: Treat an empty LLM Wiki graph as degraded rather than merely warning because the user's goal is compounding session-derived knowledge.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 11.433,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:llm,wiki,graph",
+        "summary_matched:llm,wiki,graph",
+        "chunk_matched:traces,llm,wiki,graph",
+        "bm25:traces,llm,wiki,graph",
+        "dense_lexical:1.70",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-26279e80576aba65.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2 foundations: package/server/installer version bumped to 2.0.0, added fail-closed os_begin_task pre-response entrypoint, switched default retrieval to hybrid_contextual_v2, added action gates, node lifecycle application, durable source chunks/provenance links, feedback correction writeback, behavior evaluation, v2 Observatory status, and v2 regression verification.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2 foundations: package/server/installer version bumped to 2.0.0, added fail-closed os_begin_task pre-response entrypoint, switched default retrieval to hybrid_contextual_v2, added action gates, node lifecycle application, durable source chunks/provenance links, feedback correction writeback, behavior evaluation, v2 Observatory statu",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 11.412,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context,retrieval,hybrid",
+        "summary_matched:dinobrain,context,retrieval,hybrid",
+        "chunk_matched:dinobrain,context,retrieval,hybrid",
+        "bm25:dinobrain,retrieval,provenance",
+        "dense_lexical:1.59",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-e9e72c4d32d516e6.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: The upgrade should make DinoBrain visibly prove hook operation, context usage, memory lifecycle, graph integrity, and sync risk.",
+      "summary": "Behavior rule: In similar future work, apply this decision: The upgrade should make DinoBrain visibly prove hook operation, context usage, memory lifecycle, graph integrity, and sync risk. | Evidence: The upgrade should make DinoBrain visibly prove hook operation, context usage, memory lifecycle, graph integrity, and sync risk.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 11.342,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context,graph",
+        "summary_matched:dinobrain,context,graph",
+        "chunk_matched:dinobrain,traces,context,graph",
+        "bm25:dinobrain,traces,context,graph",
+        "dense_lexical:1.84",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-38ec6724100da29a.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Bumped DinoBrain to v2.0.2 because retrieval and gate semantics changed materially.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Bumped DinoBrain to v2.0.2 because retrieval and gate semantics changed materially. | Evidence: Bumped DinoBrain to v2.0.2 because retrieval and gate semantics changed materially.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 11.07,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,retrieval,eval",
+        "summary_matched:dinobrain,retrieval,eval",
+        "chunk_matched:dinobrain,traces,retrieval,eval",
+        "bm25:dinobrain,traces,retrieval",
+        "dense_lexical:1.50",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-85890922977180d3.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Verified the installed/current DinoBrain OS loop against the user's 8-step flow. Codex MCP registration, UserPromptSubmit hook registration, hook simulation/probe, task/context pack creation, wiki_search, finish_task support, v2 verification, and git remotes are present. The complete loop is partially rather than fully autonomous: live current-thread hook injection was not observed before manual probe, model behavior cannot be runtime-enforced by DinoBrain, search_memory is not a separate tool, knowledge growth beyond accepted instances is not fully automatic, and git_sync remains dry-run/manual-review by policy.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Verified the installed/current DinoBrain OS loop against the user's 8-step flow. Codex MCP registration, UserPromptSubmit hook registration, hook simulation/probe, task/context pack creation, wiki_search, finish_task support, v2 verification, and git remotes are present. The complete loop is partially rather than fully autonomous: live current-thread hook in",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:low"
+      ],
+      "score": 11.031,
+      "reasons": [
+        "path_matched:instances",
+        "title_matched:dinobrain,context,instances,code",
+        "summary_matched:dinobrain,context,code,wiki",
+        "chunk_matched:dinobrain,context,code,wiki",
+        "bm25:dinobrain,context,instances",
+        "dense_lexical:1.43",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_boost"
+      ]
+    }
+  ]
+}

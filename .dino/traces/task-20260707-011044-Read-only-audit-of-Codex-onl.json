@@ -1,0 +1,31 @@
+{
+  "task_id": "task-20260707-011044-Read-only-audit-of-Codex-onl",
+  "outcome": "completed",
+  "summary": "Completed read-only audit of source/provenance graph handling across graph-health, lifecycle, observatory, and verify-graph-health. The source resolver now recognizes evidence.source, source.trace_path, source.task_path, source_paths, source_operation_path, and legacy single source fields; live data inspection shows parseable accepted records are no longer source-less, with one remaining missing source path and a persisted graph-health score of 90. No repo files were edited.",
+  "changed_files": [],
+  "decisions": [
+    "Kept the audit read-only; no source or data files were edited manually.",
+    "Treat the previous evidence.source/source_paths acceptance gap as mostly addressed by the current source resolver and verifier fixtures.",
+    "The remaining acceptance gap is source.trace_path-only coverage in scripts/verify-graph-health.mjs, plus parity coverage for lifecycle and observatory source resolution."
+  ],
+  "next_steps": [
+    "Add a source.trace_path-only accepted fixture to scripts/verify-graph-health.mjs and assert it does not count as source-less or missing when the trace target exists.",
+    "Consider extracting shared source path normalization/resolution so graph-health, lifecycle, and observatory do not drift.",
+    "Repair or quarantine the one accepted record whose evidence.source is a descriptive label rather than a durable path, and review the three accepted JSON files flagged by PowerShell JSON parsing."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-011047-Source-provenance-graph-heal.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T01:14:52.440Z"
+}

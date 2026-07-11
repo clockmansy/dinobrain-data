@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 318,
+  "event": "action_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "42235392e0dd675c69e4a63e9eedda3ae937f1315e509fbbc6646f6581674c7f",
+  "payload": {
+    "index": 157,
+    "task_id": "task-20260707-154906-Independent-reviewer-A.-You-",
+    "action": "repair_started_from_grounded_trace",
+    "task_sha256_before": "fde94cc747e1653d7cca02a75dc7595d6c781205e8db56c5511cf4091c1ec199",
+    "trace_sha256_before": "2f2607705ec5650d4398a8239269296cb0ca27ad81a8cc25a69b4e90c4b931b0"
+  },
+  "entry_sha256": "25256f8100a3a0d0600c94b094f65acfef5ec67730b546a8e299563fbc6bc6fd"
+}

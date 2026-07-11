@@ -1,0 +1,37 @@
+{
+  "task_id": "task-20260703-085839-Improve-the-DinoBrain-Observ",
+  "outcome": "partial",
+  "summary": "Improved the DinoBrain Observatory dinosaur graph candidate after user feedback that the previous deployed visual felt disappointing. Kept changes visual-only: increased graph canvas height, added aspect-preserving dino frame mapping, redistributed root/category nodes into head/neck/tail/leg roles, strengthened pose lock, reduced edge physics, and added live-data scaffold routes. Updated design QA with v7 screenshots and marked the result as a review candidate rather than release-ready.",
+  "changed_files": [
+    "scripts/dinobrain-observatory.mjs",
+    "design-qa.md"
+  ],
+  "decisions": [
+    "Do not deploy this visual automatically because the side-by-side comparison still differs from the provided reference.",
+    "Keep the implementation live-data-driven by using actual nodes, including root category nodes, rather than adding fake decorative node assets.",
+    "Record the design result as candidate / needs review in design-qa.md."
+  ],
+  "next_steps": [
+    "User should review the v7 candidate screenshot or local Observatory at http://127.0.0.1:3951/.",
+    "If the target is closer reference fidelity, implement a graph-only presentation mode with deterministic slotting for every live node before release.",
+    "If the user accepts this as better than the current deployed version, commit, push, bump release, and upload the installer ZIP."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-085847-DinoBrain-Observatory-dinosa"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [
+    ".codex-remote-attachments/dinobrain-observatory-dino-v7-canvas-crop.png",
+    ".codex-remote-attachments/dinobrain-observatory-dino-v7-comparison.png"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 2,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-03T09:17:43.883Z"
+}

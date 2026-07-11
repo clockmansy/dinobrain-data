@@ -1,0 +1,38 @@
+{
+  "task_id": "task-20260707-011040-Read-only-audit-of-auto-grow",
+  "outcome": "completed",
+  "summary": "Completed read-only audit of DinoBrain auto-growth/auto-compound safety. Finding: finish_task auto-growth and finish_task-triggered compounding currently write agent-derived task outcomes/behavior rules directly into 50_Instances/accepted, which default retrieval and auto_sync treat as trusted/syncable. Minimum safe change is to route generated growth through 50_Instances/candidates plus 80_Review_Queue/promotion while preserving traces and review-approved retrieval.",
+  "changed_files": [],
+  "decisions": [
+    "Do not let finish_task auto-growth or auto-compound write generated records directly to 50_Instances/accepted by default.",
+    "Preserve closed-loop usefulness by writing task traces and pending review candidates, then rely on review_candidate to promote accepted records for later Context Packs.",
+    "Keep trace_only for read-only audits so audits do not compound themselves."
+  ],
+  "next_steps": [
+    "Refactor src/index.ts writeFinishGrowthRecords to emit candidate/review records instead of accepted task-memory records.",
+    "Refactor src/compounding.ts promoteSignal to emit behavior-rule candidates/review records by default and reserve accepted writes for review_candidate.",
+    "Update scripts/verify-codex-closed-loop.mjs and scripts/verify-compounding-loop.mjs to assert candidate/review gating before accepted retrieval."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-295abf1038bd399d.json",
+    "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+    "50_Instances/accepted/behavior-rule-c1ad7c4e0066b985.json",
+    "50_Instances/accepted/task-memory-task-20260707-003541-Read-only-audit-focused-on-d.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-011040-DinoBrain-finish_task-auto-g.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "DinoBrain finish_task auto-growth auto-compound safety accepted records direct writes minimum safe change closed-loop usefulness tests"
+  ],
+  "memory_use": {
+    "used_memory_count": 4,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T01:15:19.636Z"
+}

@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-a3b9955207d54e37",
+  "behavior_rule_id": "behavior-rule-a3b9955207d54e37",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Read-only audit of Codex UserPromptSubmit pre-response DinoBrain preflight enforcement. Found that the installed hook is configured and the wrapper/probe path passes, including fail-closed behavior inside the hook, but live verification found no Codex Desktop UserPromptSubmit preflight event for the current prompt or any prompt after 2026-07-07T02:00:00Z. Docs and scripts explicitly acknowledge trust and stale-session reload gaps, so every new Codex user prompt is not mechanically guaranteed to run DinoBrain preflight before response in current-session reload/trust edge cases.",
+  "behavior_rule": "In similar future work, apply this decision: Read-only audit of Codex UserPromptSubmit pre-response DinoBrain preflight enforcement. Found that the installed hook is configured and the wrapper/probe path passes, including fail-closed behavior inside the hook, but live verification found no Codex Desktop UserPromptSubmit preflight event for the current prompt or any prompt after 2026-07-07T02:00:00Z. Docs and scripts explicitly acknowledge trust and stale-session reload gaps, so every new Codex user prompt is not mechanically guaranteed to run DinoBrain preflight before response in current-session reload/trust edge cases.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-022223-Read-only-audit-focused-only.json",
+    "snippet": "Read-only audit of Codex UserPromptSubmit pre-response DinoBrain preflight enforcement. Found that the installed hook is configured and the wrapper/probe path passes, including fail-closed behavior inside the hook, but live verification found no Codex Desktop UserPromptSubmit preflight event for the current prompt or any prompt after 2026-07-07T02:00:00Z. Docs and scripts explicitly acknowledge trust and stale-session reload gaps, so every new Codex user prompt is not mechanically guaranteed to run DinoBrain preflight before response in current-session reload/trust edge cases."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-022223-Read-only-audit-focused-only.json",
+      "task_id": "task-20260707-022223-Read-only-audit-focused-only",
+      "signal_kind": "summary",
+      "snippet": "Read-only audit of Codex UserPromptSubmit pre-response DinoBrain preflight enforcement. Found that the installed hook is configured and the wrapper/probe path passes, including fail-closed behavior inside the hook, but live verification found no Codex Desktop UserPromptSubmit preflight event for the current prompt or any prompt after 2026-07-07T02:00:00Z. Docs and scripts explicitly acknowledge trust and stale-session reload gaps, so every new Codex user prompt is not mechanically guaranteed to run DinoBrain preflight before response in current-session reload/trust edge cases."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:medium"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T07:16:27.148Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T07:16:27.148Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

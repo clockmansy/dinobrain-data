@@ -1,0 +1,54 @@
+{
+  "task_id": "task-20260707-182533-Continue-DinoBrain-OS-comple",
+  "outcome": "partial",
+  "summary": "Added durable release manifest verification for DinoBrain OS: release_manifest_status artifact, ZIP/SHA/tag/app-data commit parity checks, health/freshness/Observatory/verify:goal wiring, v2.2.2 package/tag alignment, and regenerated local release ZIP/SHA with SkipUpload.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "package.json",
+    "src/release-manifest.ts",
+    "src/build-release-manifest-status.ts",
+    "scripts/verify-release-manifest.mjs",
+    "src/health-status.ts",
+    "src/refresh-status-artifacts.ts",
+    "src/status-freshness.ts",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/verify-observatory-live-graph.mjs",
+    "scripts/verify-closed-loop-goal.mjs",
+    "docs/OS_UNFINISHED_IMPROVEMENT_REVIEW_20260708.md",
+    "artifacts/DinoBrainSetup.zip",
+    "artifacts/DinoBrainSetup.zip.sha256",
+    ".dino/state/release_manifest_status.json"
+  ],
+  "decisions": [
+    "Release readiness now requires a durable release_manifest_status artifact with package version, expected tag, app/data commits, ZIP path, and SHA parity.",
+    "App tracked dirty and tag/artifact drift remain blockers; generated data-vault dirty state is recorded as a warning to avoid self-referential refresh failures.",
+    "Bumped release package version to v2.2.2, pushed app main, force-updated v2.2.2 tag to current app HEAD, and regenerated local release ZIP/SHA with SkipUpload because no GitHub token is available."
+  ],
+  "next_steps": [
+    "Fresh Codex Desktop live pre-response proof remains the only verify:goal blocker: restart or fresh-thread Codex, run live proof, and rerun verify:goal.",
+    "When a GitHub token is available, upload the v2.2.2 ZIP/SHA release assets and extend release_manifest_status with authenticated GitHub asset evidence.",
+    "Continue remaining review-backlog and compounding-lifecycle hard gates."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-182533-Continue-DinoBrain-OS-comple.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 6,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T18:37:09.899Z"
+}

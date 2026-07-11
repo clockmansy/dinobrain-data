@@ -1,0 +1,44 @@
+{
+  "task_id": "task-20260707-163225-DinoBrain-R9-.-.-read-only-.",
+  "outcome": "completed",
+  "summary": "Read-only R9 review completed. Public-data and sync policy coverage is mostly sufficient as a contract, but release/completion remains conditional on real safety verifier execution, dirty data repo cleanup, and policy model reconciliation.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Repos are currently public by GitHub API, so public-safe data rules apply.",
+    "Raw transcript controls are strong: local-only raw archives, redaction/metadata retention, and blocked raw paths.",
+    "Candidate/review queue handling is still operationally risky because the real data repo has a large tracked/untracked queue backlog.",
+    "Data hooks are configured, but current dirty state is not push-clean.",
+    "Node is missing on PATH, so npm safety checks were not rerun."
+  ],
+  "next_steps": [
+    "Run safety:public-data:check with the installed Node runtime.",
+    "Clean or explicitly classify candidate/review/operational backlog before push.",
+    "Reconcile git_sync and public-data verifier classifications, especially .dino/gates."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-163225-DinoBrain-R9-.-.-read-only-..json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-163225-edb43916554e.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T16:35:50.164Z"
+}

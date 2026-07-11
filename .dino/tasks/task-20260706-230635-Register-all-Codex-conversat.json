@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260706-230635-Register-all-Codex-conversat",
+  "status": "completed",
+  "request": "Register all Codex conversations on this computer into DinoBrain Wiki in a safe, useful form without storing raw full transcripts or secrets.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "sensitive",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-06T23:06:35.073Z",
+  "updated_at": "2026-07-06T23:15:17.171Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-06T23:15:17.171Z",
+  "trace_path": ".dino/traces/task-20260706-230635-Register-all-Codex-conversat.json"
+}

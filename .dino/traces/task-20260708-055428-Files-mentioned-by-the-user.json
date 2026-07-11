@@ -1,0 +1,44 @@
+{
+  "task_id": "task-20260708-055428-Files-mentioned-by-the-user-",
+  "outcome": "completed",
+  "summary": "Adjusted only the DinoBrainSetup default window size so the installer opens in the wide 1280x720 view shown by the user, without changing the layout structure. Bumped version to 2.2.9, built and verified locally, committed and pushed app main, pushed tag v2.2.9, and confirmed GitHub Actions successfully published DinoBrainSetup.zip and SHA assets.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "installer/DinoBrainSetup/SetupForm.cs",
+    "installer/DinoBrainSetup/DinoBrainSetup.csproj",
+    "package.json",
+    "package-lock.json"
+  ],
+  "decisions": [
+    "Changed only the form default Size to 1280x720; did not alter split container, controls, or installer layout.",
+    "Released through tag-triggered GitHub Actions to avoid local Release API token dependency."
+  ],
+  "next_steps": [
+    "Use https://github.com/clockmansy/dinobrain/releases/download/v2.2.9/DinoBrainSetup.zip for the updated installer."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-055428-Files-mentioned-by-the-user-.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260708-055428-36beec4fca25.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T06:00:30.986Z"
+}

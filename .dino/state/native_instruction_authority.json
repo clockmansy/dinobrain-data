@@ -1,0 +1,369 @@
+{
+  "version": "native_instruction_authority_v1",
+  "status": "healthy",
+  "generated_at": "2026-07-08T01:43:26.471Z",
+  "latest_verified_at": "2026-07-08T01:43:26.471Z",
+  "data_root": "<machine-local-path>",
+  "app_root": "<machine-local-path>",
+  "home_dir": "<machine-local-path>",
+  "program_data": "<machine-local-path>",
+  "authority_rules": [
+    {
+      "id": "current_user_instruction_outranks_memory",
+      "required": true,
+      "evidence_count": 1
+    },
+    {
+      "id": "os_memory_is_subordinate_evidence",
+      "required": true,
+      "evidence_count": 1
+    },
+    {
+      "id": "candidate_memory_untrusted_until_reviewed",
+      "required": true,
+      "evidence_count": 1
+    },
+    {
+      "id": "no_raw_transcript_or_secret_storage",
+      "required": true,
+      "evidence_count": 1
+    },
+    {
+      "id": "auto_sync_scoped_by_policy",
+      "required": true,
+      "evidence_count": 12
+    },
+    {
+      "id": "hook_trust_not_bypassed",
+      "required": true,
+      "evidence_count": 4
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "repo_agents",
+      "path": "AGENTS.md",
+      "exists": true,
+      "required": true,
+      "bytes": 1980,
+      "sha256": "4d7b23c38107ead3ae6fcec6e3a20f24db27ed4565742fd922548d0afe097543",
+      "mtime": "2026-07-07T05:32:35.820Z",
+      "line_count": 28,
+      "finding_count": 0,
+      "evidence_count": 4
+    },
+    {
+      "id": "repo_claude",
+      "path": "CLAUDE.md",
+      "exists": false,
+      "required": false,
+      "bytes": null,
+      "sha256": null,
+      "mtime": null,
+      "line_count": null,
+      "finding_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "id": "repo_codex_1",
+      "path": ".codex/hooks.json",
+      "exists": true,
+      "required": false,
+      "bytes": 636,
+      "sha256": "36b92ef089cbedbf3f7f92d99afeb28bf1f219609541181edd41d5dd8661d4c1",
+      "mtime": "2026-07-01T00:54:00.263Z",
+      "line_count": 18,
+      "finding_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "id": "codex_config",
+      "path": "<machine-local-path>",
+      "exists": true,
+      "required": false,
+      "bytes": 5492,
+      "sha256": "6a6e54964926d1eed8e3dbb12c2fcd4f7781a7037796f5dede6997873fad3a42",
+      "mtime": "2026-07-07T15:04:16.473Z",
+      "line_count": 167,
+      "finding_count": 0,
+      "evidence_count": 1
+    },
+    {
+      "id": "codex_hooks",
+      "path": "<machine-local-path>",
+      "exists": true,
+      "required": false,
+      "bytes": 1993,
+      "sha256": "abfecfa3378200646508667d096435a433f569f1b96db8dcb409c3c96ae3bc16",
+      "mtime": "2026-07-07T03:06:12.357Z",
+      "line_count": 18,
+      "finding_count": 0,
+      "evidence_count": 2
+    },
+    {
+      "id": "codex_rules_1",
+      "path": "<machine-local-path>",
+      "exists": true,
+      "required": false,
+      "bytes": 31100,
+      "sha256": "d854bed532983ea82c435492c6cc2107f3a1e99feff0db56e23b81234e2d6d21",
+      "mtime": "2026-07-07T07:13:40.839Z",
+      "line_count": 50,
+      "finding_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "id": "claude_settings",
+      "path": "<machine-local-path>",
+      "exists": false,
+      "required": false,
+      "bytes": null,
+      "sha256": null,
+      "mtime": null,
+      "line_count": null,
+      "finding_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "id": "installer",
+      "path": "install.ps1",
+      "exists": true,
+      "required": true,
+      "bytes": 61102,
+      "sha256": "72fd8013871b3478fdc378ae6d374a07a69b02677ba8772b9c133e5e7c91ad0d",
+      "mtime": "2026-07-07T17:16:00.251Z",
+      "line_count": 1457,
+      "finding_count": 0,
+      "evidence_count": 3
+    },
+    {
+      "id": "codex_hook_mjs",
+      "path": "scripts/dinobrain-user-prompt-hook.mjs",
+      "exists": true,
+      "required": false,
+      "bytes": 25952,
+      "sha256": "d3494f2041399030d29ffe39dae20329c029b7b5f1bf7e23833b49bc3cbe7934",
+      "mtime": "2026-07-07T03:04:19.002Z",
+      "line_count": 721,
+      "finding_count": 0,
+      "evidence_count": 2
+    },
+    {
+      "id": "codex_hook_ps1",
+      "path": "scripts/dinobrain-user-prompt-hook.ps1",
+      "exists": true,
+      "required": false,
+      "bytes": 7112,
+      "sha256": "0c0794acec96b41ac5a945d39c07164dd65a7282a3b026d247f7b9ac7785567e",
+      "mtime": "2026-07-07T01:37:21.640Z",
+      "line_count": 182,
+      "finding_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "id": "codex_hook_approval_ps1",
+      "path": "scripts/start-codex-hook-approval.ps1",
+      "exists": true,
+      "required": false,
+      "bytes": 8239,
+      "sha256": "82958138748b0cd2404881a35fee6e68197f74e5c5d43e889f6d63e1dbf93910",
+      "mtime": "2026-07-07T06:30:57.757Z",
+      "line_count": 262,
+      "finding_count": 0,
+      "evidence_count": 1
+    },
+    {
+      "id": "codex_live_proof_ps1",
+      "path": "scripts/start-codex-live-proof.ps1",
+      "exists": true,
+      "required": false,
+      "bytes": 14135,
+      "sha256": "defb6f04e7463a863cc1b2555fe03791a2e27366f849604cd2fe94c20f1bff6f",
+      "mtime": "2026-07-08T01:30:53.672Z",
+      "line_count": 412,
+      "finding_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "id": "codex_hooks_doc",
+      "path": "docs/CODEX_HOOKS.md",
+      "exists": true,
+      "required": false,
+      "bytes": 8160,
+      "sha256": "6fff39673c31619377de0ad397ed392c454ce737dab0087735dda5cdfc5aee40",
+      "mtime": "2026-07-07T07:08:21.416Z",
+      "line_count": 147,
+      "finding_count": 0,
+      "evidence_count": 1
+    },
+    {
+      "id": "install_doc",
+      "path": "docs/INSTALL.md",
+      "exists": true,
+      "required": false,
+      "bytes": 18662,
+      "sha256": "c721602e00a27f17cfbef24c09f21d5af71e09d324b0de58284453c8a40fbb21",
+      "mtime": "2026-07-07T07:08:02.273Z",
+      "line_count": 361,
+      "finding_count": 0,
+      "evidence_count": 5
+    },
+    {
+      "id": "codex_managed_requirements",
+      "path": "<machine-local-path>",
+      "exists": true,
+      "required": false,
+      "bytes": 662,
+      "sha256": "648a9e3bb93e62721590d88338e3d80d2a2fc5c8201942b20558ec0e54f97018",
+      "mtime": "2026-07-07T06:29:20.592Z",
+      "line_count": 18,
+      "finding_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "id": "codex_managed_wrapper",
+      "path": "<machine-local-path>",
+      "exists": true,
+      "required": false,
+      "bytes": 469,
+      "sha256": "3fdf14c1aae09086e707a47e9096d3d7d87e605b25fef2b47fac6bdbec698c27",
+      "mtime": "2026-07-07T06:29:20.554Z",
+      "line_count": 11,
+      "finding_count": 0,
+      "evidence_count": 1
+    }
+  ],
+  "findings": [],
+  "evidence": [
+    {
+      "rule_id": "current_user_instruction_outranks_memory",
+      "surface_id": "repo_agents",
+      "path": "AGENTS.md",
+      "line": 9
+    },
+    {
+      "rule_id": "no_raw_transcript_or_secret_storage",
+      "surface_id": "repo_agents",
+      "path": "AGENTS.md",
+      "line": 16
+    },
+    {
+      "rule_id": "candidate_memory_untrusted_until_reviewed",
+      "surface_id": "repo_agents",
+      "path": "AGENTS.md",
+      "line": 17
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "repo_agents",
+      "path": "AGENTS.md",
+      "line": 18
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "codex_config",
+      "path": "<machine-local-path>",
+      "line": 134
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "codex_hooks",
+      "path": "<machine-local-path>",
+      "line": 8
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "codex_hooks",
+      "path": "<machine-local-path>",
+      "line": 9
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "installer",
+      "path": "install.ps1",
+      "line": 486
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "installer",
+      "path": "install.ps1",
+      "line": 593
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "installer",
+      "path": "install.ps1",
+      "line": 619
+    },
+    {
+      "rule_id": "os_memory_is_subordinate_evidence",
+      "surface_id": "codex_hook_mjs",
+      "path": "scripts/dinobrain-user-prompt-hook.mjs",
+      "line": 439
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "codex_hook_mjs",
+      "path": "scripts/dinobrain-user-prompt-hook.mjs",
+      "line": 629
+    },
+    {
+      "rule_id": "hook_trust_not_bypassed",
+      "surface_id": "codex_hook_approval_ps1",
+      "path": "scripts/start-codex-hook-approval.ps1",
+      "line": 238
+    },
+    {
+      "rule_id": "hook_trust_not_bypassed",
+      "surface_id": "codex_hooks_doc",
+      "path": "docs/CODEX_HOOKS.md",
+      "line": 49
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "install_doc",
+      "path": "docs/INSTALL.md",
+      "line": 142
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "install_doc",
+      "path": "docs/INSTALL.md",
+      "line": 146
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "install_doc",
+      "path": "docs/INSTALL.md",
+      "line": 149
+    },
+    {
+      "rule_id": "hook_trust_not_bypassed",
+      "surface_id": "install_doc",
+      "path": "docs/INSTALL.md",
+      "line": 200
+    },
+    {
+      "rule_id": "hook_trust_not_bypassed",
+      "surface_id": "install_doc",
+      "path": "docs/INSTALL.md",
+      "line": 201
+    },
+    {
+      "rule_id": "auto_sync_scoped_by_policy",
+      "surface_id": "codex_managed_wrapper",
+      "path": "<machine-local-path>",
+      "line": 7
+    }
+  ],
+  "counts": {
+    "surfaces": 16,
+    "scanned": 14,
+    "required_missing": 0,
+    "conflicts": 0,
+    "warnings": 0,
+    "evidence": 20
+  },
+  "warnings": [],
+  "visible_status": "Native instruction authority healthy"
+}

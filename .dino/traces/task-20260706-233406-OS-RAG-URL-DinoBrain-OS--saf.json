@@ -1,0 +1,50 @@
+{
+  "task_id": "task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf",
+  "outcome": "completed",
+  "summary": "Registered the user-provided public OS RAG learning packet as DinoBrain durable knowledge. The representative URL anchors remain anchor-only/unverified source candidates, while a new accepted memory records how future sessions should use them for LLM Wiki source/chunk/claim lineage, contextual retrieval, hybrid retrieval, reranking, canaries, and behavior evaluation.",
+  "changed_files": [
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "50_Instances/accepted/rag-public-os-learning-packet.json",
+    "80_Review_Queue/rag-learning/rag-public-os-learning-packet.json",
+    "60_Operations/rag-learning/rag-public-os-learning-packet.md",
+    "60_Operations/rag-learning/rag-public-os-learning-packet.json",
+    ".dino/index/wiki-index.json",
+    ".dino/index/sqlite/wiki.sqlite",
+    ".dino/index/sqlite/operations.sqlite",
+    "60_Operations/public-data-safety/public-data-safety-report.json",
+    "60_Operations/public-data-safety/public-data-safety-report.md"
+  ],
+  "decisions": [
+    "Treat the public OS RAG material as a source-anchor and implementation backlog, not as verified source truth.",
+    "Do not invent the missing upstream 55-anchor list; only exact local URLs are registered.",
+    "Promote the durable lesson into accepted memory so future sessions know to use source/chunk/claim lineage plus retrieval canaries and behavior evaluation."
+  ],
+  "next_steps": [
+    "Import the exact remaining upstream RAG URL list if available.",
+    "Fetch and chunk high-priority sources one at a time, then review concrete claims before using them as factual support.",
+    "Improve ranking so accepted knowledge and source catalogs outrank broad operational behavior rules for retrieval-intent queries."
+  ],
+  "used_memory_paths": [
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "30_Sources/chunks/rag-survey.json",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "cross OS RAG learning packet LLM Wiki source chunk claim lineage contextual retrieval hybrid reranking canaries",
+    "rag-public-os-learning-packet cross-os-learning accepted project memory retrieval-quality backlog"
+  ],
+  "memory_use": {
+    "used_memory_count": 4,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-06T23:36:39.543Z"
+}

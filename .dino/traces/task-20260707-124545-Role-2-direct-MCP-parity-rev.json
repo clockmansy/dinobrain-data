@@ -1,0 +1,43 @@
+{
+  "task_id": "task-20260707-124545-Role-2-direct-MCP-parity-rev",
+  "outcome": "completed",
+  "summary": "Role 2 direct MCP parity review completed. P0-04 plan requires revision because docs demand exact single-name direct client proof, but current client_mcp_direct_status is a needs_recheck placeholder with no Codex or Claude verified tool evidence.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Return REVISE_REQUIRED for P0-04 until real Codex and Claude direct MCP canary artifacts can set client_mcp_direct_status to verified.",
+    "Configured MCP blocks, synthetic server starts, hook preflight, and CLI fallback must remain insufficient proof for direct MCP parity."
+  ],
+  "next_steps": [
+    "Implement real client proof ingestion for Codex and Claude exact single-name tool discovery and invocation.",
+    "Add negative tests proving config-only, synthetic, stale, and incomplete proofs do not verify P0-04.",
+    "Wire verified direct MCP status into health and goal gates with observable proof links."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-124545-Role-2-direct-MCP-parity-rev.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-124545-55cdd3347243.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-decision-Decide-whether-the--3e8fa9206c74.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 1,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T12:47:41.016Z"
+}

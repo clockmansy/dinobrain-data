@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 309,
+  "event": "action_applied",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "264344e29430a3c7502e619b0504141f4aeaf8636b6445a64caa1948e9f971e3",
+  "payload": {
+    "index": 152,
+    "task_id": "task-20260707-162608-Continue-DinoBrain-OS-comple",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "2789f8616b6f7e263d62db12cdf6fd2caeb56bdc23aee44fa04ccfe1cc484d29",
+    "trace_sha256_after": "061f4ad697075ef9e7e88582d906dcf3b65a4ef939d80e0690208a51d6777b5b"
+  },
+  "entry_sha256": "1760e7caa9edc12de187b9f618c2765cfa3d91f8327a998dab235c753d26ba7a"
+}

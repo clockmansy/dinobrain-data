@@ -1,0 +1,40 @@
+{
+  "task_id": "task-20260707-023303-Read-only-audit-of-node-life",
+  "outcome": "completed",
+  "summary": "Completed a read-only node lifecycle audit focused on merge, promote, exclude/hold, delete-candidate, quarantine, duplicate handling, and bloat prevention. Findings: lifecycle is manually invoked rather than part of finish_task; pending candidate/review backlog is not pruned or scored; lifecycle dry-run still writes reports/events; strict JSON loading can block lifecycle on malformed accepted records; compounding creates many pending review candidates and only cleans accepted behavior rules.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Did not run apply_node_lifecycle because even apply=false writes a lifecycle report and event.",
+    "Used static source inspection plus read-only data-vault counts instead of npm verification because node/npm are not on PATH in this shell.",
+    "Current user instruction to avoid file edits governed the audit."
+  ],
+  "next_steps": [
+    "Add lifecycle coverage for stale pending candidates/reviews and near-duplicate candidates, or gate auto-compounding volume before review queues grow.",
+    "Make apply_node_lifecycle apply=false non-mutating or rename it to make report-writing explicit.",
+    "Make lifecycle and graph-health loaders tolerate/report malformed records instead of aborting the whole pass."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-023305-Node-lifecycle-audit-coverag.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "node lifecycle merge promote quarantine duplicate bloat",
+    "apply_node_lifecycle run_compounding_cycle DINOBRAIN_AUTO_COMPOUND",
+    "candidate review queue pending behavior rule"
+  ],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T02:40:32.613Z"
+}

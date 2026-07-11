@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-123940-task-20260707-123940-Final-Target-OS",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-123940-Final-Target-OS-LLM-Completi",
+  "request": "이거 점검\n• Final Target: OS가 장기 기억/판단 재료 공급층이 되고, LLM은 판단을 맡는 구조\n• Completion Bar: 완성 판정 기준\n• P0/P1/P2 work packages: 우선순위별 구현 패키지\n• Implementation order: 어떤 순서로 고칠지\n• Global acceptance tests: 전체 통과 조건\n• Validation protocol / Reviewer checklist: 검증자들이 전수 메모리 읽고 판정하는 규칙\n기억에 남은 주요 개선안은 이거야:\n • P0-01: SecondBrain 전체 전수 독해 게이트\n 파일 경로, 크기, SHA-256, 인코딩, JSON/JSONL 파싱 상태까지 manifest로 검증.\n • P0-04: Codex/Claude 직접 MCP parity\nos_begin_task, finish_task, wiki_search, search_memory 같은 도구가 양쪽에서 직접 노출되는지 검증. CLI/hook/bootstrap fallback은 직접 MCP 증거로 치지 않음.\n • P0-05: native instruction authority gate\n Codex/Claude의 AGENTS/CLAUDE/custom instruction/bootstrap 표면을 스캔해서 OS 기억과 충돌하는지 감지. 충돌하면 native_memory_drift나 wrong_memory_reference_detected 같은 신호로 기록.\n • P1-09: 작업 완료/인계/오류/방향전환 때 학습된 행동을 자동으로 떠올리고, 수행/스킵/not_applicable을 근거와 함께 기록. Slack 완료보고도 안전한 목적지가 있을 때만.\n • P1-10: 검색/기억 회수 품질\n exact alias/lexical-first 우선, vector search는 보조/RRF fusion으로만 사용, corrected/rejected 기억은 낮춰야 함.\n 전체 방향은 한 줄로 말하면:\n **“사용자가 매번 다시 설명하지 않아도, Codex와 Claude가 같은 OS 기억을 근거로 움직이고, 위험한 변경은 게이트로 막고, 증거가 충분한 정리/승격/복구는 자동화하는 OS 개선 계획",
+  "generated_at": "2026-07-07T12:39:40.972Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-123940-Final-Target-OS-LLM-Completi.json",
+  "context_item_count": 6,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

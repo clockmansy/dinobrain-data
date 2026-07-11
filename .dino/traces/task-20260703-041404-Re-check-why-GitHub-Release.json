@@ -1,0 +1,33 @@
+{
+  "task_id": "task-20260703-041404-Re-check-why-GitHub-Release-",
+  "outcome": "completed",
+  "summary": "Rechecked GitHub release upload after the user noted GitHub updates had worked previously. Found the earlier miss: git credential fill did not expose credentials, but git credential-manager get did return the GitHub token for the logged-in clockmansy account. Used that token only in-process to run npm run release:win -- -Tag v0.1.3 -ReplaceAsset. Created the GitHub release, uploaded DinoBrainSetup.zip and DinoBrainSetup.zip.sha256, then verified by downloading the private asset through the GitHub asset API and comparing SHA256 hashes.",
+  "changed_files": [],
+  "decisions": [
+    "Git push and GitHub Release asset upload use different authentication paths in this environment.",
+    "For this PC, use git credential-manager get rather than git credential fill when the release script needs a GitHub token.",
+    "Private release asset verification should download through the GitHub asset API URL with Accept: application/octet-stream, not browser_download_url."
+  ],
+  "next_steps": [
+    "Use https://github.com/clockmansy/dinobrain/releases/download/v0.1.3/DinoBrainSetup.zip as the install ZIP link for logged-in users with access to the private repo."
+  ],
+  "used_memory_paths": [
+    ".dino/tasks/task-20260703-035806-Check-whether-reinstalling-D.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-041407-DinoBrain-GitHub-release-upl.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "GitHub private release asset browser_download_url 404 asset API application/octet-stream"
+  ],
+  "memory_use": {
+    "used_memory_count": 1,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-03T04:18:25.709Z"
+}

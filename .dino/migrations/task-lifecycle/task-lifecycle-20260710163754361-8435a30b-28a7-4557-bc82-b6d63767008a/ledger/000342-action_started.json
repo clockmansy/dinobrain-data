@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 342,
+  "event": "action_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "9a71cf26231793aeb2eb0afbd9b747f37c0e785fc012bee166c31f36bcc87dc7",
+  "payload": {
+    "index": 169,
+    "task_id": "task-20260707-130043-Role-5-retrieval-RAG-quality",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "c2d71e016cd8de883aa4b0510a503d2d23b41c22f00a2043356571d5d8c307bf",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "7830ff01ae19ae13149d799cf13a7d49e0b5e30bc493ac312cb3a3c59cdca2f4"
+}

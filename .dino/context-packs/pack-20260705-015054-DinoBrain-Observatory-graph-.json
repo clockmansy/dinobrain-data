@@ -1,0 +1,216 @@
+{
+  "pack_id": "pack-20260705-015054-DinoBrain-Observatory-graph-",
+  "pack_type": "standard",
+  "question": "DinoBrain Observatory graph v14 redesign readability first subtle fossil scaffold previous v13 too cluttered forced dinosaur silhouette",
+  "created_at": "2026-07-05T01:50:54.208Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 10,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 10,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 8,
+  "excluded_record_count": 8,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-092603-Take-the-DinoBrain-Observato.json",
+      "kind": "recent_task",
+      "title": "Task: Take the DinoBrain Observatory dinosaur graph one step further toward the provided reference by ",
+      "summary": "status=completed | project=dinobrain | Took the DinoBrain Observatory dinosaur graph one step further after the v7 candidate. Implemented deterministic fossil mode with locked node poses, explicit slot arrays for silhouette parts, redistributed live node types across body/tail/neck/head/leg roles, reduced background edge prominence, added fixed canvas guide routes for the fossil scaffold, tuned head/neck proportions,",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 43,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "summary matched \"fossil\"",
+        "summary matched \"scaffold\"",
+        "summary matched \"too\"",
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\"",
+        "summary matched \"silhouette\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-103247-Deploy-the-approved-v13-Dino.json",
+      "kind": "recent_task",
+      "title": "Task: Deploy the approved v13 DinoBrain Observatory deterministic fossil graph design: commit visual c",
+      "summary": "status=completed | project=dinobrain | Deployed DinoBrain Observatory v13 deterministic fossil graph design. Bumped package and installer version to 0.1.7, verified build/hook/OS/installer alignment, pushed main, added a GitHub Actions Windows release workflow, retagged v0.1.7 to the workflow commit, and confirmed the GitHub Release contains DinoBrainSetup.zip and DinoBrainSetup.zip.sha256 assets.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 38,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"fossil\"",
+        "summary matched \"fossil\"",
+        "path matched \"v13\"",
+        "title matched \"v13\"",
+        "summary matched \"v13\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-085839-Improve-the-DinoBrain-Observ.json",
+      "kind": "recent_task",
+      "title": "Task: Improve the DinoBrain Observatory dinosaur graph design after user feedback that the deployed v0",
+      "summary": "status=partial | project=dinobrain | Improved the DinoBrain Observatory dinosaur graph candidate after user feedback that the previous deployed visual felt disappointing. Kept changes visual-only: increased graph canvas height, added aspect-preserving dino frame mapping, redistributed root/category nodes into head/neck/tail/leg roles, strengthened pose lock, reduced edge physics, and added live-data scaffold routes. ",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 37,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "summary matched \"scaffold\"",
+        "summary matched \"previous\"",
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-015049-Redesign-DinoBrain-Observato.json",
+      "kind": "recent_task",
+      "title": "Task: Redesign DinoBrain Observatory graph v14 so information readability takes priority over forced d",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 37,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "title matched \"graph\"",
+        "title matched \"v14\"",
+        "path matched \"redesign\"",
+        "title matched \"redesign\"",
+        "title matched \"readability\"",
+        "title matched \"forced\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-075850-Implement-a-design-only-Dino.json",
+      "kind": "recent_task",
+      "title": "Task: Implement a design-only DinoBrain Observatory graph redesign from the provided dinosaur-shaped g",
+      "summary": "status=completed | project=dinobrain | Implemented a design-only DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph reference. Kept OS/MCP/SQLite/hook/data logic unchanged; updated only the Observatory visual layout/rendering CSS and browser-side canvas layout. The graph now uses deterministic dinosaur pose targets so live nodes and edges read as tail, body/core, neck/head, and leg clust",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 35,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"redesign\"",
+        "summary matched \"redesign\"",
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-074013-Plan-a-high-quality-design-o.json",
+      "kind": "recent_task",
+      "title": "Task: Plan a high-quality design-only redesign of the DinoBrain Observatory graph so it visually resem",
+      "summary": "status=partial | project=dinobrain | Played back the design-only brief for a high-quality DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph image. No files were changed. Product Design user-context preflight could not run because python/python3 resolves to WindowsApps shim without a local Python runtime, but the supplied image is a concrete visual source.",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 31,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"redesign\"",
+        "summary matched \"redesign\"",
+        "summary matched \"dinosaur\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-082135-Deploy-the-completed-DinoBra.json",
+      "kind": "recent_task",
+      "title": "Task: Deploy the completed DinoBrain Observatory dinosaur graph design change so it is available from ",
+      "summary": "status=completed | project=dinobrain | Deployed the completed DinoBrain Observatory dinosaur graph design. Committed the design change and version bump as 4eabc7f, fast-forwarded main, pushed origin/main, built a clean v0.1.6 Windows setup ZIP, created GitHub Release v0.1.6, uploaded DinoBrainSetup.zip and DinoBrainSetup.zip.sha256, and verified the remote ZIP download SHA matches the local SHA. Local untracked scree",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 28,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"graph\"",
+        "summary matched \"graph\"",
+        "title matched \"dinosaur\"",
+        "summary matched \"dinosaur\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-071734-Fix-Codex-UserPromptSubmit-i.json",
+      "kind": "recent_task",
+      "title": "Task: Fix Codex UserPromptSubmit installer registration so DinoBrain merges into the first existing pr",
+      "summary": "status=completed | project=dinobrain | Fixed installer Codex UserPromptSubmit registration so DinoBrain is merged into the first existing prompt-hook group instead of being appended as a separate second group. Only install.ps1 and scripts/verify-installer-hooks.ps1 were changed. Added regression cases preserving why-was-fable-banned and verifying DinoBrain appears exactly once in the first UserPromptSubmit group. Cre",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 14,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"first\"",
+        "summary matched \"first\""
+      ]
+    }
+  ]
+}

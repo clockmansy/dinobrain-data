@@ -1,0 +1,60 @@
+{
+  "memory_id": "task-memory-task-20260707-003908-Read-only-audit-focused-on-i",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: Read-only audit focused on installer/new PC/GitHub recovery/version parity/hook approval for Din",
+  "summary": "Completed read-only audit of DinoBrain installer/new PC/GitHub recovery/version parity/hook approval surfaces. Found one P0 risk: update/reinstall can strand unpushed local commits by force-resetting existing app/data branches with git checkout -B origin/ref. Found P1 gaps: Windows GUI blocks documented no-Git ZIP fallback; release/version parity can drift because package version, tag, setup metadata, and installer refs are not enforced together; uninstall removes Claude MCP but leaves the installed Claude UserPromptSubmit hook. Hook approval design itself preserves manual trust and has verification coverage.",
+  "claim": "Task outcome for dinobrain: Completed read-only audit of DinoBrain installer/new PC/GitHub recovery/version parity/hook approval surfaces. Found one P0 risk: update/reinstall can strand unpushed local commits by force-resetting existing app/data branches with git checkout -B origin/ref. Found P1 gaps: Windows GUI blocks documented no-Git ZIP fallback; release/version parity can drift because package version, tag, setup metadata, and installer refs are not enforced together; uninstall removes Claude MCP but leaves the installed Claude UserPromptSubmit hook. Hook approval design itself preserves manual trust and has verifi",
+  "request": "Read-only audit focused on installer/new PC/GitHub recovery/version parity/hook approval for DinoBrain. Inspect installer/setup/update/reinstall/uninstall docs/release/verification scripts, return P0/P1 findings with line evidence, fixes, and consensus candidate statements; no edits.",
+  "outcome": "completed",
+  "decisions": [
+    "Do not edit repository files during this audit.",
+    "Treat existing dinobrain-data local commits as protected user data; installer should stop rather than reset them.",
+    "Treat Codex hook trust as a manual security boundary; approval helper may guide but must not bypass trust."
+  ],
+  "next_steps": [
+    "Patch Checkout-DinoBrainRef/Sync-DinoBrainRepo to use ff-only update semantics and fail on local-ahead/diverged branches, especially for dinobrain-data.",
+    "Allow the Windows GUI to run the PowerShell no-Git ZIP fallback or update docs/UI to make Git a hard prerequisite.",
+    "Add release/version gates that require package version, installer metadata, tag, TargetCommitish, and published asset refs to agree before replacing a release asset.",
+    "Add Claude settings cleanup to uninstall plus regression coverage."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-003910-installer-new-PC-GitHub-reco.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-003908-Read-only-audit-focused-on-i.json",
+    "snippet": "Completed read-only audit of DinoBrain installer/new PC/GitHub recovery/version parity/hook approval surfaces. Found one P0 risk: update/reinstall can strand unpushed local commits by force-resetting existing app/data branches with git checkout -B origin/ref. Found P1 gaps: Windows GUI blocks documented no-Git ZIP fallback; release/version parity can drift because package version, tag, setup metadata, and installer refs are not enforced together; uninstall removes Claude MCP but leaves the installed Claude UserPromptSubmit hook. Hook approval design itself preserves manual trust and has verification coverage."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:43:45.470Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-003908-Read-only-audit-focused-on-i.json",
+    "task_id": "task-20260707-003908-Read-only-audit-focused-on-i",
+    "task_path": ".dino/tasks/task-20260707-003908-Read-only-audit-focused-on-i.json"
+  },
+  "accepted_at": "2026-07-07T00:43:45.470Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-003908-Read-only-audit-focused-on-i.json",
+  "candidate_id": "task-memory-task-20260707-003908-Read-only-audit-focused-on-i",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260707-003908-Read-only-audit-focused-on-i.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

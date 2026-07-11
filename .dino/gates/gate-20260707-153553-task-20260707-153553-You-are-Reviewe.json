@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-153553-task-20260707-153553-You-are-Reviewe",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-153553-You-are-Reviewer-R6-source-c",
+  "request": "You are Reviewer R6: source/chunk/claim provenance reviewer for DinoBrain. Work read-only. Inspect <machine-local-path> docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, docs\\OS_V2_CONTRACT.md, docs\\VERIFICATION.md, src\\index.ts, src\\hybrid-retrieval.ts, source/chunk-related code found by rg 'create_source_chunk|claim_paths|anchor_only_unverified|provenance|source_chunk', and data project docs. Judge whether the plan has concrete completion conditions separating internal memory from verified durable source support. Return reviewer_id=R6, verdict=AGREE or REVISE_REQUIRED, blocking_objections[], required_doc_changes[], evidence_files[].",
+  "generated_at": "2026-07-07T15:35:53.983Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-153553-You-are-Reviewer-R6-source-c.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

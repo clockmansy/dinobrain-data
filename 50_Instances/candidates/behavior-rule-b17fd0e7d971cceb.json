@@ -1,0 +1,47 @@
+{
+  "behavior_rule_id": "behavior-rule-b17fd0e7d971cceb",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Discarded weaker candidates because Gmail search lacked scope, Calendar had no DinoBrain events, and the observatory branch was already contained in main.",
+  "behavior_rule": "In similar future work, apply this decision: Discarded weaker candidates because Gmail search lacked scope, Calendar had no DinoBrain events, and the observatory branch was already contained in main.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260705-014742-Generate-0-to-3-hyperpersona.json",
+    "snippet": "Discarded weaker candidates because Gmail search lacked scope, Calendar had no DinoBrain events, and the observatory branch was already contained in main."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260705-014742-Generate-0-to-3-hyperpersona.json",
+      "task_id": "task-20260705-014742-Generate-0-to-3-hyperpersona",
+      "signal_kind": "decision",
+      "snippet": "Discarded weaker candidates because Gmail search lacked scope, Calendar had no DinoBrain events, and the observatory branch was already contained in main."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-06",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-06T15:06:11.897Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-06T15:06:11.897Z",
+  "candidate_id": "behavior-rule-b17fd0e7d971cceb",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/behavior-rule-b17fd0e7d971cceb.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

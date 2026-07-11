@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260705-081359-Implement-a-hard-closed-loop",
+  "status": "completed",
+  "request": "Implement a hard closed-loop DinoBrain OS path so every Codex session/prompt has mandatory pre-response OS preflight, completed tasks feed automatic knowledge-growth candidates, and approved data changes can be automatically committed and pushed to GitHub under policy.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.0.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-05T08:13:59.803Z",
+  "updated_at": "2026-07-05T08:33:30.928Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-05T08:33:30.928Z",
+  "trace_path": ".dino/traces/task-20260705-081359-Implement-a-hard-closed-loop.json"
+}

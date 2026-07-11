@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-125548-Final-consensus-round-Role-4",
+  "status": "completed",
+  "request": "Final consensus round Role 4 behavior recall. Review [REDACTED_MACHINE_LOCAL_PATH] after Role 8/9 revisions. Confirm P1-09 still sufficient and no regression. Return AGREE or REVISE_REQUIRED. No edits.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T12:55:48.671Z",
+  "updated_at": "2026-07-07T12:57:16.998Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T12:57:16.998Z",
+  "trace_path": ".dino/traces/task-20260707-125548-Final-consensus-round-Role-4.json"
+}

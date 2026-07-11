@@ -1,0 +1,46 @@
+{
+  "version": "source_lineage_generation_v1",
+  "type": "lineage_generation",
+  "generation_id": "lineage-rag-paper-2005-11401-dd06ea14ee4e47a0fbb3",
+  "generation_status": "published",
+  "transaction_id": "source-lineage-1783735483176-727ae0bd-5b45-4fc7-b98a-60da5528375f",
+  "source_snapshot_path": "30_Sources/fetched/rag-paper-2005-11401.json",
+  "source_chunk_path": "30_Sources/chunks/rag-paper-2005-11401.json",
+  "provenance_path": ".dino/provenance/rag-paper-2005-11401.json",
+  "source_content_sha256": "48e2ef7a5c531d47fe467a5949e84531cb087725f2c20848f5a553f967a541ff",
+  "chunk_sha256": "48e2ef7a5c531d47fe467a5949e84531cb087725f2c20848f5a553f967a541ff",
+  "verification_status": "verified_summary",
+  "verified_at": "2026-07-07",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": "30_Sources/fetched/rag-paper-2005-11401.json",
+      "after_sha256": "89509ef723b2b69097c3516a2a2da3218027a2db1bb3cde84c74a6dc77f046cf"
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2005-11401.json",
+      "after_sha256": "1f8ccd1950d03dba910c90678bcd351e85dc86c15776f12d5b3ec191a8cd7253"
+    },
+    {
+      "path": ".dino/provenance/rag-paper-2005-11401.json",
+      "after_sha256": "d2d6ac39d0cac9d9df196e3f1d7cc4e617b29b21fb60f2d489df30cd64b26d58"
+    }
+  ],
+  "created_at": "2026-07-11T02:04:43.176Z",
+  "updated_at": "2026-07-11T02:04:43.176Z"
+}

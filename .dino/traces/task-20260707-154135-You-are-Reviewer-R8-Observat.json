@@ -1,0 +1,43 @@
+{
+  "task_id": "task-20260707-154135-You-are-Reviewer-R8-Observat",
+  "outcome": "completed",
+  "summary": "Read-only R8 review of Observatory/user-visible proof completion conditions. Inspected memory registry, consensus/completion/verification docs, Observatory server/UI script, health/freshness status builders, direct MCP status schema, Observatory verifier, targeted rg hits, and existing state artifacts. Verdict: AGREE that the plan completion conditions require UI/API visibility for used memory/audit evidence, blockers, pending reviewer/main/verifier lanes, stale proof timestamps, audit/trust score, and CLI/health parity; current implementation still appears to lack the full P1-11 API/UI/verifier surface, but the plan explicitly blocks completion until that surface exists.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Returned AGREE because docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md P1-11 explicitly requires shared blocker model, lanes, proof paths/timestamps, audit/trust score, /api/state fields, hard-gate UI rows, CLI parity, and negative Observatory tests.",
+    "Treated current Observatory implementation gaps as evidence that P1-11 remains unimplemented rather than as a doc objection, because the plan already names verify:observatory-evidence and acceptance criteria."
+  ],
+  "next_steps": [
+    "Implement verify:observatory-evidence and expand /api/state/UI to expose health_status, client_mcp_direct_status agents, blocker rows, stale proof state, pending reviewer/main/verifier lanes, and memory audit details before completion is claimed."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-154135-You-are-Reviewer-R8-Observat.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-154134-2e8336ddfe68.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [
+    "Observatory|/api/state|health_status|visible_status|blocker",
+    "client_mcp_direct|health_status|rag_eval|rag_proof|monitoring_status|reviewer|verifier|main pending|proof_path|missing_tools|stale_after_ms|latest_verified_at",
+    "verify:observatory-evidence|observatory-evidence|health_status.status|client_mcp_direct_status.agents|pending reviewer|verifier pending|main pending|blocker lane"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T15:43:01.667Z"
+}

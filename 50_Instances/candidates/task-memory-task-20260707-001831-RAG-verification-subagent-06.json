@@ -1,0 +1,57 @@
+{
+  "memory_id": "task-memory-task-20260707-001831-RAG-verification-subagent-06",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: RAG verification subagent 06: verify cloud/managed RAG knowledge-base services from Azure AI Sea",
+  "summary": "Read the three requested cloud documentation URLs directly and extracted verified managed RAG / knowledge-base service claims for DinoBrain. No source files were edited.",
+  "claim": "Task outcome for dinobrain: Read the three requested cloud documentation URLs directly and extracted verified managed RAG / knowledge-base service claims for DinoBrain. No source files were edited.",
+  "request": "RAG verification subagent 06: verify cloud/managed RAG knowledge-base services from Azure AI Search RAG overview, Amazon Bedrock Knowledge Bases, and Google Gemini Enterprise Agent Platform RAG Engine overview. Return 4-6 verified claims with source URL, confidence, managed-service design implication, and caveats. Do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "Used only the three user-specified URLs as claim evidence.",
+    "Kept claims short, paraphrased, and suitable for DinoBrain memory ingestion.",
+    "Treated managed-service design implications and caveats as separate fields per claim."
+  ],
+  "next_steps": [
+    "Optionally convert selected claims into accepted DinoBrain source-anchor records after review."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-001834-What-prior-DinoBrain-context.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-001831-RAG-verification-subagent-06.json",
+    "snippet": "Read the three requested cloud documentation URLs directly and extracted verified managed RAG / knowledge-base service claims for DinoBrain. No source files were edited."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:19:42.133Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-001831-RAG-verification-subagent-06.json",
+    "task_id": "task-20260707-001831-RAG-verification-subagent-06",
+    "task_path": ".dino/tasks/task-20260707-001831-RAG-verification-subagent-06.json"
+  },
+  "accepted_at": "2026-07-07T00:19:42.133Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-001831-RAG-verification-subagent-06.json",
+  "candidate_id": "task-memory-task-20260707-001831-RAG-verification-subagent-06",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260707-001831-RAG-verification-subagent-06.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

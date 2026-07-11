@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-124546-task-20260707-124545-Role-2-direct-M",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-124545-Role-2-direct-MCP-parity-rev",
+  "request": "Role 2: direct MCP parity reviewer. DinoBrain OS unfinished improvement plan consensus review. Independently inspect the user direction and all relevant memory/docs/status files: [REDACTED_MACHINE_LOCAL_PATH] docs/OS_COMPLETION_CONDITIONS.md, docs/VERIFICATION.md, src/client-mcp-direct-status.ts, src/health-status.ts, scripts/status or verification scripts, and data .dino/state/client_mcp_direct_status.json. Decide whether the plan for P0-04 is sufficient. Return AGREE or REVISE_REQUIRED with required acceptance tests. No edits.",
+  "generated_at": "2026-07-07T12:45:46.016Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-124545-Role-2-direct-MCP-parity-rev.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

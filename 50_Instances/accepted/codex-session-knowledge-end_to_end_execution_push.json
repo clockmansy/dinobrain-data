@@ -1,0 +1,247 @@
+{
+  "memory_id": "codex-session-knowledge-end_to_end_execution_push",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "user_preference",
+  "title": "Carry authorized work through commit, push, and deploy",
+  "claim": "When the user explicitly authorizes implementation or deployment, they expect Codex to carry the work through commit, push, release, and verification rather than stopping at a proposal.",
+  "reusable_rule": "After explicit authorization such as go, push, deploy, or auto-commit, implement, verify, commit, push, and report exact hashes or links.",
+  "scope": "delivery",
+  "confidence": "high",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "user-preference",
+    "git",
+    "release",
+    "delivery"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 37,
+    "user_hit_count": 87,
+    "assistant_hit_count": 930,
+    "weighted_score": 1278,
+    "session_refs": [
+      "sess-0a41a5f21d5b58",
+      "sess-11277020296a72",
+      "sess-1e95eea1be108d",
+      "sess-1f464b71ecea0d",
+      "sess-24a6ee3381ae00",
+      "sess-24d8b03c383495",
+      "sess-2d27e1d180db6c",
+      "sess-2fc834396900cc",
+      "sess-40cc080526149f",
+      "sess-458b19a1a1cdf1",
+      "sess-461b6e6d39a56f",
+      "sess-4e95f4fc22803b",
+      "sess-52c21a717f5a44",
+      "sess-5ea2d5d2562d29",
+      "sess-61a6570430d591",
+      "sess-6aa2423b061356",
+      "sess-6b55d87e30bb3e",
+      "sess-6f506c542b0e47",
+      "sess-72cf004ec045b8",
+      "sess-7ad76bf1417852",
+      "sess-7fe6090762c115",
+      "sess-80c93d7848697c",
+      "sess-859a5de9d52d83",
+      "sess-895eea5311c7c7"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "7aab1ac8e06560ff65b09ab5",
+        "char_count": 3187
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "de502b804b04c43ebb970e77",
+        "char_count": 1849
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "3b388bd9fbe76d0882b4d5c0",
+        "char_count": 442
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "bbcb9773ff5f0dc896d03acf",
+        "char_count": 121
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "7a619ce84947c012f165b386",
+        "char_count": 97
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "791c49e73a60fb1a6d4d94b1",
+        "char_count": 119
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "08324f085d54d7105ceba154",
+        "char_count": 1807
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "183329c7dd39cb3bc6bd9484",
+        "char_count": 950
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "8625c2e0d5f73399f62411cc",
+        "char_count": 83
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "ad095910bbcb7fc147f7dd33",
+        "char_count": 1030
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "a20284e1e3366eb7fee7d016",
+        "char_count": 416
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "18794135cab626397759515f",
+        "char_count": 108
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "97153529cf3e83c7e1881917",
+        "char_count": 34
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "128089d05c45b807e91a87a1",
+        "char_count": 362
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "6b200376f8e244c713523e73",
+        "char_count": 965
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "d930063f3765a1dc37edf214",
+        "char_count": 51
+      }
+    ],
+    "matched_terms": [
+      "푸쉬|push|커밋|자동커밋|배포|release|릴리즈|업로드|올려|깃헙|github|deploy|commit"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 940
+      },
+      {
+        "project": "Project_J",
+        "count": 43
+      },
+      {
+        "project": "stripe engine",
+        "count": 22
+      },
+      {
+        "project": "gykim80-perfectpixel-studio-https-github-com",
+        "count": 6
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 2
+      },
+      {
+        "project": "html",
+        "count": 1
+      },
+      {
+        "project": "codex",
+        "count": 1
+      },
+      {
+        "project": "z",
+        "count": 1
+      },
+      {
+        "project": "new-chat",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-end_to_end_execution_push.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-end_to_end_execution_push",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425439-b3617e88-3609-4d79-8b4c-b9f058cece5a",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425439-b3617e88-3609-4d79-8b4c-b9f058cece5a",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-end_to_end_execution_push.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-end_to_end_execution_push.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "successor_paths": []
+}

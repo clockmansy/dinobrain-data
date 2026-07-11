@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-003410-Use-verified-RAG-knowledge-a",
+  "status": "completed",
+  "request": "Use verified RAG knowledge and prior DinoBrain conversation knowledge to critically audit DinoBrain and find consensus improvements toward the user's desired OS: mandatory pre-response OS loop, high-quality RAG/LLM Wiki, provenance, behavior gates, feedback writeback, observability, new-PC recovery, and automatic knowledge compounding. Use 10 subagents and iterate until consensus improvements are found.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T00:34:10.525Z",
+  "updated_at": "2026-07-07T00:51:54.768Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T00:51:54.768Z",
+  "trace_path": ".dino/traces/task-20260707-003410-Use-verified-RAG-knowledge-a.json"
+}

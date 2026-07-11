@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "description": "Real-vault behavior golden set for DinoBrain knowledge compounding. Cases require reviewed memory to provide action criteria that are not fully present in the request text.",
+  "target_memory_lift": 45,
+  "minimum_cases": 12,
+  "cases": [
+    {
+      "id": "behavior-001-pre-response-loop",
+      "request": "DinoBrain pre-response fail closed operating rule 기준을 설명해줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"],
+      "required_context_terms": ["os_begin_task", "Context Pack", "finish_task", "fail-closed"]
+    },
+    {
+      "id": "behavior-002-new-pc-equivalence",
+      "request": "DinoBrain installer new PC equivalence 기준을 알려줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"],
+      "required_context_terms": ["app/data refs", "portable Node", "hook approval flow", "reinstall/idempotent behavior"]
+    },
+    {
+      "id": "behavior-003-live-proof",
+      "request": "DinoBrain configured hook versus live proof verification 기준을 정해줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json"],
+      "required_context_terms": ["configured", "probe-verified", "live-verified", "fresh prompt event evidence"]
+    },
+    {
+      "id": "behavior-004-rag-quality",
+      "request": "DinoBrain RAG quality direction retrieval improvement 기준을 알려줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"],
+      "required_context_terms": ["anchor-only sources", "verified chunks", "retrieval mode honest", "memory-on behavior"]
+    },
+    {
+      "id": "behavior-005-knowledge-compounding",
+      "request": "DinoBrain knowledge compounding LLM Wiki goal 핵심 조건을 다시 잡아줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"],
+      "required_context_terms": ["sessions as the root source", "reviewed memory", "lifecycle-clean", "future Context Packs"]
+    },
+    {
+      "id": "behavior-006-local-evidence",
+      "request": "DinoBrain local evidence over claims verification preference 기준을 잡아줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"],
+      "required_context_terms": ["inspect the real workspace", "command/file evidence", "if a check was not run"]
+    },
+    {
+      "id": "behavior-007-observability",
+      "request": "DinoBrain Observatory observability required state 기준을 알려줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-observability_required.json"],
+      "required_context_terms": ["live OS traces", "graph health", "audit trust", "sync risk"]
+    },
+    {
+      "id": "behavior-008-privacy",
+      "request": "DinoBrain raw transcripts never public session memory safety 기준은?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json"],
+      "required_context_terms": ["metadata-only", "paraphrased reviewed memories", "never store raw full transcripts"],
+      "forbidden_context_terms": ["message_content_stored\": true"]
+    },
+    {
+      "id": "behavior-009-current-instruction-priority",
+      "request": "DinoBrain current instruction over memory priority 기준은?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"],
+      "required_context_terms": ["current user instructions", "priority", "record the correction"]
+    },
+    {
+      "id": "behavior-010-end-to-end-push",
+      "request": "DinoBrain end to end execution push preference 기준은?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"],
+      "required_context_terms": ["implement", "verify", "commit", "push"]
+    },
+    {
+      "id": "behavior-011-release-drift",
+      "request": "DinoBrain version release drift risk 기준을 알려줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json"],
+      "required_context_terms": ["local/remote refs", "package version", "tag", "GitHub release state"]
+    },
+    {
+      "id": "behavior-012-plan-first",
+      "request": "DinoBrain plan first scope lock preference 기준을 알려줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"],
+      "required_context_terms": ["first summarize understanding", "ask only necessary questions", "lock the plan"]
+    }
+  ]
+}

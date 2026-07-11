@@ -1,0 +1,207 @@
+{
+  "pack_id": "pack-20260703-041856-DinoBrain-installer-Codex-re",
+  "pack_type": "standard",
+  "question": "DinoBrain installer Codex restart hook approval flow trust prompt /hooks diagnostics install.ps1 Windows installer",
+  "created_at": "2026-07-03T04:18:56.526Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 11,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 11,
+  "index_total_candidate_count": 11,
+  "index_matching_terms": [
+    "workflows"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 8,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-041151-Explain-whether-Codex-hook-t.json",
+      "kind": "recent_task",
+      "title": "Task: Explain whether Codex hook trust approval can be automated for DinoBrain installation, and ident",
+      "summary": "status=completed | project=dinobrain | Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 60,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"installer\"",
+        "path matched \"codex\"",
+        "title matched \"codex\"",
+        "summary matched \"codex\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "summary matched \"hook\"",
+        "title matched \"approval\"",
+        "summary matched \"approval\"",
+        "title matched \"trust\"",
+        "summary matched \"trust\"",
+        "summary matched \"prompt\"",
+        "summary matched \"hooks\"",
+        "summary matched \"diagnostics\"",
+        "title matched \"install\"",
+        "summary matched \"install\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-041852-Add-installer-flow-that-dete.json",
+      "kind": "recent_task",
+      "title": "Task: Add installer flow that detects running Codex, restarts or guides reload, and opens/launches a h",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 32,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "path matched \"installer\"",
+        "title matched \"installer\"",
+        "title matched \"codex\"",
+        "title matched \"restart\"",
+        "path matched \"flow\"",
+        "title matched \"flow\"",
+        "path matched \"install\"",
+        "title matched \"install\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-033050-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 27,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"codex\"",
+        "title matched \"codex\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "summary matched \"hook\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-033451-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 27,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"codex\"",
+        "title matched \"codex\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "summary matched \"hook\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-012635-hookEventName-UserPromptSubm.json",
+      "kind": "recent_task",
+      "title": "Task: {\"hookEventName\":\"UserPromptSubmit\",\"prompt\":\"Global DinoBrain hook verification from another wo",
+      "summary": "status=completed | project=dinobrain | Completed the first global hook verification run; this record captured the pre-parser-fix payload shape and confirmed preflight execution from outside the DinoBrain workspace.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 24,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "summary matched \"hook\"",
+        "path matched \"prompt\"",
+        "title matched \"prompt\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-012725-Global-DinoBrain-hook-verifi.json",
+      "kind": "recent_task",
+      "title": "Task: Global DinoBrain hook verification after parser fix.",
+      "summary": "status=completed | project=Documents | Completed the global hook verification after parser hardening; this record confirmed the prompt and cwd are parsed separately from another workspace.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 20,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "summary matched \"hook\"",
+        "summary matched \"prompt\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-035806-Check-whether-reinstalling-D.json",
+      "kind": "recent_task",
+      "title": "Task: Check whether reinstalling DinoBrain over the same folder is safe, add a clean full-data uninsta",
+      "summary": "status=partial | project=dinobrain | Implemented and verified safe reinstall documentation plus a full purge uninstaller for DinoBrain. Added installer-created purge launchers, uninstall verification, ZIP-first release packaging with SHA256 generation, version bump to 0.1.3, and pushed main plus tag v0.1.3. Release asset upload remains blocked in this environment because no GITHUB_TOKEN/GH_TOKEN or gh CLI is availabl",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 20,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"installer\"",
+        "path matched \"install\"",
+        "title matched \"install\"",
+        "summary matched \"install\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-033041-manual-hook-env-test.json",
+      "kind": "recent_task",
+      "title": "Task: manual hook env test",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 10,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "path matched \"hook\"",
+        "title matched \"hook\""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "behavior_rule_id": "behavior-rule-b307018fe59b5032",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Kept repository source read-only; no code or data files were manually edited by the audit.",
+  "behavior_rule": "In similar future work, apply this decision: Kept repository source read-only; no code or data files were manually edited by the audit.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-003541-Read-only-audit-focused-on-d.json",
+    "snippet": "Kept repository source read-only; no code or data files were manually edited by the audit."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-003541-Read-only-audit-focused-on-d.json",
+      "task_id": "task-20260707-003541-Read-only-audit-focused-on-d",
+      "signal_kind": "decision",
+      "snippet": "Kept repository source read-only; no code or data files were manually edited by the audit."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T02:02:58.247Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T02:02:58.247Z",
+  "candidate_id": "behavior-rule-b307018fe59b5032",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/behavior-rule-b307018fe59b5032.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

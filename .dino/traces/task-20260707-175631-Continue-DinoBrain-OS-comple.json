@@ -1,0 +1,66 @@
+{
+  "task_id": "task-20260707-175631-Continue-DinoBrain-OS-comple",
+  "outcome": "completed",
+  "summary": "Implemented dynamic live semantic query retrieval: non-golden prompts now get on-the-fly semantic query vectors in the Context Pack path, with regression/current status verifiers, verify:goal wiring, health/freshness/Observatory readiness exposure, and a corrected context golden for explicit Google RAG source lookup.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "src/hybrid-retrieval.ts",
+    "src/live-semantic-query.ts",
+    "src/live-semantic-query-status.ts",
+    "src/build-live-semantic-query-status.ts",
+    "src/retrieval.ts",
+    "src/wiki-index.ts",
+    "src/sqlite-shards.ts",
+    "src/refresh-status-artifacts.ts",
+    "src/health-status.ts",
+    "src/status-freshness.ts",
+    "scripts/verify-live-semantic-query.mjs",
+    "scripts/verify-closed-loop-goal.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/verify-observatory-live-graph.mjs",
+    "package.json",
+    "docs/OS_UNFINISHED_IMPROVEMENT_REVIEW_20260708.md",
+    ".dino/evaluations/context-golden.json",
+    ".dino/state/live_semantic_query_status.json",
+    ".dino/state/health_status.json",
+    ".dino/state/monitoring_status.json",
+    ".dino/state/rag_eval_status.json",
+    ".dino/state/rag_proof_status.json"
+  ],
+  "decisions": [
+    "Do not persist ad-hoc live query vectors to dense-vectors.json; attach them in memory for retrieval proof to avoid dirtying the vault per prompt.",
+    "A dense index with record vectors but no query vectors is valid when a semantic provider can compute live query embeddings.",
+    "Generic source golden prompts should not require a specific Google source; the Google expectation was made explicit in the query text.",
+    "verify:goal now treats live semantic query evidence as a separate hard requirement from golden-set RAG proof/eval."
+  ],
+  "next_steps": [
+    "Add completion-grade answer-quality verifier beyond the local extractive judge.",
+    "Add review backlog and compounding lifecycle hard verifiers.",
+    "Refresh live Codex Desktop hook proof after rebuilt server mtime changes before claiming full verify:goal completion.",
+    "Continue install-equivalence and release-manifest hard-gate work."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-175631-Continue-DinoBrain-OS-comple.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T18:06:58.828Z"
+}

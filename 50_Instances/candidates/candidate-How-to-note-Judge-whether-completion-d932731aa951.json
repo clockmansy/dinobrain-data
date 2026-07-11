@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-How-to-note-Judge-whether-completion-d932731aa951",
+  "status": "pending_review",
+  "claim": "How-to note: Judge whether completion conditions are enough for a new computer install to recover app/data version parity, Codex/Claude MCP+hooks, Observatory launchers, verifier launchers, uninstall/purge safety, and GitHub release/data sync equivalence.",
+  "category": "how_to",
+  "temperature": "warm",
+  "evidence": {
+    "snippet": "Judge whether completion conditions are enough for a new computer install to recover app/data version parity, Codex/Claude MCP+hooks, Observatory launchers, verifier launchers, uninstall/purge safety, and GitHub release/data sync equivalence.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-154142-e1acfdc544f0.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-154142-e1acfdc544f0",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "how_to",
+    "temperature:warm",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-154142-e1acfdc544f0",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T15:41:42.668Z",
+  "updated_at": "2026-07-07T15:41:42.668Z"
+}

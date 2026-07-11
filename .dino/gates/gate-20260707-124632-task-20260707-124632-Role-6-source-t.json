@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-124632-task-20260707-124632-Role-6-source-t",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-124632-Role-6-source-truth-provenan",
+  "request": "Role 6: source truth/provenance reviewer. DinoBrain OS unfinished improvement plan consensus review. Inspect whether source/chunk/claim lineage and source truth gates are represented in the remaining plan. Read MEMORY.md relevant sections, docs/OS_COMPLETION_CONDITIONS.md, docs/OS_COMPLETION_IMPROVEMENT_PLAN.md, docs/VERIFICATION.md, source/provenance code and data source chunks. Candidate plan focuses on P0-04/P0-05/P1-09/P1-10 but may need provenance conditions to avoid hollow RAG. Return AGREE or REVISE_REQUIRED. No edits.",
+  "generated_at": "2026-07-07T12:46:32.802Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-124632-Role-6-source-truth-provenan.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

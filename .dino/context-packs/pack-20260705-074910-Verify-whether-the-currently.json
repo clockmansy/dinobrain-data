@@ -1,0 +1,226 @@
+{
+  "pack_id": "pack-20260705-074910-Verify-whether-the-currently",
+  "pack_type": "standard",
+  "os_version": "2.0.1",
+  "question": "Verify whether the currently installed DinoBrain follows the full OS loop: Codex hook detection, task start, context pack retrieval, agent work with memory precedence, narrow wiki search, finish_task logging, knowledge growth lifecycle, and backup/recovery via data repo and GitHub.",
+  "created_at": "2026-07-05T07:49:10.776Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense lexical retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 15,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 15,
+  "index_total_candidate_count": 15,
+  "index_matching_terms": [
+    "20_wiki",
+    "data-specific",
+    "full-text",
+    "knowledge",
+    "metadata",
+    "task",
+    "whether",
+    "wiki",
+    "workflows"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 8,
+  "items": [
+    {
+      "path": "20_Wiki/README.md",
+      "kind": "curated_record",
+      "title": "20_Wiki",
+      "summary": "Curated durable knowledge.",
+      "tags": [],
+      "score": 7.945,
+      "reasons": [
+        "path_matched:wiki",
+        "title_matched:wiki",
+        "summary_matched:knowledge",
+        "chunk_matched:wiki,knowledge,data",
+        "bm25:wiki,knowledge",
+        "dense_lexical:1.28",
+        "rank_fusion:rrf",
+        "rerank_lifecycle_penalty",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-074910-Verify-whether-the-currently.json",
+      "kind": "recent_task",
+      "title": "Task: Verify whether the currently installed DinoBrain follows the full OS loop: Codex hook detection,",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 4.918,
+      "reasons": [
+        "path_matched:verify,whether,currently,task",
+        "title_matched:verify,whether,currently,installed",
+        "summary_matched:dinobrain,start",
+        "tags_matched:task,start",
+        "chunk_matched:verify,whether,currently,installed",
+        "bm25:verify,whether,currently,installed,dinobrain",
+        "dense_lexical:13.42",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-020713-Implement-DinoBrain-v2-found.json",
+      "kind": "recent_task",
+      "title": "Task: Implement DinoBrain v2 foundations for mandatory pre-response OS context, improved retrieval, li",
+      "summary": "status=completed | project=dinobrain | Implemented DinoBrain OS v2 foundations: package/server/installer version bumped to 2.0.0, added fail-closed os_begin_task pre-response entrypoint, switched default retrieval to hybrid_contextual_v2, added action gates, node lifecycle application, durable source chunks/provenance links, feedback correction writeback, behavior evaluation, v2 Observatory status, and v2 regression ",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 1.914,
+      "reasons": [
+        "path_matched:dinobrain,task",
+        "title_matched:dinobrain,os,task,context",
+        "summary_matched:dinobrain,os,task,context",
+        "tags_matched:task",
+        "chunk_matched:dinobrain,os,context,retrieval",
+        "bm25:dinobrain,os,task,context,retrieval",
+        "dense_lexical:2.09",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2-.json",
+      "kind": "recent_task",
+      "title": "Task: QA/code review DinoBrain v2 changes comprehensively, focusing on stability of fail-closed pre-re",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 1.89,
+      "reasons": [
+        "path_matched:dinobrain,task",
+        "title_matched:dinobrain,os,task",
+        "summary_matched:dinobrain,start",
+        "tags_matched:task,start",
+        "chunk_matched:dinobrain,os,context,retrieval",
+        "bm25:dinobrain,os,task,context,retrieval",
+        "dense_lexical:2.40",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-",
+      "summary": "status=completed | Implemented DinoBrain OS v2 P0 improvements from the review report: honest lexical fallback retrieval mode, optional dense vector cosine retrieval, stopword/high-frequency token filtering, verified os_gate context evidence, sensitive prompt auto-escalation, event-backed memory audit artifact verification, SQLite/wiki index version bumps, v2.0.2 version bump, docs, and regression coverage.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 1.865,
+      "reasons": [
+        "path_matched:dinobrain,os,task",
+        "title_matched:dinobrain,os,task",
+        "summary_matched:dinobrain,os,context,retrieval",
+        "tags_matched:task",
+        "chunk_matched:dinobrain,os,task",
+        "bm25:dinobrain,os,task,context,retrieval",
+        "dense_lexical:2.26",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-022738-QA-code-review-DinoBrain-v2-",
+      "summary": "status=completed | Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than executing merge/hold/delete/provenance rep",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 1.7,
+      "reasons": [
+        "path_matched:dinobrain,task",
+        "title_matched:dinobrain,task",
+        "summary_matched:dinobrain,os,codex,hook",
+        "tags_matched:task",
+        "chunk_matched:dinobrain,task",
+        "bm25:dinobrain,os,codex,hook,task",
+        "dense_lexical:1.96",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-060843-Commit-and-push-the-current-.json",
+      "kind": "recent_task",
+      "title": "Task: Commit and push the current DinoBrain OS v2.0.2 P0 improvement work from this thread. App repo p",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 0.763,
+      "reasons": [
+        "path_matched:task",
+        "title_matched:dinobrain,os,task,work",
+        "summary_matched:dinobrain,start",
+        "tags_matched:task,start",
+        "chunk_matched:dinobrain,os,work,memory",
+        "bm25:dinobrain,os,task,work,memory",
+        "dense_lexical:2.34",
+        "rank_fusion:rrf",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-060843-Commit-and-push-the-current.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260705-060843-Commit-and-push-the-current-",
+      "summary": "status=completed | Committed and pushed the DinoBrain OS v2.0.2 P0 hardening work to app repo main, then pushed tag v2.0.2 to trigger the release workflow. Ran data repo git_sync dry-run; all data changes are conditional/requires_review, so data repo was not committed or pushed.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 0.531,
+      "reasons": [
+        "path_matched:task",
+        "title_matched:task",
+        "summary_matched:dinobrain,os,work,data",
+        "tags_matched:task",
+        "chunk_matched:task",
+        "bm25:dinobrain,os,task,work,data",
+        "dense_lexical:1.99",
+        "rank_fusion:rrf",
+        "rerank_root_intent_penalty"
+      ]
+    }
+  ]
+}

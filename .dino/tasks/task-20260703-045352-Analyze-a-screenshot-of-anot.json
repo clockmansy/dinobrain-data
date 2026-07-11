@@ -1,0 +1,20 @@
+{
+  "task_id": "task-20260703-045352-Analyze-a-screenshot-of-anot",
+  "status": "blocked",
+  "request": "Analyze a screenshot of another person's similar memory OS / graph observatory implementation and infer its visible features and architecture.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-03T04:53:52.640Z",
+  "updated_at": "2026-07-07T11:09:45.933Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T11:09:45.933Z",
+  "trace_path": ".dino/traces/task-20260703-045352-Analyze-a-screenshot-of-anot.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v1",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-07T11:09:45.933Z",
+    "trace_path": ".dino/traces/task-20260703-045352-Analyze-a-screenshot-of-anot.json"
+  }
+}

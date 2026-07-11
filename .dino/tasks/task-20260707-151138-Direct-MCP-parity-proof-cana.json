@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-151138-Direct-MCP-parity-proof-cana",
+  "status": "completed",
+  "request": "Direct MCP parity proof canary: Codex must call os_begin_task, search_memory, wiki_search, and finish_task through the exposed DinoBrain MCP tools by exact single tool names.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:11:38.350Z",
+  "updated_at": "2026-07-07T15:11:50.877Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T15:11:50.877Z",
+  "trace_path": ".dino/traces/task-20260707-151138-Direct-MCP-parity-proof-cana.json"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260703-103247-Deploy-the-approved-v13-Dino",
+  "status": "completed",
+  "request": "Deploy the approved v13 DinoBrain Observatory deterministic fossil graph design: commit visual changes, push to GitHub main, build installer ZIP, publish GitHub release asset, and verify download link.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-03T10:32:47.508Z",
+  "updated_at": "2026-07-03T10:47:22.078Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-03T10:47:22.078Z",
+  "trace_path": ".dino/traces/task-20260703-103247-Deploy-the-approved-v13-Dino.json"
+}

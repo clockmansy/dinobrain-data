@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-154703-R7-reviewer-retry.-You-are-t",
+  "status": "blocked",
+  "request": "R7 reviewer retry. You are the node lifecycle/sync safety/GitHub recovery reviewer. Use the inherited thread context and inspect the relevant local files if needed. Required final response must be non-empty and use this exact shape:\nreviewer_id=R7\nverdict=AGREE or REVISE_REQUIRED\nblocking_objections=[...]\nrequired_doc_changes=[...]\nevidence_files=[...]\n\nQuestion: Is docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md, together with docs/OS_COMPLETION_CONDITIONS.md, docs/SYNC_POLICY.md, and docs/VERIFICATION.md, adequate as a completion plan for node lifecycle cleanup, task finish-gate integrity, merge/hold/demote/delete/provenance review, policy-gated GitHub data push, and recovery safety? If adequate, say AGREE. If not, list blocking document changes only.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:47:03.250Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-154703-R7-reviewer-retry.-You-are-t.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-154703-R7-reviewer-retry.-You-are-t.json"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "memory_id": "task-memory-task-20260707-011041-Read-only-audit-of-scripts-v",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Read-only audit of scripts/verify-codex-live-preflight.mjs and whether the new/modified live ver",
+  "summary": "Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelated completed events, no parent-process or challenge attestation, no proof that injected context reached the model, and loose hook registration checks.",
+  "claim": "Task outcome for dinobrain: Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelated completed events, no parent-process or challenge attestation, no proof that injected context reached the model, and loose hook registration checks.",
+  "request": "Read-only audit of scripts/verify-codex-live-preflight.mjs and whether the new/modified live verifier approach proves real Codex app dispatch versus synthetic hook invocation. Identify gaps and exact improvements. Do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "Do not edit repository files during this audit.",
+    "Treat verify:codex-live as evidence of hook-shaped artifacts, not as hard proof of Codex app dispatch.",
+    "Recommend adding a per-hook-run id/challenge, launcher provenance from the PowerShell wrapper, strict submitted/completed/report correlation, and optional live finish_task proof for closed-loop verification."
+  ],
+  "next_steps": [
+    "Add hook_run_id to codex_prompt_submitted, codex_preflight_completed, and live reports, then require it in verify-codex-live-preflight.mjs.",
+    "Generate or require a high-entropy challenge token for live prompts and match it exactly rather than by loose snippet substring.",
+    "Capture bounded parent-process provenance in the PowerShell wrapper and have the verifier distinguish Codex desktop parentage from installer/diagnostic/manual launches.",
+    "Add a live closed-loop verifier mode that requires task_finished for the same hook-created task_id to prove the agent saw and used injected context."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-85890922977180d3.json",
+    "50_Instances/accepted/behavior-rule-f5c107fde1877d8c.json",
+    "50_Instances/accepted/behavior-rule-9dcf676d3890babb.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-011044-What-prior-DinoBrain-context.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-011041-Read-only-audit-of-scripts-v.json",
+    "snippet": "Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelated completed events, no parent-process or challenge attestation, no proof that injected context reached the model, and loose hook registration checks."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T01:12:57.933Z",
+  "updated_at": "2026-07-07T01:12:57.933Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-011041-Read-only-audit-of-scripts-v.json",
+    "task_id": "task-20260707-011041-Read-only-audit-of-scripts-v",
+    "task_path": ".dino/tasks/task-20260707-011041-Read-only-audit-of-scripts-v.json"
+  }
+}

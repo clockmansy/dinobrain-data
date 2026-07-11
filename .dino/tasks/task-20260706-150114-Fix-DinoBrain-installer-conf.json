@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260706-150114-Fix-DinoBrain-installer-conf",
+  "status": "completed",
+  "request": "Fix DinoBrain installer/config writer to prevent malformed carriage returns in <machine-local-path> by normalizing line endings, checking for bare CR, and validating TOML after write.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-06T15:01:14.703Z",
+  "updated_at": "2026-07-06T15:06:11.801Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-06T15:06:11.801Z",
+  "trace_path": ".dino/traces/task-20260706-150114-Fix-DinoBrain-installer-conf.json"
+}

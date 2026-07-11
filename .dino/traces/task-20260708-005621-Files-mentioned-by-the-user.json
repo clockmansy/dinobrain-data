@@ -1,0 +1,42 @@
+{
+  "task_id": "task-20260708-005621-Files-mentioned-by-the-user-",
+  "outcome": "completed",
+  "summary": "Handled a user-provided GitHub personal access token as sensitive material. Did not use, echo, persist, or configure the exposed token. Advised revoking it and using GitHub CLI browser auth or a newly generated fine-grained token with narrow repository scope and expiration.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Treat the pasted GitHub token as compromised because it appeared in chat.",
+    "Do not use or store raw tokens in shell commands, git config, repo files, memory, or task traces.",
+    "Recommend GitHub CLI browser login as the safest path for release/API automation."
+  ],
+  "next_steps": [
+    "Revoke/delete the exposed token in GitHub settings.",
+    "Generate a new fine-grained token only if browser login is unavailable; scope it to clockmansy/dinobrain and clockmansy/dinobrain-data with minimal permissions and an expiration date.",
+    "Install GitHub CLI and authenticate with gh auth login --web before release asset automation."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "30_Sources/chunks/microsoft-graphrag.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-005621-Files-mentioned-by-the-user-.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260708-005620-570b2b1bcfa7.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T00:57:10.520Z"
+}

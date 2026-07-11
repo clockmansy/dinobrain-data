@@ -1,0 +1,986 @@
+{
+  "version": "review_worklist_actions_v1",
+  "status": "ready",
+  "generated_at": "2026-07-07T12:25:36.779Z",
+  "apply": {
+    "holds": true,
+    "merge_reviews": true
+  },
+  "data_root": "<machine-local-path>",
+  "source_worklist_status": "needs_review",
+  "before_counts": {
+    "open_items": 124,
+    "clusters": 38,
+    "duplicate_clusters": 8,
+    "duplicate_items": 94,
+    "singleton_clusters": 30,
+    "high_priority_clusters": 5
+  },
+  "after_counts": {
+    "open_items": 94,
+    "clusters": 17,
+    "duplicate_clusters": 7,
+    "duplicate_items": 84,
+    "singleton_clusters": 10,
+    "high_priority_clusters": 5
+  },
+  "counts": {
+    "clusters": 38,
+    "actions": 38,
+    "merge_review_actions": 5,
+    "hold_actions": 21,
+    "manual_only_actions": 12,
+    "applied": 26,
+    "skipped": 0
+  },
+  "actions": [
+    {
+      "action_id": "worklist-action-review-cluster-7b51224dd6f39e44",
+      "cluster_id": "review-cluster-7b51224dd6f39e44",
+      "kind": "create_merge_review",
+      "apply_status": "applied",
+      "reason_code": "duplicate_cluster_requires_single_semantic_review",
+      "cluster_kind": "user_preference",
+      "item_count": 22,
+      "representative_claim": "User preference: Do not edit files.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-1303bf0a7741.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-1a4cb4e0dda6.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-1a84c3d45822.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-2f4a3403d126.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-422edcd2c394.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-4afc607af28d.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-53d1a0ecdff5.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-57b1114eaf2d.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-6d3d4458d14b.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-7993149de994.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-838f94174944.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-8bf79d52dfab.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-947bc57b533c.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-a291797ac262.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-a3bfe595d5fb.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-b97e4582d1c5.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-bd53627ef36a.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-bf64eff61455.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-c60e3405ff24.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-d467b2913ef3.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-d929f113ba23.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-e23c3f755f39.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-1303bf0a7741.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-1a4cb4e0dda6.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-1a84c3d45822.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-2f4a3403d126.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-422edcd2c394.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-4afc607af28d.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-53d1a0ecdff5.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-57b1114eaf2d.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-6d3d4458d14b.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-7993149de994.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-838f94174944.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-8bf79d52dfab.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-947bc57b533c.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-a291797ac262.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-a3bfe595d5fb.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-b97e4582d1c5.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-bd53627ef36a.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-bf64eff61455.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-c60e3405ff24.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-d467b2913ef3.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-d929f113ba23.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-e23c3f755f39.json"
+      ],
+      "applied_paths": [
+        "80_Review_Queue/merge/review-cluster-7b51224dd6f39e44.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-8a731052e1002b6c",
+      "cluster_id": "review-cluster-8a731052e1002b6c",
+      "kind": "create_merge_review",
+      "apply_status": "applied",
+      "reason_code": "duplicate_cluster_requires_single_semantic_review",
+      "cluster_kind": "user_preference",
+      "item_count": 10,
+      "representative_claim": "User preference: Do not include quotes, markdown, formatting characters, or trailing punctuation in the title value.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-29f9a2ac7d57.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-2e58be95187a.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-69dccedcca9c.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-966b21029e8f.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-9f2f9cec7670.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-a7dc3af395d3.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-a998264ab1a1.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-abb43b01c4e0.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-c112c8a0f390.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-e0e83d128991.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-29f9a2ac7d57.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-2e58be95187a.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-69dccedcca9c.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-966b21029e8f.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-9f2f9cec7670.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-a7dc3af395d3.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-a998264ab1a1.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-abb43b01c4e0.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-c112c8a0f390.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-e0e83d128991.json"
+      ],
+      "applied_paths": [
+        "80_Review_Queue/merge/review-cluster-8a731052e1002b6c.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-93e818efc1cb2e79",
+      "cluster_id": "review-cluster-93e818efc1cb2e79",
+      "kind": "create_merge_review",
+      "apply_status": "applied",
+      "reason_code": "duplicate_cluster_requires_single_semantic_review",
+      "cluster_kind": "project_decision",
+      "item_count": 10,
+      "representative_claim": "Project decision: Fill the structured title field with plain text.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-11a142c7e381.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-16bef75ae27d.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-507c07d6a725.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-6bc12cce67bc.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-6fb864fd9c1e.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-71f2b98bd0b2.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-8de2a27412c6.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-bb7b7feaf409.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-e3d103d907c7.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-f48c61acecd9.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-11a142c7e381.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-16bef75ae27d.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-507c07d6a725.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-6bc12cce67bc.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-6fb864fd9c1e.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-71f2b98bd0b2.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-8de2a27412c6.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-bb7b7feaf409.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-e3d103d907c7.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-f48c61acecd9.json"
+      ],
+      "applied_paths": [
+        "80_Review_Queue/merge/review-cluster-93e818efc1cb2e79.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-c4a3545f0c01653e",
+      "cluster_id": "review-cluster-c4a3545f0c01653e",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "project_decision",
+      "item_count": 1,
+      "representative_claim": "Project decision: CONTEXT: MEMORY FOLDER STRUCTURE",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-decision-CONTEXT-MEMORY-FOLD-5774c436f6f7.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-decision-CONTEXT-MEMORY-FOLD-5774c436f6f7.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-33bd0d65213c3f22",
+      "cluster_id": "review-cluster-33bd0d65213c3f22",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "project_decision",
+      "item_count": 1,
+      "representative_claim": "Project decision: Folder structure (under <machine-local-path>",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-decision-Folder-structure-un-60147025543c.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-decision-Folder-structure-un-60147025543c.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-3842b8fd3115d700",
+      "cluster_id": "review-cluster-3842b8fd3115d700",
+      "kind": "create_merge_review",
+      "apply_status": "applied",
+      "reason_code": "duplicate_cluster_requires_single_semantic_review",
+      "cluster_kind": "error_fix",
+      "item_count": 10,
+      "representative_claim": "Error or fix note: - Use an imperative verb first: \"Add\", \"Fix\", \"Update\", \"Refactor\", \"Remove\", \"Locate\", \"Find\", etc.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-2a226d45f258.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-45d0a1153fb2.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-71c1511e5bd5.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-71face00dafe.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-b980ea841fa0.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-c3e64913d5a7.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-cbc8e431b4a5.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-cc88e33b227c.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-df0f4d72e325.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-f50e3dcb75cc.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-2a226d45f258.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-45d0a1153fb2.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-71c1511e5bd5.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-71face00dafe.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-b980ea841fa0.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-c3e64913d5a7.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-cbc8e431b4a5.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-cc88e33b227c.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-df0f4d72e325.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-f50e3dcb75cc.json"
+      ],
+      "applied_paths": [
+        "80_Review_Queue/merge/review-cluster-3842b8fd3115d700.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-4e4ca5d792a2925a",
+      "cluster_id": "review-cluster-4e4ca5d792a2925a",
+      "kind": "create_merge_review",
+      "apply_status": "applied",
+      "reason_code": "duplicate_cluster_requires_single_semantic_review",
+      "cluster_kind": "error_fix",
+      "item_count": 10,
+      "representative_claim": "Error or fix note: The tasks typically have to do with coding-related tasks, for example requests for bug fixes or questions about a codebase.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-10859b62c020.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-125f66df4d41.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-5ea7148ce60e.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-70d8d5bcbf5a.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-8203763d654a.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-99278ed035fb.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-9a9d312ec4a3.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-b59a794b4950.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-c17442564cce.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-ee60f9e32f2a.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-10859b62c020.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-125f66df4d41.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-5ea7148ce60e.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-70d8d5bcbf5a.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-8203763d654a.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-99278ed035fb.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-9a9d312ec4a3.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-b59a794b4950.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-c17442564cce.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-ee60f9e32f2a.json"
+      ],
+      "applied_paths": [
+        "80_Review_Queue/merge/review-cluster-4e4ca5d792a2925a.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-75885d7161288465",
+      "cluster_id": "review-cluster-75885d7161288465",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 10,
+      "representative_claim": "Project state: - If the user's prompt is already a short clea",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-00e5840d65ed.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-1a462be35874.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-215899702b9e.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-24e08664de50.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-3185572b967c.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-69e505a4a4bd.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-b0f717fefe67.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-cd7b83362d9a.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-d697c41a7ff5.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-f1a62dce3cb6.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-00e5840d65ed.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-1a462be35874.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-215899702b9e.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-24e08664de50.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-3185572b967c.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-69e505a4a4bd.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-b0f717fefe67.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-cd7b83362d9a.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-d697c41a7ff5.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-f1a62dce3cb6.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-00e5840d65ed.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-1a462be35874.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-215899702b9e.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-24e08664de50.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-3185572b967c.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-69e505a4a4bd.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-b0f717fefe67.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-cd7b83362d9a.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-d697c41a7ff5.json",
+        "50_Instances/candidates/candidate-Project-state---If-the-user-s-prompt-f1a62dce3cb6.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-00e5840d65ed.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-1a462be35874.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-215899702b9e.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-24e08664de50.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-3185572b967c.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-69e505a4a4bd.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-b0f717fefe67.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-cd7b83362d9a.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-d697c41a7ff5.json",
+        "80_Review_Queue/promotion/candidate-Project-state---If-the-user-s-prompt-f1a62dce3cb6.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-9deec7e6f3a37567",
+      "cluster_id": "review-cluster-9deec7e6f3a37567",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare P0-01 Full-Memory Audit and P0-02 Status Freshness requirements against current DinoBrain implementation.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P0-01-Full-Mem-fd1be136bf5c.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P0-01-Full-Mem-fd1be136bf5c.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P0-01-Full-Mem-fd1be136bf5c.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P0-01-Full-Mem-fd1be136bf5c.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-ad3ef5d500a536fb",
+      "cluster_id": "review-cluster-ad3ef5d500a536fb",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare P0-03 Recovery-Key Contradiction, P0-05 Native Instruction Authority Gate, and P0-05C Runtime Instruction Authority Gate against current DinoBrain.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P0-03-Recovery-705b379a04c0.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P0-03-Recovery-705b379a04c0.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P0-03-Recovery-705b379a04c0.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P0-03-Recovery-705b379a04c0.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-282a183527f6bb43",
+      "cluster_id": "review-cluster-282a183527f6bb43",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare P0-05B Route/Evidence/Owner Mutation Gate and P0-06 Evidence Lineage Closure against current DinoBrain.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P0-05B-Route-E-e95f06a5c9f0.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P0-05B-Route-E-e95f06a5c9f0.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P0-05B-Route-E-e95f06a5c9f0.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P0-05B-Route-E-e95f06a5c9f0.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-ff56c3a334a0497c",
+      "cluster_id": "review-cluster-ff56c3a334a0497c",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare P1-07 Review Queue Burn-Down Automation and P1-08 Semantic Job Settlement Rail against current DinoBrain.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-07-Review-Q-51db85a57cec.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-07-Review-Q-51db85a57cec.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-07-Review-Q-51db85a57cec.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-07-Review-Q-51db85a57cec.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-7cdcdcc16f9f1b4d",
+      "cluster_id": "review-cluster-7cdcdcc16f9f1b4d",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare P1-09 Event-Triggered Behavior Recall and feedback/correction writeback expectations against current DinoBrain.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-09-Event-Tr-268fc22cc55a.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-09-Event-Tr-268fc22cc55a.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-09-Event-Tr-268fc22cc55a.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-09-Event-Tr-268fc22cc55a.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-435b5fc91b757c44",
+      "cluster_id": "review-cluster-435b5fc91b757c44",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare P1-10 Retrieval Quality and Context Budget plus RAG proof/eval requirements against current DinoBrain.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-10-Retrieva-92125bc4db35.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-10-Retrieva-92125bc4db35.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-10-Retrieva-92125bc4db35.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-10-Retrieva-92125bc4db35.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-547f3fdf9236a03c",
+      "cluster_id": "review-cluster-547f3fdf9236a03c",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare P1-11 Korean Graph-First Status UI and observability requirements against current DinoBrain observatory/app.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-11-Korean-G-63f9846ab9a1.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-11-Korean-G-63f9846ab9a1.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-11-Korean-G-63f9846ab9a1.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-11-Korean-G-63f9846ab9a1.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-4dadf5c47944cc10",
+      "cluster_id": "review-cluster-4dadf5c47944cc10",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare P1-12 Release Artifact/New-PC Recovery and P1-15 Multi-PC GitHub Sync/Conflict Safety against current DinoBrain installer/release/sync code.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-12-Release--f63d05b9be79.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-12-Release--f63d05b9be79.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-12-Release--f63d05b9be79.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-12-Release--f63d05b9be79.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-c81fe368c4bb931f",
+      "cluster_id": "review-cluster-c81fe368c4bb931f",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare P1-16 Task Session Lifecycle/Finish-Gate Integrity and P2-17 Outcome Metrics/Final Readiness Honesty against current DinoBrain.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-16-Task-Ses-0edd2f2850b4.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-16-Task-Ses-0edd2f2850b4.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-P1-16-Task-Ses-0edd2f2850b4.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-P1-16-Task-Ses-0edd2f2850b4.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-34cad20bf08f063f",
+      "cluster_id": "review-cluster-34cad20bf08f063f",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Compare pre-response fail-closed and P0-04 Agent Parity Direct MCP Canary requirements against current DinoBrain.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-pre-response-f-786fdbbfa7ad.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-pre-response-f-786fdbbfa7ad.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Compare-pre-response-f-786fdbbfa7ad.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Compare-pre-response-f-786fdbbfa7ad.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-145920699333a7a0",
+      "cluster_id": "review-cluster-145920699333a7a0",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Return concise findings: implemented, partial, missing, exact evidence files/scripts/status, and top gaps.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-concise-finding-7bc585d0665f.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Return-concise-finding-7bc585d0665f.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-concise-finding-7bc585d0665f.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Return-concise-finding-7bc585d0665f.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-0285efae8d22a4e2",
+      "cluster_id": "review-cluster-0285efae8d22a4e2",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Return implemented/partial/missing and blockers.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-implemented-par-616dfb23b39e.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Return-implemented-par-616dfb23b39e.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-implemented-par-616dfb23b39e.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Return-implemented-par-616dfb23b39e.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-9ab81978945b4c51",
+      "cluster_id": "review-cluster-9ab81978945b4c51",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Return implemented/partial/missing and exact missing artifacts/tests.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-implemented-par-660445cf6e9d.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Return-implemented-par-660445cf6e9d.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-implemented-par-660445cf6e9d.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Return-implemented-par-660445cf6e9d.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-c4f277b270e64c04",
+      "cluster_id": "review-cluster-c4f277b270e64c04",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Return implemented/partial/missing and top blockers.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-implemented-par-69cfb6d2bca4.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Return-implemented-par-69cfb6d2bca4.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-implemented-par-69cfb6d2bca4.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Return-implemented-par-69cfb6d2bca4.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-46e9039e7aeec6a8",
+      "cluster_id": "review-cluster-46e9039e7aeec6a8",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "project_state",
+      "item_count": 1,
+      "representative_claim": "Project state: Return implemented/partial/missing, especially event hooks and performed/skipped/not_applicable logging.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-implemented-par-ebf325a2a51d.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-state-Return-implemented-par-ebf325a2a51d.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Project-state-Return-implemented-par-ebf325a2a51d.json",
+        "80_Review_Queue/promotion/candidate-Project-state-Return-implemented-par-ebf325a2a51d.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-7373e70b1d979eaa",
+      "cluster_id": "review-cluster-7373e70b1d979eaa",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "how_to",
+      "item_count": 12,
+      "representative_claim": "How-to note: [truncated by DinoBrain hook]",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-0bc2992c6645.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-1b339fd1634c.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-1fcf9f23011c.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-234686e4e267.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-2a7ca005aa1a.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-4b3abb262487.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-68a1db6a894b.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-70ad8a311ce4.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-7129c437e2f2.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-7fb533cee7be.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-c418a11464d8.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-e33c0a7bd1f2.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-0bc2992c6645.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-1b339fd1634c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-1fcf9f23011c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-234686e4e267.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-2a7ca005aa1a.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-4b3abb262487.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-68a1db6a894b.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-70ad8a311ce4.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-7129c437e2f2.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-7fb533cee7be.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-c418a11464d8.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-e33c0a7bd1f2.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-440ccdde4d0d36b6",
+      "cluster_id": "review-cluster-440ccdde4d0d36b6",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "how_to",
+      "item_count": 10,
+      "representative_claim": "How-to note: How to write a good title:",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-02cbd95a1a95.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-1abdae31459c.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-2172def0a8a2.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-319e578e4a0c.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-588be31772fd.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-69554693905a.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-76f0548a3c4e.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-83e9e1f8209a.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-84629d38162c.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-97598a6409a5.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-02cbd95a1a95.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-1abdae31459c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-2172def0a8a2.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-319e578e4a0c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-588be31772fd.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-69554693905a.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-76f0548a3c4e.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-83e9e1f8209a.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-84629d38162c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-97598a6409a5.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-4270f0ad13dffee4",
+      "cluster_id": "review-cluster-4270f0ad13dffee4",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "error_fix",
+      "item_count": 1,
+      "representative_claim": "Error or fix note: - avoid known landmines and failure modes,",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Error-or-fix-note---avoid-known-land-b7005ef924f0.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---avoid-known-land-b7005ef924f0.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-08a9b0155dd4e534",
+      "cluster_id": "review-cluster-08a9b0155dd4e534",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "general",
+      "item_count": 1,
+      "representative_claim": "Task outcome for dinobrain: Closed the DinoBrain closed-loop verifier work. Verified the real managed Codex hook proof, made verify:goal use a durable live-proof window based on latest hook config/server build timestamps, made the MCP preflight proof advisory when live hook evidence exists, fixed the data Git hook verifier to honor Git safe.directory in sand",
+      "candidate_paths": [
+        "50_Instances/candidates/task-memory-task-20260707-073845-DinoBrain-closed-loop-verifi.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/task-memory-task-20260707-073845-DinoBrain-closed-loop-verifi.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/task-memory-task-20260707-073845-DinoBrain-closed-loop-verifi.json",
+        "80_Review_Queue/promotion/task-memory-task-20260707-073845-DinoBrain-closed-loop-verifi.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-4a0511a7d95c5105",
+      "cluster_id": "review-cluster-4a0511a7d95c5105",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "general",
+      "item_count": 1,
+      "representative_claim": "Task outcome for dinobrain: Handled the user's instruction to proceed without approval for non-critical work and completed the closed-loop proof. The real Codex Desktop pre-response hook ran through the managed ProgramData hook, injected DinoBrain context before this response, and verify-closed-loop-goal passed all requirements.",
+      "candidate_paths": [
+        "50_Instances/candidates/task-memory-task-20260707-071513-task.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/task-memory-task-20260707-071513-task.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/task-memory-task-20260707-071513-task.json",
+        "80_Review_Queue/promotion/task-memory-task-20260707-071513-task.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-877f7a68a263ced7",
+      "cluster_id": "review-cluster-877f7a68a263ced7",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "general",
+      "item_count": 1,
+      "representative_claim": "Task outcome for DinoBrain: Implemented and pushed the first P0 progress for DinoBrain OS readiness: reproducible full-memory audit and status freshness gates. Added full-memory manifest/status generation, current-vault freshness monitoring, regression verifiers, package scripts, verification docs, and wired the new gates into verify:goal so P0-01/P0-02 cann",
+      "candidate_paths": [
+        "50_Instances/candidates/task-memory-task-20260707-101432-Implement-first-progress-tow.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/task-memory-task-20260707-101432-Implement-first-progress-tow.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/task-memory-task-20260707-101432-Implement-first-progress-tow.json",
+        "80_Review_Queue/promotion/task-memory-task-20260707-101432-Implement-first-progress-tow.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-183ad61684bb8cdd",
+      "cluster_id": "review-cluster-183ad61684bb8cdd",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "general",
+      "item_count": 1,
+      "representative_claim": "Task outcome for dinobrain: Implemented the next DinoBrain OS goal step: task lifecycle reports now classify blockers into auto-close candidates versus manual repair classes, and a first-class deterministic RAG eval gate now records memory-on/off proxy lift, expected path recall, required context recall, provenance coverage, retrieval mode, hybrid ratio, and",
+      "candidate_paths": [
+        "50_Instances/candidates/task-memory-task-20260707-104459-Continue-active-DinoBrain-OS.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/task-memory-task-20260707-104459-Continue-active-DinoBrain-OS.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/task-memory-task-20260707-104459-Continue-active-DinoBrain-OS.json",
+        "80_Review_Queue/promotion/task-memory-task-20260707-104459-Continue-active-DinoBrain-OS.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-1cc8ba94eb88255b",
+      "cluster_id": "review-cluster-1cc8ba94eb88255b",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "how_to",
+      "item_count": 1,
+      "representative_claim": "How-to note: Focus: installer, new-PC recovery, GitHub login restore, release artifact, bundled runtime, and multi-PC sync/conflict safety.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-How-to-note-Focus-installer-new-PC-r-e30e83610fda.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-How-to-note-Focus-installer-new-PC-r-e30e83610fda.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-8c8a0988c1e21d3f",
+      "cluster_id": "review-cluster-8c8a0988c1e21d3f",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "how_to",
+      "item_count": 1,
+      "representative_claim": "How-to note: Include verify:goal/live hook evidence if visible.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-How-to-note-Include-verify-goal-live-43075ac06fe6.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-How-to-note-Include-verify-goal-live-43075ac06fe6.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-52bcb49492175dd9",
+      "cluster_id": "review-cluster-52bcb49492175dd9",
+      "kind": "hold_candidate_and_review",
+      "apply_status": "applied",
+      "reason_code": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+      "cluster_kind": "idea",
+      "item_count": 1,
+      "representative_claim": "Idea: Return in Korean: (1) hash/reading confirmation, (2) 5-10 durable knowledge points you learned and can use later, (3) P0/P1 risks or ambiguities, (4) one-line verdict.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Idea-Return-in-Korean-1-hash-reading-74b1cfde00b4.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Idea-Return-in-Korean-1-hash-reading-74b1cfde00b4.json"
+      ],
+      "applied_paths": [
+        "50_Instances/candidates/candidate-Idea-Return-in-Korean-1-hash-reading-74b1cfde00b4.json",
+        "80_Review_Queue/promotion/candidate-Idea-Return-in-Korean-1-hash-reading-74b1cfde00b4.json"
+      ],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-a629584f11500839",
+      "cluster_id": "review-cluster-a629584f11500839",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "user_preference",
+      "item_count": 1,
+      "representative_claim": "User preference: - Always loaded into the system prompt.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference---Always-loaded-into-e44a4a4e7f0a.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference---Always-loaded-into-e44a4a4e7f0a.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-620ae381e16348bf",
+      "cluster_id": "review-cluster-620ae381e16348bf",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "user_preference",
+      "item_count": 1,
+      "representative_claim": "User preference: Do not suggest generic project-quality, onboarding, exploration, cleanup, refactor, documentation, test-writing, or dependency-update tasks merely because they could be useful to someone who owns this project.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Do-not-suggest-gener-8ac777c1ae95.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-suggest-gener-8ac777c1ae95.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-2bf5d90b18c1c14f",
+      "cluster_id": "review-cluster-2bf5d90b18c1c14f",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "user_preference",
+      "item_count": 1,
+      "representative_claim": "User preference: Do not suggest tasks that merely sound productive or create more work for the user.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Do-not-suggest-tasks-337b8ce99e56.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-suggest-tasks-337b8ce99e56.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-cf9b7a1f40dc9143",
+      "cluster_id": "review-cluster-cf9b7a1f40dc9143",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "user_preference",
+      "item_count": 1,
+      "representative_claim": "User preference: I will present you with two categories of content: things to **ALWAYS** exclude, and things which you should exclude if they are about the user (**unless** the recent user context shows the user has specifically asked for it).",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-I-will-present-you-w-a79116c5e531.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-I-will-present-you-w-a79116c5e531.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    },
+    {
+      "action_id": "worklist-action-review-cluster-bf35f1507f732b1c",
+      "cluster_id": "review-cluster-bf35f1507f732b1c",
+      "kind": "manual_review_only",
+      "apply_status": "planned",
+      "reason_code": "manual_semantic_judgment_required",
+      "cluster_kind": "user_preference",
+      "item_count": 1,
+      "representative_claim": "User preference: Policies to always exclude",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Policies-to-always-e-68bc25886161.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Policies-to-always-e-68bc25886161.json"
+      ],
+      "applied_paths": [],
+      "skipped_reason": null
+    }
+  ],
+  "visible_status": "Review worklist actions ready"
+}

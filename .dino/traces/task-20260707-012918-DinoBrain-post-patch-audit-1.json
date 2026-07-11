@@ -1,0 +1,40 @@
+{
+  "task_id": "task-20260707-012918-DinoBrain-post-patch-audit-1",
+  "outcome": "completed",
+  "summary": "Read-only DB-01 post-patch audit of DinoBrain retrieval claims vs dense lexical fallback. Inspected hybrid retrieval implementation, vector index handling, docs, and verification. Found that fallback honesty improved, but hybrid-mode promotion, dense candidate bounding, reranker naming, and retrieval-quality evaluation gates remain too weak to prevent semantic/RAG overclaiming.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Do not claim lexical_fallback_v2 is semantic embedding retrieval.",
+    "Treat current hybrid_contextual_v2 promotion gate as insufficient until vector index provenance, coverage, top-K, and quality canaries are enforced.",
+    "Use trace_only because this was a read-only audit."
+  ],
+  "next_steps": [
+    "Add strict dense index readiness metadata and validation before reporting hybrid_contextual_v2.",
+    "Change dense candidate expansion to scored bounded top-K retrieval.",
+    "Expose reranker_mode and avoid calling heuristic boosts a production reranker.",
+    "Expand context golden/canary cases to semantic paraphrase, negative, provenance, and lexical-disjoint dense retrieval cases."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-9e67d419e2d7e876.json",
+    "50_Instances/accepted/behavior-rule-78751921656331b2.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/behavior-rule-fec6ea45ef8ad1ae.json",
+    "50_Instances/accepted/behavior-rule-506b0f9b53efe4e8.json",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-012921-DB-01-audit-hybrid-contextua.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 6,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T01:31:22.164Z"
+}

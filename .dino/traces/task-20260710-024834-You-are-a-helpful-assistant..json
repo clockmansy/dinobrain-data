@@ -1,0 +1,25 @@
+{
+  "task_id": "task-20260710-024834-You-are-a-helpful-assistant.",
+  "outcome": "blocked",
+  "summary": "Reconstructed blocked trace for a task that failed before finish_task could write terminal evidence.",
+  "changed_files": [],
+  "decisions": [
+    "The task record was already blocked before lifecycle repair.",
+    "Blocked reason: context_pack_failed"
+  ],
+  "next_steps": [
+    "Inspect the original task error before using this task as successful completion evidence."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [],
+  "search_queries": [],
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "reconstruction": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "blocked_task_missing_trace_reconstructed",
+    "previous_status": "blocked",
+    "previous_updated_at": "2026-07-10T02:48:35.134Z",
+    "error": "Unexpected non-whitespace character after JSON at position 2392724 (line 32468 column 1)"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-164628-Continue-active-DinoBrain-OS",
+  "status": "partial",
+  "request": "Continue active DinoBrain OS completion work. Inspect current state and make concrete progress toward P0/P1/P2 objective, starting with current verify:goal blockers and the unfinished review document: task lifecycle/finish gate cleanup, Observatory/health blocker parity, source-lineage false-green risk, real semantic RAG/answer-quality eval, install/release equivalence.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T16:46:28.209Z",
+  "updated_at": "2026-07-07T16:57:16.349Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T16:57:16.349Z",
+  "trace_path": ".dino/traces/task-20260707-164628-Continue-active-DinoBrain-OS.json"
+}

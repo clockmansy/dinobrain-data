@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Error-or-fix-note-P1-09-not_applicab-25c391b6673a",
+  "status": "pending_review",
+  "claim": "Error or fix note: • P1-09: 작업 완료/인계/오류/방향전환 때 학습된 행동을 자동으로 떠올리고, 수행/스킵/not_applicable을 근거와 함께 기록.",
+  "category": "error_fix",
+  "temperature": "warm",
+  "evidence": {
+    "snippet": "• P1-09: 작업 완료/인계/오류/방향전환 때 학습된 행동을 자동으로 떠올리고, 수행/스킵/not_applicable을 근거와 함께 기록.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-123940-a3a334ed9ce2.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-123940-a3a334ed9ce2",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "error_fix",
+    "temperature:warm",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-123940-a3a334ed9ce2",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T12:39:41.011Z",
+  "updated_at": "2026-07-07T12:39:41.011Z"
+}

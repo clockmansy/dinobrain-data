@@ -1,0 +1,266 @@
+{
+  "memory_id": "codex-session-knowledge-installer_new_pc_equivalence",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "project_decision",
+  "title": "Installer must restore equivalent DinoBrain behavior on a new PC",
+  "aliases": [
+    "새 PC DinoBrain 동등 복구",
+    "새 컴퓨터 설치 후 동일한 공룡두뇌 행동",
+    "코덱스 클로드 자동 연결 설치"
+  ],
+  "claim": "The user expects a new PC install to clone/update app and data repos, configure Codex and Claude hooks/MCP, build indexes, launch Observatory, and preserve version parity.",
+  "reusable_rule": "For installer work, verify app/data refs, portable Node, build/index, Codex and Claude registration, hook approval flow, launchers, release artifact alignment, and reinstall/idempotent behavior.",
+  "scope": "installer",
+  "confidence": "high",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "project-decision",
+    "installer",
+    "new-pc",
+    "codex",
+    "claude",
+    "version-parity"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 47,
+    "user_hit_count": 238,
+    "assistant_hit_count": 1173,
+    "weighted_score": 3298,
+    "session_refs": [
+      "sess-070a11e11c4994",
+      "sess-089835dc8fdc62",
+      "sess-0a41a5f21d5b58",
+      "sess-0ca153289a72b9",
+      "sess-11277020296a72",
+      "sess-1e95eea1be108d",
+      "sess-1f464b71ecea0d",
+      "sess-24a6ee3381ae00",
+      "sess-24d8b03c383495",
+      "sess-2d27e1d180db6c",
+      "sess-2fc834396900cc",
+      "sess-3d168ffb4f6ce0",
+      "sess-40cc080526149f",
+      "sess-458b19a1a1cdf1",
+      "sess-461b6e6d39a56f",
+      "sess-4e95f4fc22803b",
+      "sess-52c21a717f5a44",
+      "sess-5ea2d5d2562d29",
+      "sess-61a6570430d591",
+      "sess-62f7b9754a9734",
+      "sess-64b0ce067fa037",
+      "sess-6aa2423b061356",
+      "sess-6b55d87e30bb3e",
+      "sess-6f506c542b0e47"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "7aab1ac8e06560ff65b09ab5",
+        "char_count": 3187
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "51705959034c4a5a241f6149",
+        "char_count": 89
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "439abf2fcb4c2e160a41c193",
+        "char_count": 146
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "24347f03d8fc2909bcea2ca6",
+        "char_count": 890
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "user",
+        "message_hash": "9895c65355e4af9352ed6440",
+        "char_count": 211
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "85913c0731887c9eb586f592",
+        "char_count": 105
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "ef5098d147c063405fd4aa67",
+        "char_count": 118
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "b45d1f1c8bebd326456e9de7",
+        "char_count": 83
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "4375c2559d541d5c28623a69",
+        "char_count": 122
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "5d6d15cb8ba3277d1c893bd9",
+        "char_count": 743
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "08eb070d0f28a7466fdea3ab",
+        "char_count": 351
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "64aaa9d1643afcc94701300f",
+        "char_count": 147
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "6e178ad8c0b24e214d42cc8b",
+        "char_count": 104
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "d1314de302984f17291e9b69",
+        "char_count": 87
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "08ad2e5489d4d4b451684a47",
+        "char_count": 798
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "fc6bc1cb29e8feb063224219",
+        "char_count": 91
+      }
+    ],
+    "matched_terms": [
+      "설치|설치파일|설치기|installer|새로운\\s*컴퓨터|다른\\s*컴퓨터|codex|claude|자동\\s*연결|버전|version|release"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 1208
+      },
+      {
+        "project": "stripe engine",
+        "count": 88
+      },
+      {
+        "project": "new-chat",
+        "count": 52
+      },
+      {
+        "project": "z",
+        "count": 16
+      },
+      {
+        "project": "html",
+        "count": 13
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 12
+      },
+      {
+        "project": "build-a-local-tool-for-creating",
+        "count": 5
+      },
+      {
+        "project": "files-mentioned-by-the-user-html",
+        "count": 5
+      },
+      {
+        "project": "Project_J",
+        "count": 4
+      },
+      {
+        "project": "gykim80-perfectpixel-studio-https-github-com",
+        "count": 4
+      },
+      {
+        "project": "codex",
+        "count": 3
+      },
+      {
+        "project": "notion-plugin-notion-openai-curated-db",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-installer_new_pc_equivalence.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-installer_new_pc_equivalence",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425441-b2723436-192e-415f-ba9a-bb52a20eb83f",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425441-b2723436-192e-415f-ba9a-bb52a20eb83f",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-installer_new_pc_equivalence.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-installer_new_pc_equivalence.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-installer_new_pc_equivalence.json"
+  ],
+  "successor_paths": []
+}

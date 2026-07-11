@@ -1,0 +1,60 @@
+{
+  "task_id": "task-20260707-110007-Continue-active-DinoBrain-go",
+  "outcome": "completed",
+  "summary": "Implemented and verified review queue/semantic job settlement progress. The app now supports review:settle dry-run/apply semantics, writes review_queue_settlement_actions, auto-holds generated behavior/legacy generated-memory candidates without promoting them, excludes held records from default retrieval, and includes the action report in status freshness. Applied the safe auto-hold settlement to the current data vault: review queue open backlog dropped from 588 to 73, 515 items are closed/settled, semantic jobs now have 515 settled and 73 manual review holds, and monitoring freshness is healthy at 11/11. App commit 931f74c was pushed to origin/main. Data repo remains intentionally unsynced because existing dirty/untracked candidate/review/raw-adjacent state is broad and needs scoped sync policy.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "docs/VERIFICATION.md",
+    "scripts/verify-closed-loop-goal.mjs",
+    "scripts/verify-review-settlement.mjs",
+    "scripts/verify-status-freshness.mjs",
+    "src/build-review-settlement.ts",
+    "src/context.ts",
+    "src/review-settlement.ts",
+    "src/status-freshness.ts",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>"
+  ],
+  "decisions": [
+    "Treat review:settle as an actual settlement gate instead of only a classification report.",
+    "Do not auto-approve generated memories; only auto-hold deterministic generated behavior/legacy generated-memory backlog and keep manual semantic review visible.",
+    "Add review_queue_settlement_actions as a required status freshness artifact so applied settlement proof cannot go stale invisibly.",
+    "Keep data repo sync separate because the current data tree includes broad dirty/untracked candidate/review/session-derived artifacts outside a safe scoped push."
+  ],
+  "next_steps": [
+    "Resolve the remaining 73 manual semantic review candidates with a scoped reviewer workflow: approve, reject, merge, or hold with evidence.",
+    "Repair the remaining finish-gate lifecycle blockers: 5 manual stale reviews and 1 trace reconstruction.",
+    "Implement real dense vector retrieval and explicit rag-golden.json so RAG eval can move beyond lexical_fallback_v2.",
+    "Design a data sync policy for committing review settlement state without pushing raw/session-derived local-only records."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-110008-Continue-active-DinoBrain-go.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T11:06:57.743Z"
+}

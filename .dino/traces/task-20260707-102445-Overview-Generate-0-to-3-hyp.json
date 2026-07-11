@@ -1,0 +1,48 @@
+{
+  "task_id": "task-20260707-102445-Overview-Generate-0-to-3-hyp",
+  "outcome": "completed",
+  "summary": "Generated three repo-grounded Codex task suggestions for dinobrain using recent local traces/docs plus live GitHub repo state. Focused on the strongest unresolved next steps from today's completed P0 audit/freshness work and avoided already-active or review-blocked items.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Used the injected DinoBrain preflight context as the primary memory source and kept current user instructions above stored memory.",
+    "Grounded suggestions in recent repo evidence: today's completed task trace, the active OS completion docs, recent commits on 2026-07-07, and the only open GitHub PR.",
+    "Excluded Gmail and Notion as evidence sources because the current connectors require additional permissions/reauthentication for useful search, and Google Calendar had no relevant events in the near-term window."
+  ],
+  "next_steps": [
+    "Return the suggestions in the requested schema with GitHub as the primary app for each suggestion."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-102446-Overview-Generate-0-to-3-hyp.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-102445-b9ce226570ae.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-User-preference-Do-not-suggest-tasks-337b8ce99e56.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-suggest-gener-8ac777c1ae95.json",
+    "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-1fcf9f23011c.json"
+  ],
+  "search_queries": [
+    "recent dinobrain local traces and completion docs",
+    "clockmansy/dinobrain open pull requests",
+    "recent Gmail and Google Calendar signals for dinobrain relevance"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 3,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T10:28:35.517Z"
+}

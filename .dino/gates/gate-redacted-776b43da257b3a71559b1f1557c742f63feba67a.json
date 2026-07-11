@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-redacted-776b43da257b3a71559b1f1557c742f63feba67a",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-redacted-359d4e2caca96d9dc116b429a08391f3a8321cb6",
+  "request": "Repo: <machine-local-path> Plan doc: <machine-local-path> (1).md. Data root: <machine-local-path> Compare P1-07 Review Queue Burn-Down Automation and P1-08 Semantic Job Settlement Rail against current DinoBrain. Use state files. Return concise status/gaps. Do not edit files.",
+  "generated_at": "2026-07-07T11:34:52.650Z",
+  "context_pack_path": ".dino/context-packs/pack-redacted-57302136440707ce53cfea623e777d7af79a9d44.json",
+  "context_item_count": 6,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

@@ -1,0 +1,50 @@
+{
+  "memory_id": "task-memory-task-20260707-003551-Read-only-audit-focused-on-b",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Read-only audit focused on behavior evaluation, feedback writeback, corrections, memory-on/off p",
+  "summary": "Completed read-only audit of behavior evaluation, feedback writeback, memory audit, memory-on/off proof, and verify-v2 behavior proof surfaces. Found that current behavior evaluation is retrieval/term scoring rather than answer-quality or correction-behavior proof, verify-v2 uses only a temporary self-referential golden case, and memory-use audit returns ok even when trust evidence is degraded.",
+  "claim": "Task outcome for dinobrain: Completed read-only audit of behavior evaluation, feedback writeback, memory audit, memory-on/off proof, and verify-v2 behavior proof surfaces. Found that current behavior evaluation is retrieval/term scoring rather than answer-quality or correction-behavior proof, verify-v2 uses only a temporary self-referential golden case, and memory-use audit returns ok even when trust evidence is degraded.",
+  "request": "Read-only audit focused on behavior evaluation, feedback writeback, corrections, memory-on/off proof, Ragas/LangSmith-style evaluation. Inspect src/behavior-eval.ts, src/evaluate-behavior.ts, src/memory-audit.ts, record_feedback_correction wiring if present, scripts/verify-v2-os.mjs. Return P0/P1 findings with file/line evidence, fixes, and consensus candidate statements. Do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "Treat the current behavior-eval implementation as retrieval-path proof, not Ragas/LangSmith-style behavior proof.",
+    "Do not claim real-vault memory-on behavior improvement until representative behavior-golden cases and answer-quality scoring exist.",
+    "Memory-use audit needs hard pass/fail semantics for expected memory and observed evidence before it can serve as proof."
+  ],
+  "next_steps": [
+    "Replace request-term scoring with answer-quality scoring for memory-on versus memory-off runs.",
+    "Add real-vault behavior-golden cases and require them in verification.",
+    "Tighten audit_memory_use so missing expected memory, hallucinated references, and unverified artifacts can fail proof checks."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/ragas-evaluation.json",
+    "30_Sources/chunks/langsmith-evaluation-concepts.json",
+    "50_Instances/accepted/behavior-rule-dcdbecc38dc41999.json",
+    "50_Instances/accepted/behavior-rule-c93696a0718bd3b6.json",
+    "50_Instances/accepted/behavior-rule-49540fb326024225.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-003554-Behavior-evaluation-feedback.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-003551-Read-only-audit-focused-on-b.json",
+    "snippet": "Completed read-only audit of behavior evaluation, feedback writeback, memory audit, memory-on/off proof, and verify-v2 behavior proof surfaces. Found that current behavior evaluation is retrieval/term scoring rather than answer-quality or correction-behavior proof, verify-v2 uses only a temporary self-referential golden case, and memory-use audit returns ok even when trust evidence is degraded."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:37:53.806Z",
+  "updated_at": "2026-07-07T00:37:53.806Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-003551-Read-only-audit-focused-on-b.json",
+    "task_id": "task-20260707-003551-Read-only-audit-focused-on-b",
+    "task_path": ".dino/tasks/task-20260707-003551-Read-only-audit-focused-on-b.json"
+  }
+}

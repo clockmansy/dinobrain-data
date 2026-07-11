@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-4d5ddc6c99c2e287",
+  "behavior_rule_id": "behavior-rule-4d5ddc6c99c2e287",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Analyzed the local file os_implementable_improvement_plan_full_memory_v1 (1).md in detail with 12 subagents. Verified file SHA-256 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7, size 115,429 bytes, 1,285 lines. All agents treated the document as a strong final-readiness/specification plan rather than an already accepted/completed OS proof. Key retained knowledge: final OS must be local-first, GitHub-backed, Codex/Claude peer memory authority, graph-visible, evidence-regenerating, Korean user-visible, and must reduce repeated explanation through grounded memory use. Consensus risks: same document SHA is insufficient without a frozen memory snapshot/manifest SHA; P1-10 retrieval contract is too thin; P1-16 task lifecycle/finish grounding should move earlier; P2-17 outcome metrics should become a global readiness gate; P0-04 tool parity needs schema/config/data-root proof, not just tool names; P1-11 Korean DOM/screenshot proof is a global dependency; first implementation slice should be P0-02 status freshness only.",
+  "behavior_rule": "In similar future work, apply this decision: Analyzed the local file os_implementable_improvement_plan_full_memory_v1 (1).md in detail with 12 subagents. Verified file SHA-256 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7, size 115,429 bytes, 1,285 lines. All agents treated the document as a strong final-readiness/specification plan rather than an already accepted/completed OS proof. Key retained knowledge: final OS must be local-first, GitHub-backed, Codex/Claude peer memory authority, graph-visible, evidence-regenerating, Korean user-visible, and must reduce repeated explanation through grounded memory use. Consensus risks: same document SHA is insufficient without a frozen memory snapshot/manifest SHA; P1-10 retrieval contract is too thin; P1-16 task lifecycle/finish grounding should move earlier; P2-17 outcome metrics should become a global readiness gate; P0-04 tool parity needs schema/config/data-root proof, not just tool names; P1-11 Korean DOM/screenshot proof is a global dependency; first implementation slice should be P0-02 status freshness only.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-095348-Files-mentioned-by-the-user.json",
+    "snippet": "Analyzed the local file os_implementable_improvement_plan_full_memory_v1 (1).md in detail with 12 subagents. Verified file SHA-256 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7, size 115,429 bytes, 1,285 lines. All agents treated the document as a strong final-readiness/specification plan rather than an already accepted/completed OS proof. Key retained knowledge: final OS must be local-first, GitHub-backed, Codex/Claude peer memory authority, graph-visible, evidence-regenerating, Korean user-visible, and must reduce repeated explanation through grounded memory use. Consensus risks: same document SHA is insufficient without a frozen memory snapshot/manifest SHA; P1-10 retri"
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-095348-Files-mentioned-by-the-user.json",
+      "task_id": "task-20260707-095348-Files-mentioned-by-the-user-",
+      "signal_kind": "summary",
+      "snippet": "Analyzed the local file os_implementable_improvement_plan_full_memory_v1 (1).md in detail with 12 subagents. Verified file SHA-256 4B8C7447D4048781935EC7D8B8223112953941BEB4060AA0661AD6D298AE4DE7, size 115,429 bytes, 1,285 lines. All agents treated the document as a strong final-readiness/specification plan rather than an already accepted/completed OS proof. Key retained knowledge: final OS must be local-first, GitHub-backed, Codex/Claude peer memory authority, graph-visible, evidence-regenerating, Korean user-visible, and must reduce repeated explanation through grounded memory use. Consensus risks: same document SHA is insufficient without a frozen memory snapshot/manifest SHA; P1-10 retri"
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:medium"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:25:06.936Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:25:06.936Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

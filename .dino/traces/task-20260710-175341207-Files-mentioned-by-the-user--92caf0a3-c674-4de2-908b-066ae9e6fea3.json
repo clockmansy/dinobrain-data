@@ -1,0 +1,56 @@
+{
+  "task_id": "task-20260710-175341207-Files-mentioned-by-the-user--92caf0a3-c674-4de2-908b-066ae9e6fea3",
+  "outcome": "completed",
+  "summary": "Imported the supplied ChatGPT export into DinoBrain with complete message-hash coverage, 842 local-only searchable source cards, privacy-safe Wiki registry and reviewed knowledge profile, rebuilt indexes, verified retrieval, and pushed scoped app/data commits.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "package.json",
+    "docs/CHATGPT_EXPORT_IMPORT.md",
+    "scripts/import-chatgpt-export.mjs",
+    "scripts/read-chatgpt-export-entry.ps1",
+    "scripts/verify-chatgpt-export-import.mjs",
+    ".gitignore",
+    "20_Wiki/ChatGPT-Conversation-Registry.md",
+    "20_Wiki/ChatGPT-Session-Knowledge-Profile.md",
+    "60_Operations/session-imports/chatgpt-export-registry.json",
+    "60_Operations/session-promotions/chatgpt-session-knowledge-promotion.json"
+  ],
+  "decisions": [
+    "Keep raw transcripts, assistant content, account identifiers, and attachment binaries out of public Git.",
+    "Register every message with metadata and redacted-content SHA-256, while retaining bounded redacted user excerpts only in Git-ignored local source cards.",
+    "Use trace_only because knowledge growth was performed explicitly by the reviewed importer."
+  ],
+  "next_steps": [
+    "Optionally add encrypted private backup for local source cards.",
+    "Resume MEM-01 lifecycle state-machine implementation."
+  ],
+  "used_memory_paths": [
+    "20_Wiki/Codex-Session-Knowledge-Profile.md",
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "20_Wiki/README.md",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260710-175341730-Files-mentioned-by-the-user--7c31422c-eb35-42c3-9a03-184c2aebffd3.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260710-175340-2d669b108a55.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [
+    "ChatGPT session plan before execution direct evidence knowledge compounding",
+    "ChatGPT Session Knowledge Profile"
+  ],
+  "lease_id": "lease-20260710-175341208-hook-416d26ecf95f75f-b791b44c-ae6d-4772-bc83-45474ca1e7a4",
+  "terminal_owner_id": "hook:416d26ecf95f75f12880e04b7a4e3edd726bac3d47d524a11e64ad3e2f7a775f",
+  "memory_use": {
+    "used_memory_count": 6,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-10T18:13:23.948Z"
+}

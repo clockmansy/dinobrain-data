@@ -1,0 +1,47 @@
+{
+  "task_id": "task-20260708-010448-task",
+  "outcome": "completed",
+  "summary": "Verified GitHub CLI authentication after the user completed the safe auth flow, then used the gh keyring token only as an ephemeral process environment value to replace the v2.2.4 GitHub release assets. Confirmed the remote DinoBrainSetup.zip digest matches the local ZIP SHA256. Did not commit or push sensitive DinoBrain data traces from the token/auth discussion.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "artifacts/DinoBrainSetup.exe",
+    "artifacts/DinoBrainSetup.zip",
+    "artifacts/DinoBrainSetup.zip.sha256"
+  ],
+  "decisions": [
+    "Use the installed GitHub CLI at its full path because the current PowerShell PATH has not refreshed for gh.",
+    "Use gh keyring authentication instead of the exposed chat token.",
+    "Replace existing v2.2.4 release assets because the remote ZIP digest differed from the latest locally built package.",
+    "Keep token/auth-related DinoBrain trace artifacts unsynced because this prompt chain was sensitive."
+  ],
+  "next_steps": [
+    "Use the v2.2.4 release URL for installation downloads.",
+    "Open a fresh terminal later if the user wants plain gh on PATH without the full executable path.",
+    "If these sensitive DinoBrain trace records need to be committed, review/redact them first before any data repo sync."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/langsmith-evaluation-concepts.json",
+    "30_Sources/chunks/langchain-rag.json",
+    "30_Sources/chunks/rag-survey.json",
+    "30_Sources/chunks/google-rag-engine-overview.json",
+    "30_Sources/chunks/ragas-evaluation.json",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "30_Sources/chunks/rag-paper-2303-11366.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-010448-task.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260708-010447-11d56ecbed44.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T01:07:14.046Z"
+}

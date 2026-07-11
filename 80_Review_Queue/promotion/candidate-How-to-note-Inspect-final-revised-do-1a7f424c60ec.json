@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-How-to-note-Inspect-final-revised-do-1a7f424c60ec",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-How-to-note-Inspect-final-revised-do-1a7f424c60ec.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-155430-f020bb7c23d1.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T15:54:30.971Z",
+  "updated_at": "2026-07-07T15:54:30.971Z"
+}

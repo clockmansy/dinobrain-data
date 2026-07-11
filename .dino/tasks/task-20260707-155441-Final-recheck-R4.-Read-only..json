@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-155441-Final-recheck-R4.-Read-only.",
+  "status": "completed",
+  "request": "Final recheck R4. Read-only. Inspect final revised docs: <machine-local-path> docs\\OS_COMPLETION_CONDITIONS.md, docs\\VERIFICATION.md, plus src\\behavior-eval.ts and src\\compounding.ts if needed. Lens: behavior recall, feedback writeback, and task lifecycle. Question: after latest revisions, are the completion conditions still adequate and not weakened? Return: reviewer_id=R4; verdict=AGREE or REVISE_REQUIRED; blocking_objections=[...]; required_doc_changes=[...]; evidence_files=[...].",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:54:41.148Z",
+  "updated_at": "2026-07-07T15:55:19.328Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T15:55:19.328Z",
+  "trace_path": ".dino/traces/task-20260707-155441-Final-recheck-R4.-Read-only..json"
+}

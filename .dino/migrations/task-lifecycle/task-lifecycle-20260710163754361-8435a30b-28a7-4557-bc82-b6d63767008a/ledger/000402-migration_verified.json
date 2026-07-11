@@ -1,0 +1,29 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 402,
+  "event": "migration_verified",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "3d17c1e5a73017e421f889201e0521c395b532d21424650d1299fa58756197b3",
+  "payload": {
+    "lifecycle_counts": {
+      "tasks": 548,
+      "traces": 448,
+      "active": 70,
+      "stale_active": 0,
+      "expired_leases": 0,
+      "terminal": 478,
+      "terminal_missing_trace": 0,
+      "trace_binding_missing": 0,
+      "trace_without_task": 0,
+      "ungrounded_finish": 0,
+      "partial_grounded_finish": 0,
+      "wrong_task_mismatch": 0,
+      "blockers": 0,
+      "auto_close_candidates": 0,
+      "manual_repair_required": 0
+    },
+    "applied_action_count": 199
+  },
+  "entry_sha256": "b33381ffeff692e246c4a4db6492621ff1ccc853d946305988f267730f7a4bc7"
+}

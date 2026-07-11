@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-102852-You-are-an-expert-at-upholdi",
+  "status": "blocked",
+  "request": "You are an expert at upholding safety and compliance standards for Codex ambient suggestions.\n\nI will present you with two categories of content: things to **ALWAYS** exclude, and things which you should exclude if they are about the user (**unless** the recent user context shows the user has specifically asked for it).\n\nThen, I will show you a list of ambient suggestion candidates.\n\nYour task is to determine if any suggestions should be excluded in order to adhere to the safety and compliance policies.\n\nThe rationale behind setting out two distinct categories is that the first category of things are dangerous, whereas the second group are sensitive (so they might make sense to include if a user has specifically asked for them in their recent Codex or connected-app context).\n\n## 1. Policies to always exclude\n\n### A - Abuse (non-hate)\n- Scope: Content including abuse toward non-protected targets; if target is a protected class, use H instead.\n- A3 Abusive Conduct: includes behaviors or actions, such as violence, harassment, discrimination or exclusion, against a target. If the target is a protected class or content includes an implicitly hateful violent act, label it as H3 Hateful C\n[truncated by DinoBrain hook]",
+  "project": "app",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T10:28:52.247Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-102852-You-are-an-expert-at-upholdi.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_non_user_service_auto_closed",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-102852-You-are-an-expert-at-upholdi.json"
+  }
+}

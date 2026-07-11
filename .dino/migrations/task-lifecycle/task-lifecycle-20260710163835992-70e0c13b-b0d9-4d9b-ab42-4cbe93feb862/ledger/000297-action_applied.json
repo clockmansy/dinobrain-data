@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 297,
+  "event": "action_applied",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "407a2fce09239a6b094ca534d88b9ed9b9449fe3f4e285e21cced85d5954b8db",
+  "payload": {
+    "index": 146,
+    "task_id": "task-20260707-163828-R5.-Read-docs-OS_UNFINISHED_",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "d64da19de3dfca172ef3e2cb28187b2dcf473d2f1260c50fd22630d1a0571180",
+    "trace_sha256_after": "e35dd1b3d77e90cb20ce170cd4569b28c9402cb062aa9773ddc938351837ff06"
+  },
+  "entry_sha256": "4f439890bf25f18cafe76c5d99eb1f22e61f9014249725fb1668e8fbee733d7a"
+}

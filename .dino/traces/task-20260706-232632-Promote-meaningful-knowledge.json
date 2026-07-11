@@ -1,0 +1,59 @@
+{
+  "task_id": "task-20260706-232632-Promote-meaningful-knowledge",
+  "outcome": "completed",
+  "summary": "Implemented and ran the real Codex session knowledge promotion step. Added a reusable session:promote command that reads local Codex JSONL sessions, extracts repeated preferences/decisions/mistakes/rules via deterministic pattern aggregation, and writes public-safe paraphrased accepted memory plus review records without storing raw transcripts, message text, previews, or absolute local session paths. Ran it against 47 non-empty local Codex sessions / 4477 messages and promoted 15 accepted codex-session-knowledge memories plus a Codex Session Knowledge Profile and promotion reports. Rebuilt Wiki/SQLite indexes; wiki_search retrieves the promoted profile from sqlite_shards. Strengthened public-data safety to scan untracked sync candidates as well as tracked files; public-data safety reports degraded but blocker_count=0. App changes were committed and pushed as 5582bfe.",
+  "changed_files": [
+    "package.json",
+    "docs/SESSION_INGEST.md",
+    "docs/SYNC_POLICY.md",
+    "docs/VERIFICATION.md",
+    "scripts/promote-codex-session-knowledge.mjs",
+    "scripts/verify-public-data-safety.mjs",
+    "20_Wiki/Codex-Session-Knowledge-Profile.md",
+    "50_Instances/accepted/codex-session-knowledge-*.json",
+    "80_Review_Queue/session-knowledge/codex-session-knowledge-*.json",
+    "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "60_Operations/session-promotions/codex-session-knowledge-promotion.md",
+    "60_Operations/public-data-safety/public-data-safety-report.json",
+    "60_Operations/public-data-safety/public-data-safety-report.md",
+    ".dino/index/wiki-index.json",
+    ".dino/index/sqlite/wiki.sqlite",
+    ".dino/index/sqlite/manifest.json",
+    ".dino/index/graph-health.json"
+  ],
+  "decisions": [
+    "Promote only paraphrased aggregate knowledge, not raw Codex content.",
+    "Use session refs and redacted message hashes as evidence instead of raw text or local paths.",
+    "Treat promoted records as internal behavior/preference memory, not external factual source truth.",
+    "Keep current user instructions above promoted session memory.",
+    "Strengthen public-data safety by scanning untracked sync candidates before they are committed."
+  ],
+  "next_steps": [
+    "Tune retrieval budgets so newly promoted session memories help without swamping durable source/project records.",
+    "Add behavior golden cases proving the promoted preferences change future answers versus memory-off baseline.",
+    "Review and merge or demote any promoted aggregate memory that is too broad.",
+    "Resolve graph health accepted_instance_source_mapping_missing.",
+    "Collect fresh live Codex hook proof for full pre-response completion."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-2606a808b7ec6309.json",
+    "50_Instances/accepted/behavior-rule-298e24d77f91d054.json",
+    "50_Instances/accepted/behavior-rule-2a540fdcb4d5c0e0.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-232632-Promote-meaningful-knowledge.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "Codex session knowledge direct local verification evidence plan first pre-response fail closed raw transcripts"
+  ],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-06T23:31:59.054Z"
+}

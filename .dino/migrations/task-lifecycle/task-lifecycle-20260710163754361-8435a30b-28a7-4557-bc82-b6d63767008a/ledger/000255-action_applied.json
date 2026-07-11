@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 255,
+  "event": "action_applied",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "11f3bb2b2b1f4d5bac347a2551e25b4086af3be32a878d337be7a6565aa17c3f",
+  "payload": {
+    "index": 125,
+    "task_id": "task-20260708-072252-task",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "596f3622b068e7ad7ba26e6229b1ce107878d585c0b123b2226a81b742424423",
+    "trace_sha256_after": "9b53190f63435fbec9db27d447df9dbc6d1d6ef8a27d9ba6eb43e215703ee215"
+  },
+  "entry_sha256": "f3e554418d5bcb3b4222745a4b296cc64200c2d2c6eb06b6d6b854fd833c3c92"
+}

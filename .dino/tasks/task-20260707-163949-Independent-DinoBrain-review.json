@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-163949-Independent-DinoBrain-review",
+  "status": "blocked",
+  "request": "Independent DinoBrain reviewer L1. Read-only.\n\nInspect this file: <machine-local-path> inspect <machine-local-path> for DinoBrain intent.\n\nLens: memory lifecycle and compounding hygiene. Check whether the document covers corrections, behavior recall trigger coverage, stale/duplicate/noisy memory, review backlog, semantic job backlog, and preventing unreviewed memories from becoming accepted knowledge.\n\nReturn:\nverdict: AGREE or REVISE_REQUIRED\nreason: one paragraph\nevidence: files inspected\n\nDo not edit files. Do not return empty output.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T16:39:49.272Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-163949-Independent-DinoBrain-review.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-163949-Independent-DinoBrain-review.json"
+  }
+}

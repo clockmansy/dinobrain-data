@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf",
+  "status": "completed",
+  "request": "사용자가 제공한 공용 OS RAG 학습 자료(URL 앵커, 구성요소별 자료, 내부 근거자료)를 DinoBrain OS에 공개-safe한 durable knowledge/provenance anchor로 등록하고, 나중 검색/검증/구현 로드맵에서 활용 가능하게 분류한다.",
+  "project": "DinoBrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-06T23:34:06.819Z",
+  "updated_at": "2026-07-06T23:36:39.543Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-06T23:36:39.543Z",
+  "trace_path": ".dino/traces/task-20260706-233406-OS-RAG-URL-DinoBrain-OS--saf.json"
+}

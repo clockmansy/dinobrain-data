@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-073845-task-20260707-073845-DinoBrain-close",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-073845-DinoBrain-closed-loop-verifi",
+  "request": "마지막 DinoBrain closed-loop verifier patch를 확인하고, 검증 통과 시 app repo에 커밋 및 푸쉬한 뒤 작업을 완료한다. 승인 요청은 치명적 작업이나 샌드박스/네트워크 요구 시에만 사용한다.",
+  "generated_at": "2026-07-07T07:38:45.864Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-073845-DinoBrain-closed-loop-verifi.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

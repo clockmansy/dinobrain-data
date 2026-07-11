@@ -1,0 +1,35 @@
+{
+  "task_id": "task-20260703-071734-Fix-Codex-UserPromptSubmit-i",
+  "outcome": "completed",
+  "summary": "Fixed installer Codex UserPromptSubmit registration so DinoBrain is merged into the first existing prompt-hook group instead of being appended as a separate second group. Only install.ps1 and scripts/verify-installer-hooks.ps1 were changed. Added regression cases preserving why-was-fable-banned and verifying DinoBrain appears exactly once in the first UserPromptSubmit group. Created branch fix/codex-userprompt-hook-merge, committed, pushed, and opened PR #1.",
+  "changed_files": [
+    "install.ps1",
+    "scripts/verify-installer-hooks.ps1"
+  ],
+  "decisions": [
+    "Do not edit trusted_hash or local Codex hooks.json; fix the upstream installer behavior instead.",
+    "Preserve existing UserPromptSubmit groups and remove only DinoBrain hook entries before re-adding DinoBrain to the first existing group.",
+    "Keep PR scope to install.ps1 and scripts/verify-installer-hooks.ps1 only."
+  ],
+  "next_steps": [
+    "Review and merge https://github.com/clockmansy/dinobrain/pull/1, then rebuild/release installer if needed so fresh installs get the fixed merge behavior."
+  ],
+  "used_memory_paths": [
+    ".dino/tasks/task-20260703-041151-Explain-whether-Codex-hook-t.json",
+    ".dino/tasks/task-20260703-041852-Add-installer-flow-that-dete.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-071742-DinoBrain-installer-Codex-Us.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 2,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-03T07:21:04.988Z"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260705-015049-Redesign-DinoBrain-Observato",
+  "status": "completed",
+  "request": "Redesign DinoBrain Observatory graph v14 so information readability takes priority over forced dinosaur silhouette. Keep dinosaur/fossil character as subtle background scaffold, reduce visual clutter, restore meaningful hub clusters, and verify rendered screenshots.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-05T01:50:49.750Z",
+  "updated_at": "2026-07-05T02:00:41.320Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-05T02:00:41.320Z",
+  "trace_path": ".dino/traces/task-20260705-015049-Redesign-DinoBrain-Observato.json"
+}

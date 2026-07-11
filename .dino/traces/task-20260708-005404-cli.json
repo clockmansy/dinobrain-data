@@ -1,0 +1,41 @@
+{
+  "task_id": "task-20260708-005404-cli",
+  "outcome": "completed",
+  "summary": "Checked whether GitHub CLI or token setup is required before continuing the DinoBrain goal. Found gh CLI is not installed and GITHUB_TOKEN, GH_TOKEN, and DINOBRAIN_GITHUB_TOKEN are not set. Existing HTTPS git remotes remain configured and prior push path works, so normal git commits/pushes can continue; GitHub Release asset upload or gh/API automation requires GitHub CLI login or a scoped token.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Do not inspect or store token values; only check token environment variable presence.",
+    "Normal git push does not require gh because existing HTTPS remotes and credential manager already worked.",
+    "GitHub Release upload, release asset management, repo visibility/API automation, and private no-Git installer downloads require gh auth or a scoped GitHub token."
+  ],
+  "next_steps": [
+    "Install GitHub CLI and run gh auth login when release automation or GitHub API operations are needed.",
+    "Use a fine-grained token with contents read/write for clockmansy/dinobrain and clockmansy/dinobrain-data if browser login is not available; do not paste the token into chat."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+    "30_Sources/chunks/google-rag-engine-overview.json",
+    "30_Sources/chunks/rag-survey.json",
+    "30_Sources/chunks/langsmith-evaluation-concepts.json",
+    "30_Sources/chunks/ragas-evaluation.json",
+    "30_Sources/chunks/rag-paper-2303-11366.json",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-005404-cli.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260708-005404-3f400f9e7b4c.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T00:54:35.105Z"
+}

@@ -1,0 +1,37 @@
+{
+  "pack_id": "pack-20260707-100541-dinobrain",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "내가 보내준 문서랑 dinobrain을 비교해서 우리가 부족한점이 뭔지 파악해",
+  "created_at": "2026-07-07T10:05:41.971Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 10,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 66,
+  "index_candidate_count": 10,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 0,
+  "excluded_record_count": 76,
+  "items": []
+}

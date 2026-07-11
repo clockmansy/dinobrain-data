@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-122952-task-20260707-122952-app-repo-.codex",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-122952-app-repo-.codex-remote-attac",
+  "request": "이거 해결\napp repo는 기존 .codex-remote-attachments/만 untracked입니다.\ndata repo에는 기존 backlog dirty가 아직 1550개 남아 있습니다. 이번 작업 범위 밖의 오래된 후보/리뷰 큐입니다.\nfinish_task는 현재 MCP transport가 닫혀 있어서 fresh stdio MCP 서버로 우회 실행했고 trace_only로 정상 완료됐습니다.",
+  "generated_at": "2026-07-07T12:29:52.585Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-122952-app-repo-.codex-remote-attac.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

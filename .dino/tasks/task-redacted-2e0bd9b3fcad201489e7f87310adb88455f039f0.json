@@ -1,0 +1,23 @@
+{
+  "task_id": "task-redacted-2e0bd9b3fcad201489e7f87310adb88455f039f0",
+  "status": "completed",
+  "request": "Repo: <machine-local-path> Plan doc: <machine-local-path> (1).md. Data root: <machine-local-path> Compare P1-12 Release Artifact/New-PC Recovery and P1-15 Multi-PC GitHub Sync/Conflict Safety against current DinoBrain installer/release/sync code. Return exact missing gates/tests/artifacts. Do not edit files.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T11:37:57.322Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T11:42:03.613Z",
+  "trace_path": ".dino/traces/task-redacted-0e6b8dd6d5f893928f878003cbd262aa3599f6c6.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "started_task_repaired_from_grounded_trace",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-redacted-0e6b8dd6d5f893928f878003cbd262aa3599f6c6.json"
+  }
+}

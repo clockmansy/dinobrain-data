@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-184643-DinoBrain-live-hook-proof-MC",
+  "status": "completed",
+  "request": "DinoBrain live hook proof MCP fallback: completed proof that this stale Codex app turn ran os_begin_task and received a Context Pack before continuing substantive work.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T18:46:43.072Z",
+  "updated_at": "2026-07-07T18:46:43.579Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T18:46:43.579Z",
+  "trace_path": ".dino/traces/task-20260707-184643-DinoBrain-live-hook-proof-MC.json"
+}

@@ -1,0 +1,55 @@
+{
+  "task_id": "task-20260703-082135-Deploy-the-completed-DinoBra",
+  "outcome": "completed",
+  "summary": "Deployed the completed DinoBrain Observatory dinosaur graph design. Committed the design change and version bump as 4eabc7f, fast-forwarded main, pushed origin/main, built a clean v0.1.6 Windows setup ZIP, created GitHub Release v0.1.6, uploaded DinoBrainSetup.zip and DinoBrainSetup.zip.sha256, and verified the remote ZIP download SHA matches the local SHA. Local untracked screenshot attachments were intentionally excluded.",
+  "changed_files": [
+    "scripts/dinobrain-observatory.mjs",
+    "design-qa.md",
+    "package.json",
+    "package-lock.json",
+    "README.md",
+    "docs/INSTALL.md",
+    "docs/VERIFICATION.md",
+    "src/index.ts",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/audit-user-flow.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/verify-session-ingest.mjs",
+    "installer/DinoBrainSetup/Program.cs",
+    "installer/DinoBrainSetup/DinoBrainSetup.csproj",
+    "installer/DinoBrainSetup/app.manifest"
+  ],
+  "decisions": [
+    "Released as v0.1.6 so the install ZIP and visible version are not confused with v0.1.5.",
+    "Kept .codex-remote-attachments untracked and excluded from deployment.",
+    "Used Windows Credential Manager only in-process for GitHub Release API upload and did not print the credential.",
+    "Verified remote release ZIP by downloading the uploaded asset through GitHub API and comparing SHA256."
+  ],
+  "next_steps": [
+    "Use https://github.com/clockmansy/dinobrain/releases/download/v0.1.6/DinoBrainSetup.zip on another PC to install/update the deployed design.",
+    "If a more literal full-viewport dinosaur graph is desired, add a dedicated graph-only presentation mode in a follow-up release."
+  ],
+  "used_memory_paths": [
+    ".dino/tasks/task-20260703-075850-Implement-a-design-only-Dino.json",
+    ".dino/tasks/task-20260703-054107-Implement-v0.1.5-Observatory.json",
+    ".dino/tasks/task-20260703-041404-Re-check-why-GitHub-Release.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-082140-Deploy-DinoBrain-Observatory.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [
+    "artifacts/DinoBrainSetup.zip",
+    "artifacts/DinoBrainSetup.zip.sha256"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 2,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-03T08:35:33.286Z"
+}

@@ -1,0 +1,25 @@
+{
+  "task_id": "task-20260710-022158-Stop-opening-new-files-now.-",
+  "status": "blocked",
+  "request": "Stop opening new files now. Preserve the evidence already gathered from the full-manifest pass and immediately synthesize the requested final sections and strict verdict. Do not edit anything. Explicitly state whether you completed enumeration/parsing of all manifest entries; if not, say the exact limitation rather than claiming completion.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-10T02:21:58.420Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "block_reason": "context_pack_failed",
+  "error": "Unexpected non-whitespace character after JSON at position 2355105 (line 32236 column 1)",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260710-022158-Stop-opening-new-files-now.-.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "blocked_task_missing_trace_reconstructed",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260710-022158-Stop-opening-new-files-now.-.json"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260708-004647-Overview-Generate-0-to-3-hyp",
+  "status": "completed",
+  "request": "# Overview\n\nGenerate 0 to 3 hyperpersonalized suggestions for what this user can do with Codex in this local project: <machine-local-path> an understanding of the user's intent and goals by deeply viewing their connected apps. Suggest actionable tasks that they would actually act on/click.\nInfer what the user works on and their style from their connected apps.\nOptimize for relief: choose suggestions that make the user's life easier, reduce an open loop, unblock work, or prepare them for something that is about to matter. Do not suggest tasks that merely sound productive or create more work for the user.\nThe best suggestions feel like Codex read the user's mind: by synthesizing signals across apps, it discovers something the user did not yet know and proposes the concrete next action they would want to take.\n\nServe this specific user. Do not suggest generic project-quality, onboarding, exploration, cleanup, refactor, documentation, test-writing, or dependency-update tasks merely because they could be useful to someone who owns this project.\nYour job is to predict what this user specifically needs to get done.\n\n\n\n# Rules\n\nUse relevant connected apps or MCP sources a\n[truncated by DinoBrain hook]",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-08T00:46:47.776Z",
+  "updated_at": "2026-07-08T00:49:26.228Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-08T00:49:26.228Z",
+  "trace_path": ".dino/traces/task-20260708-004647-Overview-Generate-0-to-3-hyp.json"
+}

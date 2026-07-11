@@ -1,0 +1,36 @@
+{
+  "gate_id": "gate-redacted-5cbaef82df9a5ef8808312a77003511dedd01dbb",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-redacted-2e0bd9b3fcad201489e7f87310adb88455f039f0",
+  "request": "Repo: <machine-local-path> Plan doc: <machine-local-path> (1).md. Data root: <machine-local-path> Compare P1-12 Release Artifact/New-PC Recovery and P1-15 Multi-PC GitHub Sync/Conflict Safety against current DinoBrain installer/release/sync code. Return exact missing gates/tests/artifacts. Do not edit files.",
+  "generated_at": "2026-07-07T11:37:57.637Z",
+  "context_pack_path": ".dino/context-packs/pack-redacted-a806a18a3946d5b68dca6bfd5b16ec833455360b.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

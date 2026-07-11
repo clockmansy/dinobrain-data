@@ -1,0 +1,46 @@
+{
+  "version": "source_lineage_generation_v1",
+  "type": "lineage_generation",
+  "generation_id": "lineage-rag-survey-76de80317b02a706e331",
+  "generation_status": "published",
+  "transaction_id": "source-lineage-1783735483524-62102969-ef98-419b-acb7-4ab8fd084dfa",
+  "source_snapshot_path": "30_Sources/fetched/rag-survey.json",
+  "source_chunk_path": "30_Sources/chunks/rag-survey.json",
+  "provenance_path": ".dino/provenance/rag-survey.json",
+  "source_content_sha256": "ae5e94441b3d5ac904a52c9750d695cd181127dc7590b69271dbe26c661db561",
+  "chunk_sha256": "ae5e94441b3d5ac904a52c9750d695cd181127dc7590b69271dbe26c661db561",
+  "verification_status": "verified_summary",
+  "verified_at": "2026-07-07",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": "30_Sources/fetched/rag-survey.json",
+      "after_sha256": "72dccafa1734fb29409dfbbe27611088a33112a4c34455ea360e6d269272a1c0"
+    },
+    {
+      "path": "30_Sources/chunks/rag-survey.json",
+      "after_sha256": "2025506c3c4ecb081e71c2b7b56e839b1a977de27c5daf426c1dbe6dcb1dbfa5"
+    },
+    {
+      "path": ".dino/provenance/rag-survey.json",
+      "after_sha256": "bbc3ca429db800b5f122bf711d8c3a4c6ff6fd11501059f056c325362c87d16a"
+    }
+  ],
+  "created_at": "2026-07-11T02:04:43.524Z",
+  "updated_at": "2026-07-11T02:04:43.524Z"
+}

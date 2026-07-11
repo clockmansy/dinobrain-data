@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260701-005837-hookEventName-UserPromptSubm",
+  "status": "completed",
+  "request": "{\"hookEventName\":\"UserPromptSubmit\",\"prompt\":\"? ?? ??? ?? ??\",\"cwd\":\"<machine-local-path>\"}",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "created_at": "2026-07-01T00:58:37.101Z",
+  "updated_at": "2026-07-01T01:02:30.270Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-01T01:02:30.270Z",
+  "trace_path": ".dino/traces/task-20260701-005837-hookEventName-UserPromptSubm.json"
+}

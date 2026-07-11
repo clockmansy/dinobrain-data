@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-User-preference-Do-not-suggest-tasks-337b8ce99e56",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-User-preference-Do-not-suggest-tasks-337b8ce99e56.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-102445-b9ce226570ae.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T10:24:46.307Z",
+  "updated_at": "2026-07-07T10:24:46.307Z"
+}

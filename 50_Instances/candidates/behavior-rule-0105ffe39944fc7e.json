@@ -1,0 +1,47 @@
+{
+  "behavior_rule_id": "behavior-rule-0105ffe39944fc7e",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Classify current DinoBrain as a compounding-capable foundation, not a fully autonomous compounding OS yet.",
+  "behavior_rule": "In similar future work, apply this decision: Classify current DinoBrain as a compounding-capable foundation, not a fully autonomous compounding OS yet.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260705-075637-Assess-whether-DinoBrain-s-c.json",
+    "snippet": "Classify current DinoBrain as a compounding-capable foundation, not a fully autonomous compounding OS yet."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260705-075637-Assess-whether-DinoBrain-s-c.json",
+      "task_id": "task-20260705-075637-Assess-whether-DinoBrain-s-c",
+      "signal_kind": "decision",
+      "snippet": "Classify current DinoBrain as a compounding-capable foundation, not a fully autonomous compounding OS yet."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T02:02:58.247Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T02:02:58.247Z",
+  "candidate_id": "behavior-rule-0105ffe39944fc7e",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/behavior-rule-0105ffe39944fc7e.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

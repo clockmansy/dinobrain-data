@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 233,
+  "event": "action_applied",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "f0567a271b43700e51d932a8886f60ee02a7f87ecd213cab7a3b9200f4127e03",
+  "payload": {
+    "index": 114,
+    "task_id": "task-20260707-061955-DinoBrain-live-Codex-hook-di",
+    "action": "auto_close_stale_non_user_service",
+    "applied": true,
+    "reason_code": "stale_non_user_service_auto_closed",
+    "task_sha256_after": "3a912ab4a7dc212483593b7191d35757c7c289c90a0d6900fe73a7b06e8e3463",
+    "trace_sha256_after": "5e0144511a575b9b9e8807caca76b3fd406f2fe0867c7dee48f34daea34121bc"
+  },
+  "entry_sha256": "24d6e8e7938f8e9cac8212bf29a900f6bd8b9c967dcdbb4cb49428b78f4259d9"
+}

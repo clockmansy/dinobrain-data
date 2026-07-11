@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-172934-task-20260707-172934-READ-ONLY-CONSE",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-172934-READ-ONLY-CONSENSUS-RECHECK-",
+  "request": "READ-ONLY CONSENSUS RECHECK R2. RAG/retrieval lens. Inspect the revised document <machine-local-path> plus relevant RAG code/status if needed. Decide whether this exact revised document integrates the dynamic live semantic query concern. Output short rationale plus AGREE or REVISE_REQUIRED. Do not modify files.",
+  "generated_at": "2026-07-07T17:29:34.812Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-172934-READ-ONLY-CONSENSUS-RECHECK-.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

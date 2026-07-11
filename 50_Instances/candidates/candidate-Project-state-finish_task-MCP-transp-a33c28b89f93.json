@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Project-state-finish_task-MCP-transp-a33c28b89f93",
+  "status": "pending_review",
+  "claim": "Project state: finish_task는 현재 MCP transport가 닫혀 있어서 fresh stdio MCP 서버로 우회 실행했고 trace_only로 정상 완료됐습니다.",
+  "category": "project_state",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "finish_task는 현재 MCP transport가 닫혀 있어서 fresh stdio MCP 서버로 우회 실행했고 trace_only로 정상 완료됐습니다.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-122951-2017e9a6f2eb.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-122951-2017e9a6f2eb",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_state",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-122951-2017e9a6f2eb",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T12:29:52.628Z",
+  "updated_at": "2026-07-07T12:29:52.628Z"
+}

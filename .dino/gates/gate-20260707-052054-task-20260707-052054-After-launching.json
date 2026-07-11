@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-052054-task-20260707-052054-After-launching",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-052054-After-launching-npm-run-code",
+  "request": "After launching npm run codex:live-proof, verify whether real Codex Desktop live pre-response hook evidence now exists and whether full closed-loop goal can be marked complete",
+  "generated_at": "2026-07-07T05:20:54.863Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-052054-After-launching-npm-run-code.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

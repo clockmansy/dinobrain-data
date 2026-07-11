@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-115931-Memory-Writing-Agent-Phase-2",
+  "status": "blocked",
+  "request": "## Memory Writing Agent: Phase 2 (Consolidation)\n\nYou are a Memory Writing Agent.\n\nYour job: consolidate raw memories and rollout summaries into a local, file-based \"agent memory\" folder\nthat supports **progressive disclosure**.\n\nThe goal is to help future agents:\n\n- deeply understand the user without requiring repetitive instructions from the user,\n- solve similar tasks with fewer tool calls and fewer reasoning tokens,\n- reuse proven workflows and verification checklists,\n- avoid known landmines and failure modes,\n- improve future agents' ability to solve similar tasks.\n\n============================================================\nCONTEXT: MEMORY FOLDER STRUCTURE\n============================================================\n\nFolder structure (under <machine-local-path> memory_summary.md\n  - Always loaded into the system prompt. First line must be exactly `v1`.\n    Must stay dense, highly navigational, and discriminative enough to guide retrieval.\n- MEMORY.md\n  - Handbook entries. Used to grep for keywords; aggregated insights from rollouts;\n    pointers to rollout summaries if certain past rollouts are very relevant.\n- raw_memories.md\n  - Temporary file: merged raw m\n[truncated by DinoBrain hook]",
+  "project": "memories",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T11:59:31.506Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-115931-Memory-Writing-Agent-Phase-2.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_non_user_service_auto_closed",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-115931-Memory-Writing-Agent-Phase-2.json"
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "memory_id": "codex-session-knowledge-observability_required",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "project_decision",
+  "title": "Observability must show real OS state",
+  "claim": "The user wants Observatory and logs to show real hook/preflight/task/context/audit/trust/graph/sync states, including blocked, pending, degraded, verifier, and active work.",
+  "reusable_rule": "Do not treat a decorative graph as sufficient; expose live OS traces, graph health, gate status, audit trust, memory use, sync risk, and stale task state.",
+  "scope": "observability",
+  "confidence": "high",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "project-decision",
+    "observability",
+    "audit",
+    "graph-health"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 42,
+    "user_hit_count": 150,
+    "assistant_hit_count": 722,
+    "weighted_score": 2044,
+    "session_refs": [
+      "sess-070a11e11c4994",
+      "sess-089835dc8fdc62",
+      "sess-0a41a5f21d5b58",
+      "sess-0ca153289a72b9",
+      "sess-11277020296a72",
+      "sess-1e95eea1be108d",
+      "sess-1f464b71ecea0d",
+      "sess-24a6ee3381ae00",
+      "sess-24d8b03c383495",
+      "sess-2d27e1d180db6c",
+      "sess-2fc834396900cc",
+      "sess-3d168ffb4f6ce0",
+      "sess-40cc080526149f",
+      "sess-458b19a1a1cdf1",
+      "sess-461b6e6d39a56f",
+      "sess-4e95f4fc22803b",
+      "sess-52c21a717f5a44",
+      "sess-5ea2d5d2562d29",
+      "sess-61a6570430d591",
+      "sess-6aa2423b061356",
+      "sess-6b55d87e30bb3e",
+      "sess-6f506c542b0e47",
+      "sess-72cf004ec045b8",
+      "sess-7ad76bf1417852"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "7aab1ac8e06560ff65b09ab5",
+        "char_count": 3187
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "c2cd66bf55d162818dd0d00b",
+        "char_count": 75
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "b3baf6402d2248740f5ce3c8",
+        "char_count": 153
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "de502b804b04c43ebb970e77",
+        "char_count": 1849
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "08324f085d54d7105ceba154",
+        "char_count": 1807
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "183329c7dd39cb3bc6bd9484",
+        "char_count": 950
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "5ced3f81263f1c48b42c232e",
+        "char_count": 142
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "a603e7c1795e1fe31940a01b",
+        "char_count": 119
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "ad095910bbcb7fc147f7dd33",
+        "char_count": 1030
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "6b200376f8e244c713523e73",
+        "char_count": 965
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "65b50a70946557b26f2edd5e",
+        "char_count": 159
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "f13de9ee810a7ecf7a4d843b",
+        "char_count": 90
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "4d2ed65f67a7e63cd520b737",
+        "char_count": 77
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "8837aeeb6319e1a0ba108eed",
+        "char_count": 1005
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "bb8657b1023a96f35e3ac2c1",
+        "char_count": 662
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "eac7d2cb0a466815332ddcd7",
+        "char_count": 130
+      }
+    ],
+    "matched_terms": [
+      "Observatory|관측|로그|audit|trust\\s*score|graph\\s*health|그래프|active\\s*task|액트브|block"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 728
+      },
+      {
+        "project": "stripe engine",
+        "count": 88
+      },
+      {
+        "project": "Project_J",
+        "count": 27
+      },
+      {
+        "project": "new-chat",
+        "count": 13
+      },
+      {
+        "project": "z",
+        "count": 9
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 5
+      },
+      {
+        "project": "html",
+        "count": 1
+      },
+      {
+        "project": "codex",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-observability_required.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-observability_required",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425444-d1e2e424-1857-416c-a571-4b6d2df09c03",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425444-d1e2e424-1857-416c-a571-4b6d2df09c03",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-observability_required.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-observability_required.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-observability_required.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-observability_required.json"
+  ],
+  "successor_paths": []
+}

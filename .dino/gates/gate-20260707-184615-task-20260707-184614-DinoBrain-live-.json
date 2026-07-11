@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-184615-task-20260707-184614-DinoBrain-live-",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-184614-DinoBrain-live-hook-proof-fa",
+  "request": "DinoBrain live hook proof fallback for current stale Codex thread: prove this Codex app turn ran os_begin_task and received a Context Pack before continuing substantive work.",
+  "generated_at": "2026-07-07T18:46:15.429Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-184615-DinoBrain-live-hook-proof-fa.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

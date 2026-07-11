@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-How-to-note-evidence_files-docs-OS_R-fd10ea5aca50",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-How-to-note-evidence_files-docs-OS_R-fd10ea5aca50.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-155009-1a7b22d580f1.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T15:50:09.660Z",
+  "updated_at": "2026-07-07T15:50:09.660Z"
+}

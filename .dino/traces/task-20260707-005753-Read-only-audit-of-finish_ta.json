@@ -1,0 +1,34 @@
+{
+  "task_id": "task-20260707-005753-Read-only-audit-of-finish_ta",
+  "outcome": "completed",
+  "summary": "Read-only audit found that finish_task auto-growth and auto-compound currently route completed task traces into accepted memory; review-first queues and read-only completion gating are the needed corrections.",
+  "changed_files": [],
+  "decisions": [],
+  "next_steps": [
+    "Add a completion mode that records traces without memory growth for read-only and review work.",
+    "Route task memories and behavior rules into candidates plus promotion review records before accepted retrieval.",
+    "Add lifecycle holds for auto-generated accepted records lacking explicit review evidence.",
+    "Filter retrieval so unreviewed auto-generated accepted records cannot dominate Context Packs."
+  ],
+  "used_memory_paths": [
+    "20_Wiki/Codex-Session-Knowledge-Profile.md",
+    "50_Instances/accepted/behavior-rule-295abf1038bd399d.json",
+    "50_Instances/accepted/behavior-rule-79abd5c0894d16a9.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-005757-Audit-finish_task-knowledge-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "finish_task knowledge growth behavior rules lifecycle review queue auto-promotion guardrails"
+  ],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T01:01:36.745Z"
+}

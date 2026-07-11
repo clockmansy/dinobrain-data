@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 314,
+  "event": "action_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "d144bdc5f138f1a7820562835d807f24073b53f09853c8bdc920bcd9484fffad",
+  "payload": {
+    "index": 155,
+    "task_id": "task-20260707-154940-Return-exactly-one-line-and-",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "6758b5e1e84bb38904d028b108baaf72110892d0d4a3b5c5ce362357a6f1d77f",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "5aa36a4a3fb96c368f15deaa64772c028d541f8d40e2ae92f7c80a49fcb4433e"
+}

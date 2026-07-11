@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-124348-task-20260707-124348-10-.-1-.",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-124348-10-.-1-.",
+  "request": "미완인부분들 개선 계획을 검토해줘 \n\n단독판단 없이 하위에이전트 10명의 동의를 모두 받아야하고,\n 하위에이전트도 별개로 사용자가원하는 방향이 뭔지 기억을 전부 검토하고 내용을 검토해야해.\n\n완성조건은 문서로 작성하고,\n\n하위에이전트중 1명이라도 동의를 안하면 동의할때까지 반복해야해.",
+  "generated_at": "2026-07-07T12:43:48.673Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-124348-10-.-1-..json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

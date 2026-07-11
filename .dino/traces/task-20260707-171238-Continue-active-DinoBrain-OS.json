@@ -1,0 +1,45 @@
+{
+  "task_id": "task-20260707-171238-Continue-active-DinoBrain-OS",
+  "outcome": "partial",
+  "summary": "Improved P2-12 install/new-PC/release equivalence after adding semantic RAG. The Windows installer now runs semantic RAG prewarm by default after build/index: npm run rag:proof and npm run eval:rag execute with DINOBRAIN_REQUIRE_SEMANTIC_EMBEDDINGS=1 and validate that the proof is healthy, uses a real semantic embedding provider rather than local_text_hashing_v1, has zero lexical fallback in eval, and generated_answer_eval is healthy. Added -SkipSemanticRagPrewarm as an explicit opt-out. Added installer semantic RAG verification and wired install_new_pc_release_equivalence into verify:goal with version alignment, hook merge, launcher, and semantic RAG prewarm checks. verify:goal now shows install_new_pc_release_equivalence=true; overall goal remains partial because real Codex Desktop live pre-response proof still needs a fresh user-created thread event.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]",
+    "[REDACTED_MACHINE_LOCAL_PATH]"
+  ],
+  "decisions": [
+    "Installer default is fail-closed for semantic RAG prewarm by requiring DINOBRAIN_REQUIRE_SEMANTIC_EMBEDDINGS=1.",
+    "Local text hashing fallback is explicitly rejected by installer verification instead of being accepted as semantic retrieval.",
+    "-SkipSemanticRagPrewarm exists as an explicit operator opt-out, not as silent degrade.",
+    "verify:goal now includes install_new_pc_release_equivalence evidence across version alignment, hook merge, launchers, and semantic RAG prewarm.",
+    "Do not mark the full goal complete until fresh Codex Desktop live pre-response proof exists."
+  ],
+  "next_steps": [
+    "Run npm run codex:live-proof, approve the hook if prompted, paste the proof prompt into a fresh Codex Desktop workspace thread, and rerun npm run verify:goal.",
+    "After live proof passes, rerun the full completion audit before marking the goal complete."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-171238-Continue-active-DinoBrain-OS.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 6,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T17:18:40.658Z"
+}

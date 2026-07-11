@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-redacted-4f2d0533bbda194aa5a749ad5cb6ead3412db459",
+  "status": "pending_review",
+  "claim": "How-to note: Inspect <machine-local-path> and repo docs/code: docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, docs\\VERIFICATION.md, src\\behavior-eval.ts, src\\compounding.ts, src\\index.ts, scripts\\verify-closed-loop-goal.mjs, and data state task lifecycle artifacts if useful.",
+  "category": "how_to",
+  "temperature": "warm",
+  "evidence": {
+    "snippet": "Inspect <machine-local-path> and repo docs/code: docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, docs\\VERIFICATION.md, src\\behavior-eval.ts, src\\compounding.ts, src\\index.ts, scripts\\verify-closed-loop-goal.mjs, and data state task lifecycle artifacts if useful.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-153527-170a0cc7fa9f.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-153527-170a0cc7fa9f",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "how_to",
+    "temperature:warm",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-153527-170a0cc7fa9f",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T15:35:27.877Z",
+  "updated_at": "2026-07-07T15:35:27.877Z"
+}

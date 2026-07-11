@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-150722-task-20260707-150721-Review-unfinish",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-150721-Review-unfinished-DinoBrain-",
+  "request": "Review unfinished DinoBrain OS improvement plan, preserve strict 10-reviewer consensus requirement, document completion conditions, and continue implementation against the documented plan starting with direct MCP parity proof ingestion.",
+  "generated_at": "2026-07-07T15:07:22.269Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-150722-Review-unfinished-DinoBrain-.json",
+  "context_item_count": 6,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

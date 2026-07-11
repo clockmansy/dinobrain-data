@@ -1,0 +1,165 @@
+{
+  "pack_id": "pack-20260708-054108-Zip",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "Zip링크도브탁",
+  "created_at": "2026-07-08T05:41:08.224Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense vector cosine retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 79,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 69,
+  "index_candidate_count": 79,
+  "index_total_candidate_count": 10,
+  "index_matching_terms": [],
+  "included_item_count": 7,
+  "excluded_record_count": 72,
+  "items": [
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "kind": "curated_record",
+      "title": "Carry authorized work through commit, push, and deploy",
+      "summary": "When the user explicitly authorizes implementation or deployment, they expect Codex to carry the work through commit, push, release, and verification rather than stopping at a proposal. | Rule: After explicit authorization such as go, push, deploy, or auto-commit, implement, verify, commit, push, and report exact hashes or links. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "git",
+        "release",
+        "delivery"
+      ],
+      "score": 5.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/README.md",
+      "kind": "curated_record",
+      "title": "50_Instances/accepted",
+      "summary": "Reviewed instances that are safe to reuse.",
+      "tags": [],
+      "score": 5.4,
+      "reasons": [
+        "rerank_prior",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-survey.json",
+      "kind": "curated_record",
+      "title": "RAG-Survey",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "survey",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.339,
+      "reasons": [
+        "dense_vector_cosine:4.57",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/langsmith-evaluation-concepts.json",
+      "kind": "curated_record",
+      "title": "LangSmith evaluation concepts",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "evaluation",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.313,
+      "reasons": [
+        "dense_vector_cosine:3.56",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/ragas-evaluation.json",
+      "kind": "curated_record",
+      "title": "RAGAS evaluation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "evaluation",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.287,
+      "reasons": [
+        "dense_vector_cosine:3.55",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/microsoft-graphrag.json",
+      "kind": "curated_record",
+      "title": "Microsoft GraphRAG",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "graph-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.263,
+      "reasons": [
+        "dense_vector_cosine:3.41",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/rag-paper-2005-11401.json",
+      "kind": "curated_record",
+      "title": "RAG paper anchor arXiv 2005.11401",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "paper",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 5.238,
+      "reasons": [
+        "dense_vector_cosine:3.18",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

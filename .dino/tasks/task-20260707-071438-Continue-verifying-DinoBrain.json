@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-071438-Continue-verifying-DinoBrain",
+  "status": "completed",
+  "request": "Continue verifying DinoBrain closed-loop goal after managed Codex hook install: prove any Codex session runs pre-response OS, memory context, work, growth, and GitHub push; inspect current live hook evidence and improve remaining gaps.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T07:14:38.173Z",
+  "updated_at": "2026-07-07T07:16:18.700Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T07:16:18.700Z",
+  "trace_path": ".dino/traces/task-20260707-071438-Continue-verifying-DinoBrain.json"
+}

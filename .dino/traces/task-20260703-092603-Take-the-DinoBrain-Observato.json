@@ -1,0 +1,37 @@
+{
+  "task_id": "task-20260703-092603-Take-the-DinoBrain-Observato",
+  "outcome": "completed",
+  "summary": "Took the DinoBrain Observatory dinosaur graph one step further after the v7 candidate. Implemented deterministic fossil mode with locked node poses, explicit slot arrays for silhouette parts, redistributed live node types across body/tail/neck/head/leg roles, reduced background edge prominence, added fixed canvas guide routes for the fossil scaffold, tuned head/neck proportions, captured v13 evidence, and updated design-qa.md to final result: passed. No deployment or commit was performed.",
+  "changed_files": [
+    "scripts/dinobrain-observatory.mjs",
+    "design-qa.md"
+  ],
+  "decisions": [
+    "Keep data/API/server-side logic unchanged; this pass is visual rendering only.",
+    "Use deterministic fossil pose locking so live graph data remains visible but no longer flattens the dinosaur silhouette.",
+    "Treat v13 as locally QA-passed, but do not deploy until the user approves release."
+  ],
+  "next_steps": [
+    "User reviews http://127.0.0.1:3951/ and v13 screenshots.",
+    "If approved, commit the two changed files, push, bump version/release, and upload the installer ZIP.",
+    "Optional future polish: add a presentation-only fullscreen route and further tune leg slots/scaffold opacity."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-092620-DinoBrain-Observatory-dinosa"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [
+    ".codex-remote-attachments/dinobrain-observatory-dino-v13-canvas-crop.png",
+    ".codex-remote-attachments/dinobrain-observatory-dino-v13-comparison.png"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 2,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-03T09:41:35.559Z"
+}

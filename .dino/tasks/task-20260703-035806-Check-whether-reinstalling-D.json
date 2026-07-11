@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260703-035806-Check-whether-reinstalling-D",
+  "status": "partial",
+  "request": "Check whether reinstalling DinoBrain over the same folder is safe, add a clean full-data uninstaller, verify it, and publish/update the installable release link.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-03T03:58:06.878Z",
+  "updated_at": "2026-07-03T04:10:44.028Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-03T04:10:44.028Z",
+  "trace_path": ".dino/traces/task-20260703-035806-Check-whether-reinstalling-D.json"
+}

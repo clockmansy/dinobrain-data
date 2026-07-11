@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-184614-DinoBrain-live-hook-proof-fa",
+  "status": "partial",
+  "request": "DinoBrain live hook proof fallback for current stale Codex thread: prove this Codex app turn ran os_begin_task and received a Context Pack before continuing substantive work.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T18:46:14.973Z",
+  "updated_at": "2026-07-07T18:46:15.469Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T18:46:15.469Z",
+  "trace_path": ".dino/traces/task-20260707-184614-DinoBrain-live-hook-proof-fa.json"
+}

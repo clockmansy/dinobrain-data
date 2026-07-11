@@ -1,0 +1,292 @@
+{
+  "version": "node_lifecycle_report_v3",
+  "lifecycle_id": "node-lifecycle-20260710-212018695-6e9219ab-f4aa-490b-b5d2-09d8fc6a6d62",
+  "status": "rolled_back",
+  "operation": "rollback",
+  "reviewer": "codex-mem01-rollback-proof",
+  "generated_at": "2026-07-10T21:20:18.532Z",
+  "rollback_transaction_id": "node-lifecycle-1783718406966-1257876e-9f9b-4df7-b4e0-438215f94458",
+  "restored_paths": [
+    ".dino/lifecycle/transitions/node-transition-1783718406781-813a0476-de7f-4f40-be02-adf7abfaeb28.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406782-7aeae095-d98d-44e4-8149-4c7972a04709.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406783-b08348e5-9688-4fae-a4b0-9b69bb250031.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406784-b28201ac-1e5f-42a3-bd71-32b496d657f2.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406784-62f0a1f5-6584-497c-a3f8-90def1afcbfb.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406785-712d6d1e-9b41-4369-b92b-268610acc4e8.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406785-3ddc2075-92ad-47c8-be0c-cf363c3fbd1b.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406786-c1c681cb-8811-4f34-a502-c6bf19457995.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406786-2e28b5f4-e1b2-4539-ba48-dda1c8887dcc.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406787-e1fde3f4-0c90-44ef-b1b8-017e5f2e3b37.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406787-8f92c02a-194f-40e3-9559-1afb17ef59ed.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406787-e7069fe3-8c08-423f-b175-3de06247c68f.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406788-f92bf56c-1248-4363-84b4-cd35056121f1.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406788-e4a56341-ce6d-4499-a6da-d6b3887a70c6.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406789-bfab4b94-6c5e-4b42-99dd-fd25ff12c2c3.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406789-f2d3e59e-8ad6-445e-a84b-19b6e4ee6d29.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406790-fa4b64cc-3334-426e-9cd1-cf1fe187f334.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406790-f563ff42-0401-46e1-a927-a17fb18184d1.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406790-1ab90119-164f-4e43-8839-998f0cf0c230.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406791-98620ef6-1994-4d68-906b-f6ab9335c3b5.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406791-caf36641-6b62-4800-bc7e-e61796ad472b.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406792-84f7c615-a2f0-4836-8e00-6b5d8c33063d.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406792-a600cad6-7e92-48a2-849d-c3f7a8a2cda1.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406793-601d1dda-7072-4f63-a501-92a026fc408b.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406793-9d0484a0-3fb9-403e-983d-e5bcf5879eb4.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406793-0fcfd82c-022e-45d8-bf91-f6be83e51a5a.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406795-0cd2549d-38c7-4ae9-b10f-23a934722e82.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406795-85de43ee-2e3f-4816-834b-6060055e3c2c.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406795-6e8e3f4f-bf46-4026-a00e-c72e63a54245.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406796-c2409a47-fe2a-42a4-aa8f-e08cab115cbe.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406796-8bba43dd-0683-41af-8842-f8b152d52aa5.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406796-4ef43b8d-b767-445e-a05a-ebca7db61566.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406797-67cf5232-2743-4a11-99aa-3b55814a068d.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406797-09ed9a34-10a5-4c31-bc35-03d23f588936.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406798-c458693e-4c8e-4769-9a82-80591fcfed5e.json",
+    ".dino/lifecycle/transitions/node-transition-1783718406798-17c6edec-7796-43d9-bc06-2b6fb2904290.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-design_quality_without_logic_changes.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-one_link_or_direct_action.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/rag-public-os-learning-packet.json",
+    "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json",
+    "50_Instances/accepted/rag-verified-knowledge-v1.json",
+    "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json"
+  ],
+  "post_rollback_audit": {
+    "accepted_files": 17,
+    "retrievable": 0,
+    "held_or_excluded": 0,
+    "invalid": [
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      },
+      {
+        "path": "50_Instances/accepted/rag-verified-knowledge-v1.json",
+        "issues": [
+          "lifecycle_version_invalid",
+          "lifecycle_state_invalid",
+          "lifecycle_history_missing",
+          "lifecycle_state_entered_at_invalid",
+          "lifecycle_node_id_missing",
+          "predecessor_paths_invalid",
+          "successor_paths_invalid"
+        ]
+      }
+    ]
+  }
+}

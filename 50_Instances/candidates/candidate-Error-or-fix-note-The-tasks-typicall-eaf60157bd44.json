@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Error-or-fix-note-The-tasks-typicall-eaf60157bd44",
+  "status": "pending_review",
+  "claim": "Error or fix note: The tasks typically have to do with coding-related tasks, for example requests for bug fixes or questions about a codebase.",
+  "category": "error_fix",
+  "temperature": "warm",
+  "evidence": {
+    "snippet": "The tasks typically have to do with coding-related tasks, for example requests for bug fixes or questions about a codebase.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-154616-f4b566872f79.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-154616-f4b566872f79",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "error_fix",
+    "temperature:warm",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-154616-f4b566872f79",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T15:46:17.546Z",
+  "updated_at": "2026-07-07T15:46:17.546Z"
+}

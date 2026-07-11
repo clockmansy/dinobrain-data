@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-How-to-note-truncated-by-DinoBrain-h-8c2498a24e58",
+  "status": "pending_review",
+  "claim": "How-to note: [truncated by DinoBrain hook]",
+  "category": "how_to",
+  "temperature": "warm",
+  "evidence": {
+    "snippet": "[truncated by DinoBrain hook]",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-162904-8868f3cd5c22.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-162904-8868f3cd5c22",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "how_to",
+    "temperature:warm",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-162904-8868f3cd5c22",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T16:29:05.739Z",
+  "updated_at": "2026-07-07T16:29:05.739Z"
+}

@@ -1,0 +1,54 @@
+{
+  "task_id": "task-20260707-181031-Continue-DinoBrain-OS-comple",
+  "outcome": "completed",
+  "summary": "Added a dedicated answer-quality gate for DinoBrain OS completion: local paired memory-on/off generated-answer evaluation, status artifact, health/freshness wiring, Observatory readiness exposure, verify:goal requirement, and updated unfinished-work contract.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "src/answer-quality.ts",
+    "src/build-answer-quality-status.ts",
+    "scripts/verify-answer-quality.mjs",
+    "package.json",
+    "src/refresh-status-artifacts.ts",
+    "src/health-status.ts",
+    "src/status-freshness.ts",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/verify-observatory-live-graph.mjs",
+    "scripts/verify-closed-loop-goal.mjs",
+    "docs/OS_UNFINISHED_IMPROVEMENT_REVIEW_20260708.md",
+    ".dino/state/answer_quality_status.json",
+    ".dino/state/health_status.json",
+    ".dino/state/monitoring_status.json"
+  ],
+  "decisions": [
+    "Treat generated-answer memory-on/off quality as a separate hard gate instead of inferring it from rag_eval_status.",
+    "Keep the new judge honest as deterministic local Ragas-like evidence and leave external Ragas/LLM-judge calibration as representative-eval follow-up.",
+    "Do not claim the full closed-loop goal complete while fresh Codex Desktop live hook proof is missing for this old thread."
+  ],
+  "next_steps": [
+    "Create a fresh Codex Desktop workspace thread after hook reload and rerun npm run verify:goal to satisfy the remaining live pre-response proof blocker.",
+    "Add explicit answer-quality-golden.json and broader representative cases beyond behavior-golden fallback.",
+    "Continue install/release/review-backlog/compounding-lifecycle verifier work."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json"
+  ],
+  "context_pack_paths": [],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 0,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T18:21:00.199Z"
+}

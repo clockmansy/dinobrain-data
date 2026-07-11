@@ -1,0 +1,48 @@
+{
+  "task_id": "task-20260703-103247-Deploy-the-approved-v13-Dino",
+  "outcome": "completed",
+  "summary": "Deployed DinoBrain Observatory v13 deterministic fossil graph design. Bumped package and installer version to 0.1.7, verified build/hook/OS/installer alignment, pushed main, added a GitHub Actions Windows release workflow, retagged v0.1.7 to the workflow commit, and confirmed the GitHub Release contains DinoBrainSetup.zip and DinoBrainSetup.zip.sha256 assets.",
+  "changed_files": [
+    "README.md",
+    "design-qa.md",
+    "docs/INSTALL.md",
+    "docs/VERIFICATION.md",
+    "installer/DinoBrainSetup/DinoBrainSetup.csproj",
+    "installer/DinoBrainSetup/Program.cs",
+    "installer/DinoBrainSetup/app.manifest",
+    "package-lock.json",
+    "package.json",
+    "scripts/audit-user-flow.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/verify-session-ingest.mjs",
+    "src/index.ts",
+    ".github/workflows/release-windows.yml"
+  ],
+  "decisions": [
+    "Use GitHub Actions with repository GITHUB_TOKEN for release asset upload so local GITHUB_TOKEN/GH_TOKEN is no longer required for normal tagged releases.",
+    "Keep installer AppRef and DataRef on main for standard installs.",
+    "Exclude local screenshot attachment folder from git staging."
+  ],
+  "next_steps": [
+    "Use https://github.com/clockmansy/dinobrain/releases/download/v0.1.7/DinoBrainSetup.zip as the install ZIP link.",
+    "For future releases, push main, tag vX.Y.Z, and the release workflow should build/upload assets automatically."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-103258-Deploy-DinoBrain-v13-Observa"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-03T10:47:22.078Z"
+}

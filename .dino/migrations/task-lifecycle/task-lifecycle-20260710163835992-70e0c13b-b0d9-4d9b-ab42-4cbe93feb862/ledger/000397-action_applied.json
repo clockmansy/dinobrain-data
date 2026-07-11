@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 397,
+  "event": "action_applied",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "1228b88db47f24331b99d8d17fe9ac49c57825e9963f47e255e9e862a48e84bb",
+  "payload": {
+    "index": 196,
+    "task_id": "task-20260707-052056-Generate-0-3-hyperpersonaliz",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "0d3ea1b28621a783e275dc37a39f4de4652f294b70a0808edfb42bbf304b7e81",
+    "trace_sha256_after": "f0137548b8125c7cb91381d9e960f482d89f57aeb8d5ed2fb0586c3b1aff3225"
+  },
+  "entry_sha256": "9bfc8c0e0579d5ddfa17e5c0992c721018e26d166410b6f96ad36dc9ae1b5139"
+}

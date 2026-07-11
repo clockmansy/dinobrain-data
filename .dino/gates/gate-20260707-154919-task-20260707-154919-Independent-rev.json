@@ -1,0 +1,42 @@
+{
+  "gate_id": "gate-20260707-154919-task-20260707-154919-Independent-rev",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-154919-Independent-reviewer-B.-You-",
+  "request": "Independent reviewer B. You must inspect the project intent from this prompt: DinoBrain new-PC install must recreate the same OS behavior from GitHub/app/data, configure Codex and Claude MCP/hooks, create Observatory and verifier launchers, avoid unsafe overwrite, support reinstall/uninstall/purge, and prove release ZIP/SHA/tag/manifest parity. The plan says P2-12 requires installer/ref parity, release manifest with app/data commits and asset SHA, degraded Git-missing mode, installer:verify commands, uninstall:verify, installer:win, release:win --SkipUpload, install-equivalence and release-manifest verifiers included in verify:goal. Does this adequately cover install/release/new-PC equivalence completion conditions? Return a non-empty answer exactly: reviewer_id=R9; verdict=AGREE or REVISE_REQUIRED; blocking_objections=[...]; required_doc_changes=[...]; evidence_files=[docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md,docs/OS_COMPLETION_CONDITIONS.md,docs/INSTALL.md,docs/VERIFICATION.md].",
+  "generated_at": "2026-07-07T15:49:19.734Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-154919-Independent-reviewer-B.-You-.json",
+  "context_item_count": 7,
+  "status": "block",
+  "fail_closed": true,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "destructive_action_risk",
+      "level": "block",
+      "reason": "The request may delete or reset durable data.",
+      "safe_action": "Require explicit confirmation and a backup/sync risk check before destructive execution."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

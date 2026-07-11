@@ -1,0 +1,50 @@
+{
+  "task_id": "task-20260707-162907-DinoBrain-R4-.-.-.-read-only",
+  "outcome": "completed",
+  "summary": "Read-only R4 review from durable source/provenance lens. Inspected MEMORY.md DinoBrain entries, OS completion docs, RAG OS consensus, source-lineage implementation/verifier/status, health/goal wiring, Observatory/public-data safety surfaces. Verdict: REVISE_REQUIRED due implementation/verification scope risk: source-lineage docs are strong, but current classifier can mark project memories and accepted factual memories as internal/project records without verified source support, so completion could be falsely green for factual claims outside tagged 20_Wiki records.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "R4 verdict is REVISE_REQUIRED, not because P0-06 is absent, but because the current source-lineage enforcement scope is narrower than the documented completion condition.",
+    "The plan/docs require factual or public claims to link to verified chunks or durable artifacts, anchor-only records not to count, health/goal/Observatory wiring, and public-data safety checks.",
+    "Implementation correctly rejects anchor-only support, missing provenance, dangling claim paths, missing verification, missing chunk body, and missing source URI for covered fixtures.",
+    "Risk: src/source-lineage.ts treats 40_Projects as project_memory and only requires source truth mainly for 20_Wiki records with source_status/tags, leaving 40_Projects and 50_Instances accepted factual/public claims potentially unblocked.",
+    "Public-data safety is a separate useful gate with blockers/warnings, but the current report is degraded with many warnings and should remain a completion concern until triaged or explicitly accepted by policy."
+  ],
+  "next_steps": [
+    "Broaden source-lineage required-source classification to all factual/public/external/high-risk claims across 20_Wiki, 40_Projects, and non-behavior 50_Instances/accepted records, unless explicitly classified as internal behavior/session evidence with a reason.",
+    "Add regression fixtures for unsupported factual claims in 40_Projects and non-behavior accepted memory, plus anchor-only support in those roots.",
+    "Require status:source-lineage and verify:goal to fail when any claim-bearing record is unclassified rather than defaulting to internal/project memory.",
+    "Resolve public-data safety warnings or document which warning classes are acceptable before final completion claims."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-162908-DinoBrain-R4-.-.-.-read-only.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-162907-9bcd42b2b01b.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-source-chunk-claim-lin-5a26e679f42c.json"
+  ],
+  "search_queries": [
+    "DinoBrain source provenance claim anchor verified public-data MEMORY.md",
+    "source-lineage anchor_only_unverified verified_claim_support unsupported_factual_claim"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 1,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-07T16:30:17.085Z"
+}

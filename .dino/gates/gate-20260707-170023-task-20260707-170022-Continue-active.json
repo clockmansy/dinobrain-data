@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-170023-task-20260707-170022-Continue-active",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-170022-Continue-active-DinoBrain-OS",
+  "request": "Continue active DinoBrain OS goal: inspect current gates and make concrete progress on remaining P0/P1/P2 requirements, prioritizing the next unblocked implementation that moves verify:goal toward true completion.",
+  "generated_at": "2026-07-07T17:00:23.050Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-170022-Continue-active-DinoBrain-OS.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

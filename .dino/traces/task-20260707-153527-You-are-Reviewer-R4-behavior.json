@@ -1,0 +1,48 @@
+{
+  "task_id": "task-20260707-153527-You-are-Reviewer-R4-behavior",
+  "outcome": "completed",
+  "summary": "Read-only R4 review inspected Codex memory registry, OS completion plan/conditions, verification docs, behavior evaluation, compounding, MCP lifecycle/correction tools, closed-loop goal verifier, and current data-vault task lifecycle artifacts. Verdict prepared: the plan defines concrete completion conditions for behavior recall, correction writeback, contradicted-memory lifecycle handling, and finish_task integrity; current implementation/state remains incomplete but the plan correctly treats those as gates/blockers.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "R4 verdict is AGREE for plan adequacy, not a claim that implementation is complete.",
+    "P1-09 explicitly requires behavior_recall_audit ledger entries for completion, handoff, error, direction_change, and correction triggers with performed/skipped/not_applicable decisions and conflict follow-up.",
+    "Feedback correction and contradicted-memory handling are specified as required proof: later Context Pack retrieval, conflict handling, and hold/merge/demotion of older contradicted behavior memories.",
+    "finish_task lifecycle integrity is concretely gated by task:lifecycle and task:lifecycle:settle artifacts and verify:goal requirements; current vault still reports task lifecycle needs_attention rather than false green."
+  ],
+  "next_steps": [
+    "Implement the planned verify:behavior-recall and verify:answer-quality gates before claiming OS completion.",
+    "Add behavior recall audit state artifacts and fixtures for completion, handoff, error, direction_change, and correction triggers.",
+    "Extend correction writeback tests so record_feedback_correction proves later retrieval plus contradicted-memory hold/merge/demotion."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-153527-You-are-Reviewer-R4-behavior.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-153527-170a0cc7fa9f.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-redacted-4f2d0533bbda194aa5a749ad5cb6ead3412db459.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-Judge-whether-the--5f8d374c2451.json"
+  ],
+  "search_queries": [
+    "behavior recall record_feedback_correction contradicted memory lifecycle finish_task task lifecycle"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 2,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T15:36:27.819Z"
+}

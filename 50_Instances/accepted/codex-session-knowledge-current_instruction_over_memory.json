@@ -1,0 +1,227 @@
+{
+  "memory_id": "codex-session-knowledge-current_instruction_over_memory",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "operating_rule",
+  "title": "Current user instruction outranks stored memory",
+  "aliases": [
+    "현재 사용자 지시 우선",
+    "과거 메모리보다 현재 요청 우선",
+    "사용자 교정 반영"
+  ],
+  "claim": "For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions.",
+  "reusable_rule": "Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable.",
+  "scope": "os_contract",
+  "confidence": "high",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "operating-rule",
+    "memory-priority",
+    "os-contract"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 29,
+    "user_hit_count": 74,
+    "assistant_hit_count": 8,
+    "weighted_score": 164,
+    "session_refs": [
+      "sess-0a41a5f21d5b58",
+      "sess-0ca153289a72b9",
+      "sess-1e95eea1be108d",
+      "sess-24a6ee3381ae00",
+      "sess-2d27e1d180db6c",
+      "sess-2fc834396900cc",
+      "sess-458b19a1a1cdf1",
+      "sess-461b6e6d39a56f",
+      "sess-4e95f4fc22803b",
+      "sess-52c21a717f5a44",
+      "sess-61a6570430d591",
+      "sess-6aa2423b061356",
+      "sess-6b55d87e30bb3e",
+      "sess-72cf004ec045b8",
+      "sess-7ad76bf1417852",
+      "sess-7fe6090762c115",
+      "sess-80c93d7848697c",
+      "sess-859a5de9d52d83",
+      "sess-87894506617c58",
+      "sess-b9bea0ba742411",
+      "sess-c15947f92a15cb",
+      "sess-c73d712d226683",
+      "sess-d18f6172935388",
+      "sess-d763c76522c67f"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "user",
+        "message_hash": "942d6f73e4d17e2309cb662f",
+        "char_count": 3835
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "527b27d9dca58eca6382e69f",
+        "char_count": 5334
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "b8f93606afb8fcc9a2057af8",
+        "char_count": 5339
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "44c17faa0212669e07c11297",
+        "char_count": 5339
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "8ed2761a6738aebd02b6dc91",
+        "char_count": 5340
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "ac04a9b9ba6879e692354ebf",
+        "char_count": 5340
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "dca9dc09e32844d361de781d",
+        "char_count": 5340
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "803f5cb3c2a56a2eea0988d0",
+        "char_count": 5340
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "bb98e2ae1301cddd459e5268",
+        "char_count": 5340
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "user",
+        "message_hash": "61021509eee5fd9c5873987a",
+        "char_count": 5610
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "12ac9d7718b1df88a29a8a64",
+        "char_count": 5339
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "6774de6353898cc2e1c2b66f",
+        "char_count": 5343
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "975334fbb48befb3d9816b8f",
+        "char_count": 5344
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "00b788728935cef10b084be5",
+        "char_count": 5344
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "4e1aa1a2eedd6446bb10a2ad",
+        "char_count": 5344
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "ca21ab664e43509e44fbf413",
+        "char_count": 5344
+      }
+    ],
+    "matched_terms": [
+      "현재\\s*사용자|사용자의\\s*지시|기억보다\\s*우선|current user instruction|outrank|priority"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 72
+      },
+      {
+        "project": "stripe engine",
+        "count": 9
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-current_instruction_over_memory.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-current_instruction_over_memory",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425437-ddc43841-4a83-4452-9f19-fd2caf37a913",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425437-ddc43841-4a83-4452-9f19-fd2caf37a913",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-current_instruction_over_memory.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-current_instruction_over_memory.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-current_instruction_over_memory.json"
+  ],
+  "successor_paths": []
+}

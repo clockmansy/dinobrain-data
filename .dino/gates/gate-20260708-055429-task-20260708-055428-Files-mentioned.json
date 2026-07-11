@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260708-055429-task-20260708-055428-Files-mentioned",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260708-055428-Files-mentioned-by-the-user-",
+  "request": "# Files mentioned by the user:\n\n## Photo 1.jpg: [REDACTED_MACHINE_LOCAL_PATH]\n\n## My request for Codex:\n\n레이아웃조정할필요없이 디폴트로 이화면나오게크기조정",
+  "generated_at": "2026-07-08T05:54:29.056Z",
+  "context_pack_path": ".dino/context-packs/pack-20260708-055428-Files-mentioned-by-the-user-.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

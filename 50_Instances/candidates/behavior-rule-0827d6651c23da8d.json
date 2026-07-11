@@ -1,0 +1,47 @@
+{
+  "behavior_rule_id": "behavior-rule-0827d6651c23da8d",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Implemented and ran the real Codex session knowledge promotion step. Added a reusable session:promote command that reads local Codex JSONL sessions, extracts repeated preferences/decisions/mistakes/rules via deterministic pattern aggregation, and writes public-safe paraphrased accepted memory plus review records without storing raw transcripts, message text, previews, or absolute local session paths. Ran it against 47 non-empty local Codex sessions / 4477 messages and promoted 15 accepted codex-session-knowledge memories plus a Codex Session Knowledge Profile and promotion reports. Rebuilt Wiki/SQLite indexes; wiki_search retrieves the promoted profile from sqlite_shards. Strengthened public-data safety to scan untracked sync candidates as well as tracked files; public-data safety reports degraded but blocker_count=0. App changes were committed and pushed as 5582bfe.",
+  "behavior_rule": "In similar future work, apply this decision: Implemented and ran the real Codex session knowledge promotion step. Added a reusable session:promote command that reads local Codex JSONL sessions, extracts repeated preferences/decisions/mistakes/rules via deterministic pattern aggregation, and writes public-safe paraphrased accepted memory plus review records without storing raw transcripts, message text, previews, or absolute local session paths. Ran it against 47 non-empty local Codex sessions / 4477 messages and promoted 15 accepted codex-session-knowledge memories plus a Codex Session Knowledge Profile and promotion reports. Rebuilt Wiki/SQLite indexes; wiki_search retrieves the promoted profile from sqlite_shards. Strengthened public-data safety to scan untracked sync candidates as well as tracked files; public-data safety reports degraded but blocker_count=0. App changes were committed and pushed as 5582bfe.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260706-232632-Promote-meaningful-knowledge.json",
+    "snippet": "Implemented and ran the real Codex session knowledge promotion step. Added a reusable session:promote command that reads local Codex JSONL sessions, extracts repeated preferences/decisions/mistakes/rules via deterministic pattern aggregation, and writes public-safe paraphrased accepted memory plus review records without storing raw transcripts, message text, previews, or absolute local session paths. Ran it against 47 non-empty local Codex sessions / 4477 messages and promoted 15 accepted codex-session-knowledge memories plus a Codex Session Knowledge Profile and promotion reports. Rebuilt Wiki/SQLite indexes; wiki_search retrieves the promoted profile from sqlite_shards. Strengthened public"
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260706-232632-Promote-meaningful-knowledge.json",
+      "task_id": "task-20260706-232632-Promote-meaningful-knowledge",
+      "signal_kind": "summary",
+      "snippet": "Implemented and ran the real Codex session knowledge promotion step. Added a reusable session:promote command that reads local Codex JSONL sessions, extracts repeated preferences/decisions/mistakes/rules via deterministic pattern aggregation, and writes public-safe paraphrased accepted memory plus review records without storing raw transcripts, message text, previews, or absolute local session paths. Ran it against 47 non-empty local Codex sessions / 4477 messages and promoted 15 accepted codex-session-knowledge memories plus a Codex Session Knowledge Profile and promotion reports. Rebuilt Wiki/SQLite indexes; wiki_search retrieves the promoted profile from sqlite_shards. Strengthened public"
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:medium"
+  ],
+  "auto_generated": true,
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T02:02:58.247Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T02:02:58.247Z",
+  "candidate_id": "behavior-rule-0827d6651c23da8d",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/behavior-rule-0827d6651c23da8d.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

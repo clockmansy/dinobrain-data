@@ -1,0 +1,68 @@
+{
+  "memory_id": "task-memory-task-20260707-104459-Continue-active-DinoBrain-OS",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: Continue active DinoBrain OS goal: improve current implementation toward P0-02 status freshness,",
+  "summary": "Implemented the next DinoBrain OS goal step: task lifecycle reports now classify blockers into auto-close candidates versus manual repair classes, and a first-class deterministic RAG eval gate now records memory-on/off proxy lift, expected path recall, required context recall, provenance coverage, retrieval mode, hybrid ratio, and caveats. The current vault now shows status freshness healthy, lifecycle still needs_attention with 12 blockers, and RAG still needs_attention because hybrid_ratio is 0 with lexical fallback only.",
+  "claim": "Task outcome for dinobrain: Implemented the next DinoBrain OS goal step: task lifecycle reports now classify blockers into auto-close candidates versus manual repair classes, and a first-class deterministic RAG eval gate now records memory-on/off proxy lift, expected path recall, required context recall, provenance coverage, retrieval mode, hybrid ratio, and caveats. The current vault now shows status freshness healthy, lifecycle still needs_attention with 12 blockers, and RAG still needs_attention because hybrid_ratio is 0 with lexical fallback only.",
+  "request": "Continue active DinoBrain OS goal: improve current implementation toward P0-02 status freshness, P0-01 full-memory audit, review queue/semantic job settlement, finish-gate integrity, and real RAG eval. Current focus: inspect task lifecycle blockers and implement the next concrete finish-gate/RAG-eval progress without unsafe data sync.",
+  "outcome": "completed",
+  "decisions": [
+    "Do not hide current lifecycle blockers; classify them as auto_close_candidate or manual repair classes so final readiness remains honest.",
+    "Do not claim full RAG/Ragas completion; add a deterministic RAG canary that fails current vault when dense hybrid retrieval is absent.",
+    "Make RAG eval freshness depend on golden data and retrieval indexes, including dense-vectors, wiki-index, and sqlite manifest.",
+    "Keep candidate/review data repo sync out of this app-code push because the data repo remains heavily dirty and needs scoped sync policy handling."
+  ],
+  "next_steps": [
+    "Implement scoped task lifecycle settlement/repair for 6 auto-close candidates and 6 manual repair blockers.",
+    "Author explicit rag-golden.json and configure real dense vector generation/indexing so hybrid_ratio can reach the target without hand-made fixtures.",
+    "Add Observatory Korean bands for task lifecycle decisions and RAG eval status.",
+    "After scoped data policy checks, decide which data repo generated state artifacts should be committed and pushed."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-104459-Continue-active-DinoBrain-OS.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-104459-Continue-active-DinoBrain-OS.json",
+    "snippet": "Implemented the next DinoBrain OS goal step: task lifecycle reports now classify blockers into auto-close candidates versus manual repair classes, and a first-class deterministic RAG eval gate now records memory-on/off proxy lift, expected path recall, required context recall, provenance coverage, retrieval mode, hybrid ratio, and caveats. The current vault now shows status freshness healthy, lifecycle still needs_attention with 12 blockers, and RAG still needs_attention because hybrid_ratio is 0 with lexical fallback only."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T10:52:23.050Z",
+  "updated_at": "2026-07-07T12:25:36.779Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-104459-Continue-active-DinoBrain-OS.json",
+    "task_id": "task-20260707-104459-Continue-active-DinoBrain-OS",
+    "task_path": ".dino/tasks/task-20260707-104459-Continue-active-DinoBrain-OS.json"
+  },
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-104459-Continue-active-DinoBrain-OS.json",
+  "candidate_id": "task-memory-task-20260707-104459-Continue-active-DinoBrain-OS",
+  "sensitivity": "normal",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_generated_task_memory"
+  ],
+  "quarantine": true,
+  "hold_reason": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+  "worklist_cluster_id": "review-cluster-183ad61684bb8cdd",
+  "review_notes": "Held by review worklist action; candidate is low-signal or ephemeral and must not enter hot memory without manual confirmation.",
+  "reviewed_by": "review-worklist-actions",
+  "reviewed_at": "2026-07-07T12:25:36.779Z"
+}

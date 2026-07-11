@@ -1,0 +1,57 @@
+{
+  "task_id": "task-20260707-114456-Continue-active-goal-improve",
+  "outcome": "completed",
+  "summary": "Implemented the first concrete DinoBrain OS gap fixes from the user document comparison: stronger full-memory audit metadata, status freshness authority metadata, conservative direct MCP parity status, higher-level OS health rollup, task lifecycle repair application, and verification documentation. App repo commit c29e92e was pushed to GitHub.",
+  "growth_policy": "auto",
+  "changed_files": [
+    "docs/VERIFICATION.md",
+    "package.json",
+    "scripts/verify-full-memory-audit.mjs",
+    "scripts/verify-status-freshness.mjs",
+    "src/build-client-mcp-direct-status.ts",
+    "src/build-health-status.ts",
+    "src/client-mcp-direct-status.ts",
+    "src/full-memory-audit.ts",
+    "src/health-status.ts",
+    "src/refresh-status-artifacts.ts",
+    "src/status-freshness.ts"
+  ],
+  "decisions": [
+    "Do not mark OS health green when direct Codex/Claude MCP parity proof is missing.",
+    "Treat status freshness as currentness, and health status as semantic OS readiness.",
+    "Full-memory audit now records UTF-8/binary/non-UTF8 class plus text size and parse metadata so drift can be classified without schema-upgrade false positives.",
+    "Applied task lifecycle settlement for a blocked task missing terminal trace as blocked evidence, not successful completion evidence.",
+    "verify:goal remains blocked only on real Codex Desktop live pre-response evidence after stale MCP process cleanup."
+  ],
+  "next_steps": [
+    "Fully restart Codex, paste the live-proof prompt into a fresh Codex Desktop workspace thread, then rerun npm run verify:goal.",
+    "Implement exact single-name direct MCP proof ingestion for Codex and Claude so client_mcp_direct_status can move from needs_recheck to verified.",
+    "Keep data repo sync scoped; it currently has broad pre-existing candidate/review churn and should not be committed wholesale."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-114456-DinoBrain-P0-01-full-memory-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "DinoBrain OS implementable improvement plan comparison",
+    "full-memory audit status freshness health status direct MCP parity",
+    "task lifecycle settlement finish gate integrity"
+  ],
+  "memory_use": {
+    "used_memory_count": 6,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T11:58:03.192Z"
+}

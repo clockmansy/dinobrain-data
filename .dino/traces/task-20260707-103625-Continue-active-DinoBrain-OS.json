@@ -1,0 +1,53 @@
+{
+  "task_id": "task-20260707-103625-Continue-active-DinoBrain-OS",
+  "outcome": "completed",
+  "summary": "Implemented and pushed a task lifecycle / finish-gate integrity layer. Added current-vault and regression reports for active, stale-active, terminal, missing-trace, orphan-trace, partial-grounded, and ungrounded task finishes. Added task lifecycle outputs to status freshness and verify:goal. Current-vault report before closing this task detected 12 blockers: 11 stale active tasks and 1 terminal task missing trace, with 8 freshness artifacts fresh after index/audit refresh.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "package.json",
+    "docs/VERIFICATION.md",
+    "src/task-lifecycle.ts",
+    "src/build-task-lifecycle.ts",
+    "src/status-freshness.ts",
+    "scripts/verify-task-lifecycle.mjs",
+    "scripts/verify-status-freshness.mjs",
+    "scripts/verify-closed-loop-goal.mjs"
+  ],
+  "decisions": [
+    "Task lifecycle current-vault command intentionally exits nonzero when stale active tasks, terminal missing traces, orphan traces, task-id mismatches, or ungrounded finishes remain.",
+    "Status freshness checks whether the task lifecycle artifact is current, but verify:goal checks whether the task lifecycle report is actually healthy.",
+    "Use trace_only for this finish to avoid auto-compounding more review backlog while implementing finish-gate integrity.",
+    "Do not mutate or auto-close old started tasks in this pass; classify them first so the next pass can close/repair with explicit reasons."
+  ],
+  "next_steps": [
+    "Implement bounded stale active task cleanup: auto-close or archive old started tasks with explicit reason, owner, and recheck policy.",
+    "Repair the one terminal task missing a trace or classify it as historical/incomplete with a durable record.",
+    "Then implement real RAG eval beyond current context/path recall: answer correctness, faithfulness, source attribution, latency, and memory-on/off comparison.",
+    "Expose task lifecycle/finish gate status in Observatory Korean UI with browser/DOM proof."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-103626-Continue-active-DinoBrain-OS.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "inspect task and trace schemas for finish_task lifecycle",
+    "implement task lifecycle finish gate report",
+    "wire task lifecycle into status freshness and verify:goal"
+  ],
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T10:42:00.981Z"
+}

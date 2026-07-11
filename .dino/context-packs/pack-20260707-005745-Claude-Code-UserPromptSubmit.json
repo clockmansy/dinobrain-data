@@ -1,0 +1,292 @@
+{
+  "pack_id": "pack-20260707-005745-Claude-Code-UserPromptSubmit",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "Claude Code UserPromptSubmit hook registration runtime parity closed loop proof verifier audit",
+  "created_at": "2026-07-07T00:57:45.566Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 164,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 381,
+  "index_candidate_count": 164,
+  "index_total_candidate_count": 164,
+  "index_matching_terms": [
+    "-skipcodexrestartflow",
+    "audit",
+    "audit_id",
+    "audit_memory_use",
+    "audit-20260706-232502-task-20260706-231712-os_completion",
+    "audited",
+    "audits",
+    "claude",
+    "closed",
+    "closed-loop",
+    "code",
+    "codex",
+    "codex_preflight_completed",
+    "codex_prompt_submitted",
+    "codex_session_knowledge",
+    "codex-conversation-registry",
+    "codex-remote-attachments",
+    "codex-session-derived",
+    "codex-session-knowledge",
+    "codex-session-knowledge-configured_is_not_live_proof",
+    "codex-session-knowledge-current_instruction_over_memory",
+    "codex-session-knowledge-design_quality_without_logic_changes",
+    "codex-session-knowledge-end_to_end_execution_push",
+    "codex-session-knowledge-explain_when_confused",
+    "codex-session-knowledge-installer_new_pc_equivalence",
+    "codex-session-knowledge-knowledge_compounding_goal",
+    "codex-session-knowledge-local_evidence_over_claims",
+    "codex-session-knowledge-observability_required",
+    "codex-session-knowledge-one_link_or_direct_action",
+    "codex-session-knowledge-plan_first_scope_lock",
+    "codex-session-knowledge-pre_response_fail_closed_loop",
+    "codex-session-knowledge-profile",
+    "codex-session-knowledge-promotion",
+    "codex-session-knowledge-rag_quality_direction",
+    "codex-session-knowledge-raw_transcripts_never_public",
+    "codex-session-knowledge-version_release_drift_risk",
+    "codex-userprompt-hook-merge",
+    "critical_consensus_audit",
+    "fail-closed",
+    "hook",
+    "hook-side",
+    "hooks",
+    "installed-hook",
+    "learning_packet_registration",
+    "live-proof",
+    "local-codex-sessions",
+    "logic-code",
+    "loop",
+    "parity",
+    "prompt-hook",
+    "proof",
+    "registration",
+    "registrations",
+    "runtime",
+    "runtime-enforced",
+    "task-20260701-004836-codex-os-start_task-get_cont",
+    "task-20260701-005837-hookeventname-userpromptsubm",
+    "task-20260701-012635-hookeventname-userpromptsubm",
+    "task-20260703-041151-explain-whether-codex-hook-t",
+    "task-20260703-071734-fix-codex-userpromptsubmit-i",
+    "task-20260705-022738-qa-code-review-dinobrain-v2",
+    "task-20260705-081359-implement-a-hard-closed-loop",
+    "task-20260706-230635-register-all-codex-conversat",
+    "task-20260707-003541-read-only-audit-f",
+    "task-20260707-003541-read-only-audit-focused-on-d",
+    "task-20260707-003551-read-only-audit-foc",
+    "task-20260707-003551-read-only-audit-focused-on-b",
+    "task-20260707-003908-read-only-audit-focused",
+    "task-20260707-003908-read-only-audit-focused-on-i",
+    "task-20260707-004146-read-only-audit-focused-only",
+    "task-memory-task-20260706-230635-register-all-codex-conversat",
+    "task-memory-task-20260707-003541-read-only-audit-focused-on-d",
+    "task-memory-task-20260707-003551-read-only-audit-focused-on-b",
+    "task-memory-task-20260707-003606-read-only-audit-focused-on-n",
+    "task-memory-task-20260707-003908-read-only-audit-focused-on-i",
+    "task-memory-task-20260707-004146-read-only-audit-focused-only",
+    "userpromptsubmit",
+    "verifier",
+    "verifiers",
+    "verify-installer-hooks",
+    "version-parity"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 383,
+  "items": [
+    {
+      "path": "50_Instances/accepted/behavior-rule-291581dc23559171.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Claude Code integration now writes a UserPromptSubmit hook in addition to MCP registration; official Claude Code docs define UserPromptSubmit as firing before Claude processes a prompt.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Claude Code integration now writes a UserPromptSubmit hook in addition to MCP registration; official Claude Code docs define UserPromptSubmit as firing before Claude processes a prompt. | Evidence: Claude Code integration now writes a UserPromptSubmit hook in addition to MCP registration; official Claude Code docs define UserPromptSubmit as firing before Cla",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 7.488,
+      "reasons": [
+        "title_matched:claude,code,userpromptsubmit,hook",
+        "summary_matched:claude,code,userpromptsubmit,hook",
+        "chunk_matched:claude,code,userpromptsubmit,hook",
+        "bm25:claude,code,userpromptsubmit,hook,registration",
+        "dense_lexical:2.10",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-85890922977180d3.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Verified the installed/current DinoBrain OS loop against the user's 8-step flow. Codex MCP registration, UserPromptSubmit hook registration, hook simulation/probe, task/context pack creation, wiki_search, finish_task support, v2 verification, and git remotes are present. The complete loop is partially rather than fully autonomous: live current-thread hook injection was not observed before manual probe, model behavior cannot be runtime-enforced by DinoBrain, search_memory is not a separate tool, knowledge growth beyond accepted instances is not fully automatic, and git_sync remains dry-run/manual-review by policy.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Verified the installed/current DinoBrain OS loop against the user's 8-step flow. Codex MCP registration, UserPromptSubmit hook registration, hook simulation/probe, task/context pack creation, wiki_search, finish_task support, v2 verification, and git remotes are present. The complete loop is partially rather than fully autonomous: live current-thread hook in",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:low"
+      ],
+      "score": 7.345,
+      "reasons": [
+        "title_matched:code,userpromptsubmit,hook,registration",
+        "summary_matched:code,userpromptsubmit,hook,registration",
+        "chunk_matched:code,userpromptsubmit,hook,registration",
+        "bm25:userpromptsubmit,hook,registration,loop",
+        "dense_lexical:1.27",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation guards, made node lifecycle apply real archive/hold/merge/provenance repair operations, handled os_begin_task context-pack failures as fail-closed task/gate records, fixed Observatory JSON graph fallback for v2 indexes, bumped app/installer version to 2.0.1, added regression coverage, pushed main and tag v2.0.1. Local release ZIP was built; direct GitHub Release upload could not run because no GITHUB_TOKEN/GH_TOKEN is available in this shell.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 7.264,
+      "reasons": [
+        "title_matched:claude,code,userpromptsubmit,hook",
+        "summary_matched:claude,code,userpromptsubmit,hook",
+        "chunk_matched:claude,code,userpromptsubmit,hook",
+        "bm25:claude,code,userpromptsubmit,hook,registration",
+        "dense_lexical:1.18",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-497915ff5461114f.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Completed read-only audit of DinoBrain installer/new PC/GitHub recovery/version parity/hook approval surfaces. Found one P0 risk: update/reinstall can strand unpushed local commits by force-resetting existing app/data branches with git checkout -B origin/ref. Found P1 gaps: Windows GUI blocks documented no-Git ZIP fallback; release/version parity can drift because package version, tag, setup metadata, and installer refs are not enforced together; uninstall removes Claude MCP but leaves the installed Claude UserPromptSubmit hook. Hook approval design itself preserves manual trust and has verification coverage.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Completed read-only audit of DinoBrain installer/new PC/GitHub recovery/version parity/hook approval surfaces. Found one P0 risk: update/reinstall can strand unpushed local commits by force-resetting existing app/data branches with git checkout -B origin/ref. Found P1 gaps: Windows GUI blocks documented no-Git ZIP fallback; release/version parity can drift b",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 7.178,
+      "reasons": [
+        "title_matched:claude,userpromptsubmit,hook,parity",
+        "summary_matched:hook,parity,audit",
+        "chunk_matched:hook,parity,audit",
+        "bm25:claude,userpromptsubmit,hook,parity,audit",
+        "dense_lexical:1.30",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-00816a7debe955f7.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Run fresh live Codex and Claude proof after hook trust/reload and capture evidence in the verification registry.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Run fresh live Codex and Claude proof after hook trust/reload and capture evidence in the verification registry. | Evidence: Run fresh live Codex and Claude proof after hook trust/reload and capture evidence in the verification registry.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 7.073,
+      "reasons": [
+        "title_matched:claude,code,hook,proof",
+        "summary_matched:claude,code,hook,proof",
+        "chunk_matched:claude,code,hook,proof",
+        "bm25:claude,hook,proof",
+        "dense_lexical:1.33",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "kind": "curated_record",
+      "title": "Configured hooks are not live preflight proof",
+      "summary": "A configured or probe-verified DinoBrain hook must not be claimed as fully live until a fresh trusted Codex or Claude prompt produces pre-response events before manual MCP calls.",
+      "tags": [
+        "codex-session-derived",
+        "mistake-lesson",
+        "hook",
+        "live-proof",
+        "fail-closed"
+      ],
+      "score": 6.906,
+      "reasons": [
+        "path_matched:code,proof",
+        "title_matched:hook,proof",
+        "summary_matched:claude,code,hook",
+        "tags_matched:code,hook,closed,proof",
+        "chunk_matched:claude,code,hook,proof",
+        "bm25:claude,hook,proof",
+        "dense_lexical:1.21",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-c5e8716a84f263be.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt. | Evidence: Explained tha",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 6.775,
+      "reasons": [
+        "title_matched:code,hook,runtime",
+        "summary_matched:code,hook,runtime",
+        "chunk_matched:code,hook,runtime",
+        "bm25:code,hook,runtime",
+        "dense_lexical:1.22",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-6df56a93118a083f.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Fixed installer Codex UserPromptSubmit registration so DinoBrain is merged into the first existing prompt-hook group instead of being appended as a separate second group. Only install.ps1 and scripts/verify-installer-hooks.ps1 were changed. Added regression cases preserving why-was-fable-banned and verifying DinoBrain appears exactly once in the first UserPromptSubmit group. Created branch fix/codex-userprompt-hook-merge, committed, pushed, and opened PR #1.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Fixed installer Codex UserPromptSubmit registration so DinoBrain is merged into the first existing prompt-hook group instead of being appended as a separate second group. Only install.ps1 and scripts/verify-installer-hooks.ps1 were changed. Added regression cases preserving why-was-fable-banned and verifying DinoBrain appears exactly once in the first UserPr",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 6.621,
+      "reasons": [
+        "title_matched:code,userpromptsubmit,hook,registration",
+        "summary_matched:code,userpromptsubmit,hook,registration",
+        "chunk_matched:code,userpromptsubmit,hook,registration",
+        "bm25:userpromptsubmit,registration",
+        "dense_lexical:0.98",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

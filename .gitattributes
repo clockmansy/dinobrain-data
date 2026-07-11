@@ -1,0 +1,5 @@
+.dino/tasks/*.json text eol=lf
+.dino/traces/*.json text eol=lf
+.dino/migrations/**/*.json text eol=lf
+.dino/state/*.json text eol=lf
+.dino/state/*.jsonl text eol=lf

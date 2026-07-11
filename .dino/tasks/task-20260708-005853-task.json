@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260708-005853-task",
+  "status": "completed",
+  "request": "아오 답답하네 그냥 쓰면안됨?\\",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-08T00:58:53.399Z",
+  "updated_at": "2026-07-08T00:59:11.340Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-08T00:59:11.340Z",
+  "trace_path": ".dino/traces/task-20260708-005853-task.json"
+}

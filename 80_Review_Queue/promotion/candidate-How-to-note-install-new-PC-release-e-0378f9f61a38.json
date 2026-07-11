@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-How-to-note-install-new-PC-release-e-0378f9f61a38",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-How-to-note-install-new-PC-release-e-0378f9f61a38.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-163216-902c64a24b49.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T16:32:17.071Z",
+  "updated_at": "2026-07-07T16:32:17.071Z"
+}

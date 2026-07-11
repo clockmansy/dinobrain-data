@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-104459-task-20260707-104459-Continue-active",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-104459-Continue-active-DinoBrain-OS",
+  "request": "Continue active DinoBrain OS goal: improve current implementation toward P0-02 status freshness, P0-01 full-memory audit, review queue/semantic job settlement, finish-gate integrity, and real RAG eval. Current focus: inspect task lifecycle blockers and implement the next concrete finish-gate/RAG-eval progress without unsafe data sync.",
+  "generated_at": "2026-07-07T10:44:59.715Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-104459-Continue-active-DinoBrain-OS.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

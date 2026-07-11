@@ -1,0 +1,48 @@
+{
+  "task_id": "task-20260708-010729-Continue-the-active-DinoBrai",
+  "outcome": "partial",
+  "summary": "Continued the active DinoBrain OS hardening goal. Fixed release manifest regression fixture to respect artifact freshness, bumped and released v2.2.6, verified CI release asset SHA parity, applied task lifecycle settlement, produced direct MCP pre-response proof, and pushed app/data changes. Full goal remains open because latest real Codex Desktop live hook proof still requires a fresh user prompt after the latest server build.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "package.json",
+    "package-lock.json",
+    "scripts/verify-release-manifest.mjs",
+    "<machine-local-path>",
+    "<machine-local-path>"
+  ],
+  "decisions": [
+    "Use v2.2.6 instead of moving published v2.2.5 tag after committing verifier changes.",
+    "Treat GitHub Actions release asset as the official install ZIP and align local artifacts to its SHA.",
+    "Do not mark the full goal complete while codex_live_pre_response still lacks a fresh Codex Desktop proof after the latest server build.",
+    "Use fresh stdio MCP for proof/finalization after stopping stale DinoBrain MCP processes closed the current tool transport."
+  ],
+  "next_steps": [
+    "Send a fresh Codex Desktop prompt in a new/fresh thread so UserPromptSubmit writes live hook evidence after the latest dist/index.js build.",
+    "Rerun npm run verify:goal; expected remaining blocker is pre_response_os_for_real_codex_desktop_hook until that fresh prompt exists.",
+    "Once live proof passes, re-run full goal verifier and only then consider update_goal complete."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-010729-Continue-the-active-DinoBrai.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T01:23:04.543Z"
+}

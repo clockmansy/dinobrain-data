@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 292,
+  "event": "action_started",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "c6a98d8c56aadaabe9bf57493a3ed9ba763804953d1f68b2282d9326d627b338",
+  "payload": {
+    "index": 144,
+    "task_id": "task-20260707-163922-You-are-R5-lifecycle-reviewe",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "9b5beac92005ca25a74e1038ede1deff45ed2be086d6aed47523e1c1ede121d3",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "a50c18220720e244f48d1a418275e62a87988483d99d162eea3a0e894376b44f"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-003908-Read-only-audit-focused-on-i",
+  "status": "completed",
+  "request": "Read-only audit focused on installer/new PC/GitHub recovery/version parity/hook approval for DinoBrain. Inspect installer/setup/update/reinstall/uninstall docs/release/verification scripts, return P0/P1 findings with line evidence, fixes, and consensus candidate statements; no edits.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T00:39:08.129Z",
+  "updated_at": "2026-07-07T00:43:45.470Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T00:43:45.470Z",
+  "trace_path": ".dino/traces/task-20260707-003908-Read-only-audit-focused-on-i.json"
+}

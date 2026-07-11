@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-003410-task-20260707-003410-Use-verified-RA",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-003410-Use-verified-RAG-knowledge-a",
+  "request": "Use verified RAG knowledge and prior DinoBrain conversation knowledge to critically audit DinoBrain and find consensus improvements toward the user's desired OS: mandatory pre-response OS loop, high-quality RAG/LLM Wiki, provenance, behavior gates, feedback writeback, observability, new-PC recovery, and automatic knowledge compounding. Use 10 subagents and iterate until consensus improvements are found.",
+  "generated_at": "2026-07-07T00:34:10.821Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-003410-Use-verified-RAG-knowledge-a.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

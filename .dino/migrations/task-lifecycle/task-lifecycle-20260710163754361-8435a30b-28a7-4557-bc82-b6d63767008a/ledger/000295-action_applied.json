@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 295,
+  "event": "action_applied",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "486beb8282733f6b1934f150c8bd7613b0333e38f0e7d2672a2c42127d947b12",
+  "payload": {
+    "index": 145,
+    "task_id": "task-20260707-163855-R5-reviewer-for-DinoBrain-do",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "5afb810edd50554ff19506b332404ce0b6015efd61ac74d9ef5b6b429b085513",
+    "trace_sha256_after": "9c2dadcdea00f12482be03a4ba8419d98edd37489e31cc22938f94e6c19b8c54"
+  },
+  "entry_sha256": "688fe1c4c8f666dbd32125ba71c9bd0eee0e2d68b7569d0936aa5f3511cbdcf3"
+}

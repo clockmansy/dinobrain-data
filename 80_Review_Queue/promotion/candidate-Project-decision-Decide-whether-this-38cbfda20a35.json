@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-Project-decision-Decide-whether-this-38cbfda20a35",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-Project-decision-Decide-whether-this-38cbfda20a35.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-173139-0dd5dc6c57be.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T17:31:39.909Z",
+  "updated_at": "2026-07-07T17:31:39.909Z"
+}

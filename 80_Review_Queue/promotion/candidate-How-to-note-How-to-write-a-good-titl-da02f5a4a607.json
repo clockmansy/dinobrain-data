@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-How-to-note-How-to-write-a-good-titl-da02f5a4a607",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-da02f5a4a607.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-125249-20bb53b4a2c1.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T12:52:50.083Z",
+  "updated_at": "2026-07-07T12:52:50.083Z"
+}

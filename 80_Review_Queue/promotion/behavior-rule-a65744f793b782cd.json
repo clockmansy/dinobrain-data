@@ -1,0 +1,25 @@
+{
+  "review_id": "behavior-rule-a65744f793b782cd",
+  "type": "promotion",
+  "status": "settled_hold",
+  "candidate_path": "50_Instances/candidates/behavior-rule-a65744f793b782cd.json",
+  "accepted_path": null,
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "support_count",
+    "scope"
+  ],
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "review-settlement:auto-hold",
+  "created_at": "2026-07-07T07:16:27.148Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "decision": "hold",
+  "notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "settled_at": "2026-07-07T11:04:51.173Z",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

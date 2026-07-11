@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-71b9e951103f2ea8",
+  "behavior_rule_id": "behavior-rule-71b9e951103f2ea8",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Implemented and pushed a task lifecycle / finish-gate integrity layer. Added current-vault and regression reports for active, stale-active, terminal, missing-trace, orphan-trace, partial-grounded, and ungrounded task finishes. Added task lifecycle outputs to status freshness and verify:goal. Current-vault report before closing this task detected 12 blockers: 11 stale active tasks and 1 terminal task missing trace, with 8 freshness artifacts fresh after index/audit refresh.",
+  "behavior_rule": "In similar future work, apply this decision: Implemented and pushed a task lifecycle / finish-gate integrity layer. Added current-vault and regression reports for active, stale-active, terminal, missing-trace, orphan-trace, partial-grounded, and ungrounded task finishes. Added task lifecycle outputs to status freshness and verify:goal. Current-vault report before closing this task detected 12 blockers: 11 stale active tasks and 1 terminal task missing trace, with 8 freshness artifacts fresh after index/audit refresh.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-103625-Continue-active-DinoBrain-OS.json",
+    "snippet": "Implemented and pushed a task lifecycle / finish-gate integrity layer. Added current-vault and regression reports for active, stale-active, terminal, missing-trace, orphan-trace, partial-grounded, and ungrounded task finishes. Added task lifecycle outputs to status freshness and verify:goal. Current-vault report before closing this task detected 12 blockers: 11 stale active tasks and 1 terminal task missing trace, with 8 freshness artifacts fresh after index/audit refresh."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-103625-Continue-active-DinoBrain-OS.json",
+      "task_id": "task-20260707-103625-Continue-active-DinoBrain-OS",
+      "signal_kind": "summary",
+      "snippet": "Implemented and pushed a task lifecycle / finish-gate integrity layer. Added current-vault and regression reports for active, stale-active, terminal, missing-trace, orphan-trace, partial-grounded, and ungrounded task finishes. Added task lifecycle outputs to status freshness and verify:goal. Current-vault report before closing this task detected 12 blockers: 11 stale active tasks and 1 terminal task missing trace, with 8 freshness artifacts fresh after index/audit refresh."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:medium"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:52:23.195Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:52:23.195Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

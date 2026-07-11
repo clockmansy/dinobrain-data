@@ -1,0 +1,39 @@
+{
+  "candidate_id": "candidate-Project-state---If-the-user-s-prompt-1a462be35874",
+  "status": "held",
+  "claim": "Project state: - If the user's prompt is already a short clea",
+  "category": "project_state",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "- If the user's prompt is already a short clea",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-095802-9b50844afa6d.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-095802-9b50844afa6d",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_state",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-095802-9b50844afa6d",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T09:58:03.340Z",
+  "updated_at": "2026-07-07T12:25:36.779Z",
+  "quarantine": true,
+  "hold_reason": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+  "worklist_cluster_id": "review-cluster-75885d7161288465",
+  "review_notes": "Held by review worklist action; candidate is low-signal or ephemeral and must not enter hot memory without manual confirmation.",
+  "reviewed_by": "review-worklist-actions",
+  "reviewed_at": "2026-07-07T12:25:36.779Z"
+}

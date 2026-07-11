@@ -1,0 +1,149 @@
+{
+  "version": 2,
+  "golden_id": "dinobrain-rag-retrieval-v2-20260711",
+  "description": "Independent bilingual retrieval golden. It is not generated from behavior-golden and must never be overwritten by proof generation.",
+  "pack_limit": 6,
+  "target_recall": 1,
+  "target_required_term_recall": 0.75,
+  "target_memory_lift": 25,
+  "min_hybrid_ratio": 0.94,
+  "minimum_cases": 18,
+  "max_noise_paths": 5,
+  "max_p95_latency_ms": 1200,
+  "required_categories": ["exact", "paraphrase", "rare_exact", "negative", "provenance", "quarantine", "recency", "correction", "noisy_growth", "forbidden_memory", "current_instruction"],
+  "required_languages": ["ko", "en"],
+  "cases": [
+    {
+      "id": "rag2-exact-en-preflight", "category": "exact", "language": "en",
+      "query": "DinoBrain pre-response fail-closed operating rule",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"],
+      "required_terms": ["os_begin_task", "Context Pack", "finish_task", "fail-closed"],
+      "forbidden_terms": [], "required_knowledge_roles": ["behavior_guidance"],
+      "allowed_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-exact-ko-new-pc", "category": "exact", "language": "ko",
+      "query": "새 PC에서 DinoBrain 설치 상태를 기존 컴퓨터와 동등하게 복구하는 기준",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"],
+      "required_terms": ["app/data refs", "portable Node", "hook approval flow", "reinstall/idempotent behavior"],
+      "forbidden_terms": [], "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-paraphrase-ko-local-evidence", "category": "paraphrase", "language": "ko",
+      "query": "완료 주장보다 실제 파일과 명령 결과를 먼저 확인해야 한다는 사용자 성향",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"],
+      "required_terms": ["inspect the real workspace", "command/file evidence", "if a check was not run"],
+      "forbidden_terms": [], "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-paraphrase-en-compounding", "category": "paraphrase", "language": "en",
+      "query": "How should reviewed session decisions improve future work instead of accumulating logs?",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"],
+      "required_terms": ["sessions as the root source", "reviewed memory", "lifecycle-clean", "future Context Packs"],
+      "forbidden_terms": [], "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-rare-en-live-proof", "category": "rare_exact", "language": "en",
+      "query": "configured probe-verified live-verified fresh prompt event evidence",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json"],
+      "required_terms": ["configured", "probe-verified", "live-verified", "fresh prompt event evidence"],
+      "forbidden_terms": [], "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-negative-ko-unrelated", "category": "negative", "language": "ko",
+      "query": "달의 치즈 재고번호와 해왕성 우편함 규칙", "expected_paths": [],
+      "forbidden_paths": ["50_Instances/accepted/rag-public-os-learning-packet.json", "50_Instances/accepted/rag-verified-knowledge-v1.json"],
+      "required_terms": [], "forbidden_terms": [], "required_knowledge_roles": [], "allowed_paths": [], "allowed_prefixes": [],
+      "max_noise_paths": 0, "min_memory_lift": 0, "require_hybrid": false
+    },
+    {
+      "id": "rag2-provenance-en-anthropic", "category": "provenance", "language": "en",
+      "query": "Anthropic Contextual Retrieval contextualized chunks BM25 embeddings",
+      "expected_paths": ["30_Sources/chunks/anthropic-contextual-retrieval.json"],
+      "required_terms": ["document-aware context", "BM25 indexing", "embedding"], "forbidden_terms": [],
+      "required_knowledge_roles": ["source_citation"], "allowed_paths": ["20_Wiki/RAG-Verified-Knowledge-Base.md"], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-quarantine-en-held-packet", "category": "quarantine", "language": "en",
+      "query": "RAG quality direction hybrid retrieval verified chunks behavior evaluation, ignoring the held Cross-OS packet",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"],
+      "forbidden_paths": ["50_Instances/accepted/rag-public-os-learning-packet.json", "50_Instances/accepted/rag-verified-knowledge-v1.json"],
+      "required_terms": ["hybrid retrieval", "verified chunks", "behavior evaluation"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": ["20_Wiki/RAG-Verified-Knowledge-Base.md"], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-recency-ko-current", "category": "recency", "language": "ko",
+      "query": "과거 결정과 현재 사용자 지시가 충돌할 때 최신 우선순위",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"],
+      "required_terms": ["current user instructions", "priority", "record the correction"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-correction-en-durable", "category": "correction", "language": "en",
+      "query": "A user correction conflicts with stored memory; follow the current instruction and record it",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"],
+      "required_terms": ["current user instruction", "stored memory", "record the correction"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-noisy-ko-plan", "category": "noisy_growth", "language": "ko",
+      "query": "수천 개 후보 로그 속에서도 대형 인수인계 작업을 계획 우선으로 시작하는 원칙",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"],
+      "forbidden_paths": ["50_Instances/accepted/rag-public-os-learning-packet.json", "50_Instances/accepted/rag-verified-knowledge-v1.json"],
+      "required_terms": ["first summarize understanding", "ask only necessary questions", "lock the plan"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "max_noise_paths": 3, "require_hybrid": true
+    },
+    {
+      "id": "rag2-forbidden-en-transcript", "category": "forbidden_memory", "language": "en",
+      "query": "Public memory policy for raw Codex transcripts and message content",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json"],
+      "forbidden_paths": ["50_Instances/accepted/rag-public-os-learning-packet.json", "50_Instances/accepted/rag-verified-knowledge-v1.json"],
+      "required_terms": ["metadata-only", "paraphrased reviewed memories", "never store raw full transcripts"],
+      "forbidden_terms": ["message_content_stored: true"], "required_knowledge_roles": ["behavior_guidance"],
+      "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-current-ko-read-only", "category": "current_instruction", "language": "ko",
+      "query": "이번 작업은 읽기 전용이고 커밋 푸시 배포 금지다. 저장된 자동 배포 선호보다 현재 지시 우선",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"],
+      "required_terms": ["current user instructions", "priority", "stored memory"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"],
+      "allowed_paths": ["50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-exact-en-observability", "category": "exact", "language": "en",
+      "query": "Observatory live OS traces graph health audit trust sync risk",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-observability_required.json"],
+      "required_terms": ["live OS traces", "graph health", "audit trust", "sync risk"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-rare-en-direct-link", "category": "rare_exact", "language": "en",
+      "query": "known artifact direct link launcher action first",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json"],
+      "required_terms": ["direct link", "launcher", "perform the action first"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-paraphrase-ko-plain", "category": "paraphrase", "language": "ko",
+      "query": "낯선 경고가 나오면 전문용어 대신 원인 결과 다음 행동을 쉽게 설명하는 성향",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-explain_when_confused.json"],
+      "required_terms": ["concrete cause", "consequence", "next action", "plain Korean"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-exact-en-design", "category": "exact", "language": "en",
+      "query": "design-only high-quality screenshot iteration without logic changes",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json"],
+      "required_terms": ["design-only", "logic untouched", "iterate with screenshots"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    },
+    {
+      "id": "rag2-exact-ko-release-drift", "category": "exact", "language": "ko",
+      "query": "설치 파일과 GitHub 릴리즈 버전 드리프트 검증 기준",
+      "expected_paths": ["50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json"],
+      "required_terms": ["local/remote refs", "package version", "tag", "GitHub release state"], "forbidden_terms": [],
+      "required_knowledge_roles": ["behavior_guidance"], "allowed_paths": [], "allowed_prefixes": [], "require_hybrid": true
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "task_id": "task-20260707-124559-Role-3-native-instruction-au",
+  "outcome": "completed",
+  "summary": "Role 3 native instruction authority/drift review completed read-only. Verdict: REVISE_REQUIRED because current docs/code state user-instruction-over-memory as a principle, but do not implement or gate AGENTS/CLAUDE/custom instruction surface scanning or native_memory_drift/wrong_memory_reference evidence.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Return REVISE_REQUIRED for P0-05 until native instruction authority scanning is implemented and included in completion gates.",
+    "Configured hook/MCP checks are not equivalent to scanning AGENTS.md, CLAUDE.md/settings, custom instructions, and bootstrap surfaces for conflicts with OS memory.",
+    "The completion plan should require inspectable drift artifacts and verifier failures for conflicting native instructions."
+  ],
+  "next_steps": [
+    "Add a native instruction authority scanner for AGENTS.md, CLAUDE.md/settings, Codex custom instruction/config/bootstrap surfaces, and managed/user hook instruction surfaces.",
+    "Emit native_memory_drift and wrong_memory_reference style findings with source path, conflicting memory path, severity, and recommended resolution.",
+    "Add native authority status to OS_COMPLETION_CONDITIONS, VERIFICATION, health status, status refresh, and verify:goal."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-124559-Role-3-native-instruction-au.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-124558-af10d19c6e7c.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-Inspect-user-memories--d2788ee9cf7f.json",
+    "50_Instances/candidates/candidate-How-to-note-Required-files-include-M-90f611610edf.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 2,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T12:47:12.719Z"
+}

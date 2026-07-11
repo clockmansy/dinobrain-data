@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-4bfa3422696f8ce2",
+  "behavior_rule_id": "behavior-rule-4bfa3422696f8ce2",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Treat the plan as a strong implementable draft, not final OS validation.",
+  "behavior_rule": "In similar future work, apply this decision: Treat the plan as a strong implementable draft, not final OS validation.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-095911-Read-and-analyze-the-full-lo.json",
+    "snippet": "Treat the plan as a strong implementable draft, not final OS validation."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-095911-Read-and-analyze-the-full-lo.json",
+      "task_id": "task-20260707-095911-Read-and-analyze-the-full-lo",
+      "signal_kind": "decision",
+      "snippet": "Treat the plan as a strong implementable draft, not final OS validation."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:25:06.936Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:25:06.936Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

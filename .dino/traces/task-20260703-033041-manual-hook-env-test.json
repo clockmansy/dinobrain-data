@@ -1,0 +1,24 @@
+{
+  "task_id": "task-20260703-033041-manual-hook-env-test",
+  "outcome": "blocked",
+  "summary": "Auto-closed stale DinoBrain diagnostic task after lifecycle settlement. The task was a hook/env probe with no terminal trace and no current active owner.",
+  "changed_files": [],
+  "decisions": [
+    "Classified as auto_close_candidate by task lifecycle report.",
+    "Closed only because the request/project matched DinoBrain hook diagnostic or manual hook env test patterns."
+  ],
+  "next_steps": [
+    "Manual repair is still required for non-diagnostic stale tasks."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [],
+  "search_queries": [],
+  "finished_at": "2026-07-07T10:56:18.384Z",
+  "settlement": {
+    "version": "task_lifecycle_settlement_v1",
+    "reason_code": "stale_diagnostic_auto_closed",
+    "previous_status": "started",
+    "previous_updated_at": "2026-07-03T03:30:41.223Z",
+    "source_task_lifecycle_generated_at": "2026-07-07T10:56:18.384Z"
+  }
+}

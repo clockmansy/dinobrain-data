@@ -1,0 +1,47 @@
+{
+  "behavior_rule_id": "behavior-rule-40b6c16d61281d46",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelated completed events, no parent-process or challenge attestation, no proof that injected context reached the model, and loose hook registration checks.",
+  "behavior_rule": "In similar future work, apply this decision: Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelated completed events, no parent-process or challenge attestation, no proof that injected context reached the model, and loose hook registration checks.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-011041-Read-only-audit-of-scripts-v.json",
+    "snippet": "Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelated completed events, no parent-process or challenge attestation, no proof that injected context reached the model, and loose hook registration checks."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-011041-Read-only-audit-of-scripts-v.json",
+      "task_id": "task-20260707-011041-Read-only-audit-of-scripts-v",
+      "signal_kind": "summary",
+      "snippet": "Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelated completed events, no parent-process or challenge attestation, no proof that injected context reached the model, and loose hook registration checks."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:medium"
+  ],
+  "auto_generated": true,
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T02:02:58.247Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T02:02:58.247Z",
+  "candidate_id": "behavior-rule-40b6c16d61281d46",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/behavior-rule-40b6c16d61281d46.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

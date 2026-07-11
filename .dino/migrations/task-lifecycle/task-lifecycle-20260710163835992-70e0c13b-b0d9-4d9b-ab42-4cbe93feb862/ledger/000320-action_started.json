@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 320,
+  "event": "action_started",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "cfcc7e54301d75edb6a2e9b55b1985c799ce0064512d78ea85922e661d67f54b",
+  "payload": {
+    "index": 158,
+    "task_id": "task-20260707-154822-Independent-Windows-install-",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "bcd50d7c12d4923777e3e54a74e46bcb84224e69efa78c4b7aec5be819769fdd",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "3223e61b434205c5dc9a67f30367c3d28a044cbe49383d3c440ec80ff49e0756"
+}

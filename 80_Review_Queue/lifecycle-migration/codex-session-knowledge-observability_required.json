@@ -1,0 +1,50 @@
+{
+  "review_id": "lifecycle-migration-codex-session-knowledge-observability_required",
+  "type": "lifecycle_migration_attestation",
+  "status": "approved",
+  "candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "accepted_path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+  "target_path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+  "decision": "approve_existing_accepted",
+  "reviewer": "codex-mem01-migration-reapply",
+  "evidence_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "60_Operations/session-imports/codex-conversation-registry.json"
+  ],
+  "created_at": "2026-07-10T21:20:25.107Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "node_id": "lifecycle-migration-codex-session-knowledge-observability_required",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "archived",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425444-900f94f3-030a-47de-aab9-e4a6d2fdb88f",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425444-900f94f3-030a-47de-aab9-e4a6d2fdb88f",
+      "idempotency_key": "accepted-review-attestation|50_Instances/accepted/codex-session-knowledge-observability_required.json|accepted",
+      "from_state": null,
+      "to_state": "archived",
+      "reason_code": "accepted_review_attested",
+      "reason": "Existing accepted memory received a durable migration review attestation.",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md"
+      ],
+      "successor_paths": [
+        "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+      ],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md"
+  ],
+  "successor_paths": [
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+  ]
+}

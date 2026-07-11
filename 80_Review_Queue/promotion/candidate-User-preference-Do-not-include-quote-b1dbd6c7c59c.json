@@ -1,0 +1,16 @@
+{
+  "review_id": "candidate-User-preference-Do-not-include-quote-b1dbd6c7c59c",
+  "type": "session_extract_promotion",
+  "status": "pending",
+  "candidate_path": "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-b1dbd6c7c59c.json",
+  "source_session_path": "10_Conversations/raw/session-Codex-prompt-20260707-154616-f4b566872f79.json",
+  "required_checks": [
+    "evidence_snippet",
+    "confidence",
+    "last_verified",
+    "sensitivity",
+    "manual_meaning_review"
+  ],
+  "created_at": "2026-07-07T15:46:17.546Z",
+  "updated_at": "2026-07-07T15:46:17.546Z"
+}

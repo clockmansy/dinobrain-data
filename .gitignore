@@ -1,0 +1,28 @@
+# Local-only DinoBrain state
+.dino/secrets.json
+.dino/local.json
+.dino/cache/
+.dino/tmp/
+.dino/locks/
+.dino/sync-scopes/
+.dino/restore-receipts/
+.dino/restore-staging/
+.dino/local-backups/
+.dino/review-admissions/
+.dino/index/
+.dino/events/
+
+# Raw and unreviewed private data stays local by default.
+10_Conversations/raw/
+30_Sources/private/
+50_Instances/raw/
+attachments/private/
+
+# Common secret-bearing files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.dino/generations/

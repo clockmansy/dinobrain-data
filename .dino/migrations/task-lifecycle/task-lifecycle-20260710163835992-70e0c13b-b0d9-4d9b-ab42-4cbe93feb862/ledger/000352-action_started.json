@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 352,
+  "event": "action_started",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "a2f9b94e49bf4b90d6f1b75780a11b9c314e62d155d037cdc2d96ee3336fe26a",
+  "payload": {
+    "index": 174,
+    "task_id": "task-20260707-125917-You-are-Role-8-Observatory-p",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "5d8e51a85a8a3f91d4adddda59351c3c4b13eaa9836e6ad0791265fc4c275153",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "d6b3dc897c132d47bf8b1e9687b465bf8979329a5ab57abeecbbf126ab6c3a9d"
+}

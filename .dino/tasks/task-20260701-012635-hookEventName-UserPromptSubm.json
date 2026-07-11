@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260701-012635-hookEventName-UserPromptSubm",
+  "status": "completed",
+  "request": "{\"hookEventName\":\"UserPromptSubmit\",\"prompt\":\"Global DinoBrain hook verification from another workspace.\",\"cwd\":\"<machine-local-path>\"}",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "created_at": "2026-07-01T01:26:35.642Z",
+  "updated_at": "2026-07-01T01:41:47.696Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-01T01:41:47.696Z",
+  "trace_path": ".dino/traces/task-20260701-012635-hookEventName-UserPromptSubm.json"
+}

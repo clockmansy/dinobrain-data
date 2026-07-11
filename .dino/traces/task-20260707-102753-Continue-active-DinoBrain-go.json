@@ -1,0 +1,55 @@
+{
+  "task_id": "task-20260707-102753-Continue-active-DinoBrain-go",
+  "outcome": "completed",
+  "summary": "Implemented and pushed review queue and semantic job settlement gates for DinoBrain. Added current-vault and regression reporting that classifies every candidate/review item with decision class, reason, evidence paths, owner, and next action, writes `.dino/state/wiki-review-queue.json` and `.dino/state/semantic_jobs.json`, and requires these gates in verify:goal. Current vault result before close: 567 open review items, all 567 classified, 0 unclassified; 567 semantic jobs classified_hold/manual_review, 0 unclassified; status freshness had 7 fresh checks after refreshing indexes and audit.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "package.json",
+    "docs/VERIFICATION.md",
+    "src/review-settlement.ts",
+    "src/build-review-settlement.ts",
+    "src/status-freshness.ts",
+    "src/full-memory-audit.ts",
+    "scripts/verify-review-settlement.mjs",
+    "scripts/verify-status-freshness.mjs",
+    "scripts/verify-closed-loop-goal.mjs"
+  ],
+  "decisions": [
+    "Do not auto-approve review queue items; settlement classifies residual backlog and makes missing classification a gate.",
+    "Treat residual open review items as acceptable only when each has decision_class, reason_code, evidence_paths, owner, and next_action.",
+    "Represent semantic jobs as manual_review/classified_hold for behavior/legacy review items instead of pretending an API provider has completed semantic judgment.",
+    "Include review queue settlement and semantic job settlement in status freshness so stale settlement reports cannot appear healthy.",
+    "Use trace_only for this finish_task to avoid compounding more review backlog while implementing the backlog settlement rail."
+  ],
+  "next_steps": [
+    "Implement actual review queue burn-down actions: dedupe, merge, hold, reject, or approve a bounded safe subset based on settlement classes and evidence quality.",
+    "Add task session lifecycle and finish-gate integrity fields such as prompt_hash, source_event_id, required-read satisfaction, grounding classification, stale active task handling, and wrong-task finish rejection.",
+    "Implement real RAG evaluation beyond context/path recall: answer correctness, faithfulness, source attribution, latency, and memory-on/off comparison.",
+    "Expose review settlement, semantic jobs, full-memory audit, and freshness states in Observatory Korean UI with browser/DOM proof."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-102753-Continue-active-DinoBrain-go.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "inspect current candidate and review queue structure",
+    "build review queue settlement and semantic job settlement reports",
+    "wire review settlement gates into status freshness and verify:goal"
+  ],
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T10:35:33.962Z"
+}

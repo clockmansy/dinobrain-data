@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-162608-task-20260707-162608-Continue-DinoBr",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-162608-Continue-DinoBrain-OS-comple",
+  "request": "Continue DinoBrain OS completion goal by implementing the next concrete unfinished gate, prioritizing P1-11 Observatory API/UI/browser proof contract and keeping P1-10/P2-12 blockers visible.",
+  "generated_at": "2026-07-07T16:26:08.361Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-162608-Continue-DinoBrain-OS-comple.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

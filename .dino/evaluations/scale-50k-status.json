@@ -1,0 +1,386 @@
+{
+  "version": "scale_50k_v1",
+  "status": "healthy",
+  "qualifying": true,
+  "generated_at": "2026-07-11T07:18:38.716Z",
+  "corpus": {
+    "version": "deterministic_curated_50k_v1",
+    "record_count": 50000,
+    "session_count": 1000,
+    "root_counts": {
+      "20_Wiki": 17500,
+      "30_Sources/chunks": 7500,
+      "40_Projects": 7500,
+      "50_Instances/accepted": 7500,
+      "60_Operations": 5000,
+      "70_Error_Book": 5000
+    },
+    "age_bucket_counts": {
+      "hot_0_7d": 5000,
+      "warm_8_90d": 12500,
+      "cool_91_180d": 15000,
+      "cold_181_720d": 17500
+    },
+    "manifest_sha256": "bf485062e939b3125577dcdd67e323953922110c376ef23b7a4f185e8c437ac3",
+    "session_manifest_sha256": "27c86e53ed6d1859872835986d35783f37da2449fa93bda95bb1108fff4c2918"
+  },
+  "semantic_index": {
+    "provider": "huggingface_transformers_feature_extraction_v1",
+    "model": "Xenova/all-MiniLM-L6-v2",
+    "semantic_embedding_provider": true,
+    "encoding_strategy": "actual_minilm_cluster_prototype_random_projection_v1",
+    "source_dimensions": 384,
+    "stored_dimensions": 32,
+    "record_vectors": 50000,
+    "partition_count": 100,
+    "probe_count": 8,
+    "max_vectors_per_query": 4096
+  },
+  "reference_hardware": {
+    "platform": "win32",
+    "release": "10.0.19045",
+    "architecture": "x64",
+    "cpu_model": "AMD Ryzen 7 5800X 8-Core Processor             ",
+    "logical_cpu_count": 16,
+    "total_memory_bytes": 34282242048,
+    "node_version": "v24.18.0"
+  },
+  "hashes": {
+    "code_sha256": "250340d87b1ecb3dd80e2c13a2ce4dce418dca727d00e3c2d9811640a7bea46c",
+    "generator_sha256": "b8326e75d994d284dab4df4a03faf5c3add749936ab0557653772480524902e2",
+    "environment_sha256": "b53b6a8827a584480d0e0b93278e165feab1b4915cbb11f750d5d31d4e999e1d"
+  },
+  "thresholds": {
+    "max_cold_build_ms": 180000,
+    "max_context_pack_p95_ms": 700,
+    "max_wiki_search_p95_ms": 300,
+    "max_recent_task_p95_ms": 50,
+    "max_incremental_write_p95_ms": 50,
+    "max_graph_refresh_p95_ms": 1500,
+    "max_observatory_poll_p95_ms": 700,
+    "max_observatory_payload_bytes": 262144,
+    "max_dense_vectors_scanned": 4096,
+    "max_context_candidates": 1010,
+    "max_wiki_candidates": 100,
+    "max_process_rss_bytes": 4294967296
+  },
+  "measurements": {
+    "corpus_generation": {
+      "wall_ms": 49923.979,
+      "cpu_user_ms": 9078,
+      "cpu_system_ms": 38437,
+      "cpu_percent_of_one_core": 95.175,
+      "rss_start_bytes": 116383744,
+      "rss_end_bytes": 197484544,
+      "rss_peak_observed_bytes": 197484544,
+      "heap_peak_observed_bytes": 45865112
+    },
+    "cold_build": {
+      "wall_ms": 23854.816,
+      "cpu_user_ms": 22187,
+      "cpu_system_ms": 14407,
+      "cpu_percent_of_one_core": 153.403,
+      "rss_start_bytes": 197484544,
+      "rss_end_bytes": 1283801088,
+      "rss_peak_observed_bytes": 1283801088,
+      "heap_peak_observed_bytes": 1038589440
+    },
+    "semantic_index_build": {
+      "wall_ms": 816.6,
+      "cpu_user_ms": 1657,
+      "cpu_system_ms": 125,
+      "cpu_percent_of_one_core": 218.222,
+      "rss_start_bytes": 1283801088,
+      "rss_end_bytes": 1545076736,
+      "rss_peak_observed_bytes": 1545076736,
+      "heap_peak_observed_bytes": 1143915632
+    },
+    "context_pack": {
+      "samples": 25,
+      "min_ms": 315.459,
+      "p50_ms": 345.751,
+      "p95_ms": 410.995,
+      "p99_ms": 437.337,
+      "max_ms": 437.337,
+      "mean_ms": 348.721
+    },
+    "wiki_search": {
+      "samples": 25,
+      "min_ms": 101.621,
+      "p50_ms": 114.271,
+      "p95_ms": 141.175,
+      "p99_ms": 144.173,
+      "max_ms": 144.173,
+      "mean_ms": 118.834
+    },
+    "recent_task_lookup": {
+      "samples": 25,
+      "min_ms": 12.758,
+      "p50_ms": 14.64,
+      "p95_ms": 20.422,
+      "p99_ms": 24.856,
+      "max_ms": 24.856,
+      "mean_ms": 15.394
+    },
+    "incremental_operation_write": {
+      "samples": 25,
+      "min_ms": 28.386,
+      "p50_ms": 29.353,
+      "p95_ms": 32.458,
+      "p99_ms": 37.435,
+      "max_ms": 37.435,
+      "mean_ms": 30.144
+    },
+    "graph_refresh": {
+      "samples": 5,
+      "min_ms": 156.242,
+      "p50_ms": 165.212,
+      "p95_ms": 174.199,
+      "p99_ms": 174.199,
+      "max_ms": 174.199,
+      "mean_ms": 164.982
+    },
+    "observatory_poll": {
+      "samples": 25,
+      "min_ms": 3.39,
+      "p50_ms": 15.042,
+      "p95_ms": 63.085,
+      "p99_ms": 65.293,
+      "max_ms": 65.293,
+      "mean_ms": 18.951
+    },
+    "process_rss_peak_observed_bytes": 1545076736
+  },
+  "bounded_work": {
+    "candidate_source": "sqlite_shards_v2",
+    "retrieval_modes": [
+      "hybrid_contextual_v2"
+    ],
+    "max_context_candidate_count": 410,
+    "max_wiki_candidate_count": 100,
+    "max_dense_vectors_scanned": 4000,
+    "dense_partitions_probed": 8,
+    "dense_partition_count": 100,
+    "dense_search_bounded": true,
+    "sqlite_term_lookup_mode": "exact_prefix_index_range_v1",
+    "sqlite_term_query_plan": [
+      "SEARCH terms USING COVERING INDEX idx_terms_term (term>? AND term<?)"
+    ],
+    "sqlite_term_query_uses_index": true,
+    "sqlite_graph_node_query_plan": [
+      "SEARCH nodes USING INDEX idx_nodes_type_count_id (type=?)"
+    ],
+    "sqlite_graph_edge_query_plan": [
+      "SEARCH edges USING COVERING INDEX sqlite_autoindex_edges_1 (from_id=?)"
+    ],
+    "sqlite_graph_query_uses_index": true,
+    "dense_index_cache": {
+      "entries": 1,
+      "capacity": 1,
+      "hits": 50,
+      "misses": 1,
+      "parses": 1,
+      "evictions": 0,
+      "parsed_bytes": 19752908,
+      "retained_file_bytes": 19752908
+    }
+  },
+  "index_sizes": {
+    "wiki_sqlite_bytes": 561598464,
+    "operations_sqlite_bytes": 3452928,
+    "dense_index_bytes": 19752908,
+    "wiki_records": 50000,
+    "wiki_terms": 265782,
+    "graph_nodes": 100122,
+    "graph_edges": 415000
+  },
+  "observatory": {
+    "graph_records": 50000,
+    "graph_nodes": 100179,
+    "graph_edges": 415072,
+    "graph_shown_nodes": 420,
+    "graph_shown_edges": 800,
+    "graph_truncated": true,
+    "snapshot_payload_max_bytes": 240358,
+    "cache_hits": 24,
+    "cache_loads": 26,
+    "cache_coalesced": 0,
+    "sqlite_opens": 18,
+    "directory_entries_seen": 27144,
+    "status_generation_verifications": 1
+  },
+  "assertions": [
+    {
+      "id": "corpus_record_count",
+      "ok": true,
+      "actual": 50000,
+      "expected": 50000
+    },
+    {
+      "id": "session_growth_count",
+      "ok": true,
+      "actual": 1000,
+      "expected": ">=1000"
+    },
+    {
+      "id": "cold_build_p95_budget",
+      "ok": true,
+      "actual": 23854.816,
+      "expected": "<=180000"
+    },
+    {
+      "id": "context_pack_p95_budget",
+      "ok": true,
+      "actual": 410.995,
+      "expected": "<=700"
+    },
+    {
+      "id": "wiki_search_p95_budget",
+      "ok": true,
+      "actual": 141.175,
+      "expected": "<=300"
+    },
+    {
+      "id": "recent_task_p95_budget",
+      "ok": true,
+      "actual": 20.422,
+      "expected": "<=50"
+    },
+    {
+      "id": "incremental_write_p95_budget",
+      "ok": true,
+      "actual": 32.458,
+      "expected": "<=50"
+    },
+    {
+      "id": "graph_refresh_p95_budget",
+      "ok": true,
+      "actual": 174.199,
+      "expected": "<=1500"
+    },
+    {
+      "id": "observatory_poll_p95_budget",
+      "ok": true,
+      "actual": 63.085,
+      "expected": "<=700"
+    },
+    {
+      "id": "observatory_payload_budget",
+      "ok": true,
+      "actual": 240358,
+      "expected": "<=262144"
+    },
+    {
+      "id": "dense_vector_scan_budget",
+      "ok": true,
+      "actual": 4000,
+      "expected": "<=4096"
+    },
+    {
+      "id": "context_candidate_budget",
+      "ok": true,
+      "actual": 410,
+      "expected": "<=1010"
+    },
+    {
+      "id": "wiki_candidate_budget",
+      "ok": true,
+      "actual": 100,
+      "expected": "<=100"
+    },
+    {
+      "id": "process_rss_budget",
+      "ok": true,
+      "actual": 1545076736,
+      "expected": "<=4294967296"
+    },
+    {
+      "id": "dense_search_partitioned",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "dense_search_bounded",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "sqlite_term_query_uses_index",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "sqlite_graph_query_uses_index",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "candidate_source_sqlite",
+      "ok": true,
+      "actual": "sqlite_shards_v2",
+      "expected": "sqlite_shards_v2"
+    },
+    {
+      "id": "hybrid_semantic_mode",
+      "ok": true,
+      "actual": "hybrid_contextual_v2",
+      "expected": "hybrid_contextual_v2"
+    },
+    {
+      "id": "dense_index_single_parse",
+      "ok": true,
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "id": "dense_index_cache_capacity",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "graph_record_count",
+      "ok": true,
+      "actual": 50000,
+      "expected": 50000
+    },
+    {
+      "id": "graph_window_bounded",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "graph_window_truncated",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "observatory_cache_reused",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "observatory_generation_verification_bounded",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "semantic_provider_qualifying",
+      "ok": true,
+      "actual": true,
+      "expected": true
+    }
+  ],
+  "warnings": [],
+  "integrity": {
+    "report_payload_sha256": "d692e4de98f0051dc18ebd40c520a1e1caa5773585062fe04245faa93a052c67"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "gate_id": "gate-20260707-154739-task-20260707-154739-You-are-R7.-Rev",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-154739-You-are-R7.-Review-only-this",
+  "request": "You are R7. Review only this evidence summary from local files: OS_REMAINING_GAPS_CONSENSUS_PLAN includes P2-12 install/new-PC equivalence and implementation order; OS_COMPLETION_CONDITIONS includes lifecycle cleanup, task finish-gate integrity, memory lifecycle/compounding hygiene, data safety, and fresh-PC install conditions; SYNC_POLICY defines git_sync dry-run classifier and auto_sync bounded writer; VERIFICATION defines task:lifecycle, task:lifecycle:settle, review:settle, hooks:data:verify, verify:codex-loop. Decide if this is adequate as a completion plan for node lifecycle cleanup, task finish-gate integrity, merge/hold/demote/delete/provenance review, policy-gated GitHub data push, and recovery safety. Return exactly: reviewer_id=R7; verdict=AGREE or REVISE_REQUIRED; blocking_objections=[...]; required_doc_changes=[...]; evidence_files=[...].",
+  "generated_at": "2026-07-07T15:47:39.450Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-154739-You-are-R7.-Review-only-this.json",
+  "context_item_count": 7,
+  "status": "block",
+  "fail_closed": true,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "destructive_action_risk",
+      "level": "block",
+      "reason": "The request may delete or reset durable data.",
+      "safe_action": "Require explicit confirmation and a backup/sync risk check before destructive execution."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

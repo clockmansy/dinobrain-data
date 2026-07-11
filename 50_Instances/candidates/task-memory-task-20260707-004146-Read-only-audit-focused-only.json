@@ -1,0 +1,66 @@
+{
+  "memory_id": "task-memory-task-20260707-004146-Read-only-audit-focused-only",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: Read-only audit focused only on performance, scaling, SQLite sharding, index invalidation, and n",
+  "summary": "Completed read-only performance/scaling audit of DinoBrain retrieval, wiki index, SQLite shards, invalidation paths, verifier scripts, and live data scale. No code files edited. Findings: no P0; P1 risks are that the live wiki SQLite fast path is missing/non-durable after invalidation, cold/noisy accepted memory is indexed as normal hot retrieval input, and candidate generation still uses substring/wildcard scans plus lexical dense fallback rather than bounded semantic top-K retrieval. Current final live snapshot had no wiki-index.json, no sqlite manifest, no wiki.sqlite, no dense-vectors.json; operations.sqlite and operations-index were present. Accepted records were dominated by behavior rules.",
+  "claim": "Task outcome for dinobrain: Completed read-only performance/scaling audit of DinoBrain retrieval, wiki index, SQLite shards, invalidation paths, verifier scripts, and live data scale. No code files edited. Findings: no P0; P1 risks are that the live wiki SQLite fast path is missing/non-durable after invalidation, cold/noisy accepted memory is indexed as normal hot retrieval input, and candidate generation still uses substring/wildcard scans plus lexical dense fallback rather than bounded semantic top-K retrieval. Current final live snapshot had no wiki-index.json, no sqlite manifest, no wiki.sqlite, no dense-vectors.json",
+  "request": "Read-only audit focused only on performance, scaling, SQLite sharding, index invalidation, and noise control as DinoBrain data grows. Inspect wiki-index, sqlite-shards, retrieval, context, hybrid-retrieval, verify scripts, and current data scale. Return P0/P1 findings with evidence and fixes; do not edit files.",
+  "outcome": "completed",
+  "decisions": [
+    "Treat current scalability as not complete while live wiki.sqlite, sqlite manifest, and dense-vectors.json are absent.",
+    "Recommend atomic or incremental wiki SQLite refresh instead of deleting the fast path and relying on manual rebuilds.",
+    "Recommend retrieval budgets and temperature/type-aware filtering so accepted behavior/task memories do not swamp Wiki/Source/Project knowledge.",
+    "Recommend FTS/prefix/vector top-K candidate generation and live performance canaries before claiming graph/LLM Wiki scale readiness."
+  ],
+  "next_steps": [
+    "Implement durable SQLite wiki refresh/upsert and manifest freshness checks.",
+    "Add hot/warm/cold and memory-type retrieval budgets, with cold accepted memory requiring opt-in or second-pass retrieval.",
+    "Replace leading-wildcard and vocabulary-wide scans with FTS/prefix/trigram or bounded vector retrieval.",
+    "Add live-data and larger synthetic verifier thresholds for candidate counts, P95 latency, shard freshness, and fallback mode."
+  ],
+  "used_memory_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "50_Instances/accepted/task-memory-task-20260706-160652-Completion-Reviewer-03-retri.json",
+    "50_Instances/accepted/task-memory-task-20260706-161251-Completion-Reviewer-10-data.json",
+    "50_Instances/accepted/behavior-rule-b4e4bddd7a0c463f.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-004146-DinoBrain-performance-scalin.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-004146-Read-only-audit-focused-only.json",
+    "snippet": "Completed read-only performance/scaling audit of DinoBrain retrieval, wiki index, SQLite shards, invalidation paths, verifier scripts, and live data scale. No code files edited. Findings: no P0; P1 risks are that the live wiki SQLite fast path is missing/non-durable after invalidation, cold/noisy accepted memory is indexed as normal hot retrieval input, and candidate generation still uses substring/wildcard scans plus lexical dense fallback rather than bounded semantic top-K retrieval. Current final live snapshot had no wiki-index.json, no sqlite manifest, no wiki.sqlite, no dense-vectors.json; operations.sqlite and operations-index were present. Accepted records were dominated by behavior rules."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:47:04.738Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-004146-Read-only-audit-focused-only.json",
+    "task_id": "task-20260707-004146-Read-only-audit-focused-only",
+    "task_path": ".dino/tasks/task-20260707-004146-Read-only-audit-focused-only.json"
+  },
+  "accepted_at": "2026-07-07T00:47:04.738Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-004146-Read-only-audit-focused-only.json",
+  "candidate_id": "task-memory-task-20260707-004146-Read-only-audit-focused-only",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260707-004146-Read-only-audit-focused-only.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

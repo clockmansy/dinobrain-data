@@ -1,0 +1,43 @@
+{
+  "task_id": "task-20260707-005743-Read-only-audit-focused-only",
+  "outcome": "completed",
+  "summary": "Completed read-only audit focused on Claude Code UserPromptSubmit hook registration/runtime parity. Found that the repo registers Claude settings and MCP, but Claude runtime proof is registration-only; the shared hook runtime remains Codex-labeled and no verifier executes a Claude-shaped hook input through the Claude registration path.",
+  "changed_files": [],
+  "decisions": [
+    "No source files were edited per read-only audit scope.",
+    "Treat current Claude UserPromptSubmit support as installed-registration parity, not runtime-proof parity.",
+    "The most direct failing verifier should execute the Claude settings hook command with official Claude UserPromptSubmit JSON and assert Claude-labeled events/reports, which currently fail because the runtime hardcodes codex_prompt_submitted/codex_preflight_completed and codex_hook."
+  ],
+  "next_steps": [
+    "Add a Claude-specific hook verifier before claiming closed-loop proof for any Claude Code session.",
+    "Refactor the shared hook runtime to derive host/source labels from input or environment and emit claude_code_hook / claude_preflight_* evidence when invoked by Claude.",
+    "Extend verify:os to include Claude hook command existence/execution and hook-disable policy checks when Claude prompt hook is required."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-291581dc23559171.json",
+    "50_Instances/accepted/behavior-rule-85890922977180d3.json",
+    "50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json",
+    "50_Instances/accepted/behavior-rule-497915ff5461114f.json",
+    "50_Instances/accepted/behavior-rule-00816a7debe955f7.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/behavior-rule-c5e8716a84f263be.json",
+    "50_Instances/accepted/behavior-rule-6df56a93118a083f.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-005745-Claude-Code-UserPromptSubmit.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "Claude Code hooks UserPromptSubmit JSON input schema official documentation",
+    "docs Anthropic Claude Code hooks UserPromptSubmit matcher hooks command timeout"
+  ],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-07T01:00:43.570Z"
+}

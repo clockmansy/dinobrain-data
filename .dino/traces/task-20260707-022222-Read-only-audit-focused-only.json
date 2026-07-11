@@ -1,0 +1,37 @@
+{
+  "task_id": "task-20260707-022222-Read-only-audit-focused-only",
+  "outcome": "completed",
+  "summary": "Completed read-only audit of MCP runtime freshness/version parity. Package, package-lock, src/dist OS contract, and live MCP responses all report 2.2.1, and installed Codex config points to the local dist/index.js with portable Node v24.18.0 and data root <machine-local-path> Concrete blockers found: many long-running DinoBrain node MCP processes remain alive from before the current dist/index.js build timestamp, making runtime freshness nondeterministic; live task/event observability has mixed 2.2.0 and 2.2.1 records today; latest codex_preflight_completed report was a diagnostic probe rather than proof of a real user-prompt hook; and the worktree is dirty with package.json/install.ps1 modifications that should be accounted for before claiming a clean release/runtime parity state.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Kept audit read-only and did not edit repo files.",
+    "Treated diagnostic hook reports as weaker evidence than a real prompt-time preflight.",
+    "Classified stale pre-build MCP node processes as the main runtime freshness blocker."
+  ],
+  "next_steps": [
+    "Stop or reload stale DinoBrain MCP node processes and restart/new Codex session so all live MCP processes start after the latest dist build.",
+    "Run a fresh real-prompt live preflight verification and require codex_prompt_submitted/codex_preflight_completed evidence before manual MCP calls.",
+    "Resolve or intentionally keep the dirty package.json/install.ps1 changes before release/runtime parity signoff."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-022227-MCP-runtime-freshness-versio.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 4,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T02:27:42.545Z"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-155102-Your-previous-completion-was",
+  "status": "completed",
+  "request": "Your previous completion was empty/null, which cannot be counted. Please send a non-empty final review now. Use exactly:\nreviewer_id=R10B\nverdict=AGREE or REVISE_REQUIRED\nblocking_objections=[...]\nrequired_doc_changes=[...]\nevidence_files=[docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md,docs/OS_COMPLETION_CONDITIONS.md,docs/INSTALL.md,docs/VERIFICATION.md]\n\nQuestion: Are the install/release/new-PC recovery completion conditions adequate? If yes, AGREE. If no, list blockers.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:51:02.719Z",
+  "updated_at": "2026-07-07T15:51:19.216Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T15:51:19.216Z",
+  "trace_path": ".dino/traces/task-20260707-155102-Your-previous-completion-was.json"
+}

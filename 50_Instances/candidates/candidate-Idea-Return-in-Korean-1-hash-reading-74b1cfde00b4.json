@@ -1,0 +1,39 @@
+{
+  "candidate_id": "candidate-Idea-Return-in-Korean-1-hash-reading-74b1cfde00b4",
+  "status": "held",
+  "claim": "Idea: Return in Korean: (1) hash/reading confirmation, (2) 5-10 durable knowledge points you learned and can use later, (3) P0/P1 risks or ambiguities, (4) one-line verdict.",
+  "category": "idea",
+  "temperature": "cold",
+  "evidence": {
+    "snippet": "Return in Korean: (1) hash/reading confirmation, (2) 5-10 durable knowledge points you learned and can use later, (3) P0/P1 risks or ambiguities, (4) one-line verdict.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-095446-06069665ebdd.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-095446-06069665ebdd",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "low",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "idea",
+    "temperature:cold",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-095446-06069665ebdd",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T09:54:46.510Z",
+  "updated_at": "2026-07-07T12:25:36.779Z",
+  "quarantine": true,
+  "hold_reason": "low_signal_or_ephemeral_cluster_should_not_enter_hot_memory",
+  "worklist_cluster_id": "review-cluster-52bcb49492175dd9",
+  "review_notes": "Held by review worklist action; candidate is low-signal or ephemeral and must not enter hot memory without manual confirmation.",
+  "reviewed_by": "review-worklist-actions",
+  "reviewed_at": "2026-07-07T12:25:36.779Z"
+}

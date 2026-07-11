@@ -1,0 +1,36 @@
+{
+  "gate_id": "gate-20260707-100542-task-20260707-100541-dinobrain",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-100541-dinobrain",
+  "request": "내가 보내준 문서랑 dinobrain을 비교해서 우리가 부족한점이 뭔지 파악해",
+  "generated_at": "2026-07-07T10:05:42.041Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-100541-dinobrain.json",
+  "context_item_count": 0,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "evidence_sparse",
+      "level": "warn",
+      "reason": "The OS returned no relevant memory for this request.",
+      "safe_action": "Proceed only with current-turn evidence and search narrowly before relying on memory."
+    },
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

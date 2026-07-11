@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260706-230636-task-20260706-230635-Register-all-Co",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260706-230635-Register-all-Codex-conversat",
+  "request": "Register all Codex conversations on this computer into DinoBrain Wiki in a safe, useful form without storing raw full transcripts or secrets.",
+  "generated_at": "2026-07-06T23:06:36.270Z",
+  "context_pack_path": ".dino/context-packs/pack-20260706-230636-Register-all-Codex-conversat.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "sensitive",
+  "reported_sensitivity": "sensitive",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

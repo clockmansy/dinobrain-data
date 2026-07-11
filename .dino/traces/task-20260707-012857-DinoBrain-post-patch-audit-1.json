@@ -1,0 +1,36 @@
+{
+  "task_id": "task-20260707-012857-DinoBrain-post-patch-audit-1",
+  "outcome": "completed",
+  "summary": "Read-only post-patch RAG audit of contextPackBudget/root intent routing. Found that applyContextPackIntentBudget underfills context packs and suppresses cross-root evidence; eval:context passes but current golden set does not measure cross-root recall or pack fill rate.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Treat current audit as read-only; no code edits were made.",
+    "Recommend changing contextPackBudget from a hard root filter to a root-aware interleaving/diversity budget with minimum secondary fill and pack fill-rate checks.",
+    "Recommend expanding eval golden set with cross-root cases and assertions for returned count and required evidence mix."
+  ],
+  "next_steps": [
+    "Patch applyContextPackIntentBudget so it fills the requested limit and guarantees reserved secondary evidence when available.",
+    "Add eval cases where answer quality requires Wiki + Sources + accepted Instances or Projects + Sources together.",
+    "Add metrics for fill_rate, root_mix, and budget_dropped_high_ranked_paths to eval output."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "30_Sources/chunks/ragas-evaluation.json",
+    "30_Sources/chunks/openai-retrieval-guide.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-012857-DinoBrain-post-patch-audit-1.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T01:32:12.433Z"
+}

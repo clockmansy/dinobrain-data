@@ -1,0 +1,19 @@
+{
+  "version": "node_lifecycle_transition_artifact_v1",
+  "transition_id": "node-transition-1783718425451-9539438d-477a-40c3-af2a-e3d019748113",
+  "transaction_id": "node-lifecycle-1783718425626-fe04ddcd-00fa-43c7-be8f-4c7e0f92dc75",
+  "target_path": "80_Review_Queue/lifecycle-migration/rag-public-os-learning-packet.json",
+  "from_state": null,
+  "to_state": "held",
+  "reason_code": "accepted_review_blocked",
+  "reason": "Existing accepted memory was removed from hot retrieval: accepted_review_lineage_missing, durable_source_path_missing, durable_external_provenance_missing, unsupported_pressure",
+  "actor": "codex-mem01-migration-reapply",
+  "evidence_paths": [
+    "50_Instances/accepted/rag-public-os-learning-packet.json"
+  ],
+  "predecessor_paths": [],
+  "successor_paths": [],
+  "at": "2026-07-10T21:20:25.107Z",
+  "before_sha256": null,
+  "after_sha256": "167ad40d408cd7c66302e56c36f1063446cfa348ba2b3cde56f6e9262aa93e68"
+}

@@ -1,0 +1,254 @@
+{
+  "pack_id": "pack-20260706-231712-OS_COMPLETION_CONDITIONS.md-",
+  "pack_type": "standard",
+  "os_version": "2.2.0",
+  "question": "[OS_COMPLETION_CONDITIONS.md] 에 맞게 개선 사항 정리 후 개선. Focus this pass on turning completion-condition gaps into concrete verification artifacts and code improvements without claiming full OS completion.",
+  "created_at": "2026-07-06T23:17:12.602Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 105,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 201,
+  "index_candidate_count": 105,
+  "index_total_candidate_count": 105,
+  "index_matching_terms": [
+    "-skipcodexrestartflow",
+    "artifacts",
+    "bypass",
+    "code",
+    "codex",
+    "codex_preflight_completed",
+    "codex_prompt_submitted",
+    "codex-conversation-registry",
+    "codex-remote-attachments",
+    "codex-userprompt-hook-merge",
+    "completion",
+    "completion-conditions",
+    "concrete",
+    "full",
+    "full-text",
+    "full-vault",
+    "full-viewpo",
+    "full-viewport",
+    "full-width",
+    "fully",
+    "into",
+    "local-codex-sessions",
+    "os_completion_conditions",
+    "pass",
+    "passed",
+    "passing",
+    "qa-passed",
+    "raw_full_transcript_stored",
+    "stability-focused",
+    "task-20260701-004836-codex-os-start_task-get_cont",
+    "task-20260703-041151-explain-whether-codex-hook-t",
+    "task-20260703-071734-fix-codex-userpromptsubmit-i",
+    "task-20260705-022738-qa-code-review-dinobrain-v2",
+    "task-20260706-160650-completion-reviewer-05-prove",
+    "task-20260706-160652-completion-reviewer-0",
+    "task-20260706-161246-completion-reviewer-09-read",
+    "task-20260706-161246-completion-reviewer-09-read-",
+    "task-20260706-161251-completion-reviewer-10-data-",
+    "task-20260706-230635-register-all-codex-conversat",
+    "task-memory-task-20260706-160650-completion-reviewer-05-prove",
+    "task-memory-task-20260706-160652-completion-reviewer-03-retri",
+    "task-memory-task-20260706-161246-completion-reviewer-09-read",
+    "task-memory-task-20260706-161251-completion-reviewer-10-data",
+    "task-memory-task-20260706-230635-register-all-codex-conversat",
+    "verification",
+    "without"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 203,
+  "items": [
+    {
+      "path": "30_Sources/README.md",
+      "kind": "curated_record",
+      "title": "30_Sources",
+      "summary": "Source records and verification notes.",
+      "tags": [],
+      "score": 7.73,
+      "reasons": [
+        "summary_matched:verification",
+        "chunk_matched:verification,full",
+        "bm25:verification",
+        "dense_lexical:1.10",
+        "rank_fusion:rrf",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260706-231712-OS_COMPLETION_CONDITIONS.md-.json",
+      "kind": "recent_task",
+      "title": "Task: [OS_COMPLETION_CONDITIONS.md] 에 맞게 개선 사항 정리 후 개선. Focus this pass on turning completion-conditio",
+      "summary": "status=started | project=DinoBrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 4.918,
+      "reasons": [
+        "path_matched:os_completion_conditions,completion",
+        "title_matched:os_completion_conditions,focus,pass,turning",
+        "chunk_matched:os_completion_conditions,focus,pass,turning",
+        "bm25:os_completion_conditions,focus,pass,turning,completion-condition",
+        "dense_lexical:9.45",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation guards, made node lifecycle apply real archive/hold/merge/provenance repair operations, handled os_begin_task context-pack failures as fail-closed task/gate records, fixed Observatory JSON graph fallback for v2 indexes, bumped app/installer version to 2.0.1, added regression coverage, pushed main and tag v2.0.1. Local release ZIP was built; direct GitHub Release upload could not run because no GITHUB_TOKEN/GH_TOKEN is available in this shell.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 3.215,
+      "reasons": [
+        "title_matched:verification,code,full",
+        "summary_matched:verification,code,full",
+        "chunk_matched:verification,code,full",
+        "bm25:verification,code,full",
+        "dense_lexical:0.96",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-295abf1038bd399d.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.1.0 closed-loop automation: hard pre-response hook block metadata, hook-side auto sync after preflight completion, finish_task auto-growth records, policy-based auto_sync commit/push tool, search_memory alias, installer env wiring for auto growth/sync, current Codex config/hook env update, and flow audit verification showing all 8 user-flow steps verified.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.1.0 closed-loop automation: hard pre-response hook block metadata, hook-side auto sync after preflight completion, finish_task auto-growth records, policy-based auto_sync commit/push tool, search_memory alias, installer env wiring for auto growth/sync, current Codex config/hook env update, and flow audit verification showing all 8",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 3.113,
+      "reasons": [
+        "title_matched:verification,code,completion",
+        "summary_matched:verification,code,completion",
+        "chunk_matched:verification,code,completion",
+        "bm25:verification,completion",
+        "dense_lexical:1.01",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-4576c59074e79294.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Latency completion should require the prompt path to avoid full vault scans and use SQLite wiki plus operations shards with measured query and rebuild budgets as data grows.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Latency completion should require the prompt path to avoid full vault scans and use SQLite wiki plus operations shards with measured query and rebuild budgets as data grows. | Evidence: Latency completion should require the prompt path to avoid full vault scans and use SQLite wiki plus operations shards with measured query and rebuild budgets as data grows.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 3.101,
+      "reasons": [
+        "title_matched:full,completion",
+        "summary_matched:full,completion",
+        "chunk_matched:full,completion",
+        "bm25:full,completion",
+        "dense_lexical:1.09",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-c1ad7c4e0066b985.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than executing merge/hold/delete/provenance repair; behavior eval exits ok when golden file is missing; Observatory JSON graph fallback rejects v2 wiki index when SQLite is unavailable; create_source_chunk stores raw chunk_text without redaction/size bounds; os_begin_task can leave started tasks if context-pack construction throws. Type check passed after adding portable Node directory to PATH; eval:behavior currently returns ok/skipped because behavior-golden.json is missing.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than e",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 3.096,
+      "reasons": [
+        "title_matched:focus,pass,code,without",
+        "summary_matched:focus,code",
+        "chunk_matched:focus,code",
+        "bm25:code,without",
+        "dense_lexical:0.93",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-5865861ab7070786.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: Use docs/OS_COMPLETION_CONDITIONS.md as the governing acceptance document before implementing the next DinoBrain OS changes.",
+      "summary": "Behavior rule: Use docs/OS_COMPLETION_CONDITIONS.md as the governing acceptance document before implementing the next DinoBrain OS changes. | Evidence: Use docs/OS_COMPLETION_CONDITIONS.md as the governing acceptance document before implementing the next DinoBrain OS changes.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 2.908,
+      "reasons": [
+        "title_matched:os_completion_conditions,completion",
+        "summary_matched:os_completion_conditions,completion",
+        "chunk_matched:os_completion_conditions,completion",
+        "bm25:os_completion_conditions",
+        "dense_lexical:1.00",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-f5c107fde1877d8c.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Treat installed DinoBrain as configured and probe-verified, not proven fully live for the current active Codex turn until a fresh prompt after hook approval/reload produces codex_prompt_submitted and codex_preflight_completed without manual probe.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Treat installed DinoBrain as configured and probe-verified, not proven fully live for the current active Codex turn until a fresh prompt after hook approval/reload produces codex_prompt_submitted and codex_preflight_completed without manual probe. | Evidence: Treat installed DinoBrain as configured and probe-verified, not proven fully live for the current ac",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:low"
+      ],
+      "score": 2.557,
+      "reasons": [
+        "title_matched:code,without,full",
+        "summary_matched:code,without,full",
+        "chunk_matched:code,without,full",
+        "bm25:without",
+        "dense_lexical:0.94",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    }
+  ]
+}

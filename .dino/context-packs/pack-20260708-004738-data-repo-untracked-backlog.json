@@ -1,0 +1,211 @@
+{
+  "pack_id": "pack-20260708-004738-data-repo-untracked-backlog",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "data repo에는 기존 오래된 untracked backlog 해결",
+  "created_at": "2026-07-08T00:47:38.113Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense vector cosine retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 79,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 69,
+  "index_candidate_count": 79,
+  "index_total_candidate_count": 33,
+  "index_matching_terms": [
+    "backlog",
+    "data",
+    "data_repo",
+    "data_root",
+    "data-specific",
+    "dinobrain_public_data_safety",
+    "dinobrain-data",
+    "dinobrain-public-data-safety",
+    "local-dinobrain-data",
+    "metadata",
+    "metadata_only_pattern_promotion",
+    "metadata_only_registry",
+    "metadata-only",
+    "public-data",
+    "public-data-safety",
+    "public-data-safety-report",
+    "untracked"
+  ],
+  "included_item_count": 7,
+  "excluded_record_count": 72,
+  "items": [
+    {
+      "path": "30_Sources/chunks/openai-retrieval-guide.json",
+      "kind": "curated_record",
+      "title": "OpenAI Retrieval guide",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "retrieval",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.721,
+      "reasons": [
+        "chunk_matched:data",
+        "bm25:data",
+        "dense_vector_cosine:6.44",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/elastic-rag.json",
+      "kind": "curated_record",
+      "title": "Elastic RAG explanation",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.718,
+      "reasons": [
+        "chunk_matched:data",
+        "bm25:data",
+        "dense_vector_cosine:6.27",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/haystack-rag-from-scratch.json",
+      "kind": "curated_record",
+      "title": "Haystack RAG from scratch",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.702,
+      "reasons": [
+        "chunk_matched:data",
+        "bm25:data",
+        "dense_vector_cosine:6.19",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/llamaindex-rag.json",
+      "kind": "curated_record",
+      "title": "LlamaIndex RAG",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "framework-rag",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.639,
+      "reasons": [
+        "chunk_matched:data",
+        "bm25:data",
+        "dense_vector_cosine:5.99",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "30_Sources/chunks/azure-search-rag-overview.json",
+      "kind": "curated_record",
+      "title": "Microsoft Azure AI Search RAG overview",
+      "summary": "",
+      "tags": [
+        "rag",
+        "source-anchor",
+        "rag-overview",
+        "verified-summary",
+        "directly-opened"
+      ],
+      "score": 7.286,
+      "reasons": [
+        "chunk_matched:data",
+        "bm25:data",
+        "dense_vector_cosine:4.51",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/rag-public-os-learning-packet.json",
+      "kind": "curated_record",
+      "title": "Cross-OS RAG learning packet is DinoBrain's retrieval-quality backlog",
+      "summary": "DinoBrain should retain the user-provided public OS RAG packet as a durable source-anchor and implementation backlog for LLM Wiki retrieval quality, while keeping URL anchors separate from verified source claims. | Rule: When improving DinoBrain RAG, start from the registered anchor catalog, fetch and chunk bounded source excerpts, link claims to source chunks, then evaluate retrieval with canaries and memory-on behavior tests before treating the knowledge as verified. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "rag",
+        "llm-wiki",
+        "source-lineage",
+        "retrieval-quality",
+        "contextual-retrieval",
+        "hybrid-search",
+        "reranking",
+        "evaluation",
+        "cross-os-learning"
+      ],
+      "score": 7.278,
+      "reasons": [
+        "title_matched:backlog",
+        "summary_matched:backlog",
+        "chunk_matched:backlog",
+        "bm25:backlog",
+        "dense_vector_cosine:6.63",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+      "kind": "curated_record",
+      "title": "Do not sync raw Codex conversation transcripts",
+      "summary": "Codex conversations are source material for reviewed memory, but raw full transcripts and message content must stay local-only and out of public data sync. | Rule: Register sessions metadata-only, extract paraphrased reviewed memories, and never store raw full transcripts or message content in public Wiki, accepted memory, traces, or reports. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "safety",
+        "privacy",
+        "raw-transcripts",
+        "public-data"
+      ],
+      "score": 7.273,
+      "reasons": [
+        "summary_matched:data",
+        "tags_matched:data",
+        "chunk_matched:data",
+        "bm25:data",
+        "dense_vector_cosine:7.40",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-de217b75d6e7348e",
+  "behavior_rule_id": "behavior-rule-de217b75d6e7348e",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Future implementation should start with P0-02 status freshness as the first narrow slice, while pulling forward minimal P1-16 task/finish binding and P0-01 frozen validation manifest support for validation stability.",
+  "behavior_rule": "In similar future work, apply this decision: Future implementation should start with P0-02 status freshness as the first narrow slice, while pulling forward minimal P1-16 task/finish binding and P0-01 frozen validation manifest support for validation stability.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-095348-Files-mentioned-by-the-user.json",
+    "snippet": "Future implementation should start with P0-02 status freshness as the first narrow slice, while pulling forward minimal P1-16 task/finish binding and P0-01 frozen validation manifest support for validation stability."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-095348-Files-mentioned-by-the-user.json",
+      "task_id": "task-20260707-095348-Files-mentioned-by-the-user-",
+      "signal_kind": "decision",
+      "snippet": "Future implementation should start with P0-02 status freshness as the first narrow slice, while pulling forward minimal P1-16 task/finish binding and P0-01 frozen validation manifest support for validation stability."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:25:06.936Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:25:06.936Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "task-20260706-160648-Completion-Reviewer-02-read-",
+  "status": "blocked",
+  "request": "Completion Reviewer 02 read-only inspection of DinoBrain memory/data at <machine-local-path> and app docs/code at <machine-local-path> synthesize user intent and concrete OS completion conditions, focusing on pre-response hooks, fail-closed behavior, start_task/get_context_pack/finish_task, and closed-loop operation.",
+  "project": "DinoBrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-06T16:06:48.051Z",
+  "updated_at": "2026-07-07T16:47:05.313Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T16:47:05.313Z",
+  "trace_path": ".dino/traces/task-20260706-160648-Completion-Reviewer-02-read-.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v1",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-07T16:47:05.313Z",
+    "trace_path": ".dino/traces/task-20260706-160648-Completion-Reviewer-02-read-.json"
+  }
+}

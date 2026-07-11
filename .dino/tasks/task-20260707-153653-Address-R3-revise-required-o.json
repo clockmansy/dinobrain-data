@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-153653-Address-R3-revise-required-o",
+  "status": "partial",
+  "request": "Address R3 revise-required objection for DinoBrain unfinished OS completion plan: include safe-readable Codex native rules surfaces such as ~/.codex/rules/*.rules in native instruction authority scan, update completion document and verifier, rerun targeted checks, then ask R3 to re-review until AGREE.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:36:53.350Z",
+  "updated_at": "2026-07-07T15:58:03.943Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T15:58:03.943Z",
+  "trace_path": ".dino/traces/task-20260707-153653-Address-R3-revise-required-o.json"
+}

@@ -1,0 +1,87 @@
+{
+  "audit_id": "dinobrain-rag-critical-consensus-20260707",
+  "type": "critical_consensus_audit",
+  "status": "completed",
+  "generated_at": "2026-07-07T00:55:00Z",
+  "scope": "DinoBrain desired OS audit using verified RAG knowledge, local code, local data, live verification, and 20 subagent reviews.",
+  "agent_count": 20,
+  "p0": [
+    {
+      "id": "P0-1",
+      "title": "Hook wrapper must fail closed at the outermost layer",
+      "acceptance": "Wrapper failures block and live fresh Codex/Claude prompts produce preflight events before useful work."
+    },
+    {
+      "id": "P0-2",
+      "title": "Provenance/source mapping must resolve real source lineage",
+      "acceptance": "Accepted claims resolve to source chunks/provenance/source URI/verification status or are labeled unsupported/internal."
+    },
+    {
+      "id": "P0-3",
+      "title": "Review/read-only mode must be genuinely read-only",
+      "acceptance": "Read-only audit can finish without accepted-memory promotion, compounding, or data push."
+    },
+    {
+      "id": "P0-4",
+      "title": "Installer/update must never reset protected local data",
+      "acceptance": "Existing dirty/ahead data repo causes safe failure, not reset."
+    }
+  ],
+  "p1": [
+    "Retrieval quality is not yet real hybrid RAG.",
+    "Context eval shows high noise.",
+    "Behavior eval does not yet evaluate behavior.",
+    "Auto-compounding needs review backpressure.",
+    "SQLite fast path and cold storage are not durable enough.",
+    "Public auto-push policy is too permissive.",
+    "Observatory must prove the active read loop, not just render a graph.",
+    "Release/version parity needs hard gates."
+  ],
+  "ordered_plan": [
+    "Safety first: wrapper fail-closed, review/read-only mode, protected installer update, public auto-push defaults.",
+    "Truth layer: lineage resolver, graph-health real-vault check, source/chunk/claim edges.",
+    "Retrieval layer: durable SQLite refresh, FTS/prefix candidate generation, real dense embeddings, query intent budgets.",
+    "Evaluation layer: real context canaries and paired behavior eval.",
+    "Growth layer: auto-compounding to candidate/hold first, lifecycle backpressure, hot/warm/cold memory temperature.",
+    "Observatory layer: task-correlated read trace and state phases.",
+    "Recovery layer: release parity, install/restore proof, private/encrypted full backup path."
+  ],
+  "consensus_fixes": [
+    "real dense hybrid retrieval and rerank evaluation",
+    "fail-closed live pre-response proof",
+    "lifecycle and queue cleanup",
+    "atomic source/chunk/claim provenance",
+    "memory-on/off answer-quality evaluation",
+    "operation-log pollution control",
+    "auto-sync proof and safety"
+  ],
+  "latest_pass_changes": [
+    "excluded task summaries and .dino operational files from default retrieval",
+    "limited recent task injection to operation/recent-task intent",
+    "rebuilt SQLite shards through temp files and retry replacement",
+    "added Korean correction cues for session/compounding extraction",
+    "kept live Codex proof as incomplete until codex_desktop hook events exist"
+  ],
+  "subagents": [
+    "019f3a61-cf29-7fe0-ac77-5c22108d58a4",
+    "019f3a61-e350-7750-8584-500992720954",
+    "019f3a61-e4dc-7793-897d-b8bed5e0ecd4",
+    "019f3a61-e68b-7bf3-8ac5-e073b30262d7",
+    "019f3a6b-a1cf-76b2-9e46-6b983ce5b93c",
+    "019f3a6b-b61b-7331-8094-3bd307d7e636",
+    "019f3a6b-b782-71f1-94bb-d6f71738c131",
+    "019f3a6b-b91f-75e0-b014-92857a9ee2ba",
+    "019f3a74-5ece-7523-b1b0-f9004ab2e207",
+    "019f3a74-9d24-7fd2-96b4-c2298d05698e",
+    "019f3a74-da38-7ce1-b79c-603e41996329",
+    "019f3a75-0591-7f02-84be-8ddfca52e987",
+    "019f3a7a-b22d-76b1-8d53-6d086218ad76",
+    "019f3a7a-f1df-73c1-82bf-106c0b969f93",
+    "019f3a7b-2b55-7450-8430-42d82cadc705",
+    "019f3a7b-53ed-7363-a4de-215da3583fdf",
+    "019f3a80-aa75-7ac0-b0e0-17f7e7f3d4d3",
+    "019f3a80-f38e-7900-ad93-e38ebe316c6b",
+    "019f3a81-3278-75c0-af6b-06da63f5895c",
+    "019f3a81-6eb8-72d0-9a4d-6fe473aa094b"
+  ]
+}

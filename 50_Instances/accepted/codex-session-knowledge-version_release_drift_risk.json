@@ -1,0 +1,251 @@
+{
+  "memory_id": "codex-session-knowledge-version_release_drift_risk",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "mistake_lesson",
+  "title": "Version drift and stale release artifacts are recurring risks",
+  "claim": "DinoBrain app, data, installer, local checkout, release ZIP, tag, and GitHub asset can drift; version and artifact alignment must be checked before claiming install or release readiness.",
+  "reusable_rule": "For releases and installer updates, verify local/remote refs, package version, embedded installer refs, tag, ZIP/SHA asset, and GitHub release state.",
+  "scope": "release_hygiene",
+  "confidence": "medium",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "mistake-lesson",
+    "release",
+    "version",
+    "installer"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 41,
+    "user_hit_count": 46,
+    "assistant_hit_count": 589,
+    "weighted_score": 1316,
+    "session_refs": [
+      "sess-070a11e11c4994",
+      "sess-089835dc8fdc62",
+      "sess-0a41a5f21d5b58",
+      "sess-1e95eea1be108d",
+      "sess-1f464b71ecea0d",
+      "sess-24a6ee3381ae00",
+      "sess-24d8b03c383495",
+      "sess-2d27e1d180db6c",
+      "sess-2fc834396900cc",
+      "sess-3d168ffb4f6ce0",
+      "sess-458b19a1a1cdf1",
+      "sess-461b6e6d39a56f",
+      "sess-4e95f4fc22803b",
+      "sess-52c21a717f5a44",
+      "sess-5ea2d5d2562d29",
+      "sess-61a6570430d591",
+      "sess-62f7b9754a9734",
+      "sess-6aa2423b061356",
+      "sess-6b55d87e30bb3e",
+      "sess-6f506c542b0e47",
+      "sess-72cf004ec045b8",
+      "sess-7ad76bf1417852",
+      "sess-7d50eae76e4ee7",
+      "sess-7e854189c37298"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "de502b804b04c43ebb970e77",
+        "char_count": 1849
+      },
+      {
+        "session_ref": "sess-7e854189c37298",
+        "role": "assistant",
+        "message_hash": "6e178ad8c0b24e214d42cc8b",
+        "char_count": 104
+      },
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "user",
+        "message_hash": "942d6f73e4d17e2309cb662f",
+        "char_count": 3835
+      },
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "assistant",
+        "message_hash": "685659093bad4c9f3bbdd67b",
+        "char_count": 1830
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "user",
+        "message_hash": "f0b8ce9de60a779df3b3ddc7",
+        "char_count": 1143
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "assistant",
+        "message_hash": "b3963fc43fac5e6cad4904c6",
+        "char_count": 286
+      },
+      {
+        "session_ref": "sess-b7f1865617d0f7",
+        "role": "assistant",
+        "message_hash": "0cbf48fcd9891ea4231b726d",
+        "char_count": 193
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "9d2387f77a77fd6ca2a61556",
+        "char_count": 138
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "1e921b492bb8cdfd2028e8a2",
+        "char_count": 101
+      },
+      {
+        "session_ref": "sess-070a11e11c4994",
+        "role": "assistant",
+        "message_hash": "c6449bd0f2f733d3c79c8d37",
+        "char_count": 140
+      },
+      {
+        "session_ref": "sess-3d168ffb4f6ce0",
+        "role": "assistant",
+        "message_hash": "091fa250d170b9c33e63748f",
+        "char_count": 1386
+      },
+      {
+        "session_ref": "sess-3d168ffb4f6ce0",
+        "role": "assistant",
+        "message_hash": "bed6b7c0048c5e26f429d1f1",
+        "char_count": 1866
+      },
+      {
+        "session_ref": "sess-089835dc8fdc62",
+        "role": "assistant",
+        "message_hash": "2b9ad9839b8d520a0b4becd3",
+        "char_count": 1057
+      },
+      {
+        "session_ref": "sess-7d50eae76e4ee7",
+        "role": "assistant",
+        "message_hash": "4fa559032b75e80892240e17",
+        "char_count": 78
+      },
+      {
+        "session_ref": "sess-895eea5311c7c7",
+        "role": "assistant",
+        "message_hash": "9653bb78cd968851da0597a2",
+        "char_count": 2031
+      },
+      {
+        "session_ref": "sess-e1afb3fcecf453",
+        "role": "assistant",
+        "message_hash": "6fb37e667c390e7485f194dd",
+        "char_count": 2440
+      }
+    ],
+    "matched_terms": [
+      "버전.*차이|version.*drift|stale|release.*asset|zip|sha|tag|릴리즈|설치.*업데이트|로컬.*깃헙|GitHu"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 593
+      },
+      {
+        "project": "stripe engine",
+        "count": 25
+      },
+      {
+        "project": "new-chat",
+        "count": 8
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 2
+      },
+      {
+        "project": "build-a-local-tool-for-creating",
+        "count": 2
+      },
+      {
+        "project": "Project_J",
+        "count": 1
+      },
+      {
+        "project": "html",
+        "count": 1
+      },
+      {
+        "project": "files-mentioned-by-the-user-html",
+        "count": 1
+      },
+      {
+        "project": "gykim80-perfectpixel-studio-https-github-com",
+        "count": 1
+      },
+      {
+        "project": "z",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-version_release_drift_risk.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-version_release_drift_risk",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425450-14d622e5-91bd-4474-ab66-a325c7e36faf",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425450-14d622e5-91bd-4474-ab66-a325c7e36faf",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-version_release_drift_risk.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-version_release_drift_risk.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-version_release_drift_risk.json"
+  ],
+  "successor_paths": []
+}

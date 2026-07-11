@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260710-161715-Continue-the-OS-completion-e",
+  "status": "partial",
+  "request": "Continue the OS completion execution plan with LOOP-04 task debt settlement and prevention: inspect the current 196 blockers, implement reversible backup/apply/rollback with before-after hashes and post-migration audit, verify on fixtures, and only then decide whether the current vault is safe to migrate.",
+  "project": "DinoBrain OS completion plan",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-10T16:17:15.795Z",
+  "updated_at": "2026-07-10T17:12:17.587Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-10T17:12:17.587Z",
+  "trace_path": ".dino/traces/task-20260710-161715-Continue-the-OS-completion-e.json"
+}

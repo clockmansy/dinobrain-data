@@ -1,0 +1,48 @@
+{
+  "task_id": "task-20260707-122952-app-repo-.codex-remote-attac",
+  "outcome": "completed",
+  "summary": "Resolved the app repo attachment dirtiness by ignoring .codex-remote-attachments, added a first-class task:finish:stdio fallback for closed MCP transports, and prepared the remaining DinoBrain data backlog for a final safety-checked commit.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    ".gitignore",
+    "package.json",
+    "scripts/finish-task-stdio.mjs",
+    "[REDACTED_MACHINE_LOCAL_PATH]"
+  ],
+  "decisions": [
+    "Treat .codex-remote-attachments as local Codex UI artifacts and ignore them instead of committing screenshots and remote attachments.",
+    "Use a fresh stdio MCP finish helper when the current Codex MCP transport is closed, so task closure is still recorded through the official finish_task tool.",
+    "Stage the full policy-approved DinoBrain data backlog after finish_task so the data repo can return to a clean state without dropping generated OS records."
+  ],
+  "next_steps": [
+    "Commit and push the staged DinoBrain data backlog after safety hooks pass.",
+    "Use task:finish:stdio whenever the in-session mcp__dinobrain transport is closed."
+  ],
+  "used_memory_paths": [
+    ".dino/tasks/task-20260707-122952-app-repo-.codex-remote-attac.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "30_Sources/chunks/haystack-rag-from-scratch.json",
+    "30_Sources/chunks/llamaindex-rag.json",
+    "30_Sources/chunks/azure-search-rag-overview.json",
+    "30_Sources/chunks/elastic-rag.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-122952-app-repo-.codex-remote-attac.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-122951-2017e9a6f2eb.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-finish_task-MCP-transp-a33c28b89f93.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 1,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T12:33:06.245Z"
+}

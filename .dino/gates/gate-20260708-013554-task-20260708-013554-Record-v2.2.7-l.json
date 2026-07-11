@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260708-013554-task-20260708-013554-Record-v2.2.7-l",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260708-013554-Record-v2.2.7-live-proof-hel",
+  "request": "Record v2.2.7 live proof helper hardening continuation and repeated remaining Codex Desktop live proof blocker.",
+  "generated_at": "2026-07-08T01:35:54.896Z",
+  "context_pack_path": ".dino/context-packs/pack-20260708-013554-Record-v2.2.7-live-proof-hel.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

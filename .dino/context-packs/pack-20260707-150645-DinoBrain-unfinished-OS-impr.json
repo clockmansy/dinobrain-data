@@ -1,0 +1,264 @@
+{
+  "pack_id": "pack-20260707-150645-DinoBrain-unfinished-OS-impr",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "DinoBrain unfinished OS improvement plan strict 10 reviewer consensus direct MCP parity proof ingestion",
+  "created_at": "2026-07-07T15:06:45.840Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 58,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 69,
+  "index_candidate_count": 58,
+  "index_total_candidate_count": 58,
+  "index_matching_terms": [
+    "codex-session-knowledge-configured_is_not_live_proof",
+    "codex-session-knowledge-one_link_or_direct_action",
+    "codex-session-knowledge-plan_first_scope_lock",
+    "codex-session-knowledge-rag_quality_direction",
+    "consensus",
+    "critical_consensus_audit",
+    "dinobrain_os",
+    "dinobrain_product",
+    "dinobrain_public_data_safety",
+    "dinobrain-data",
+    "dinobrain-hook-and-install-prevention",
+    "dinobrain-install-release-state",
+    "dinobrain-project-state",
+    "dinobrain-public-data-safety",
+    "dinobrain-rag-critical-consensus-20260707",
+    "dinobrain-rag-roadmap",
+    "dinobrain-recurring-failures",
+    "dinobrain-retrieval-noise-prevention",
+    "direct",
+    "direct_user_source_count",
+    "direct-source",
+    "directly",
+    "directly-opened",
+    "explanation",
+    "explanations",
+    "improvement",
+    "ingestion",
+    "live-proof",
+    "local-dinobrain-data",
+    "mcp",
+    "parity",
+    "plan",
+    "plan-first",
+    "planning",
+    "proof",
+    "version-parity"
+  ],
+  "included_item_count": 8,
+  "excluded_record_count": 71,
+  "items": [
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "kind": "curated_record",
+      "title": "Configured hooks are not live preflight proof",
+      "summary": "A configured or probe-verified DinoBrain hook must not be claimed as fully live until a fresh trusted Codex or Claude prompt produces pre-response events before manual MCP calls. | Rule: Distinguish configured, probe-verified, and live-verified; require fresh prompt event evidence for live hook claims. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "mistake-lesson",
+        "hook",
+        "live-proof",
+        "fail-closed"
+      ],
+      "score": 13.778,
+      "reasons": [
+        "path_matched:proof",
+        "title_matched:proof",
+        "summary_matched:mcp",
+        "tags_matched:proof",
+        "chunk_matched:mcp,proof",
+        "bm25:mcp,proof",
+        "dense_lexical:1.01",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "kind": "curated_record",
+      "title": "Prefer direct links or actions when the path is known",
+      "summary": "When the path or artifact is known, the user often prefers a direct link, launcher, or action instead of a long explanation. | Rule: If the user asks for an install link, file, folder, or app launch, provide the direct artifact or perform the action first, then add only essential context. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "brevity",
+        "install"
+      ],
+      "score": 13.212,
+      "reasons": [
+        "path_matched:direct",
+        "title_matched:direct",
+        "summary_matched:plan,direct",
+        "chunk_matched:plan,direct",
+        "bm25:direct",
+        "dense_lexical:0.62",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+      "kind": "curated_record",
+      "title": "Prefer direct local verification and evidence",
+      "summary": "The user prefers direct inspection of local files, logs, command output, screenshots, repository state, and concrete evidence over abstract claims. | Rule: For verification/debugging, inspect the real workspace and report command/file evidence; if a check was not run, say that plainly. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "verification",
+        "evidence"
+      ],
+      "score": 12.971,
+      "reasons": [
+        "title_matched:direct",
+        "summary_matched:direct",
+        "chunk_matched:direct",
+        "bm25:direct",
+        "dense_lexical:0.63",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "kind": "curated_record",
+      "title": "Installer must restore equivalent DinoBrain behavior on a new PC",
+      "summary": "The user expects a new PC install to clone/update app and data repos, configure Codex and Claude hooks/MCP, build indexes, launch Observatory, and preserve version parity. | Rule: For installer work, verify app/data refs, portable Node, build/index, Codex and Claude registration, hook approval flow, launchers, release artifact alignment, and reinstall/idempotent behavior. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "project-decision",
+        "installer",
+        "new-pc",
+        "codex",
+        "claude",
+        "version-parity"
+      ],
+      "score": 12.042,
+      "reasons": [
+        "summary_matched:mcp,parity",
+        "tags_matched:parity",
+        "chunk_matched:mcp,parity",
+        "bm25:mcp,parity",
+        "dense_lexical:0.91",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+      "kind": "curated_record",
+      "title": "Plan-first execution for new or handoff-heavy work",
+      "summary": "The user prefers a concrete plan and approved scope before broad implementation, especially for handoff bundles, new projects, difficult design tasks, or OS-level changes. | Rule: When a task is broad, new, design-heavy, or handoff-driven, first summarize understanding, ask only necessary questions, lock the plan, then execute within that plan. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "planning",
+        "scope-control"
+      ],
+      "score": 11.841,
+      "reasons": [
+        "path_matched:plan",
+        "title_matched:plan",
+        "summary_matched:plan",
+        "tags_matched:plan",
+        "chunk_matched:plan",
+        "bm25:plan",
+        "dense_lexical:0.66",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+      "kind": "curated_record",
+      "title": "RAG quality requires hybrid retrieval, provenance, and evaluation",
+      "summary": "DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation. | Rule: When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "project-decision",
+        "rag",
+        "retrieval",
+        "provenance",
+        "evaluation"
+      ],
+      "score": 9.863,
+      "reasons": [
+        "path_matched:direct",
+        "chunk_matched:direct",
+        "dense_lexical:0.74",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+      "kind": "curated_record",
+      "title": "Explain unfamiliar work in plain language",
+      "summary": "The user asks for plain explanations when a task, state, or warning is unclear, and wants the practical meaning rather than jargon. | Rule: When the user asks what something means or why it happened, explain the concrete cause, consequence, and next action in plain Korean. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "explanation",
+        "korean"
+      ],
+      "score": 9.859,
+      "reasons": [
+        "summary_matched:plan",
+        "tags_matched:plan",
+        "chunk_matched:plan",
+        "dense_lexical:0.44",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "kind": "curated_record",
+      "title": "DinoBrain must run pre-response and fail closed",
+      "summary": "The user wants every Codex or Claude session to receive DinoBrain pre-response OS context before substantive work, with fail-closed behavior when the OS context is missing. | Rule: For nontrivial DinoBrain work, require os_begin_task or trusted hook preflight, Context Pack, gates, finish_task, and explicit degraded/fail-closed state when missing. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "pre-response",
+        "fail-closed",
+        "hook"
+      ],
+      "score": 8.824,
+      "reasons": [
+        "dense_lexical:0.69",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    }
+  ]
+}

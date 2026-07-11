@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-001629-RAG-anchor-only-.-RAG-10-sou",
+  "status": "completed",
+  "request": "사용자가 제공한 RAG 관련 자료를 anchor-only 상태에서 검증 완료 지식으로 승격한다. 외부 RAG 문서/논문/공식 문서를 실제 확인하고, 10개 하위 에이전트가 영역별 학습 내용을 상호검증/비교한 뒤, 순도 높은 source/chunk/claim knowledge로 정제하여 DinoBrain data repo에 저장하고 검증/푸시한다.",
+  "project": "DinoBrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T00:16:29.102Z",
+  "updated_at": "2026-07-07T00:32:59.855Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T00:32:59.855Z",
+  "trace_path": ".dino/traces/task-20260707-001629-RAG-anchor-only-.-RAG-10-sou.json"
+}

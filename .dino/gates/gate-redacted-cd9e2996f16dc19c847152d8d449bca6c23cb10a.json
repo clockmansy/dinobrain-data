@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-redacted-cd9e2996f16dc19c847152d8d449bca6c23cb10a",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-redacted-af03c82b2ed13fbddc6ecbcc6288baeb56ed53f7",
+  "request": "<machine-local-path>",
+  "generated_at": "2026-07-08T01:39:36.222Z",
+  "context_pack_path": ".dino/context-packs/pack-redacted-e2e3bde43c1292bad29028deee35c9dc07262f6d.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

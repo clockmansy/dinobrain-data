@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260705-020213-Remove-dinosaur-fossil-visua",
+  "status": "completed",
+  "request": "Remove dinosaur/fossil visual design from DinoBrain Observatory graph entirely. Keep the operational knowledge graph readable and clean, remove fossil scaffold/background metaphor, rename user-facing graph title, update QA notes, and verify build/rendering.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-05T02:02:13.874Z",
+  "updated_at": "2026-07-05T02:06:46.046Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-05T02:06:46.046Z",
+  "trace_path": ".dino/traces/task-20260705-020213-Remove-dinosaur-fossil-visua.json"
+}

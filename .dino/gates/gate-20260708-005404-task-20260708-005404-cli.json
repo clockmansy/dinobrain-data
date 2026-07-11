@@ -1,0 +1,44 @@
+{
+  "gate_id": "gate-20260708-005404-task-20260708-005404-cli",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260708-005404-cli",
+  "request": "목표를 이어하기전에 내가 깃헙 토큰과 깃헙 cli를 연결해줘야하나?",
+  "generated_at": "2026-07-08T00:54:04.933Z",
+  "context_pack_path": ".dino/context-packs/pack-20260708-005404-cli.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitivity_auto_escalated",
+      "level": "warn",
+      "reason": "The request matched sensitive-content rules despite a lower reported sensitivity.",
+      "safe_action": "Treat the task as sensitive and avoid storing raw credentials, tokens, or private identifiers."
+    },
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "sensitive",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "sensitive",
+  "sensitivity_hits": [
+    "korean_token"
+  ]
+}

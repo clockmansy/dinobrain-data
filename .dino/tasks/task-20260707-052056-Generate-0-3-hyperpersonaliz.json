@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-052056-Generate-0-3-hyperpersonaliz",
+  "status": "blocked",
+  "request": "Generate 0-3 hyperpersonalized actionable Codex thread suggestions for work in the local DinoBrain project by synthesizing repo state with recent connected-app signals and avoiding already-handled items.",
+  "project": "<machine-local-path>",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T05:20:56.169Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-052056-Generate-0-3-hyperpersonaliz.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-052056-Generate-0-3-hyperpersonaliz.json"
+  }
+}

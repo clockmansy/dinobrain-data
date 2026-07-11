@@ -1,0 +1,57 @@
+{
+  "memory_id": "task-memory-task-20260710-115329-.-UUID-ID-atomic-rename-SQLi",
+  "type": "task_summary_memory",
+  "status": "pending_review",
+  "title": "Task outcome: **중요:** 복구만 됐을 뿐 코드 원인은 아직 남아 있습니다. UUID 기반 ID, 단일 쓰기 직렬화, 임시 파일 후 atomic rename, SQLite busy 재시",
+  "summary": "Eliminated the reproduced DinoBrain multi-process operation-state corruption path. Added millisecond plus full UUID IDs, atomic fsync-and-rename JSON writes, cross-process owner locks with stale-lock heartbeat and Windows EPERM/EACCES contention handling, locked JSONL append/read, serialized operations-index read-modify-write with automatic malformed-index rebuild, SQLite WAL/busy timeout/bounded retry under the shared operations lock, and structured hook MCP error handling. Added a real multi-process MCP regression test and pushed commit 9682f47 to origin/main.",
+  "claim": "Task outcome for dinobrain: Eliminated the reproduced DinoBrain multi-process operation-state corruption path. Added millisecond plus full UUID IDs, atomic fsync-and-rename JSON writes, cross-process owner locks with stale-lock heartbeat and Windows EPERM/EACCES contention handling, locked JSONL append/read, serialized operations-index read-modify-write with automatic malformed-index rebuild, SQLite WAL/busy timeout/bounded retry under the shared operations lock, and structured hook MCP error handling. Added a real multi-process MCP regression test and pushed commit 9682f47 to origin/main.",
+  "request": "**중요:** 복구만 됐을 뿐 코드 원인은 아직 남아 있습니다. UUID 기반 ID, 단일 쓰기 직렬화, 임시 파일 후 atomic rename, SQLite busy 재시도, 병렬 회귀 테스트가 들어가기 전까지 10개 에이전트 같은 병렬 작업에서 재발할 수 있습니다. 이번에는 분석만 진행했고 코드는 수정하지 않았습니다.\n\n이부분 다시는 발생하지 않게 수정",
+  "outcome": "completed",
+  "decisions": [
+    "Use full UUID plus millisecond timestamp for task, Context Pack, candidate, quarantine, gate, and feedback IDs.",
+    "Serialize every operations-index read-modify-write across processes with an owner-verified file lock.",
+    "Write JSON through a same-directory temporary file, fsync it, validate it, atomically rename it, and validate the destination.",
+    "Treat Windows EPERM and EACCES on an existing lock as contention and retry instead of failing closed.",
+    "Use a heartbeat so long-running rebuilds cannot be mistaken for stale locks.",
+    "Run operations SQLite in WAL mode with a five-second busy timeout, bounded retry, and the shared operations lock.",
+    "Automatically rebuild a malformed derived operations index while preserving source task, trace, pack, and event records.",
+    "Exclude the pre-existing package-lock.json modification from the commit."
+  ],
+  "next_steps": [
+    "Restart any already-running long-lived Codex MCP process so direct MCP calls load commit 9682f47; new hook subprocesses already use the rebuilt dist.",
+    "Keep npm run index:verify:concurrency in release and installer verification."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/microsoft-graphrag.json",
+    "30_Sources/chunks/openai-embeddings-qa-cookbook.json",
+    ".dino/tasks/task-20260710-115329-.-UUID-ID-atomic-rename-SQLi.json",
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "30_Sources/chunks/google-rag-engine-overview.json",
+    "30_Sources/chunks/langsmith-evaluation-concepts.json",
+    "30_Sources/chunks/ragas-evaluation.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260710-115330-.-UUID-ID-atomic-rename-SQLi.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260710-115329-.-UUID-ID-atomic-rename-SQLi.json",
+    "snippet": "Eliminated the reproduced DinoBrain multi-process operation-state corruption path. Added millisecond plus full UUID IDs, atomic fsync-and-rename JSON writes, cross-process owner locks with stale-lock heartbeat and Windows EPERM/EACCES contention handling, locked JSONL append/read, serialized operations-index read-modify-write with automatic malformed-index rebuild, SQLite WAL/busy timeout/bounded retry under the shared operations lock, and structured hook MCP error handling. Added a real multi-process MCP regression test and pushed commit 9682f47 to origin/main."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-10",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-10T12:09:18.629Z",
+  "updated_at": "2026-07-10T12:09:18.629Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260710-115329-.-UUID-ID-atomic-rename-SQLi.json",
+    "task_id": "task-20260710-115329-.-UUID-ID-atomic-rename-SQLi",
+    "task_path": ".dino/tasks/task-20260710-115329-.-UUID-ID-atomic-rename-SQLi.json"
+  }
+}

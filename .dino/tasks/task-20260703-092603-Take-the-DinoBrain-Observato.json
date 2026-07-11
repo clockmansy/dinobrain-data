@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260703-092603-Take-the-DinoBrain-Observato",
+  "status": "completed",
+  "request": "Take the DinoBrain Observatory dinosaur graph one step further toward the provided reference by implementing a stronger graph-only / deterministic-slotting visual mode while keeping data/API logic unchanged.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-03T09:26:03.354Z",
+  "updated_at": "2026-07-03T09:41:35.559Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-03T09:41:35.559Z",
+  "trace_path": ".dino/traces/task-20260703-092603-Take-the-DinoBrain-Observato.json"
+}

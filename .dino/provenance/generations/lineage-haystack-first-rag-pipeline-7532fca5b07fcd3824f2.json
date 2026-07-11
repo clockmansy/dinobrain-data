@@ -1,0 +1,46 @@
+{
+  "version": "source_lineage_generation_v1",
+  "type": "lineage_generation",
+  "generation_id": "lineage-haystack-first-rag-pipeline-7532fca5b07fcd3824f2",
+  "generation_status": "published",
+  "transaction_id": "source-lineage-1783735482411-6dc58c6c-d6cb-4ede-aa84-f0afddd2c1c2",
+  "source_snapshot_path": "30_Sources/fetched/haystack-first-rag-pipeline.json",
+  "source_chunk_path": "30_Sources/chunks/haystack-first-rag-pipeline.json",
+  "provenance_path": ".dino/provenance/haystack-first-rag-pipeline.json",
+  "source_content_sha256": "fd3d54d008c6310cd952084a9adecfe320b50602fb08cbd1cfcd0696ca1f2ecf",
+  "chunk_sha256": "fd3d54d008c6310cd952084a9adecfe320b50602fb08cbd1cfcd0696ca1f2ecf",
+  "verification_status": "verified_summary",
+  "verified_at": "2026-07-07",
+  "claim_bindings": [
+    {
+      "path": "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+      "sha256": "d43556041c8316eeed5b76a193cf08b7ad86f4dde6fb30beb89f4df3a4b9979a"
+    },
+    {
+      "path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+      "sha256": "4016e550597180dde98fa896ddcb171c6dc6c54028abbf2704a11f3b5ac1d076"
+    }
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": "30_Sources/fetched/haystack-first-rag-pipeline.json",
+      "after_sha256": "051296d2b1ad1f0c1cdfbc97de26964d66f332744fdde1495e370750620295f4"
+    },
+    {
+      "path": "30_Sources/chunks/haystack-first-rag-pipeline.json",
+      "after_sha256": "bd655b3adc2fec8c13ab5587e148bc721a3ef231301835cded25239e80d373a7"
+    },
+    {
+      "path": ".dino/provenance/haystack-first-rag-pipeline.json",
+      "after_sha256": "3e2e334d4a5160faa5ac43a248ce25fb963e50a6851de7bf9cf3e088ac9d71ad"
+    }
+  ],
+  "created_at": "2026-07-11T02:04:42.411Z",
+  "updated_at": "2026-07-11T02:04:42.411Z"
+}

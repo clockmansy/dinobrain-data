@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-110007-Continue-active-DinoBrain-go",
+  "status": "completed",
+  "request": "Continue active DinoBrain goal after lifecycle settlement: inspect current status and implement the next gap toward review queue/semantic job settlement, finish-gate integrity, and real RAG eval while preserving scoped data safety.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T11:00:07.938Z",
+  "updated_at": "2026-07-07T11:06:57.743Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T11:06:57.743Z",
+  "trace_path": ".dino/traces/task-20260707-110007-Continue-active-DinoBrain-go.json"
+}

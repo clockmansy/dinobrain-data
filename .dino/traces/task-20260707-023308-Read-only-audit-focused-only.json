@@ -1,0 +1,40 @@
+{
+  "task_id": "task-20260707-023308-Read-only-audit-focused-only",
+  "outcome": "completed",
+  "summary": "Read-only audit of user feedback writeback found an explicit record_feedback_correction path that writes accepted behavior memory and invalidates retrieval indexes, plus session-import/compounding paths that create pending-review candidates. Current real vault evidence did not show accepted feedback-*.json correction records, did not contain the example Korean correction phrase outside the audit query context pack, and did not include a real behavior evaluation report proving the correction changed later actions. Verdict: UNKNOWN for current durable/action proof; mechanism exists but live/proven writeback is not established.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Return UNKNOWN rather than PASS because source code and synthetic verifiers prove mechanisms, but the current vault lacks accepted direct feedback records and real action/eval proof for corrections like the example phrase.",
+    "Treat direct record_feedback_correction, session import candidates, and finish_task compounding as distinct paths because only the first writes directly to accepted memory; the others require review or environment flags."
+  ],
+  "next_steps": [
+    "Use record_feedback_correction when a user correction is clearly durable, or ensure hook/session import candidates are reviewed into accepted memory before expecting retrieval impact.",
+    "Add a real-vault behavior evaluation/report for a correction-style case if PASS proof is required."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-023312-How-does-DinoBrain-handle-us.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [
+    "50_Instances/candidates/behavior-rule-dcdbecc38dc41999.json"
+  ],
+  "search_queries": [
+    "DinoBrain feedback correction durable behavior retrieval",
+    "아니야 내가 원한 건 이거야",
+    "record_feedback_correction accepted behavior memory",
+    "feedback_accepted_count"
+  ],
+  "memory_use": {
+    "used_memory_count": 2,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 1,
+    "search_query_count": 4
+  },
+  "finished_at": "2026-07-07T02:37:04.399Z"
+}

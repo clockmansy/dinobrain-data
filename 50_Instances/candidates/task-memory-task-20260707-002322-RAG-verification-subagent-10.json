@@ -1,0 +1,62 @@
+{
+  "memory_id": "task-memory-task-20260707-002322-RAG-verification-subagent-10",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: RAG verification subagent 10 cross-review and purity filter: review synthesized findings from su",
+  "summary": "Completed read-only RAG purity cross-review. Filtered synthesized subagent findings into durable core RAG claims, optional retrieval/agent-memory methods, provider/paper-specific holds, and reclassification caveats for DinoBrain accepted-memory intake.",
+  "claim": "Task outcome for dinobrain: Completed read-only RAG purity cross-review. Filtered synthesized subagent findings into durable core RAG claims, optional retrieval/agent-memory methods, provider/paper-specific holds, and reclassification caveats for DinoBrain accepted-memory intake.",
+  "request": "RAG verification subagent 10 cross-review and purity filter: review synthesized findings from subagents 01-06 without editing files; filter into ACCEPT/HOLD/REJECT and return concise Korean durable-knowledge report.",
+  "outcome": "completed",
+  "decisions": [
+    "Accept high-purity RAG architecture, retrieval quality, hybrid retrieval, reranking placement, indexing/query-time separation, and provenance/evaluation guidance as durable DinoBrain knowledge.",
+    "Reclassify HyDE, RAPTOR, contextual retrieval, Reflexion, and Graph RAG as optional adjacent methods or overlays rather than core RAG.",
+    "Hold Lewis RAG details and managed cloud KB feature claims as paper/provider-specific unless source-bound records are created.",
+    "Reject any memory framing that implies RAG guarantees truth or that optional methods are core RAG components."
+  ],
+  "next_steps": [
+    "Create accepted memory records only for durable architecture/taxonomy/design-policy categories, keeping provider and paper facts in source-bound or evaluation-gated records."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/behavior-rule-f4dc8f084829a07b.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-002325-RAG-durable-knowledge-purity.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-002322-RAG-verification-subagent-10.json",
+    "snippet": "Completed read-only RAG purity cross-review. Filtered synthesized subagent findings into durable core RAG claims, optional retrieval/agent-memory methods, provider/paper-specific holds, and reclassification caveats for DinoBrain accepted-memory intake."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T00:24:14.548Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-002322-RAG-verification-subagent-10.json",
+    "task_id": "task-20260707-002322-RAG-verification-subagent-10",
+    "task_path": ".dino/tasks/task-20260707-002322-RAG-verification-subagent-10.json"
+  },
+  "accepted_at": "2026-07-07T00:24:14.548Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260707-002322-RAG-verification-subagent-10.json",
+  "candidate_id": "task-memory-task-20260707-002322-RAG-verification-subagent-10",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260707-002322-RAG-verification-subagent-10.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

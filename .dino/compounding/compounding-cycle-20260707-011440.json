@@ -1,0 +1,1424 @@
+{
+  "ok": true,
+  "cycle_id": "compounding-cycle-20260707-011440",
+  "version": "compounding_cycle_v1",
+  "generated_at": "2026-07-07T01:14:40.109Z",
+  "apply": true,
+  "reviewer": "finish_task:auto-compound",
+  "trace_count": 50,
+  "signal_count": 234,
+  "promoted_count": 7,
+  "updated_count": 0,
+  "unchanged_count": 227,
+  "cleanup_count": 0,
+  "applied_cleanup_count": 0,
+  "changed": true,
+  "behavior_rule_index_path": "60_Operations/behavior-rules/behavior-rule-index.json",
+  "promotions": [
+    {
+      "behavior_rule_id": "behavior-rule-a7b089bbc77b5ba0",
+      "path": "50_Instances/accepted/behavior-rule-a7b089bbc77b5ba0.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Treat direct install.ps1 portable npm/path wiring as correct: it calls the portable npm.cmd and prepends the portable Node root to PATH before verify:os and verify:codex-loop."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-296e4f1f89aaf838",
+      "path": "50_Instances/accepted/behavior-rule-296e4f1f89aaf838.json",
+      "action": "created",
+      "behavior_rule": "Do not run full npm verification during this audit because the user requested read-only work and verify scripts write reports/temp data."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e0413bd13f082edf",
+      "path": "50_Instances/accepted/behavior-rule-e0413bd13f082edf.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Report release verification gaps separately from the direct install path."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-cec7268246807edc",
+      "path": "50_Instances/accepted/behavior-rule-cec7268246807edc.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Add a release/build assertion that the embedded install.ps1 contains verify:codex-loop or performs a dry-run/default argument check."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-55280a50056e2bbe",
+      "path": "50_Instances/accepted/behavior-rule-55280a50056e2bbe.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Decide whether install.ps1 should continue supporting no-Git ZIP fallback now that verify:codex-loop requires git, or make Git an explicit hard preflight in the script path too."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-db787d417a4f1b06",
+      "path": "50_Instances/accepted/behavior-rule-db787d417a4f1b06.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Update docs/INSTALL.md update and verification sections to include verify:codex-loop."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2da31daa4ffa0d34",
+      "path": "50_Instances/accepted/behavior-rule-2da31daa4ffa0d34.json",
+      "action": "created",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of installer and release verification wiring for verify:codex-loop. Direct install.ps1 invokes verify:codex-loop through portable npm/path after verify:os; EXE default verification checkbox remains enabled. Findings are limited to release self-test coverage, Git/no-Git fallback behavior, and docs drift in INSTALL quick/update sections. No repository files were edited."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2db5207a5400d1c0",
+      "path": "50_Instances/accepted/behavior-rule-2db5207a5400d1c0.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not edit repository files during this audit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-44b710f1a7090df7",
+      "path": "50_Instances/accepted/behavior-rule-44b710f1a7090df7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat verify:codex-live as evidence of hook-shaped artifacts, not as hard proof of Codex app dispatch."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d69c45acc3209ea3",
+      "path": "50_Instances/accepted/behavior-rule-d69c45acc3209ea3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend adding a per-hook-run id/challenge, launcher provenance from the PowerShell wrapper, strict submitted/completed/report correlation, and optional live finish_task proof for closed-loop verification."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c8b4a2079d38029f",
+      "path": "50_Instances/accepted/behavior-rule-c8b4a2079d38029f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add hook_run_id to codex_prompt_submitted, codex_preflight_completed, and live reports, then require it in verify-codex-live-preflight.mjs."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-40b6c16d61281d46",
+      "path": "50_Instances/accepted/behavior-rule-40b6c16d61281d46.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Read-only audit found that scripts/verify-codex-live-preflight.mjs is a useful real-vault evidence gate but does not prove real Codex desktop dispatch. The accepted source fields are emitted by the hook itself and can also be produced by installer/diagnostic/manual synthetic wrapper invocations. Additional gaps include missing submitted/completed correlation because submitted events lack task_id, fallback to unrelated completed events, no parent-process or challenge attestation, no proof that injected context reached the model, and loose hook registration checks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8ca554f3d54b85d7",
+      "path": "50_Instances/accepted/behavior-rule-8ca554f3d54b85d7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: No repo files were edited."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2d3fe4deaad93c1a",
+      "path": "50_Instances/accepted/behavior-rule-2d3fe4deaad93c1a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the root issue as a lineage schema/resolver mismatch across graph-health, observatory, lifecycle, compounding, and session-promotion writers."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2895b4b306bb7d8a",
+      "path": "50_Instances/accepted/behavior-rule-2895b4b306bb7d8a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Acceptance gate should add an evidence.source-only and source_paths-only accepted fixture to graph:health:verify and assert these are not counted as missing source when their targets exist."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-120041fdb48971e4",
+      "path": "50_Instances/accepted/behavior-rule-120041fdb48971e4.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Extend graph:health:verify with actual accepted-record schemas from compounding and session promotion."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6612cadc1458909e",
+      "path": "50_Instances/accepted/behavior-rule-6612cadc1458909e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Repair invalid accepted JSON records before relying on a fresh graph-health run."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d8c05526a1f63464",
+      "path": "50_Instances/accepted/behavior-rule-d8c05526a1f63464.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Read-only audit of graph health and provenance/source/chunk/claim lineage. Found graph health score reaches 0 because src/graph-health.ts uses a narrow source resolver that ignores accepted-record lineage fields used by writers, especially evidence.source and source_paths. Persisted graph-health artifact reported accepted_without_source_count=302, source_mapping_missing_count=302, score=0. Also found three accepted JSON records currently invalid, which can make a rerun fail before scoring."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-271143209223c587",
+      "path": "50_Instances/accepted/behavior-rule-271143209223c587.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Route task memories and behavior rules into candidates plus promotion review records before accepted retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c1f35400ec88578f",
+      "path": "50_Instances/accepted/behavior-rule-c1f35400ec88578f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: No source files were edited per read-only audit scope."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f7d07205f1d84db9",
+      "path": "50_Instances/accepted/behavior-rule-f7d07205f1d84db9.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat current Claude UserPromptSubmit support as installed-registration parity, not runtime-proof parity."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-20e83729dce15a7e",
+      "path": "50_Instances/accepted/behavior-rule-20e83729dce15a7e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: The most direct failing verifier should execute the Claude settings hook command with official Claude UserPromptSubmit JSON and assert Claude-labeled events/reports, which currently fail because the runtime hardcodes codex_prompt_submitted/codex_preflight_completed and codex_hook."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5bf64880eb8c04bc",
+      "path": "50_Instances/accepted/behavior-rule-5bf64880eb8c04bc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add a Claude-specific hook verifier before claiming closed-loop proof for any Claude Code session."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f9dac1967e8339fc",
+      "path": "50_Instances/accepted/behavior-rule-f9dac1967e8339fc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Extend verify:os to include Claude hook command existence/execution and hook-disable policy checks when Claude prompt hook is required."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3ecdf0c090adadd7",
+      "path": "50_Instances/accepted/behavior-rule-3ecdf0c090adadd7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat `os_begin_task` as the existing session-agnostic core abstraction."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b57e187f9ca25377",
+      "path": "50_Instances/accepted/behavior-rule-b57e187f9ca25377.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim automatic non-Codex/non-Claude pre-response invocation exists without a host hook or adapter."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a47cb64d8790e07a",
+      "path": "50_Instances/accepted/behavior-rule-a47cb64d8790e07a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend the smallest implementation as a thin generic CLI/adapter reusing current hook logic and MCP stdio client patterns."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-85c44097c34f435d",
+      "path": "50_Instances/accepted/behavior-rule-85c44097c34f435d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add a package script and temp-vault verifier that calls the adapter and asserts `os_begin_task_completed`, context pack trace, gate report, and fail-closed behavior."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f7a2b396417e7bc8",
+      "path": "50_Instances/accepted/behavior-rule-f7a2b396417e7bc8.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: DinoBrain currently has a credible skeleton but does not yet satisfy the user's desired closed-loop LLM Wiki OS guarantees."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-01cda972784bde8e",
+      "path": "50_Instances/accepted/behavior-rule-01cda972784bde8e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat hook wrapper fail-open paths, source lineage resolution, read-only/review semantics, and protected installer update behavior as P0 work before claiming OS completion."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5de68cae8ce6dd3b",
+      "path": "50_Instances/accepted/behavior-rule-5de68cae8ce6dd3b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat real dense hybrid retrieval, context/behavior evaluation, lifecycle backpressure, durable SQLite refresh, public/private sync split, Observatory read-trace correlation, and release parity as P1 work."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-506b0f9b53efe4e8",
+      "path": "50_Instances/accepted/behavior-rule-506b0f9b53efe4e8.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim lexical_fallback_v2 is real dense hybrid retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-664a674f81eb3f9e",
+      "path": "50_Instances/accepted/behavior-rule-664a674f81eb3f9e.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim graph node/edge count proves source-truth memory until accepted claims resolve to source chunks and provenance records."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6e86a379809402d8",
+      "path": "50_Instances/accepted/behavior-rule-6e86a379809402d8.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implement P0-1 hook wrapper fail-closed and verifier cases."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-79abd5c0894d16a9",
+      "path": "50_Instances/accepted/behavior-rule-79abd5c0894d16a9.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Critically audited DinoBrain against verified RAG knowledge and the user's desired OS using local code/data verification plus 10 subagent reviews. Produced and pushed a consensus audit report identifying P0/P1 improvements: outer wrapper fail-closed, real source/provenance lineage, true read-only/review mode, protected installer updates, real hybrid retrieval, lower-noise context eval, behavior eval, lifecycle backpressure, durable SQLite/cold memory, safer public sync, task-correlated Observatory, and release/version parity."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-59bb675d22729912",
+      "path": "50_Instances/accepted/behavior-rule-59bb675d22729912.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat current scalability as not complete while live wiki.sqlite, sqlite manifest, and dense-vectors.json are absent."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-46c14a7d6baf3667",
+      "path": "50_Instances/accepted/behavior-rule-46c14a7d6baf3667.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend atomic or incremental wiki SQLite refresh instead of deleting the fast path and relying on manual rebuilds."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5e78fcd997c0afc2",
+      "path": "50_Instances/accepted/behavior-rule-5e78fcd997c0afc2.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend retrieval budgets and temperature/type-aware filtering so accepted behavior/task memories do not swamp Wiki/Source/Project knowledge."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d68b522c13cfec9a",
+      "path": "50_Instances/accepted/behavior-rule-d68b522c13cfec9a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Recommend FTS/prefix/vector top-K candidate generation and live performance canaries before claiming graph/LLM Wiki scale readiness."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-24f6d140812583af",
+      "path": "50_Instances/accepted/behavior-rule-24f6d140812583af.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implement durable SQLite wiki refresh/upsert and manifest freshness checks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-938e4a08b1c369dd",
+      "path": "50_Instances/accepted/behavior-rule-938e4a08b1c369dd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only performance/scaling audit of DinoBrain retrieval, wiki index, SQLite shards, invalidation paths, verifier scripts, and live data scale. No code files edited. Findings: no P0; P1 risks are that the live wiki SQLite fast path is missing/non-durable after invalidation, cold/noisy accepted memory is indexed as normal hot retrieval input, and candidate generation still uses substring/wildcard scans plus lexical dense fallback rather than bounded semantic top-K retrieval. Current final live snapshot had no wiki-index.json, no sqlite manifest, no wiki.sqlite, no dense-vectors.json; operations.sqlite and operations-index were present. Accepted records were dominated by behavior rules."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2db5207a5400d1c0",
+      "path": "50_Instances/accepted/behavior-rule-2db5207a5400d1c0.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not edit repository files during this audit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9d8225b3e1977ecf",
+      "path": "50_Instances/accepted/behavior-rule-9d8225b3e1977ecf.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat existing dinobrain-data local commits as protected user data; installer should stop rather than reset them."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0da01f5e64060b7c",
+      "path": "50_Instances/accepted/behavior-rule-0da01f5e64060b7c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat Codex hook trust as a manual security boundary; approval helper may guide but must not bypass trust."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1c6547018067a135",
+      "path": "50_Instances/accepted/behavior-rule-1c6547018067a135.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Patch Checkout-DinoBrainRef/Sync-DinoBrainRepo to use ff-only update semantics and fail on local-ahead/diverged branches, especially for dinobrain-data."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6bc9dcb4b0b555d3",
+      "path": "50_Instances/accepted/behavior-rule-6bc9dcb4b0b555d3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add release/version gates that require package version, installer metadata, tag, TargetCommitish, and published asset refs to agree before replacing a release asset."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-497915ff5461114f",
+      "path": "50_Instances/accepted/behavior-rule-497915ff5461114f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of DinoBrain installer/new PC/GitHub recovery/version parity/hook approval surfaces. Found one P0 risk: update/reinstall can strand unpushed local commits by force-resetting existing app/data branches with git checkout -B origin/ref. Found P1 gaps: Windows GUI blocks documented no-Git ZIP fallback; release/version parity can drift because package version, tag, setup metadata, and installer refs are not enforced together; uninstall removes Claude MCP but leaves the installed Claude UserPromptSubmit hook. Hook approval design itself preserves manual trust and has verification coverage."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-08fac9d83de88064",
+      "path": "50_Instances/accepted/behavior-rule-08fac9d83de88064.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the existing system as a strong foundation, not complete OS proof, because current evidence still lacks live trusted-prompt proof and shows degraded graph/source mapping state."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8b5357ea167322cd",
+      "path": "50_Instances/accepted/behavior-rule-8b5357ea167322cd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Rank live pre-response loop proof, provenance/source mapping, and fast honest retrieval/index freshness as the top consensus blockers."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e9c0d81f690a21f8",
+      "path": "50_Instances/accepted/behavior-rule-e9c0d81f690a21f8.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep the audit read-only with no source edits, no lifecycle application, and no git sync."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-00816a7debe955f7",
+      "path": "50_Instances/accepted/behavior-rule-00816a7debe955f7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Run fresh live Codex and Claude proof after hook trust/reload and capture evidence in the verification registry."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b307018fe59b5032",
+      "path": "50_Instances/accepted/behavior-rule-b307018fe59b5032.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Kept repository source read-only; no code or data files were manually edited by the audit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-193cbe1caa903927",
+      "path": "50_Instances/accepted/behavior-rule-193cbe1caa903927.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Used DinoBrain protocol context pack and primary RAG guidance sources for comparison."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-17454c1268460efb",
+      "path": "50_Instances/accepted/behavior-rule-17454c1268460efb.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treated graph-health score 0/degraded as honest status, but incomplete lineage coverage remains a blocking graph-health issue."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2c36e0fecd12c14a",
+      "path": "50_Instances/accepted/behavior-rule-2c36e0fecd12c14a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of DinoBrain durable source/provenance/source-chunk-claim lineage and graph health. Findings: graph health is correctly degraded but reports all accepted instances as missing source mapping; current source/provenance records exist for RAG guidance, but accepted-memory lineage recognition only checks narrow single-source fields and misses source_paths/source_chunk_path/claim_paths/provenance records. The graph index currently models record/root/folder/tag/kind/wikilink edges, not the provenance/lifecycle/quarantine/usage edges required by the completion contract. Node/npm were unavailable in the shell, so verification was static plus direct file inspection rather than npm verifier execution."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7d4b38be040d5e0d",
+      "path": "50_Instances/accepted/behavior-rule-7d4b38be040d5e0d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the current behavior-eval implementation as retrieval-path proof, not Ragas/LangSmith-style behavior proof."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f297fa302bb110a8",
+      "path": "50_Instances/accepted/behavior-rule-f297fa302bb110a8.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim real-vault memory-on behavior improvement until representative behavior-golden cases and answer-quality scoring exist."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3ed97af4a4ce10bb",
+      "path": "50_Instances/accepted/behavior-rule-3ed97af4a4ce10bb.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Memory-use audit needs hard pass/fail semantics for expected memory and observed evidence before it can serve as proof."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1610be95ea3ffc7e",
+      "path": "50_Instances/accepted/behavior-rule-1610be95ea3ffc7e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Tighten audit_memory_use so missing expected memory, hallucinated references, and unverified artifacts can fail proof checks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3b3e1f0038318ebf",
+      "path": "50_Instances/accepted/behavior-rule-3b3e1f0038318ebf.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed read-only audit of behavior evaluation, feedback writeback, memory audit, memory-on/off proof, and verify-v2 behavior proof surfaces. Found that current behavior evaluation is retrieval/term scoring rather than answer-quality or correction-behavior proof, verify-v2 uses only a temporary self-referential golden case, and memory-use audit returns ok even when trust evidence is degraded."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d21364a17b9ef307",
+      "path": "50_Instances/accepted/behavior-rule-d21364a17b9ef307.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat exact user-provided RAG URLs as directly verified summary sources, not merely anchor-only backlog."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ce9cbdec8cf9b21c",
+      "path": "50_Instances/accepted/behavior-rule-ce9cbdec8cf9b21c.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not store raw full external pages; store bounded paraphrased claims with source URLs and provenance links."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e41566adfe519155",
+      "path": "50_Instances/accepted/behavior-rule-e41566adfe519155.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Accept core RAG, hybrid retrieval, reranking, source/chunk/claim lineage, GraphRAG overlay, and evaluation guidance into DinoBrain memory."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9e67d419e2d7e876",
+      "path": "50_Instances/accepted/behavior-rule-9e67d419e2d7e876.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Hold paper/provider-specific claims unless source-bound and refreshed; reject overgeneralizations such as RAG guaranteeing truth or lexical fallback equaling dense hybrid retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2dfae4129e092ea3",
+      "path": "50_Instances/accepted/behavior-rule-2dfae4129e092ea3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep current live retrieval mode labeled lexical_fallback_v2 until a real embedding provider is configured."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-dcda45517c6ebc4b",
+      "path": "50_Instances/accepted/behavior-rule-dcda45517c6ebc4b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implement or configure a real dense embedding provider before claiming live dense hybrid retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c93696a0718bd3b6",
+      "path": "50_Instances/accepted/behavior-rule-c93696a0718bd3b6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: DinoBrain evaluation should separate retrieval-component quality from end-to-end behavior proof."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-44e727fc70a0e00c",
+      "path": "50_Instances/accepted/behavior-rule-44e727fc70a0e00c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Memory-on vs memory-off should be tested as paired experiments over the same prompts, model, evaluator, and dataset."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-887e3a59206c5909",
+      "path": "50_Instances/accepted/behavior-rule-887e3a59206c5909.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Embedding benchmarks such as MTEB and STS should be used as context, not as substitutes for DinoBrain-specific retrieval and behavior evaluation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-627d231c77d4b12c",
+      "path": "50_Instances/accepted/behavior-rule-627d231c77d4b12c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add hard-negative retrieval cases and source-provenance checks before trusting semantic similarity scores."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f3e58cbfc254e9ee",
+      "path": "50_Instances/accepted/behavior-rule-f3e58cbfc254e9ee.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Accept high-purity RAG architecture, retrieval quality, hybrid retrieval, reranking placement, indexing/query-time separation, and provenance/evaluation guidance as durable DinoBrain knowledge."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a7e01861bd2d7993",
+      "path": "50_Instances/accepted/behavior-rule-a7e01861bd2d7993.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Reclassify HyDE, RAPTOR, contextual retrieval, Reflexion, and Graph RAG as optional adjacent methods or overlays rather than core RAG."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2aa07cac199c12b6",
+      "path": "50_Instances/accepted/behavior-rule-2aa07cac199c12b6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Hold Lewis RAG details and managed cloud KB feature claims as paper/provider-specific unless source-bound records are created."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-38528235d38484cb",
+      "path": "50_Instances/accepted/behavior-rule-38528235d38484cb.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Reject any memory framing that implies RAG guarantees truth or that optional methods are core RAG components."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-784c35c7ccb76db2",
+      "path": "50_Instances/accepted/behavior-rule-784c35c7ccb76db2.json",
+      "action": "unchanged",
+      "behavior_rule": "Use the Retrieval API guide as the authoritative current source for OpenAI retrieval/vector store API behavior."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-53fe25566aa668ad",
+      "path": "50_Instances/accepted/behavior-rule-53fe25566aa668ad.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the embeddings QA cookbook as archived/stale; use it only for high-level Search-Ask and local embeddings pipeline patterns."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-bba0778e37c1dadb",
+      "path": "50_Instances/accepted/behavior-rule-bba0778e37c1dadb.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: No repository/source files edited."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ee223c49c43428e6",
+      "path": "50_Instances/accepted/behavior-rule-ee223c49c43428e6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Re-check official docs before implementing current API parameters because OpenAI docs can change."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f4bce93c7ac32693",
+      "path": "50_Instances/accepted/behavior-rule-f4bce93c7ac32693.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Verified OpenAI Retrieval API and embeddings QA cookbook claims from official OpenAI sources. Retrieval API guide is preferred for current API facts; cookbook is explicitly archived and should be treated as conceptual/stale."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-58fda7e5fe88d9a4",
+      "path": "50_Instances/accepted/behavior-rule-58fda7e5fe88d9a4.json",
+      "action": "unchanged",
+      "behavior_rule": "Use official Microsoft GraphRAG docs and Microsoft Research posts as primary evidence."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-83e514bf3d424654",
+      "path": "50_Instances/accepted/behavior-rule-83e514bf3d424654.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Frame graph retrieval as an added retrieval layer for cross-document synthesis, holistic themes, entity-neighborhood queries, and source lineage, not as a blanket replacement for vector/snippet retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1913d6433cdc3acf",
+      "path": "50_Instances/accepted/behavior-rule-1913d6433cdc3acf.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep implementation implications concrete for an Obsidian-like graph plus LLM Wiki/source lineage."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1d1fa9ab2224a876",
+      "path": "50_Instances/accepted/behavior-rule-1d1fa9ab2224a876.json",
+      "action": "unchanged",
+      "behavior_rule": "Use official vendor documentation as source truth for vendor-specific hybrid search and reranking claims."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7fc6d6551916d572",
+      "path": "50_Instances/accepted/behavior-rule-7fc6d6551916d572.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat user-provided RAG source chunks as conceptual anchors unless their URLs have been fetched and promoted through review."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-16391276188fc9bf",
+      "path": "50_Instances/accepted/behavior-rule-16391276188fc9bf.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Frame sparse/dense/reranking implications separately because the systems expose different fusion and reranking mechanics."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c5d365c7d8d09fbc",
+      "path": "50_Instances/accepted/behavior-rule-c5d365c7d8d09fbc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Evaluate actual retrieval quality with a small golden query set before choosing alpha/weights/fusion/reranker defaults."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a36e6286104468f3",
+      "path": "50_Instances/accepted/behavior-rule-a36e6286104468f3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Used only the three user-specified URLs as claim evidence."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1424948bad8d5817",
+      "path": "50_Instances/accepted/behavior-rule-1424948bad8d5817.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Kept claims short, paraphrased, and suitable for DinoBrain memory ingestion."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6c7b6a96c44ed185",
+      "path": "50_Instances/accepted/behavior-rule-6c7b6a96c44ed185.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treated managed-service design implications and caveats as separate fields per claim."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-33705e4a520d31c1",
+      "path": "50_Instances/accepted/behavior-rule-33705e4a520d31c1.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Optionally convert selected claims into accepted DinoBrain source-anchor records after review."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-bd6822e3bd86c206",
+      "path": "50_Instances/accepted/behavior-rule-bd6822e3bd86c206.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat reranking as a second-stage operation after initial retrieval; for DinoBrain specifically, run dense/BM25/hybrid retrieval and reciprocal rank fusion first, then rerank the fused top candidate window."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-bce10a575a74765f",
+      "path": "50_Instances/accepted/behavior-rule-bce10a575a74765f.json",
+      "action": "unchanged",
+      "behavior_rule": "Use provider rerank scores for within-query ordering, not as globally calibrated relevance probabilities."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b97b2328f6071248",
+      "path": "50_Instances/accepted/behavior-rule-b97b2328f6071248.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Preserve original retrieval scores, source paths, and fusion rank as provenance alongside rerank score."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e0b9296487c4944b",
+      "path": "50_Instances/accepted/behavior-rule-e0b9296487c4944b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Verified official reranking documentation for Cohere, Voyage AI, Pinecone, and Weaviate. Prepared 5 source-bound claims on rerank APIs, model behavior, placement after retrieval/rank fusion, and caveats for DinoBrain RAG design."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-931d6b6d05b59912",
+      "path": "50_Instances/accepted/behavior-rule-931d6b6d05b59912.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat framework RAG pipelines as explicit staged systems: indexing/ingestion separated from query-time retrieval/generation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-da80ee47e291beac",
+      "path": "50_Instances/accepted/behavior-rule-da80ee47e291beac.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: DinoBrain design implications should emphasize provenance, modular retriever/storage adapters, retrieval policy tradeoffs, prompt-injection boundaries, and local-first persistence/scaling."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-937c1ea5f8dac9a4",
+      "path": "50_Instances/accepted/behavior-rule-937c1ea5f8dac9a4.json",
+      "action": "unchanged",
+      "behavior_rule": "Use external source pages as authoritative for this verification pass rather than relying on stored anchor titles."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8454813722ecde8e",
+      "path": "50_Instances/accepted/behavior-rule-8454813722ecde8e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat Pinecone chunking as application-owned before upsert; Pinecone retrieval/scoring works per document/record chunk."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-618f6a85e7d502bc",
+      "path": "50_Instances/accepted/behavior-rule-618f6a85e7d502bc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat Jina late_chunking as provider-specific embedding behavior requiring ordered same-document inputs and token-limit checks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f982cece61354cd5",
+      "path": "50_Instances/accepted/behavior-rule-f982cece61354cd5.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Evaluate DinoBrain RAG with recall@k/MRR on representative queries before adopting exact chunk sizes or contextualization defaults."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3bbd12fda925e5be",
+      "path": "50_Instances/accepted/behavior-rule-3bbd12fda925e5be.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the public OS RAG material as a source-anchor and implementation backlog, not as verified source truth."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d5a3d0b5fdf0a4f2",
+      "path": "50_Instances/accepted/behavior-rule-d5a3d0b5fdf0a4f2.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not invent the missing upstream 55-anchor list; only exact local URLs are registered."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-277f0b6309337213",
+      "path": "50_Instances/accepted/behavior-rule-277f0b6309337213.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Promote the durable lesson into accepted memory so future sessions know to use source/chunk/claim lineage plus retrieval canaries and behavior evaluation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-23ef36a2cd141680",
+      "path": "50_Instances/accepted/behavior-rule-23ef36a2cd141680.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Fetch and chunk high-priority sources one at a time, then review concrete claims before using them as factual support."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3f9c57eeb076e3ec",
+      "path": "50_Instances/accepted/behavior-rule-3f9c57eeb076e3ec.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Registered the user-provided public OS RAG learning packet as DinoBrain durable knowledge. The representative URL anchors remain anchor-only/unverified source candidates, while a new accepted memory records how future sessions should use them for LLM Wiki source/chunk/claim lineage, contextual retrieval, hybrid retrieval, reranking, canaries, and behavior evaluation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-48791aed297a3917",
+      "path": "50_Instances/accepted/behavior-rule-48791aed297a3917.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Promote only paraphrased aggregate knowledge, not raw Codex content."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f6d7f5d1d01cd4a7",
+      "path": "50_Instances/accepted/behavior-rule-f6d7f5d1d01cd4a7.json",
+      "action": "unchanged",
+      "behavior_rule": "Use session refs and redacted message hashes as evidence instead of raw text or local paths."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-05b048dba086b592",
+      "path": "50_Instances/accepted/behavior-rule-05b048dba086b592.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat promoted records as internal behavior/preference memory, not external factual source truth."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4740b23b02f91c27",
+      "path": "50_Instances/accepted/behavior-rule-4740b23b02f91c27.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep current user instructions above promoted session memory."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6eaa1cd03a47fedd",
+      "path": "50_Instances/accepted/behavior-rule-6eaa1cd03a47fedd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Strengthen public-data safety by scanning untracked sync candidates before they are committed."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-965cd3fa5206e5b9",
+      "path": "50_Instances/accepted/behavior-rule-965cd3fa5206e5b9.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add behavior golden cases proving the promoted preferences change future answers versus memory-off baseline."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0827d6651c23da8d",
+      "path": "50_Instances/accepted/behavior-rule-0827d6651c23da8d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implemented and ran the real Codex session knowledge promotion step. Added a reusable session:promote command that reads local Codex JSONL sessions, extracts repeated preferences/decisions/mistakes/rules via deterministic pattern aggregation, and writes public-safe paraphrased accepted memory plus review records without storing raw transcripts, message text, previews, or absolute local session paths. Ran it against 47 non-empty local Codex sessions / 4477 messages and promoted 15 accepted codex-session-knowledge memories plus a Codex Session Knowledge Profile and promotion reports. Rebuilt Wiki/SQLite indexes; wiki_search retrieves the promoted profile from sqlite_shards. Strengthened public-data safety to scan untracked sync candidates as well as tracked files; public-data safety reports degraded but blocker_count=0. App changes were committed and pushed as 5582bfe."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ea81622b79eeb5f0",
+      "path": "50_Instances/accepted/behavior-rule-ea81622b79eeb5f0.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat user-provided RAG URLs as durable provenance anchors, not verified source truth."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-59060f810a976653",
+      "path": "50_Instances/accepted/behavior-rule-59060f810a976653.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Mark all seeded RAG sources as anchor_only_unverified until fetched, chunked, claim-linked, and reviewed."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-754305e49f628dcc",
+      "path": "50_Instances/accepted/behavior-rule-754305e49f628dcc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat the data remote as public-safe by default when GitHub reports public or visibility is unknown."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4cb20269224f6e88",
+      "path": "50_Instances/accepted/behavior-rule-4cb20269224f6e88.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim OS completion; this pass only improves gates 7, 12, 14, and 15."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2f76941da05fbbc5",
+      "path": "50_Instances/accepted/behavior-rule-2f76941da05fbbc5.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Get fresh trusted Codex live prompt proof before any manual MCP call."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8882dba77688ae57",
+      "path": "50_Instances/accepted/behavior-rule-8882dba77688ae57.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Improved DinoBrain against OS_COMPLETION_CONDITIONS without claiming full OS completion. Added a public-data safety verifier that scans the real data vault, reconciles GitHub visibility with docs, detects raw transcript/secret/local-only markers, verifies default-index exclusions, and writes public-data safety reports. Reconciled docs away from private-only data repo assumptions. Added a reusable RAG source-anchor seeding command and seeded user-provided RAG methodology anchors as anchor_only_unverified source/provenance candidates, plus a RAG Methodology Anchor Catalog. Rebuilt Wiki/SQLite indexes and graph health; verified RAG anchors are searchable through SQLite-backed wiki_search. Build, check, and verify:v2 passed. Current graph health and public-data safety remain degraded, not complete."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ca42903585f7b243",
+      "path": "50_Instances/accepted/behavior-rule-ca42903585f7b243.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not store raw full Codex transcripts or message content in Wiki because the data repo is public."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-298e24d77f91d054",
+      "path": "50_Instances/accepted/behavior-rule-298e24d77f91d054.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Register sessions first as metadata-only local-only source archives plus a searchable Wiki registry."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d8115ac39b3650e8",
+      "path": "50_Instances/accepted/behavior-rule-d8115ac39b3650e8.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Defer content-level extraction and accepted-memory promotion to a separate reviewed pass."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f1f1f264fc8d2cf3",
+      "path": "50_Instances/accepted/behavior-rule-f1f1f264fc8d2cf3.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not push raw session archives or unreviewed extracted content to the public data repo."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ff5e313042176058",
+      "path": "50_Instances/accepted/behavior-rule-ff5e313042176058.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completion is defined as an evidence-backed OS loop, not a note vault or demo graph."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-95a7d9e27f5511f5",
+      "path": "50_Instances/accepted/behavior-rule-95a7d9e27f5511f5.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Current DinoBrain is documented as a strong foundation, not complete under the accepted conditions."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-76d42806647e84bf",
+      "path": "50_Instances/accepted/behavior-rule-76d42806647e84bf.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completion requires live pre-response OS enforcement, fail-closed gates, closed task lifecycle, honest hybrid retrieval, bounded/index-backed candidate generation, graph health, lifecycle cleanup, source provenance, behavior eval, memory-use audit, feedback writeback, Observatory evidence, privacy/public-data safety, new-PC recovery equivalence, and release/sync hygiene."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d6ea9e6479b81546",
+      "path": "50_Instances/accepted/behavior-rule-d6ea9e6479b81546.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: A disagreement from reviewer 10 was incorporated by adding explicit bounded/index-backed sparse/dense candidate generation and cold operational data partition/compaction/archive requirements."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5865861ab7070786",
+      "path": "50_Instances/accepted/behavior-rule-5865861ab7070786.json",
+      "action": "unchanged",
+      "behavior_rule": "Use docs/OS_COMPLETION_CONDITIONS.md as the governing acceptance document before implementing the next DinoBrain OS changes."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5fbcef6e7ee95cc5",
+      "path": "50_Instances/accepted/behavior-rule-5fbcef6e7ee95cc5.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not claim DinoBrain OS completion until the mandatory gates and proof registry are satisfied against live current data."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ad46ef32d34059e9",
+      "path": "50_Instances/accepted/behavior-rule-ad46ef32d34059e9.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: AGREE with the direction only if SQLite wiki and operations shards are the required live fast path, not optional fallback artifacts."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b4e4bddd7a0c463f",
+      "path": "50_Instances/accepted/behavior-rule-b4e4bddd7a0c463f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: DISAGREE that scalability completion is met while wiki.sqlite, manifest.json, and dense-vectors.json are absent from the live data index state."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-700364032ac368ce",
+      "path": "50_Instances/accepted/behavior-rule-700364032ac368ce.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completion requires bounded candidate selection and latency budgets; current verifiers measure elapsed time but do not fail on agreed performance thresholds."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-022ac79083b88aac",
+      "path": "50_Instances/accepted/behavior-rule-022ac79083b88aac.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completion requires graph health freshness against the current accepted corpus and graph adjacency/index metadata, not a stale healthy record."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-df233bc69105b176",
+      "path": "50_Instances/accepted/behavior-rule-df233bc69105b176.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completion requires cold data compaction/archive boundaries so raw sessions, unreviewed candidates, old tasks/traces/context packs, and broad accepted behavior rules do not dominate default retrieval."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e0e12d17def12542",
+      "path": "50_Instances/accepted/behavior-rule-e0e12d17def12542.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Create or refresh live .dino/index/sqlite/wiki.sqlite and .dino/index/sqlite/manifest.json, then verify get_context_pack and wiki_search report candidate_source=sqlite_shards_v2 on the real data repo."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3f8db6319c3c2233",
+      "path": "50_Instances/accepted/behavior-rule-3f8db6319c3c2233.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Define hot/warm/cold retention: raw sessions stay local-only and excluded, operational logs are partitioned/archived by time/project, and accepted behavior memories are type-budgeted so they do not swamp durable Wiki/Source/Project records."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-73663d1461c527bd",
+      "path": "50_Instances/accepted/behavior-rule-73663d1461c527bd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completion Reviewer 10 completed a read-only data architecture/performance review across dinobrain and dinobrain-data. Conclusion: AGREE with the intended index-first, SQLite-sharded, graph-aware, provenance-aware direction, but DISAGREE that the current system is scalability-complete. Current live data has operations.sqlite tracked/present, but no wiki.sqlite, no SQLite manifest, no dense-vectors index, and the persisted graph-health is stale/false healthy relative to the accepted corpus. Synthetic verifiers pass but report timings instead of enforcing latency budgets. Completion should require fresh wiki+operations SQLite shards, bounded indexed candidate selection, real BM25/dense retrieval constraints, graph adjacency freshness/health gates, cold-data archive/compaction policy, and explicit latency/freshness gates that fail when the prompt path regresses toward full-vault scans."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8f5631887fe1aa77",
+      "path": "50_Instances/accepted/behavior-rule-8f5631887fe1aa77.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Observatory completion must be defined by visible operational truth, not only a passing graph UI fixture."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3aeec5584b731ac8",
+      "path": "50_Instances/accepted/behavior-rule-3aeec5584b731ac8.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Graph-health freshness must be a gate; the current persisted graph-health file is stale relative to the wiki index and accepted corpus."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ab6c0067c5d5c3d7",
+      "path": "50_Instances/accepted/behavior-rule-ab6c0067c5d5c3d7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: The live graph should prioritize semantic clusters, search, hover detail, and state visibility, and avoid dinosaur/fossil/decorative visual metaphors as completion criteria."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-daa311718b06e1dd",
+      "path": "50_Instances/accepted/behavior-rule-daa311718b06e1dd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Active tasks must distinguish actually-running work from stale started records and show blocked/pending/verifier/main lanes explicitly."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-e42dd0c6fcaa2f5c",
+      "path": "50_Instances/accepted/behavior-rule-e42dd0c6fcaa2f5c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Memory-use visibility must show provided, declared-used, observed-used, missing expected, hallucinated references, trust score, and graph-health snapshot, not just an audit count."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-04708363547daa46",
+      "path": "50_Instances/accepted/behavior-rule-04708363547daa46.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Regenerate graph health after wiki/operations index updates and fail readiness when graph-health is older than the index or inconsistent with accepted record count."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9646de8f1624316d",
+      "path": "50_Instances/accepted/behavior-rule-9646de8f1624316d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add/verify an Observatory real-data health card that compares persisted graph-health to a fresh sampled health computation and flags stale false-healthy states."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-bef4cafa11343662",
+      "path": "50_Instances/accepted/behavior-rule-bef4cafa11343662.json",
+      "action": "unchanged",
+      "behavior_rule": "Do not treat accepted behavior memories as source-truth citations by default; they prove prior agent/task claims, not external factual correctness."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f4dc8f084829a07b",
+      "path": "50_Instances/accepted/behavior-rule-f4dc8f084829a07b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: All currently inspected accepted records are source_status=internal and resolve to .dino/traces/*; this is acceptable for agent behavior memory but insufficient for external facts or public claims."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-84fc3511f59857ac",
+      "path": "50_Instances/accepted/behavior-rule-84fc3511f59857ac.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completion should require real 30_Sources/chunks/* records plus .dino/provenance/* links for factual claims, external evidence, citations, and last_verified metadata."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-597152ac463227a6",
+      "path": "50_Instances/accepted/behavior-rule-597152ac463227a6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Graph/provenance health is currently stale or incomplete: graph-health reports zero accepted instances while wiki-index contains the accepted corpus, so completion requires regenerated health metrics and failing checks for missing source chunks/provenance."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c6b5504404d81248",
+      "path": "50_Instances/accepted/behavior-rule-c6b5504404d81248.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Trust scoring should remain an audit of provided/declared/observed memory use, not a truth score."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7e913b50a518bc9b",
+      "path": "50_Instances/accepted/behavior-rule-7e913b50a518bc9b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: LLM Wiki completion must require fast indexed candidate selection, honest retrieval-mode reporting, and true dense retrieval only when a usable dense vector index/provider exists."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2a540fdcb4d5c0e0",
+      "path": "50_Instances/accepted/behavior-rule-2a540fdcb4d5c0e0.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Operational traces/accepted behavior rules currently create ranking pressure; completion requires durable wiki/source/project knowledge to outrank broad operational behavior rules when the query intent calls for it."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0d2fb5049213d9b3",
+      "path": "50_Instances/accepted/behavior-rule-0d2fb5049213d9b3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Graph completion is not the visual graph alone; it requires fresh indexed nodes/edges, wikilinks, provenance/lifecycle edges, graph-health freshness, and degraded status when empty or stale."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1d674e3e90c774b0",
+      "path": "50_Instances/accepted/behavior-rule-1d674e3e90c774b0.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Quality completion is not satisfied until representative context and behavior golden sets pass under growth/noise budgets, including semantic paraphrase, rare exact queries, provenance, quarantine, and recency cases."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4576c59074e79294",
+      "path": "50_Instances/accepted/behavior-rule-4576c59074e79294.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Latency completion should require the prompt path to avoid full vault scans and use SQLite wiki plus operations shards with measured query and rebuild budgets as data grows."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-76c7495512f8689f",
+      "path": "50_Instances/accepted/behavior-rule-76c7495512f8689f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Create or refresh the wiki SQLite shard and manifest for the live data repo, then verify runtime candidate_source is sqlite_shards_v2 for wiki_search and get_context_pack."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-60696eb600d8615f",
+      "path": "50_Instances/accepted/behavior-rule-60696eb600d8615f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Tune ranking and/or type-specific budgets so broad accepted behavior rules do not swamp durable wiki/source/project records."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7348b6be321fcaab",
+      "path": "50_Instances/accepted/behavior-rule-7348b6be321fcaab.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: User explicitly requested public visibility for clockmansy/dinobrain-data after clockmansy/dinobrain was made public."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9887d405bd1916cf",
+      "path": "50_Instances/accepted/behavior-rule-9887d405bd1916cf.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Performed only a minimal tracked secret marker scan before changing visibility; this does not prove the repository contains no personal or operational memory content."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9f21d937070bc997",
+      "path": "50_Instances/accepted/behavior-rule-9f21d937070bc997.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Used git credential-manager token in-process because gh CLI is not installed and the GitHub connector does not expose repository visibility update."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9684c3cd6f6475ad",
+      "path": "50_Instances/accepted/behavior-rule-9684c3cd6f6475ad.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6edf041b6730fca6",
+      "path": "50_Instances/accepted/behavior-rule-6edf041b6730fca6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Changed GitHub repository visibility for clockmansy/dinobrain-data from private to public after verifying the target repository, admin permissions, remote URL, and a minimal tracked-file secret marker scan. GitHub connector now reports visibility=public and git ls-remote confirms origin/main remains accessible at 3c8471d61168099d41066d185d0c29da76f775eb."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6d9b789045317585",
+      "path": "50_Instances/accepted/behavior-rule-6d9b789045317585.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Only changed the app repository clockmansy/dinobrain; left dinobrain-data untouched because it contains operational memory/data and prior policy separates app release from data sync."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9f21d937070bc997",
+      "path": "50_Instances/accepted/behavior-rule-9f21d937070bc997.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Used git credential-manager token in-process because gh CLI is not installed and the GitHub connector does not expose repository visibility update."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0f870fd1ba9a36a6",
+      "path": "50_Instances/accepted/behavior-rule-0f870fd1ba9a36a6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: If the data repository should also become public, run a separate explicit review because it may contain user/session memory."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-acdf241957ff2e0f",
+      "path": "50_Instances/accepted/behavior-rule-acdf241957ff2e0f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Changed GitHub repository visibility for clockmansy/dinobrain from private to public after verifying the target repository, admin permissions, and a minimal tracked-file secret scan. GitHub connector now reports visibility=public and git ls-remote confirms origin/main remains accessible at 8c8d194ba8c1b79a967d3f690dd20e315793c3d6. The data repository was not changed."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f395029f88ce97c0",
+      "path": "50_Instances/accepted/behavior-rule-f395029f88ce97c0.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat this as an installer bug, not a path or quoting bug."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ee5268f9177903c4",
+      "path": "50_Instances/accepted/behavior-rule-ee5268f9177903c4.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Normalize existing config text before section removal and block append."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8bbf590f48a7affd",
+      "path": "50_Instances/accepted/behavior-rule-8bbf590f48a7affd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Validate the final DinoBrain TOML block before and after writing, and reject bare CR bytes at the file level."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-69e8d47392b6ad09",
+      "path": "50_Instances/accepted/behavior-rule-69e8d47392b6ad09.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Bump patch version to 2.2.1 and tag it because this affects installer safety."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c990dca4aa7f960e",
+      "path": "50_Instances/accepted/behavior-rule-c990dca4aa7f960e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Fixed the installer Codex config writer so malformed carriage returns cannot corrupt <machine-local-path> Added CRLF normalization before TOML block rewriting, byte-level bare CR checks after write, DinoBrain TOML block shape validation, and a regression case that starts from a malformed config containing CRCRLF and bare CR. Bumped DinoBrain to v2.2.1 and pushed main/tag."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d9a63bcaa1a89d36",
+      "path": "50_Instances/accepted/behavior-rule-d9a63bcaa1a89d36.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Version bumped to 2.2.0 for closed-loop compounding semantics."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-443b23e564f39212",
+      "path": "50_Instances/accepted/behavior-rule-443b23e564f39212.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: finish_task runs runCompoundingCycle when DINOBRAIN_AUTO_COMPOUND=1, before auto_sync."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5d0c43445ae8f4a6",
+      "path": "50_Instances/accepted/behavior-rule-5d0c43445ae8f4a6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Installer and current Codex config/hook now set DINOBRAIN_AUTO_COMPOUND=1 along with auto growth and auto sync."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-39996b36f29029ec",
+      "path": "50_Instances/accepted/behavior-rule-39996b36f29029ec.json",
+      "action": "unchanged",
+      "behavior_rule": "verify:os now fails if Codex/Claude hook or MCP env misses auto-compound wiring."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-49540fb326024225",
+      "path": "50_Instances/accepted/behavior-rule-49540fb326024225.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Knowledge compounding proof requires a promoted behavior rule to be retrieved by a later Context Pack and memory-on behavior lift to be positive."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-fcf6818bc60130f5",
+      "path": "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implemented DinoBrain OS v2.2.0 closed-loop compounding: finish_task can run automatic trace-to-behavior-rule distillation, cleanup invalid/duplicate behavior rules, refresh retrieval indexes, and keep auto sync enabled from installer/Codex hook config. Added verify:compounding to prove later memory search/context packs retrieve the promoted rule and memory-on behavior beats memory-off baseline."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9438de48a95f03d0",
+      "path": "50_Instances/accepted/behavior-rule-9438de48a95f03d0.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Add auto_sync as a separate policy-enforced tool instead of changing git_sync dry-run semantics."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4cb9cadcc737ec69",
+      "path": "50_Instances/accepted/behavior-rule-4cb9cadcc737ec69.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Enable auto growth and auto sync by installer/env configuration, while blocked raw conversation and secret-bearing paths remain excluded from automatic commits."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c9a811d02d4360e4",
+      "path": "50_Instances/accepted/behavior-rule-c9a811d02d4360e4.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Move hook auto_sync after codex_preflight_completed event so the preflight completion event is included in the auto-sync commit."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ae59886e3e3af314",
+      "path": "50_Instances/accepted/behavior-rule-ae59886e3e3af314.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Check GitHub Actions release run for tag v2.1.0 if release asset availability must be confirmed from GitHub UI."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-295abf1038bd399d",
+      "path": "50_Instances/accepted/behavior-rule-295abf1038bd399d.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implemented DinoBrain OS v2.1.0 closed-loop automation: hard pre-response hook block metadata, hook-side auto sync after preflight completion, finish_task auto-growth records, policy-based auto_sync commit/push tool, search_memory alias, installer env wiring for auto growth/sync, current Codex config/hook env update, and flow audit verification showing all 8 user-flow steps verified."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0105ffe39944fc7e",
+      "path": "50_Instances/accepted/behavior-rule-0105ffe39944fc7e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Classify current DinoBrain as a compounding-capable foundation, not a fully autonomous compounding OS yet."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2606a808b7ec6309",
+      "path": "50_Instances/accepted/behavior-rule-2606a808b7ec6309.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Define true compounding as repeated conversion of conversations into reviewed preferences, decisions, claims, corrections, and behavior rules that measurably improve future sessions."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-aa10f3a65df5cf7c",
+      "path": "50_Instances/accepted/behavior-rule-aa10f3a65df5cf7c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Fix live version drift so the running MCP reports v2.0.2 after reload/restart."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-f5c107fde1877d8c",
+      "path": "50_Instances/accepted/behavior-rule-f5c107fde1877d8c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat installed DinoBrain as configured and probe-verified, not proven fully live for the current active Codex turn until a fresh prompt after hook approval/reload produces codex_prompt_submitted and codex_preflight_completed without manual probe."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-cc414a91fec4e243",
+      "path": "50_Instances/accepted/behavior-rule-cc414a91fec4e243.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Report the 8-step loop as partially enforced: steps 2, 3, 5, 6 are directly verified; step 1 is configured and probe-verified; steps 4, 7, 8 have known automation/policy limits."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-04b9b6661304781b",
+      "path": "50_Instances/accepted/behavior-rule-04b9b6661304781b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Start a fresh Codex thread after hook approval/reload and verify that codex_prompt_submitted and codex_preflight_completed appear before any manual MCP call."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-85890922977180d3",
+      "path": "50_Instances/accepted/behavior-rule-85890922977180d3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Verified the installed/current DinoBrain OS loop against the user's 8-step flow. Codex MCP registration, UserPromptSubmit hook registration, hook simulation/probe, task/context pack creation, wiki_search, finish_task support, v2 verification, and git remotes are present. The complete loop is partially rather than fully autonomous: live current-thread hook injection was not observed before manual probe, model behavior cannot be runtime-enforced by DinoBrain, search_memory is not a separate tool, knowledge growth beyond accepted instances is not fully automatic, and git_sync remains dry-run/manual-review by policy."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-a6d352814efc75f3",
+      "path": "50_Instances/accepted/behavior-rule-a6d352814efc75f3.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: App repo push authorized by user and completed on main."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-6848b1ab5fb28ab6",
+      "path": "50_Instances/accepted/behavior-rule-6848b1ab5fb28ab6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Pushed v2.0.2 tag because release-windows workflow is tag-triggered for v* tags."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d2fa2aa5efa71c3a",
+      "path": "50_Instances/accepted/behavior-rule-d2fa2aa5efa71c3a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Did not commit or push dinobrain-data because git_sync dry-run classified all 87 data changes as conditional/requires_review."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-38ec6724100da29a",
+      "path": "50_Instances/accepted/behavior-rule-38ec6724100da29a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Bumped DinoBrain to v2.0.2 because retrieval and gate semantics changed materially."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-ff402e89e4f3274b",
+      "path": "50_Instances/accepted/behavior-rule-ff402e89e4f3274b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Dense retrieval now reports hybrid_contextual_v2 only when a usable dense vector index/provider exists for the query; otherwise it reports lexical_fallback_v2."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-883fa50a8a93634c",
+      "path": "50_Instances/accepted/behavior-rule-883fa50a8a93634c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Kept candidate_source labels stable while bumping underlying wiki/sqlite index versions to v3."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2bc2f365baf3346c",
+      "path": "50_Instances/accepted/behavior-rule-2bc2f365baf3346c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: os_gate no longer trusts has_context_pack/context_item_count self-report without a verified context pack trace."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-3bac475b985d07c2",
+      "path": "50_Instances/accepted/behavior-rule-3bac475b985d07c2.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: audit_memory_use now separates declared artifacts from event-observed artifacts."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-cfd9c7a4092a6a38",
+      "path": "50_Instances/accepted/behavior-rule-cfd9c7a4092a6a38.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Review whether dinobrain-data index/task changes should be committed under the existing data-vault policy."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-4f7e8321458ab4db",
+      "path": "50_Instances/accepted/behavior-rule-4f7e8321458ab4db.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Released as v2.0.1 because this is a stability patch on top of v2."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-5e0ac5af0b899827",
+      "path": "50_Instances/accepted/behavior-rule-5e0ac5af0b899827.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Data repo runtime logs and indexes were not committed or pushed automatically."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-291581dc23559171",
+      "path": "50_Instances/accepted/behavior-rule-291581dc23559171.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Claude Code integration now writes a UserPromptSubmit hook in addition to MCP registration; official Claude Code docs define UserPromptSubmit as firing before Claude processes a prompt."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2e470cc8899d6fb1",
+      "path": "50_Instances/accepted/behavior-rule-2e470cc8899d6fb1.json",
+      "action": "unchanged",
+      "behavior_rule": "After installing v2.0.1 on another PC, restart/trust Codex and Claude hooks so active sessions reload the new pre-response hook config."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-efe21718f8ad5f5f",
+      "path": "50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation guards, made node lifecycle apply real archive/hold/merge/provenance repair operations, handled os_begin_task context-pack failures as fail-closed task/gate records, fixed Observatory JSON graph fallback for v2 indexes, bumped app/installer version to 2.0.1, added regression coverage, pushed main and tag v2.0.1. Local release ZIP was built; direct GitHub Release upload could not run because no GITHUB_TOKEN/GH_TOKEN is available in this shell."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-7827a0b769513d25",
+      "path": "50_Instances/accepted/behavior-rule-7827a0b769513d25.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Review remained read-only; no code changes were made."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-06fab03e79df23a7",
+      "path": "50_Instances/accepted/behavior-rule-06fab03e79df23a7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: v2 stability risk is mostly in fail-closed enforcement, automatic lifecycle execution, strict eval gating, and active-session MCP/tool reload guarantees."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-bb343d17c1a5d70b",
+      "path": "50_Instances/accepted/behavior-rule-bb343d17c1a5d70b.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Patch hook duplicate-lock path to inject fail-closed unless a concrete sibling preflight report/context can be read."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-c1ad7c4e0066b985",
+      "path": "50_Instances/accepted/behavior-rule-c1ad7c4e0066b985.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than executing merge/hold/delete/provenance repair; behavior eval exits ok when golden file is missing; Observatory JSON graph fallback rejects v2 wiki index when SQLite is unavailable; create_source_chunk stores raw chunk_text without redaction/size bounds; os_begin_task can leave started tasks if context-pack construction throws. Type check passed after adding portable Node directory to PATH; eval:behavior currently returns ok/skipped because behavior-golden.json is missing."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2a2e9184b17aaf95",
+      "path": "50_Instances/accepted/behavior-rule-2a2e9184b17aaf95.json",
+      "action": "unchanged",
+      "behavior_rule": "Use os_begin_task as the default v2 pre-response entrypoint for hooks and agents."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-802d69e5bcfb025c",
+      "path": "50_Instances/accepted/behavior-rule-802d69e5bcfb025c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Fail closed when OS context is missing or destructive-risk gates block the request."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-78751921656331b2",
+      "path": "50_Instances/accepted/behavior-rule-78751921656331b2.json",
+      "action": "unchanged",
+      "behavior_rule": "Use local deterministic hybrid retrieval: contextual chunks, BM25 sparse, dense-lite lexical similarity, RRF, provenance and root-intent reranking."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-dcdbecc38dc41999",
+      "path": "50_Instances/accepted/behavior-rule-dcdbecc38dc41999.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat direct user corrections as accepted behavior memory through record_feedback_correction."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0b79a9433e34f4a6",
+      "path": "50_Instances/accepted/behavior-rule-0b79a9433e34f4a6.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implement lifecycle actions as review records rather than silent destructive mutation."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2276c64372f8963e",
+      "path": "50_Instances/accepted/behavior-rule-2276c64372f8963e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Run installer build/release after review so other PCs install the v2 OS contract."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-d5b305de202e451f",
+      "path": "50_Instances/accepted/behavior-rule-d5b305de202e451f.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Run git_sync dry-run before syncing the data repo; do not auto-push data without review."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-26279e80576aba65",
+      "path": "50_Instances/accepted/behavior-rule-26279e80576aba65.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Implemented DinoBrain OS v2 foundations: package/server/installer version bumped to 2.0.0, added fail-closed os_begin_task pre-response entrypoint, switched default retrieval to hybrid_contextual_v2, added action gates, node lifecycle application, durable source chunks/provenance links, feedback correction writeback, behavior evaluation, v2 Observatory status, and v2 regression verification."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b09e15a038deca29",
+      "path": "50_Instances/accepted/behavior-rule-b09e15a038deca29.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep DinoBrain as the product name, but remove graph-level dinosaur and fossil visual metaphors."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-354ddeb6e08d90c6",
+      "path": "50_Instances/accepted/behavior-rule-354ddeb6e08d90c6.json",
+      "action": "unchanged",
+      "behavior_rule": "Use semantic cluster/layout naming instead of pose or silhouette terminology."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1aa6a6ffbff10516",
+      "path": "50_Instances/accepted/behavior-rule-1aa6a6ffbff10516.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep detail access through hover and search rather than always-on long labels."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-26aa2f8a00656911",
+      "path": "50_Instances/accepted/behavior-rule-26aa2f8a00656911.json",
+      "action": "unchanged",
+      "behavior_rule": "Use semantic cluster anchors for live activity, wiki, sources, projects, instances, operations, context packs, tags, and archive/error records."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-73b1b302b5b2cbb9",
+      "path": "50_Instances/accepted/behavior-rule-73b1b302b5b2cbb9.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep dinosaur/fossil character as low-contrast canvas scaffold rather than node placement constraint."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-1239ac71caea3f2e",
+      "path": "50_Instances/accepted/behavior-rule-1239ac71caea3f2e.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Default labels now favor hub labels; active task and context-pack labels are available through hover/search rather than always visible."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-9fc8880d029f92ae",
+      "path": "50_Instances/accepted/behavior-rule-9fc8880d029f92ae.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Used DinoBrain task/context preflight before analysis per AGENTS.md."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b3c9d45758b53ed7",
+      "path": "50_Instances/accepted/behavior-rule-b3c9d45758b53ed7.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Relied on local git state plus GitHub PR metadata as the strongest recent evidence."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b17fd0e7d971cceb",
+      "path": "50_Instances/accepted/behavior-rule-b17fd0e7d971cceb.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Discarded weaker candidates because Gmail search lacked scope, Calendar had no DinoBrain events, and the observatory branch was already contained in main."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-473c0c26c32a7b67",
+      "path": "50_Instances/accepted/behavior-rule-473c0c26c32a7b67.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Used DinoBrain context plus local git/GitHub evidence as primary signals."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-bf59766655207ebc",
+      "path": "50_Instances/accepted/behavior-rule-bf59766655207ebc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Excluded Gmail-based suggestions because the connected Gmail search scope is insufficient."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-89624dbe05b30afc",
+      "path": "50_Instances/accepted/behavior-rule-89624dbe05b30afc.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Excluded calendar-based suggestions because no project-related upcoming events were found."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-faf9170e61317573",
+      "path": "50_Instances/accepted/behavior-rule-faf9170e61317573.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Kept only suggestions tied to fresh unresolved repo work, not already-landed tasks."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-b43b1ba7c765bebb",
+      "path": "50_Instances/accepted/behavior-rule-b43b1ba7c765bebb.json",
+      "action": "unchanged",
+      "behavior_rule": "Use GitHub Actions with repository GITHUB_TOKEN for release asset upload so local GITHUB_TOKEN/GH_TOKEN is no longer required for normal tagged releases."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-28c11b32aa6c400a",
+      "path": "50_Instances/accepted/behavior-rule-28c11b32aa6c400a.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep installer AppRef and DataRef on main for standard installs."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-758fd74fedc3e0bd",
+      "path": "50_Instances/accepted/behavior-rule-758fd74fedc3e0bd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Exclude local screenshot attachment folder from git staging."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-2372b3cb484475fd",
+      "path": "50_Instances/accepted/behavior-rule-2372b3cb484475fd.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: For future releases, push main, tag vX.Y.Z, and the release workflow should build/upload assets automatically."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-93460031ba7760ee",
+      "path": "50_Instances/accepted/behavior-rule-93460031ba7760ee.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Keep data/API/server-side logic unchanged; this pass is visual rendering only."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-0d59f60f38900dd5",
+      "path": "50_Instances/accepted/behavior-rule-0d59f60f38900dd5.json",
+      "action": "unchanged",
+      "behavior_rule": "Use deterministic fossil pose locking so live graph data remains visible but no longer flattens the dinosaur silhouette."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-8293bde4217b230c",
+      "path": "50_Instances/accepted/behavior-rule-8293bde4217b230c.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Treat v13 as locally QA-passed, but do not deploy until the user approves release."
+    },
+    {
+      "behavior_rule_id": "behavior-rule-15949abcda6374b4",
+      "path": "50_Instances/accepted/behavior-rule-15949abcda6374b4.json",
+      "action": "unchanged",
+      "behavior_rule": "In similar future work, apply this decision: Took the DinoBrain Observatory dinosaur graph one step further after the v7 candidate. Implemented deterministic fossil mode with locked node poses, explicit slot arrays for silhouette parts, redistributed live node types across body/tail/neck/head/leg roles, reduced background edge prominence, added fixed canvas guide routes for the fossil scaffold, tuned head/neck proportions, captured v13 evidence, and updated design-qa.md to final result: passed. No deployment or commit was performed."
+    }
+  ],
+  "cleanup_actions": []
+}

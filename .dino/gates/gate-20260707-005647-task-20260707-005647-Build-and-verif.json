@@ -1,0 +1,44 @@
+{
+  "gate_id": "gate-20260707-005647-task-20260707-005647-Build-and-verif",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-005647-Build-and-verify-DinoBrain-c",
+  "request": "Build and verify DinoBrain closed loop for any session: pre-response OS context, memory reference, work execution, knowledge growth, and GitHub push. Continue until 20 subagents verify the loop or identify remaining blockers.",
+  "generated_at": "2026-07-07T00:56:47.679Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-005647-Build-and-verify-DinoBrain-c.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitivity_auto_escalated",
+      "level": "warn",
+      "reason": "The request matched sensitive-content rules despite a lower reported sensitivity.",
+      "safe_action": "Treat the task as sensitive and avoid storing raw credentials, tokens, or private identifiers."
+    },
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "sensitive",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "sensitive",
+  "sensitivity_hits": [
+    "cookie_assignment"
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "pack_id": "pack-20260706-160642-What-current-DinoBrain-memor",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "What current DinoBrain memories, user directions, lifecycle rules, and prior completion/release evidence should guide a read-only memory lifecycle/compounding review of dinobrain-data and app repo?",
+  "created_at": "2026-07-06T16:06:42.477Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 141,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 150,
+  "index_candidate_count": 141,
+  "index_total_candidate_count": 141,
+  "index_matching_terms": [
+    "80_review_queue",
+    "app",
+    "appear",
+    "appears",
+    "append",
+    "appended",
+    "application",
+    "appref",
+    "approval",
+    "approve",
+    "approved",
+    "approves",
+    "audit_memory_use",
+    "behavior-rules",
+    "codex-userprompt-hook-merge",
+    "completion",
+    "compounding",
+    "compounding-capable",
+    "current",
+    "current-thread",
+    "currently",
+    "dinobrain",
+    "dinobrain_auto_compound",
+    "dinobrain-created",
+    "dinobrain-data",
+    "dinobrainsetup",
+    "disappointing",
+    "evidence_so",
+    "evidence_sourc",
+    "evidence_sources",
+    "guide",
+    "happen",
+    "lifecycle",
+    "manual-review",
+    "mapping",
+    "memories",
+    "memory",
+    "memory_id",
+    "memory-",
+    "memory-off",
+    "memory-on",
+    "prior",
+    "read-only",
+    "release",
+    "release-ready",
+    "release-windows",
+    "released",
+    "releases",
+    "repo",
+    "report",
+    "reported",
+    "reports",
+    "repos",
+    "repository",
+    "requires_review",
+    "review",
+    "reviewed",
+    "rules",
+    "runcompoundingcycle",
+    "search_memory",
+    "self-report",
+    "task_summary_memory",
+    "task-20260701-005837-hookeventname-userpromptsubm",
+    "task-20260701-012635-hookeventname-userpromptsubm",
+    "task-20260703-041404-re-check-why-github-release",
+    "task-20260703-071734-fix-codex-userpromptsubmit-i",
+    "task-20260703-085839-improve-the-dinobrain-observ",
+    "task-20260703-092603-take-the-dinobrain-observato",
+    "task-20260703-103247-deploy-the-approved-v13-dino",
+    "task-20260705-015049-redesign-dinobrain-observato",
+    "task-20260705-020713-implement-dinobrain-v2-found",
+    "task-20260705-022738-qa-code-review-dinobrain-v2",
+    "task-20260705-053940-dinobrain-os-v2-p0-db-03-db",
+    "task-20260705-060843-commit-and-push-the-current",
+    "task-20260705-075637-assess-whether-dinobrain-s-c",
+    "task-20260706-150114-fix-dinobrain-installer-conf",
+    "task-memory-task-20260706-150114-fix-dinobrain-installer-conf",
+    "task-memory-task-20260706-151510-change-the-github-visibility",
+    "task-memory-task-20260706-152258-change-the-github-visibility",
+    "user",
+    "user-flow",
+    "user-level",
+    "userpr",
+    "userpromptsubmit",
+    "users",
+    "wrapper"
+  ],
+  "included_item_count": 12,
+  "excluded_record_count": 148,
+  "items": [
+    {
+      "path": "30_Sources/README.md",
+      "kind": "curated_record",
+      "title": "30_Sources",
+      "summary": "Source records and verification notes.",
+      "tags": [],
+      "score": 5.524,
+      "reasons": [
+        "chunk_matched:app",
+        "dense_lexical:0.65",
+        "rank_fusion:rrf",
+        "rerank_root_intent_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-6d9b789045317585.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Only changed the app repository clockmansy/dinobrain; left dinobrain-data untouched because it contains operational memory/data and prior policy separates app release from data sync.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Only changed the app repository clockmansy/dinobrain; left dinobrain-data untouched because it contains operational memory/data and prior policy separates app release from data sync. | Evidence: Only changed the app repository clockmansy/dinobrain; left dinobrain-data untouched because it contains operational memory/data and prior policy separates app releas",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 3.514,
+      "reasons": [
+        "title_matched:dinobrain,prior,release,memory",
+        "summary_matched:dinobrain,prior,release,memory",
+        "chunk_matched:dinobrain,prior,release,memory",
+        "bm25:dinobrain,prior,release,memory,dinobrain-data",
+        "dense_lexical:2.58",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-14b2ee6df68bb7bd.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Keep data repo sync as dry-run/manual-review only per project policy; release app repo separately from operational memory changes.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Keep data repo sync as dry-run/manual-review only per project policy; release app repo separately from operational memory changes. | Evidence: Keep data repo sync as dry-run/manual-review only per project policy; release app repo separately from operational memory changes.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 3.318,
+      "reasons": [
+        "title_matched:release,memory,review,app",
+        "summary_matched:release,memory,review,app",
+        "chunk_matched:release,memory,review,app",
+        "bm25:release,memory,app,repo",
+        "dense_lexical:1.92",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-d55011c3f8b7399b.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Review DinoBrain data repo changes before any data commit/push; git_sync classified all 32 current data changes as requires_review.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Review DinoBrain data repo changes before any data commit/push; git_sync classified all 32 current data changes as requires_review. | Evidence: Review DinoBrain data repo changes before any data commit/push; git_sync classified all 32 current data changes as requires_review.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 3.224,
+      "reasons": [
+        "title_matched:current,dinobrain,review,app",
+        "summary_matched:current,dinobrain,review,app",
+        "chunk_matched:current,dinobrain,review,app",
+        "bm25:current,dinobrain,review,repo",
+        "dense_lexical:1.87",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-0f870fd1ba9a36a6.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: If the data repository should also become public, run a separate explicit review because it may contain user/session memory.",
+      "summary": "Behavior rule: In similar future work, apply this decision: If the data repository should also become public, run a separate explicit review because it may contain user/session memory. | Evidence: If the data repository should also become public, run a separate explicit review because it may contain user/session memory.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 3.041,
+      "reasons": [
+        "title_matched:user,memory,review,app",
+        "summary_matched:user,memory,review,app",
+        "chunk_matched:user,memory,review,app",
+        "bm25:user,memory,review",
+        "dense_lexical:1.69",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-e9e72c4d32d516e6.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: The upgrade should make DinoBrain visibly prove hook operation, context usage, memory lifecycle, graph integrity, and sync risk.",
+      "summary": "Behavior rule: In similar future work, apply this decision: The upgrade should make DinoBrain visibly prove hook operation, context usage, memory lifecycle, graph integrity, and sync risk. | Evidence: The upgrade should make DinoBrain visibly prove hook operation, context usage, memory lifecycle, graph integrity, and sync risk.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 2.878,
+      "reasons": [
+        "title_matched:dinobrain,lifecycle,memory,app",
+        "summary_matched:dinobrain,lifecycle,memory,app",
+        "chunk_matched:dinobrain,lifecycle,memory,app",
+        "bm25:dinobrain,lifecycle,memory",
+        "dense_lexical:1.76",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.2.0 closed-loop compounding: finish_task can run automatic trace-to-behavior-rule distillation, cleanup invalid/duplicate behavior rules, refresh retrieval indexes, and keep auto sync enabled from installer/Codex hook config. Added verify:compounding to prove later memory search/context packs retrieve the promoted rule and memory-on behavior beats memory-off baseline.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented DinoBrain OS v2.2.0 closed-loop compounding: finish_task can run automatic trace-to-behavior-rule distillation, cleanup invalid/duplicate behavior rules, refresh retrieval indexes, and keep auto sync enabled from installer/Codex hook config. Added verify:compounding to prove later memory search/context packs retrieve the promoted rule and memory-",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 2.824,
+      "reasons": [
+        "title_matched:dinobrain,rules,memory,compounding",
+        "summary_matched:dinobrain,rules,memory,compounding",
+        "chunk_matched:dinobrain,rules,memory,compounding",
+        "bm25:dinobrain,rules,memory,compounding",
+        "dense_lexical:1.36",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-9684c3cd6f6475ad.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events.",
+      "summary": "Behavior rule: In similar future work, apply this decision: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events. | Evidence: If the public data repository should be sanitized, run a deeper content review over accepted memories, traces, context packs, and events.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 2.799,
+      "reasons": [
+        "title_matched:memories,review,app,repo",
+        "summary_matched:memories,review,app,repo",
+        "chunk_matched:memories,review,app,repo",
+        "bm25:memories,review",
+        "dense_lexical:1.65",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-efe21718f8ad5f5f.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation guards, made node lifecycle apply real archive/hold/merge/provenance repair operations, handled os_begin_task context-pack failures as fail-closed task/gate records, fixed Observatory JSON graph fallback for v2 indexes, bumped app/installer version to 2.0.1, added regression coverage, pushed main and tag v2.0.1. Local release ZIP was built; direct GitHub Release upload could not run because no GITHUB_TOKEN/GH_TOKEN is available in this shell.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Implemented and deployed DinoBrain v2.0.1 stability fixes based on the QA review. Patched fail-closed Codex hook duplicate-lock behavior, added Claude Code UserPromptSubmit hook registration and verification, expanded v2 action gates to the full OS tool contract, made behavior eval strict when golden cases are missing, added source chunk redaction/truncation",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 2.795,
+      "reasons": [
+        "title_matched:dinobrain,user,lifecycle,release",
+        "summary_matched:dinobrain,user,review,app",
+        "chunk_matched:dinobrain,user,lifecycle,review",
+        "bm25:dinobrain,lifecycle,release,review,app",
+        "dense_lexical:1.36",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-0105ffe39944fc7e.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Classify current DinoBrain as a compounding-capable foundation, not a fully autonomous compounding OS yet.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Classify current DinoBrain as a compounding-capable foundation, not a fully autonomous compounding OS yet. | Evidence: Classify current DinoBrain as a compounding-capable foundation, not a fully autonomous compounding OS yet.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 2.775,
+      "reasons": [
+        "title_matched:current,dinobrain,compounding,app",
+        "summary_matched:current,dinobrain,compounding,app",
+        "chunk_matched:current,dinobrain,compounding,app",
+        "bm25:current,dinobrain,compounding",
+        "dense_lexical:1.56",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-6c036a284626f41a.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Review DinoBrain data repo dry-run changes before syncing; git_sync reported 11 changed files requiring review and did not commit or push data.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Review DinoBrain data repo dry-run changes before syncing; git_sync reported 11 changed files requiring review and did not commit or push data. | Evidence: Review DinoBrain data repo dry-run changes before syncing; git_sync reported 11 changed files requiring review and did not commit or push data.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:low"
+      ],
+      "score": 2.772,
+      "reasons": [
+        "title_matched:dinobrain,review,app,repo",
+        "summary_matched:dinobrain,review,app,repo",
+        "chunk_matched:dinobrain,review,app,repo",
+        "bm25:dinobrain,review,repo",
+        "dense_lexical:1.65",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-2606a808b7ec6309.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Define true compounding as repeated conversion of conversations into reviewed preferences, decisions, claims, corrections, and behavior rules that measurably improve future sessions.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Define true compounding as repeated conversion of conversations into reviewed preferences, decisions, claims, corrections, and behavior rules that measurably improve future sessions. | Evidence: Define true compounding as repeated conversion of conversations into reviewed preferences, decisions, claims, corrections, and behavior rules that measurably improve",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 2.756,
+      "reasons": [
+        "title_matched:rules,compounding,review,app",
+        "summary_matched:rules,compounding,review,app",
+        "chunk_matched:rules,compounding,review,app",
+        "bm25:rules,compounding",
+        "dense_lexical:1.61",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_root_intent_penalty"
+      ]
+    }
+  ]
+}

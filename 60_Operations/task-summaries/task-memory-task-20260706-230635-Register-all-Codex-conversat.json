@@ -1,0 +1,49 @@
+{
+  "memory_id": "task-memory-task-20260706-230635-Register-all-Codex-conversat",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Register all Codex conversations on this computer into DinoBrain Wiki in a safe, useful form wit",
+  "summary": "Registered Codex conversations from this computer into DinoBrain as a metadata-only Wiki source registry. Scanned 47 Codex JSONL sessions and 4,420 user/assistant message metadata records, wrote local-only metadata archives under 10_Conversations/raw, created 20_Wiki/Codex-Conversation-Registry.md and 60_Operations/session-imports/codex-conversation-registry.json, rebuilt wiki and SQLite indexes, and verified wiki_search finds the registry without storing raw transcripts, message content, or candidates.",
+  "claim": "Task outcome for dinobrain: Registered Codex conversations from this computer into DinoBrain as a metadata-only Wiki source registry. Scanned 47 Codex JSONL sessions and 4,420 user/assistant message metadata records, wrote local-only metadata archives under 10_Conversations/raw, created 20_Wiki/Codex-Conversation-Registry.md and 60_Operations/session-imports/codex-conversation-registry.json, rebuilt wiki and SQLite indexes, and verified wiki_search finds the registry without storing raw transcripts, message content, or candidates.",
+  "request": "Register all Codex conversations on this computer into DinoBrain Wiki in a safe, useful form without storing raw full transcripts or secrets.",
+  "outcome": "completed",
+  "decisions": [
+    "Do not store raw full Codex transcripts or message content in Wiki because the data repo is public.",
+    "Register sessions first as metadata-only local-only source archives plus a searchable Wiki registry.",
+    "Defer content-level extraction and accepted-memory promotion to a separate reviewed pass."
+  ],
+  "next_steps": [
+    "Run a separate reviewed extraction/promotion pass if the user wants conversation content summarized into accepted memory.",
+    "Do not push raw session archives or unreviewed extracted content to the public data repo."
+  ],
+  "used_memory_paths": [
+    "docs/SESSION_INGEST.md",
+    "docs/CODEX_HOOKS.md",
+    "docs/SYNC_POLICY.md",
+    "src/session-ingest.ts",
+    "src/index.ts"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-230636-Register-all-Codex-conversat.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260706-230635-Register-all-Codex-conversat.json",
+    "snippet": "Registered Codex conversations from this computer into DinoBrain as a metadata-only Wiki source registry. Scanned 47 Codex JSONL sessions and 4,420 user/assistant message metadata records, wrote local-only metadata archives under 10_Conversations/raw, created 20_Wiki/Codex-Conversation-Registry.md and 60_Operations/session-imports/codex-conversation-registry.json, rebuilt wiki and SQLite indexes, and verified wiki_search finds the registry without storing raw transcripts, message content, or candidates."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-06T23:15:17.171Z",
+  "updated_at": "2026-07-06T23:15:17.171Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260706-230635-Register-all-Codex-conversat.json",
+    "task_id": "task-20260706-230635-Register-all-Codex-conversat",
+    "task_path": ".dino/tasks/task-20260706-230635-Register-all-Codex-conversat.json"
+  }
+}

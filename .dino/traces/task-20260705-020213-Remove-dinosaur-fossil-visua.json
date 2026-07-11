@@ -1,0 +1,33 @@
+{
+  "task_id": "task-20260705-020213-Remove-dinosaur-fossil-visua",
+  "outcome": "completed",
+  "summary": "Removed the dinosaur/fossil visual metaphor from the Observatory graph and converted it into a clean operational Knowledge Graph. Kept the product shell name while deleting silhouette/scaffold rendering, fossil naming, and pose-specific graph logic.",
+  "changed_files": [
+    "scripts/dinobrain-observatory.mjs",
+    "design-qa.md"
+  ],
+  "decisions": [
+    "Keep DinoBrain as the product name, but remove graph-level dinosaur and fossil visual metaphors.",
+    "Use semantic cluster/layout naming instead of pose or silhouette terminology.",
+    "Keep detail access through hover and search rather than always-on long labels."
+  ],
+  "next_steps": [
+    "Review the live graph at http://127.0.0.1:3847/.",
+    "Commit and release the Observatory design cleanup when approved."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260705-020219-Remove-dinosaur-fossil-visua.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-05T02:06:46.046Z"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-155430-Final-recheck-R2.-Read-only.",
+  "status": "completed",
+  "request": "Final recheck R2. Read-only. Inspect final revised docs/code: <machine-local-path> docs\\OS_COMPLETION_CONDITIONS.md, docs\\VERIFICATION.md, scripts\\verify-closed-loop-goal.mjs, src\\client-mcp-direct-status.ts. Lens: direct MCP parity and pre-response proof. Question: after latest revisions, are completion conditions still adequate and not weakened? Return: reviewer_id=R2; verdict=AGREE or REVISE_REQUIRED; blocking_objections=[...]; required_doc_changes=[...]; evidence_files=[...].",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:54:30.701Z",
+  "updated_at": "2026-07-07T15:55:18.132Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T15:55:18.132Z",
+  "trace_path": ".dino/traces/task-20260707-155430-Final-recheck-R2.-Read-only..json"
+}

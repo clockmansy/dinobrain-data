@@ -1,0 +1,147 @@
+{
+  "pack_id": "pack-20260703-071742-DinoBrain-installer-Codex-Us",
+  "pack_type": "standard",
+  "question": "DinoBrain installer Codex UserPromptSubmit hook merge behavior install.ps1 verify-installer-hooks.ps1 prior decisions",
+  "created_at": "2026-07-03T07:17:42.601Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 11,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 11,
+  "index_total_candidate_count": 11,
+  "index_matching_terms": [
+    "decisions"
+  ],
+  "included_item_count": 5,
+  "excluded_record_count": 11,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-041151-Explain-whether-Codex-hook-t.json",
+      "kind": "recent_task",
+      "title": "Task: Explain whether Codex hook trust approval can be automated for DinoBrain installation, and ident",
+      "summary": "status=completed | project=dinobrain | Explained that Codex hook trust approval should not be automated because it is the security boundary for command-running hooks. Verified local DinoBrain docs/code state: installer can register user-level hooks, enable hook runtime, run an installed-hook handshake, and provide diagnostics, but cannot bypass Codex's hook trust prompt.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 37,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"installer\"",
+        "path matched \"codex\"",
+        "title matched \"codex\"",
+        "summary matched \"codex\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "summary matched \"hook\"",
+        "title matched \"install\"",
+        "summary matched \"install\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-041852-Add-installer-flow-that-dete.json",
+      "kind": "recent_task",
+      "title": "Task: Add installer flow that detects running Codex, restarts or guides reload, and opens/launches a h",
+      "summary": "status=completed | project=dinobrain | Implemented a post-install Codex hook approval flow. The installer now creates DinoBrain Codex Hook Approval.cmd and launches it after hook registration unless skipped. The helper detects stale Codex desktop processes, restarts/reopens Codex, copies /hooks to the clipboard, and shows instructions while preserving the requirement that the user manually trusts the hook. Updated th",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 33,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "path matched \"installer\"",
+        "title matched \"installer\"",
+        "summary matched \"installer\"",
+        "title matched \"codex\"",
+        "summary matched \"codex\"",
+        "summary matched \"hook\"",
+        "path matched \"install\"",
+        "title matched \"install\"",
+        "summary matched \"install\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-071734-Fix-Codex-UserPromptSubmit-i.json",
+      "kind": "recent_task",
+      "title": "Task: Fix Codex UserPromptSubmit installer registration so DinoBrain merges into the first existing pr",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 33,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"installer\"",
+        "path matched \"codex\"",
+        "title matched \"codex\"",
+        "path matched \"userpromptsubmit\"",
+        "title matched \"userpromptsubmit\"",
+        "title matched \"merge\"",
+        "title matched \"install\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-033451-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 27,
+      "reasons": [
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"codex\"",
+        "title matched \"codex\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "summary matched \"hook\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-035806-Check-whether-reinstalling-D.json",
+      "kind": "recent_task",
+      "title": "Task: Check whether reinstalling DinoBrain over the same folder is safe, add a clean full-data uninsta",
+      "summary": "status=partial | project=dinobrain | Implemented and verified safe reinstall documentation plus a full purge uninstaller for DinoBrain. Added installer-created purge launchers, uninstall verification, ZIP-first release packaging with SHA256 generation, version bump to 0.1.3, and pushed main plus tag v0.1.3. Release asset upload remains blocked in this environment because no GITHUB_TOKEN/GH_TOKEN or gh CLI is availabl",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 20,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "summary matched \"installer\"",
+        "path matched \"install\"",
+        "title matched \"install\"",
+        "summary matched \"install\""
+      ]
+    }
+  ]
+}

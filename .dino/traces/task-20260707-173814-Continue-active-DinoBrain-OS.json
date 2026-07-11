@@ -1,0 +1,58 @@
+{
+  "task_id": "task-20260707-173814-Continue-active-DinoBrain-OS",
+  "outcome": "completed",
+  "summary": "Settled the current task lifecycle blocker, expanded source-lineage coverage to project and accepted factual records, added regression fixtures for unsupported project/accepted claims and anchor-only support, fixed verify:goal stdout buffering, and verified the legacy goal gate now passes 32/32.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "scripts/verify-closed-loop-goal.mjs",
+    "scripts/verify-source-lineage.mjs",
+    "src/source-lineage.ts",
+    "40_Projects/DinoBrain-RAG-Roadmap.md",
+    ".dino/state/source_lineage_status.json",
+    ".dino/tasks/task-20260707-172456-READ-ONLY-REVIEW.-You-are-re.json",
+    ".dino/traces/task-20260707-172456-READ-ONLY-REVIEW.-You-are-re.json",
+    ".dino/state/task_sessions.json",
+    ".dino/state/task_lifecycle_settlement.json",
+    ".dino/state/task_finish_grounding_classifications.jsonl"
+  ],
+  "decisions": [
+    "Treat verify:goal 32/32 as legacy gate health, not final completion of the stricter ten-agent contract.",
+    "Reconstruct the missing blocked subagent trace as blocked, not successful, because the original task failed before finish_task.",
+    "Require source truth for factual 40_Projects and accepted 50_Instances records unless they are behavior/internal-session memory.",
+    "Classify user_supplied_anchor_summary records as source_anchor_unverified so they cannot count as factual support.",
+    "Allow accepted factual records to use verified durable source_paths such as verified Wiki/source artifacts as support."
+  ],
+  "next_steps": [
+    "Implement dynamic live semantic query proof and hard gate.",
+    "Add review backlog and compounding lifecycle hard verifiers.",
+    "Strengthen behavior recall trigger zero-count completion checks.",
+    "Map the stricter ten-agent completion contract into verify:goal or a successor verifier."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-design_quality_without_logic_changes.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-173814-Continue-active-DinoBrain-OS.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "task lifecycle settlement blocker",
+    "source lineage factual project accepted instance false green"
+  ],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-07T17:50:48.812Z"
+}

@@ -1,0 +1,48 @@
+{
+  "task_id": "task-20260707-162919-DinoBrain-R6-.-.-.-read-only",
+  "outcome": "completed",
+  "summary": "Read-only R6 review for Observatory/observability UI/audit log/trust score lens. Inspected MEMORY.md DinoBrain entries, OS remaining-gaps plan, completion conditions, RAG OS consensus, package scripts, Observatory server/UI, health status, memory audit, verify-observatory, verify-goal, and current state artifacts. Verdict: REVISE_REQUIRED because the docs name the right Observatory conditions, but implementation and verification do not yet prove app-visible health/client MCP parity, blocker lanes, reviewer/main/verifier pending lanes, invalid status artifact degradation, or full provided/declared/observed memory-use visibility in the UI.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Current request superseded prior R6 source-lineage recheck.",
+    "Verdict is REVISE_REQUIRED for Observatory/UI/audit/trust-score lens.",
+    "No file edits were made.",
+    "The completion conditions should explicitly require app-visible provided/declared/observed memory paths and lane-level blocker/pending taxonomy, and verify-goal should include an Observatory evidence verifier or equivalent."
+  ],
+  "next_steps": [
+    "Add or wire verify:observatory-evidence into package scripts and verify:goal.",
+    "Make /api/state expose health_status and client_mcp_direct_status.agents[] directly, or document an equivalent object and verify it.",
+    "Strengthen Observatory UI/browser verification for blocker lane, reviewer/main/verifier pending lanes, memory audit trust score, and provided/declared/observed memory lists.",
+    "Treat invalid/unreadable JSON status artifacts as explicit degraded/blocker states instead of silent null/missing."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-162919-DinoBrain-R6-.-.-.-read-only.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-162918-3c5dcdf354af.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [
+    "MEMORY.md DinoBrain Observatory trust audit pending blocked",
+    "Observatory /api/state health_status client_mcp_direct_status pending blocker trust",
+    "verify-closed-loop-goal observatory evidence verifier"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T16:30:53.888Z"
+}

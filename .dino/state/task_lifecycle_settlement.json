@@ -1,0 +1,71 @@
+{
+  "version": "task_lifecycle_settlement_v2",
+  "status": "healthy",
+  "generated_at": "2026-07-10T16:45:17.654Z",
+  "data_root": "<machine-local-path>",
+  "apply": false,
+  "lifecycle_before": {
+    "generated_at": "2026-07-10T16:45:17.654Z",
+    "status": "healthy",
+    "counts": {
+      "tasks": 548,
+      "traces": 448,
+      "active": 70,
+      "stale_active": 0,
+      "expired_leases": 0,
+      "terminal": 478,
+      "terminal_missing_trace": 0,
+      "trace_binding_missing": 0,
+      "trace_without_task": 0,
+      "ungrounded_finish": 0,
+      "partial_grounded_finish": 0,
+      "wrong_task_mismatch": 0,
+      "blockers": 0,
+      "auto_close_candidates": 0,
+      "manual_repair_required": 0
+    },
+    "by_decision_class": {
+      "no_action_required": 478,
+      "recent_active": 70,
+      "auto_close_candidate": 0,
+      "manual_stale_review_required": 0,
+      "manual_trace_reconstruction_required": 0,
+      "manual_trace_binding_repair_required": 0,
+      "manual_orphan_trace_archive_required": 0,
+      "finish_grounding_repair_required": 0
+    },
+    "by_prompt_classification": {
+      "ambient_suggestion": 15,
+      "diagnostic_probe": 28,
+      "internal_codex_service": 47,
+      "title_generation": 118,
+      "unknown": 30,
+      "user_interactive": 310
+    }
+  },
+  "lifecycle_after": null,
+  "counts": {
+    "auto_close_candidates_before": 0,
+    "auto_close_applied": 0,
+    "auto_close_candidates_after": null,
+    "finish_gate_repairs_before": 0,
+    "finish_gate_repairs_applied": 0,
+    "finish_gate_repairs_after": null,
+    "manual_repair_required_before": 0,
+    "manual_repair_required_after": null,
+    "skipped_manual_repair": 0
+  },
+  "actions": [],
+  "warnings": [],
+  "visible_status": "작업 세션 자동정리 대상 없음",
+  "migration": null,
+  "latest_migration": {
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "manifest_path": ".dino/migrations/task-lifecycle/task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862/manifest.json",
+    "local_backup_root": ".dino/tmp/task-lifecycle-migrations/task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "ledger_entry_count": 402,
+    "ledger_head_sha256": "ab151d1a713922835fd38b0f5f96717252512c2d2b059f2b628bf04cbf28063f",
+    "recovery_ref": "refs/dinobrain-recovery/task-lifecycle/task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "status": "verified"
+  }
+}

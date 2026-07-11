@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260708-054107-Zip",
+  "status": "completed",
+  "request": "Zip링크도브탁",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-08T05:41:07.882Z",
+  "updated_at": "2026-07-08T05:41:58.259Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-08T05:41:58.259Z",
+  "trace_path": ".dino/traces/task-20260708-054107-Zip.json"
+}

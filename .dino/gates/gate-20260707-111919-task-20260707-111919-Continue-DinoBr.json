@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-111919-task-20260707-111919-Continue-DinoBr",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-111919-Continue-DinoBrain-goal-work",
+  "request": "Continue DinoBrain goal work: fix P0-02 status freshness and P0-01 full-memory audit first, then verify review/semantic settlement, finish-gate integrity, and real RAG eval remain healthy.",
+  "generated_at": "2026-07-07T11:19:19.597Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-111919-Continue-DinoBrain-goal-work.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

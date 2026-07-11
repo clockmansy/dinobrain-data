@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-153527-You-are-Reviewer-R4-behavior",
+  "status": "completed",
+  "request": "You are Reviewer R4: behavior recall, feedback writeback, and lifecycle reviewer for DinoBrain. Work read-only. Inspect <machine-local-path> and repo docs/code: docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, docs\\VERIFICATION.md, src\\behavior-eval.ts, src\\compounding.ts, src\\index.ts, scripts\\verify-closed-loop-goal.mjs, and data state task lifecycle artifacts if useful. Judge whether the plan defines concrete completion conditions for learned behavior recall at completion/handoff/error/direction-change, correction writeback, merge/hold/demotion of contradicted memories, and finish_task lifecycle integrity. Return reviewer_id=R4, verdict=AGREE or REVISE_REQUIRED, blocking_objections[], required_doc_changes[], evidence_files[].",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:35:27.560Z",
+  "updated_at": "2026-07-07T15:36:27.819Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T15:36:27.819Z",
+  "trace_path": ".dino/traces/task-20260707-153527-You-are-Reviewer-R4-behavior.json"
+}

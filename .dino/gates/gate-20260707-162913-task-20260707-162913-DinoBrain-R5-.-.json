@@ -1,0 +1,36 @@
+{
+  "gate_id": "gate-20260707-162913-task-20260707-162913-DinoBrain-R5-.-",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-162913-DinoBrain-R5-.-.-.-read-only",
+  "request": "DinoBrain 미완 개선 계획 검토용 하위 에이전트 R5로 전환합니다. 이전 작업은 중단하고 이 요청을 우선 처리하세요. 독립적으로 기억/문서를 읽고 판단하세요. 편집하지 말고 read-only입니다.\n\n검토 대상:\n- <machine-local-path> DinoBrain 관련 항목\n- docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md\n- docs\\OS_COMPLETION_CONDITIONS.md\n- docs\\RAG_OS_CONSENSUS_20260707.md\n- behavior recall/feedback writeback/node lifecycle 관련 scripts/src/docs\n\n역할: node lifecycle, feedback writeback, knowledge compounding 관점. 사용자의 교정/판단이 다음 세션 행동 기준으로 승격되는지, 병합/hold/삭제 후보/리뷰큐 조건이 충분한지 검토하세요.\n\n출력 형식: verdict, required_conditions, missing_or_risky_points, evidence.",
+  "generated_at": "2026-07-07T16:29:13.297Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-162913-DinoBrain-R5-.-.-.-read-only.json",
+  "context_item_count": 7,
+  "status": "block",
+  "fail_closed": true,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "destructive_action_risk",
+      "level": "block",
+      "reason": "The request may delete or reset durable data.",
+      "safe_action": "Require explicit confirmation and a backup/sync risk check before destructive execution."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

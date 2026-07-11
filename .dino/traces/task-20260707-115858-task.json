@@ -1,0 +1,38 @@
+{
+  "task_id": "task-20260707-115858-task",
+  "outcome": "completed",
+  "summary": "Explained why the DinoBrain data repo was not committed in the previous turn: the repo was already ahead of origin and had a large mixed dirty set of modified/generated candidate and review artifacts, so a broad commit would have bypassed review and sync policy.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Keep data repo commits scoped to reviewed/sync-policy-approved paths instead of committing the entire dirty worktree."
+  ],
+  "next_steps": [
+    "Run a scoped data sync or reviewed commit plan for the two ahead commits and the current 1586 dirty data paths before pushing dinobrain-data."
+  ],
+  "used_memory_paths": [
+    "30_Sources/chunks/anthropic-contextual-retrieval.json",
+    "30_Sources/chunks/aws-bedrock-knowledge-base.json",
+    "30_Sources/chunks/azure-search-rag-overview.json",
+    "30_Sources/chunks/elastic-rag.json",
+    "30_Sources/chunks/google-rag-engine-overview.json",
+    "30_Sources/chunks/haystack-first-rag-pipeline.json",
+    "30_Sources/chunks/haystack-rag-from-scratch.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-115858-task.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-115857-23ef7f9d854b.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T11:59:25.336Z"
+}

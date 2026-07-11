@@ -1,0 +1,20 @@
+{
+  "gate_id": "gate-20260705-083457-task-20260705-083457-Continue-the-ac",
+  "os_version": "2.0.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260705-083457-Continue-the-active-goal-bui",
+  "request": "Continue the active goal: build an automatic distillation, verification, cleanup loop that promotes logs into behavior rules, and add a simulation proving whether knowledge compounding actually improves future behavior.",
+  "generated_at": "2026-07-05T08:34:57.527Z",
+  "context_pack_path": ".dino/context-packs/pack-20260705-083457-Continue-the-active-goal-bui.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ]
+}

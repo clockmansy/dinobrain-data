@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-182533-task-20260707-182533-Continue-DinoBr",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-182533-Continue-DinoBrain-OS-comple",
+  "request": "Continue DinoBrain OS completion work by closing release-manifest/new-PC equivalence proof gaps without narrowing the active objective.",
+  "generated_at": "2026-07-07T18:25:33.790Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-182533-Continue-DinoBrain-OS-comple.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

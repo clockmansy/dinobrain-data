@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-012918-Read-only-post-patch-audit-1",
+  "status": "completed",
+  "request": "Read-only post-patch audit #14: installer/release verification for install.ps1, scripts/build-windows-installer.ps1, package.json, docs; check verify:codex-loop inclusion and hidden fail-open from no-git or skipped verification.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T01:29:18.277Z",
+  "updated_at": "2026-07-07T01:31:26.527Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T01:31:26.527Z",
+  "trace_path": ".dino/traces/task-20260707-012918-Read-only-post-patch-audit-1.json"
+}

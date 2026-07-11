@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260708-024746-task",
+  "status": "completed",
+  "request": "설치파일 경로설정을 직접입력해아해서힘듬",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-08T02:47:46.363Z",
+  "updated_at": "2026-07-08T02:56:44.244Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-08T02:56:44.244Z",
+  "trace_path": ".dino/traces/task-20260708-024746-task.json"
+}

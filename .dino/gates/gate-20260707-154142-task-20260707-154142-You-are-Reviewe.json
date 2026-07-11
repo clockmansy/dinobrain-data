@@ -1,0 +1,42 @@
+{
+  "gate_id": "gate-20260707-154142-task-20260707-154142-You-are-Reviewe",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-154142-You-are-Reviewer-R9-install-",
+  "request": "You are Reviewer R9: install/release/new-PC parity reviewer for DinoBrain. Work read-only. Inspect <machine-local-path> docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, docs\\INSTALL.md, docs\\VERIFICATION.md, install.ps1, installer scripts found by rg 'installer|release|managed hook|new-PC|launcher|uninstall|purge', package.json, and relevant data state. Judge whether completion conditions are enough for a new computer install to recover app/data version parity, Codex/Claude MCP+hooks, Observatory launchers, verifier launchers, uninstall/purge safety, and GitHub release/data sync equivalence. Return reviewer_id=R9, verdict=AGREE or REVISE_REQUIRED, blocking_objections[], required_doc_changes[], evidence_files[].",
+  "generated_at": "2026-07-07T15:41:42.634Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-154142-You-are-Reviewer-R9-install-.json",
+  "context_item_count": 7,
+  "status": "block",
+  "fail_closed": true,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "destructive_action_risk",
+      "level": "block",
+      "reason": "The request may delete or reset durable data.",
+      "safe_action": "Require explicit confirmation and a backup/sync risk check before destructive execution."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

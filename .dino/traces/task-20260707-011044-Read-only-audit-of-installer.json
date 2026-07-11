@@ -1,0 +1,31 @@
+{
+  "task_id": "task-20260707-011044-Read-only-audit-of-installer",
+  "outcome": "completed",
+  "summary": "Completed read-only audit of installer and release verification wiring for verify:codex-loop. Direct install.ps1 invokes verify:codex-loop through portable npm/path after verify:os; EXE default verification checkbox remains enabled. Findings are limited to release self-test coverage, Git/no-Git fallback behavior, and docs drift in INSTALL quick/update sections. No repository files were edited.",
+  "changed_files": [],
+  "decisions": [
+    "Treat direct install.ps1 portable npm/path wiring as correct: it calls the portable npm.cmd and prepends the portable Node root to PATH before verify:os and verify:codex-loop.",
+    "Do not run full npm verification during this audit because the user requested read-only work and verify scripts write reports/temp data.",
+    "Report release verification gaps separately from the direct install path."
+  ],
+  "next_steps": [
+    "Add a release/build assertion that the embedded install.ps1 contains verify:codex-loop or performs a dry-run/default argument check.",
+    "Decide whether install.ps1 should continue supporting no-Git ZIP fallback now that verify:codex-loop requires git, or make Git an explicit hard preflight in the script path too.",
+    "Update docs/INSTALL.md update and verification sections to include verify:codex-loop."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-011047-Installer-release-verificati.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T01:14:40.002Z"
+}

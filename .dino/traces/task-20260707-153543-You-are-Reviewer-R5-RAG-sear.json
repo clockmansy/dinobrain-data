@@ -1,0 +1,46 @@
+{
+  "task_id": "task-20260707-153543-You-are-Reviewer-R5-RAG-sear",
+  "outcome": "completed",
+  "summary": "Reviewer R5 completed a read-only RAG/search quality review of the requested memory registry, completion docs, retrieval/eval source files, and RAG status/data artifacts. Verdict is REVISE_REQUIRED because the governing completion conditions are directionally correct, but verification/status documentation and artifacts still allow local text-hash scaffolding to appear as healthy hybrid RAG and do not yet require generated answer-quality/memory-on-off lift evidence in the status layer.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Read-only review; no files modified.",
+    "Completion conditions require honest retrieval mode, real semantic dense retrieval, BM25/sparse+dense hybrid evidence, RRF/reranking contribution metrics, answer-quality evaluation, and memory-on/off lift.",
+    "Current implementation uses BM25/sparse, dense-vector/text-hash or dense-lexical fallback, RRF, and rerank reasons, but the dense provider is local_text_hashing_v1 with semantic_embedding_provider=false.",
+    "Current rag_eval_status is healthy with hybrid_ratio=1 and average_memory_lift=85.938, but caveats state it is deterministic canary only, not full Ragas/LLM-judge answer-quality evaluation.",
+    "Docs need to reconcile scaffold-health versus completion-health so text-hash hybrid cannot satisfy final RAG completion."
+  ],
+  "next_steps": [
+    "Revise docs/VERIFICATION.md and completion docs to define scaffold healthy vs completion healthy for RAG proof/eval.",
+    "Require semantic_embedding_provider=true or a documented local multilingual embedding model before hybrid_contextual_v2 can count for completion.",
+    "Add required artifact fields for dense top-K, sparse/BM25, RRF, reranker/provenance/lifecycle contribution metrics, latency/candidate budgets, and generated answer-quality memory-on/off evaluation."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-153543-You-are-Reviewer-R5-RAG-sear.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-153543-bb1777f67c44.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [
+    "rag retrieval hybrid semantic embedding provider answer quality memory lift"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T15:37:06.044Z"
+}

@@ -1,0 +1,249 @@
+{
+  "pack_id": "pack-20260707-071454-DinoBrain-live-Codex-hook-di",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "DinoBrain live Codex hook diagnostic probe.",
+  "created_at": "2026-07-07T07:14:54.947Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 43,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 66,
+  "index_candidate_count": 43,
+  "index_total_candidate_count": 43,
+  "index_matching_terms": [
+    "codex",
+    "codex_desktop",
+    "codex_session_knowledge",
+    "codex-conv",
+    "codex-conversation-r",
+    "codex-conversation-regis",
+    "codex-conversation-registry",
+    "codex-loop",
+    "codex-session-derived",
+    "codex-session-knowledge-configured_is_not_live_proof",
+    "codex-session-knowledge-current_instruction_over_memory",
+    "codex-session-knowledge-design_quality_without_logic_changes",
+    "codex-session-knowledge-end_to_end_execution_push",
+    "codex-session-knowledge-explain_when_confused",
+    "codex-session-knowledge-installer_new_pc_equivalence",
+    "codex-session-knowledge-knowledge_compounding_goal",
+    "codex-session-knowledge-local_evidence_over_cla",
+    "codex-session-knowledge-local_evidence_over_claims",
+    "codex-session-knowledge-observability_required",
+    "codex-session-knowledge-one_link_or_direct_action",
+    "codex-session-knowledge-plan_first_scope_lock",
+    "codex-session-knowledge-pre_response_fail_closed_loop",
+    "codex-session-knowledge-profile",
+    "codex-session-knowledge-promotion",
+    "codex-session-knowledge-rag_quality_direction",
+    "codex-session-knowledge-raw_transcripts_never_public",
+    "codex-session-knowledge-version_release_drift_risk",
+    "delivery",
+    "diagnostic",
+    "dinobrain_os",
+    "dinobrain_product",
+    "dinobrain_public_data_safety",
+    "dinobrain-data",
+    "dinobrain-hook-and-install-prevention",
+    "dinobrain-install-release-state",
+    "dinobrain-project-state",
+    "dinobrain-public-data-safety",
+    "dinobrain-rag-critical-consensus-20260707",
+    "dinobrain-rag-roadmap",
+    "dinobrain-recurring-failures",
+    "dinobrain-retrieval-noise-prevention",
+    "hook",
+    "hook_run_id",
+    "hooks",
+    "live",
+    "live-proof",
+    "live-verified",
+    "local-codex-sessions",
+    "local-dinobrain-data",
+    "probe-verified"
+  ],
+  "included_item_count": 7,
+  "excluded_record_count": 69,
+  "items": [
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+      "kind": "curated_record",
+      "title": "Configured hooks are not live preflight proof",
+      "summary": "A configured or probe-verified DinoBrain hook must not be claimed as fully live until a fresh trusted Codex or Claude prompt produces pre-response events before manual MCP calls. | Rule: Distinguish configured, probe-verified, and live-verified; require fresh prompt event evidence for live hook claims. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "mistake-lesson",
+        "hook",
+        "live-proof",
+        "fail-closed"
+      ],
+      "score": 13.426,
+      "reasons": [
+        "path_matched:live",
+        "title_matched:live,hook",
+        "summary_matched:live,hook,probe",
+        "tags_matched:live,hook",
+        "chunk_matched:live,hook,probe",
+        "bm25:live,hook",
+        "dense_lexical:0.99",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "kind": "curated_record",
+      "title": "DinoBrain must run pre-response and fail closed",
+      "summary": "The user wants every Codex or Claude session to receive DinoBrain pre-response OS context before substantive work, with fail-closed behavior when the OS context is missing. | Rule: For nontrivial DinoBrain work, require os_begin_task or trusted hook preflight, Context Pack, gates, finish_task, and explicit degraded/fail-closed state when missing. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "pre-response",
+        "fail-closed",
+        "hook"
+      ],
+      "score": 11.666,
+      "reasons": [
+        "summary_matched:hook",
+        "tags_matched:hook",
+        "chunk_matched:hook",
+        "bm25:hook",
+        "dense_lexical:0.75",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "kind": "curated_record",
+      "title": "Installer must restore equivalent DinoBrain behavior on a new PC",
+      "summary": "The user expects a new PC install to clone/update app and data repos, configure Codex and Claude hooks/MCP, build indexes, launch Observatory, and preserve version parity. | Rule: For installer work, verify app/data refs, portable Node, build/index, Codex and Claude registration, hook approval flow, launchers, release artifact alignment, and reinstall/idempotent behavior. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "project-decision",
+        "installer",
+        "new-pc",
+        "codex",
+        "claude",
+        "version-parity"
+      ],
+      "score": 11.597,
+      "reasons": [
+        "summary_matched:hook",
+        "chunk_matched:hook",
+        "bm25:hook",
+        "dense_lexical:0.72",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+      "kind": "curated_record",
+      "title": "Observability must show real OS state",
+      "summary": "The user wants Observatory and logs to show real hook/preflight/task/context/audit/trust/graph/sync states, including blocked, pending, degraded, verifier, and active work. | Rule: Do not treat a decorative graph as sufficient; expose live OS traces, graph health, gate status, audit trust, memory use, sync risk, and stale task state. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "project-decision",
+        "observability",
+        "audit",
+        "graph-health"
+      ],
+      "score": 11.59,
+      "reasons": [
+        "summary_matched:live,hook",
+        "chunk_matched:live,hook",
+        "bm25:live,hook",
+        "dense_lexical:0.46",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+      "kind": "curated_record",
+      "title": "Carry authorized work through commit, push, and deploy",
+      "summary": "When the user explicitly authorizes implementation or deployment, they expect Codex to carry the work through commit, push, release, and verification rather than stopping at a proposal. | Rule: After explicit authorization such as go, push, deploy, or auto-commit, implement, verify, commit, push, and report exact hashes or links. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "git",
+        "release",
+        "delivery"
+      ],
+      "score": 10.075,
+      "reasons": [
+        "tags_matched:live",
+        "chunk_matched:live",
+        "dense_lexical:0.28",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260707-062032-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 8.918,
+      "reasons": [
+        "path_matched:live,hook",
+        "title_matched:live,hook,diagnostic,probe",
+        "summary_matched:hook",
+        "chunk_matched:live,hook,diagnostic,probe",
+        "bm25:live,hook,diagnostic,probe",
+        "dense_lexical:4.62",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "kind": "curated_record",
+      "title": "Current user instruction outranks stored memory",
+      "summary": "For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. | Rule: Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "memory-priority",
+        "os-contract"
+      ],
+      "score": 8.876,
+      "reasons": [
+        "dense_lexical:0.57",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-004215-Read-only-consensus-synthesi",
+  "status": "completed",
+  "request": "Read-only consensus synthesis audit for local-first memory OS goal: preload Codex/Claude memory, write back useful knowledge, verify provenance, evaluate behavior, keep fast LLM Wiki retrieval, show Observatory state, and restore safely on new PCs. Produce P0/P1/P2 consensus matrix and disagreements/risks without editing files.",
+  "project": "DinoBrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T00:42:15.134Z",
+  "updated_at": "2026-07-07T00:43:33.069Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T00:43:33.069Z",
+  "trace_path": ".dino/traces/task-20260707-004215-Read-only-consensus-synthesi.json"
+}

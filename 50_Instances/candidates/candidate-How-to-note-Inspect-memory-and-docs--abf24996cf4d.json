@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-How-to-note-Inspect-memory-and-docs--abf24996cf4d",
+  "status": "pending_review",
+  "claim": "How-to note: Inspect memory and docs/code: <machine-local-path> docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, AGENTS.md, src\\native-instruction-authority.ts, scripts\\verify-native-instruction-authority.mjs, src\\health-status.ts, scripts\\dinobrain-observatory.mjs.",
+  "category": "how_to",
+  "temperature": "warm",
+  "evidence": {
+    "snippet": "Inspect memory and docs/code: <machine-local-path> docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, AGENTS.md, src\\native-instruction-authority.ts, scripts\\verify-native-instruction-authority.mjs, src\\health-status.ts, scripts\\dinobrain-observatory.mjs.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-153500-c35ae8ada0bb.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-153500-c35ae8ada0bb",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "how_to",
+    "temperature:warm",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-153500-c35ae8ada0bb",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T15:35:00.756Z",
+  "updated_at": "2026-07-07T15:35:00.756Z"
+}

@@ -1,0 +1,44 @@
+{
+  "memory_id": "task-memory-task-20260707-011044-Read-only-audit-of-installer",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: Read-only audit of installer/release verification after adding verify:codex-loop, focusing insta",
+  "summary": "Completed read-only audit of installer and release verification wiring for verify:codex-loop. Direct install.ps1 invokes verify:codex-loop through portable npm/path after verify:os; EXE default verification checkbox remains enabled. Findings are limited to release self-test coverage, Git/no-Git fallback behavior, and docs drift in INSTALL quick/update sections. No repository files were edited.",
+  "claim": "Task outcome for dinobrain: Completed read-only audit of installer and release verification wiring for verify:codex-loop. Direct install.ps1 invokes verify:codex-loop through portable npm/path after verify:os; EXE default verification checkbox remains enabled. Findings are limited to release self-test coverage, Git/no-Git fallback behavior, and docs drift in INSTALL quick/update sections. No repository files were edited.",
+  "request": "Read-only audit of installer/release verification after adding verify:codex-loop, focusing install.ps1, docs/INSTALL.md, and package scripts; check new PC install runs the right Codex loop verification with portable npm/path.",
+  "outcome": "completed",
+  "decisions": [
+    "Treat direct install.ps1 portable npm/path wiring as correct: it calls the portable npm.cmd and prepends the portable Node root to PATH before verify:os and verify:codex-loop.",
+    "Do not run full npm verification during this audit because the user requested read-only work and verify scripts write reports/temp data.",
+    "Report release verification gaps separately from the direct install path."
+  ],
+  "next_steps": [
+    "Add a release/build assertion that the embedded install.ps1 contains verify:codex-loop or performs a dry-run/default argument check.",
+    "Decide whether install.ps1 should continue supporting no-Git ZIP fallback now that verify:codex-loop requires git, or make Git an explicit hard preflight in the script path too.",
+    "Update docs/INSTALL.md update and verification sections to include verify:codex-loop."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-011047-Installer-release-verificati.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260707-011044-Read-only-audit-of-installer.json",
+    "snippet": "Completed read-only audit of installer and release verification wiring for verify:codex-loop. Direct install.ps1 invokes verify:codex-loop through portable npm/path after verify:os; EXE default verification checkbox remains enabled. Findings are limited to release self-test coverage, Git/no-Git fallback behavior, and docs drift in INSTALL quick/update sections. No repository files were edited."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-07T01:14:40.002Z",
+  "updated_at": "2026-07-07T01:14:40.002Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260707-011044-Read-only-audit-of-installer.json",
+    "task_id": "task-20260707-011044-Read-only-audit-of-installer",
+    "task_path": ".dino/tasks/task-20260707-011044-Read-only-audit-of-installer.json"
+  }
+}

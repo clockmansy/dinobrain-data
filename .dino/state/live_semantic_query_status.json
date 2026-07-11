@@ -1,0 +1,61 @@
+{
+  "version": "live_semantic_query_v1",
+  "status": "healthy",
+  "generated_at": "2026-07-11T01:21:14.921Z",
+  "data_root": "<machine-local-path>",
+  "query": "How can DinoBrain prove a brand new user question uses semantic memory retrieval instead of lexical fallback?",
+  "limit": 8,
+  "proof": {
+    "status": "generated_live_query_vector",
+    "query_key": "how can dinobrain prove a brand new user question uses semantic memory retrieval instead of lexical fallback?",
+    "query_vector_preexisting": false,
+    "on_the_fly_query_embedding": true,
+    "provider": "huggingface_transformers_feature_extraction_v1",
+    "model": "Xenova/all-MiniLM-L6-v2",
+    "dimensions": 384,
+    "record_vector_count": 79,
+    "semantic_embedding_provider": true,
+    "fallback_reason": null
+  },
+  "retrieval": {
+    "mode": "hybrid_contextual_v2",
+    "returned_paths": [
+      "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+      "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+      "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+      "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "30_Sources/chunks/openai-retrieval-guide.json"
+    ],
+    "dense_reason_count": 7,
+    "top_reasons": [
+      "path_matched:memory",
+      "title_matched:user,memory",
+      "summary_matched:can,user,memory",
+      "tags_matched:memory",
+      "chunk_matched:user,memory",
+      "bm25:user,memory",
+      "dense_vector_cosine:7.08",
+      "rank_fusion:rrf",
+      "rerank_provenance_boost",
+      "rerank_root_intent_boost",
+      "rerank_session_knowledge_boost",
+      "rerank_lifecycle_boost",
+      "rerank_type_budget_boost",
+      "rerank_recency_boost",
+      "title_matched:prove,retrieval",
+      "summary_matched:can,prove,memory,retrieval",
+      "tags_matched:prove,retrieval",
+      "chunk_matched:can,prove,memory,retrieval",
+      "bm25:retrieval,lexical",
+      "dense_vector_cosine:8.30",
+      "rank_fusion:rrf",
+      "rerank_provenance_boost",
+      "rerank_root_intent_boost",
+      "rerank_session_knowledge_boost"
+    ]
+  },
+  "warnings": [],
+  "visible_status": "Live semantic query retrieval is healthy"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260705-074910-Verify-whether-the-currently",
+  "status": "partial",
+  "request": "Verify whether the currently installed DinoBrain follows the full OS loop: Codex hook detection, task start, context pack retrieval, agent work with memory precedence, narrow wiki search, finish_task logging, knowledge growth lifecycle, and backup/recovery via data repo and GitHub.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.0.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-05T07:49:10.731Z",
+  "updated_at": "2026-07-05T07:55:09.191Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-05T07:55:09.191Z",
+  "trace_path": ".dino/traces/task-20260705-074910-Verify-whether-the-currently.json"
+}

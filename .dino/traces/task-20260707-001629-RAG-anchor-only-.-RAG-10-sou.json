@@ -1,0 +1,55 @@
+{
+  "task_id": "task-20260707-001629-RAG-anchor-only-.-RAG-10-sou",
+  "outcome": "completed",
+  "summary": "Directly opened the user-supplied RAG methodology links, used 10 subagents for focused review and purity filtering, promoted the material into a verified RAG knowledge pack, updated source chunks/provenance from anchor-only to verified_summary, rebuilt wiki/SQLite indexes, and verified live DinoBrain search can retrieve the new knowledge pack.",
+  "changed_files": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "50_Instances/accepted/rag-verified-knowledge-v1.json",
+    "80_Review_Queue/rag-learning/rag-verified-knowledge-v1.json",
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.json",
+    "30_Sources/chunks/*.json",
+    ".dino/provenance/*.json",
+    ".dino/index/wiki-index.json",
+    ".dino/index/sqlite/wiki.sqlite",
+    ".dino/index/sqlite/operations.sqlite"
+  ],
+  "decisions": [
+    "Treat exact user-provided RAG URLs as directly verified summary sources, not merely anchor-only backlog.",
+    "Do not store raw full external pages; store bounded paraphrased claims with source URLs and provenance links.",
+    "Accept core RAG, hybrid retrieval, reranking, source/chunk/claim lineage, GraphRAG overlay, and evaluation guidance into DinoBrain memory.",
+    "Hold paper/provider-specific claims unless source-bound and refreshed; reject overgeneralizations such as RAG guaranteeing truth or lexical fallback equaling dense hybrid retrieval.",
+    "Keep current live retrieval mode labeled lexical_fallback_v2 until a real embedding provider is configured."
+  ],
+  "next_steps": [
+    "Add retrieval canaries for synonym recall, Korean-English mixed queries, provenance-required answers, stale-memory rejection, and memory-on vs memory-off behavior.",
+    "Implement or configure a real dense embedding provider before claiming live dense hybrid retrieval.",
+    "Address graph-health warning accepted_instance_source_mapping_missing in a later provenance-mapping pass."
+  ],
+  "used_memory_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "50_Instances/accepted/rag-verified-knowledge-v1.json",
+    "30_Sources/chunks/*.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-001629-RAG-anchor-only-.-RAG-10-sou.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [
+    "50_Instances/accepted/rag-verified-knowledge-v1.json",
+    "80_Review_Queue/rag-learning/rag-verified-knowledge-v1.json"
+  ],
+  "search_queries": [
+    "verified RAG hybrid retrieval reranking source chunk claim provenance GraphRAG evaluation",
+    "rag-verified-knowledge-v1 accepted_claims RAG is not a truth guarantee lexical fallback dense hybrid reranking cannot recover missing candidates"
+  ],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 2,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-07T00:32:59.855Z"
+}

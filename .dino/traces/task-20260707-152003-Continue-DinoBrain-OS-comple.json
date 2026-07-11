@@ -1,0 +1,52 @@
+{
+  "task_id": "task-20260707-152003-Continue-DinoBrain-OS-comple",
+  "outcome": "partial",
+  "summary": "Implemented and verified the P0-05 native instruction authority gate: scanned Codex/Claude/bootstrap instruction surfaces, detected native memory drift and unsafe authority conflicts, generated a durable status artifact, wired it into health/freshness/goal verification and Observatory state, and pushed app/data evidence. The broader OS completion objective remains partial because live pre-response proof, task lifecycle settlement, source/chunk/claim provenance, behavior recall/writeback, semantic retrieval/eval, Observatory browser proof, and install equivalence still remain.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>"
+  ],
+  "decisions": [
+    "Native instruction authority is treated as a P0 gate because restored GitHub/new-PC state must not be overridden by stale or conflicting local Codex/Claude instructions.",
+    "The scanner stores path, hash, timestamps, rule/evidence/finding metadata, but not raw native instruction text, to avoid durable leakage.",
+    "Hook approval and trust surfaces are allowed only as evidence that trust is visible/manual; instructions that bypass or auto-approve trust are blockers."
+  ],
+  "next_steps": [
+    "Implement P0-06 source/chunk/claim provenance gate and make unsupported claims visible in health/goal verification.",
+    "Resolve remaining verify:goal blockers: live Codex Desktop pre-response proof, live context visibility, task lifecycle finish gate, and lifecycle auto-settlement.",
+    "Implement P1-09 behavior recall audit ledger and feedback writeback, then wire Observatory to show used memories, node usage, blocked/pending state, and audit trust results."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-152003-Continue-DinoBrain-OS-comple.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 4,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T15:31:00.715Z"
+}

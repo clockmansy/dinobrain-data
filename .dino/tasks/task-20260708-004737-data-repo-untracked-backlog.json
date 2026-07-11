@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260708-004737-data-repo-untracked-backlog",
+  "status": "completed",
+  "request": "data repo에는 기존 오래된 untracked backlog 해결",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-08T00:47:37.587Z",
+  "updated_at": "2026-07-08T00:50:49.872Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-08T00:50:49.872Z",
+  "trace_path": ".dino/traces/task-20260708-004737-data-repo-untracked-backlog.json"
+}

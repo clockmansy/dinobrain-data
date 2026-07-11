@@ -1,0 +1,64 @@
+{
+  "task_id": "task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-",
+  "outcome": "completed",
+  "summary": "Implemented DinoBrain OS v2 P0 improvements from the review report: honest lexical fallback retrieval mode, optional dense vector cosine retrieval, stopword/high-frequency token filtering, verified os_gate context evidence, sensitive prompt auto-escalation, event-backed memory audit artifact verification, SQLite/wiki index version bumps, v2.0.2 version bump, docs, and regression coverage.",
+  "changed_files": [
+    "README.md",
+    "docs/INSTALL.md",
+    "docs/OS_V2_CONTRACT.md",
+    "docs/SQLITE_SHARDS.md",
+    "docs/VERIFICATION.md",
+    "package-lock.json",
+    "package.json",
+    "scripts/audit-user-flow.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/verify-session-ingest.mjs",
+    "scripts/verify-sqlite-shards.mjs",
+    "scripts/verify-v2-os.mjs",
+    "scripts/verify-wiki-index.mjs",
+    "src/context.ts",
+    "src/hybrid-retrieval.ts",
+    "src/index.ts",
+    "src/memory-audit.ts",
+    "src/os-contract.ts",
+    "src/retrieval.ts",
+    "src/sqlite-shards.ts",
+    "src/wiki-index.ts"
+  ],
+  "decisions": [
+    "Bumped DinoBrain to v2.0.2 because retrieval and gate semantics changed materially.",
+    "Dense retrieval now reports hybrid_contextual_v2 only when a usable dense vector index/provider exists for the query; otherwise it reports lexical_fallback_v2.",
+    "Kept candidate_source labels stable while bumping underlying wiki/sqlite index versions to v3.",
+    "os_gate no longer trusts has_context_pack/context_item_count self-report without a verified context pack trace.",
+    "audit_memory_use now separates declared artifacts from event-observed artifacts."
+  ],
+  "next_steps": [
+    "Commit and push app repo changes when approved.",
+    "Publish v2.0.2 release asset if distribution is required.",
+    "Review whether dinobrain-data index/task changes should be committed under the existing data-vault policy."
+  ],
+  "used_memory_paths": [
+    ".dino/tasks/task-20260705-020713-Implement-DinoBrain-v2-found.json",
+    ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2-.json",
+    ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2.json",
+    "50_Instances/accepted/README.md",
+    ".dino/tasks/task-20260705-023254-Implement-stability-fixes-fr.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-05T05:53:51.180Z"
+}

@@ -1,0 +1,23 @@
+{
+  "operation_id": "rag-public-os-learning-packet",
+  "type": "learning_packet_registration",
+  "status": "completed",
+  "recorded_at": "2026-07-06T23:38:00Z",
+  "summary": "Registered the user-provided public OS RAG learning packet as a DinoBrain anchor backlog and accepted project memory.",
+  "changed_records": [
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "50_Instances/accepted/rag-public-os-learning-packet.json",
+    "80_Review_Queue/rag-learning/rag-public-os-learning-packet.json",
+    "60_Operations/rag-learning/rag-public-os-learning-packet.md"
+  ],
+  "known_limits": [
+    "Representative URL anchors are stored locally; the complete upstream 55-anchor list is not present.",
+    "No external source content was fetched or verified during this registration.",
+    "No new factual claims from external RAG documents were promoted."
+  ],
+  "next_steps": [
+    "Run source-fetch and bounded chunk review for prioritized anchors.",
+    "Connect accepted claims to retrieval canaries.",
+    "Use behavior eval to verify that RAG-informed memory improves future sessions."
+  ]
+}

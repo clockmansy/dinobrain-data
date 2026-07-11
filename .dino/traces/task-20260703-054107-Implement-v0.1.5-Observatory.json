@@ -1,0 +1,58 @@
+{
+  "task_id": "task-20260703-054107-Implement-v0.1.5-Observatory",
+  "outcome": "completed",
+  "summary": "Implemented and released DinoBrain v0.1.5 Observatory OS Health Upgrade. Added shared graph health generation at .dino/index/graph-health.json, wired it into SQLite index refresh and memory audit snapshots, expanded Observatory with health chips, read trace, node lifecycle, sync risk, and graph-health API, added graph health verification, bumped app/installer/client versions to 0.1.5, committed and pushed main, tagged v0.1.5, uploaded GitHub Release assets, and verified remote ZIP SHA256 matches local.",
+  "changed_files": [
+    "README.md",
+    "docs/INSTALL.md",
+    "docs/LLM_WIKI_GRAPH.md",
+    "docs/MEMORY_AUDIT.md",
+    "docs/VERIFICATION.md",
+    "installer/DinoBrainSetup/DinoBrainSetup.csproj",
+    "installer/DinoBrainSetup/Program.cs",
+    "installer/DinoBrainSetup/app.manifest",
+    "package-lock.json",
+    "package.json",
+    "scripts/audit-user-flow.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/start-dinobrain-observatory.ps1",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/verify-graph-health.mjs",
+    "scripts/verify-observatory-live-graph.mjs",
+    "scripts/verify-session-ingest.mjs",
+    "src/build-graph-health.ts",
+    "src/build-sqlite-shards.ts",
+    "src/graph-health.ts",
+    "src/index.ts",
+    "src/memory-audit.ts"
+  ],
+  "decisions": [
+    "Use a shared TypeScript graph-health module so Observatory, CLI refresh, and audit_memory_use rely on the same health model.",
+    "Treat an empty LLM Wiki graph as degraded rather than merely warning because the user's goal is compounding session-derived knowledge.",
+    "Keep data repo sync as dry-run/manual-review only per project policy; release app repo separately from operational memory changes.",
+    "Publish v0.1.5 from commit 39f3d608cdf28e285328f3fb54ab8846a8d99e06 and verify the private GitHub Release asset through the asset API rather than relying on browser download URLs."
+  ],
+  "next_steps": [
+    "Review DinoBrain data repo changes before any data commit/push; git_sync classified all 32 current data changes as requires_review.",
+    "On another computer, install from the v0.1.5 release ZIP and use DinoBrain Codex Hook Approval.cmd or /hooks if Codex requires hook trust approval."
+  ],
+  "used_memory_paths": [
+    ".dino/tasks/task-20260703-045733-Create-a-version-upgrade-pla.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-054113-v0.1.5-Observatory-OS-Health.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 1,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-03T07:10:18.061Z"
+}

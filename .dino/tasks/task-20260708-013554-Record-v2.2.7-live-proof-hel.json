@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260708-013554-Record-v2.2.7-live-proof-hel",
+  "status": "partial",
+  "request": "Record v2.2.7 live proof helper hardening continuation and repeated remaining Codex Desktop live proof blocker.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-08T01:35:54.463Z",
+  "updated_at": "2026-07-08T01:35:54.936Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-08T01:35:54.936Z",
+  "trace_path": ".dino/traces/task-20260708-013554-Record-v2.2.7-live-proof-hel.json"
+}

@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260707-153653-task-20260707-153653-Address-R3-revi",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-153653-Address-R3-revise-required-o",
+  "request": "Address R3 revise-required objection for DinoBrain unfinished OS completion plan: include safe-readable Codex native rules surfaces such as ~/.codex/rules/*.rules in native instruction authority scan, update completion document and verifier, rerun targeted checks, then ask R3 to re-review until AGREE.",
+  "generated_at": "2026-07-07T15:36:53.567Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-153653-Address-R3-revise-required-o.json",
+  "context_item_count": 6,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

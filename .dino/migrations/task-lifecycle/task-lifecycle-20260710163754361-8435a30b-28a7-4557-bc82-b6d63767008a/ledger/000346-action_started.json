@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 346,
+  "event": "action_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "76af5d5ed9e72f7e36cbe5b42cdaf3d4cd6f59d03d6a90199febfd375d43f0cb",
+  "payload": {
+    "index": 171,
+    "task_id": "task-20260707-125953-Final-consensus-retry-for-Ro",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "4cfe7be6e71b2ef3d59f35360623924f427d8f5ef5d540fc1fa201588f286f77",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "4ca2c43b23234b23c26556dd33f6fbe136e5460f346391bfc7fa5b077fa8f6aa"
+}

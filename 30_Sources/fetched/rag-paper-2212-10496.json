@@ -1,0 +1,29 @@
+{
+  "version": "source_snapshot_v1",
+  "type": "source_snapshot",
+  "source_id": "rag-paper-2212-10496",
+  "stage": "verified_source",
+  "source_title": "RAG paper anchor arXiv 2212.10496",
+  "source_uri": "https://arxiv.org/abs/2212.10496",
+  "source_content_sha256": "a3777788343bd4b407a3f6f541e318eff23338dee70f0d1be924c7999ab50a21",
+  "source_content_length": 484,
+  "fetched_at": "2026-07-07T00:00:00.000Z",
+  "verification_status": "verified_summary",
+  "last_verified": "2026-07-07",
+  "verification_method": "legacy_direct_source_review",
+  "verification_actor": "rag02-current-vault-migration",
+  "previous_source_content_sha256": null,
+  "content_changed": false,
+  "lineage_generation_id": "lineage-rag-paper-2212-10496-7894523be86e72d9524b",
+  "evidence_paths": [
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "evidence_bindings": [
+    {
+      "path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+      "sha256": "8c9ebe159bb5de854b70d184f37b129ce8eff3b6941823e3a59addb936594c9f"
+    }
+  ],
+  "created_at": "2026-07-06T23:23:45.973Z",
+  "updated_at": "2026-07-11T02:04:43.247Z"
+}

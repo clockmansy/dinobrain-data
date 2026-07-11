@@ -1,0 +1,34 @@
+{
+  "task_id": "task-20260707-002322-RAG-verification-subagent-10",
+  "outcome": "completed",
+  "summary": "Completed read-only RAG purity cross-review. Filtered synthesized subagent findings into durable core RAG claims, optional retrieval/agent-memory methods, provider/paper-specific holds, and reclassification caveats for DinoBrain accepted-memory intake.",
+  "changed_files": [],
+  "decisions": [
+    "Accept high-purity RAG architecture, retrieval quality, hybrid retrieval, reranking placement, indexing/query-time separation, and provenance/evaluation guidance as durable DinoBrain knowledge.",
+    "Reclassify HyDE, RAPTOR, contextual retrieval, Reflexion, and Graph RAG as optional adjacent methods or overlays rather than core RAG.",
+    "Hold Lewis RAG details and managed cloud KB feature claims as paper/provider-specific unless source-bound records are created.",
+    "Reject any memory framing that implies RAG guarantees truth or that optional methods are core RAG components."
+  ],
+  "next_steps": [
+    "Create accepted memory records only for durable architecture/taxonomy/design-policy categories, keeping provider and paper facts in source-bound or evaluation-gated records."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/behavior-rule-f4dc8f084829a07b.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-002325-RAG-durable-knowledge-purity.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T00:24:14.548Z"
+}

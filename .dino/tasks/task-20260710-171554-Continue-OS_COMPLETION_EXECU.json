@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260710-171554-Continue-OS_COMPLETION_EXECU",
+  "status": "partial",
+  "request": "Continue OS_COMPLETION_EXECUTION_PLAN_20260710.md with the next P0 package LOOP-03: direct Codex and Claude MCP parity proof. Inspect current implementation and evidence, implement missing proof integrity and verification paths without self-certification, run executable regressions, update the completion plan, and commit/push scoped changes.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-10T17:15:54.357Z",
+  "updated_at": "2026-07-10T17:41:11.680Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-10T17:41:11.680Z",
+  "trace_path": ".dino/traces/task-20260710-171554-Continue-OS_COMPLETION_EXECU.json"
+}

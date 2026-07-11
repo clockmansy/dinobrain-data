@@ -1,0 +1,28 @@
+{
+  "review_id": "rag-verified-knowledge-v1",
+  "type": "memory_review",
+  "status": "accepted",
+  "candidate_path": "50_Instances/accepted/rag-verified-knowledge-v1.json",
+  "reviewed_by": "codex_plus_10_subagent_cross_review",
+  "reviewed_at": "2026-07-07T00:45:00Z",
+  "decision": "accept_as_verified_summary",
+  "rationale": "The exact user-provided RAG source URLs were opened directly, supplemental official component docs were checked, and 10 subagents cross-reviewed the findings. The accepted memory stores only bounded paraphrased claims, keeps provider/paper-specific facts source-bound, and rejects overgeneralizations.",
+  "checks": {
+    "contains_secrets": false,
+    "stores_raw_transcript": false,
+    "stores_full_external_pages": false,
+    "distinguishes_anchor_from_verified_claim": true,
+    "uses_direct_source_urls": true,
+    "uses_cross_agent_review": true,
+    "separates_accepted_hold_rejected_claims": true,
+    "links_to_wiki_claim_page": true
+  },
+  "accepted_claim_path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+  "operation_report_path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md",
+  "follow_up": [
+    "Create retrieval canaries for synonym recall, Korean-English mixed queries, provenance-required answers, and memory-on vs memory-off behavior.",
+    "Replace lexical dense-lite fallback with a real embedding provider before claiming live dense hybrid retrieval.",
+    "Keep provider-specific feature claims source-bound and refresh before implementation decisions."
+  ]
+}
+

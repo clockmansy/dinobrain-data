@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-172306-10-.",
+  "status": "completed",
+  "request": "??? ???? ?? ??? ????, ??? ??/??/?? ?? ??? ???? ?? ???? 10?? ??? ?? ???? ??? ????.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T17:23:06.800Z",
+  "updated_at": "2026-07-07T17:35:12.086Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T17:35:12.086Z",
+  "trace_path": ".dino/traces/task-20260707-172306-10-..json"
+}

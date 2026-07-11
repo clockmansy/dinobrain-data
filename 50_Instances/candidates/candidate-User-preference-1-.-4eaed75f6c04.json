@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-User-preference-1-.-4eaed75f6c04",
+  "status": "pending_review",
+  "claim": "User preference: 하위에이전트중 1명이라도 동의를 안하면 동의할때까지 반복해야해.",
+  "category": "user_preference",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "하위에이전트중 1명이라도 동의를 안하면 동의할때까지 반복해야해.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-124348-4dcb56cc5a61.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-124348-4dcb56cc5a61",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "user_preference",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-124348-4dcb56cc5a61",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T12:43:48.707Z",
+  "updated_at": "2026-07-07T12:43:48.707Z"
+}

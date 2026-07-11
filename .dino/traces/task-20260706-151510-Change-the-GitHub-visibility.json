@@ -1,0 +1,32 @@
+{
+  "task_id": "task-20260706-151510-Change-the-GitHub-visibility",
+  "outcome": "completed",
+  "summary": "Changed GitHub repository visibility for clockmansy/dinobrain from private to public after verifying the target repository, admin permissions, and a minimal tracked-file secret scan. GitHub connector now reports visibility=public and git ls-remote confirms origin/main remains accessible at 8c8d194ba8c1b79a967d3f690dd20e315793c3d6. The data repository was not changed.",
+  "changed_files": [],
+  "decisions": [
+    "Only changed the app repository clockmansy/dinobrain; left dinobrain-data untouched because it contains operational memory/data and prior policy separates app release from data sync.",
+    "Used git credential-manager token in-process because gh CLI is not installed and the GitHub connector does not expose repository visibility update."
+  ],
+  "next_steps": [
+    "If the data repository should also become public, run a separate explicit review because it may contain user/session memory."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-14b2ee6df68bb7bd.json",
+    "50_Instances/accepted/behavior-rule-d55011c3f8b7399b.json",
+    "50_Instances/accepted/behavior-rule-6c036a284626f41a.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-151513-GitHub-visibility-change-for.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 3,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-06T15:16:58.723Z"
+}

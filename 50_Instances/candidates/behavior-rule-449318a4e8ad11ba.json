@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-449318a4e8ad11ba",
+  "behavior_rule_id": "behavior-rule-449318a4e8ad11ba",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Keep candidate/review data repo sync out of this app-code push because the data repo remains heavily dirty and needs scoped sync policy handling.",
+  "behavior_rule": "In similar future work, apply this decision: Keep candidate/review data repo sync out of this app-code push because the data repo remains heavily dirty and needs scoped sync policy handling.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-104459-Continue-active-DinoBrain-OS.json",
+    "snippet": "Keep candidate/review data repo sync out of this app-code push because the data repo remains heavily dirty and needs scoped sync policy handling."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-104459-Continue-active-DinoBrain-OS.json",
+      "task_id": "task-20260707-104459-Continue-active-DinoBrain-OS",
+      "signal_kind": "decision",
+      "snippet": "Keep candidate/review data repo sync out of this app-code push because the data repo remains heavily dirty and needs scoped sync policy handling."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T10:52:23.195Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T10:52:23.195Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

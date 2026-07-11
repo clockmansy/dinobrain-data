@@ -1,0 +1,54 @@
+{
+  "task_id": "task-20260707-154057-You-are-Reviewer-R3-retry-na",
+  "outcome": "completed",
+  "summary": "R3 retry read-only re-review inspected MEMORY.md, consensus/completion/verification docs, AGENTS.md, native authority implementation, native authority verifier fixture, closed-loop goal gate, and current data-vault native_instruction_authority state. Verdict: AGREE; Codex rules scanning and fixtures are now present, Claude instruction scanning and fixture are present, current state is healthy with Codex rules surfaced. Noted residual non-blocking nuance: implementation covers concrete instructions/custom-instructions files and directories but not every possible root-level instructions* wildcard variant promised by prose; no such additional files were present locally.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "reviewer_id=R3",
+    "verdict=AGREE",
+    "No blocking objections for requested retry scope",
+    "Codex ~/.codex/rules/*.rules scanning is implemented through recursive .codex/rules text-surface scanning and .rules extension support",
+    "Codex rules drift fixture exists and passes with portable Node",
+    "Claude safe-readable instruction surfaces are scanned when present; current local .claude directory is absent",
+    "Claude custom instruction drift fixture exists for .claude/instructions.md and passes with portable Node",
+    "Current state artifact in <machine-local-path> reports healthy and includes codex_rules_1"
+  ],
+  "next_steps": [
+    "Consider broadening implementation/tests to cover root-level instructions.* and custom-instructions.* wildcard variants if the prose promise is intended literally beyond .md plus directories.",
+    "Keep using the data-vault .dino/state path when referring to current native_instruction_authority state."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-154058-You-are-Reviewer-R3-retry-na.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-154057-065bee60c473.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Error-or-fix-note-Re-review-after-fi-27ab963ed87e.json",
+    "50_Instances/candidates/candidate-redacted-8ffeae25f7d529cd54726e57912b485dd19bb688.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note-Pay-special-attent-eb85f5e3100e.json"
+  ],
+  "search_queries": [
+    "Codex Claude custom instruction rules native authority memory precedence",
+    "instructions* custom-instructions* native_instruction_authority",
+    "codex_rules claude_instructions verifier drift"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 3,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T15:43:12.120Z"
+}

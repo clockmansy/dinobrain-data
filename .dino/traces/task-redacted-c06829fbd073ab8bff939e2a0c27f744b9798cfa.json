@@ -1,0 +1,53 @@
+{
+  "task_id": "task-redacted-011f8098f37f2a1c26aa27a251b7930fb9889439",
+  "outcome": "completed",
+  "summary": "Compared the P1-10 Retrieval Quality and Context Budget plan plus RAG proof/eval requirements against current DinoBrain repository and data-root artifacts. No repository files were edited. Current DinoBrain has deterministic RAG proof/eval artifacts, BM25/local-vector hybrid ranking, SQLite/index-backed retrieval, and structured memory-use tracing, but top gaps remain: local_text_hashing_v1 vectors are not real semantic embeddings; hybrid health can pass using non-semantic local hashes; context budget is item-limit based rather than token-budget based; required P1-10 canary state/test artifact names are missing or replaced by newer RAG artifacts; and RAG eval is a deterministic retrieval canary rather than answer-quality/Ragas-style evaluation.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Treat current dense vectors as local lexical/hash vectors, not semantic embeddings.",
+    "Treat rag_eval_status healthy as proof of deterministic local-vector retrieval canaries, not proof of real semantic RAG.",
+    "Classify context budget support as partial because current code enforces item limits and candidate caps, not configured token budgets.",
+    "Classify returned-node usage tracking as partial because finish_task/audit_memory_use fields exist, but the P1-10 retrieval/RAG eval does not use later-use signals as a canary metric.",
+    "Classify P1-10 traceability as incomplete because tests/retrieval-quality-improvements-smoke.mjs, tests/rag-quality-control-smoke.mjs, tests/acceptance/handoff-e2e.mjs, rag_canaries.json, and retrieval_golden_set.json are absent while newer .dino RAG artifacts exist."
+  ],
+  "next_steps": [
+    "Add a real semantic embedding provider/index contract and make hybrid_contextual_v2 require provider metadata that is not semantic_embedding_provider:false.",
+    "Add configured token budget fields, per-pack estimated token accounting, and hard pass/fail assertions for context packs.",
+    "Map or create the plan-named P1-10 canary artifacts and tests, including OS final form, GitHub-only recovery, Codex/Claude parity, no premature agreement, and automatic green path canaries.",
+    "Integrate finish_task/audit_memory_use later-use signals into retrieval quality reporting, not only standalone memory audits.",
+    "Add answer-quality/faithfulness evaluation separately from deterministic retrieval canary scoring."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-redacted-0d49b192a81058fa9c67dad0b943d3b2e2196acd.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-113755-8b4022e5e639.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-Compare-P1-10-Retrieva-92125bc4db35.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-7993149de994.json"
+  ],
+  "search_queries": [
+    "P1-10 Retrieval Quality Context Budget RAG semantic embedding eval proof",
+    "local_text_hashing_v1 dense-vectors rag_eval_status rag_proof_status",
+    "context token budget limit get_context_pack retrieval canaries"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 2,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-07T11:41:13.399Z"
+}

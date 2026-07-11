@@ -1,0 +1,492 @@
+{
+  "ok": true,
+  "version": "chatgpt_session_knowledge_promotion_v1",
+  "generated_at": "2026-07-11T09:14:02.140Z",
+  "source_registry_path": "20_Wiki/ChatGPT-Conversation-Registry.md",
+  "source_report_path": "60_Operations/session-imports/chatgpt-export-registry.json",
+  "source_zip_sha256": "7e5ea3d489f2205406175a8fe40da9c51c926a7f7fef7b9a34835269d92e0db0",
+  "review_method": "deterministic_user_message_patterns_plus_current_agent_review",
+  "raw_message_content_stored": false,
+  "supported_rule_count": 9,
+  "rules": [
+    {
+      "id": "direct_execution_default",
+      "title": "Execute directly when the requested action is safe",
+      "claim": "The user prefers the agent to carry safe work through directly instead of stopping at a proposal.",
+      "operating_rule": "Once scope is clear, implement, verify, and report the result without asking avoidable approval questions.",
+      "occurrence_count": 35,
+      "session_count": 26,
+      "threshold": {
+        "min_sessions": 2,
+        "min_occurrences": 2
+      },
+      "status": "reviewed_pattern_supported",
+      "evidence": [
+        {
+          "conversation_ref": "chatgpt-b849473a2a3853c2",
+          "message_sha256": "91a64c468114f37a6eb12a068654baefb91d039337a455676a4d7d849e07a2a1",
+          "at": "2025-12-26T09:25:43.017Z"
+        },
+        {
+          "conversation_ref": "chatgpt-f0d25ff1c206a25e",
+          "message_sha256": "fe09e4578410ec162665adf7ae9144b860fa8753c776d8663584dffe6443af1b",
+          "at": "2025-12-29T07:21:48.597Z"
+        },
+        {
+          "conversation_ref": "chatgpt-adc3fe3feb14a7e1",
+          "message_sha256": "8b724c4ad33128531a81ebe3b4b26dbe14bffad03f2b56e16109967b814b5e5a",
+          "at": "2025-05-02T05:33:47.958Z"
+        },
+        {
+          "conversation_ref": "chatgpt-adc3fe3feb14a7e1",
+          "message_sha256": "c733ae5d5827a4cc5c7e9e546d909e0b736f9bf32471675a9fa1ce9854ce1493",
+          "at": "2025-05-02T05:31:24.668Z"
+        },
+        {
+          "conversation_ref": "chatgpt-f1be36092c09a430",
+          "message_sha256": "c958ed8e84f11bd597571850980a8b58a0315679533ebb2eef9e557bf720bb6d",
+          "at": "2025-05-04T03:49:31.543Z"
+        },
+        {
+          "conversation_ref": "chatgpt-e164e2b08cbc3a45",
+          "message_sha256": "40765fbb58a1b4b65e86146e5c0e873c68b10a07a9b894c487ada1d6f7bb3203",
+          "at": "2025-05-14T10:38:38.050Z"
+        },
+        {
+          "conversation_ref": "chatgpt-ac6b00bb83c9128b",
+          "message_sha256": "3fa0bde63828083b0814f4cc99d6979ce7333a4a217530ba7693405184f0b15d",
+          "at": "2025-05-21T07:44:23.230Z"
+        },
+        {
+          "conversation_ref": "chatgpt-8a087bf651aa34f9",
+          "message_sha256": "befa0831d26792b48b41519263d56930a95e4c8dd8e4053b9a30156d3f47bff5",
+          "at": "2025-06-25T11:09:00.716Z"
+        },
+        {
+          "conversation_ref": "chatgpt-e653bd578747a2e6",
+          "message_sha256": "0ba4cca3c2830c8ed8b5acd41b2f0f2c9f1f6eced02455245c3daec347fe7df6",
+          "at": "2025-12-26T09:25:43.017Z"
+        },
+        {
+          "conversation_ref": "chatgpt-ceec06ecbfb38b83",
+          "message_sha256": "9483125bfba0556250df58df64eb76c15ce1ce51f5fd5d3496998da67b6247b4",
+          "at": "2026-02-23T09:20:39.270Z"
+        },
+        {
+          "conversation_ref": "chatgpt-ceec06ecbfb38b83",
+          "message_sha256": "13293014632df4949f88424c8cf1a9e31a1bddc950000c58377301fcbf7c1da1",
+          "at": "2026-02-23T09:21:09.364Z"
+        },
+        {
+          "conversation_ref": "chatgpt-ec274b8dd6344df3",
+          "message_sha256": "652dddd6c43dc065868c57ffa3e60387130ad83889ee6338cf11ab85b6b32282",
+          "at": "2026-03-05T11:42:36.001Z"
+        },
+        {
+          "conversation_ref": "chatgpt-d61be07061fc30c0",
+          "message_sha256": "1a1f936f5dc0ecfeaf5f7efb37bbfa7e42fcb995fed97b4991d134a3b4f1ac5b",
+          "at": "2026-03-06T05:35:39.595Z"
+        },
+        {
+          "conversation_ref": "chatgpt-3a9f58f0fecbba52",
+          "message_sha256": "ec54c22393fd856c50f6c5717a29a63b5d990aa35b4a68367269945b89d15d14",
+          "at": "2026-03-07T01:59:22.396Z"
+        },
+        {
+          "conversation_ref": "chatgpt-3a9f58f0fecbba52",
+          "message_sha256": "57db4c72c8866d449b091b5181ad4192bc0255d17d656049245940b33a2a1fbc",
+          "at": "2026-03-07T02:02:46.982Z"
+        },
+        {
+          "conversation_ref": "chatgpt-e9252c922d9ccaa5",
+          "message_sha256": "1038049df3f1135e40dd8bbcc97f3fa765accd70f3dac75f31a8974d4f331596",
+          "at": "2026-03-10T02:27:31.332Z"
+        },
+        {
+          "conversation_ref": "chatgpt-19ad595c9df29aa1",
+          "message_sha256": "9999e00dfe720711a1a387712e2bf22ebf88ca57ec39ba8604bc51511ed385d7",
+          "at": "2026-03-10T02:06:59.561Z"
+        },
+        {
+          "conversation_ref": "chatgpt-6100dc578fc05390",
+          "message_sha256": "b42118c5404131081eebcb2ad023e247cfd4e58489a3bdf61b9eb33c388dad9b",
+          "at": "2026-03-16T10:06:18.291Z"
+        },
+        {
+          "conversation_ref": "chatgpt-112680f2314ff21c",
+          "message_sha256": "3b0cbfcde276294c529181032a27a6965759ed2730810a242cc5cf61c37270f5",
+          "at": "2026-03-17T02:56:53.937Z"
+        },
+        {
+          "conversation_ref": "chatgpt-112680f2314ff21c",
+          "message_sha256": "67e7e73f0375fc876dfe272883d31ea05355ac7b4a685d9e853cadcc61639f4c",
+          "at": "2026-03-17T02:22:38.292Z"
+        },
+        {
+          "conversation_ref": "chatgpt-791306ba01456bf7",
+          "message_sha256": "c033adf428aa31e755971bb44d6a8cb0a4f2b4328fd41b56cb10be289aa6d117",
+          "at": "2026-03-19T06:19:31.880Z"
+        },
+        {
+          "conversation_ref": "chatgpt-791306ba01456bf7",
+          "message_sha256": "b0f7bd06681be0739ad0e775048c6e6f5b8455b729d5382fbaa249161c711586",
+          "at": "2026-03-19T06:16:46.838Z"
+        },
+        {
+          "conversation_ref": "chatgpt-1a1157272e1ca0aa",
+          "message_sha256": "0527f72ae2f674139dae5436d5f507c46e289fdfad633fd2ede9f4caf21251d7",
+          "at": "2026-03-19T06:36:46.619Z"
+        },
+        {
+          "conversation_ref": "chatgpt-f014009fe8b109e5",
+          "message_sha256": "3d8e9286885a481745b77e8ce547f900396c258f54487e5e8f516f829a5b3029",
+          "at": "2026-03-30T05:11:15.012Z"
+        }
+      ]
+    },
+    {
+      "id": "plan_before_execution",
+      "title": "Plan before broad execution",
+      "claim": "The user wants broad or ambiguous work anchored to an explicit plan before implementation expands.",
+      "operating_rule": "For substantial work, establish scope, order, and completion criteria first, then execute inside that plan.",
+      "occurrence_count": 19,
+      "session_count": 19,
+      "threshold": {
+        "min_sessions": 2,
+        "min_occurrences": 2
+      },
+      "status": "reviewed_pattern_supported",
+      "evidence": [
+        {
+          "conversation_ref": "chatgpt-90f58407089ab4e6",
+          "message_sha256": "0686724a6abc60d14167953f62a9d23b6402326f786cd49b0af7622f6bfd2293",
+          "at": "2025-04-30T02:01:53.010Z"
+        },
+        {
+          "conversation_ref": "chatgpt-b849473a2a3853c2",
+          "message_sha256": "bd8dc47e3732c146a379171637214a6dfb7eb5cdd367c5640963d97ce1c42f4d",
+          "at": "2026-01-26T02:10:19.308Z"
+        },
+        {
+          "conversation_ref": "chatgpt-f0d25ff1c206a25e",
+          "message_sha256": "29eb48c1ccbe4e59dbd229d2f9bc1a6348eabf1048d763cb2451f72cf741c229",
+          "at": "2025-12-29T05:20:01.222Z"
+        },
+        {
+          "conversation_ref": "chatgpt-adc3fe3feb14a7e1",
+          "message_sha256": "8b724c4ad33128531a81ebe3b4b26dbe14bffad03f2b56e16109967b814b5e5a",
+          "at": "2025-05-02T05:33:47.958Z"
+        },
+        {
+          "conversation_ref": "chatgpt-ca24042ba4833e30",
+          "message_sha256": "75dc9593ba37f43aab46eba60c8b256c7f8eab68e49eb739267fa4e26ad165dd",
+          "at": "2025-05-30T17:27:42.088Z"
+        },
+        {
+          "conversation_ref": "chatgpt-c82303585c736a4e",
+          "message_sha256": "b14e2ae43d6134ef578d2d348759f131e16fe3a55d6cd5f78b23408228bead0f",
+          "at": "2025-05-31T07:00:47.414Z"
+        },
+        {
+          "conversation_ref": "chatgpt-fb64fd8c82585cd9",
+          "message_sha256": "f08d124e5565c5fea688625ec7d64c7dbd567ba7b35489e68a0c2ba6877921b6",
+          "at": "2025-06-30T05:57:10.282Z"
+        },
+        {
+          "conversation_ref": "chatgpt-1300653d48ef4d65",
+          "message_sha256": "65266ef699399ab2fcc93ffcf039708e19b050efcf976db8cb41d1568ed91338",
+          "at": "2025-09-09T11:24:58.842Z"
+        },
+        {
+          "conversation_ref": "chatgpt-e653bd578747a2e6",
+          "message_sha256": "c50ec4bf6944a45f4affbe93b98ebd28f1fa238f4cef6f4656e885c6a7f6928a",
+          "at": "2026-01-26T02:10:19.308Z"
+        },
+        {
+          "conversation_ref": "chatgpt-9c2098b99006148d",
+          "message_sha256": "b05831177d25aff78e947f5a15d588ea8f771ea31e81e31b1a83724193b40b65",
+          "at": "2026-02-27T07:18:59.223Z"
+        },
+        {
+          "conversation_ref": "chatgpt-e43bbdaba0f12104",
+          "message_sha256": "ec137dd7bc935335f523e723631d6e471cdf5dbc48df7124ecfb94b8f952b64e",
+          "at": "2026-03-02T09:41:31.640Z"
+        },
+        {
+          "conversation_ref": "chatgpt-614ba12eefb29da0",
+          "message_sha256": "805d5d4e27311b03241ca0d0c759804ddc46a72f86a8f1101b75d1fb51b088ad",
+          "at": "2026-04-10T11:10:08.141Z"
+        },
+        {
+          "conversation_ref": "chatgpt-6d53476e81b0be10",
+          "message_sha256": "76dcb10df4a5dca74f8f23ed2bd97b24d4955b04ec8d6a34864ead137dea2008",
+          "at": "2026-04-16T08:50:11.947Z"
+        },
+        {
+          "conversation_ref": "chatgpt-891670880c65117b",
+          "message_sha256": "85b599c26f627c273b35b5718b426661e9b513b65b335b563effb48c0dd19309",
+          "at": "2026-04-18T06:32:32.280Z"
+        },
+        {
+          "conversation_ref": "chatgpt-c7267dc42b8966e6",
+          "message_sha256": "721d1c3504ca9567bf4635a2581146a3867231e962d15cac057fbae606953eb1",
+          "at": "2026-04-30T01:38:50.724Z"
+        },
+        {
+          "conversation_ref": "chatgpt-d644a6a28c818a94",
+          "message_sha256": "94f2649214e169febdc76156dd1d120c5cfcd3ce1f2c5807b9e00bce16a1c960",
+          "at": "2026-06-07T07:06:25.228Z"
+        },
+        {
+          "conversation_ref": "chatgpt-8c2cb096bbeec9b9",
+          "message_sha256": "3fb7287d718d1a610a7a8bfc5539ba03cc337c1ae54e90e12b913b339df7dbac",
+          "at": "2026-07-02T06:27:39.107Z"
+        },
+        {
+          "conversation_ref": "chatgpt-2dbb3198245c3557",
+          "message_sha256": "044291eaa46193fb98d93d08b3a1aa8b098aeae5ca925f1c489a8c5cbf6d8916",
+          "at": "2026-07-03T07:32:31.885Z"
+        },
+        {
+          "conversation_ref": "chatgpt-8ccbc8dfb68c0266",
+          "message_sha256": "6be42fedcc4d3288298680e4d5f64a853758ef7f537b78141f2994c0a9bbfa5a",
+          "at": "2026-07-07T00:12:26.014Z"
+        }
+      ]
+    },
+    {
+      "id": "end_to_end_completion",
+      "title": "Prove work end to end",
+      "claim": "The user values implementation, verification, persistence, and distribution as one completed workflow.",
+      "operating_rule": "Do not claim completion at scaffolding; run the relevant tests and include commit, push, or release when requested.",
+      "occurrence_count": 6,
+      "session_count": 6,
+      "threshold": {
+        "min_sessions": 2,
+        "min_occurrences": 2
+      },
+      "status": "reviewed_pattern_supported",
+      "evidence": [
+        {
+          "conversation_ref": "chatgpt-b849473a2a3853c2",
+          "message_sha256": "6f60179e1a7eab0942a7f6a242f2e02687a7bccc994f84e6016006e2930bbbad",
+          "at": "2026-01-05T12:49:16.283Z"
+        },
+        {
+          "conversation_ref": "chatgpt-80d0e1e067815d58",
+          "message_sha256": "bbbdafd22d9a7d55ae467eb07759b048927de19c7d0b067c8438a9b0d2be8755",
+          "at": "2025-06-24T07:35:41.119Z"
+        },
+        {
+          "conversation_ref": "chatgpt-87dcbb46f5ceb773",
+          "message_sha256": "36256b0ee77f9059aed3953599594116304ab576436128288194062ac10fb628",
+          "at": "2026-01-16T04:50:48.230Z"
+        },
+        {
+          "conversation_ref": "chatgpt-e653bd578747a2e6",
+          "message_sha256": "f1b16209284efa4ee9ccef64110237941ec6755fa1ca6eae47ec4f5b7d0cca0d",
+          "at": "2026-01-05T12:49:16.283Z"
+        },
+        {
+          "conversation_ref": "chatgpt-014537a76533f6f7",
+          "message_sha256": "b6bb8b3701b93866c03e047dc78812b0ac9680793319afaa9bd5684a578763ab",
+          "at": "2026-03-14T12:48:58.414Z"
+        },
+        {
+          "conversation_ref": "chatgpt-9ab688df09452d67",
+          "message_sha256": "6d8876e815ff5223dbd846072aa1af46b94ae6aaee102158b31f8f0468f220cd",
+          "at": "2023-03-30T05:32:55.149Z"
+        }
+      ]
+    },
+    {
+      "id": "local_evidence_over_claims",
+      "title": "Prefer direct local evidence over abstract claims",
+      "claim": "The user prefers conclusions grounded in directly inspected files, logs, screenshots, commands, and live state.",
+      "operating_rule": "For verification and debugging, inspect the real workspace and report concrete evidence before making broad claims.",
+      "occurrence_count": 5,
+      "session_count": 5,
+      "threshold": {
+        "min_sessions": 3,
+        "min_occurrences": 3
+      },
+      "status": "reviewed_pattern_supported",
+      "evidence": [
+        {
+          "conversation_ref": "chatgpt-8e3a089198ba36af",
+          "message_sha256": "e307cce5a0892eef8544f34e1cdcb74160892838dc3e8f530f993082ba1c3398",
+          "at": "2025-05-02T05:18:11.962Z"
+        },
+        {
+          "conversation_ref": "chatgpt-f18a36e539e6f35d",
+          "message_sha256": "12bc08f9cca583a6b81cfc9ff8a935e52439326faffba40ba21270f66688198b",
+          "at": "2026-02-25T11:08:30.078Z"
+        },
+        {
+          "conversation_ref": "chatgpt-377e4c1d62b45096",
+          "message_sha256": "6ce89929bff36979c89b0c57f1ea435f157c2cecca5df667cfa85ca9852620f4",
+          "at": "2026-03-02T14:30:29.949Z"
+        },
+        {
+          "conversation_ref": "chatgpt-5c1460d374c4d6a4",
+          "message_sha256": "047988b676721d059ee8949cb75bb0d6f5f61e955eb82c33e3c7d2069deec9a2",
+          "at": "2026-05-26T03:19:38.598Z"
+        },
+        {
+          "conversation_ref": "chatgpt-2dbb3198245c3557",
+          "message_sha256": "2dc437a07851356134ccd857b97559d61caa546d308a0a94dda45e4361d1ee15",
+          "at": "2026-07-03T07:33:20.171Z"
+        }
+      ]
+    },
+    {
+      "id": "durable_provenance",
+      "title": "Keep durable provenance",
+      "claim": "The user wants memory claims separated from verified source evidence and linked through durable provenance.",
+      "operating_rule": "Store source and chunk identity, hashes, review state, and claim links so later agents can distinguish memory from verified evidence.",
+      "occurrence_count": 4,
+      "session_count": 4,
+      "threshold": {
+        "min_sessions": 1,
+        "min_occurrences": 1
+      },
+      "status": "reviewed_pattern_supported",
+      "evidence": [
+        {
+          "conversation_ref": "chatgpt-ca24042ba4833e30",
+          "message_sha256": "75dc9593ba37f43aab46eba60c8b256c7f8eab68e49eb739267fa4e26ad165dd",
+          "at": "2025-05-30T17:27:42.088Z"
+        },
+        {
+          "conversation_ref": "chatgpt-c82303585c736a4e",
+          "message_sha256": "b14e2ae43d6134ef578d2d348759f131e16fe3a55d6cd5f78b23408228bead0f",
+          "at": "2025-05-31T07:00:47.414Z"
+        },
+        {
+          "conversation_ref": "chatgpt-cd9c6439e443c9aa",
+          "message_sha256": "a6d508e5b642682e45200eb556b13bb8d5396756df66f6747a54f3c94f97aca1",
+          "at": "2026-06-29T11:16:53.694Z"
+        },
+        {
+          "conversation_ref": "chatgpt-2dbb3198245c3557",
+          "message_sha256": "2dc437a07851356134ccd857b97559d61caa546d308a0a94dda45e4361d1ee15",
+          "at": "2026-07-03T07:33:20.171Z"
+        }
+      ]
+    },
+    {
+      "id": "knowledge_compounding_from_sessions",
+      "title": "Compound knowledge from conversation history",
+      "claim": "The user wants conversation sessions converted into durable, reviewed knowledge that improves later sessions.",
+      "operating_rule": "Treat sessions as source material, promote repeated decisions and corrections, and preserve provenance without copying raw transcripts into public memory.",
+      "occurrence_count": 3,
+      "session_count": 3,
+      "threshold": {
+        "min_sessions": 1,
+        "min_occurrences": 1
+      },
+      "status": "reviewed_pattern_supported",
+      "evidence": [
+        {
+          "conversation_ref": "chatgpt-b660cf9aed17d5d4",
+          "message_sha256": "b042ba4bae521d6014063bb63677dc0b18eb866ae4bda0dcd8a48c9ee9219c24",
+          "at": "2023-03-26T02:16:24.462Z"
+        },
+        {
+          "conversation_ref": "chatgpt-407ed9208ed390d9",
+          "message_sha256": "081a67c5db0cecb8827272da1058f0c791cebc1e24746af94b732d5f5b1373f5",
+          "at": "2026-02-03T08:09:46.410Z"
+        },
+        {
+          "conversation_ref": "chatgpt-2dbb3198245c3557",
+          "message_sha256": "2dc437a07851356134ccd857b97559d61caa546d308a0a94dda45e4361d1ee15",
+          "at": "2026-07-03T07:33:20.171Z"
+        }
+      ]
+    },
+    {
+      "id": "critical_review_and_cross_check",
+      "title": "Use critical review and cross-checking",
+      "claim": "The user wants important designs and implementations challenged, reviewed, and independently checked.",
+      "operating_rule": "For high-impact decisions, look for failure modes and conflicting evidence instead of only confirming the current design.",
+      "occurrence_count": 2,
+      "session_count": 2,
+      "threshold": {
+        "min_sessions": 2,
+        "min_occurrences": 2
+      },
+      "status": "reviewed_pattern_supported",
+      "evidence": [
+        {
+          "conversation_ref": "chatgpt-8e3a089198ba36af",
+          "message_sha256": "e307cce5a0892eef8544f34e1cdcb74160892838dc3e8f530f993082ba1c3398",
+          "at": "2025-05-02T05:18:11.962Z"
+        },
+        {
+          "conversation_ref": "chatgpt-12247d81608f44e0",
+          "message_sha256": "5edba5d1de2dc32604470eb12f18218eaa691c6f2a00bf06a746e3b51255183b",
+          "at": "2025-09-02T11:15:30.093Z"
+        }
+      ]
+    },
+    {
+      "id": "pre_response_os_context",
+      "title": "Load OS context before substantive response",
+      "claim": "The user expects DinoBrain OS context to be loaded before an agent performs substantive work.",
+      "operating_rule": "Require a verified pre-response task/context trace and fail closed when the OS context is unavailable.",
+      "occurrence_count": 2,
+      "session_count": 1,
+      "threshold": {
+        "min_sessions": 1,
+        "min_occurrences": 1
+      },
+      "status": "reviewed_pattern_supported",
+      "evidence": [
+        {
+          "conversation_ref": "chatgpt-2dbb3198245c3557",
+          "message_sha256": "044291eaa46193fb98d93d08b3a1aa8b098aeae5ca925f1c489a8c5cbf6d8916",
+          "at": "2026-07-03T07:32:31.885Z"
+        },
+        {
+          "conversation_ref": "chatgpt-2dbb3198245c3557",
+          "message_sha256": "2dc437a07851356134ccd857b97559d61caa546d308a0a94dda45e4361d1ee15",
+          "at": "2026-07-03T07:33:20.171Z"
+        }
+      ]
+    },
+    {
+      "id": "portable_setup_and_recovery",
+      "title": "Make setup and recovery portable",
+      "claim": "The user expects DinoBrain to install and recover consistently on another computer.",
+      "operating_rule": "Treat installer, client wiring, GitHub state, and recovery parity as one portable setup contract.",
+      "occurrence_count": 1,
+      "session_count": 1,
+      "threshold": {
+        "min_sessions": 1,
+        "min_occurrences": 1
+      },
+      "status": "reviewed_pattern_supported",
+      "evidence": [
+        {
+          "conversation_ref": "chatgpt-2dbb3198245c3557",
+          "message_sha256": "2dc437a07851356134ccd857b97559d61caa546d308a0a94dda45e4361d1ee15",
+          "at": "2026-07-03T07:33:20.171Z"
+        }
+      ]
+    },
+    {
+      "id": "safe_action_autonomy",
+      "title": "Avoid approval prompts for non-critical actions",
+      "claim": "The user prefers non-critical actions to proceed without repeated approval prompts.",
+      "operating_rule": "Ask only when an action is destructive, credential-sensitive, externally consequential, or genuinely ambiguous.",
+      "occurrence_count": 0,
+      "session_count": 0,
+      "threshold": {
+        "min_sessions": 1,
+        "min_occurrences": 1
+      },
+      "status": "insufficient_pattern_support",
+      "evidence": []
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "memory_id": "codex-session-knowledge-one_link_or_direct_action",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "user_preference",
+  "title": "Prefer direct links or actions when the path is known",
+  "claim": "When the path or artifact is known, the user often prefers a direct link, launcher, or action instead of a long explanation.",
+  "reusable_rule": "If the user asks for an install link, file, folder, or app launch, provide the direct artifact or perform the action first, then add only essential context.",
+  "scope": "communication",
+  "confidence": "medium",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "user-preference",
+    "brevity",
+    "install"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 22,
+    "user_hit_count": 42,
+    "assistant_hit_count": 801,
+    "weighted_score": 969,
+    "session_refs": [
+      "sess-070a11e11c4994",
+      "sess-089835dc8fdc62",
+      "sess-11277020296a72",
+      "sess-1e95eea1be108d",
+      "sess-1f464b71ecea0d",
+      "sess-24d8b03c383495",
+      "sess-3d168ffb4f6ce0",
+      "sess-40cc080526149f",
+      "sess-458b19a1a1cdf1",
+      "sess-5ea2d5d2562d29",
+      "sess-6f506c542b0e47",
+      "sess-7d50eae76e4ee7",
+      "sess-7e854189c37298",
+      "sess-80c93d7848697c",
+      "sess-895eea5311c7c7",
+      "sess-9069abe00698a1",
+      "sess-b7f1865617d0f7",
+      "sess-b9bea0ba742411",
+      "sess-baaef7c3490b70",
+      "sess-c15947f92a15cb",
+      "sess-db17f02a87c473",
+      "sess-e1afb3fcecf453"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "b3baf6402d2248740f5ce3c8",
+        "char_count": 153
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "695a65ae37bd6843382db363",
+        "char_count": 98
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "9bc98f0edda25e0c4735841c",
+        "char_count": 187
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "51705959034c4a5a241f6149",
+        "char_count": 89
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "d930063f3765a1dc37edf214",
+        "char_count": 51
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "bb8657b1023a96f35e3ac2c1",
+        "char_count": 662
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "8293b36b1dbda25e860e9a56",
+        "char_count": 145
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "eec20fbf2e4a815d07ce8552",
+        "char_count": 482
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "5d32ad915babaaa5359ab13b",
+        "char_count": 108
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "527b54354f3789294f7ade7c",
+        "char_count": 71
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "12e6531c1590c7849e9ca26b",
+        "char_count": 1114
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "c9bf8b85066c6041b8a3a54a",
+        "char_count": 137
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "4801f44b67ec962b3b9ed2ed",
+        "char_count": 142
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "801a336f983c502d56d9d5ba",
+        "char_count": 65
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "420e060daed414a45e242e4b",
+        "char_count": 76
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "7861831779f94b1f2f2497cd",
+        "char_count": 109
+      }
+    ],
+    "matched_terms": [
+      "링크\\s*하나|설치링크|다운로드|열어|실행|바로|direct link|one link"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 491
+      },
+      {
+        "project": "stripe engine",
+        "count": 172
+      },
+      {
+        "project": "new-chat",
+        "count": 92
+      },
+      {
+        "project": "Project_J",
+        "count": 38
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 18
+      },
+      {
+        "project": "html",
+        "count": 13
+      },
+      {
+        "project": "files-mentioned-by-the-user-html",
+        "count": 6
+      },
+      {
+        "project": "gykim80-perfectpixel-studio-https-github-com",
+        "count": 6
+      },
+      {
+        "project": "z",
+        "count": 5
+      },
+      {
+        "project": "codex",
+        "count": 1
+      },
+      {
+        "project": "notion-plugin-notion-openai-curated-db",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-one_link_or_direct_action.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-one_link_or_direct_action",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425445-eeaf5063-8ec5-4514-9630-a02295c0e170",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425445-eeaf5063-8ec5-4514-9630-a02295c0e170",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-one_link_or_direct_action.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-one_link_or_direct_action.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-one_link_or_direct_action.json"
+  ],
+  "successor_paths": []
+}

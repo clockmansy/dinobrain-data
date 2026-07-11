@@ -1,0 +1,37 @@
+{
+  "review_id": "review-cluster-3842b8fd3115d700",
+  "type": "merge_review",
+  "status": "pending",
+  "source": "review_worklist_actions",
+  "source_action_id": "worklist-action-review-cluster-3842b8fd3115d700",
+  "cluster_kind": "error_fix",
+  "representative_claim": "Error or fix note: - Use an imperative verb first: \"Add\", \"Fix\", \"Update\", \"Refactor\", \"Remove\", \"Locate\", \"Find\", etc.",
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-2a226d45f258.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-45d0a1153fb2.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-71c1511e5bd5.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-71face00dafe.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-b980ea841fa0.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-c3e64913d5a7.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-cbc8e431b4a5.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-cc88e33b227c.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-df0f4d72e325.json",
+    "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-f50e3dcb75cc.json"
+  ],
+  "review_paths": [
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-2a226d45f258.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-45d0a1153fb2.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-71c1511e5bd5.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-71face00dafe.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-b980ea841fa0.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-c3e64913d5a7.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-cbc8e431b4a5.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-cc88e33b227c.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-df0f4d72e325.json",
+    "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-f50e3dcb75cc.json"
+  ],
+  "required_action": "Create one reviewed accepted memory for the cluster, or explicitly hold/reject the cluster.",
+  "reviewer": "review-worklist-actions",
+  "created_at": "2026-07-07T12:25:36.779Z",
+  "updated_at": "2026-07-07T12:25:36.779Z"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-172403-READ-ONLY-REVIEW.-You-are-re",
+  "status": "completed",
+  "request": "READ-ONLY REVIEW. You are reviewer 01: pre-response/fail-closed specialist for DinoBrain. Inspect the current thread context, <machine-local-path> AGENTS.md, and relevant repo verification scripts/docs. Determine the user's desired OS direction and review the incomplete improvement plan. Output: (1) what user wants, (2) remaining gaps, (3) exact completion criteria, (4) AGREE or DISAGREE with the criteria and why. Do not modify files.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T17:24:03.761Z",
+  "updated_at": "2026-07-07T17:25:40.588Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T17:25:40.588Z",
+  "trace_path": ".dino/traces/task-20260707-172403-READ-ONLY-REVIEW.-You-are-re.json"
+}

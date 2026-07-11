@@ -1,0 +1,147 @@
+{
+  "pack_id": "pack-20260703-074021-DinoBrain-Observatory-dinosa",
+  "pack_type": "standard",
+  "question": "DinoBrain Observatory dinosaur graph design-only redesign constraints no logic changes existing UI visual language",
+  "created_at": "2026-07-03T07:40:21.630Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 15,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 15,
+  "index_total_candidate_count": 15,
+  "index_matching_terms": [
+    "constraints",
+    "knowledge",
+    "known",
+    "not",
+    "note",
+    "notes",
+    "required"
+  ],
+  "included_item_count": 5,
+  "excluded_record_count": 11,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-074013-Plan-a-high-quality-design-o.json",
+      "kind": "recent_task",
+      "title": "Task: Plan a high-quality design-only redesign of the DinoBrain Observatory graph so it visually resem",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 37,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "title matched \"graph\"",
+        "title matched \"design-only\"",
+        "title matched \"redesign\"",
+        "path matched \"no\"",
+        "title matched \"no\"",
+        "summary matched \"no\"",
+        "title matched \"visual\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-045733-Create-a-version-upgrade-pla.json",
+      "kind": "recent_task",
+      "title": "Task: Create a version upgrade plan for DinoBrain based on the screenshot analysis: add Observatory he",
+      "summary": "status=completed | project=dinobrain | Created a v0.1.5 upgrade plan for DinoBrain focused on Observatory OS health gates, memory lifecycle queues, read trace evidence, graph QA, and recovery/sync risk. No files were changed.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 27,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "summary matched \"graph\"",
+        "path matched \"no\"",
+        "title matched \"no\"",
+        "summary matched \"no\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-071734-Fix-Codex-UserPromptSubmit-i.json",
+      "kind": "recent_task",
+      "title": "Task: Fix Codex UserPromptSubmit installer registration so DinoBrain merges into the first existing pr",
+      "summary": "status=completed | project=dinobrain | Fixed installer Codex UserPromptSubmit registration so DinoBrain is merged into the first existing prompt-hook group instead of being appended as a separate second group. Only install.ps1 and scripts/verify-installer-hooks.ps1 were changed. Added regression cases preserving why-was-fable-banned and verifying DinoBrain appears exactly once in the first UserPromptSubmit group. Cre",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 24,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"no\"",
+        "title matched \"no\"",
+        "summary matched \"no\"",
+        "title matched \"existing\"",
+        "summary matched \"existing\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-054107-Implement-v0.1.5-Observatory.json",
+      "kind": "recent_task",
+      "title": "Task: Implement v0.1.5 Observatory OS Health Upgrade: inspect current observatory/export/sqlite struct",
+      "summary": "status=completed | project=dinobrain | Implemented and released DinoBrain v0.1.5 Observatory OS Health Upgrade. Added shared graph health generation at .dino/index/graph-health.json, wired it into SQLite index refresh and memory audit snapshots, expanded Observatory with health chips, read trace, node lifecycle, sync risk, and graph-health API, added graph health verification, bumped app/installer/client versions to ",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 22,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "path matched \"observatory\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "summary matched \"graph\"",
+        "path matched \"no\"",
+        "summary matched \"no\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-045352-Analyze-a-screenshot-of-anot.json",
+      "kind": "recent_task",
+      "title": "Task: Analyze a screenshot of another person's similar memory OS / graph observatory implementation an",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 21,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "title matched \"graph\"",
+        "path matched \"no\"",
+        "title matched \"no\"",
+        "summary matched \"no\""
+      ]
+    }
+  ]
+}

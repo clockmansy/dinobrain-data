@@ -1,0 +1,38 @@
+{
+  "task_id": "task-20260705-022738-QA-code-review-DinoBrain-v2-",
+  "outcome": "completed",
+  "summary": "Completed stability-focused QA/code review of DinoBrain v2 changes. Findings: Codex hook duplicate-lock path can skip preflight instead of fail-closing; Claude Code integration is MCP-only and does not enforce pre-response OS context; action-gate required-tool checks still cover only legacy tools; node lifecycle apply=true writes review records rather than executing merge/hold/delete/provenance repair; behavior eval exits ok when golden file is missing; Observatory JSON graph fallback rejects v2 wiki index when SQLite is unavailable; create_source_chunk stores raw chunk_text without redaction/size bounds; os_begin_task can leave started tasks if context-pack construction throws. Type check passed after adding portable Node directory to PATH; eval:behavior currently returns ok/skipped because behavior-golden.json is missing.",
+  "changed_files": [],
+  "decisions": [
+    "Review remained read-only; no code changes were made.",
+    "v2 stability risk is mostly in fail-closed enforcement, automatic lifecycle execution, strict eval gating, and active-session MCP/tool reload guarantees."
+  ],
+  "next_steps": [
+    "Patch hook duplicate-lock path to inject fail-closed unless a concrete sibling preflight report/context can be read.",
+    "Add Claude pre-response enforcement strategy or explicitly downgrade Claude support to MCP-assisted only in docs/verification.",
+    "Expand action gate required tools to the full v2 contract and use actual exposed tool lists, not a hard-coded legacy subset.",
+    "Make behavior eval strict by default or fail CI when golden cases are missing.",
+    "Support wiki index v2 in Observatory JSON fallback and add a regression test.",
+    "Add redaction/size limits to create_source_chunk and transactional failure handling around os_begin_task."
+  ],
+  "used_memory_paths": [
+    "20_Wiki/OS-v2-Contract.md"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260705-022742-DinoBrain-v2-QA-code-review-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "DinoBrain release and installer alignment memory",
+    "DinoBrain compounding loop caveats memory"
+  ],
+  "memory_use": {
+    "used_memory_count": 1,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-05T02:31:11.842Z"
+}

@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260703-085839-Improve-the-DinoBrain-Observ",
+  "status": "partial",
+  "request": "Improve the DinoBrain Observatory dinosaur graph design after user feedback that the deployed v0.1.6 silhouette still feels weak. Focus on visual/rendering changes only unless explicitly deploying later.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "created_at": "2026-07-03T08:58:39.463Z",
+  "updated_at": "2026-07-03T09:17:43.883Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-03T09:17:43.883Z",
+  "trace_path": ".dino/traces/task-20260703-085839-Improve-the-DinoBrain-Observ.json"
+}

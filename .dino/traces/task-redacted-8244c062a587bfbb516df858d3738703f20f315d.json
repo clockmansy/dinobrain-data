@@ -1,0 +1,49 @@
+{
+  "task_id": "task-redacted-f28496fbaa44ef2d777976be3d1855e0a94543d3",
+  "outcome": "completed",
+  "summary": "Compared P0-01 Full-Memory Audit and P0-02 Status Freshness plan requirements against the current DinoBrain repo and live data-root status artifacts. Found both have working CLI/build/status/test surfaces, but both remain partial against the full plan: P0-01 lacks encoding/line/char fields, full parse/encoding deltas, MCP/service/app exposure, and clean Korean visible proof; P0-02 lacks plan-specific health_status/client_mcp_direct_status freshness matrix, authority_rank/last_computed_at fields, direct MCP proof precedence, and UI freshness band proof.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Treated the task as read-only; no repo files edited.",
+    "Used the injected DinoBrain preflight and live data-root status files as evidence.",
+    "Ran the two focused smoke verifiers with bundled Node from AppData because node is not on PATH."
+  ],
+  "next_steps": [
+    "Implement missing plan-level metadata and exposure gaps before claiming P0-01/P0-02 complete.",
+    "Add direct MCP/health freshness artifacts or explicitly remap the plan matrix to the current .dino/state model.",
+    "Fix Korean visible_status encoding before using UI proof as acceptance evidence."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-redacted-3743fb8f5fccde4ca145419f05a65aac6d2ebc91.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-113448-65d9fbdc431e.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-Compare-P0-01-Full-Mem-fd1be136bf5c.json",
+    "50_Instances/candidates/candidate-Project-state-Return-concise-finding-7bc585d0665f.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-8bf79d52dfab.json"
+  ],
+  "search_queries": [
+    "P0-01 P0-02 Full-Memory Status Freshness plan requirements",
+    "DinoBrain full-memory audit status freshness current implementation"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 3,
+    "search_query_count": 2
+  },
+  "finished_at": "2026-07-07T11:36:59.242Z"
+}

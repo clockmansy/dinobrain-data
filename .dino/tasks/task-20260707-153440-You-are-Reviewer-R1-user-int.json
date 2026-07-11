@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-153440-You-are-Reviewer-R1-user-int",
+  "status": "completed",
+  "request": "You are Reviewer R1: user intent and completion-bar reviewer for DinoBrain. Work read-only. Inspect the real workspace and memory, not just this prompt. Minimum required files: <machine-local-path> <machine-local-path> <machine-local-path> <machine-local-path> and relevant DinoBrain docs found by rg. User's requirement: DinoBrain must become a closed-loop OS where every Codex/Claude session gets pre-response OS context, uses reviewed LLM Wiki memory/provenance, writes finish traces, grows knowledge, and policy-pushes to GitHub; current user instruction always outranks memory. Decide whether the plan document has concrete completion conditions matching that user intent. Return a concise structured result with reviewer_id=R1, verdict=AGREE or REVISE_REQUIRED, blocking_objections[], required_doc_changes[], evidence_files[]. If REVISE_REQUIRED, be specific enough to patch the document.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T15:34:40.280Z",
+  "updated_at": "2026-07-07T15:35:43.338Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T15:35:43.338Z",
+  "trace_path": ".dino/traces/task-20260707-153440-You-are-Reviewer-R1-user-int.json"
+}

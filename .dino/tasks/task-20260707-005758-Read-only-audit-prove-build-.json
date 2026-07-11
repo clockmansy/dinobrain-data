@@ -1,0 +1,22 @@
+{
+  "task_id": "task-20260707-005758-Read-only-audit-prove-build-",
+  "status": "blocked",
+  "request": "Read-only audit: prove/build closed loop for any session, focused only on pre-response hook fail-closed enforcement for Codex user-level hooks. Identify exact files/functions, proof gaps, and one verifier that should fail until fixed. Do not edit files.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T00:57:58.253Z",
+  "updated_at": "2026-07-08T01:10:08.981Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-08T01:10:08.981Z",
+  "trace_path": ".dino/traces/task-20260707-005758-Read-only-audit-prove-build-.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v1",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-08T01:10:08.981Z",
+    "trace_path": ".dino/traces/task-20260707-005758-Read-only-audit-prove-build-.json"
+  }
+}

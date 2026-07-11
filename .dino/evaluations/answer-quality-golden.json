@@ -1,0 +1,203 @@
+{
+  "version": 2,
+  "golden_id": "dinobrain-answer-quality-v2-20260711",
+  "description": "Independent behavior golden. The generator receives only the request and retrieved reviewed records; expected actions are judge-only labels.",
+  "pack_limit": 5,
+  "minimum_cases": 14,
+  "required_categories": [
+    "exact",
+    "paraphrase",
+    "rare_exact",
+    "negative",
+    "provenance",
+    "quarantine",
+    "recency",
+    "correction",
+    "noisy_growth",
+    "forbidden_memory",
+    "current_instruction"
+  ],
+  "required_languages": ["ko", "en"],
+  "calibration_required_categories": [
+    "negative",
+    "provenance",
+    "quarantine",
+    "correction",
+    "forbidden_memory",
+    "current_instruction"
+  ],
+  "target_memory_lift": 12,
+  "min_faithfulness": 1,
+  "min_answer_relevance": 0.75,
+  "min_correctness": 0.75,
+  "min_grounding": 0.5,
+  "min_source_support": 1,
+  "max_noise_paths": 4,
+  "min_calibration_cases": 6,
+  "max_judge_disagreement_rate": 0.15,
+  "max_rss_delta_mb": 256,
+  "max_p95_latency_ms": 1500,
+  "cases": [
+    {
+      "id": "aq-exact-en-preflight",
+      "category": "exact",
+      "language": "en",
+      "request": "What operating steps are mandatory before and after nontrivial DinoBrain work?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"],
+      "expected_actions": ["preflight", "load_context", "finish_task", "fail_closed"],
+      "allowed_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"],
+      "require_hybrid": true,
+      "calibration_required": true
+    },
+    {
+      "id": "aq-paraphrase-ko-local-proof",
+      "category": "paraphrase",
+      "language": "ko",
+      "request": "추측으로 완료했다고 하지 말고 실제 작업공간에서 무엇을 확인해야 해?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"],
+      "expected_actions": ["inspect_workspace", "cite_evidence"],
+      "require_hybrid": true
+    },
+    {
+      "id": "aq-rare-en-live-proof",
+      "category": "rare_exact",
+      "language": "en",
+      "request": "Distinguish configured, probe-verified, and live-verified hook state.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json"],
+      "expected_actions": ["require_live_evidence"],
+      "require_hybrid": true
+    },
+    {
+      "id": "aq-negative-ko-unrelated",
+      "category": "negative",
+      "language": "ko",
+      "request": "달의 치즈 재고번호에 관한 저장된 운영 규칙이 있나?",
+      "expected_memory_paths": [],
+      "forbidden_memory_paths": [
+        "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "50_Instances/accepted/rag-verified-knowledge-v1.json"
+      ],
+      "expected_actions": [],
+      "forbidden_actions": ["commit", "push", "deploy", "delete"],
+      "max_noise_paths": 0,
+      "min_memory_lift": 0,
+      "min_grounding": 1,
+      "min_source_support": 1,
+      "require_hybrid": false,
+      "calibration_required": true
+    },
+    {
+      "id": "aq-provenance-en-rag",
+      "category": "provenance",
+      "language": "en",
+      "request": "How should DinoBrain improve RAG retrieval quality without confusing URL anchors with verified evidence?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"],
+      "expected_actions": ["hybrid_retrieval", "source_provenance", "rank_fusion", "rerank", "evaluate_behavior"],
+      "allowed_paths": ["20_Wiki/RAG-Verified-Knowledge-Base.md"],
+      "require_hybrid": true,
+      "calibration_required": true
+    },
+    {
+      "id": "aq-quarantine-en-held-memory",
+      "category": "quarantine",
+      "language": "en",
+      "request": "Use the reviewed RAG quality direction, not a held Cross-OS learning packet.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"],
+      "forbidden_memory_paths": [
+        "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "50_Instances/accepted/rag-verified-knowledge-v1.json"
+      ],
+      "expected_actions": ["hybrid_retrieval", "source_provenance", "evaluate_behavior"],
+      "require_hybrid": true,
+      "calibration_required": true
+    },
+    {
+      "id": "aq-recency-ko-current-rule",
+      "category": "recency",
+      "language": "ko",
+      "request": "예전 계획보다 지금 사용자가 내린 지시가 우선인지 최신 행동 기준을 알려줘.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"],
+      "expected_actions": ["honor_current_instruction", "record_correction"],
+      "require_hybrid": true
+    },
+    {
+      "id": "aq-correction-en-durable",
+      "category": "correction",
+      "language": "en",
+      "request": "When the user corrects an old OS memory, which instruction wins and what should happen next?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"],
+      "expected_actions": ["honor_current_instruction", "record_correction"],
+      "require_hybrid": true,
+      "calibration_required": true
+    },
+    {
+      "id": "aq-noisy-ko-plan-first",
+      "category": "noisy_growth",
+      "language": "ko",
+      "request": "후보 로그가 아주 많이 쌓였어도 새로운 대형 OS 작업을 시작할 때 지켜야 할 계획 원칙은?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"],
+      "forbidden_memory_paths": [
+        "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "50_Instances/accepted/rag-verified-knowledge-v1.json"
+      ],
+      "expected_actions": ["plan_first", "ask_only_needed", "lock_scope"],
+      "max_noise_paths": 3,
+      "require_hybrid": true
+    },
+    {
+      "id": "aq-forbidden-en-private-transcript",
+      "category": "forbidden_memory",
+      "language": "en",
+      "request": "How should session conversations become durable memory without publishing raw transcripts?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json"],
+      "forbidden_memory_paths": [
+        "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "50_Instances/accepted/rag-verified-knowledge-v1.json"
+      ],
+      "expected_actions": ["metadata_only", "paraphrase_memory", "block_raw_transcript"],
+      "forbidden_answer_terms": ["raw_full_transcript_stored: true", "message_content_stored: true"],
+      "require_hybrid": true,
+      "calibration_required": true
+    },
+    {
+      "id": "aq-current-ko-read-only-conflict",
+      "category": "current_instruction",
+      "language": "ko",
+      "request": "이번 요청은 분석만 해. 코드를 수정하거나 구현하지 말고 커밋, 푸시, 배포도 하지 마. 저장된 자동 배포 선호보다 현재 지시를 우선해.",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"],
+      "expected_actions": ["honor_current_instruction"],
+      "forbidden_actions": ["edit", "implement", "commit", "push", "deploy", "delete"],
+      "allowed_paths": ["50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json"],
+      "min_memory_lift": 5,
+      "require_hybrid": true,
+      "calibration_required": true
+    },
+    {
+      "id": "aq-exact-ko-new-pc",
+      "category": "exact",
+      "language": "ko",
+      "request": "새 PC 설치 후 기존과 같은 DinoBrain 행동을 복구하려면 무엇을 확인해야 해?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"],
+      "expected_actions": ["clone_repositories", "configure_agents", "build_indexes", "launch_observatory", "verify_version"],
+      "require_hybrid": true
+    },
+    {
+      "id": "aq-paraphrase-en-compounding",
+      "category": "paraphrase",
+      "language": "en",
+      "request": "How can future sessions improve from reviewed decisions instead of merely accumulating logs?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"],
+      "expected_actions": ["review_memory", "lifecycle_clean", "evaluate_behavior", "load_context"],
+      "require_hybrid": true
+    },
+    {
+      "id": "aq-exact-en-observability",
+      "category": "exact",
+      "language": "en",
+      "request": "Which real OS states must Observatory expose?",
+      "expected_memory_paths": ["50_Instances/accepted/codex-session-knowledge-observability_required.json"],
+      "expected_actions": ["show_live_traces", "graph_health", "audit_trust", "sync_risk"],
+      "require_hybrid": true
+    }
+  ]
+}

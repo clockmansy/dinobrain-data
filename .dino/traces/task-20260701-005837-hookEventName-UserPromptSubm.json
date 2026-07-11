@@ -1,0 +1,15 @@
+{
+  "task_id": "task-20260701-005837-hookEventName-UserPromptSubm",
+  "outcome": "completed",
+  "summary": "Closed the direct hook command-string verification task after confirming it emitted DinoBrain events.",
+  "changed_files": [
+    ".codex/hooks.json"
+  ],
+  "decisions": [
+    "The hook command should use the PowerShell wrapper as the primary command on this Windows setup."
+  ],
+  "next_steps": [
+    "Reload or trust Codex project hooks before expecting live Desktop prompts to auto-trigger."
+  ],
+  "finished_at": "2026-07-01T01:02:30.270Z"
+}

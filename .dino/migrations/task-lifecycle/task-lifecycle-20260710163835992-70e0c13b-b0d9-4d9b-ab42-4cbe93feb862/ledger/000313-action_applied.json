@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 313,
+  "event": "action_applied",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "8fe1c9407ab4df115d745b411838e5dda8fc09b28d44ee03abc033bb52ae6f87",
+  "payload": {
+    "index": 154,
+    "task_id": "task-20260707-155009-You-are-a-release-install-pa",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "79b259e6c3bb91b44202a899bb6118ab2f97a5b54dda41259a2990f5546ab310",
+    "trace_sha256_after": "607805f6da5cbc13c48a582bfc0234ea60730a2ddf588a866c6b43a5f9179069"
+  },
+  "entry_sha256": "284edde5d3b8784ffe33980384111c721740747192773651ac1205025104ab71"
+}

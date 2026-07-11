@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 400,
+  "event": "action_started",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "8922a1f7a3978af5a52f09070062188012fdb1aed908393aa3c9bac3e90b0f0e",
+  "payload": {
+    "index": 198,
+    "task_id": "task-20260707-020547-Continue-building-and-verify",
+    "action": "block_stale_without_trace",
+    "task_sha256_before": "de077565b7c8e1849887498e6bb04b43e7202e031cdbd6603f0f6f588ea87aa3",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "16e5b2fe3f746caf9a7066eebd5ac55c1d0c524fc74b874d87991f26b1d6b238"
+}

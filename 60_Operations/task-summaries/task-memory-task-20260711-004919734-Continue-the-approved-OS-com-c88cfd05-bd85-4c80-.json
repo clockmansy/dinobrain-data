@@ -1,0 +1,56 @@
+{
+  "memory_id": "task-memory-task-20260711-004919734-Continue-the-approved-OS-com-c88cfd05-bd85-4c80-",
+  "type": "task_summary_memory",
+  "status": "pending_review",
+  "title": "Task outcome: task-20260711-004919734-Continue-the-approved-OS-com-c88cfd05-bd85-4c80-b2f2-dac75ba9f2a6",
+  "summary": "Completed RAG-01 contextual hybrid retrieval contract. Added bounded contextual row metadata to Wiki/SQLite/dense indexes, independent semantic cosine top-K, exact alias and rare lexical priority, typed score contributions, retrieval lane budgets, private ChatGPT source exclusion, serialized hash-verified vector migrations with rollback/reapply, completion registry and Observatory status. Real vault passed 20/20 context eval, 12/12 RAG eval, 12/12 answer quality, live semantic retrieval, and verify:os. App f4a0e24 and data 1d173e0 were pushed to origin/main.",
+  "claim": "Task outcome for DinoBrain: Completed RAG-01 contextual hybrid retrieval contract. Added bounded contextual row metadata to Wiki/SQLite/dense indexes, independent semantic cosine top-K, exact alias and rare lexical priority, typed score contributions, retrieval lane budgets, private ChatGPT source exclusion, serialized hash-verified vector migrations with rollback/reapply, completion registry and Observatory status. Real vault passed 20/20 context eval, 12/12 RAG eval, 12/12 answer quality, live semantic retrieval, and verify:os. App f4a0e24 and data 1d173e0 were pushed to origin/main.",
+  "request": "task-20260711-004919734-Continue-the-approved-OS-com-c88cfd05-bd85-4c80-b2f2-dac75ba9f2a6",
+  "outcome": "completed",
+  "decisions": [
+    "Exclude 30_Sources/private from all default Wiki, SQLite, and Context Pack retrieval while preserving it as local-only source material.",
+    "Select dense candidates independently by cosine similarity with a bounded top-64 lane before RRF.",
+    "Keep explicit aliases and rare exact lexical terms stable through a dedicated rank signal and final bonus.",
+    "Expose typed sparse, BM25, dense, fallback, RRF, rerank, provenance, lifecycle, type-budget, recency, noise, and final contributions.",
+    "Limit supplemental non-behavior lanes to two for behavior-oriented packs and bound explicit operations intent to four records with canonical root README priority.",
+    "Require semantic_embedding_provider=true for hybrid_contextual_v2; local hashing and unlabelled vectors remain lexical_fallback_v2.",
+    "Serialize vector identity changes and persist hash-verified before/after artifacts with rollback and reapply."
+  ],
+  "next_steps": [
+    "Implement RAG-02 transactional source/chunk/claim lineage.",
+    "Implement RAG-03 external calibrated answer evaluation.",
+    "Implement RAG-04 declared 50k scale and latency evidence."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260711-004920890-Continue-the-approved-OS-com-115ae584-cce6-4986-a192-ff0e146f70b9.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260711-004919734-Continue-the-approved-OS-com-c88cfd05-bd85-4c80-.json",
+    "snippet": "Completed RAG-01 contextual hybrid retrieval contract. Added bounded contextual row metadata to Wiki/SQLite/dense indexes, independent semantic cosine top-K, exact alias and rare lexical priority, typed score contributions, retrieval lane budgets, private ChatGPT source exclusion, serialized hash-verified vector migrations with rollback/reapply, completion registry and Observatory status. Real vault passed 20/20 context eval, 12/12 RAG eval, 12/12 answer quality, live semantic retrieval, and verify:os. App f4a0e24 and data 1d173e0 were pushed to origin/main."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "last_verified": "2026-07-11",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-11T01:31:38.078Z",
+  "updated_at": "2026-07-11T01:31:38.078Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260711-004919734-Continue-the-approved-OS-com-c88cfd05-bd85-4c80-.json",
+    "task_id": "task-20260711-004919734-Continue-the-approved-OS-com-c88cfd05-bd85-4c80-b2f2-dac75ba9f2a6",
+    "task_path": ".dino/tasks/task-20260711-004919734-Continue-the-approved-OS-com-c88cfd05-bd85-4c80-.json"
+  }
+}

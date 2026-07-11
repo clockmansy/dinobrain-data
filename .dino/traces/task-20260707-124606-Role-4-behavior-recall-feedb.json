@@ -1,0 +1,48 @@
+{
+  "task_id": "task-20260707-124606-Role-4-behavior-recall-feedb",
+  "outcome": "completed",
+  "summary": "Role 4 read-only review of behavior recall and feedback writeback plan. Reviewed user-direction memories plus OS completion docs and implementation around finish_task, record_feedback_correction, evaluate_behavior, and run_compounding_cycle. Verdict: REVISE_REQUIRED because current plan direction is correct but must explicitly add event-triggered recall ledger and answer-quality acceptance tests before P1-09 can be accepted.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Return REVISE_REQUIRED for Role 4, not AGREE.",
+    "P1-09 must require per-event behavior recall evidence with performed/skipped/not_applicable and reason fields for completion, handoff, error, and direction-change events.",
+    "Feedback writeback acceptance must prove correction capture, later Context Pack retrieval, older-memory demotion/hold when contradicted, and answer-quality behavior change, not only expected path retrieval.",
+    "Current code has record_feedback_correction, finish_task auto-growth/compounding, and behavior eval, but behavior eval is currently a retrieval proxy and compounding extracts signals from traces rather than proving event-triggered recall decisions."
+  ],
+  "next_steps": [
+    "Revise OS_COMPLETION_IMPROVEMENT_PLAN P1-09 to define a durable behavior_recall_audit artifact with trigger_type, recalled_memory_paths, decision status performed/skipped/not_applicable, reason, and resulting artifact path.",
+    "Add verifier coverage that simulates completion, handoff, error, and direction-change events and fails when any recalled behavior lacks a status and reason.",
+    "Add real-vault behavior golden cases for corrections and direction changes, with an answer-quality or judge-backed metric in addition to path/term recall.",
+    "Add regression proof that contradicted older behavior memories are held, merged, or demoted after record_feedback_correction."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-124607-Role-4-behavior-recall-feedb.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-124606-538fe91847ee.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Error-or-fix-note-Inspect-user-direc-cbcb67a3a289.json"
+  ],
+  "search_queries": [
+    "record_feedback_correction evaluate_behavior behavior golden compounding recall performed skipped not_applicable"
+  ],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 1,
+    "search_query_count": 1
+  },
+  "finished_at": "2026-07-07T12:47:43.310Z"
+}

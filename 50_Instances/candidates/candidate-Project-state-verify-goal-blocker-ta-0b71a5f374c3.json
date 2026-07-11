@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Project-state-verify-goal-blocker-ta-0b71a5f374c3",
+  "status": "pending_review",
+  "claim": "Project state: 현재 `verify:goal` blocker인 task lifecycle/settlement를 포함해 완성조건이 충분한지 검토하세요.",
+  "category": "project_state",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "현재 `verify:goal` blocker인 task lifecycle/settlement를 포함해 완성조건이 충분한지 검토하세요.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-163204-a4d86c5afa41.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-163204-a4d86c5afa41",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_state",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-163204-a4d86c5afa41",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T16:32:05.425Z",
+  "updated_at": "2026-07-07T16:32:05.425Z"
+}

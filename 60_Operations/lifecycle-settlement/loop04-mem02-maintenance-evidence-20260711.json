@@ -1,0 +1,84 @@
+{
+  "version": "loop04_mem02_maintenance_evidence_v1",
+  "generated_at": "2026-07-11T13:14:28.483Z",
+  "status": "healthy_local_maintenance_external_gates_pending",
+  "app_commit": "1ad02379ad6dcaa76f447e467ae5d1fee3dda6d0",
+  "data_parent_commit": "1e5ce1582d1c3b97ed06f7ae9792798d2ef40ccc",
+  "work_packages": [
+    "FND-01",
+    "LOOP-04",
+    "MEM-02"
+  ],
+  "review_settlement": {
+    "deterministic_holds_applied": 50,
+    "candidate_review_pairs": 1661,
+    "closed_items": 1494,
+    "classified_manual_review_holds": 167,
+    "unclassified_open_items": 0,
+    "remaining_deterministic_holds": 0,
+    "open_semantic_jobs": 0,
+    "accepted_without_semantic_review": 0
+  },
+  "task_lifecycle_settlement": {
+    "migration_id": "task-lifecycle-20260711130629561-f456b69e-1083-4432-9b51-94b5faef6a2f",
+    "migration_status": "verified",
+    "ledger_entry_count": 140,
+    "ledger_head_sha256": "1c5c7b59488b8cf4f38299490e23e163f96383c581f5d6fcead9590ad3860d08",
+    "stale_non_user_tasks_closed": 29,
+    "evidence_free_stale_tasks_blocked": 39,
+    "tasks_after": 610,
+    "traces_after": 564,
+    "stale_active_after": 0,
+    "terminal_missing_trace_after": 0,
+    "trace_binding_missing_after": 0,
+    "orphan_traces_after": 0,
+    "ungrounded_finishes_after": 0,
+    "remaining_settlement_actions": 0
+  },
+  "full_memory_audit": {
+    "files": 12202,
+    "parse_errors": 0,
+    "unclassified_drift": 0,
+    "public_safety_report_classification": "audit_artifact",
+    "ordinary_content_drift_remains_fail_closed": true
+  },
+  "goal_reaudit": {
+    "target_requirements_passed": [
+      "full_memory_audit_reproducible",
+      "review_queue_and_semantic_job_settlement",
+      "task_session_lifecycle_and_finish_gate_integrity",
+      "task_lifecycle_auto_settlement_applied"
+    ],
+    "failed_requirement_count_after": 9,
+    "overall_complete": false,
+    "remaining_blockers": [
+      "stale_dinobrain_mcp_processes",
+      "missing_real_codex_session_preflight",
+      "missing_pre_response_context_paths",
+      "direct_mcp_parity_not_verified",
+      "release_manifest_not_verified",
+      "rag_explicit_golden_missing",
+      "answer_quality_not_verified",
+      "scale_50k_evidence_not_verified",
+      "data_safety_verifier_failed"
+    ]
+  },
+  "verification_commands": [
+    "npm run check",
+    "npm run audit:full-memory:verify",
+    "npm run audit:full-memory",
+    "npm run review:settle:verify",
+    "npm run review:settle",
+    "npm run task:lifecycle:settle:verify",
+    "npm run task:lifecycle",
+    "npm run task:lifecycle:settle",
+    "npm run verify:goal"
+  ],
+  "privacy": {
+    "raw_transcripts_included": false,
+    "local_paths_included": false,
+    "credentials_included": false,
+    "candidate_claim_text_included": false,
+    "task_prompt_text_included": false
+  }
+}

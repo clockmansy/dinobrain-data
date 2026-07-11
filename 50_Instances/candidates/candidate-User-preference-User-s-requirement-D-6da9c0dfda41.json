@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-User-preference-User-s-requirement-D-6da9c0dfda41",
+  "status": "pending_review",
+  "claim": "User preference: User's requirement: DinoBrain must become a closed-loop OS where every Codex/Claude session gets pre-response OS context, uses reviewed LLM Wiki memory/provenance, writes finish traces, grows knowledge, and policy-pushes to GitHub; current user instruction always outranks memory.",
+  "category": "user_preference",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "User's requirement: DinoBrain must become a closed-loop OS where every Codex/Claude session gets pre-response OS context, uses reviewed LLM Wiki memory/provenance, writes finish traces, grows knowledge, and policy-pushes to GitHub; current user instruction always outranks memory.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-153440-8a40dbae56d2.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-153440-8a40dbae56d2",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "user_preference",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-153440-8a40dbae56d2",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T15:34:40.580Z",
+  "updated_at": "2026-07-07T15:34:40.580Z"
+}

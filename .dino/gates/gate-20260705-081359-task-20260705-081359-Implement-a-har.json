@@ -1,0 +1,20 @@
+{
+  "gate_id": "gate-20260705-081359-task-20260705-081359-Implement-a-har",
+  "os_version": "2.0.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260705-081359-Implement-a-hard-closed-loop",
+  "request": "Implement a hard closed-loop DinoBrain OS path so every Codex session/prompt has mandatory pre-response OS preflight, completed tasks feed automatic knowledge-growth candidates, and approved data changes can be automatically committed and pushed to GitHub under policy.",
+  "generated_at": "2026-07-05T08:13:59.879Z",
+  "context_pack_path": ".dino/context-packs/pack-20260705-081359-Implement-a-hard-closed-loop.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ]
+}

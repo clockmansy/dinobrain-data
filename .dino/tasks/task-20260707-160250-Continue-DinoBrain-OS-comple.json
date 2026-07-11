@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-160250-Continue-DinoBrain-OS-comple",
+  "status": "partial",
+  "request": "Continue DinoBrain OS completion goal by implementing P0-06 source/chunk/claim provenance gate: inspect current source/provenance records and code, add status artifact/verifier/health/goal/Observatory wiring, verify, commit, and push app plus selected data evidence.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T16:02:50.288Z",
+  "updated_at": "2026-07-07T16:13:56.342Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T16:13:56.342Z",
+  "trace_path": ".dino/traces/task-20260707-160250-Continue-DinoBrain-OS-comple.json"
+}

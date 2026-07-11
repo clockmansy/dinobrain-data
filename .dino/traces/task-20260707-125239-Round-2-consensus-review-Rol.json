@@ -1,0 +1,46 @@
+{
+  "task_id": "task-20260707-125239-Round-2-consensus-review-Rol",
+  "outcome": "completed",
+  "summary": "Role 9 install/new-PC/release parity review returned REVISE_REQUIRED. P2-12 names the right install/release parity requirements, but global acceptance tests do not yet require installer/version/release/uninstall parity verifiers or a concrete release manifest proof.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "No source or documentation edits were made for this reviewer pass.",
+    "P2-12 direction is correct but not strong enough as a completion gate until installer/release/new-PC parity verifiers are included in global acceptance and verify:goal.",
+    "Current installer and docs contain useful version/ref/hook/release checks, but the revised consensus plan does not make those checks mandatory in its global gate list."
+  ],
+  "next_steps": [
+    "Revise docs/OS_REMAINING_GAPS_CONSENSUS_PLAN.md to add installer:verify:version, installer:verify:approval, installer:verify:launchers, installer:verify:managed-hook, uninstall:verify, installer:win, and release:win -- -SkipUpload or an equivalent release-manifest verifier to global acceptance.",
+    "Add explicit P2-12 acceptance for a release manifest/proof artifact covering app commit, data commit/ref, installer version, ZIP SHA, tag, GitHub asset identity, and required verifier status.",
+    "After revising, rerun all ten reviewers in the same round."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-125239-Round-2-consensus-review-Rol.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-125239-7ede390d7a64.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-How-to-note-Round-2-consensus-review-b20dd625720b.json",
+    "50_Instances/candidates/candidate-How-to-note-Inspect-revised-document-d8e14769688f.json",
+    "50_Instances/candidates/candidate-How-to-note-Return-AGREE-if-P2-12-an-9255c30091e3.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 3,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T12:53:56.626Z"
+}

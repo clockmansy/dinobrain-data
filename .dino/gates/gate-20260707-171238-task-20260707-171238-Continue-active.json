@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-171238-task-20260707-171238-Continue-active",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-171238-Continue-active-DinoBrain-OS",
+  "request": "Continue active DinoBrain OS goal by making concrete progress after semantic RAG: inspect installer/new-PC/release equivalence and implement the next unblocked improvement so a fresh install can rebuild or verify semantic RAG artifacts without silent fallback.",
+  "generated_at": "2026-07-07T17:12:38.684Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-171238-Continue-active-DinoBrain-OS.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

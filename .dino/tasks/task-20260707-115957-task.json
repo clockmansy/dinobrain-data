@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-115957-task",
+  "status": "completed",
+  "request": "그래 그럼 다음 단계 진행해줘",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T11:59:57.706Z",
+  "updated_at": "2026-07-07T12:04:26.876Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T12:04:26.876Z",
+  "trace_path": ".dino/traces/task-20260707-115957-task.json"
+}

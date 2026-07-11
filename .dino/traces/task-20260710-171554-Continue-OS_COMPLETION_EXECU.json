@@ -1,0 +1,50 @@
+{
+  "task_id": "task-20260710-171554-Continue-OS_COMPLETION_EXECU",
+  "outcome": "partial",
+  "summary": "Implemented LOOP-03 direct Codex/Claude MCP parity proof v2. Replaced self-authored proof JSON with one-time challenge, MCP clientInfo, direct-parent process identity, five canonical tool receipts bound to one task, local identity HMAC, replay/tamper/stale/foreign identity rejection, strict both-client release parity, Observatory visibility, installer proof launchers, and purge cleanup. All local/adversarial regressions passed; fresh real Codex and Claude proofs remain pending because this running client predates the new MCP tool surface.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "src/client-mcp-proof.ts",
+    "src/client-mcp-direct-status.ts",
+    "src/create-client-mcp-proof-challenge.ts",
+    "src/index.ts",
+    "src/full-memory-audit.ts",
+    "scripts/start-client-mcp-proof.ps1",
+    "scripts/verify-client-mcp-direct-status.mjs",
+    "scripts/verify-closed-loop-goal.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "install.ps1",
+    "uninstall.ps1",
+    "docs/DIRECT_MCP_PROOF.md",
+    "docs/OS_COMPLETION_CONDITIONS.md",
+    "docs/OS_COMPLETION_EXECUTION_PLAN_20260710.md",
+    "docs/VERIFICATION.md"
+  ],
+  "decisions": [
+    "Release parity requires fresh v2 proofs from both real clients; Claude not_configured is diagnostic only.",
+    "The required direct tool set includes os_begin_task, get_context_pack, wiki_search, search_memory, and finish_task.",
+    "A synthetic stdio client or shell-launched server is rejected because Codex or Claude must be the MCP server direct parent.",
+    "Proof records retain hashes and bounded executable metadata, never raw prompts, queries, results, command lines, or executable paths.",
+    "The running client cannot self-certify after this build because its MCP server process predates the new begin/finalize tools."
+  ],
+  "next_steps": [
+    "Install or update to app commit ac9f76f, fully restart Codex Desktop, and run DinoBrain Codex MCP Proof.cmd.",
+    "On a machine with Claude Code, fully restart Claude and run DinoBrain Claude MCP Proof.cmd.",
+    "Continue Phase 2 MEM-01 node lifecycle implementation while preserving the pending live-client acceptance gate."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260710-171554-Continue-OS_COMPLETION_EXECU.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-10T17:41:11.680Z"
+}

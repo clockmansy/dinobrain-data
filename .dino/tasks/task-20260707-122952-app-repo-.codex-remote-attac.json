@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-122952-app-repo-.codex-remote-attac",
+  "status": "completed",
+  "request": "이거 해결\napp repo는 기존 .codex-remote-attachments/만 untracked입니다.\ndata repo에는 기존 backlog dirty가 아직 1550개 남아 있습니다. 이번 작업 범위 밖의 오래된 후보/리뷰 큐입니다.\nfinish_task는 현재 MCP transport가 닫혀 있어서 fresh stdio MCP 서버로 우회 실행했고 trace_only로 정상 완료됐습니다.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T12:29:52.383Z",
+  "updated_at": "2026-07-07T12:33:06.245Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T12:33:06.245Z",
+  "trace_path": ".dino/traces/task-20260707-122952-app-repo-.codex-remote-attac.json"
+}

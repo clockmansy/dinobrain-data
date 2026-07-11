@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Project-decision-Fill-the-structured-b53484d1f39b",
+  "status": "pending_review",
+  "claim": "Project decision: Fill the structured title field with plain text.",
+  "category": "project_decision",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "Fill the structured title field with plain text.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-173013-fc5e579a86cd.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-173013-fc5e579a86cd",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_decision",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-173013-fc5e579a86cd",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T17:30:14.039Z",
+  "updated_at": "2026-07-07T17:30:14.039Z"
+}

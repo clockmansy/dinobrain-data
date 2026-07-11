@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260706-150114-task-20260706-150114-Fix-DinoBrain-i",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260706-150114-Fix-DinoBrain-installer-conf",
+  "request": "Fix DinoBrain installer/config writer to prevent malformed carriage returns in <machine-local-path> by normalizing line endings, checking for bare CR, and validating TOML after write.",
+  "generated_at": "2026-07-06T15:01:14.816Z",
+  "context_pack_path": ".dino/context-packs/pack-20260706-150114-Fix-DinoBrain-installer-conf.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

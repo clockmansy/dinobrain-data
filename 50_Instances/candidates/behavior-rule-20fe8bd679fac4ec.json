@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-20fe8bd679fac4ec",
+  "behavior_rule_id": "behavior-rule-20fe8bd679fac4ec",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: Use live Context Pack and local code/data evidence as source of truth.",
+  "behavior_rule": "Use live Context Pack and local code/data evidence as source of truth.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-023312-Read-only-audit-of-retrieval.json",
+    "snippet": "Use live Context Pack and local code/data evidence as source of truth."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-023312-Read-only-audit-of-retrieval.json",
+      "task_id": "task-20260707-023312-Read-only-audit-of-retrieval",
+      "signal_kind": "decision",
+      "snippet": "Use live Context Pack and local code/data evidence as source of truth."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T07:16:27.148Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T07:16:27.148Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

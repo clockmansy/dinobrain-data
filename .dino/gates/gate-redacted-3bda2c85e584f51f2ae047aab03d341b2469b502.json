@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-redacted-3bda2c85e584f51f2ae047aab03d341b2469b502",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-redacted-32cd056957fdfeb12c33516307634cbe4eacb343",
+  "request": "Repo: <machine-local-path> Plan doc: <machine-local-path> (1).md. Data root: <machine-local-path> Compare pre-response fail-closed and P0-04 Agent Parity Direct MCP Canary requirements against current DinoBrain. Include verify:goal/live hook evidence if visible. Return implemented/partial/missing and top blockers. Do not edit files.",
+  "generated_at": "2026-07-07T11:34:49.871Z",
+  "context_pack_path": ".dino/context-packs/pack-redacted-3743fb8f5fccde4ca145419f05a65aac6d2ebc91.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

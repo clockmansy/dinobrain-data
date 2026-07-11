@@ -1,0 +1,24 @@
+{
+  "version": "cold_partition_index_v1",
+  "status": "healthy",
+  "generated_at": "2026-07-10T22:52:39.966Z",
+  "apply": false,
+  "retention_days": {
+    "task": 90,
+    "trace": 90,
+    "context_pack": 30,
+    "report": 180
+  },
+  "counts": {
+    "indexed_before": 0,
+    "planned": 0,
+    "applied": 0,
+    "indexed_after": 0,
+    "partitions": 0
+  },
+  "transaction_id": null,
+  "transaction_path": null,
+  "recovery_ref": null,
+  "planned_entries": [],
+  "note": "Public operational summary stores source path hashes, not private task or report content."
+}

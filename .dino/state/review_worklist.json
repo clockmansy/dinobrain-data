@@ -1,0 +1,523 @@
+{
+  "version": "review_worklist_v1",
+  "status": "needs_review",
+  "generated_at": "2026-07-07T12:25:36.779Z",
+  "data_root": "<machine-local-path>",
+  "source_review_status_path": "<machine-local-path>",
+  "source_semantic_jobs_path": "<machine-local-path>",
+  "counts": {
+    "open_items": 94,
+    "clusters": 17,
+    "duplicate_clusters": 7,
+    "duplicate_items": 84,
+    "singleton_clusters": 10,
+    "high_priority_clusters": 5
+  },
+  "by_kind": {
+    "user_preference": 7,
+    "project_decision": 3,
+    "project_state": 0,
+    "error_fix": 3,
+    "how_to": 4,
+    "idea": 0,
+    "general": 0
+  },
+  "clusters": [
+    {
+      "cluster_id": "review-cluster-7b51224dd6f39e44",
+      "kind": "user_preference",
+      "priority": 1,
+      "item_count": 22,
+      "representative_claim": "User preference: Do not edit files.",
+      "normalized_claim_hash": "7b51224dd6f39e44",
+      "recommended_action": "merge_review_for_possible_feedback_memory",
+      "rationale": "Duplicate cluster with 22 matching candidates; merge before any promotion.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-1303bf0a7741.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-1a4cb4e0dda6.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-1a84c3d45822.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-2f4a3403d126.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-422edcd2c394.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-4afc607af28d.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-53d1a0ecdff5.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-57b1114eaf2d.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-6d3d4458d14b.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-7993149de994.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-838f94174944.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-8bf79d52dfab.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-947bc57b533c.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-a291797ac262.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-a3bfe595d5fb.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-b97e4582d1c5.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-bd53627ef36a.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-bf64eff61455.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-c60e3405ff24.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-d467b2913ef3.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-d929f113ba23.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-e23c3f755f39.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-1303bf0a7741.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-1a4cb4e0dda6.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-1a84c3d45822.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-2f4a3403d126.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-422edcd2c394.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-4afc607af28d.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-53d1a0ecdff5.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-57b1114eaf2d.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-6d3d4458d14b.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-7993149de994.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-838f94174944.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-8bf79d52dfab.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-947bc57b533c.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-a291797ac262.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-a3bfe595d5fb.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-b97e4582d1c5.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-bd53627ef36a.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-bf64eff61455.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-c60e3405ff24.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-d467b2913ef3.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-d929f113ba23.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-edit-files.-e23c3f755f39.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 22
+    },
+    {
+      "cluster_id": "review-cluster-8a731052e1002b6c",
+      "kind": "user_preference",
+      "priority": 1,
+      "item_count": 10,
+      "representative_claim": "User preference: Do not include quotes, markdown, formatting characters, or trailing punctuation in the title value.",
+      "normalized_claim_hash": "8a731052e1002b6c",
+      "recommended_action": "merge_review_for_possible_feedback_memory",
+      "rationale": "Duplicate cluster with 10 matching candidates; merge before any promotion.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-29f9a2ac7d57.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-2e58be95187a.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-69dccedcca9c.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-966b21029e8f.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-9f2f9cec7670.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-a7dc3af395d3.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-a998264ab1a1.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-abb43b01c4e0.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-c112c8a0f390.json",
+        "50_Instances/candidates/candidate-User-preference-Do-not-include-quote-e0e83d128991.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-29f9a2ac7d57.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-2e58be95187a.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-69dccedcca9c.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-966b21029e8f.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-9f2f9cec7670.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-a7dc3af395d3.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-a998264ab1a1.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-abb43b01c4e0.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-c112c8a0f390.json",
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-include-quote-e0e83d128991.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 10
+    },
+    {
+      "cluster_id": "review-cluster-93e818efc1cb2e79",
+      "kind": "project_decision",
+      "priority": 2,
+      "item_count": 10,
+      "representative_claim": "Project decision: Fill the structured title field with plain text.",
+      "normalized_claim_hash": "93e818efc1cb2e79",
+      "recommended_action": "merge_or_project_memory_review",
+      "rationale": "Duplicate cluster with 10 matching candidates; merge before any promotion.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-11a142c7e381.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-16bef75ae27d.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-507c07d6a725.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-6bc12cce67bc.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-6fb864fd9c1e.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-71f2b98bd0b2.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-8de2a27412c6.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-bb7b7feaf409.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-e3d103d907c7.json",
+        "50_Instances/candidates/candidate-Project-decision-Fill-the-structured-f48c61acecd9.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-11a142c7e381.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-16bef75ae27d.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-507c07d6a725.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-6bc12cce67bc.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-6fb864fd9c1e.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-71f2b98bd0b2.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-8de2a27412c6.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-bb7b7feaf409.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-e3d103d907c7.json",
+        "80_Review_Queue/promotion/candidate-Project-decision-Fill-the-structured-f48c61acecd9.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 10
+    },
+    {
+      "cluster_id": "review-cluster-c4a3545f0c01653e",
+      "kind": "project_decision",
+      "priority": 2,
+      "item_count": 1,
+      "representative_claim": "Project decision: CONTEXT: MEMORY FOLDER STRUCTURE",
+      "normalized_claim_hash": "c4a3545f0c01653e",
+      "recommended_action": "merge_or_project_memory_review",
+      "rationale": "Manual semantic judgment is required before this candidate can enter accepted memory.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-decision-CONTEXT-MEMORY-FOLD-5774c436f6f7.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-decision-CONTEXT-MEMORY-FOLD-5774c436f6f7.json"
+      ],
+      "project_tags": [
+        "project:memories"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "cluster_id": "review-cluster-33bd0d65213c3f22",
+      "kind": "project_decision",
+      "priority": 2,
+      "item_count": 1,
+      "representative_claim": "Project decision: Folder structure (under <machine-local-path>",
+      "normalized_claim_hash": "33bd0d65213c3f22",
+      "recommended_action": "merge_or_project_memory_review",
+      "rationale": "Manual semantic judgment is required before this candidate can enter accepted memory.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Project-decision-Folder-structure-un-60147025543c.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Project-decision-Folder-structure-un-60147025543c.json"
+      ],
+      "project_tags": [
+        "project:memories"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "cluster_id": "review-cluster-3842b8fd3115d700",
+      "kind": "error_fix",
+      "priority": 3,
+      "item_count": 10,
+      "representative_claim": "Error or fix note: - Use an imperative verb first: \"Add\", \"Fix\", \"Update\", \"Refactor\", \"Remove\", \"Locate\", \"Find\", etc.",
+      "normalized_claim_hash": "3842b8fd3115d700",
+      "recommended_action": "merge_duplicate_or_hold_if_generic",
+      "rationale": "Duplicate cluster with 10 matching candidates; merge before any promotion.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-2a226d45f258.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-45d0a1153fb2.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-71c1511e5bd5.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-71face00dafe.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-b980ea841fa0.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-c3e64913d5a7.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-cbc8e431b4a5.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-cc88e33b227c.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-df0f4d72e325.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note---Use-an-imperativ-f50e3dcb75cc.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-2a226d45f258.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-45d0a1153fb2.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-71c1511e5bd5.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-71face00dafe.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-b980ea841fa0.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-c3e64913d5a7.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-cbc8e431b4a5.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-cc88e33b227c.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-df0f4d72e325.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---Use-an-imperativ-f50e3dcb75cc.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 10
+    },
+    {
+      "cluster_id": "review-cluster-4e4ca5d792a2925a",
+      "kind": "error_fix",
+      "priority": 3,
+      "item_count": 10,
+      "representative_claim": "Error or fix note: The tasks typically have to do with coding-related tasks, for example requests for bug fixes or questions about a codebase.",
+      "normalized_claim_hash": "4e4ca5d792a2925a",
+      "recommended_action": "merge_duplicate_or_hold_if_generic",
+      "rationale": "Duplicate cluster with 10 matching candidates; merge before any promotion.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-10859b62c020.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-125f66df4d41.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-5ea7148ce60e.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-70d8d5bcbf5a.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-8203763d654a.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-99278ed035fb.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-9a9d312ec4a3.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-b59a794b4950.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-c17442564cce.json",
+        "50_Instances/candidates/candidate-Error-or-fix-note-The-tasks-typicall-ee60f9e32f2a.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-10859b62c020.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-125f66df4d41.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-5ea7148ce60e.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-70d8d5bcbf5a.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-8203763d654a.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-99278ed035fb.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-9a9d312ec4a3.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-b59a794b4950.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-c17442564cce.json",
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note-The-tasks-typicall-ee60f9e32f2a.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 10
+    },
+    {
+      "cluster_id": "review-cluster-7373e70b1d979eaa",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 12,
+      "representative_claim": "How-to note: [truncated by DinoBrain hook]",
+      "normalized_claim_hash": "7373e70b1d979eaa",
+      "recommended_action": "single_manual_review",
+      "rationale": "Duplicate cluster with 12 matching candidates; merge before any promotion.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-0bc2992c6645.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-1b339fd1634c.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-1fcf9f23011c.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-234686e4e267.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-2a7ca005aa1a.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-4b3abb262487.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-68a1db6a894b.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-70ad8a311ce4.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-7129c437e2f2.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-7fb533cee7be.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-c418a11464d8.json",
+        "50_Instances/candidates/candidate-How-to-note-truncated-by-DinoBrain-h-e33c0a7bd1f2.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-0bc2992c6645.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-1b339fd1634c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-1fcf9f23011c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-234686e4e267.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-2a7ca005aa1a.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-4b3abb262487.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-68a1db6a894b.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-70ad8a311ce4.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-7129c437e2f2.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-7fb533cee7be.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-c418a11464d8.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-truncated-by-DinoBrain-h-e33c0a7bd1f2.json"
+      ],
+      "project_tags": [
+        "project:app",
+        "project:dinobrain"
+      ],
+      "evidence_count": 12
+    },
+    {
+      "cluster_id": "review-cluster-440ccdde4d0d36b6",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 10,
+      "representative_claim": "How-to note: How to write a good title:",
+      "normalized_claim_hash": "440ccdde4d0d36b6",
+      "recommended_action": "single_manual_review",
+      "rationale": "Duplicate cluster with 10 matching candidates; merge before any promotion.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-02cbd95a1a95.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-1abdae31459c.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-2172def0a8a2.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-319e578e4a0c.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-588be31772fd.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-69554693905a.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-76f0548a3c4e.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-83e9e1f8209a.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-84629d38162c.json",
+        "50_Instances/candidates/candidate-How-to-note-How-to-write-a-good-titl-97598a6409a5.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-02cbd95a1a95.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-1abdae31459c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-2172def0a8a2.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-319e578e4a0c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-588be31772fd.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-69554693905a.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-76f0548a3c4e.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-83e9e1f8209a.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-84629d38162c.json",
+        "80_Review_Queue/promotion/candidate-How-to-note-How-to-write-a-good-titl-97598a6409a5.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 10
+    },
+    {
+      "cluster_id": "review-cluster-4270f0ad13dffee4",
+      "kind": "error_fix",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim": "Error or fix note: - avoid known landmines and failure modes,",
+      "normalized_claim_hash": "4270f0ad13dffee4",
+      "recommended_action": "single_manual_review",
+      "rationale": "Manual semantic judgment is required before this candidate can enter accepted memory.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-Error-or-fix-note---avoid-known-land-b7005ef924f0.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-Error-or-fix-note---avoid-known-land-b7005ef924f0.json"
+      ],
+      "project_tags": [
+        "project:memories"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "cluster_id": "review-cluster-1cc8ba94eb88255b",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim": "How-to note: Focus: installer, new-PC recovery, GitHub login restore, release artifact, bundled runtime, and multi-PC sync/conflict safety.",
+      "normalized_claim_hash": "1cc8ba94eb88255b",
+      "recommended_action": "single_manual_review",
+      "rationale": "Manual semantic judgment is required before this candidate can enter accepted memory.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-How-to-note-Focus-installer-new-PC-r-e30e83610fda.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-How-to-note-Focus-installer-new-PC-r-e30e83610fda.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "cluster_id": "review-cluster-8c8a0988c1e21d3f",
+      "kind": "how_to",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim": "How-to note: Include verify:goal/live hook evidence if visible.",
+      "normalized_claim_hash": "8c8a0988c1e21d3f",
+      "recommended_action": "single_manual_review",
+      "rationale": "Manual semantic judgment is required before this candidate can enter accepted memory.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-How-to-note-Include-verify-goal-live-43075ac06fe6.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-How-to-note-Include-verify-goal-live-43075ac06fe6.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "cluster_id": "review-cluster-a629584f11500839",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim": "User preference: - Always loaded into the system prompt.",
+      "normalized_claim_hash": "a629584f11500839",
+      "recommended_action": "single_manual_review",
+      "rationale": "Potential durable user preference; review carefully before accepting.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference---Always-loaded-into-e44a4a4e7f0a.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference---Always-loaded-into-e44a4a4e7f0a.json"
+      ],
+      "project_tags": [
+        "project:memories"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "cluster_id": "review-cluster-620ae381e16348bf",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim": "User preference: Do not suggest generic project-quality, onboarding, exploration, cleanup, refactor, documentation, test-writing, or dependency-update tasks merely because they could be useful to someone who owns this project.",
+      "normalized_claim_hash": "620ae381e16348bf",
+      "recommended_action": "single_manual_review",
+      "rationale": "Potential durable user preference; review carefully before accepting.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Do-not-suggest-gener-8ac777c1ae95.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-suggest-gener-8ac777c1ae95.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "cluster_id": "review-cluster-2bf5d90b18c1c14f",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim": "User preference: Do not suggest tasks that merely sound productive or create more work for the user.",
+      "normalized_claim_hash": "2bf5d90b18c1c14f",
+      "recommended_action": "single_manual_review",
+      "rationale": "Potential durable user preference; review carefully before accepting.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Do-not-suggest-tasks-337b8ce99e56.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Do-not-suggest-tasks-337b8ce99e56.json"
+      ],
+      "project_tags": [
+        "project:dinobrain"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "cluster_id": "review-cluster-cf9b7a1f40dc9143",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim": "User preference: I will present you with two categories of content: things to **ALWAYS** exclude, and things which you should exclude if they are about the user (**unless** the recent user context shows the user has specifically asked for it).",
+      "normalized_claim_hash": "cf9b7a1f40dc9143",
+      "recommended_action": "single_manual_review",
+      "rationale": "Potential durable user preference; review carefully before accepting.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-I-will-present-you-w-a79116c5e531.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-I-will-present-you-w-a79116c5e531.json"
+      ],
+      "project_tags": [
+        "project:app"
+      ],
+      "evidence_count": 1
+    },
+    {
+      "cluster_id": "review-cluster-bf35f1507f732b1c",
+      "kind": "user_preference",
+      "priority": 5,
+      "item_count": 1,
+      "representative_claim": "User preference: Policies to always exclude",
+      "normalized_claim_hash": "bf35f1507f732b1c",
+      "recommended_action": "single_manual_review",
+      "rationale": "Potential durable user preference; review carefully before accepting.",
+      "candidate_paths": [
+        "50_Instances/candidates/candidate-User-preference-Policies-to-always-e-68bc25886161.json"
+      ],
+      "review_paths": [
+        "80_Review_Queue/promotion/candidate-User-preference-Policies-to-always-e-68bc25886161.json"
+      ],
+      "project_tags": [
+        "project:app"
+      ],
+      "evidence_count": 1
+    }
+  ],
+  "visible_status": "Review worklist needs semantic review"
+}

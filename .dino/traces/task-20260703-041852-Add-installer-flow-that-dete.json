@@ -1,0 +1,57 @@
+{
+  "task_id": "task-20260703-041852-Add-installer-flow-that-dete",
+  "outcome": "completed",
+  "summary": "Implemented a post-install Codex hook approval flow. The installer now creates DinoBrain Codex Hook Approval.cmd and launches it after hook registration unless skipped. The helper detects stale Codex desktop processes, restarts/reopens Codex, copies /hooks to the clipboard, and shows instructions while preserving the requirement that the user manually trusts the hook. Updated the Windows setup UI with a checked-by-default approval flow option, added verification, updated uninstall cleanup, bumped version to 0.1.4, pushed main/tag, uploaded the v0.1.4 release ZIP, and verified the uploaded private asset hash.",
+  "changed_files": [
+    "README.md",
+    "docs/CODEX_HOOKS.md",
+    "docs/INSTALL.md",
+    "docs/VERIFICATION.md",
+    "install.ps1",
+    "uninstall.ps1",
+    "package.json",
+    "package-lock.json",
+    "installer/DinoBrainSetup/DinoBrainSetup.csproj",
+    "installer/DinoBrainSetup/Program.cs",
+    "installer/DinoBrainSetup/SetupForm.cs",
+    "installer/DinoBrainSetup/app.manifest",
+    "scripts/audit-user-flow.mjs",
+    "scripts/diagnose-codex-hook.ps1",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/publish-github-release.ps1",
+    "scripts/smoke-mcp.mjs",
+    "scripts/start-codex-hook-approval.ps1",
+    "scripts/verify-codex-hook-approval.ps1",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/verify-installer-observatory-launcher.ps1",
+    "scripts/verify-session-ingest.mjs",
+    "scripts/verify-uninstall.ps1",
+    "src/index.ts"
+  ],
+  "decisions": [
+    "Do not bypass Codex hook trust. The helper only opens the /hooks flow and requires the user to click trust/approve.",
+    "Default installer behavior launches the hook approval helper after hook registration; users can opt out with -SkipCodexRestartFlow or the GUI checkbox.",
+    "The approval helper restarts only stale Codex desktop processes whose StartTime predates hooks.json, not arbitrary codex command runner processes.",
+    "New hook approval launcher is included in purge uninstall cleanup."
+  ],
+  "next_steps": [
+    "Install from v0.1.4 ZIP on the target PC; after the helper opens Codex, run or paste /hooks and approve DinoBrain."
+  ],
+  "used_memory_paths": [
+    ".dino/tasks/task-20260703-041151-Explain-whether-Codex-hook-t.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-041856-DinoBrain-installer-Codex-re.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 1,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-03T04:28:57.320Z"
+}

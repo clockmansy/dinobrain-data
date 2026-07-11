@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-012857-DinoBrain-post-patch-audit-1",
+  "status": "completed",
+  "request": "DinoBrain post-patch audit #13: read-only audit of src/hybrid-retrieval.ts, src/retrieval.ts, src/wiki-index.ts, src/context.ts and latest eval:context results; check whether contextPackBudget/root intent routing is a sound RAG improvement or suppresses useful cross-root evidence.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T01:28:57.682Z",
+  "updated_at": "2026-07-07T01:32:12.433Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T01:32:12.433Z",
+  "trace_path": ".dino/traces/task-20260707-012857-DinoBrain-post-patch-audit-1.json"
+}

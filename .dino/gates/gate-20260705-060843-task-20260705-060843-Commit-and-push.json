@@ -1,0 +1,26 @@
+{
+  "gate_id": "gate-20260705-060843-task-20260705-060843-Commit-and-push",
+  "os_version": "2.0.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260705-060843-Commit-and-push-the-current-",
+  "request": "Commit and push the current DinoBrain OS v2.0.2 P0 improvement work from this thread. App repo push is authorized; data repo changes must be policy-checked before any push because it contains memory logs.",
+  "generated_at": "2026-07-05T06:08:43.787Z",
+  "context_pack_path": ".dino/context-packs/pack-20260705-060843-Commit-and-push-the-current-.json",
+  "context_item_count": 6,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ]
+}

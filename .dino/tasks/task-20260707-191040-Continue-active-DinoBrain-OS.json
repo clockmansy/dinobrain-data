@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-191040-Continue-active-DinoBrain-OS",
+  "status": "partial",
+  "request": "Continue active DinoBrain OS completion goal and obtain fresh Codex Desktop hook proof if possible.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T19:10:40.873Z",
+  "updated_at": "2026-07-07T19:17:48.590Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T19:17:48.590Z",
+  "trace_path": ".dino/traces/task-20260707-191040-Continue-active-DinoBrain-OS.json"
+}

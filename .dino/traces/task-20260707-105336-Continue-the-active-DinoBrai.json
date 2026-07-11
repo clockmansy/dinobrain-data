@@ -1,0 +1,57 @@
+{
+  "task_id": "task-20260707-105336-Continue-the-active-DinoBrai",
+  "outcome": "completed",
+  "summary": "Compared the full-memory improvement plan against current DinoBrain status, implemented the next gap-closing slice for task lifecycle settlement, applied safe auto-close settlement for 6 eligible stale hook/proof tasks, regenerated status/RAG/review/semantic/index reports, verified the app, committed the app changes as 21940da, and pushed main to origin.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "docs/VERIFICATION.md",
+    "package.json",
+    "scripts/verify-closed-loop-goal.mjs",
+    "scripts/verify-status-freshness.mjs",
+    "scripts/verify-task-lifecycle-settlement.mjs",
+    "src/status-freshness.ts",
+    "src/build-task-lifecycle-settlement.ts",
+    "src/task-lifecycle-settlement.ts",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>",
+    "<machine-local-path>"
+  ],
+  "decisions": [
+    "Treat the document comparison as an implementation backlog, not only a report: status freshness and full-memory audit were already present, so the next missing operational gate was lifecycle settlement.",
+    "Added a deterministic task lifecycle settlement gate to reduce stale active task noise without touching manual repair cases.",
+    "Applied settlement only to auto-close-safe candidates; manual stale review and trace reconstruction remain intentionally untouched.",
+    "Did not push the broad dinobrain-data dirty state because the data repo contains hundreds of generated/untracked candidate/review/log artifacts outside the scoped app change."
+  ],
+  "next_steps": [
+    "Repair the remaining 6 manual lifecycle blockers: 5 manual_stale_review_required and 1 manual_trace_reconstruction_required.",
+    "Implement real dense retrieval or embedding-backed hybrid retrieval so RAG eval no longer reports lexical fallback only.",
+    "Replace fallback golden RAG cases with user/domain golden cases and turn memory-on versus memory-off quality into a CI/regular gate.",
+    "Create a narrow data-sync settlement policy before pushing the broad dinobrain-data backlog."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-105336-Continue-the-active-DinoBrai.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T10:59:43.928Z"
+}

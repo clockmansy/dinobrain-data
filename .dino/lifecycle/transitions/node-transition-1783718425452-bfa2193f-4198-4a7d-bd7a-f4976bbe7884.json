@@ -1,0 +1,25 @@
+{
+  "version": "node_lifecycle_transition_artifact_v1",
+  "transition_id": "node-transition-1783718425452-bfa2193f-4198-4a7d-bd7a-f4976bbe7884",
+  "transaction_id": "node-lifecycle-1783718425626-fe04ddcd-00fa-43c7-be8f-4c7e0f92dc75",
+  "target_path": "50_Instances/accepted/rag-verified-knowledge-v1.json",
+  "from_state": "accepted",
+  "to_state": "held",
+  "reason_code": "accepted_held",
+  "reason": "Accepted memory failed lifecycle gate: durable_external_provenance_missing, unsupported_pressure",
+  "actor": "codex-mem01-migration-reapply",
+  "evidence_paths": [
+    "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json",
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "predecessor_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json"
+  ],
+  "successor_paths": [],
+  "at": "2026-07-10T21:20:25.107Z",
+  "before_sha256": "73729da3abd792e35d4c5ee36384a6353092ce53120edec5af300e214e568826",
+  "after_sha256": "4302286979c87ff0461d4a661f31f0a668e6f43030aa6d657294fd51d99fee10"
+}

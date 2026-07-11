@@ -1,0 +1,50 @@
+{
+  "memory_id": "task-memory-task-20260706-231712-OS_COMPLETION_CONDITIONS.md",
+  "type": "task_summary_memory",
+  "status": "accepted",
+  "title": "Task outcome: task-20260706-231712-OS_COMPLETION_CONDITIONS.md-",
+  "summary": "Improved DinoBrain against OS_COMPLETION_CONDITIONS without claiming full OS completion. Added a public-data safety verifier that scans the real data vault, reconciles GitHub visibility with docs, detects raw transcript/secret/local-only markers, verifies default-index exclusions, and writes public-data safety reports. Reconciled docs away from private-only data repo assumptions. Added a reusable RAG source-anchor seeding command and seeded user-provided RAG methodology anchors as anchor_only_unverified source/provenance candidates, plus a RAG Methodology Anchor Catalog. Rebuilt Wiki/SQLite indexes and graph health; verified RAG anchors are searchable through SQLite-backed wiki_search. Build, check, and verify:v2 passed. Current graph health and public-data safety remain degraded, not complete.",
+  "claim": "Task outcome for DinoBrain: Improved DinoBrain against OS_COMPLETION_CONDITIONS without claiming full OS completion. Added a public-data safety verifier that scans the real data vault, reconciles GitHub visibility with docs, detects raw transcript/secret/local-only markers, verifies default-index exclusions, and writes public-data safety reports. Reconciled docs away from private-only data repo assumptions. Added a reusable RAG source-anchor seeding command and seeded user-provided RAG methodology anchors as anchor_only_unverified source/provenance candidates, plus a RAG Methodology Anchor Catalog. Rebuilt Wiki/SQLite in",
+  "request": "task-20260706-231712-OS_COMPLETION_CONDITIONS.md-",
+  "outcome": "partial",
+  "decisions": [
+    "Treat user-provided RAG URLs as durable provenance anchors, not verified source truth.",
+    "Mark all seeded RAG sources as anchor_only_unverified until fetched, chunked, claim-linked, and reviewed.",
+    "Treat the data remote as public-safe by default when GitHub reports public or visibility is unknown.",
+    "Do not claim OS completion; this pass only improves gates 7, 12, 14, and 15."
+  ],
+  "next_steps": [
+    "Fetch and summarize RAG anchors into bounded source chunks with concrete claim lineage.",
+    "Reduce broad auto-compounded behavior rules so Source/Wiki/Project records are not swamped in retrieval.",
+    "Create real-vault behavior golden cases for RAG/source-provenance and measure memory-on versus memory-off behavior quality.",
+    "Resolve graph health warning accepted_instance_source_mapping_missing.",
+    "Get fresh trusted Codex live prompt proof before any manual MCP call."
+  ],
+  "used_memory_paths": [
+    "30_Sources/README.md",
+    "50_Instances/accepted/behavior-rule-5865861ab7070786.json",
+    "50_Instances/accepted/behavior-rule-4576c59074e79294.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-231712-OS_COMPLETION_CONDITIONS.md-.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260706-231712-OS_COMPLETION_CONDITIONS.md.json",
+    "snippet": "Improved DinoBrain against OS_COMPLETION_CONDITIONS without claiming full OS completion. Added a public-data safety verifier that scans the real data vault, reconciles GitHub visibility with docs, detects raw transcript/secret/local-only markers, verifies default-index exclusions, and writes public-data safety reports. Reconciled docs away from private-only data repo assumptions. Added a reusable RAG source-anchor seeding command and seeded user-provided RAG methodology anchors as anchor_only_unverified source/provenance candidates, plus a RAG Methodology Anchor Catalog. Rebuilt Wiki/SQLite indexes and graph health; verified RAG anchors are searchable through SQLite-backed wiki_search. Build, check, and verify:v2 passed. Current graph health and public-data safety remain degraded, not complete."
+  },
+  "source_status": "internal",
+  "confidence": "low",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:partial"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-06T23:24:50.988Z",
+  "updated_at": "2026-07-06T23:24:50.988Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260706-231712-OS_COMPLETION_CONDITIONS.md.json",
+    "task_id": "task-20260706-231712-OS_COMPLETION_CONDITIONS.md-",
+    "task_path": ".dino/tasks/task-20260706-231712-OS_COMPLETION_CONDITIONS.md.json"
+  }
+}

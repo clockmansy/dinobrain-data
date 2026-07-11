@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-003606-Read-only-audit-focused-on-n",
+  "status": "completed",
+  "request": "Read-only audit focused on node lifecycle, compounding, memory growth, merge/promote/hold/delete, and whether knowledge compounding can scale without becoming slow/noisy. Inspect src/compounding.ts, src/lifecycle.ts, data .dino/compounding, accepted rules. Return P0/P1 findings with file/line evidence, fixes, and consensus candidate statements. Do not edit files.",
+  "project": "DinoBrain",
+  "mode": "standard",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T00:36:06.589Z",
+  "updated_at": "2026-07-07T00:42:18.579Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T00:42:18.579Z",
+  "trace_path": ".dino/traces/task-20260707-003606-Read-only-audit-focused-on-n.json"
+}

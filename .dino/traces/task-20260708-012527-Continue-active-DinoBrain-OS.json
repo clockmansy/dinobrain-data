@@ -1,0 +1,43 @@
+{
+  "task_id": "task-20260708-012527-Continue-active-DinoBrain-OS",
+  "outcome": "partial",
+  "summary": "Rechecked the active DinoBrain hardening goal after v2.2.6. Verified the remaining goal blocker is still the fresh real Codex Desktop UserPromptSubmit live proof. Started the live proof helper, which created a pending proof prompt file because clipboard access failed. Did not mark the goal complete because the fresh Codex Desktop proof has not yet been produced.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "reports/live-hooks/pending-DinoBrain-live-proof-20260708-012655-211822d5.txt"
+  ],
+  "decisions": [
+    "Do not accept stale live proof from before the v2.2.6 server build.",
+    "Do not count stdio MCP proof as the real Codex Desktop UserPromptSubmit proof.",
+    "Use the live proof helper prompt in a fresh Codex Desktop thread to produce the remaining hard-gate evidence."
+  ],
+  "next_steps": [
+    "Open or use a fresh Codex Desktop workspace thread and paste the prompt from reports/live-hooks/pending-DinoBrain-live-proof-20260708-012655-211822d5.txt.",
+    "After that prompt replies with OS context, rerun npm run verify:goal.",
+    "If verify:goal passes all requirements, then mark the active goal complete."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260708-012527-Continue-active-DinoBrain-OS.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-08T01:27:17.160Z"
+}

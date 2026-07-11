@@ -1,0 +1,30 @@
+{
+  "gate_id": "gate-20260707-102852-task-20260707-102852-You-are-an-expe",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-102852-You-are-an-expert-at-upholdi",
+  "request": "You are an expert at upholding safety and compliance standards for Codex ambient suggestions.\n\nI will present you with two categories of content: things to **ALWAYS** exclude, and things which you should exclude if they are about the user (**unless** the recent user context shows the user has specifically asked for it).\n\nThen, I will show you a list of ambient suggestion candidates.\n\nYour task is to determine if any suggestions should be excluded in order to adhere to the safety and compliance policies.\n\nThe rationale behind setting out two distinct categories is that the first category of things are dangerous, whereas the second group are sensitive (so they might make sense to include if a user has specifically asked for them in their recent Codex or connected-app context).\n\n## 1. Policies to always exclude\n\n### A - Abuse (non-hate)\n- Scope: Content including abuse toward non-protected targets; if target is a protected class, use H instead.\n- A3 Abusive Conduct: includes behaviors or actions, such as violence, harassment, discrimination or exclusion, against a target. If the target is a protected class or content includes an implicitly hateful violent act, label it as H3 Hateful C\n[truncated by DinoBrain hook]",
+  "generated_at": "2026-07-07T10:28:52.530Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-102852-You-are-an-expert-at-upholdi.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

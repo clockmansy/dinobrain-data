@@ -1,0 +1,14 @@
+{
+  "task_id": "task-20260703-054107-Implement-v0.1.5-Observatory",
+  "status": "completed",
+  "request": "Implement v0.1.5 Observatory OS Health Upgrade: inspect current observatory/export/sqlite structure, add graph health summary generation, extend Observatory API/UI with health chips lifecycle queues read traces sync risk, add verification scripts, and publish v0.1.5 release.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "created_at": "2026-07-03T05:41:07.146Z",
+  "updated_at": "2026-07-03T07:10:18.061Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-03T07:10:18.061Z",
+  "trace_path": ".dino/traces/task-20260703-054107-Implement-v0.1.5-Observatory.json"
+}

@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 258,
+  "event": "action_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "006c9040d1c0e3142ab9663d5321982fc52cda7af3460391ca9ad65ff8cda853",
+  "payload": {
+    "index": 127,
+    "task_id": "task-20260708-014114-Files-mentioned-by-the-user-",
+    "action": "repair_started_from_grounded_trace",
+    "task_sha256_before": "4039a7a5bc8042ead5eda3c16271ac80a5d237c7b2d0aabcb0eac760d3a0d9ea",
+    "trace_sha256_before": "7e5d9a4610ee34e17e4ec8534b2a955e0036ad4716256714e2f1651e6c82111b"
+  },
+  "entry_sha256": "600ecab049cbca50c407d877327a241d82eb17a6acae617c7c75d8263f386da7"
+}

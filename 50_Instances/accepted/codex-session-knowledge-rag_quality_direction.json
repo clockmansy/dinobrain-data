@@ -1,0 +1,245 @@
+{
+  "memory_id": "codex-session-knowledge-rag_quality_direction",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "project_decision",
+  "title": "RAG quality requires hybrid retrieval, provenance, and evaluation",
+  "aliases": [
+    "RAG 검색 품질 개선",
+    "하이브리드 검색 출처 검증",
+    "URL 앵커와 검증된 청크 구분"
+  ],
+  "claim": "DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation.",
+  "reusable_rule": "When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines.",
+  "scope": "retrieval",
+  "confidence": "high",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "project-decision",
+    "rag",
+    "retrieval",
+    "provenance",
+    "evaluation"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 28,
+    "user_hit_count": 30,
+    "assistant_hit_count": 142,
+    "weighted_score": 404,
+    "session_refs": [
+      "sess-089835dc8fdc62",
+      "sess-0a41a5f21d5b58",
+      "sess-0ca153289a72b9",
+      "sess-1e95eea1be108d",
+      "sess-24a6ee3381ae00",
+      "sess-24d8b03c383495",
+      "sess-2d27e1d180db6c",
+      "sess-2fc834396900cc",
+      "sess-40cc080526149f",
+      "sess-458b19a1a1cdf1",
+      "sess-52c21a717f5a44",
+      "sess-61a6570430d591",
+      "sess-62f7b9754a9734",
+      "sess-64b0ce067fa037",
+      "sess-72cf004ec045b8",
+      "sess-7ad76bf1417852",
+      "sess-7d50eae76e4ee7",
+      "sess-80c93d7848697c",
+      "sess-859a5de9d52d83",
+      "sess-87894506617c58",
+      "sess-b9bea0ba742411",
+      "sess-c15947f92a15cb",
+      "sess-c73d712d226683",
+      "sess-d18f6172935388"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "08324f085d54d7105ceba154",
+        "char_count": 1807
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "50955d45eaad0bbb7bdd778f",
+        "char_count": 1828
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "6d74e0abc02a0d8c24a61d9f",
+        "char_count": 1477
+      },
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "assistant",
+        "message_hash": "d2051c9f4a68b089a37c3212",
+        "char_count": 1630
+      },
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "user",
+        "message_hash": "942d6f73e4d17e2309cb662f",
+        "char_count": 3835
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "user",
+        "message_hash": "f0b8ce9de60a779df3b3ddc7",
+        "char_count": 1143
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "assistant",
+        "message_hash": "b3963fc43fac5e6cad4904c6",
+        "char_count": 286
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "assistant",
+        "message_hash": "7d808b29ed955aa51a3e2574",
+        "char_count": 299
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "assistant",
+        "message_hash": "e3fb945169d461f3f6c12d24",
+        "char_count": 230
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "assistant",
+        "message_hash": "3a299d215b3738aba83f4545",
+        "char_count": 1417
+      },
+      {
+        "session_ref": "sess-089835dc8fdc62",
+        "role": "assistant",
+        "message_hash": "7ceb15e7ae9984ef3b349b26",
+        "char_count": 795
+      },
+      {
+        "session_ref": "sess-7d50eae76e4ee7",
+        "role": "assistant",
+        "message_hash": "0a6548ffc2d17a19afba3e71",
+        "char_count": 90
+      },
+      {
+        "session_ref": "sess-40cc080526149f",
+        "role": "assistant",
+        "message_hash": "1210d1c6856be13dc1cb49cf",
+        "char_count": 119
+      },
+      {
+        "session_ref": "sess-40cc080526149f",
+        "role": "assistant",
+        "message_hash": "ec867c2c20e869f4cd3641f8",
+        "char_count": 80
+      },
+      {
+        "session_ref": "sess-40cc080526149f",
+        "role": "assistant",
+        "message_hash": "1e42806700094fcf815cdf5c",
+        "char_count": 86
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "assistant",
+        "message_hash": "158231c0c1e481c6697cb1a3",
+        "char_count": 2165
+      }
+    ],
+    "matched_terms": [
+      "RAG|contextual retrieval|hybrid|BM25|dense|rerank|GraphRAG|RAGAS|provenance|sour"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 156
+      },
+      {
+        "project": "build-a-local-tool-for-creating",
+        "count": 5
+      },
+      {
+        "project": "Project_J",
+        "count": 4
+      },
+      {
+        "project": "stripe engine",
+        "count": 3
+      },
+      {
+        "project": "new-chat",
+        "count": 2
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 1
+      },
+      {
+        "project": "files-mentioned-by-the-user-html",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-rag_quality_direction.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-rag_quality_direction",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425447-410594ef-ff41-40b2-b6bf-3850d758b81f",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425447-410594ef-ff41-40b2-b6bf-3850d758b81f",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-rag_quality_direction.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-rag_quality_direction.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-rag_quality_direction.json"
+  ],
+  "successor_paths": []
+}

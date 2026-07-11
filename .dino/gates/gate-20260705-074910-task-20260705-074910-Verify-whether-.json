@@ -1,0 +1,20 @@
+{
+  "gate_id": "gate-20260705-074910-task-20260705-074910-Verify-whether-",
+  "os_version": "2.0.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260705-074910-Verify-whether-the-currently",
+  "request": "Verify whether the currently installed DinoBrain follows the full OS loop: Codex hook detection, task start, context pack retrieval, agent work with memory precedence, narrow wiki search, finish_task logging, knowledge growth lifecycle, and backup/recovery via data repo and GitHub.",
+  "generated_at": "2026-07-05T07:49:10.806Z",
+  "context_pack_path": ".dino/context-packs/pack-20260705-074910-Verify-whether-the-currently.json",
+  "context_item_count": 8,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ]
+}

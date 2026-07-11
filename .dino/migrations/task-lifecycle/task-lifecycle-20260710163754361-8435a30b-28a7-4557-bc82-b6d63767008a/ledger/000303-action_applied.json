@@ -1,0 +1,18 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 303,
+  "event": "action_applied",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "dde83b89ef8d3ce1a042b6c6b7d95805a213b9095cae7ceccc083a988e84bd23",
+  "payload": {
+    "index": 149,
+    "task_id": "task-20260707-163356-DinoBrain-R5-retry-.-.-read-",
+    "action": "block_stale_without_trace",
+    "applied": true,
+    "reason_code": "stale_task_without_trace_blocked",
+    "task_sha256_after": "8db20c1d6159d6c29e30cbf8d15ba1356409ac61f1b07b2ad127c283f07787b3",
+    "trace_sha256_after": "3aa99e66159568173e21c180eae567919a308a4051853bb5d6199c126dfaceea"
+  },
+  "entry_sha256": "65c311078c13b82ecb06d462a11ceaf449f7513698816950b5eafb6ac7d950ca"
+}

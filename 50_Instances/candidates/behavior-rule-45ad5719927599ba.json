@@ -1,0 +1,45 @@
+{
+  "candidate_id": "behavior-rule-45ad5719927599ba",
+  "behavior_rule_id": "behavior-rule-45ad5719927599ba",
+  "type": "behavior_rule",
+  "status": "held",
+  "claim": "Behavior rule: In similar future work, apply this decision: Did not broadly push dirty dinobrain-data operational artifacts because many are conditional/requires_review or local-only; the GitHub push loop is proven by the policy-approved closed-loop fixture and app repo push already completed.",
+  "behavior_rule": "In similar future work, apply this decision: Did not broadly push dirty dinobrain-data operational artifacts because many are conditional/requires_review or local-only; the GitHub push loop is proven by the policy-approved closed-loop fixture and app repo push already completed.",
+  "category": "agent_behavior",
+  "evidence": {
+    "source": ".dino/traces/task-20260707-071438-Continue-verifying-DinoBrain.json",
+    "snippet": "Did not broadly push dirty dinobrain-data operational artifacts because many are conditional/requires_review or local-only; the GitHub push loop is proven by the policy-approved closed-loop fixture and app repo push already completed."
+  },
+  "evidence_sources": [
+    {
+      "trace_path": ".dino/traces/task-20260707-071438-Continue-verifying-DinoBrain.json",
+      "task_id": "task-20260707-071438-Continue-verifying-DinoBrain",
+      "signal_kind": "decision",
+      "snippet": "Did not broadly push dirty dinobrain-data operational artifacts because many are conditional/requires_review or local-only; the GitHub push loop is proven by the policy-approved closed-loop fixture and app repo push already completed."
+    }
+  ],
+  "source_status": "internal",
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "support_count": 1,
+  "tags": [
+    "behavior-rule",
+    "auto-compounded",
+    "confidence:high"
+  ],
+  "auto_generated": true,
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "auto_compounded_behavior_rule"
+  ],
+  "reviewer": "finish_task:auto-compound",
+  "created_at": "2026-07-07T07:16:27.148Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "last_seen_at": "2026-07-07T07:16:27.148Z",
+  "quarantine": true,
+  "hold_reason": "auto_compounded_behavior_rule_requires_semantic_review",
+  "review_notes": "Auto-held generated behavior memory instead of promoting it; manual semantic review is required before acceptance.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

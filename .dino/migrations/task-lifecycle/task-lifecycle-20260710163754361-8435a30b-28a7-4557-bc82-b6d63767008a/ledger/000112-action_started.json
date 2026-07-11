@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163754361-8435a30b-28a7-4557-bc82-b6d63767008a",
+  "sequence": 112,
+  "event": "action_started",
+  "at": "2026-07-10T16:37:54.361Z",
+  "previous_entry_sha256": "fcd249cc2720616e14f5860b435db9d597d24e1a12635ba4f88a4f783de24b91",
+  "payload": {
+    "index": 54,
+    "task_id": "task-20260707-154142-You-are-Reviewer-R9-install-",
+    "action": "auto_close_stale_non_user_service",
+    "task_sha256_before": "b72d7836fe4b0d28d6bead9b056b93300b2a760f11221fb7dbef085fca561d38",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "19a5e32293028ad7a06e8895942480c90fd92bb84ceb95698492d90bdd5a6a6c"
+}

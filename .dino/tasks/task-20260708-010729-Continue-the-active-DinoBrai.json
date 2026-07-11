@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260708-010729-Continue-the-active-DinoBrai",
+  "status": "partial",
+  "request": "Continue the active DinoBrain OS hardening goal: P0-04 Codex/Claude direct MCP parity hard gate, P0-05 native instruction authority/drift gate, P0-06 source/chunk/claim provenance gate, P1-09 behavior recall audit ledger + feedback writeback, P1-10 real semantic retrieval + answer-quality eval, P1-11 Observatory API/UI/browser proof contract, P2-12 install/new-PC/release equivalence. Inspect current state, identify the next missing requirement, implement concrete progress, verify, and keep the full goal active unless fully proven.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-08T01:07:29.547Z",
+  "updated_at": "2026-07-08T01:23:04.543Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-08T01:23:04.543Z",
+  "trace_path": ".dino/traces/task-20260708-010729-Continue-the-active-DinoBrai.json"
+}

@@ -1,0 +1,24 @@
+{
+  "gate_id": "gate-20260708-011341-task-20260708-011341-DinoBrain-live-",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260708-011341-DinoBrain-live-hook-proof-MC",
+  "request": "DinoBrain live hook proof MCP parity hard-gate evidence. Ordered direct MCP pre-response proof for verify-codex-mcp-preflight: os_begin_task context pack before finish_task.",
+  "generated_at": "2026-07-08T01:13:41.752Z",
+  "context_pack_path": ".dino/context-packs/pack-20260708-011341-DinoBrain-live-hook-proof-MC.json",
+  "context_item_count": 5,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "normal",
+  "reported_sensitivity": "normal",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

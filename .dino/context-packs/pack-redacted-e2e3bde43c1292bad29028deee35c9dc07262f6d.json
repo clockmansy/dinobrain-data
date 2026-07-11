@@ -1,0 +1,228 @@
+{
+  "pack_id": "pack-redacted-e2e3bde43c1292bad29028deee35c9dc07262f6d",
+  "pack_type": "standard",
+  "os_version": "2.2.1",
+  "question": "<machine-local-path>",
+  "created_at": "2026-07-08T01:39:36.144Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense vector cosine retrieval",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 79,
+  "retrieval_mode": "hybrid_contextual_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 69,
+  "index_candidate_count": 79,
+  "index_total_candidate_count": 48,
+  "index_matching_terms": [
+    "dinobrain_os",
+    "dinobrain_product",
+    "dinobrain_public_data_safety",
+    "dinobrain-data",
+    "dinobrain-hook-and-install-prevention",
+    "dinobrain-install-release-state",
+    "dinobrain-project-state",
+    "dinobrain-public-data-safety",
+    "dinobrain-rag-critical-consensus-20260707",
+    "dinobrain-rag-roadmap",
+    "dinobrain-recurring-failures",
+    "dinobrain-retrieval-noise-prevention",
+    "direct_user_source_count",
+    "documents",
+    "files-mentioned-by-the-user-html",
+    "local-dinobrain-data",
+    "reports",
+    "user",
+    "user_message_count",
+    "user_preference",
+    "user_supplied_anchor_summary",
+    "user-preference",
+    "user-preferences",
+    "user-provided",
+    "user-supplied",
+    "userguide"
+  ],
+  "included_item_count": 7,
+  "excluded_record_count": 72,
+  "items": [
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+      "kind": "curated_record",
+      "title": "Current user instruction outranks stored memory",
+      "summary": "For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. | Rule: Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "memory-priority",
+        "os-contract"
+      ],
+      "score": 13.594,
+      "reasons": [
+        "title_matched:user",
+        "summary_matched:user",
+        "chunk_matched:user",
+        "bm25:user",
+        "dense_vector_cosine:7.70",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+      "kind": "curated_record",
+      "title": "Prefer direct local verification and evidence",
+      "summary": "The user prefers direct inspection of local files, logs, command output, screenshots, repository state, and concrete evidence over abstract claims. | Rule: For verification/debugging, inspect the real workspace and report command/file evidence; if a check was not run, say that plainly. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "verification",
+        "evidence"
+      ],
+      "score": 11.942,
+      "reasons": [
+        "summary_matched:user",
+        "tags_matched:user",
+        "chunk_matched:user",
+        "bm25:user",
+        "dense_vector_cosine:7.78",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+      "kind": "curated_record",
+      "title": "DinoBrain must run pre-response and fail closed",
+      "summary": "The user wants every Codex or Claude session to receive DinoBrain pre-response OS context before substantive work, with fail-closed behavior when the OS context is missing. | Rule: For nontrivial DinoBrain work, require os_begin_task or trusted hook preflight, Context Pack, gates, finish_task, and explicit degraded/fail-closed state when missing. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "operating-rule",
+        "pre-response",
+        "fail-closed",
+        "hook"
+      ],
+      "score": 11.934,
+      "reasons": [
+        "summary_matched:user",
+        "chunk_matched:user",
+        "bm25:user",
+        "dense_vector_cosine:9.16",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+      "kind": "curated_record",
+      "title": "Do not sync raw Codex conversation transcripts",
+      "summary": "Codex conversations are source material for reviewed memory, but raw full transcripts and message content must stay local-only and out of public data sync. | Rule: Register sessions metadata-only, extract paraphrased reviewed memories, and never store raw full transcripts or message content in public Wiki, accepted memory, traces, or reports. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "safety",
+        "privacy",
+        "raw-transcripts",
+        "public-data"
+      ],
+      "score": 11.848,
+      "reasons": [
+        "summary_matched:reports",
+        "chunk_matched:reports",
+        "bm25:reports",
+        "dense_vector_cosine:6.81",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-one_link_or_direct_action.json",
+      "kind": "curated_record",
+      "title": "Prefer direct links or actions when the path is known",
+      "summary": "When the path or artifact is known, the user often prefers a direct link, launcher, or action instead of a long explanation. | Rule: If the user asks for an install link, file, folder, or app launch, provide the direct artifact or perform the action first, then add only essential context. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "user-preference",
+        "brevity",
+        "install"
+      ],
+      "score": 11.774,
+      "reasons": [
+        "summary_matched:user",
+        "tags_matched:user",
+        "chunk_matched:user",
+        "bm25:user",
+        "dense_vector_cosine:6.19",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+      "kind": "curated_record",
+      "title": "Installer must restore equivalent DinoBrain behavior on a new PC",
+      "summary": "The user expects a new PC install to clone/update app and data repos, configure Codex and Claude hooks/MCP, build indexes, launch Observatory, and preserve version parity. | Rule: For installer work, verify app/data refs, portable Node, build/index, Codex and Claude registration, hook approval flow, launchers, release artifact alignment, and reinstall/idempotent behavior. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "project-decision",
+        "installer",
+        "new-pc",
+        "codex",
+        "claude",
+        "version-parity"
+      ],
+      "score": 11.741,
+      "reasons": [
+        "summary_matched:user",
+        "chunk_matched:user",
+        "bm25:user",
+        "dense_vector_cosine:8.23",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+      "kind": "curated_record",
+      "title": "DinoBrain goal is knowledge compounding from sessions",
+      "summary": "The core DinoBrain goal is a compounding LLM Wiki where user sessions become reviewed preferences, decisions, rules, corrections, and source-backed knowledge that improve future sessions. | Rule: Treat sessions as the root source; convert them into reviewed memory, lifecycle-clean noisy memory, evaluate behavior lift, and retrieve the result in later and future Context Packs. | Review: review_status=accepted_by_agent_review",
+      "tags": [
+        "codex-session-derived",
+        "project-goal",
+        "llm-wiki",
+        "compounding",
+        "memory"
+      ],
+      "score": 11.701,
+      "reasons": [
+        "summary_matched:user",
+        "chunk_matched:user",
+        "bm25:user",
+        "dense_vector_cosine:7.84",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost",
+        "rerank_session_knowledge_boost"
+      ]
+    }
+  ]
+}

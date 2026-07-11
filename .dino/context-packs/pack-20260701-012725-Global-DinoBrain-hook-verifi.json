@@ -1,0 +1,117 @@
+{
+  "pack_id": "pack-20260701-012725-Global-DinoBrain-hook-verifi",
+  "pack_type": "standard",
+  "question": "Global DinoBrain hook verification after parser fix.",
+  "created_at": "2026-07-01T01:27:25.183Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 10,
+  "included_item_count": 5,
+  "excluded_record_count": 5,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260701-012725-Global-DinoBrain-hook-verifi.json",
+      "kind": "recent_task",
+      "title": "Task: Global DinoBrain hook verification after parser fix.",
+      "summary": "status=started | project=Documents",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 37,
+      "reasons": [
+        "path matched \"global\"",
+        "title matched \"global\"",
+        "path matched \"dinobrain\"",
+        "title matched \"dinobrain\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "title matched \"verification\"",
+        "title matched \"after\"",
+        "title matched \"parser\"",
+        "title matched \"fix\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-012635-hookEventName-UserPromptSubm.json",
+      "kind": "recent_task",
+      "title": "Task: {\"hookEventName\":\"UserPromptSubmit\",\"prompt\":\"Global DinoBrain hook verification from another wo",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 22,
+      "reasons": [
+        "title matched \"global\"",
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "title matched \"verification\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-005837-hookEventName-UserPromptSubm.json",
+      "kind": "recent_task",
+      "title": "Task: {\"hookEventName\":\"UserPromptSubmit\",\"prompt\":\"? ?? ??? ?? ??\",\"cwd\":\"<machine-local-path>\\",
+      "summary": "status=completed | project=dinobrain | Closed the direct hook command-string verification task after confirming it emitted DinoBrain events.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 19,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "path matched \"hook\"",
+        "title matched \"hook\"",
+        "summary matched \"hook\"",
+        "summary matched \"verification\"",
+        "summary matched \"after\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260701-004836-Codex-OS-start_task-get_cont.json",
+      "kind": "recent_task",
+      "title": "Task: ? ???: Codex? ???? ???? OS? start_task? get_context_pack? ???? Observatory? ????? ????.",
+      "summary": "status=completed | project=dinobrain-live-verify | Verified that the DinoBrain Codex hook preflight creates prompt, task, context-pack, and Observatory-visible events.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 6,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "summary matched \"hook\""
+      ]
+    },
+    {
+      "path": "30_Sources/README.md",
+      "kind": "curated_record",
+      "title": "30_Sources",
+      "summary": "Source records and verification notes.",
+      "tags": [],
+      "score": 3,
+      "reasons": [
+        "summary matched \"verification\""
+      ]
+    }
+  ]
+}

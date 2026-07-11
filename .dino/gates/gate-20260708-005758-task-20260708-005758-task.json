@@ -1,0 +1,38 @@
+{
+  "gate_id": "gate-20260708-005758-task-20260708-005758-task",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260708-005758-task",
+  "request": "그냥 이토큰 니가 쓰면안되는거임?",
+  "generated_at": "2026-07-08T00:57:58.802Z",
+  "context_pack_path": ".dino/context-packs/pack-20260708-005758-task.json",
+  "context_item_count": 7,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "sensitivity_auto_escalated",
+      "level": "warn",
+      "reason": "The request matched sensitive-content rules despite a lower reported sensitivity.",
+      "safe_action": "Treat the task as sensitive and avoid storing raw credentials, tokens, or private identifiers."
+    },
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "sensitive",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "sensitive",
+  "sensitivity_hits": [
+    "korean_token"
+  ]
+}

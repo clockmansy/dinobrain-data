@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-005647-Build-and-verify-DinoBrain-c",
+  "status": "partial",
+  "request": "Build and verify DinoBrain closed loop for any session: pre-response OS context, memory reference, work execution, knowledge growth, and GitHub push. Continue until 20 subagents verify the loop or identify remaining blockers.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.0",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T00:56:47.306Z",
+  "updated_at": "2026-07-07T02:02:58.139Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T02:02:58.139Z",
+  "trace_path": ".dino/traces/task-20260707-005647-Build-and-verify-DinoBrain-c.json"
+}

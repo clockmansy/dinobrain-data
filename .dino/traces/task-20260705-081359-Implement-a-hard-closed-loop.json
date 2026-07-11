@@ -1,0 +1,52 @@
+{
+  "task_id": "task-20260705-081359-Implement-a-hard-closed-loop",
+  "outcome": "completed",
+  "summary": "Implemented DinoBrain OS v2.1.0 closed-loop automation: hard pre-response hook block metadata, hook-side auto sync after preflight completion, finish_task auto-growth records, policy-based auto_sync commit/push tool, search_memory alias, installer env wiring for auto growth/sync, current Codex config/hook env update, and flow audit verification showing all 8 user-flow steps verified.",
+  "changed_files": [
+    "src/index.ts",
+    "src/os-contract.ts",
+    "scripts/dinobrain-user-prompt-hook.mjs",
+    "scripts/audit-user-flow.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/verify-dinobrain-os.mjs",
+    "scripts/verify-v2-os.mjs",
+    "scripts/verify-installer-hooks.ps1",
+    "scripts/verify-session-ingest.mjs",
+    "scripts/dinobrain-observatory.mjs",
+    "install.ps1",
+    "package.json",
+    "package-lock.json",
+    "docs/INSTALL.md",
+    "docs/VERIFICATION.md"
+  ],
+  "decisions": [
+    "Add auto_sync as a separate policy-enforced tool instead of changing git_sync dry-run semantics.",
+    "Enable auto growth and auto sync by installer/env configuration, while blocked raw conversation and secret-bearing paths remain excluded from automatic commits.",
+    "Move hook auto_sync after codex_preflight_completed event so the preflight completion event is included in the auto-sync commit."
+  ],
+  "next_steps": [
+    "Fully quit/restart Codex so the already-running app reloads the updated user hook and MCP env.",
+    "Check GitHub Actions release run for tag v2.1.0 if release asset availability must be confirmed from GitHub UI."
+  ],
+  "used_memory_paths": [
+    "60_Operations/README.md",
+    "20_Wiki/README.md",
+    ".dino/tasks/task-20260705-022738-QA-code-review-DinoBrain-v2.json",
+    ".dino/tasks/task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB.json",
+    ".dino/tasks/task-20260705-075637-Assess-whether-DinoBrain-s-c.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260705-081359-Implement-a-hard-closed-loop.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 5,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-05T08:33:30.928Z"
+}

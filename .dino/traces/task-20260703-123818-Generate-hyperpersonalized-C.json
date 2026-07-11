@@ -1,0 +1,37 @@
+{
+  "task_id": "task-20260703-123818-Generate-hyperpersonalized-C",
+  "outcome": "completed",
+  "summary": "Generated project-specific Codex suggestions by combining DinoBrain context, local git branch state, current main/tag state, GitHub PR activity, and available connector signals. Strong candidates centered on an unmerged observatory branch and a fresh hook-fix PR that is still open against an older main.",
+  "changed_files": [],
+  "decisions": [
+    "Used DinoBrain context plus local git/GitHub evidence as primary signals.",
+    "Excluded Gmail-based suggestions because the connected Gmail search scope is insufficient.",
+    "Excluded calendar-based suggestions because no project-related upcoming events were found.",
+    "Kept only suggestions tied to fresh unresolved repo work, not already-landed tasks."
+  ],
+  "next_steps": [
+    "Return up to three suggestions in the requested schema."
+  ],
+  "used_memory_paths": [
+    ".dino/tasks/task-20260703-103247-Deploy-the-approved-v13-Dino.json",
+    ".dino/tasks/task-20260703-071734-Fix-Codex-UserPromptSubmit-i.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260703-123821-What-recent-DinoBrain-work-r.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [
+    "GitHub PRs in clockmansy/dinobrain",
+    "project-related calendar events 2026-07-03 to 2026-07-10",
+    "dinobrain-related Gmail search newer_than:7d"
+  ],
+  "memory_use": {
+    "used_memory_count": 2,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 3
+  },
+  "finished_at": "2026-07-03T12:38:53.461Z"
+}

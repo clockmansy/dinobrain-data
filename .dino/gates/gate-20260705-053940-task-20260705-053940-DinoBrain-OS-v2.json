@@ -1,0 +1,20 @@
+{
+  "gate_id": "gate-20260705-053940-task-20260705-053940-DinoBrain-OS-v2",
+  "os_version": "2.0.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-",
+  "request": "DinoBrain OS v2 개선 보고서의 P0 항목(DB-03 불용어/토큰화, DB-02 독립 게이트/감사, DB-01 실제 하이브리드 검색/폴백 명칭)을 코드로 반영하고 검증한다.",
+  "generated_at": "2026-07-05T05:39:40.922Z",
+  "context_pack_path": ".dino/context-packs/pack-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-.json",
+  "context_item_count": 6,
+  "status": "warn",
+  "fail_closed": false,
+  "gates": [
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ]
+}

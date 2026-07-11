@@ -1,0 +1,47 @@
+{
+  "task_id": "task-20260707-003541-Read-only-audit-focused-on-d",
+  "outcome": "completed",
+  "summary": "Completed read-only audit of DinoBrain durable source/provenance/source-chunk-claim lineage and graph health. Findings: graph health is correctly degraded but reports all accepted instances as missing source mapping; current source/provenance records exist for RAG guidance, but accepted-memory lineage recognition only checks narrow single-source fields and misses source_paths/source_chunk_path/claim_paths/provenance records. The graph index currently models record/root/folder/tag/kind/wikilink edges, not the provenance/lifecycle/quarantine/usage edges required by the completion contract. Node/npm were unavailable in the shell, so verification was static plus direct file inspection rather than npm verifier execution.",
+  "changed_files": [],
+  "decisions": [
+    "Kept repository source read-only; no code or data files were manually edited by the audit.",
+    "Used DinoBrain protocol context pack and primary RAG guidance sources for comparison.",
+    "Treated graph-health score 0/degraded as honest status, but incomplete lineage coverage remains a blocking graph-health issue."
+  ],
+  "next_steps": [
+    "Teach graph-health/lifecycle/Observatory sourcePath logic to resolve source_paths arrays, source_chunk_path, provenance paths, and reverse claim_paths from .dino/provenance and 30_Sources/chunks.",
+    "Extend wiki-index graph edge types to include source/provenance, lifecycle/quarantine, and context-pack/task usage edges; then make graph health fail when required edge classes are absent.",
+    "Add a real-vault graph-health verifier alongside the current synthetic verifier and assert accepted/source/provenance counts, timestamp freshness, and lineage-edge coverage."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-597152ac463227a6.json",
+    "50_Instances/accepted/behavior-rule-0d2fb5049213d9b3.json",
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/rag-verified-knowledge-v1.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-003543-durable-source-provenance-so.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [
+    ".dino/index/graph-health.json",
+    "30_Sources/chunks/microsoft-graphrag.json",
+    ".dino/provenance/microsoft-graphrag.json",
+    "50_Instances/accepted/rag-verified-knowledge-v1.json",
+    "20_Wiki/RAG-Verified-Knowledge-Base.md"
+  ],
+  "search_queries": [
+    "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks arXiv 2005.11401 provenance source documents dense vector index",
+    "Microsoft GraphRAG documentation local search global search source documents knowledge graph",
+    "OpenAI Retrieval guide vector stores file citations chunks scores official docs",
+    "RAGAS documentation metrics faithfulness context precision recall official"
+  ],
+  "memory_use": {
+    "used_memory_count": 4,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 5,
+    "search_query_count": 4
+  },
+  "finished_at": "2026-07-07T00:39:43.618Z"
+}

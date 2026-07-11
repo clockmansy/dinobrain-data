@@ -1,0 +1,38 @@
+{
+  "task_id": "task-20260707-184643-DinoBrain-live-hook-proof-MC",
+  "outcome": "completed",
+  "summary": "Completed the current stale-thread MCP fallback preflight proof: os_begin_task returned memory context before substantive work; live Desktop UserPromptSubmit proof remains a separate hard gate.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Fallback MCP preflight proof is complete for this stale thread.",
+    "Do not count fallback MCP proof as live Codex Desktop hook proof."
+  ],
+  "next_steps": [
+    "Create or use a fresh trusted Codex Desktop workspace thread and paste the live proof prompt."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+    "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-184643-DinoBrain-live-hook-proof-MC.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 8,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T18:46:43.579Z"
+}

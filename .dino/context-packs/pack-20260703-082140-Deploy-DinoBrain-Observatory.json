@@ -1,0 +1,216 @@
+{
+  "pack_id": "pack-20260703-082140-Deploy-DinoBrain-Observatory",
+  "pack_type": "standard",
+  "question": "Deploy DinoBrain Observatory design branch to GitHub/update flow. Need context on version/release alignment, private repo, installer AppRef, and prior deployment commands.",
+  "created_at": "2026-07-03T08:21:40.376Z",
+  "ranking_inputs": [
+    "file name",
+    "frontmatter",
+    "title",
+    "summary",
+    "tags",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 16,
+  "retrieval_mode": "sqlite_shards_v0",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 16,
+  "index_total_candidate_count": 16,
+  "index_matching_terms": [
+    "60_operations",
+    "and",
+    "candidates",
+    "confidence",
+    "confirms",
+    "constraints",
+    "correction",
+    "corrections",
+    "decisions",
+    "evaluation",
+    "handoff",
+    "handoffs",
+    "implementation",
+    "interpretation",
+    "locations",
+    "only",
+    "prevention",
+    "private",
+    "promotion",
+    "separation",
+    "store",
+    "to",
+    "verification",
+    "workflows",
+    "wrong"
+  ],
+  "included_item_count": 6,
+  "excluded_record_count": 10,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260703-075850-Implement-a-design-only-Dino.json",
+      "kind": "recent_task",
+      "title": "Task: Implement a design-only DinoBrain Observatory graph redesign from the provided dinosaur-shaped g",
+      "summary": "status=completed | project=dinobrain | Implemented a design-only DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph reference. Kept OS/MCP/SQLite/hook/data logic unchanged; updated only the Observatory visual layout/rendering CSS and browser-side canvas layout. The graph now uses deterministic dinosaur pose targets so live nodes and edges read as tail, body/core, neck/head, and leg clust",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 47,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "path matched \"design\"",
+        "title matched \"design\"",
+        "summary matched \"design\"",
+        "title matched \"to\"",
+        "summary matched \"to\"",
+        "summary matched \"update\"",
+        "path matched \"on\"",
+        "title matched \"on\"",
+        "summary matched \"on\"",
+        "summary matched \"and\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-074013-Plan-a-high-quality-design-o.json",
+      "kind": "recent_task",
+      "title": "Task: Plan a high-quality design-only redesign of the DinoBrain Observatory graph so it visually resem",
+      "summary": "status=partial | project=dinobrain | Played back the design-only brief for a high-quality DinoBrain Observatory graph redesign based on the provided dinosaur-shaped graph image. No files were changed. Product Design user-context preflight could not run because python/python3 resolves to WindowsApps shim without a local Python runtime, but the supplied image is a concrete visual source.",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 44,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "path matched \"design\"",
+        "title matched \"design\"",
+        "summary matched \"design\"",
+        "title matched \"to\"",
+        "summary matched \"to\"",
+        "summary matched \"context\"",
+        "path matched \"on\"",
+        "title matched \"on\"",
+        "summary matched \"on\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-041852-Add-installer-flow-that-dete.json",
+      "kind": "recent_task",
+      "title": "Task: Add installer flow that detects running Codex, restarts or guides reload, and opens/launches a h",
+      "summary": "status=completed | project=dinobrain | Implemented a post-install Codex hook approval flow. The installer now creates DinoBrain Codex Hook Approval.cmd and launches it after hook registration unless skipped. The helper detects stale Codex desktop processes, restarts/reopens Codex, copies /hooks to the clipboard, and shows instructions while preserving the requirement that the user manually trusts the hook. Updated th",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 42,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "summary matched \"to\"",
+        "summary matched \"update\"",
+        "path matched \"flow\"",
+        "title matched \"flow\"",
+        "summary matched \"flow\"",
+        "path matched \"on\"",
+        "summary matched \"on\"",
+        "path matched \"installer\"",
+        "title matched \"installer\"",
+        "summary matched \"installer\"",
+        "title matched \"and\"",
+        "summary matched \"and\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-045733-Create-a-version-upgrade-pla.json",
+      "kind": "recent_task",
+      "title": "Task: Create a version upgrade plan for DinoBrain based on the screenshot analysis: add Observatory he",
+      "summary": "status=completed | project=dinobrain | Created a v0.1.5 upgrade plan for DinoBrain focused on Observatory OS health gates, memory lifecycle queues, read trace evidence, graph QA, and recovery/sync risk. No files were changed.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 41,
+      "reasons": [
+        "title matched \"dinobrain\"",
+        "summary matched \"dinobrain\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "title matched \"to\"",
+        "summary matched \"to\"",
+        "path matched \"on\"",
+        "title matched \"on\"",
+        "summary matched \"on\"",
+        "path matched \"version\"",
+        "title matched \"version\"",
+        "summary matched \"and\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-054107-Implement-v0.1.5-Observatory.json",
+      "kind": "recent_task",
+      "title": "Task: Implement v0.1.5 Observatory OS Health Upgrade: inspect current observatory/export/sqlite struct",
+      "summary": "status=completed | project=dinobrain | Implemented and released DinoBrain v0.1.5 Observatory OS Health Upgrade. Added shared graph health generation at .dino/index/graph-health.json, wired it into SQLite index refresh and memory audit snapshots, expanded Observatory with health chips, read trace, node lifecycle, sync risk, and graph-health API, added graph health verification, bumped app/installer/client versions to ",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 41,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "path matched \"observatory\"",
+        "title matched \"observatory\"",
+        "summary matched \"observatory\"",
+        "path matched \"to\"",
+        "title matched \"to\"",
+        "summary matched \"to\"",
+        "path matched \"on\"",
+        "summary matched \"on\"",
+        "summary matched \"version\"",
+        "summary matched \"release\"",
+        "summary matched \"installer\"",
+        "summary matched \"and\""
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260703-041404-Re-check-why-GitHub-Release.json",
+      "kind": "recent_task",
+      "title": "Task: task-20260703-041404-Re-check-why-GitHub-Release-",
+      "summary": "status=completed | Rechecked GitHub release upload after the user noted GitHub updates had worked previously. Found the earlier miss: git credential fill did not expose credentials, but git credential-manager get did return the GitHub token for the logged-in clockmansy account. Used that token only in-process to run npm run release:win -- -Tag v0.1.3 -ReplaceAsset. Created the GitHub release, uploaded DinoBrainSetup.",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 35,
+      "reasons": [
+        "summary matched \"dinobrain\"",
+        "summary matched \"to\"",
+        "path matched \"github\"",
+        "title matched \"github\"",
+        "summary matched \"github\"",
+        "summary matched \"update\"",
+        "path matched \"on\"",
+        "summary matched \"on\"",
+        "path matched \"release\"",
+        "title matched \"release\"",
+        "summary matched \"release\""
+      ]
+    }
+  ]
+}

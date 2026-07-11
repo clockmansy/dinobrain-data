@@ -1,0 +1,22 @@
+{
+  "task_id": "task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB-",
+  "status": "completed",
+  "request": "DinoBrain OS v2 개선 보고서의 P0 항목(DB-03 불용어/토큰화, DB-02 독립 게이트/감사, DB-01 실제 하이브리드 검색/폴백 명칭)을 코드로 반영하고 검증한다.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.0.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-05T05:39:40.832Z",
+  "updated_at": "2026-07-07T11:09:45.933Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-05T05:53:51.180Z",
+  "trace_path": ".dino/traces/task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v1",
+    "reason_code": "started_task_repaired_from_grounded_trace",
+    "settled_at": "2026-07-07T11:09:45.933Z",
+    "trace_path": ".dino/traces/task-20260705-053940-DinoBrain-OS-v2-P0-DB-03-DB.json"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "version": "node_lifecycle_transition_artifact_v1",
+  "transition_id": "node-transition-1783718425450-89608412-4618-461d-8d22-a152724ec11a",
+  "transaction_id": "node-lifecycle-1783718425626-fe04ddcd-00fa-43c7-be8f-4c7e0f92dc75",
+  "target_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-version_release_drift_risk.json",
+  "from_state": null,
+  "to_state": "archived",
+  "reason_code": "accepted_review_attested",
+  "reason": "Existing accepted memory received a durable migration review attestation.",
+  "actor": "codex-mem01-migration-reapply",
+  "evidence_paths": [
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "60_Operations/session-imports/codex-conversation-registry.json"
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md"
+  ],
+  "successor_paths": [
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json"
+  ],
+  "at": "2026-07-10T21:20:25.107Z",
+  "before_sha256": null,
+  "after_sha256": "2777c033340f8334d6e0d81cc3de500ac8656599b538fc4adeb6c4b806a9b38a"
+}

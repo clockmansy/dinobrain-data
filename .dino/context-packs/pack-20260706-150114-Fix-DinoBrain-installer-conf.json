@@ -1,0 +1,169 @@
+{
+  "pack_id": "pack-20260706-150114-Fix-DinoBrain-installer-conf",
+  "pack_type": "standard",
+  "os_version": "2.2.0",
+  "question": "Fix DinoBrain installer/config writer to prevent malformed carriage returns in <machine-local-path> by normalizing line endings, checking for bare CR, and validating TOML after write.",
+  "created_at": "2026-07-06T15:01:14.778Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 12,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "sqlite_shards_v2",
+  "index_path": ".dino/index/sqlite/wiki.sqlite",
+  "indexed_record_count": 6,
+  "index_candidate_count": 12,
+  "index_total_candidate_count": 12,
+  "index_matching_terms": [
+    "after",
+    "prevention"
+  ],
+  "included_item_count": 7,
+  "excluded_record_count": 9,
+  "items": [
+    {
+      "path": ".dino/tasks/task-20260706-150114-Fix-DinoBrain-installer-conf.json",
+      "kind": "recent_task",
+      "title": "Task: Fix DinoBrain installer/config writer to prevent malformed carriage returns in <machine-local-path>",
+      "summary": "status=started | project=dinobrain",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 8.918,
+      "reasons": [
+        "path_matched:fix,installer",
+        "title_matched:fix,installer,config,writer",
+        "chunk_matched:fix,installer,config,writer",
+        "bm25:fix,installer,config,writer,prevent",
+        "dense_lexical:10.82",
+        "rank_fusion:rrf",
+        "rerank_exact_phrase"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/README.md",
+      "kind": "curated_record",
+      "title": "50_Instances/accepted",
+      "summary": "Reviewed instances that are safe to reuse.",
+      "tags": [],
+      "score": 7.116,
+      "reasons": [
+        "chunk_matched:after",
+        "bm25:after",
+        "dense_lexical:0.94",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-083457-Continue-the-active-goal-bui.json",
+      "kind": "recent_task",
+      "title": "Task: Continue the active goal: build an automatic distillation, verification, cleanup loop that promo",
+      "summary": "status=completed | project=dinobrain | Implemented DinoBrain OS v2.2.0 closed-loop compounding: finish_task can run automatic trace-to-behavior-rule distillation, cleanup invalid/duplicate behavior rules, refresh retrieval indexes, and keep auto sync enabled from installer/Codex hook config. Added verify:compounding to prove later memory search/context packs retrieve the promoted rule and memory-on behavior beats mem",
+      "tags": [
+        "recent-task",
+        "completed"
+      ],
+      "score": 4.693,
+      "reasons": [
+        "summary_matched:installer,config,codex",
+        "bm25:installer,config,codex",
+        "dense_lexical:1.41",
+        "rank_fusion:rrf"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-074910-Verify-whether-the-currently.json",
+      "kind": "recent_task",
+      "title": "Task: Verify whether the currently installed DinoBrain follows the full OS loop: Codex hook detection,",
+      "summary": "status=partial | project=dinobrain | Verified the installed/current DinoBrain OS loop against the user's 8-step flow. Codex MCP registration, UserPromptSubmit hook registration, hook simulation/probe, task/context pack creation, wiki_search, finish_task support, v2 verification, and git remotes are present. The complete loop is partially rather than fully autonomous: live current-thread hook injection was not observe",
+      "tags": [
+        "recent-task",
+        "partial"
+      ],
+      "score": 4.62,
+      "reasons": [
+        "title_matched:codex",
+        "summary_matched:user,codex",
+        "chunk_matched:codex",
+        "bm25:user,codex",
+        "dense_lexical:1.01",
+        "rank_fusion:rrf"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-075138-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 4.618,
+      "reasons": [
+        "path_matched:codex",
+        "title_matched:codex",
+        "chunk_matched:codex",
+        "bm25:codex",
+        "dense_lexical:1.13",
+        "rank_fusion:rrf"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-082945-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 4.548,
+      "reasons": [
+        "path_matched:codex",
+        "title_matched:codex",
+        "chunk_matched:codex",
+        "bm25:codex",
+        "dense_lexical:1.13",
+        "rank_fusion:rrf"
+      ]
+    },
+    {
+      "path": ".dino/tasks/task-20260705-083057-DinoBrain-live-Codex-hook-di.json",
+      "kind": "recent_task",
+      "title": "Task: DinoBrain live Codex hook diagnostic probe.",
+      "summary": "status=started | project=dinobrain-hook-diagnose",
+      "tags": [
+        "recent-task",
+        "started"
+      ],
+      "score": 4.48,
+      "reasons": [
+        "path_matched:codex",
+        "title_matched:codex",
+        "chunk_matched:codex",
+        "bm25:codex",
+        "dense_lexical:1.13",
+        "rank_fusion:rrf"
+      ]
+    }
+  ]
+}

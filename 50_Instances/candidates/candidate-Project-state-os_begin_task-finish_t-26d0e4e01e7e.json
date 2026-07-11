@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-Project-state-os_begin_task-finish_t-26d0e4e01e7e",
+  "status": "pending_review",
+  "claim": "Project state: os_begin_task, finish_task, wiki_search, search_memory 같은 도구가 양쪽에서 직접 노출되는지 검증.",
+  "category": "project_state",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "os_begin_task, finish_task, wiki_search, search_memory 같은 도구가 양쪽에서 직접 노출되는지 검증.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-123940-a3a334ed9ce2.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-123940-a3a334ed9ce2",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "medium",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "project_state",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-123940-a3a334ed9ce2",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T12:39:41.011Z",
+  "updated_at": "2026-07-07T12:39:41.011Z"
+}

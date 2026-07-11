@@ -1,0 +1,15 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 2,
+  "event": "backup_verified",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "5a215d84475db80756e2e5547aa264aa75556af386f135665d3c017f71b28bf2",
+  "payload": {
+    "artifact_count": 398,
+    "backed_up_count": 221,
+    "backup_policy": "local_only_exact_bytes",
+    "recovery_ref": "refs/dinobrain-recovery/task-lifecycle/task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862"
+  },
+  "entry_sha256": "a1f574030934ac1cec4a1c9b225992594cbbbf337eafc36455d33caefdcc9c7e"
+}

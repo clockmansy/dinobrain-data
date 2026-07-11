@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-003541-Read-only-audit-focused-on-d",
+  "status": "completed",
+  "request": "Read-only audit focused on durable source/provenance/source-chunk-claim lineage and graph-health. Inspect graph-health, provenance records, source chunks, accepted memories. Compare to verified RAG guidance. Return P0/P1 findings with file/line evidence, fixes, and consensus candidate statements. Do not edit files.",
+  "project": "dinobrain",
+  "mode": "deep",
+  "sensitivity": "normal",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T00:35:41.322Z",
+  "updated_at": "2026-07-07T00:39:43.618Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "conditional",
+  "finished_at": "2026-07-07T00:39:43.618Z",
+  "trace_path": ".dino/traces/task-20260707-003541-Read-only-audit-focused-on-d.json"
+}

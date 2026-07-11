@@ -1,0 +1,67 @@
+{
+  "memory_id": "task-memory-task-20260706-160650-Completion-Reviewer-05-prove",
+  "type": "task_summary_memory",
+  "status": "held",
+  "title": "Task outcome: Completion Reviewer 05 provenance/source truth lens: independently inspect <machine-local-path>",
+  "summary": "Completed read-only provenance/source-truth completion review. Finding: DinoBrain has app-side tools and docs for source chunks, provenance links, lifecycle repair, provenance-aware reranking, and memory-use trust audits, but the current data vault contains no durable source chunks or .dino/provenance records; all accepted JSON records point only to internal task traces. Completion requires separating memory provenance from factual source truth, adding durable external/internal source chunks with citation metadata, requiring accepted claims to link to source chunks or verified trace evidence, regenerating/validating graph/provenance health against the current accepted corpus, and treating trust_score as evidence-chain quality rather than truth.",
+  "claim": "Task outcome for dinobrain: Completed read-only provenance/source-truth completion review. Finding: DinoBrain has app-side tools and docs for source chunks, provenance links, lifecycle repair, provenance-aware reranking, and memory-use trust audits, but the current data vault contains no durable source chunks or .dino/provenance records; all accepted JSON records point only to internal task traces. Completion requires separating memory provenance from factual source truth, adding durable external/internal source chunks with citation metadata, requiring accepted claims to link to source chunks or verified trace evidence, ",
+  "request": "Completion Reviewer 05 provenance/source truth lens: independently inspect <machine-local-path> and app repo read-only; derive completion requirements around durable sources, claims vs memories, source chunks, external evidence, citations, trust scoring; review accepted instances, operations, traces/context packs/events, docs/code; return evidence inspected, user direction, completion conditions, risks, explicit AGREE/DISAGREE.",
+  "outcome": "completed",
+  "decisions": [
+    "Do not treat accepted behavior memories as source-truth citations by default; they prove prior agent/task claims, not external factual correctness.",
+    "All currently inspected accepted records are source_status=internal and resolve to .dino/traces/*; this is acceptable for agent behavior memory but insufficient for external facts or public claims.",
+    "Completion should require real 30_Sources/chunks/* records plus .dino/provenance/* links for factual claims, external evidence, citations, and last_verified metadata.",
+    "Graph/provenance health is currently stale or incomplete: graph-health reports zero accepted instances while wiki-index contains the accepted corpus, so completion requires regenerated health metrics and failing checks for missing source chunks/provenance.",
+    "Trust scoring should remain an audit of provided/declared/observed memory use, not a truth score."
+  ],
+  "next_steps": [
+    "Implement or run a provenance backfill/review pass that classifies accepted records into behavior memory, local operational fact, external fact, and public/user-sensitive claim.",
+    "Create durable source chunks and provenance links for external factual claims and high-risk operational claims, with source_uri, chunk_text, last_verified, and citation fields.",
+    "Update graph-health/Observatory completion gates so missing 30_Sources/chunks and .dino/provenance records are visible and fail source-truth readiness.",
+    "Add verification that Context Packs can return citations/source chunks alongside accepted memories and distinguish memory evidence from source evidence."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/behavior-rule-26279e80576aba65.json",
+    "50_Instances/accepted/behavior-rule-78751921656331b2.json",
+    "50_Instances/accepted/behavior-rule-fcf6818bc60130f5.json",
+    "50_Instances/accepted/behavior-rule-9887d405bd1916cf.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260706-160652-Completion-Reviewer-05-prove.json"
+  ],
+  "evidence": {
+    "source": ".dino/traces/task-20260706-160650-Completion-Reviewer-05-prove.json",
+    "snippet": "Completed read-only provenance/source-truth completion review. Finding: DinoBrain has app-side tools and docs for source chunks, provenance links, lifecycle repair, provenance-aware reranking, and memory-use trust audits, but the current data vault contains no durable source chunks or .dino/provenance records; all accepted JSON records point only to internal task traces. Completion requires separating memory provenance from factual source truth, adding durable external/internal source chunks with citation metadata, requiring accepted claims to link to source chunks or verified trace evidence, regenerating/validating graph/provenance health against the current accepted corpus, and treating trust_score as evidence-chain quality rather than truth."
+  },
+  "source_status": "internal",
+  "confidence": "medium",
+  "tags": [
+    "auto-growth",
+    "task-outcome",
+    "outcome:completed",
+    "project:dinobrain"
+  ],
+  "auto_generated": true,
+  "created_at": "2026-07-06T16:11:00.055Z",
+  "updated_at": "2026-07-07T11:04:51.173Z",
+  "source": {
+    "trace_path": ".dino/traces/task-20260706-160650-Completion-Reviewer-05-prove.json",
+    "task_id": "task-20260706-160650-Completion-Reviewer-05-prove",
+    "task_path": ".dino/tasks/task-20260706-160650-Completion-Reviewer-05-prove.json"
+  },
+  "accepted_at": "2026-07-06T16:11:00.055Z",
+  "source_operation_path": "60_Operations/task-summaries/task-memory-task-20260706-160650-Completion-Reviewer-05-prove.json",
+  "candidate_id": "task-memory-task-20260706-160650-Completion-Reviewer-05-prove",
+  "auto_promote": false,
+  "legacy_accepted_path": "50_Instances/accepted/task-memory-task-20260706-160650-Completion-Reviewer-05-prove.json",
+  "migration_reason": "legacy_auto_generated_accepted_without_review_lineage",
+  "promotion_blockers": [
+    "manual_review_required",
+    "legacy_unreviewed_accepted"
+  ],
+  "quarantine": true,
+  "hold_reason": "legacy_accepted_memory_needs_review_lineage",
+  "review_notes": "Auto-held legacy unreviewed generated memory so it stays out of hot retrieval until lineage is manually confirmed.",
+  "reviewed_by": "review-settlement:auto-hold",
+  "reviewed_at": "2026-07-07T11:04:51.173Z"
+}

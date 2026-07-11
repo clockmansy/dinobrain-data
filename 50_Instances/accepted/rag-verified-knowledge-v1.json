@@ -1,0 +1,140 @@
+{
+  "memory_id": "rag-verified-knowledge-v1",
+  "type": "verified_knowledge_pack",
+  "status": "held",
+  "title": "Verified RAG methodology knowledge pack v1",
+  "summary": "Directly opened user-supplied RAG methodology links and supplemental component docs, then distilled them through 10-agent cross-review into accepted DinoBrain RAG knowledge.",
+  "claim": "DinoBrain should treat RAG as a source/chunk/claim-provenance loop: ingest and index bounded source units, retrieve with honest sparse+dense or lexical-fallback labeling, rerank bounded candidates, evaluate retrieval and behavior separately, and promote only reviewed claims into memory.",
+  "accepted_claims": [
+    "Core RAG separates ingestion/indexing from query-time retrieval and generation.",
+    "RAG improves grounding only when retrieved context is relevant, trustworthy, and authorized; it is not a truth guarantee.",
+    "Durable RAG needs source/chunk/claim provenance and citations, not unverified URL anchors.",
+    "Chunking is application-specific; long documents should be split into stable retrievable units with parent metadata.",
+    "Contextual Retrieval is ingestion-time chunk enrichment and must be locally evaluated before its performance claims are generalized.",
+    "Hybrid retrieval should combine real sparse/BM25 and real dense vector retrieval with fusion; lexical-only fallback must be labeled as fallback.",
+    "Reranking should run after bounded candidate retrieval/fusion; it improves precision but cannot recover missing candidates.",
+    "HyDE and RAPTOR are optional retrieval-support methods; Reflexion is agent feedback memory, not core RAG.",
+    "GraphRAG is a graph overlay for multi-hop and cross-document synthesis, not a universal replacement for ordinary retrieval.",
+    "Evaluation must separately measure retrieval quality, answer faithfulness/relevance, task success, memory-on/off deltas, and latency.",
+    "Managed knowledge-base products are provider adapters with different lifecycle, ACL, citation, region, cost, and observability behavior.",
+    "Current OpenAI Retrieval guide is authoritative for OpenAI retrieval behavior; the embeddings QA cookbook is conceptual background."
+  ],
+  "hold_claims": [
+    "Lewis RAG paper architecture details are paper-specific historical context.",
+    "Anthropic Contextual Retrieval performance deltas are benchmark-specific until DinoBrain canaries reproduce gains.",
+    "Cloud provider feature claims can drift and should remain source-bound.",
+    "MTEB and STS are embedding priors, not proof of DinoBrain memory-loop quality."
+  ],
+  "rejected_generalizations": [
+    "RAG guarantees truth.",
+    "URL anchors alone are verified knowledge.",
+    "Lexical fallback is equivalent to dense hybrid retrieval.",
+    "Reranking fixes missing recall.",
+    "More stored memory automatically improves behavior.",
+    "HyDE, RAPTOR, Reflexion, GraphRAG, and managed KB products are mandatory core RAG components."
+  ],
+  "verification": {
+    "verified_at": "2026-07-07T00:45:00Z",
+    "method": "direct_url_review_plus_10_subagent_cross_review",
+    "direct_user_source_count": 20,
+    "supplemental_source_count": 13,
+    "raw_full_pages_stored": false,
+    "cross_review_agent_ids": [
+      "019f39ef-3f62-7ba2-9cd2-f6ca78130407",
+      "019f39ef-bcc0-7da3-98b6-bc3a2d52741f",
+      "019f39ef-e14b-7010-a775-6c71cc87b4be",
+      "019f39f0-0615-76c0-86b5-bbc4a08afe31",
+      "019f39f0-2dc7-70b2-9cd1-b059d7311ec5",
+      "019f39f0-5b46-70a1-b837-e6f1ae096970",
+      "019f39f4-4db8-7232-b7d2-6a14f54b1807",
+      "019f39f4-7420-7513-b0cd-ac0161dec5e7",
+      "019f39f4-a879-7cb1-984d-b2e48b9abcc3",
+      "019f39f4-df58-79c0-a995-531732f7250e"
+    ],
+    "accepted_knowledge_path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "operation_report_path": "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  },
+  "source_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "source_status": "verified_summary",
+  "confidence": "high",
+  "tags": [
+    "rag",
+    "verified-knowledge",
+    "llm-wiki",
+    "source-lineage",
+    "retrieval-quality",
+    "hybrid-search",
+    "reranking",
+    "evaluation",
+    "graph-rag"
+  ],
+  "created_at": "2026-07-07T00:45:00Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/RAG-Verified-Knowledge-Base.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json",
+  "review_status": "accepted_by_agent_review",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-07T00:45:00Z",
+  "node_id": "rag-verified-knowledge-v1",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "held",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425452-bfa2193f-4198-4a7d-bd7a-f4976bbe7884",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425452-71be6151-191a-4614-9da7-b29efb7adf32",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/rag-verified-knowledge-v1.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md",
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/RAG-Verified-Knowledge-Base.md",
+        "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    },
+    {
+      "transition_id": "node-transition-1783718425452-bfa2193f-4198-4a7d-bd7a-f4976bbe7884",
+      "idempotency_key": "accepted-gate-failed|50_Instances/accepted/rag-verified-knowledge-v1.json|held",
+      "from_state": "accepted",
+      "to_state": "held",
+      "reason_code": "accepted_held",
+      "reason": "Accepted memory failed lifecycle gate: durable_external_provenance_missing, unsupported_pressure",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json",
+        "20_Wiki/RAG-Verified-Knowledge-Base.md",
+        "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+        "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/RAG-Verified-Knowledge-Base.md",
+        "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json"
+  ],
+  "successor_paths": [],
+  "quarantine": false,
+  "hold_reason": "durable_external_provenance_missing,unsupported_pressure",
+  "held_by": "codex-mem01-migration-reapply",
+  "held_at": "2026-07-10T21:20:25.107Z"
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "task-20260707-125918-You-are-Role-9-install-new-P",
+  "status": "blocked",
+  "request": "You are Role 9 install/new-PC/release parity reviewer. Read [REDACTED_MACHINE_LOCAL_PATH] especially P2-12 and Global Acceptance Tests. Judge whether Role 9 installer/release objections are fully addressed. You must return a non-empty JSON object on one line with keys reviewer_id, verdict, final_agree, reason. verdict must be AGREE or REVISE_REQUIRED. No edits.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T12:59:18.505Z",
+  "updated_at": "2026-07-10T16:38:35.992Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-10T16:38:35.992Z",
+  "trace_path": ".dino/traces/task-20260707-125918-You-are-Role-9-install-new-P.json",
+  "lifecycle_settlement": {
+    "version": "task_lifecycle_settlement_v2",
+    "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+    "reason_code": "stale_task_without_trace_blocked",
+    "settled_at": "2026-07-10T16:38:35.992Z",
+    "trace_path": ".dino/traces/task-20260707-125918-You-are-Role-9-install-new-P.json"
+  }
+}

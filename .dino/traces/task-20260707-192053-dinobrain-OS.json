@@ -1,0 +1,46 @@
+{
+  "task_id": "task-20260707-192053-dinobrain-OS",
+  "outcome": "completed",
+  "summary": "Improved DinoBrain Observatory Knowledge Graph into a denser SecondBrain-style map: added operation graph relationships from context packs and finish traces to used memory paths, upgraded visual hierarchy with cluster labels and depth layers, added curved animated edges, live flow particles, hover/click focus, memory-link stats, and regression coverage for trace/context/memory graph edges.",
+  "growth_policy": "trace_only",
+  "changed_files": [
+    "scripts/dinobrain-observatory.mjs",
+    "scripts/verify-observatory-live-graph.mjs",
+    "reports/observatory-graph-redesign-20260708.png"
+  ],
+  "decisions": [
+    "Keep this as an Observatory visualization/data relationship change; do not alter core OS retrieval or memory lifecycle logic.",
+    "Expose context_pack -> memory and trace -> used_memory links so the graph shows actual OS memory usage, not just decorative folders.",
+    "Use curved animated edges, cluster backdrops, labels, hover focus, and click selection to improve graph readability without returning to the earlier dinosaur-shape layout.",
+    "Extend observatory:verify so future regressions must preserve active task, context pack, trace, retrieves_memory, and used_memory graph edges."
+  ],
+  "next_steps": [
+    "Review stale active task buildup separately; the screenshot shows 41 active tasks, which is outside this design pass but affects visual noise.",
+    "If the user wants another visual pass, add density controls for live/tasks/tags and a memory-only focus filter."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-192054-dinobrain-OS.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-192053-2dc49e5d7376.json"
+  ],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T19:29:26.859Z"
+}

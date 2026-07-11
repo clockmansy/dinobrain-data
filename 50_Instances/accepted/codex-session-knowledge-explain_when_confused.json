@@ -1,0 +1,204 @@
+{
+  "memory_id": "codex-session-knowledge-explain_when_confused",
+  "type": "codex_session_knowledge",
+  "status": "accepted",
+  "review_status": "accepted_by_agent_review",
+  "memory_kind": "user_preference",
+  "title": "Explain unfamiliar work in plain language",
+  "aliases": [
+    "낯선 작업 쉽게 설명",
+    "원인 결과 다음 행동 설명",
+    "낯선 경고 전문용어 대신 원인 결과 다음 행동 쉽게 설명",
+    "모르는 작업을 쉬운 한국어로 설명"
+  ],
+  "claim": "The user asks for plain explanations when a task, state, or warning is unclear, and wants the practical meaning rather than jargon.",
+  "reusable_rule": "When the user asks what something means or why it happened, explain the concrete cause, consequence, and next action in plain Korean.",
+  "scope": "communication",
+  "confidence": "medium",
+  "source_status": "internal",
+  "sensitivity": "normal",
+  "tags": [
+    "codex-session-derived",
+    "user-preference",
+    "explanation",
+    "korean"
+  ],
+  "evidence": {
+    "source": "20_Wiki/Codex-Conversation-Registry.md",
+    "source_report": "60_Operations/session-imports/codex-conversation-registry.json",
+    "extraction_report": "60_Operations/session-promotions/codex-session-knowledge-promotion.json",
+    "evidence_kind": "metadata_only_pattern_aggregate",
+    "raw_full_transcript_stored": false,
+    "message_content_stored": false,
+    "source_session_count": 8,
+    "user_hit_count": 11,
+    "assistant_hit_count": 3,
+    "weighted_score": 47,
+    "session_refs": [
+      "sess-1e95eea1be108d",
+      "sess-24d8b03c383495",
+      "sess-2d27e1d180db6c",
+      "sess-458b19a1a1cdf1",
+      "sess-4e95f4fc22803b",
+      "sess-62f7b9754a9734",
+      "sess-80c93d7848697c",
+      "sess-dbfab8fd32cc5f"
+    ],
+    "message_hashes": [
+      {
+        "session_ref": "sess-24d8b03c383495",
+        "role": "user",
+        "message_hash": "421ff2064c50e027cf63c6a2",
+        "char_count": 491
+      },
+      {
+        "session_ref": "sess-80c93d7848697c",
+        "role": "user",
+        "message_hash": "942d6f73e4d17e2309cb662f",
+        "char_count": 3835
+      },
+      {
+        "session_ref": "sess-62f7b9754a9734",
+        "role": "user",
+        "message_hash": "f0b8ce9de60a779df3b3ddc7",
+        "char_count": 1143
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "ad40c9d77011d6d322d9d149",
+        "char_count": 8
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "4cbaf811474a8dc10da3e339",
+        "char_count": 19
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "6862ffa160a5ece401ca74eb",
+        "char_count": 16
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "6a1c2434c58a163b6517c0af",
+        "char_count": 4568
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "9183523672415160e2771fd4",
+        "char_count": 6441
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "5bb8e348f53a930f3d95da55",
+        "char_count": 179
+      },
+      {
+        "session_ref": "sess-1e95eea1be108d",
+        "role": "user",
+        "message_hash": "299a828be31f3ac9aa4e3a36",
+        "char_count": 18
+      },
+      {
+        "session_ref": "sess-458b19a1a1cdf1",
+        "role": "user",
+        "message_hash": "ad40c9d77011d6d322d9d149",
+        "char_count": 8
+      },
+      {
+        "session_ref": "sess-2d27e1d180db6c",
+        "role": "assistant",
+        "message_hash": "70048505b5d377263ae46b72",
+        "char_count": 4617
+      },
+      {
+        "session_ref": "sess-dbfab8fd32cc5f",
+        "role": "assistant",
+        "message_hash": "8c52ca34447b561e884a8f24",
+        "char_count": 6782
+      },
+      {
+        "session_ref": "sess-4e95f4fc22803b",
+        "role": "assistant",
+        "message_hash": "f43dd18720d37432abcd3760",
+        "char_count": 314
+      }
+    ],
+    "matched_terms": [
+      "무슨\\s*말|뭔말|무슨작업|왜\\s*그래|자세히\\s*설명|이게\\s*뭐|what.*mean|explain"
+    ],
+    "projects_seen": [
+      {
+        "project": "dinobrain",
+        "count": 11
+      },
+      {
+        "project": "Project_J",
+        "count": 1
+      },
+      {
+        "project": "you-are-a-senior-full-stack",
+        "count": 1
+      },
+      {
+        "project": "build-a-local-tool-for-creating",
+        "count": 1
+      }
+    ]
+  },
+  "promotion": {
+    "promoted_by": "codex-session-knowledge-promoter",
+    "promotion_policy": "paraphrased_public_safe_aggregate",
+    "required_checks": [
+      "no_raw_message_text",
+      "no_absolute_local_source_paths",
+      "redacted_hash_evidence_only",
+      "session_registry_exists"
+    ],
+    "accepted_at": "2026-07-06T23:29:34.574Z"
+  },
+  "created_at": "2026-07-06T23:29:34.574Z",
+  "updated_at": "2026-07-10T21:20:25.107Z",
+  "source_candidate_path": "20_Wiki/Codex-Conversation-Registry.md",
+  "source_review_path": "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json",
+  "reviewed_by": "codex-mem01-migration-reapply",
+  "reviewed_at": "2026-07-06T23:29:34.574Z",
+  "node_id": "codex-session-knowledge-explain_when_confused",
+  "lifecycle_version": "node_lifecycle_v3",
+  "lifecycle_state": "accepted",
+  "lifecycle_state_entered_at": "2026-07-10T21:20:25.107Z",
+  "lifecycle_last_transition_id": "node-transition-1783718425440-5996a76c-ed4d-4cc4-9bfc-d46d8176bc01",
+  "lifecycle_history": [
+    {
+      "transition_id": "node-transition-1783718425440-5996a76c-ed4d-4cc4-9bfc-d46d8176bc01",
+      "idempotency_key": "accepted-migration|50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+      "from_state": null,
+      "to_state": "accepted",
+      "reason_code": "invalid_lifecycle_rebuilt",
+      "reason": "Rebuild malformed lifecycle before classification: lifecycle_version_invalid,lifecycle_state_invalid,lifecycle_history_missing,lifecycle_state_entered_at_invalid,lifecycle_node_id_missing,predecessor_paths_invalid,successor_paths_invalid",
+      "actor": "codex-mem01-migration-reapply",
+      "evidence_paths": [
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json",
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "60_Operations/session-imports/codex-conversation-registry.json"
+      ],
+      "predecessor_paths": [
+        "20_Wiki/Codex-Conversation-Registry.md",
+        "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json"
+      ],
+      "successor_paths": [],
+      "at": "2026-07-10T21:20:25.107Z"
+    }
+  ],
+  "predecessor_paths": [
+    "20_Wiki/Codex-Conversation-Registry.md",
+    "80_Review_Queue/lifecycle-migration/codex-session-knowledge-explain_when_confused.json"
+  ],
+  "successor_paths": []
+}

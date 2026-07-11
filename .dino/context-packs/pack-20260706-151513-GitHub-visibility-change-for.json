@@ -1,0 +1,190 @@
+{
+  "pack_id": "pack-20260706-151513-GitHub-visibility-change-for",
+  "pack_type": "standard",
+  "os_version": "2.2.0",
+  "question": "GitHub visibility change for clockmansy/dinobrain from private to public; need repo target, prior public/private decisions, release/data repo caveats.",
+  "created_at": "2026-07-06T15:15:13.556Z",
+  "ranking_inputs": [
+    "chunk context",
+    "BM25 sparse retrieval",
+    "dense-lite lexical fallback",
+    "reciprocal rank fusion",
+    "provenance-aware reranking",
+    "recent task records"
+  ],
+  "source_roots": [
+    "20_Wiki",
+    "30_Sources",
+    "40_Projects",
+    "50_Instances/accepted",
+    "60_Operations",
+    "70_Error_Book"
+  ],
+  "recent_task_limit": 10,
+  "candidate_records_excluded": true,
+  "review_queue_excluded": true,
+  "scanned_record_count": 108,
+  "retrieval_mode": "lexical_fallback_v2",
+  "candidate_source": "wiki_index_v2",
+  "index_path": ".dino/index/wiki-index.json",
+  "indexed_record_count": 138,
+  "index_candidate_count": 108,
+  "index_total_candidate_count": 108,
+  "index_matching_terms": [
+    "changed",
+    "changes",
+    "clockmansy",
+    "data",
+    "data-model",
+    "data-specific",
+    "data-vault",
+    "dataref",
+    "decisions",
+    "dinobrain",
+    "dinobrain_auto_compound",
+    "dinobrain-created",
+    "dinobrain-data",
+    "dinobrainsetup",
+    "github",
+    "github_token",
+    "live-data",
+    "live-data-driven",
+    "metadata",
+    "needs",
+    "private",
+    "release",
+    "release-ready",
+    "release-windows",
+    "released",
+    "releases",
+    "repo",
+    "report",
+    "reported",
+    "reports",
+    "repos",
+    "repository",
+    "self-report",
+    "target",
+    "targets",
+    "task-20260703-041404-re-check-why-github-release",
+    "task-20260703-085839-improve-the-dinobrain-observ",
+    "task-20260703-092603-take-the-dinobrain-observato",
+    "task-20260705-015049-redesign-dinobrain-observato",
+    "task-20260705-020713-implement-dinobrain-v2-found",
+    "task-20260705-022738-qa-code-review-dinobrain-v2",
+    "task-20260705-053940-dinobrain-os-v2-p0-db-03-db",
+    "task-20260705-075637-assess-whether-dinobrain-s-c",
+    "task-20260706-150114-fix-dinobrain-installer-conf",
+    "task-memory-task-20260706-150114-fix-dinobrain-installer-conf",
+    "unchanged"
+  ],
+  "included_item_count": 5,
+  "excluded_record_count": 143,
+  "items": [
+    {
+      "path": "50_Instances/accepted/behavior-rule-4dc511d805a5bfb7.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Rechecked GitHub release upload after the user noted GitHub updates had worked previously. Found the earlier miss: git credential fill did not expose credentials, but git credential-manager get did return the GitHub token for the logged-in clockmansy account. Used that token only in-process to run npm run release:win -- -Tag v0.1.3 -ReplaceAsset. Created the GitHub release, uploaded DinoBrainSetup.zip and DinoBrainSetup.zip.sha256, then verified by downloading the private asset through the GitHub asset API and comparing SHA256 hashes.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Rechecked GitHub release upload after the user noted GitHub updates had worked previously. Found the earlier miss: git credential fill did not expose credentials, but git credential-manager get did return the GitHub token for the logged-in clockmansy account. Used that token only in-process to run npm run release:win -- -Tag v0.1.3 -ReplaceAsset. Created the",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 7.488,
+      "reasons": [
+        "title_matched:github,clockmansy,dinobrain,private",
+        "summary_matched:github,clockmansy,release",
+        "chunk_matched:github,clockmansy,dinobrain,release",
+        "bm25:github,clockmansy,private,release",
+        "dense_lexical:1.24",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-1869cd6b89e0ffca.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Publish v0.1.5 from commit 39f3d608cdf28e285328f3fb54ab8846a8d99e06 and verify the private GitHub Release asset through the asset API rather than relying on browser download URLs.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Publish v0.1.5 from commit 39f3d608cdf28e285328f3fb54ab8846a8d99e06 and verify the private GitHub Release asset through the asset API rather than relying on browser download URLs. | Evidence: Publish v0.1.5 from commit 39f3d608cdf28e285328f3fb54ab8846a8d99e06 and verify the private GitHub Release asset through the asset API rather than relying on browser dow",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 7.342,
+      "reasons": [
+        "title_matched:github,private,release",
+        "summary_matched:github,private,release",
+        "chunk_matched:github,private,release",
+        "bm25:github,private,release",
+        "dense_lexical:1.25",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-14b2ee6df68bb7bd.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Keep data repo sync as dry-run/manual-review only per project policy; release app repo separately from operational memory changes.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Keep data repo sync as dry-run/manual-review only per project policy; release app repo separately from operational memory changes. | Evidence: Keep data repo sync as dry-run/manual-review only per project policy; release app repo separately from operational memory changes.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:high"
+      ],
+      "score": 7.341,
+      "reasons": [
+        "title_matched:change,repo,release,data",
+        "summary_matched:change,repo,release,data",
+        "chunk_matched:change,repo,release,data",
+        "bm25:repo,release,data",
+        "dense_lexical:1.22",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-d55011c3f8b7399b.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Review DinoBrain data repo changes before any data commit/push; git_sync classified all 32 current data changes as requires_review.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Review DinoBrain data repo changes before any data commit/push; git_sync classified all 32 current data changes as requires_review. | Evidence: Review DinoBrain data repo changes before any data commit/push; git_sync classified all 32 current data changes as requires_review.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:medium"
+      ],
+      "score": 7.202,
+      "reasons": [
+        "title_matched:change,dinobrain,repo,data",
+        "summary_matched:change,dinobrain,repo,data",
+        "chunk_matched:change,dinobrain,repo,data",
+        "bm25:dinobrain,repo,data",
+        "dense_lexical:1.17",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    },
+    {
+      "path": "50_Instances/accepted/behavior-rule-6c036a284626f41a.json",
+      "kind": "curated_record",
+      "title": "Behavior rule: In similar future work, apply this decision: Review DinoBrain data repo dry-run changes before syncing; git_sync reported 11 changed files requiring review and did not commit or push data.",
+      "summary": "Behavior rule: In similar future work, apply this decision: Review DinoBrain data repo dry-run changes before syncing; git_sync reported 11 changed files requiring review and did not commit or push data. | Evidence: Review DinoBrain data repo dry-run changes before syncing; git_sync reported 11 changed files requiring review and did not commit or push data.",
+      "tags": [
+        "behavior-rule",
+        "auto-compounded",
+        "confidence:low"
+      ],
+      "score": 7.182,
+      "reasons": [
+        "title_matched:change,dinobrain,repo,data",
+        "summary_matched:change,dinobrain,repo,data",
+        "chunk_matched:change,dinobrain,repo,data",
+        "bm25:dinobrain,repo,data",
+        "dense_lexical:1.16",
+        "rank_fusion:rrf",
+        "rerank_provenance_boost"
+      ]
+    }
+  ]
+}

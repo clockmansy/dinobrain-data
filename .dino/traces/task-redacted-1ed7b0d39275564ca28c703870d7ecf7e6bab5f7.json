@@ -1,0 +1,45 @@
+{
+  "task_id": "task-redacted-fd064e6b01f1a551cf1f878790075b65b37d842c",
+  "outcome": "completed",
+  "summary": "Read-only P1-11 UI/observability comparison completed. Current observatory has graph-first UI and existing graph verifier passes, but visible UI is not P1-11 compliant: most required Korean status bands, stale/latest markers, evidence paths, remediation fields, and node-to-evidence drilldowns are missing from the structured UI; existing verifier is API-only for graph/state/health and does not assert the full Korean DOM/screenshot band set.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "No files edited.",
+    "Used bundled Node runtime because node/npm are not on PATH.",
+    "Treat current UI as partial graph visibility, not P1-11 readiness."
+  ],
+  "next_steps": [
+    "Add Korean status bands for every required P0/P1/final-readiness state.",
+    "Wire observatory/API to current state artifacts and remediation fields.",
+    "Add DOM/screenshot verifier for the full band set."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+    "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-redacted-13cb168bb0ef1117592a1a9407c3f4c83f3ccf06.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-113756-ccd86e59398a.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-Project-state-Compare-P1-11-Korean-G-63f9846ab9a1.json",
+    "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-a291797ac262.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 2,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T11:41:39.635Z"
+}

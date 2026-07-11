@@ -1,0 +1,16 @@
+{
+  "task_id": "task-20260707-124559-Role-3-native-instruction-au",
+  "status": "completed",
+  "request": "Role 3: native instruction authority/drift reviewer. DinoBrain OS unfinished improvement plan consensus review. Inspect user memories and current code/docs for AGENTS/CLAUDE/custom instruction scanning, native_memory_drift/wrong_memory_reference style evidence, and whether this is represented in completion gates. Required files include MEMORY.md, docs/OS_COMPLETION_CONDITIONS.md, docs/VERIFICATION.md, AGENTS.md, install/docs related to Claude/Codex hooks, and rg searches for native/AGENTS/CLAUDE/drift. Candidate plan has P0-05 native instruction authority gate. Return AGREE or REVISE_REQUIRED. No edits.",
+  "project": "dinobrain",
+  "mode": "standard",
+  "sensitivity": "unknown",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "created_at": "2026-07-07T12:45:59.382Z",
+  "updated_at": "2026-07-07T12:47:12.719Z",
+  "data_root": "<machine-local-path>",
+  "sync_policy": "blocked_until_review",
+  "finished_at": "2026-07-07T12:47:12.719Z",
+  "trace_path": ".dino/traces/task-20260707-124559-Role-3-native-instruction-au.json"
+}

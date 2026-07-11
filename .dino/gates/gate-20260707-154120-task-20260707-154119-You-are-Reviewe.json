@@ -1,0 +1,42 @@
+{
+  "gate_id": "gate-20260707-154120-task-20260707-154119-You-are-Reviewe",
+  "os_version": "2.2.1",
+  "contract": "dinobrain_os_v2",
+  "task_id": "task-20260707-154119-You-are-Reviewer-R7-node-lif",
+  "request": "You are Reviewer R7: node lifecycle, sync safety, GitHub recovery reviewer for DinoBrain. Work read-only. Inspect <machine-local-path> docs\\OS_REMAINING_GAPS_CONSENSUS_PLAN.md, docs\\OS_COMPLETION_CONDITIONS.md, docs\\SYNC_POLICY.md, docs\\VERIFICATION.md, install.ps1, lifecycle/sync code found by rg 'auto_sync|git_sync|apply_node_lifecycle|sync_policy|task:lifecycle|settle', and relevant data state artifacts. Judge whether the unfinished-work plan completion conditions are enough for merge/promote/hold/delete/provenance, policy push, data safety, reinstall/idempotence, and new-PC/GitHub equivalence. Return reviewer_id=R7, verdict=AGREE or REVISE_REQUIRED, blocking_objections[], required_doc_changes[], evidence_files[].",
+  "generated_at": "2026-07-07T15:41:20.147Z",
+  "context_pack_path": ".dino/context-packs/pack-20260707-154120-You-are-Reviewer-R7-node-lif.json",
+  "context_item_count": 7,
+  "status": "block",
+  "fail_closed": true,
+  "gates": [
+    {
+      "id": "sensitive_prompt",
+      "level": "warn",
+      "reason": "The request or hook input was marked sensitive.",
+      "safe_action": "Do not store secrets or raw full transcripts; keep sync blocked until review."
+    },
+    {
+      "id": "destructive_action_risk",
+      "level": "block",
+      "reason": "The request may delete or reset durable data.",
+      "safe_action": "Require explicit confirmation and a backup/sync risk check before destructive execution."
+    },
+    {
+      "id": "backup_sync_risk",
+      "level": "warn",
+      "reason": "The request touches sync, release, deployment, or backup behavior.",
+      "safe_action": "Run git_sync dry-run or installer/version alignment checks before publishing."
+    },
+    {
+      "id": "finish_task_required",
+      "level": "warn",
+      "reason": "Every started OS task must be closed with finish_task.",
+      "safe_action": "Keep the task visible as active/pending until finish_task writes a trace."
+    }
+  ],
+  "effective_sensitivity": "unknown",
+  "reported_sensitivity": "unknown",
+  "detected_sensitivity": "normal",
+  "sensitivity_hits": []
+}

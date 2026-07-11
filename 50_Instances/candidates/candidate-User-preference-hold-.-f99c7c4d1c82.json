@@ -1,0 +1,33 @@
+{
+  "candidate_id": "candidate-User-preference-hold-.-f99c7c4d1c82",
+  "status": "pending_review",
+  "claim": "User preference: 사용자의 교정/판단이 다음 세션 행동 기준으로 승격되는지, 병합/hold/삭제 후보/리뷰큐 조건이 충분한지 검토하세요.",
+  "category": "user_preference",
+  "temperature": "hot",
+  "evidence": {
+    "snippet": "사용자의 교정/판단이 다음 세션 행동 기준으로 승격되는지, 병합/hold/삭제 후보/리뷰큐 조건이 충분한지 검토하세요.",
+    "source": "10_Conversations/raw/session-Codex-prompt-20260707-162912-50c08f7408aa.json#m0001",
+    "source_session_id": "session-Codex-prompt-20260707-162912-50c08f7408aa",
+    "message_id": "m0001",
+    "message_role": "user"
+  },
+  "confidence": "high",
+  "last_verified": "2026-07-07",
+  "source_status": "internal",
+  "tags": [
+    "session-import",
+    "user_preference",
+    "temperature:hot",
+    "project:dinobrain"
+  ],
+  "task_id": null,
+  "session_id": "session-Codex-prompt-20260707-162912-50c08f7408aa",
+  "sensitivity": "unknown",
+  "auto_promote": false,
+  "promotion_blockers": [
+    "manual_review_required",
+    "session_extraction_v0"
+  ],
+  "created_at": "2026-07-07T16:29:13.334Z",
+  "updated_at": "2026-07-07T16:29:13.334Z"
+}

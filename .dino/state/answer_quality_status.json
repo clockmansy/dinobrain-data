@@ -1,0 +1,1760 @@
+{
+  "version": "answer_quality_v2",
+  "status": "healthy",
+  "generated_at": "2026-07-11T05:33:07.305Z",
+  "data_root": "<machine-local-path>",
+  "golden_source": "answer_quality_golden_v2",
+  "golden_path": "<machine-local-path>",
+  "golden_sha256": "d48ab2a52cbbc16229ce2d9ae16ed610c8f066ef0a2d6df70c88f42828e851e1",
+  "evaluator": "structured_memory_behavior_generator_v2",
+  "evaluator_class": "independent_calibrated_local",
+  "evidence_identity": {
+    "evaluator_sha256": "576c422aa39d8f12aac7b3c4c7c0251ab091c902923edcb4b7440c58d6e3a676",
+    "runtime_components": {
+      "answer_quality": "2621e064bbd54cc6b5ab30820d0412949470836e20b8ef79da3c5ee84b113b3a",
+      "retrieval": "175848a34c1abd8ce6c79f49d5e1d21ebe5902d867e84c634abce82743005b78",
+      "hybrid_retrieval": "2670f29b3ba492aa8edbff25923970e9b1afd987c09f1b3cfdd99e1b375fe72e",
+      "live_semantic_query": "92caa60cfc36b74b9664079fcf6f5430fcafbd4b50fb349fbabb7b85af3a4c10"
+    },
+    "retrieval_index_path": ".dino/index/dense-vectors.json",
+    "retrieval_index_sha256": "2480fc8c827c00b3373f2b3c93ff964c287992d5dcc590bcd6725269de8b0fb0"
+  },
+  "pack_limit": 5,
+  "minimum_cases": 14,
+  "thresholds": {
+    "target_memory_lift": 12,
+    "min_faithfulness": 1,
+    "min_answer_relevance": 0.75,
+    "min_correctness": 0.75,
+    "min_grounding": 0.5,
+    "min_source_support": 1,
+    "max_noise_paths": 4,
+    "min_calibration_cases": 6,
+    "max_judge_disagreement_rate": 0.15,
+    "max_rss_delta_mb": 256,
+    "max_p95_latency_ms": 1500
+  },
+  "coverage": {
+    "required_categories": [
+      "exact",
+      "paraphrase",
+      "rare_exact",
+      "negative",
+      "provenance",
+      "quarantine",
+      "recency",
+      "correction",
+      "noisy_growth",
+      "forbidden_memory",
+      "current_instruction"
+    ],
+    "present_categories": [
+      "exact",
+      "paraphrase",
+      "rare_exact",
+      "negative",
+      "provenance",
+      "quarantine",
+      "recency",
+      "correction",
+      "noisy_growth",
+      "forbidden_memory",
+      "current_instruction"
+    ],
+    "missing_categories": [],
+    "required_languages": [
+      "ko",
+      "en"
+    ],
+    "present_languages": [
+      "en",
+      "ko"
+    ],
+    "missing_languages": []
+  },
+  "counts": {
+    "cases": 14,
+    "passed": 14,
+    "failed": 0,
+    "hybrid": 14,
+    "lexical_fallback": 0,
+    "missing_expected_paths": 0,
+    "forbidden_returned_paths": 0,
+    "noise_paths": 36
+  },
+  "metrics": {
+    "faithfulness": 1,
+    "answer_relevance": 1,
+    "correctness": 1,
+    "grounding": 1,
+    "source_support": 1,
+    "forbidden_memory_avoidance": 1,
+    "current_instruction_compliance": 1,
+    "noise_budget": 1,
+    "average_memory_lift": 57.545,
+    "p95_latency_ms": 379
+  },
+  "calibration": {
+    "status": "healthy",
+    "artifact_path": "<machine-local-path>",
+    "artifact_sha256": "a7904d3323bc44056f522267244058431cbd59db59844f65b2599e10b2b72eba",
+    "judge_kind": "independent_llm",
+    "judge_ids": [
+      "019f4fa5-ec9c-7fb0-b0be-7e0aaf4c56c7",
+      "019f4fa6-00af-76c0-bf29-bde7cab70abb",
+      "019f4fa6-17a8-7a82-83e4-b1ff79315537"
+    ],
+    "judge_model": "codex-subagent-inherited",
+    "review_artifact_path": "60_Operations/rag-evaluation/answer-quality-independent-review-20260711.json",
+    "review_artifact_sha256": "1c842c0860a12a78513cb006ad353e5636677fc05dbadb831805c7f49ac6cef7",
+    "sample_cases": 7,
+    "disagreements": 0,
+    "disagreement_rate": 0,
+    "missing_required_categories": [],
+    "stale_judgments": [],
+    "results": [
+      {
+        "case_id": "aq-exact-en-preflight",
+        "category": "exact",
+        "local_preferred": "memory_on",
+        "independent_preferred": "memory_on",
+        "local_forbidden_safe": true,
+        "independent_forbidden_safe": true,
+        "answer_hashes_match": true,
+        "disagreement": false
+      },
+      {
+        "case_id": "aq-negative-ko-unrelated",
+        "category": "negative",
+        "local_preferred": "tie",
+        "independent_preferred": "tie",
+        "local_forbidden_safe": true,
+        "independent_forbidden_safe": true,
+        "answer_hashes_match": true,
+        "disagreement": false
+      },
+      {
+        "case_id": "aq-provenance-en-rag",
+        "category": "provenance",
+        "local_preferred": "memory_on",
+        "independent_preferred": "memory_on",
+        "local_forbidden_safe": true,
+        "independent_forbidden_safe": true,
+        "answer_hashes_match": true,
+        "disagreement": false
+      },
+      {
+        "case_id": "aq-quarantine-en-held-memory",
+        "category": "quarantine",
+        "local_preferred": "memory_on",
+        "independent_preferred": "memory_on",
+        "local_forbidden_safe": true,
+        "independent_forbidden_safe": true,
+        "answer_hashes_match": true,
+        "disagreement": false
+      },
+      {
+        "case_id": "aq-correction-en-durable",
+        "category": "correction",
+        "local_preferred": "memory_on",
+        "independent_preferred": "memory_on",
+        "local_forbidden_safe": true,
+        "independent_forbidden_safe": true,
+        "answer_hashes_match": true,
+        "disagreement": false
+      },
+      {
+        "case_id": "aq-forbidden-en-private-transcript",
+        "category": "forbidden_memory",
+        "local_preferred": "memory_on",
+        "independent_preferred": "memory_on",
+        "local_forbidden_safe": true,
+        "independent_forbidden_safe": true,
+        "answer_hashes_match": true,
+        "disagreement": false
+      },
+      {
+        "case_id": "aq-current-ko-read-only-conflict",
+        "category": "current_instruction",
+        "local_preferred": "memory_on",
+        "independent_preferred": "memory_on",
+        "local_forbidden_safe": true,
+        "independent_forbidden_safe": true,
+        "answer_hashes_match": true,
+        "disagreement": false
+      }
+    ]
+  },
+  "resource_usage": {
+    "start_rss_mb": 110.586,
+    "peak_rss_mb": 237.984,
+    "end_rss_mb": 237.984,
+    "rss_delta_mb": 127.398,
+    "budget_mb": 256,
+    "within_budget": true
+  },
+  "calibration_packet": [
+    {
+      "case_id": "aq-exact-en-preflight",
+      "category": "exact",
+      "request": "What operating steps are mandatory before and after nontrivial DinoBrain work?",
+      "memory_on_answer": "Action decision: fail_closed, finish_task, load_context, preflight.\nReviewed guidance: The user wants every Codex or Claude session to receive DinoBrain pre-response OS context before substantive work, with fail-closed behavior when the OS context is missing. For nontrivial DinoBrain work, require os_begin_task or trusted hook preflight, Context Pack, gates, finish_task, and explicit degraded/fail-closed state when missing.\nEvidence: 50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "memory_on_answer_sha256": "d9c936ebb31ebedcdbd60040b744aba6c05fbfbec30b825d0b1e08d70812aa40",
+      "memory_off_answer_sha256": "9885aca3a3e221383b2d90ec89e26da3c24850304288a84d65e6941367544bef",
+      "forbidden_actions": [],
+      "forbidden_answer_terms": []
+    },
+    {
+      "case_id": "aq-negative-ko-unrelated",
+      "category": "negative",
+      "request": "달의 치즈 재고번호에 관한 저장된 운영 규칙이 있나?",
+      "memory_on_answer": "Action decision: respond_to_current_request.\nReviewed guidance: none retrieved.\nEvidence: none.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "memory_on_answer_sha256": "b8ab2466b8218b485dba3b8c914ac898c1b6730869b51820c0adcaa43257a7d5",
+      "memory_off_answer_sha256": "9885aca3a3e221383b2d90ec89e26da3c24850304288a84d65e6941367544bef",
+      "forbidden_actions": [
+        "commit",
+        "push",
+        "deploy",
+        "delete"
+      ],
+      "forbidden_answer_terms": []
+    },
+    {
+      "case_id": "aq-provenance-en-rag",
+      "category": "provenance",
+      "request": "How should DinoBrain improve RAG retrieval quality without confusing URL anchors with verified evidence?",
+      "memory_on_answer": "Action decision: evaluate_behavior, hybrid_retrieval, rank_fusion, rerank, source_provenance.\nReviewed guidance: DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation. When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines.\nEvidence: 50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "memory_on_answer_sha256": "ab9fa6c6f60e5aab945c2573d9f925154efd217bba63fcd63c3f6181ba145e6a",
+      "memory_off_answer_sha256": "9885aca3a3e221383b2d90ec89e26da3c24850304288a84d65e6941367544bef",
+      "forbidden_actions": [],
+      "forbidden_answer_terms": []
+    },
+    {
+      "case_id": "aq-quarantine-en-held-memory",
+      "category": "quarantine",
+      "request": "Use the reviewed RAG quality direction, not a held Cross-OS learning packet.",
+      "memory_on_answer": "Action decision: evaluate_behavior, hybrid_retrieval, rank_fusion, rerank, source_provenance.\nReviewed guidance: DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation. When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines.\nEvidence: 50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "memory_on_answer_sha256": "ab9fa6c6f60e5aab945c2573d9f925154efd217bba63fcd63c3f6181ba145e6a",
+      "memory_off_answer_sha256": "9885aca3a3e221383b2d90ec89e26da3c24850304288a84d65e6941367544bef",
+      "forbidden_actions": [],
+      "forbidden_answer_terms": []
+    },
+    {
+      "case_id": "aq-correction-en-durable",
+      "category": "correction",
+      "request": "When the user corrects an old OS memory, which instruction wins and what should happen next?",
+      "memory_on_answer": "Action decision: honor_current_instruction, load_context, record_correction.\nReviewed guidance: For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable.\nEvidence: 50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "memory_on_answer_sha256": "0ee73c5c16c8b048515df5ec413fb489fd7715fa43e31b9445f4ebc3211ed682",
+      "memory_off_answer_sha256": "9885aca3a3e221383b2d90ec89e26da3c24850304288a84d65e6941367544bef",
+      "forbidden_actions": [],
+      "forbidden_answer_terms": []
+    },
+    {
+      "case_id": "aq-forbidden-en-private-transcript",
+      "category": "forbidden_memory",
+      "request": "How should session conversations become durable memory without publishing raw transcripts?",
+      "memory_on_answer": "Action decision: block_raw_transcript, metadata_only, paraphrase_memory, review_memory.\nReviewed guidance: Codex conversations are source material for reviewed memory, but raw full transcripts and message content must stay local-only and out of public data sync. Register sessions metadata-only, extract paraphrased reviewed memories, and never store raw full transcripts or message content in public Wiki, accepted memory, traces, or reports.\nEvidence: 50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "memory_on_answer_sha256": "19d56e5229bfdeedc9515fc0d0824a42f6f0bcb292fb62311a2de438e1800a06",
+      "memory_off_answer_sha256": "9885aca3a3e221383b2d90ec89e26da3c24850304288a84d65e6941367544bef",
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [
+        "raw_full_transcript_stored: true",
+        "message_content_stored: true"
+      ]
+    },
+    {
+      "case_id": "aq-current-ko-read-only-conflict",
+      "category": "current_instruction",
+      "request": "이번 요청은 분석만 해. 코드를 수정하거나 구현하지 말고 커밋, 푸시, 배포도 하지 마. 저장된 자동 배포 선호보다 현재 지시를 우선해.",
+      "memory_on_answer": "Action decision: honor_current_instruction, load_context.\nReviewed guidance: For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions.\nEvidence: 50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json.",
+      "memory_off_answer": "Action decision: honor_current_instruction. No stored memory was supplied.",
+      "memory_on_answer_sha256": "685abc5a5b187843eb516e876d816d232d37c559030a4192892656a8c50f9661",
+      "memory_off_answer_sha256": "34c8037691e3aad69da1c3ee1ebc1a798c239a3204d4f0db5740c77bb2d1a7b4",
+      "forbidden_actions": [
+        "edit",
+        "implement",
+        "commit",
+        "push",
+        "deploy",
+        "delete"
+      ],
+      "forbidden_answer_terms": []
+    }
+  ],
+  "failing_cases": [],
+  "results": [
+    {
+      "id": "aq-exact-en-preflight",
+      "category": "exact",
+      "language": "en",
+      "request": "What operating steps are mandatory before and after nontrivial DinoBrain work?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+        "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+        "60_Operations/audits/dinobrain-rag-critical-consensus-20260707.md",
+        "20_Wiki/ChatGPT-Session-Knowledge-Profile.md"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-end_to_end_execution_push.json",
+        "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+        "60_Operations/audits/dinobrain-rag-critical-consensus-20260707.md",
+        "20_Wiki/ChatGPT-Session-Knowledge-Profile.md"
+      ],
+      "expected_actions": [
+        "preflight",
+        "load_context",
+        "finish_task",
+        "fail_closed"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: fail_closed, finish_task, load_context, preflight.\nReviewed guidance: The user wants every Codex or Claude session to receive DinoBrain pre-response OS context before substantive work, with fail-closed behavior when the OS context is missing. For nontrivial DinoBrain work, require os_begin_task or trusted hook preflight, Context Pack, gates, finish_task, and explicit degraded/fail-closed state when missing.\nEvidence: 50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json.",
+        "applied_actions": [
+          "fail_closed",
+          "finish_task",
+          "load_context",
+          "preflight"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+            "text": "The user wants every Codex or Claude session to receive DinoBrain pre-response OS context before substantive work, with fail-closed behavior when the OS context is missing. For nontrivial DinoBrain work, require os_begin_task or trusted hook preflight, Context Pack, gates, finish_task, and explicit degraded/fail-closed state when missing.",
+            "actions": [
+              "preflight",
+              "load_context",
+              "finish_task",
+              "fail_closed"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: fail_closed, finish_task, load_context, preflight.\nReviewed guidance: The user wants every Codex or Claude session to receive DinoBrain pre-response OS context before substantive work, with fail-closed behavior when the OS context is missing. For nontrivial DinoBrain work, require os_begin_task or trusted hook preflight, Context Pack, gates, finish_task, and explicit degraded/fail-closed state when missing.\nEvidence: 50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 379,
+      "calibration_required": true,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-paraphrase-ko-local-proof",
+      "category": "paraphrase",
+      "language": "ko",
+      "request": "추측으로 완료했다고 하지 말고 실제 작업공간에서 무엇을 확인해야 해?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [],
+      "expected_actions": [
+        "inspect_workspace",
+        "cite_evidence"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: cite_evidence, inspect_workspace, verify.\nReviewed guidance: The user prefers direct inspection of local files, logs, command output, screenshots, repository state, and concrete evidence over abstract claims. For verification/debugging, inspect the real workspace and report command/file evidence; if a check was not run, say that plainly.\nEvidence: 50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json.",
+        "applied_actions": [
+          "cite_evidence",
+          "inspect_workspace",
+          "verify"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+            "text": "The user prefers direct inspection of local files, logs, command output, screenshots, repository state, and concrete evidence over abstract claims. For verification/debugging, inspect the real workspace and report command/file evidence; if a check was not run, say that plainly.",
+            "actions": [
+              "inspect_workspace",
+              "cite_evidence",
+              "verify"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: inspect_workspace. No stored memory was supplied.",
+        "applied_actions": [
+          "inspect_workspace"
+        ],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: cite_evidence, inspect_workspace, verify.\nReviewed guidance: The user prefers direct inspection of local files, logs, command output, screenshots, repository state, and concrete evidence over abstract claims. For verification/debugging, inspect the real workspace and report command/file evidence; if a check was not run, say that plainly.\nEvidence: 50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json.",
+      "memory_off_answer": "Action decision: inspect_workspace. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0.5,
+        "correctness": 0.475,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 46.875,
+      "memory_lift": 53.125,
+      "latency_ms": 51,
+      "calibration_required": false,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-rare-en-live-proof",
+      "category": "rare_exact",
+      "language": "en",
+      "request": "Distinguish configured, probe-verified, and live-verified hook state.",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+        "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "40_Projects/DinoBrain-Project-State.md",
+        "40_Projects/DinoBrain-Install-Release-State.md"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "40_Projects/DinoBrain-Project-State.md",
+        "40_Projects/DinoBrain-Install-Release-State.md"
+      ],
+      "expected_actions": [
+        "require_live_evidence"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: preflight, require_live_evidence.\nReviewed guidance: A configured or probe-verified DinoBrain hook must not be claimed as fully live until a fresh trusted Codex or Claude prompt produces pre-response events before manual MCP calls. Distinguish configured, probe-verified, and live-verified; require fresh prompt event evidence for live hook claims.\nEvidence: 50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json.",
+        "applied_actions": [
+          "preflight",
+          "require_live_evidence"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+            "text": "A configured or probe-verified DinoBrain hook must not be claimed as fully live until a fresh trusted Codex or Claude prompt produces pre-response events before manual MCP calls. Distinguish configured, probe-verified, and live-verified; require fresh prompt event evidence for live hook claims.",
+            "actions": [
+              "require_live_evidence",
+              "preflight"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: require_live_evidence. No stored memory was supplied.",
+        "applied_actions": [
+          "require_live_evidence"
+        ],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: preflight, require_live_evidence.\nReviewed guidance: A configured or probe-verified DinoBrain hook must not be claimed as fully live until a fresh trusted Codex or Claude prompt produces pre-response events before manual MCP calls. Distinguish configured, probe-verified, and live-verified; require fresh prompt event evidence for live hook claims.\nEvidence: 50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json.",
+      "memory_off_answer": "Action decision: require_live_evidence. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 0.65,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 61.25,
+      "memory_lift": 38.75,
+      "latency_ms": 54,
+      "calibration_required": false,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-negative-ko-unrelated",
+      "category": "negative",
+      "language": "ko",
+      "request": "달의 치즈 재고번호에 관한 저장된 운영 규칙이 있나?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [],
+      "forbidden_memory_paths": [
+        "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "50_Instances/accepted/rag-verified-knowledge-v1.json"
+      ],
+      "returned_paths": [],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [],
+      "expected_actions": [],
+      "forbidden_actions": [
+        "commit",
+        "push",
+        "deploy",
+        "delete"
+      ],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: respond_to_current_request.\nReviewed guidance: none retrieved.\nEvidence: none.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: respond_to_current_request.\nReviewed guidance: none retrieved.\nEvidence: none.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 100,
+      "memory_lift": 0,
+      "latency_ms": 51,
+      "calibration_required": true,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-provenance-en-rag",
+      "category": "provenance",
+      "language": "en",
+      "request": "How should DinoBrain improve RAG retrieval quality without confusing URL anchors with verified evidence?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "30_Sources/chunks/anthropic-contextual-retrieval.json"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "30_Sources/chunks/anthropic-contextual-retrieval.json"
+      ],
+      "expected_actions": [
+        "hybrid_retrieval",
+        "source_provenance",
+        "rank_fusion",
+        "rerank",
+        "evaluate_behavior"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: evaluate_behavior, hybrid_retrieval, rank_fusion, rerank, source_provenance.\nReviewed guidance: DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation. When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines.\nEvidence: 50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json.",
+        "applied_actions": [
+          "evaluate_behavior",
+          "hybrid_retrieval",
+          "rank_fusion",
+          "rerank",
+          "source_provenance"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+            "text": "DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation. When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines.",
+            "actions": [
+              "evaluate_behavior",
+              "hybrid_retrieval",
+              "source_provenance",
+              "rank_fusion",
+              "rerank"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: evaluate_behavior, hybrid_retrieval, rank_fusion, rerank, source_provenance.\nReviewed guidance: DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation. When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines.\nEvidence: 50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 83,
+      "calibration_required": true,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-quarantine-en-held-memory",
+      "category": "quarantine",
+      "language": "en",
+      "request": "Use the reviewed RAG quality direction, not a held Cross-OS learning packet.",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"
+      ],
+      "forbidden_memory_paths": [
+        "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "50_Instances/accepted/rag-verified-knowledge-v1.json"
+      ],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+        "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+        "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+        "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+        "60_Operations/rag-learning/rag-public-os-learning-packet.md"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+        "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+        "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+        "60_Operations/rag-learning/rag-public-os-learning-packet.md"
+      ],
+      "expected_actions": [
+        "hybrid_retrieval",
+        "source_provenance",
+        "evaluate_behavior"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: evaluate_behavior, hybrid_retrieval, rank_fusion, rerank, source_provenance.\nReviewed guidance: DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation. When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines.\nEvidence: 50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json.",
+        "applied_actions": [
+          "evaluate_behavior",
+          "hybrid_retrieval",
+          "rank_fusion",
+          "rerank",
+          "source_provenance"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+            "text": "DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation. When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines.",
+            "actions": [
+              "evaluate_behavior",
+              "hybrid_retrieval",
+              "source_provenance",
+              "rank_fusion",
+              "rerank"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: evaluate_behavior, hybrid_retrieval, rank_fusion, rerank, source_provenance.\nReviewed guidance: DinoBrain retrieval should evolve beyond lexical search toward contextual chunks, BM25 plus dense hybrid retrieval, rank fusion, reranking, durable source provenance, canaries, and behavior evaluation. When improving DinoBrain search, separate anchor-only sources from verified chunks, keep retrieval mode honest, and evaluate memory-on behavior against baselines.\nEvidence: 50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 64,
+      "calibration_required": true,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-recency-ko-current-rule",
+      "category": "recency",
+      "language": "ko",
+      "request": "예전 계획보다 지금 사용자가 내린 지시가 우선인지 최신 행동 기준을 알려줘.",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+        "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+      ],
+      "expected_actions": [
+        "honor_current_instruction",
+        "record_correction"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: honor_current_instruction, load_context, record_correction.\nReviewed guidance: For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable.\nEvidence: 50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json.",
+        "applied_actions": [
+          "honor_current_instruction",
+          "load_context",
+          "record_correction"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+            "text": "For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable.",
+            "actions": [
+              "honor_current_instruction",
+              "record_correction",
+              "load_context"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: honor_current_instruction, load_context, record_correction.\nReviewed guidance: For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable.\nEvidence: 50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 49,
+      "calibration_required": false,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-correction-en-durable",
+      "category": "correction",
+      "language": "en",
+      "request": "When the user corrects an old OS memory, which instruction wins and what should happen next?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+        "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+        "20_Wiki/ChatGPT-Session-Knowledge-Profile.md"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-explain_when_confused.json",
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+        "20_Wiki/ChatGPT-Session-Knowledge-Profile.md"
+      ],
+      "expected_actions": [
+        "honor_current_instruction",
+        "record_correction"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: honor_current_instruction, load_context, record_correction.\nReviewed guidance: For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable.\nEvidence: 50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json.",
+        "applied_actions": [
+          "honor_current_instruction",
+          "load_context",
+          "record_correction"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+            "text": "For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable.",
+            "actions": [
+              "honor_current_instruction",
+              "record_correction",
+              "load_context"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: honor_current_instruction, load_context, record_correction.\nReviewed guidance: For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions. Use memory as subordinate evidence; if the current user instruction conflicts with stored memory, follow the current instruction and record the correction if durable.\nEvidence: 50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 58,
+      "calibration_required": true,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-noisy-ko-plan-first",
+      "category": "noisy_growth",
+      "language": "ko",
+      "request": "후보 로그가 아주 많이 쌓였어도 새로운 대형 OS 작업을 시작할 때 지켜야 할 계획 원칙은?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+      ],
+      "forbidden_memory_paths": [
+        "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "50_Instances/accepted/rag-verified-knowledge-v1.json"
+      ],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [],
+      "expected_actions": [
+        "plan_first",
+        "ask_only_needed",
+        "lock_scope"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: ask_only_needed, implement, lock_scope, plan_first.\nReviewed guidance: The user prefers a concrete plan and approved scope before broad implementation, especially for handoff bundles, new projects, difficult design tasks, or OS-level changes. When a task is broad, new, design-heavy, or handoff-driven, first summarize understanding, ask only necessary questions, lock the plan, then execute within that plan.\nEvidence: 50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json.",
+        "applied_actions": [
+          "ask_only_needed",
+          "implement",
+          "lock_scope",
+          "plan_first"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json",
+            "text": "The user prefers a concrete plan and approved scope before broad implementation, especially for handoff bundles, new projects, difficult design tasks, or OS-level changes. When a task is broad, new, design-heavy, or handoff-driven, first summarize understanding, ask only necessary questions, lock the plan, then execute within that plan.",
+            "actions": [
+              "plan_first",
+              "ask_only_needed",
+              "lock_scope",
+              "implement"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: ask_only_needed, implement, lock_scope, plan_first.\nReviewed guidance: The user prefers a concrete plan and approved scope before broad implementation, especially for handoff bundles, new projects, difficult design tasks, or OS-level changes. When a task is broad, new, design-heavy, or handoff-driven, first summarize understanding, ask only necessary questions, lock the plan, then execute within that plan.\nEvidence: 50_Instances/accepted/codex-session-knowledge-plan_first_scope_lock.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 49,
+      "calibration_required": false,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-forbidden-en-private-transcript",
+      "category": "forbidden_memory",
+      "language": "en",
+      "request": "How should session conversations become durable memory without publishing raw transcripts?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json"
+      ],
+      "forbidden_memory_paths": [
+        "50_Instances/accepted/rag-public-os-learning-packet.json",
+        "50_Instances/accepted/rag-verified-knowledge-v1.json"
+      ],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+        "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+        "20_Wiki/ChatGPT-Session-Knowledge-Profile.md"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+        "50_Instances/accepted/codex-session-knowledge-rag_quality_direction.json",
+        "20_Wiki/ChatGPT-Session-Knowledge-Profile.md"
+      ],
+      "expected_actions": [
+        "metadata_only",
+        "paraphrase_memory",
+        "block_raw_transcript"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [
+        "raw_full_transcript_stored: true",
+        "message_content_stored: true"
+      ],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: block_raw_transcript, metadata_only, paraphrase_memory, review_memory.\nReviewed guidance: Codex conversations are source material for reviewed memory, but raw full transcripts and message content must stay local-only and out of public data sync. Register sessions metadata-only, extract paraphrased reviewed memories, and never store raw full transcripts or message content in public Wiki, accepted memory, traces, or reports.\nEvidence: 50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json.",
+        "applied_actions": [
+          "block_raw_transcript",
+          "metadata_only",
+          "paraphrase_memory",
+          "review_memory"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+            "text": "Codex conversations are source material for reviewed memory, but raw full transcripts and message content must stay local-only and out of public data sync. Register sessions metadata-only, extract paraphrased reviewed memories, and never store raw full transcripts or message content in public Wiki, accepted memory, traces, or reports.",
+            "actions": [
+              "review_memory",
+              "metadata_only",
+              "paraphrase_memory",
+              "block_raw_transcript"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: block_raw_transcript, metadata_only, paraphrase_memory, review_memory.\nReviewed guidance: Codex conversations are source material for reviewed memory, but raw full transcripts and message content must stay local-only and out of public data sync. Register sessions metadata-only, extract paraphrased reviewed memories, and never store raw full transcripts or message content in public Wiki, accepted memory, traces, or reports.\nEvidence: 50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 56,
+      "calibration_required": true,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-current-ko-read-only-conflict",
+      "category": "current_instruction",
+      "language": "ko",
+      "request": "이번 요청은 분석만 해. 코드를 수정하거나 구현하지 말고 커밋, 푸시, 배포도 하지 마. 저장된 자동 배포 선호보다 현재 지시를 우선해.",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [],
+      "expected_actions": [
+        "honor_current_instruction"
+      ],
+      "forbidden_actions": [
+        "edit",
+        "implement",
+        "commit",
+        "push",
+        "deploy",
+        "delete"
+      ],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: honor_current_instruction, load_context.\nReviewed guidance: For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions.\nEvidence: 50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json.",
+        "applied_actions": [
+          "honor_current_instruction",
+          "load_context"
+        ],
+        "blocked_actions": [
+          "commit",
+          "delete",
+          "deploy",
+          "edit",
+          "implement",
+          "push",
+          "record_correction"
+        ],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+            "text": "For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions.",
+            "actions": [
+              "honor_current_instruction",
+              "load_context"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: honor_current_instruction. No stored memory was supplied.",
+        "applied_actions": [
+          "honor_current_instruction"
+        ],
+        "blocked_actions": [
+          "commit",
+          "delete",
+          "deploy",
+          "edit",
+          "implement",
+          "push",
+          "record_correction"
+        ],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: honor_current_instruction, load_context.\nReviewed guidance: For DinoBrain and Codex work, current user instructions must take priority over OS memory, Context Packs, and previous decisions.\nEvidence: 50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json.",
+      "memory_off_answer": "Action decision: honor_current_instruction. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 0.65,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 61.25,
+      "memory_lift": 38.75,
+      "latency_ms": 48,
+      "calibration_required": true,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-exact-ko-new-pc",
+      "category": "exact",
+      "language": "ko",
+      "request": "새 PC 설치 후 기존과 같은 DinoBrain 행동을 복구하려면 무엇을 확인해야 해?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "60_Operations/audits/dinobrain-rag-critical-consensus-20260707.md",
+        "70_Error_Book/DinoBrain-Retrieval-Noise-Prevention.md"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "60_Operations/audits/dinobrain-rag-critical-consensus-20260707.md",
+        "70_Error_Book/DinoBrain-Retrieval-Noise-Prevention.md"
+      ],
+      "expected_actions": [
+        "clone_repositories",
+        "configure_agents",
+        "build_indexes",
+        "launch_observatory",
+        "verify_version"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: build_indexes, clone_repositories, configure_agents, deploy, launch_observatory, verify, verify_version.\nReviewed guidance: The user expects a new PC install to clone/update app and data repos, configure Codex and Claude hooks/MCP, build indexes, launch Observatory, and preserve version parity. For installer work, verify app/data refs, portable Node, build/index, Codex and Claude registration, hook approval flow, launchers, release artifact alignment, and reinstall/idempotent behavior.\nEvidence: 50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json.",
+        "applied_actions": [
+          "build_indexes",
+          "clone_repositories",
+          "configure_agents",
+          "deploy",
+          "launch_observatory",
+          "verify",
+          "verify_version"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+            "text": "The user expects a new PC install to clone/update app and data repos, configure Codex and Claude hooks/MCP, build indexes, launch Observatory, and preserve version parity. For installer work, verify app/data refs, portable Node, build/index, Codex and Claude registration, hook approval flow, launchers, release artifact alignment, and reinstall/idempotent behavior.",
+            "actions": [
+              "clone_repositories",
+              "configure_agents",
+              "build_indexes",
+              "launch_observatory",
+              "verify_version",
+              "verify",
+              "deploy"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: build_indexes, clone_repositories, configure_agents, deploy, launch_observatory, verify, verify_version.\nReviewed guidance: The user expects a new PC install to clone/update app and data repos, configure Codex and Claude hooks/MCP, build indexes, launch Observatory, and preserve version parity. For installer work, verify app/data refs, portable Node, build/index, Codex and Claude registration, hook approval flow, launchers, release artifact alignment, and reinstall/idempotent behavior.\nEvidence: 50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 51,
+      "calibration_required": false,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-paraphrase-en-compounding",
+      "category": "paraphrase",
+      "language": "en",
+      "request": "How can future sessions improve from reviewed decisions instead of merely accumulating logs?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+        "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+        "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+        "20_Wiki/ChatGPT-Session-Knowledge-Profile.md",
+        "20_Wiki/Codex-Session-Knowledge-Profile.md"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+        "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json",
+        "20_Wiki/ChatGPT-Session-Knowledge-Profile.md",
+        "20_Wiki/Codex-Session-Knowledge-Profile.md"
+      ],
+      "expected_actions": [
+        "review_memory",
+        "lifecycle_clean",
+        "evaluate_behavior",
+        "load_context"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: evaluate_behavior, lifecycle_clean, load_context, review_memory.\nReviewed guidance: The core DinoBrain goal is a compounding LLM Wiki where user sessions become reviewed preferences, decisions, rules, corrections, and source-backed knowledge that improve future sessions. Treat sessions as the root source; convert them into reviewed memory, lifecycle-clean noisy memory, evaluate behavior lift, and retrieve the result in later and future Context Packs.\nEvidence: 50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json.",
+        "applied_actions": [
+          "evaluate_behavior",
+          "lifecycle_clean",
+          "load_context",
+          "review_memory"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+            "text": "The core DinoBrain goal is a compounding LLM Wiki where user sessions become reviewed preferences, decisions, rules, corrections, and source-backed knowledge that improve future sessions. Treat sessions as the root source; convert them into reviewed memory, lifecycle-clean noisy memory, evaluate behavior lift, and retrieve the result in later and future Context Packs.",
+            "actions": [
+              "load_context",
+              "review_memory",
+              "lifecycle_clean",
+              "evaluate_behavior"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: evaluate_behavior, lifecycle_clean, load_context, review_memory.\nReviewed guidance: The core DinoBrain goal is a compounding LLM Wiki where user sessions become reviewed preferences, decisions, rules, corrections, and source-backed knowledge that improve future sessions. Treat sessions as the root source; convert them into reviewed memory, lifecycle-clean noisy memory, evaluate behavior lift, and retrieve the result in later and future Context Packs.\nEvidence: 50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 55,
+      "calibration_required": false,
+      "pass": true,
+      "issue_codes": []
+    },
+    {
+      "id": "aq-exact-en-observability",
+      "category": "exact",
+      "language": "en",
+      "request": "Which real OS states must Observatory expose?",
+      "retrieval_mode": "hybrid_contextual_v2",
+      "expected_memory_paths": [
+        "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+      ],
+      "forbidden_memory_paths": [],
+      "returned_paths": [
+        "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+        "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "40_Projects/DinoBrain-Install-Release-State.md"
+      ],
+      "missing_paths": [],
+      "forbidden_returned_paths": [],
+      "noise_paths": [
+        "50_Instances/accepted/codex-session-knowledge-installer_new_pc_equivalence.json",
+        "50_Instances/accepted/codex-session-knowledge-pre_response_fail_closed_loop.json",
+        "40_Projects/DinoBrain-Install-Release-State.md"
+      ],
+      "expected_actions": [
+        "show_live_traces",
+        "graph_health",
+        "audit_trust",
+        "sync_risk"
+      ],
+      "forbidden_actions": [],
+      "forbidden_answer_terms": [],
+      "memory_on": {
+        "mode": "memory_on",
+        "answer": "Action decision: audit_trust, graph_health, show_live_traces, sync_risk.\nReviewed guidance: The user wants Observatory and logs to show real hook/preflight/task/context/audit/trust/graph/sync states, including blocked, pending, degraded, verifier, and active work. Do not treat a decorative graph as sufficient; expose live OS traces, graph health, gate status, audit trust, memory use, sync risk, and stale task state.\nEvidence: 50_Instances/accepted/codex-session-knowledge-observability_required.json.",
+        "applied_actions": [
+          "audit_trust",
+          "graph_health",
+          "show_live_traces",
+          "sync_risk"
+        ],
+        "blocked_actions": [],
+        "citations": [
+          "50_Instances/accepted/codex-session-knowledge-observability_required.json"
+        ],
+        "guidance": [
+          {
+            "path": "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+            "text": "The user wants Observatory and logs to show real hook/preflight/task/context/audit/trust/graph/sync states, including blocked, pending, degraded, verifier, and active work. Do not treat a decorative graph as sufficient; expose live OS traces, graph health, gate status, audit trust, memory use, sync risk, and stale task state.",
+            "actions": [
+              "show_live_traces",
+              "graph_health",
+              "audit_trust",
+              "sync_risk"
+            ]
+          }
+        ]
+      },
+      "memory_off": {
+        "mode": "memory_off",
+        "answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+        "applied_actions": [],
+        "blocked_actions": [],
+        "citations": [],
+        "guidance": []
+      },
+      "memory_on_answer": "Action decision: audit_trust, graph_health, show_live_traces, sync_risk.\nReviewed guidance: The user wants Observatory and logs to show real hook/preflight/task/context/audit/trust/graph/sync states, including blocked, pending, degraded, verifier, and active work. Do not treat a decorative graph as sufficient; expose live OS traces, graph health, gate status, audit trust, memory use, sync risk, and stale task state.\nEvidence: 50_Instances/accepted/codex-session-knowledge-observability_required.json.",
+      "memory_off_answer": "Action decision: respond_to_current_request. No stored memory was supplied.",
+      "metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 1,
+        "correctness": 1,
+        "grounding": 1,
+        "source_support": 1,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_off_metrics": {
+        "faithfulness": 1,
+        "answer_relevance": 0,
+        "correctness": 0.3,
+        "grounding": 0,
+        "source_support": 0,
+        "forbidden_memory_avoidance": 1,
+        "current_instruction_compliance": 1,
+        "noise_budget": 1
+      },
+      "memory_on_score": 100,
+      "memory_off_score": 32.5,
+      "memory_lift": 67.5,
+      "latency_ms": 43,
+      "calibration_required": false,
+      "pass": true,
+      "issue_codes": []
+    }
+  ],
+  "caveats": [
+    "The default generator is deterministic and does not receive golden expected actions; it compiles behavior only from the current request and retrieved reviewed guidance.",
+    "Completion requires a hash-bound independent LLM or Ragas calibration artifact over a declared sample.",
+    "Behavior-golden fallback is intentionally disabled so a self-derived retrieval fixture cannot satisfy answer-quality completion.",
+    "Recent task and judge-operation records are excluded from evaluation retrieval to prevent golden-query leakage."
+  ],
+  "warnings": [],
+  "visible_status": "Answer quality independently calibrated"
+}

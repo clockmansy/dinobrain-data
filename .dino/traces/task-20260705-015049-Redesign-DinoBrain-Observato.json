@@ -1,0 +1,33 @@
+{
+  "task_id": "task-20260705-015049-Redesign-DinoBrain-Observato",
+  "outcome": "completed",
+  "summary": "Redesigned DinoBrain Observatory graph v14 to prioritize semantic readability over forced dinosaur silhouette. Replaced deterministic dino-slot layout with hub-based clusters, softened default edges, moved the fossil scaffold into the background, reduced default long labels, updated design QA notes, verified build and Observatory rendering, and captured the latest local screenshot.",
+  "changed_files": [
+    "scripts/dinobrain-observatory.mjs",
+    "design-qa.md"
+  ],
+  "decisions": [
+    "Use semantic cluster anchors for live activity, wiki, sources, projects, instances, operations, context packs, tags, and archive/error records.",
+    "Keep dinosaur/fossil character as low-contrast canvas scaffold rather than node placement constraint.",
+    "Default labels now favor hub labels; active task and context-pack labels are available through hover/search rather than always visible."
+  ],
+  "next_steps": [
+    "Review the live v14 screen at http://127.0.0.1:3847/.",
+    "If the user wants an even more operational look, fade the fossil scaffold further or add a graph/fossil mode toggle."
+  ],
+  "used_memory_paths": [],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260705-015054-DinoBrain-Observatory-graph-.json"
+  ],
+  "session_archive_paths": [],
+  "candidate_paths": [],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 0,
+    "context_pack_count": 1,
+    "session_archive_count": 0,
+    "candidate_count": 0,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-05T02:00:41.320Z"
+}

@@ -1,0 +1,44 @@
+{
+  "task_id": "task-20260707-095514-Read-and-analyze-the-full-lo",
+  "outcome": "completed",
+  "summary": "Read-only analysis completed for <machine-local-path> (1).md. Verified expected SHA-256, read the full 1,285-line document, and extracted durable rules around evidence lineage, provenance, source/chunk/claim separation, full-memory audit reproducibility, and proof vs non-proof boundaries.",
+  "growth_policy": "trace_only",
+  "changed_files": [],
+  "decisions": [
+    "Treat the provided local document hash match as proof of the exact document version analyzed, but not proof of the live SecondBrain state or referenced artifacts.",
+    "Treat raw source existence, external URL anchors, counts-only audits, stale snapshots, fallback/bootstrap text, and JSON/API-only UI evidence as non-proof under the document's rules.",
+    "Emphasize OS-native manifest reconciliation, content-bearing evidence chains, exact direct-MCP discovery, prompt-bound task lifecycle records, and Korean browser/DOM proof as durable proof surfaces."
+  ],
+  "next_steps": [
+    "If implementation follows, start with P0-02/P0-04/P0-03/P0-05/P0-05C/P0-05B/P0-06/P0-01 in the document's stated order.",
+    "Before any final-readiness claim, run live OS-native full-memory audit reconciliation and source-lineage coverage checks against current SecondBrain rather than relying on this static plan.",
+    "Keep validation votes tied to this document SHA and require each validator's own full-memory read stats, document SHA, and evidence checked."
+  ],
+  "used_memory_paths": [
+    "50_Instances/accepted/codex-session-knowledge-local_evidence_over_claims.json",
+    "50_Instances/accepted/codex-session-knowledge-configured_is_not_live_proof.json",
+    "50_Instances/accepted/codex-session-knowledge-observability_required.json",
+    "50_Instances/accepted/codex-session-knowledge-current_instruction_over_memory.json",
+    "50_Instances/accepted/codex-session-knowledge-knowledge_compounding_goal.json",
+    "50_Instances/accepted/codex-session-knowledge-version_release_drift_risk.json",
+    "50_Instances/accepted/codex-session-knowledge-raw_transcripts_never_public.json"
+  ],
+  "context_pack_paths": [
+    ".dino/context-packs/pack-20260707-095515-Read-and-analyze-the-full-lo.json"
+  ],
+  "session_archive_paths": [
+    "10_Conversations/raw/session-Codex-prompt-20260707-095514-6436158e7c1a.json"
+  ],
+  "candidate_paths": [
+    "50_Instances/candidates/candidate-User-preference-Do-not-edit-files.-6d3d4458d14b.json"
+  ],
+  "search_queries": [],
+  "memory_use": {
+    "used_memory_count": 7,
+    "context_pack_count": 1,
+    "session_archive_count": 1,
+    "candidate_count": 1,
+    "search_query_count": 0
+  },
+  "finished_at": "2026-07-07T09:56:54.196Z"
+}

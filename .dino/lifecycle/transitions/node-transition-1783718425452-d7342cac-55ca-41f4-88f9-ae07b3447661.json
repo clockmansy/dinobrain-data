@@ -1,0 +1,24 @@
+{
+  "version": "node_lifecycle_transition_artifact_v1",
+  "transition_id": "node-transition-1783718425452-d7342cac-55ca-41f4-88f9-ae07b3447661",
+  "transaction_id": "node-lifecycle-1783718425626-fe04ddcd-00fa-43c7-be8f-4c7e0f92dc75",
+  "target_path": "80_Review_Queue/lifecycle-migration/rag-verified-knowledge-v1.json",
+  "from_state": null,
+  "to_state": "held",
+  "reason_code": "accepted_review_blocked",
+  "reason": "Existing accepted memory was removed from hot retrieval: durable_external_provenance_missing, unsupported_pressure",
+  "actor": "codex-mem01-migration-reapply",
+  "evidence_paths": [
+    "50_Instances/accepted/rag-verified-knowledge-v1.json",
+    "20_Wiki/RAG-Verified-Knowledge-Base.md",
+    "20_Wiki/RAG-Methodology-Anchor-Catalog.md",
+    "60_Operations/rag-learning/rag-verification-cross-review-20260707.md"
+  ],
+  "predecessor_paths": [
+    "20_Wiki/RAG-Verified-Knowledge-Base.md"
+  ],
+  "successor_paths": [],
+  "at": "2026-07-10T21:20:25.107Z",
+  "before_sha256": null,
+  "after_sha256": "c89f5d201419f6d3f239e05eabb83e10d69770fbe5da57abe2c320010ab79dc1"
+}

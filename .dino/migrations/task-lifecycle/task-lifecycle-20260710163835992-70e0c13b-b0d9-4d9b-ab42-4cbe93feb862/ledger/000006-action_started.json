@@ -1,0 +1,16 @@
+{
+  "version": "task_lifecycle_migration_ledger_v1",
+  "migration_id": "task-lifecycle-20260710163835992-70e0c13b-b0d9-4d9b-ab42-4cbe93feb862",
+  "sequence": 6,
+  "event": "action_started",
+  "at": "2026-07-10T16:38:35.992Z",
+  "previous_entry_sha256": "3668ce9ee029755c8e5d5c3b423e8781cbd340ca39ed65c29195d3f229afd8ad",
+  "payload": {
+    "index": 1,
+    "task_id": "task-20260709-154621-You-are-an-expert-at-upholdi",
+    "action": "auto_close_stale_non_user_service",
+    "task_sha256_before": "f49bf953aa9c05e2810e8c74fc574f9f6ff183cfffc21017e9c8db8c12745d5d",
+    "trace_sha256_before": null
+  },
+  "entry_sha256": "d6ba2366b1b4ccec65f1c3640df489434247c383f567aa441e220544691c803b"
+}
