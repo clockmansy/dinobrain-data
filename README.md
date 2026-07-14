@@ -9,6 +9,7 @@ It stores curated knowledge and operational records for the DinoBrain MCP server
 | Path | Purpose |
 | --- | --- |
 | `00_Home` | Vault entry points and high-level maps |
+| `15_Profile` | Local user identity, preferences, constraints, and stable context |
 | `20_Wiki` | Curated durable knowledge notes |
 | `30_Sources` | Source records and verification notes |
 | `40_Projects` | Project state, decisions, and handoffs |
